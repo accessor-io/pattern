@@ -465,6 +465,11 @@ def analyze_known_transitions():
         print(f"  Key[{idx_n_plus_1: >2}] = {hex(key_n_plus_1)}")
         print(f"  Difference: {hex(diff)} ({diff})")
         print(f"  Diff mod N: {hex(diff_mod_n)}")
+
+        # Bitwise XOR difference
+        xor_diff = key_n ^ key_n_plus_1
+        print(f"  XOR Diff:   {hex(xor_diff)}")
+
         print(f"  Ratio: {ratio:.4f}" if isinstance(ratio, (float, int)) else f"  Ratio: {ratio}")
 
         # Check simple rules (modulo N)
