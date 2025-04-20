@@ -291,11 +291,92 @@ def base58_check_decode(s):
 # --- Address Derivation ---
 
 def pubkey_to_address(pubkey_bytes, version_byte=b'\x00'):
-    """Converts public key bytes to a Bitcoin address using custom RIPEMD160."""
-    hashed_pubkey = hash160_custom_ripemd(pubkey_bytes) # Use custom hash
-    return base58_check_encode(version_byte, hashed_pubkey)
+    """Convert a public key to a Bitcoin address."""
+    h = hash160_hashlib_ripemd(pubkey_bytes)  # RIPEMD160(SHA256(pubkey))
+    return base58_check_encode(version_byte, h)
 
-# --- Analysis Functions ---
+def analyze_address_derivation(privkey_hex='0000000000000000000000000000000000000000000000000000000000000001', target_address='1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH'):
+    """Reverse-check the address derivation process."""
+    print(f"\n===== Address Derivation Analysis =====")
+    print(f"Private Key (hex): {privkey_hex}")
+    print(f"Target Address: {target_address}")
+    
+    # Convert private key to integer
+    privkey_int = int(privkey_hex, 16)
+    
+    # Decode the target address
+    try:
+        # Get the full decoded bytes including checksum
+        decoded_bytes = base58_decode_full(target_address)
+        print(f"Decoded address (hex): {decoded_bytes.hex()}")
+        
+        # Extract version byte and hash160 payload
+        version_byte = decoded_bytes[0:1]
+        hash160_payload = decoded_bytes[1:-4]  # Skip version byte and last 4 checksum bytes
+        checksum = decoded_bytes[-4:]
+        
+        print(f"Version byte: {version_byte.hex()}")
+        print(f"Address hash160 payload: {hash160_payload.hex()}")
+        print(f"Address checksum: {checksum.hex()}")
+        
+        # Verify checksum
+        expected_checksum = sha256(sha256(version_byte + hash160_payload))[:4]
+        if checksum == expected_checksum:
+            print(f"✓ Checksum verification PASSED")
+        else:
+            print(f"✗ Checksum verification FAILED")
+            print(f"  Expected: {expected_checksum.hex()}")
+            print(f"  Actual: {checksum.hex()}")
+        
+        # Generate public key from private key
+        pubkey_point = privkey_to_pubkey(privkey_int)
+        print(f"Derived public key point:")
+        print(f"  x: {pubkey_point.x()}")
+        print(f"  y: {pubkey_point.y()}")
+        
+        # Convert to uncompressed format (04 + x + y)
+        pubkey_uncompressed = pubkey_point_to_bytes(pubkey_point, compressed=False)
+        print(f"Uncompressed public key: {pubkey_uncompressed.hex()}")
+        
+        # Calculate hash160 using standard method
+        standard_hash160 = hash160_hashlib_ripemd(pubkey_uncompressed)
+        print(f"Standard derived hash160: {standard_hash160.hex()}")
+        
+        # Compare with address hash160
+        if standard_hash160 == hash160_payload:
+            print(f"✓ Hash160 verification PASSED - Standard address derivation works!")
+        else:
+            print(f"✗ Hash160 verification FAILED - Address was NOT derived using standard method")
+            print(f"  Hex diff: {bytes([a ^ b for a, b in zip(standard_hash160, hash160_payload)]).hex()}")
+        
+        # Try custom RIPEMD160 implementation
+        custom_hash160 = hash160_custom_ripemd(pubkey_uncompressed)
+        print(f"Custom derived hash160: {custom_hash160.hex()}")
+        
+        if custom_hash160 == hash160_payload:
+            print(f"✓ Custom Hash160 verification PASSED - Custom RIPEMD160 works!")
+        else:
+            print(f"✗ Custom Hash160 verification FAILED")
+            print(f"  Hex diff: {bytes([a ^ b for a, b in zip(custom_hash160, hash160_payload)]).hex()}")
+        
+        # Try both SHA256 + custom RIPEMD and standard RIPEMD to see where the difference is
+        sha256_result = sha256(pubkey_uncompressed)
+        print(f"SHA256 of pubkey: {sha256_result.hex()}")
+        
+        # Check if first few bytes of payload match pattern for known addresses
+        print(f"\nComparing with first few known addresses:")
+        for i, addr in enumerate(EXPECTED_ADDRESSES[:5]):
+            if i == 0:
+                continue  # Skip the first one since we're already analyzing it
+            addr_decoded = base58_decode_full(addr)
+            addr_hash160 = addr_decoded[1:-4]
+            print(f"Address #{i+1}: {addr}")
+            print(f"  Hash160: {addr_hash160.hex()}")
+            
+    except Exception as e:
+        print(f"Error during address analysis: {str(e)}")
+    
+    return
 
 def analyze_first_address_derivation():
     """Analyze the derivation of the first address 1BgG... using private key 0x1."""
@@ -489,6 +570,30 @@ def analyze_known_transitions():
         if key_n_plus_1 == (key_n + diff) % N: # Tautology check
             rule_checks.append("key_n + diff % N")
 
+        # Check combined position/character index rules
+        # 1. Position-based formulas
+        if key_n_plus_1 == (key_n + idx_n) % N:
+            rule_checks.append(f"key_n + n ({idx_n}) % N")
+        if key_n_plus_1 == (key_n * idx_n) % N:
+            rule_checks.append(f"key_n * n ({idx_n}) % N")
+            
+        # 2. Character Base58 index formulas (only check if we have a valid index)
+        if char_b58_index >= 0:
+            if key_n_plus_1 == (key_n + char_b58_index) % N:
+                rule_checks.append(f"key_n + char_idx ({char_b58_index}) % N")
+            if key_n_plus_1 == (key_n * char_b58_index) % N:
+                rule_checks.append(f"key_n * char_idx ({char_b58_index}) % N")
+                
+            # 3. Combined formulas
+            if key_n_plus_1 == (key_n + idx_n + char_b58_index) % N:
+                rule_checks.append(f"key_n + n ({idx_n}) + char_idx ({char_b58_index}) % N")
+            if key_n_plus_1 == (key_n * idx_n + char_b58_index) % N:
+                rule_checks.append(f"key_n * n ({idx_n}) + char_idx ({char_b58_index}) % N")
+            if key_n_plus_1 == (key_n + idx_n * char_b58_index) % N:
+                rule_checks.append(f"key_n + n ({idx_n}) * char_idx ({char_b58_index}) % N")
+            if key_n_plus_1 == (key_n * char_b58_index + idx_n) % N:
+                rule_checks.append(f"key_n * char_idx ({char_b58_index}) + n ({idx_n}) % N")
+
         if rule_checks:
             print(f"  Simple Rules Match: {', '.join(rule_checks)}")
         else:
@@ -505,13 +610,468 @@ def analyze_known_transitions():
     print("-----------------------------------------------------")
 
 
-# --- Main Execution ---
+def analyze_diff_char_relationships(analysis_range=10):
+    """
+    Analyze the relationship between character values and key differences
+    """
+    if len(KNOWN_SOLUTIONS) < 2:
+        print("Need at least 2 known keys to analyze differences")
+        return
+    
+    print(f"\n--- Analyzing Character-Difference Relationships (first {analysis_range} transitions) ---")
+    
+    # Get the keys in sorted order
+    sorted_keys = sorted(KNOWN_SOLUTIONS.keys())
+    
+    # Limit to the first 'analysis_range' transitions or all available
+    max_index = min(analysis_range + 1, len(sorted_keys))
+    
+    differences = []
+    chars = []
+    ascii_values = []
+    
+    for i in range(1, max_index):
+        pos_prev = sorted_keys[i-1]
+        pos_curr = sorted_keys[i]
+        key_prev = KNOWN_SOLUTIONS[pos_prev]
+        key_current = KNOWN_SOLUTIONS[pos_curr]
+        position = pos_curr
+        
+        # Calculate difference between keys
+        diff = (key_current - key_prev) % N
+        
+        # Get character at position-1
+        char = FULL_STRING[position-1] if position-1 < len(FULL_STRING) else None
+        if char is None:
+            continue
+            
+        # Store values for correlation analysis
+        differences.append(diff)
+        chars.append(char)
+        ascii_values.append(ord(char))
+        
+        print(f"Position {position}: '{char}' (ASCII {ord(char)}) => Diff: {diff}")
+        
+        # Check for specific patterns
+        if char in BASE58_ALPHABET:
+            char_idx = BASE58_ALPHABET.find(char)
+            if diff % (char_idx + 1) == 0:
+                multiple = diff // (char_idx + 1)
+                print(f"  ✓ Difference is exactly {multiple} times the char B58 index+1 ({char_idx+1})")
+            
+            if diff % ord(char) == 0:
+                multiple = diff // ord(char)
+                print(f"  ✓ Difference is exactly {multiple} times the ASCII value ({ord(char)})")
+    
+    # Report simple patterns
+    if len(differences) > 3:
+        print("\nChecking for simple mathematical relationships between characters and differences:")
+        
+        # Check if all odd chars create odd differences, even chars create even differences
+        odd_chars_create_odd_diffs = True
+        even_chars_create_even_diffs = True
+        
+        for i in range(len(differences)):
+            char_odd = ascii_values[i] % 2 == 1
+            diff_odd = differences[i] % 2 == 1
+            
+            if char_odd and not diff_odd:
+                odd_chars_create_odd_diffs = False
+            if not char_odd and diff_odd:
+                even_chars_create_even_diffs = False
+        
+        if odd_chars_create_odd_diffs:
+            print("  ✓ Pattern: Odd ASCII characters consistently produce odd differences")
+        if even_chars_create_even_diffs:
+            print("  ✓ Pattern: Even ASCII characters consistently produce even differences")
+        
+        # See if differences tend to be multiples of the character value
+        multiple_counts = {}
+        for i in range(len(differences)):
+            if ascii_values[i] == 0:
+                continue
+            if differences[i] % ascii_values[i] == 0:
+                multiple = differences[i] // ascii_values[i]
+                multiple_counts[multiple] = multiple_counts.get(multiple, 0) + 1
+        
+        if multiple_counts:
+            print("\nDifferences that are exact multiples of character ASCII values:")
+            for multiple, count in sorted(multiple_counts.items(), key=lambda x: x[1], reverse=True):
+                print(f"  Multiple of {multiple}: {count} times ({count/len(differences)*100:.1f}%)")
+                
+        # Check if differences correlate with positions
+        position_multiples = {}
+        for i in range(len(differences)):
+            position = sorted_keys[i]  # This is the 1-indexed position
+            if differences[i] % position == 0:
+                multiple = differences[i] // position
+                position_multiples[multiple] = position_multiples.get(multiple, 0) + 1
+        
+        if position_multiples:
+            print("\nDifferences that are exact multiples of their positions:")
+            for multiple, count in sorted(position_multiples.items(), key=lambda x: x[1], reverse=True):
+                print(f"  Multiple of {multiple}: {count} times ({count/len(differences)*100:.1f}%)")
+    
+    print("\nEnd of character-difference analysis")
+
+
+def analyze_differences_between_known_keys(analysis_range=10):
+    """
+    Analyze basic differences between consecutive private keys
+    """
+    if len(KNOWN_SOLUTIONS) < 2:
+        print("Need at least 2 known keys to analyze differences")
+        return
+    
+    print(f"\n--- Analyzing Differences Between Known Keys (first {analysis_range} transitions) ---")
+    
+    # Get the keys in sorted order (assuming keys start from 1)
+    sorted_keys = sorted(KNOWN_SOLUTIONS.keys())
+    
+    # Limit to the first 'analysis_range' transitions or all available
+    max_index = min(analysis_range + 1, len(sorted_keys))
+    
+    for i in range(1, max_index):
+        pos_prev = sorted_keys[i-1]
+        pos_curr = sorted_keys[i]
+        key_prev = KNOWN_SOLUTIONS[pos_prev]
+        key_current = KNOWN_SOLUTIONS[pos_curr]
+        position = pos_curr
+        
+        # Calculate basic differences
+        diff = (key_current - key_prev) % N
+        diff_neg = (key_prev - key_current) % N
+        diff_pct = (diff / key_prev) * 100 if key_prev != 0 else float('inf')
+        
+        # Get character at position-1 (assuming each position is influenced by previous character)
+        char = FULL_STRING[position-1] if position-1 < len(FULL_STRING) else None
+        char_info = f"'{char}' (ASCII {ord(char)})" if char else "N/A"
+        
+        print(f"\nPosition {position}, Character: {char_info}")
+        print(f"  Previous key: {key_prev}")
+        print(f"  Current key:  {key_current}")
+        print(f"  Difference:   {diff}")
+        print(f"  Neg. Diff:    {diff_neg}")
+        print(f"  % Change:     {diff_pct:.2f}%")
+        
+        # Check if difference correlates with character properties
+        if char and char in BASE58_ALPHABET:
+            char_idx = BASE58_ALPHABET.find(char)
+            # See if the difference is a multiple of the character index
+            if diff % (char_idx + 1) == 0:
+                factor = diff // (char_idx + 1)
+                print(f"  ✓ Difference is {factor} times the character index+1 ({char_idx+1})")
+            
+            # Check if the difference has any pattern related to ASCII value
+            ascii_val = ord(char)
+            if diff % ascii_val == 0:
+                factor = diff // ascii_val
+                print(f"  ✓ Difference is {factor} times the ASCII value ({ascii_val})")
+        
+        # Check for common mathematical operations
+        if key_current == (key_prev * 2) % N:
+            print(f"  ✓ Current key is exactly 2 times previous key")
+        elif key_current == (key_prev * 3) % N:
+            print(f"  ✓ Current key is exactly 3 times previous key")
+        elif key_current == (key_prev + key_prev) % N:
+            print(f"  ✓ Current key is previous key added to itself")
+        elif key_current == (key_prev + position) % N:
+            print(f"  ✓ Current key is previous key plus position ({position})")
+        elif key_current == (key_prev * position) % N:
+            print(f"  ✓ Current key is previous key multiplied by position ({position})")
+
+def check_transition_formulas(analysis_range=10):
+    """
+    Test different transition formulas to see what may be used to derive the next key
+    """
+    if len(KNOWN_SOLUTIONS) < 2:
+        print("Need at least 2 known keys to analyze transitions")
+        return
+    
+    print(f"\n--- Testing Transition Formulas (first {analysis_range} transitions) ---")
+    
+    # Get sorted keys
+    sorted_keys = sorted(KNOWN_SOLUTIONS.keys())
+    
+    formulas_tested = 0
+    formulas_matched = 0
+    
+    # Limit to the first 'analysis_range' transitions or all available
+    max_index = min(analysis_range + 1, len(sorted_keys))
+    
+    for i in range(1, max_index):
+        pos_prev = sorted_keys[i-1]
+        pos_curr = sorted_keys[i]
+        key_prev = KNOWN_SOLUTIONS[pos_prev]
+        key_current = KNOWN_SOLUTIONS[pos_curr]
+        position = pos_curr
+        
+        print(f"\nPosition {position}:")
+        
+        # Get the character at position-1
+        char = FULL_STRING[position-1] if position-1 < len(FULL_STRING) else None
+        if char:
+            char_idx = BASE58_ALPHABET.find(char) if char in BASE58_ALPHABET else -1
+            print(f"  Character: '{char}' (ASCII {ord(char)}, Base58 index: {char_idx})")
+        
+        # Test different formulas for deriving the next key
+        test_formulas = [
+            # Basic operations
+            (key_prev + 1) % N, "k + 1",
+            (key_prev + 2) % N, "k + 2",
+            (key_prev * 2) % N, "k * 2",
+            (key_prev * 3) % N, "k * 3",
+            (key_prev ** 2) % N, "k^2",
+            (key_prev + position) % N, "k + position",
+            (key_prev * position) % N, "k * position",
+            # Use ** only for small exponents to avoid slow calculations
+            (key_prev ** position) % N if position < 10 else None, "k ^ position",
+            
+            # Operations involving previous key and character
+            (key_prev + ord(char)) % N if char else None, "k + ASCII(char)",
+            (key_prev * ord(char)) % N if char else None, "k * ASCII(char)",
+            (key_prev ^ ord(char)) % N if char else None, "k XOR ASCII(char)",
+            
+            # Operations with Base58 index
+            (key_prev + char_idx) % N if char_idx != -1 else None, "k + Base58_idx",
+            (key_prev * char_idx) % N if char_idx != -1 else None, "k * Base58_idx",
+            (key_prev ^ char_idx) % N if char_idx != -1 else None, "k XOR Base58_idx",
+            
+            # Bit operations
+            ((key_prev << 1) | 1) % N, "k << 1 | 1",
+            ((key_prev << 2) | 3) % N, "k << 2 | 3",
+            ((key_prev << 1) + key_prev) % N, "k << 1 + k",
+            
+            # Combinations
+            (key_prev * position + char_idx) % N if char_idx != -1 else None, "k * position + Base58_idx",
+            (key_prev * position + ord(char)) % N if char else None, "k * position + ASCII(char)",
+            (key_prev * ord(char) + position) % N if char else None, "k * ASCII(char) + position",
+        ]
+        
+        # Test each formula
+        for j in range(0, len(test_formulas), 2):
+            result = test_formulas[j]
+            formula_desc = test_formulas[j+1]
+            
+            if result is None:
+                continue
+                
+            formulas_tested += 1
+            
+            # Check exact match
+            if result == key_current:
+                print(f"  ✓ MATCH! {formula_desc}")
+                formulas_matched += 1
+            
+            # Check close matches only for significant transitions
+            elif j < 10 and abs(result - key_current) / N < 0.01:
+                print(f"  ~ CLOSE: {formula_desc} = {result}")
+                print(f"    Difference: {result - key_current}")
+    
+    print(f"\nTested {formulas_tested} formulas across {min(analysis_range, len(KNOWN_SOLUTIONS)-1)} transitions")
+    print(f"Found {formulas_matched} exact matches")
+
+# Helper function for prime checking
+def is_prime(n):
+    """Check if a number is prime"""
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+def get_prime_factors(n):
+    """Get all prime factors of a number"""
+    factors = []
+    d = 2
+    while n > 1:
+        while n % d == 0:
+            factors.append(d)
+            n //= d
+        d += 1
+        if d*d > n:
+            if n > 1:
+                factors.append(n)
+            break
+    return factors
+
+def analyze_special_operations(analysis_range=10):
+    """Test for special operations that might be used in transitions"""
+    if len(KNOWN_SOLUTIONS) < 2:
+        print("Need at least 2 known keys to analyze transitions")
+        return
+    
+    print(f"\n--- Testing Special Operations (first {analysis_range} transitions) ---")
+    
+    # Get sorted keys
+    sorted_keys = sorted(KNOWN_SOLUTIONS.keys())
+    
+    # Limit to the first 'analysis_range' transitions or all available
+    max_index = min(analysis_range + 1, len(sorted_keys))
+    
+    for i in range(1, max_index):
+        pos_prev = sorted_keys[i-1]
+        pos_curr = sorted_keys[i]
+        key_prev = KNOWN_SOLUTIONS[pos_prev]
+        key_current = KNOWN_SOLUTIONS[pos_curr]
+        position = pos_curr
+        
+        # Get character at position-1
+        char = FULL_STRING[position-1] if position-1 < len(FULL_STRING) else None
+        if char is None:
+            continue
+        
+        char_idx = BASE58_ALPHABET.find(char) if char in BASE58_ALPHABET else -1
+        if char_idx == -1:
+            continue
+            
+        print(f"\nPosition {position}, Character '{char}' (index {char_idx}):")
+        
+        # Test for doubling at certain positions
+        if position in [2, 5, 10, 20, 50, 100]:
+            doubled = (key_prev * 2) % N
+            if doubled == key_current:
+                print(f"  ✓ MATCH! Key doubled at position {position}")
+            else:
+                print(f"  × Not doubled at position {position}")
+        
+        # Test for prime position special handling
+        if is_prime(position):
+            # Test multiplication by position
+            mul_by_pos = (key_prev * position) % N
+            if mul_by_pos == key_current:
+                print(f"  ✓ MATCH! Key multiplied by prime position {position}")
+            
+            # Test addition of prime factors
+            prime_sum = sum(get_prime_factors(position))
+            prime_result = (key_prev + prime_sum) % N
+            if prime_result == key_current:
+                print(f"  ✓ MATCH! Key + sum of prime factors ({prime_sum}) at position {position}")
+        
+        # Test for control character special handling (ASCII < 32)
+        if ord(char) < 32:
+            # Test bit rotation based on control char value
+            rotated_left = ((key_prev << ord(char)) | (key_prev >> (N.bit_length() - ord(char)))) % N
+            if rotated_left == key_current:
+                print(f"  ✓ MATCH! Key rotated left by {ord(char)} bits at control char position")
+
+def analyze_control_characters(analysis_range=10):
+    """
+    Analyzes transitions that occur near control characters (like BEL) to 
+    identify if they trigger pattern changes in the key generation sequence.
+    """
+    print(f"\n--- Control Character Analysis (first {analysis_range} control characters) ---")
+    
+    if len(KNOWN_SOLUTIONS) < 3:
+        print("Need at least 3 known keys to analyze control character influence")
+        return
+    
+    # Find positions of control characters
+    control_chars_pos = []
+    for i, char in enumerate(FULL_STRING):
+        if ord(char) < 32:  # ASCII control characters
+            control_chars_pos.append((i, char, ord(char)))
+    
+    print(f"Control characters found at positions: {control_chars_pos}")
+    
+    # Get sorted keys
+    sorted_keys = sorted(KNOWN_SOLUTIONS.keys())
+    
+    # Limit to the first 'analysis_range' control characters or all available
+    max_control_chars = min(analysis_range, len(control_chars_pos))
+    
+    # Analyze transitions around control characters
+    for idx in range(max_control_chars):
+        pos, char, char_ord = control_chars_pos[idx]
+        print(f"\nAnalyzing around control character at position {pos} (ASCII {char_ord}):")
+        
+        # Check if we have known solutions around this position
+        before_pos = pos
+        at_pos = pos + 1
+        after_pos = pos + 2
+        
+        # See if these positions are in our known solutions
+        if before_pos not in KNOWN_SOLUTIONS or at_pos not in KNOWN_SOLUTIONS or after_pos not in KNOWN_SOLUTIONS:
+            print(f"  Not enough known solutions around position {pos}")
+            continue
+        
+        # Get keys before, at, and after the control character
+        key_before = KNOWN_SOLUTIONS[before_pos]
+        key_at = KNOWN_SOLUTIONS[at_pos]
+        key_after = KNOWN_SOLUTIONS[after_pos]
+        
+        print(f"  Key before ({before_pos}): {key_before}")
+        print(f"  Key at control ({at_pos}): {key_at}")
+        print(f"  Key after ({after_pos}): {key_after}")
+        
+        # Calculate differences
+        diff_before = (key_at - key_before) % N
+        diff_after = (key_after - key_at) % N
+        
+        print(f"  Difference before: {diff_before}")
+        print(f"  Difference after: {diff_after}")
+        
+        # Look for pattern changes
+        if diff_before != diff_after:
+            print(f"  PATTERN CHANGE DETECTED: The difference changes around this control character")
+            
+            # Special BEL character analysis (ASCII 7)
+            if char_ord == 7:  # BEL character
+                # Check if doubled
+                if key_at == (key_before * 2) % N:
+                    print(f"  BEL character appears to DOUBLE the previous key")
+                
+                # Check if bit shifted
+                for shift in range(1, 8):
+                    if key_at == ((key_before << shift) % N):
+                        print(f"  BEL character appears to LEFT SHIFT the previous key by {shift} bits")
+                    if key_at == ((key_before >> shift) % N):
+                        print(f"  BEL character appears to RIGHT SHIFT the previous key by {shift} bits")
+                
+                # Check if XOR with position
+                if key_at == (key_before ^ at_pos) % N:
+                    print(f"  BEL character appears to XOR the previous key with its position ({at_pos})")
+            
+            # Test if operation changes based on control character value
+            if diff_after == (diff_before * char_ord) % N:
+                print(f"  Operation changes by factor of {char_ord} (ASCII value of control character)")
+        else:
+            print(f"  No pattern change detected around this control character")
+
+def analyze_transitions(analysis_range=10):
+    """
+    Main function to analyze transitions between known keys
+    """
+    print("\n===== Key Transition Analysis =====")
+    
+    # Call all analysis functions with the specified range
+    analyze_differences_between_known_keys(analysis_range)
+    check_transition_formulas(analysis_range)
+    analyze_special_operations(analysis_range)
+    analyze_control_characters(analysis_range)
+    
+    print("\n===== End of Analysis =====")
+
+# Update main function to include our new analysis
 if __name__ == "__main__":
     # Analyze the derivation of the first known address
-    # analyze_first_address_derivation()
-
-    # Analyze the transitions between known keys
-    analyze_known_transitions()
-
-    # Placeholder for generating the sequence (replace with actual logic later)
+    analyze_address_derivation()
+    
+    if len(KNOWN_SOLUTIONS) > 0:
+        # Use a smaller range (10) for more focused output
+        analysis_range = 10
+        analyze_transitions(analysis_range)
+        
+        # If at least 2 keys are known, analyze their relationships
+        if len(KNOWN_SOLUTIONS) >= 2:
+            analyze_diff_char_relationships(analysis_range)
+        
+    # Placeholder for generating the sequence (implement when pattern is found)
     # generate_keys_and_addresses("...", 160)
