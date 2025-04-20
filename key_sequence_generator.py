@@ -402,7 +402,7 @@ def generate_keys_and_addresses(start_key_hex, count):
             pub_bytes_comp = pubkey_point_to_bytes(pub_point, compressed=True)
 
             addr_unc = pubkey_to_address(pub_bytes_unc)
-            addr_comp = pubkey_to_address(pub_bytes_comp, version_byte=b' ') # Assume same version
+            addr_comp = pubkey_to_address(pub_bytes_comp, version_byte=b'\x00') # Assume same version
 
             print(f"  Address (Uncompressed Key): {addr_unc}")
             print(f"  Address (Compressed Key):   {addr_comp}")
