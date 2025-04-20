@@ -25,12 +25,78 @@ EXPECTED_ADDRESSES = [
     "1NfgFXmVkekdsXpjoHAfWzQMSw8JpME4LV" # 160
 ]
 
+# The full 159-character Base58 string - assumed to encode transformations
+FULL_STRING = "BC9EEPMMCLPDPEQBHGN4CLr5J28HLFPWBi4HE2CNE3NPFD2N5a7cAKMJHNgBPM9PK6zNCFJBDK5qG8H2JNG4zKrUD6RAbFQM58gCKEHGP28CNMAEyQ7K6C8s2G"
+
 # Known Solutions (Example - Replace with actual if available)
 KNOWN_SOLUTIONS = {
-    1: 1, # Private key for the first address (0x1)
-    # 2: 0x..., # Add known keys if found
-    # ...
-    # 68: 0x...,
+    1: 0x1, # Private key for the first address (0x1)
+    2: 0x3,
+    3: 0x7,
+    4: 0x8,
+    5: 0x15,
+    6: 0x31,
+    7: 0x4c,
+    8: 0xe0,
+    9: 0x1d3,
+    10: 0x202,
+    11: 0x483,
+    12: 0xa7b,
+    13: 0x1460,
+    14: 0x2930,
+    15: 0x68f3,
+    16: 0xc936,
+    17: 0x1764f,
+    18: 0x3080d,
+    19: 0x5749f,
+    20: 0xd2c55,
+    21: 0x1ba534,
+    22: 0x2de40f,
+    23: 0x556e52,
+    24: 0xdc2a04,
+    25: 0x1fa5ee5,
+    26: 0x340326e,
+    27: 0x6ac3875,
+    28: 0xd916ce8,
+    29: 0x17e2551e,
+    30: 0x3d94cd64,
+    31: 0x7d4fe747,
+    32: 0xb862a62e,
+    33: 0xa96ca8d8,
+    34: 0x4a65911d,
+    35: 0xaed21170,
+    36: 0x9de820a7c,
+    37: 0x1757756a93,
+    38: 0x22382facd0,
+    39: 0x4b5f8303e9,
+    40: 0xe9ae4933d6,
+    41: 0x153869acc5b,
+    42: 0x2a221c58d8f,
+    43: 0x6bd3b27c591,
+    44: 0xe02b35a358f,
+    45: 0x122fca143c05,
+    46: 0x2ec18388d544,
+    47: 0x6cd610b53cba,
+    48: 0xade6d7ce3b9b,
+    49: 0x174176b015f4d,
+    50: 0x22bd43c2e9354,
+    51: 0x75070a1a009d4,
+    52: 0xefae164cb9e3c,
+    53: 0x180788e47e326c,
+    54: 0x236fb6d5ad1f43,
+    55: 0x6abe1f9b67e114,
+    56: 0x9d18b63ac4ffdf,
+    57: 0x1eb25c90795d61c,
+    58: 0x2c675b852189a21,
+    59: 0x7496cbb87cab44f,
+    60: 0xfc07a1825367bbe,
+    61: 0x13c96a3742f64906,
+    62: 0x363d541eb611abee,
+    63: 0x7cce5efdaccf6808,
+    64: 0xf7051f27b09112d4,
+    65: 0xa838b13505b26867,
+    66: 0x2832ed74f2b5e3ee
+    # 68: 0x... found previously in term68_solution.txt needs adding
     # ...
     # 160: 0x...
 }
@@ -299,7 +365,7 @@ def pubkey_to_address(pubkey_bytes, version_byte=b'\x00'):
 # --- Analysis Functions ---
 
 def analyze_first_address_derivation():
-    """Analyze the derivation of the first address 1BgGZ... using private key 0x1."""
+    """Analyze the derivation of the first address 1BgG... using private key 0x1."""
     print("\n--- Analyzing Derivation of First Address ---")
     target_address = EXPECTED_ADDRESSES[0]
     private_key_int = KNOWN_SOLUTIONS.get(1)
@@ -402,7 +468,7 @@ def generate_keys_and_addresses(start_key_hex, count):
             pub_bytes_comp = pubkey_point_to_bytes(pub_point, compressed=True)
 
             addr_unc = pubkey_to_address(pub_bytes_unc)
-            addr_comp = pubkey_to_address(pub_bytes_comp, version_byte=b' ') # Assume same version
+            addr_comp = pubkey_to_address(pub_bytes_comp, version_byte=b'\x00') # Assume same version
 
             print(f"  Address (Uncompressed Key): {addr_unc}")
             print(f"  Address (Compressed Key):   {addr_comp}")
@@ -420,10 +486,54 @@ def generate_keys_and_addresses(start_key_hex, count):
         print("No known key for #1 to start generation.")
 
 
+def analyze_known_transitions():
+    """Analyzes transitions between known keys and correlates with FULL_STRING."""
+    print("\n--- Analyzing Known Key Transitions ---")
+    sorted_indices = sorted(KNOWN_SOLUTIONS.keys())
+
+    if len(FULL_STRING) < len(sorted_indices) - 1:
+        print(f"WARN: FULL_STRING length ({len(FULL_STRING)}) is less than required for transitions ({len(sorted_indices) - 1}).")
+
+    for i in range(len(sorted_indices) - 1):
+        idx_n = sorted_indices[i]
+        idx_n_plus_1 = sorted_indices[i+1]
+
+        # Ensure we are looking at consecutive keys (index n and n+1)
+        if idx_n_plus_1 != idx_n + 1:
+            print(f"Skipping non-consecutive transition from index {idx_n} to {idx_n_plus_1}")
+            continue
+
+        key_n = KNOWN_SOLUTIONS[idx_n]
+        key_n_plus_1 = KNOWN_SOLUTIONS[idx_n_plus_1]
+
+        diff = key_n_plus_1 - key_n
+        ratio = "N/A" if key_n == 0 else key_n_plus_1 / key_n
+
+        # Get corresponding char from FULL_STRING (0-indexed)
+        str_idx = idx_n - 1 # Transition from n to n+1 uses char at n-1
+        transition_char = "N/A"
+        if 0 <= str_idx < len(FULL_STRING):
+            transition_char = FULL_STRING[str_idx]
+        else:
+            print(f"WARN: Index {str_idx} out of bounds for FULL_STRING (len {len(FULL_STRING)}) for transition {idx_n}->{idx_n_plus_1}")
+
+
+        print(f"Transition {idx_n: >2} -> {idx_n_plus_1: >2} (Char: {transition_char}):")
+        print(f"  Key[{idx_n: >2}] = {hex(key_n)}")
+        print(f"  Key[{idx_n_plus_1: >2}] = {hex(key_n_plus_1)}")
+        print(f"  Difference: {hex(diff)} ({diff})")
+        print(f"  Ratio: {ratio:.4f}" if isinstance(ratio, (float, int)) else f"  Ratio: {ratio}")
+        # Add more analysis here (bitwise ops, simple rule checks) if needed
+        print("---")
+
+
 # --- Main Execution ---
 if __name__ == "__main__":
     # Analyze the derivation of the first known address
-    analyze_first_address_derivation()
+    # analyze_first_address_derivation()
+
+    # Analyze the transitions between known keys
+    analyze_known_transitions()
 
     # Placeholder for generating the sequence (replace with actual logic later)
     # generate_keys_and_addresses("...", 160)
