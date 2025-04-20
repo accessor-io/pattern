@@ -1,0 +1,161 @@
+from bitcoinlib.keys import Key
+
+class BitcoinAddressAnalyzer:
+    def __init__(self):
+        # Protocol markers for Bitcoin address analysis
+        self.ADDRESS_MARKERS = {
+            'BEGIN': ['1'],
+            'GATEWAY': ['2', '3'],
+            'TRANSFER': ['A', 'B'],
+            'ZERO': ['0'],
+            'MEMORY': ['M', 'N'],
+            'PROCESS': ['P', 'Q'],
+            'VERIFY': ['V', 'W'],
+            'SECURE': ['S', 'T'],
+            'NETWORK': ['N', 'O'],
+            'BUFFER': ['B', 'C'],
+            'CHAIN': ['C', 'D'],
+            'KEY': ['K', 'L']
+        }
+
+    def analyze_address_pair(self, private_key_hex, compressed_addr, uncompressed_addr):
+        """Analyze a pair of Bitcoin addresses (compressed and uncompressed)"""
+        key_int = int(private_key_hex, 16)
+        
+        # Get components from both addresses
+        compressed_components = self.get_address_components(compressed_addr)
+        uncompressed_components = self.get_address_components(uncompressed_addr)
+        
+        # Combine unique components and sort
+        all_components = sorted(list(set(compressed_components + uncompressed_components)))
+        
+        # Calculate product
+        product = len(all_components) * key_int
+        
+        # Get binary pattern
+        binary = self.get_binary_pattern(product)
+        
+        return {
+            'key_hex': private_key_hex,
+            'key_int': key_int,
+            'compressed_addr': compressed_addr,
+            'uncompressed_addr': uncompressed_addr,
+            'components': all_components,
+            'product': product,
+            'binary': binary
+        }
+
+    def get_address_components(self, address):
+        """Extract components from a Bitcoin address"""
+        components = []
+        i = 0
+        while i < len(address):
+            for component, markers in self.ADDRESS_MARKERS.items():
+                for marker in markers:
+                    if i < len(address) and address[i:].startswith(marker):
+                        if component not in components:
+                            components.append(component)
+                        break
+            i += 1
+        return sorted(components)  # Sort components for consistent output
+
+    def get_binary_pattern(self, number):
+        """Convert number to formatted binary pattern"""
+        binary = bin(number)[2:].zfill(4 * ((len(bin(number)) - 2) // 4 + 1))
+        return '|'.join([binary[i:i+4] for i in range(0, len(binary), 4)])
+
+    def format_output(self, index, analysis):
+        """Format the analysis output"""
+        return (
+            f"{index}. Key {analysis['key_hex']} ({analysis['key_int']}):\n"
+            f"   Components: {analysis['components']}\n"
+            f"   {len(analysis['components'])} × {analysis['key_int']} = {analysis['product']} "
+            f"(0x{hex(analysis['product'])[2:].upper()}) -> {analysis['binary']}"
+        )
+
+def main():
+    analyzer = BitcoinAddressAnalyzer()
+    
+    # Full list of key-address pairs
+    test_data = [
+        ("0000000000000000000000000000000000000000000000000000000000000001", 
+         "1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH", 
+         "1EHNa6Q4Jz2uvNExL497mE43ikXhwF6kZm"),
+        ("0000000000000000000000000000000000000000000000000000000000000003",
+         "1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb",
+         "1NZUP3JAc9JkmbvmoTv7nVgZGtyJjirKV1"),
+        ("0000000000000000000000000000000000000000000000000000000000000007", "19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA", "1BYbgHpSKQCtMrQfwN6b6n5S718EJkEJ41"),
+        ("0000000000000000000000000000000000000000000000000000000000000008", "1EhqbyUMvvs7BfL8goY6qcPbD6YKfPqb7e", "1JMcEcKXQ7xA7JLAMPsBmHz68bzugYtdrv"),
+        ("0000000000000000000000000000000000000000000000000000000000000015", "1E6NuFjCi27W5zoXg8TRdcSRq84zJeBW3k", "19vxtDbLMNasSpbAEZd7va5Qge6d2zYWbp"),
+        ("0000000000000000000000000000000000000000000000000000000000000031", "1PitScNLyp2HCygzadCh7FveTnfmpPbfp8", "18JVE1MSS7a2NEhtHJkxhwgvT4hLQYBw3w"),
+        ("000000000000000000000000000000000000000000000000000000000000004c", "1McVt1vMtCC7yn5b9wgX1833yCcLXzueeC", "1ESJVfV5UVERkWgVNfMjsLwJT88yMJHi8R"),
+        ("00000000000000000000000000000000000000000000000000000000000000e0", "1M92tSqNmQLYw33fuBvjmeadirh1ysMBxK", "1HFvQh3dVFPae3JaFjL5Mpua9Zbg9Y6FrK"),
+        ("00000000000000000000000000000000000000000000000000000000000001d3", "1CQFwcjw1dwhtkVWBttNLDtqL7ivBonGPV", "1CpudzGLUutTRM8wFu2BRQJNo11CzpMmHH"),
+        ("0000000000000000000000000000000000000000000000000000000000000202", "1LeBZP5QCwwgXRtmVUvTVrraqPUokyLHqe", "1ofbgenBbkCcmQyRK7XzHnhFHULAdNsBu"),
+        ("0000000000000000000000000000000000000000000000000000000000000483", "1PgQVLmst3Z314JrQn5TNiys8Hc38TcXJu", "1J3PLTqmUnBX3CMxxCap3pFgzPGgN5btKf"),
+        ("0000000000000000000000000000000000000000000000000000000000000a7b", "1DBaumZxUkM4qMQRt2LVWyFJq5kDtSZQot", "1AWHYKPNdiu33TFCve7k7QiKuWLpiyzBby"),
+        ("0000000000000000000000000000000000000000000000000000000000001460", "1Pie8JkxBT6MGPz9Nvi3fsPkr2D8q3GBc1", "1DUCXnzF7hA7fLDToQEJjQaZ2rCVHonNfF"),
+        ("0000000000000000000000000000000000000000000000000000000000002930", "1ErZWg5cFCe4Vw5BzgfzB74VNLaXEiEkhk", "1HpTkLHDZ8zcqwkeNWiFfHBouiZvP9gj4Z"),
+        ("00000000000000000000000000000000000000000000000000000000000068f3", "1QCbW9HWnwQWiQqVo5exhAnmfqKRrCRsvW", "17HsDU9MSyoYCrkDkPg2gz5ZwdX2kWLvBG"),
+        ("000000000000000000000000000000000000000000000000000000000000c936", "1BDyrQ6WoF8VN3g9SAS1iKZcPzFfnDVieY", "136MiPt1obHE3LaR95u4JcM9KgnxzSDa8m"),
+        ("000000000000000000000000000000000000000000000000000000000001764f", "1HduPEXZRdG26SUT5Yk83mLkPyjnZuJ7Bm", "1MWDkTaDJiSh6sXWeoiwU5ZHmosyqmMnEJ"),
+        ("000000000000000000000000000000000000000000000000000000000003080d", "1GnNTmTVLZiqQfLbAdp9DVdicEnB5GoERE", "159KUhWBS8qVZwbX7ZPzwQt6mNppZcN3WX"),
+        ("000000000000000000000000000000000000000000000000000000000005749f", "1NWmZRpHH4XSPwsW6dsS3nrNWfL1yrJj4w", "1BhBok4wXceco3cxfqA8e6hZUnjikD6QR4"),
+        ("00000000000000000000000000000000000000000000000000000000000d2c55", "1HsMJxNiV7TLxmoF6uJNkydxPFDog4NQum", "1GVzEdhzLtcNruKtgSVNEn31BpXsw6nVxN"),
+        ("00000000000000000000000000000000000000000000000000000000001ba534", "14oFNXucftsHiUMY8uctg6N487riuyXs4h", "1Pb3FYDSxspgNp5T2vhfmgunFy8huxdGHd"),
+        ("00000000000000000000000000000000000000000000000000000000002de40f", "1CfZWK1QTQE3eS9qn61dQjV89KDjZzfNcv", "14bmGt6czWuDF6usu7n9BawVtnFoZWNFbU"),
+        ("0000000000000000000000000000000000000000000000000000000000556e52", "1L2GM8eE7mJWLdo3HZS6su1832NX2txaac", "1FFobpT8KuuzVjH1559gWEs9sPUB8ktkXQ"),
+        ("0000000000000000000000000000000000000000000000000000000000dc2a04", "1rSnXMr63jdCuegJFuidJqWxUPV7AtUf7", "1L6iC6LGPdC7nQdAC93vyhPeYnsr9kw3be"),
+        ("0000000000000000000000000000000000000000000000000000000001fa5ee5", "15JhYXn6Mx3oF4Y7PcTAv2wVVAuCFFQNiP", "1Pner9KEtCMgsgU1nUE8vwbEY7nbcgN7F2"),
+        ("000000000000000000000000000000000000000000000000000000000340326e", "1JVnST957hGztonaWK6FougdtjxzHzRMMg", "1E7uHhHFBg2TUjXYcyFCwisLKENhRanmi5"),
+        ("0000000000000000000000000000000000000000000000000000000006ac3875", "128z5d7nN7PkCuX5qoA4Ys6pmxUYnEy86k", "1HHzjTYgVzkd1Ce4CMmN24HoSWNRRpWked"),
+        ("000000000000000000000000000000000000000000000000000000000d916ce8", "12jbtzBb54r97TCwW3G1gCFoumpckRAPdY", "1NFnpPkNao3bpSLV7DfF4UDJn7LSaWAMfo"),
+        ("0000000000000000000000000000000000000000000000000000000017e2551e", "19EEC52krRUK1RkUAEZmQdjTyHT7Gp1TYT", "13CipsQcrHEij2EMLeBzdVDXtVtBJZ2hyU"),
+        ("000000000000000000000000000000000000000000000000000000003d94cd64", "1LHtnpd8nU5VHEMkG2TMYYNUjjLc992bps", "1Eq6R6pjxDHjaaqUVh9GWrRQAFVFDgkZDf"),
+        ("000000000000000000000000000000000000000000000000000000007d4fe747", "1LhE6sCTuGae42Axu1L1ZB7L96yi9irEBE", "1NecxrsyXndGKU7HVAKgHFLnUHcdyNhTJS"),
+        ("00000000000000000000000000000000000000000000000000000000b862a62e", "1FRoHA9xewq7DjrZ1psWJVeTer8gHRqEvR", "1PEMmKGZWn4KBDhcUbnkETvjQkXNcaU1nf"),
+        ("00000000000000000000000000000000000000000000000000000001a96ca8d8", "187swFMjz1G54ycVU56B7jZFHFTNVQFDiu", "1HkuQxjFB2uxqKG2Fh4Vu3wZMkML5nZJs8"),
+        ("000000000000000000000000000000000000000000000000000000034a65911d", "1PWABE7oUahG2AFFQhhvViQovnCr4rEv7Q", "1F177t12B6VewoZrRh1g9ihMxhWM9e3qwQ"),
+        ("00000000000000000000000000000000000000000000000000000004aed21170", "1PWCx5fovoEaoBowAvF5k91m2Xat9bMgwb", "1EePaMnjNHn5wofq8pGmfbjsCznGQtzozG"),
+        ("00000000000000000000000000000000000000000000000000000009de820a7c", "1Be2UF9NLfyLFbtm3TCbmuocc9N1Kduci1", "13TtJ15zW6WhtX8bs4bBM8qviZ5oAjZeSN"),
+        ("0000000000000000000000000000000000000000000000000000001757756a93", "14iXhn8bGajVWegZHJ18vJLHhntcpL4dex", "1LLQnnUrNqubML25mRaDsZ7cw17SdzJHGm"),
+        ("00000000000000000000000000000000000000000000000000000022382facd0", "1HBtApAFA9B2YZw3G2YKSMCtb3dVnjuNe2", "1LuL14LNek7MRAe3diEYqFFnWvj36KY9RW"),
+        ("0000000000000000000000000000000000000000000000000000004b5f8303e9", "122AJhKLEfkFBaGAd84pLp1kfE7xK3GdT8", "1CrLzFeL6MUgSnuZ5XRsJvyTxLLVvupVwg"),
+        ("000000000000000000000000000000000000000000000000000000e9ae4933d6", "1EeAxcprB2PpCnr34VfZdFrkUWuxyiNEFv", "1F1T1cdb6xkwCua6m3TKgASXUEq2PsECBn"),
+        ("00000000000000000000000000000000000000000000000000000153869acc5b", "1L5sU9qvJeuwQUdt4y1eiLmquFxKjtHr3E", "12QuviBkoRvUdhK6LbXZuTNnjtSr6DmjD9"),
+        ("000000000000000000000000000000000000000000000000000002a221c58d8f", "1E32GPWgDyeyQac4aJxm9HVoLrrEYPnM4N", "1FgqZC8Esvag58WRcHje2kK41kPZDsxmRT"),
+        ("000000000000000000000000000000000000000000000000000006bd3b27c591", "1PiFuqGpG8yGM5v6rNHWS3TjsG6awgEGA1", "1EVVwYtSTrFJxn7A4V3V8thJkWZZdEsTw7"),
+        ("00000000000000000000000000000000000000000000000000000e02b35a358f", "1CkR2uS7LmFwc3T2jV8C1BhWb5mQaoxedF", "18NBbx2MZaRHV5Yj8iNWmvZuWM2DiYv2k"),
+        ("0000000000000000000000000000000000000000000000000000122fca143c05", "1NtiLNGegHWE3Mp9g2JPkgx6wUg4TW7bbk", "1D5PzK3eHjj5YxRenRGL7vxu1osU8wLU9x"),
+        ("00000000000000000000000000000000000000000000000000002ec18388d544", "1F3JRMWudBaj48EhwcHDdpeuy2jwACNxjP", "13uW1bkbb8f8VMoWzCHmaZZC6prsZHsURL"),
+        ("00000000000000000000000000000000000000000000000000006cd610b53cba", "1Pd8VvT49sHKsmqrQiP61RsVwmXCZ6ay7Z", "1PuvRWEk3U77CWLjBbYr12LY464KSxM4KB"),
+        ("0000000000000000000000000000000000000000000000000000ade6d7ce3b9b", "1DFYhaB2J9q1LLZJWKTnscPWos9VBqDHzv", "18V45BiL5oMNynbxMtMxVQRFrvbpwEHbts"),
+        ("000000000000000000000000000000000000000000000000000174176b015f4d", "12CiUhYVTTH33w3SPUBqcpMoqnApAV4WCF", "1HXocSh2faBTiw7PiLyDJhyrxeczrfDD52"),
+        ("00000000000000000000000000000000000000000000000000022bd43c2e9354", "1MEzite4ReNuWaL5Ds17ePKt2dCxWEofwk", "13ut6zXQDkLZTkpY7YSrbFz2LmnwZDNH3X"),
+        ("00000000000000000000000000000000000000000000000000075070a1a009d4", "1NpnQyZ7x24ud82b7WiRNvPm6N8bqGQnaS", "1BN9q73RSvjWUod3nnE6v86kZ6UzJCMYpJ"),
+        ("000000000000000000000000000000000000000000000000000efae164cb9e3c", "15z9c9sVpu6fwNiK7dMAFgMYSK4GqsGZim", "1MoNbCJQGXxSj3C6bhMsgh1pvmDzNHxU4i"),
+        ("00000000000000000000000000000000000000000000000000180788e47e326c", "15K1YKJMiJ4fpesTVUcByoz334rHmknxmT", "1233qjhAmJzZwcG6kLM7HtoiLLgU4kDat1"),
+        ("00000000000000000000000000000000000000000000000000236fb6d5ad1f43", "1KYUv7nSvXx4642TKeuC2SNdTk326uUpFy", "1K5AgZ4b9bYK8LbVjnNs8gcuE4RqP1SoK2"),
+        ("000000000000000000000000000000000000000000000000006abe1f9b67e114", "1LzhS3k3e9Ub8i2W1V8xQFdB8n2MYCHPCa", "1BLtKERadFYF3nCtTTGQht9dyGhK7U4zij"),
+        ("000000000000000000000000000000000000000000000000009d18b63ac4ffdf", "17aPYR1m6pVAacXg1PTDDU7XafvK1dxvhi", "19zJoVowy4L7xKSqrx5xKx2QR6MxdWFvNA"),
+        ("00000000000000000000000000000000000000000000000001eb25c90795d61c", "15c9mPGLku1HuW9LRtBf4jcHVpBUt8txKz", "1NkgimNMbkP8wSk2vs9e3MmnXh4sRjqdxa"),
+        ("00000000000000000000000000000000000000000000000002c675b852189a21", "1Dn8NF8qDyyfHMktmuoQLGyjWmZXgvosXf", "1QDirhYUSiwePD5u2U3cFVkuKA6atDm4ax"),
+        ("00000000000000000000000000000000000000000000000007496cbb87cab44f", "1HAX2n9Uruu9YDt4cqRgYcvtGvZj1rbUyt", "14MdEdZBCVSmDJZHFcGeq4sjvjV1dkzsKa"),
+        ("0000000000000000000000000000000000000000000000000fc07a1825367bbe", "1Kn5h2qpgw9mWE5jKpk8PP4qvvJ1QVy8su", "1J9zbDXhsiyeq7iY81XvfhD8czRn8tEHR2"),
+        ("00000000000000000000000000000000000000000000000013c96a3742f64906", "1AVJKwzs9AskraJLGHAZPiaZcrpDr1U6AB", "14WwBqjmvP2JXa6x7dY8o2cqT13XUSTzAv"),
+        ("000000000000000000000000000000000000000000000000363d541eb611abee", "1Me6EfpwZK5kQziBwBfvLiHjaPGxCKLoJi", "1Ek515gpTXGFvMTpVRiV37mzhgSGofqVNT"),
+        ("0000000000000000000000000000000000000000000000007cce5efdaccf6808", "1NpYjtLira16LfGbGwZJ5JbDPh3ai9bjf4", "1JTUng4hGuPqbbjbkuoyS6BnEXKii6aXV7"),
+        ("000000000000000000000000000000000000000000000000f7051f27b09112d4", "16jY7qLJnxb7CHZyqBP8qca9d51gAjyXQN", "14FGjb5rGFRqyQ5mH9fijFkoB57Pzh8fB6"),
+        ("000000000000000000000000000000000000000000000001a838b13505b26867", "18ZMbwUFLMHoZBbfpCjUJQTCMCbktshgpe", "1Pq6ZX74n7KvWpHtLX19rLnE37iMA4FTWC"),
+        ("0000000000000000000000000000000000000000000000349b84b6431a6c4ef1", "19YZECXj3SxEZMoUeJ1yiPsw8xANe7M7QR", "1BabkVNssmWVsts6fA1JRDrXdXjt8hDZmQ")
+    ]
+    
+    print("# Full Translation: Key -> Components -> Product -> Binary Pattern\n")
+    
+    for i, (key, compressed, uncompressed) in enumerate(test_data, 1):
+        analysis = analyzer.analyze_address_pair(key, compressed, uncompressed)
+        print(analyzer.format_output(i, analysis))
+        print()
+
+if __name__ == "__main__":
+    main()

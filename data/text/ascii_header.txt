@@ -1,0 +1,37 @@
+/*
+ * ┌─[SYSTEM]───────────────────────────────────────────────────────┐
+ * │ [!] Initializing Hexadecimal Analysis Interface v0x64          │
+ * └──────────────────────────────────────────────────────────────┘
+ * 
+ * [BOOT] Loading core components...
+ * ████████████████████████████████████████████████████  100%
+ * 
+ * ┌─[MAIN MENU]─────────────────────────────────────────────────┐
+ * │                                                             │
+ * │  [1] > ANALYZE COMMON HEX PATTERNS                         │
+ * │  [2] > DECODE SEQUENCES                                    │
+ * │  [3] > VIEW KNOWN SIGNATURES                              │
+ * │  [4] > ACCESS ARCHIVES                                     │
+ * │                                                             │
+ * └─────────────────────────────────────────────────────────────┘
+ * 
+ * ┌─[ACTIVE SIGNATURES]──────────────┬─[STATUS]─────────────────┐
+ * │ > 0xDEAD : MONITORING           │ [ACTIVE]                 │
+ * │ > 0xBEEF : ANALYZING           │ [ACTIVE]                 │
+ * │ > 0xCAFE : SCANNING            │ [ACTIVE]                 │
+ * │ > 0xBABE : PROCESSING          │ [ACTIVE]                 │
+ * └────────────────────────────────┴─────────────────────────┘
+ * 
+ * [SYS] Accessing encrypted memory banks...
+ * [SYS] Decoding digital streams...
+ * [SYS] Processing binary patterns...
+ * 
+ * ┌─[SYSTEM LOG]────────────────────────────────────────────────┐
+ * │ In the realm of binary dreams and digital streams,          │
+ * │ Four characters dance in hexadecimal schemes.               │
+ * │ From zero to F, sixteen symbols align,                      │
+ * │ Each quartet of digits, a story divine.                     │
+ * └─────────────────────────────────────────────────────────────┘
+ * 
+ * [INPUT] > _
+ */ 

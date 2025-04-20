@@ -1,0 +1,97 @@
+[33mf387575[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m Add gitignore file to exclude temporary files and generated logs
+[33mbd27430[m Add logs directory for search output storage
+[33ma34e716[m Add analysis notes tracking best candidates and search insights
+[33m9efc3ad[m Add benchmarking script to measure search performance
+[33m16a28d5[m Add comprehensive README explaining RowHammer search approach
+[33mb3bf9a6[m Add launcher script for continuous search with output redirection
+[33mac86348[m Add debug script for testing RowHammer search functions
+[33mb390a44[m Implement advanced RowHammer search based on Hammulator paper
+[33m087bc4d[m Implemented continuous search with parameter adaptation
+[33m2b4283d[m Fixed false positive match detection and improved result saving
+[33m80d814a[m Added manual RIPEMD160 implementation to solve hash function availability issue
+[33mb70b841[m Initial implementation of RowHammer-inspired search for Term 68
+[33m4e4559c[m Fixed bit rotation logic to prevent OverflowError by using string-based bit manipulation
+[33m0e9df9a[m Fixed run_enhanced_search.py to properly use continuous_adaptive_search function
+[33me28bda7[m Added run_enhanced_search.py script to use Bitcoin-specific candidate generation
+[33m72ceae9[m Added advanced Bitcoin-specific candidate generation module to improve starting candidates
+[33m7b25422[m Debug fixes: robust memory handling, type safety checks, high-quality candidate generation
+[33m2d5fad9[m Optimized generate_batch function to prevent integer overflow and improve robustness
+[33mc7a51ff[m Enhanced targeted position search with advanced bit manipulation strategies and improved learning algorithm
+[33me4900a7[m Enhanced address similarity metrics for better candidate evaluation
+[33m4c9f3c1[m Enhanced base candidate generation with diverse strategies
+[33m6344ca2[m Initial commit of Bitcoin key search algorithm
+[33mfd59a18[m Improve Term 68 calculator to handle both full and 68-bit truncated values
+[33maf7089f[m Add Term 68 exact calculator script using formula from gpt_version.py
+[33m22d2631[m Fix RIPEMD160 error handling and reduce bit region size limit to prevent overflow
+[33m0339eb3[m Fix overflow error in bit manipulation and improve RIPEMD160 error handling
+[33mb4f5ccf[m Fix tuple unpacking in targeted_position_search function
+[33mfb3d027[m Add NumPy import for targeted_position_search function
+[33m669a57b[m Update search to target 80% similarity
+[33m25621e7[m Add perfect_match_search strategy to focus on candidates with >40% similarity
+[33m622e409[m Enhance search strategies with super_targeted_search and prefix_targeted_search for finding 80%+ similarity matches
+[33mb594c50[m Integrate quadrant-based search strategy for term 68 target address using visual patterns
+[33m4a40135[m Add hardcoded RIPEMD-160 implementation for Bitcoin address generation
+[33ma1b316c[m Fix TypeErrors and duration argument in 68_continuous_adaptive_search.py
+[33m362e26d[m Add missing search functions and fix NameError in 68_continuous_adaptive_search.py
+[33me6591a8[m Integrate quadrant-based search strategy for term 68 target address using visual patterns
+[33m94e9c25[m Enhance search with advanced pattern analysis and targeted bit manipulation to increase similarity score
+[33m2f3822f[m Create specialized search script focusing exclusively on finding the exact target address
+[33m1c0293c[m Add persistent display of highest similarity score in terminal output
+[33m7abc7f7[m Enhance search to specifically target 0.3 similarity with specialized strategies
+[33m207a11f[m Enhance search to specifically target similarity scores of 0.2 and higher
+[33m812576c[m Enhance search to prioritize strategies that improve similarity scores
+[33m5e097ce[m Fix learning-based search with timeout protection to prevent hanging
+[33m64eb069[m Add continuous adaptive search script with self-adjusting parameters and comprehensive address logging
+[33mea29c35[m Add comprehensive search summary and analysis
+[33mc64e727[m Add combined parallel search script to execute all strategies simultaneously
+[33mc79cf13[m Add comprehensive README documentation for the Bitcoin key search project
+[33m8eaa21a[m Add specialized bitwise operations search script
+[33m01d89ff[m Add mathematical pattern search script focusing on mathematical relationships
+[33m8a6902a[m Add adaptive search script with advanced techniques
+[33m4638155[m Add script to test exact predicted 68-bit candidates
+[33ma46b479[m Update search ranges based on prediction analysis
+[33mae49332[m Update extract script to handle large integers
+[33mcb69e76[m Add focused search strategies for 68th term with optimized patterns and constraints
+[33m3c79983[m Create comprehensive summary of Bitcoin transaction data analysis findings
+[33med0ef7c[m Create specialized private key decoder script to analyze potential Bitcoin keys
+[33m8d85728[m Create enhanced transaction analysis script with multiple cryptographic techniques
+[33m1fb217a[m Enhance hex string fix script to try multiple combinations
+[33m9d77adc[m Update hex string fix script to force 128-character conversion
+[33m7aaefdc[m Add specialized script for converting hex string to 128 characters
+[33mbe674bb[m Add multi-layer decryption functionality and summary notes
+[33mdbec06f[m Completely rework hex string completion and transaction data extraction
+[33mf0e9ee2[m Improve hex string handling and transaction data extraction
+[33m85edf36[m Fix entropy analysis function and add hex string completion utilities
+[33m74054ff[m Add Bitcoin transaction analyzer script
+[33m9c6f7de[m Enhance Bitcoin address generator with smarter search strategies
+[33mfe83a66[m refactor: Remove all known values beyond initial 8 values to avoid 'cheating'
+[33m0a87762[m Add robust hex validation and error handling for all indexes
+[33m6824670[m Add analyze_ascii.py to analyze ASCII outputs from ascii_keys.txt
+[33m93d4212[m Add write_ascii.py script to write ASCII of significant key bits to a file
+[33m8f4b016[m Add function convert_significant_bits_to_ascii to convert significant key bits into ascii
+[33md72be7f[m Add tx_chart.md: Mermaid diagram charting JSON file 187swFMjz1G54ycVU56B7jZFHFTNVQFDiu.json transactions
+[33m426ffd8[m Update tx_visual.md: added complete transaction details including output index, output value, and spending received value
+[33m840faa9[m Create tx_visual.md: Added Mermaid diagram to visualize transaction relationship from JSON data
+[33m3ca9c13[m fix: Correct term 66 implementation with special bit handling
+[33mf4159ef[m fix: Add missing SequenceGenerator class with grid tracking
+[33m5ebc921[m fix: Implement robust process management and error handling in brute force
+[33m8b25c05[m Update ecdsa to latest version and pin dependencies
+[33mdd6ed3d[m Add initial sequence generator implementation
+[33mb90bb9e[m Fix term generation: use geometric progression interpolation for terms 67-69 to match perfect progression between index 65 and 70.
+[33mdb3bdd9[m Add script to calculate and print hexadecimal values from index 65 to 160
+[33mc7478c9[m Implement custom RipeMD-160 logic to replace library dependency
+[33m0b95016[m Final validation fixes and test data correction
+[33mb2e6a8c[m Fix key padding and validation logic
+[33m6988637[m Add comprehensive test suite for puzzle solutions
+[33mb7ae629[m Add solution cache with historical values from analysis logs
+[33mc4f44a2[m Fix import structure and validation logic
+[33m6204264[m Organize all analysis-related files into a structured directory
+[33mba21577[m Organize external libraries and update dependencies
+[33mdf476b2[m Organize tests into specific testing environments
+[33m97f3a68[m Refine source module structure
+[33ma1efaee[m Organize configuration files by environment
+[33m5e9da94[m Add automated test runner script
+[33mee238a5[m Setup specific test folders for Bitcoin and Audio Processing with v3.0 and v4.0
+[33m4bb04c8[m Add version-aware test runner
+[33m3440050[m Create versioned test directory structure
+[33m6da0cf0[m Add com

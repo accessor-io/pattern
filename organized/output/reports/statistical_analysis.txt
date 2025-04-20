@@ -1,0 +1,40 @@
+Statistical Analysis for All Strings
+================================================================================
+
+
+Statistical Analysis for String 1:
+================================================================================
+Chi-Square Test: 1.8906
+
+Autocorrelation:
+Shift 1: 0.0118
+Shift 2: -0.0157
+Shift 3: -0.0119
+Shift 4: -0.0079
+Shift 5: 0.0120
+Shift 6: 0.0640
+Shift 7: 0.1245
+Shift 8: 0.1048
+
+Byte Frequency:
+0xb8: 1
+0xe9: 1
+0xf0: 1
+0xa1: 1
+0xd2: 1
+0xc3: 1
+0x45: 4
+0x67: 4
+0x89: 4
+0x01: 3
+0x23: 4
+0xbc: 2
+0xde: 2
+0xf1: 2
+0x0a: 1
+
+Distribution Metrics:
+mean: 122.3125
+median: 120.0000
+stdev: 80.7299
+

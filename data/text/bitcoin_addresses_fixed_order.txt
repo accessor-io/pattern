@@ -1,0 +1,24 @@
+
+Combination #1
+12-Word Seed: pumpkin light bench art phone sign beach leaf device laptop key water
+Private Key (WIF): 5KdLPY2DMq25Y3D9f1ka8QKekrUFEwrvJagfVayuqQTLtY3QRH6
+Bitcoin Address: 1HQn9xnHQyfi3NuHYSVzc9fc6SMwzR9a1h
+--------------------------------------------------------------------------------
+
+Combination #2
+12-Word Seed: pumpkin light bench art phone sign beach leaf device laptop key smart
+Private Key (WIF): 5KGBAQAMx8WPLq2HngtjDbfK2H2pJbMptiNofrdpEhgsZuonGqp
+Bitcoin Address: 19L7vfFg85bsAbitMKq7dqQWwaTFXPpb1L
+--------------------------------------------------------------------------------
+
+Combination #3
+12-Word Seed: pumpkin light bench artwork phone sign beach leaf device laptop key water
+Private Key (WIF): 5KkYVGWDN75QpGZV5vr2KuXn8GukNzrtoywALmQLaFtJWsqbq6U
+Bitcoin Address: 1Nw5WAuUp4YgzgLec1SQoa5XfrQJgnmDSn
+--------------------------------------------------------------------------------
+
+Combination #4
+12-Word Seed: pumpkin light bench artwork phone sign beach leaf device laptop key smart
+Private Key (WIF): 5HwHFV1X4F8cG77gxnzuZTrpsZBy3pMSGU2bAnnJJbB7fE1h6TC
+Bitcoin Address: 16bbtdUFrgBHptU9ibaMcsZ8XKRotj7AHC
+--------------------------------------------------------------------------------

@@ -1,0 +1,767 @@
+commit 0a877622fc739e99c80771a85fef0d3d0dbbd439
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Feb 19 14:22:10 2025 -0800
+
+    Add robust hex validation and error handling for all indexes
+
+commit 6824670b5c9351c58dc5f8afbf71a42d716bcf04
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Feb 19 12:54:38 2025 -0800
+
+    Add analyze_ascii.py to analyze ASCII outputs from ascii_keys.txt
+
+commit 93d42129e505bf69791ea4771f05101a09f4d318
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Feb 19 12:52:09 2025 -0800
+
+    Add write_ascii.py script to write ASCII of significant key bits to a file
+
+commit 8f4b016fb932011304053feef953ca93479f4641
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Feb 19 12:46:11 2025 -0800
+
+    Add function convert_significant_bits_to_ascii to convert significant key bits into ascii
+
+commit d72be7fe2897cc156b98905c8805e085ae401ddf
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Feb 19 11:58:12 2025 -0800
+
+    Add tx_chart.md: Mermaid diagram charting JSON file 187swFMjz1G54ycVU56B7jZFHFTNVQFDiu.json transactions
+
+commit 426ffd80cef4862ce5b536d22c2f95bb5c7d31f4
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Feb 19 11:56:22 2025 -0800
+
+    Update tx_visual.md: added complete transaction details including output index, output value, and spending received value
+
+commit 840faa96aff86f68ed644760ecf4c67500df613d
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Feb 19 11:54:07 2025 -0800
+
+    Create tx_visual.md: Added Mermaid diagram to visualize transaction relationship from JSON data
+
+commit 3ca9c13bf2495b9f17bcc9b92174a34d5e1e9c96
+Author: accessor-io <acc@accessor.io>
+Date:   Tue Feb 18 10:07:40 2025 -0800
+
+    fix: Correct term 66 implementation with special bit handling
+
+commit f4159ef6c42b3e351a476a2bd6576c87ef185598
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 17 16:58:42 2025 -0800
+
+    fix: Add missing SequenceGenerator class with grid tracking
+
+commit 5ebc921859d3f448856248e12cddf94ccafc9f54
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 17 15:55:14 2025 -0800
+
+    fix: Implement robust process management and error handling in brute force
+
+commit 8b25c054b43f3ea2410bd1b0818ff66f37f7bddb
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 17 09:27:15 2025 -0800
+
+    Update ecdsa to latest version and pin dependencies
+
+commit dd6ed3d913130809dc71c4f26df9295fb3d57d01
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 17 09:27:11 2025 -0800
+
+    Add initial sequence generator implementation
+
+commit b90bb9e93275f52f946cc0117d5f478a40dd4d75
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 17 07:30:23 2025 -0800
+
+    Fix term generation: use geometric progression interpolation for terms 67-69 to match perfect progression between index 65 and 70.
+
+commit db3bdd920a7493c3275daaae453c35e3efe70895
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 17 07:15:49 2025 -0800
+
+    Add script to calculate and print hexadecimal values from index 65 to 160
+
+commit c7478c92e9747ff8eda403faf6de75d2b8cbeb34
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 15 10:02:39 2025 -0800
+
+    Implement custom RipeMD-160 logic to replace library dependency
+
+commit 0b95016ec6b34de7c3f25d39f976c475673ddeab
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 15 05:36:49 2025 -0800
+
+    Final validation fixes and test data correction
+
+commit b2e6a8c22f85cdc0004947385fe7316055bbf0b3
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 15 05:26:15 2025 -0800
+
+    Fix key padding and validation logic
+
+commit 6988637fcbd9a1dbe511f85e655a102eee659595
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 15 05:26:06 2025 -0800
+
+    Add comprehensive test suite for puzzle solutions
+
+commit b7ae629c60e7e42ccfecc4907aff31b1e30a46ff
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 15 05:25:52 2025 -0800
+
+    Add solution cache with historical values from analysis logs
+
+commit c4f44a2e903b02d9a9673c00abceb3d95e5089a2
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 15 05:13:17 2025 -0800
+
+    Fix import structure and validation logic
+
+commit 62042644cc9fe13ac1d03ae3fed2c9a861936619
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:46:48 2025 -0800
+
+    Organize all analysis-related files into a structured directory
+
+commit ba21577edda2a8d1087e398afe854097a751a71b
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:41:33 2025 -0800
+
+    Organize external libraries and update dependencies
+
+commit df476b2f64c4c25886a01f55f94b4e684e037dc9
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:41:15 2025 -0800
+
+    Organize tests into specific testing environments
+
+commit 97f3a684f41ea14cc20969e732d81b31f667e615
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:40:42 2025 -0800
+
+    Refine source module structure
+
+commit a1efaee4d318aa3b9b4c22fea6c2c1c777e7b344
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:40:39 2025 -0800
+
+    Organize configuration files by environment
+
+commit 5e9da94c666ec7e19e56f33dc260b3ba4b662c1b
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:39:48 2025 -0800
+
+    Add automated test runner script
+
+commit ee238a598f8aee73364c978880e15c84b6c5bf7d
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:39:17 2025 -0800
+
+    Setup specific test folders for Bitcoin and Audio Processing with v3.0 and v4.0
+
+commit 4bb04c8e82ca62c5f2c5cfbcab0f12254604011a
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:38:23 2025 -0800
+
+    Add version-aware test runner
+
+commit 34400508fc772bf3bed247780bf3ef96e82e43ae
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:38:23 2025 -0800
+
+    Create versioned test directory structure
+
+commit 6da0cf019349f6b1e5fd355df399c2020a583dd4
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 20:35:47 2025 -0800
+
+    Add comprehensive .gitignore
+
+commit e60b1a97410a8469a7640679b40f204c5855dd0f
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 14:46:33 2025 -0800
+
+    Add complete known solutions up to term66
+
+commit 5514694c51b1fc3e59d19be45e6fed818b5a4efd
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 14:36:48 2025 -0800
+
+    Add pattern directory integration and LSB matching from log file
+
+commit 9af2fa6735ff993849b3fe4f5d54e45ec50a124e
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Feb 14 08:34:02 2025 -0800
+
+    Fix 67_hash.py: Add shebang, fix imports, and improve validation
+
+commit 3906ca53be8b5112b17a57c753f64bc028004470
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 15:29:30 2025 -0800
+
+    refactor: Update find_solution_brute_force to correctly handle Bitcoin address validation for indices 67-160
+
+commit af59b9246a62789417aeecae9a529c7acdbc5a9b
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 15:21:07 2025 -0800
+
+    fix: Update masking logic to keep only rightmost N bits where N is the index number
+
+commit fceb55e5f75cc23e3b535cd73cc4463f0f716842
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 15:17:39 2025 -0800
+
+    feat: Add detailed logging of validation process including Bitcoin addresses
+
+commit 18f6962312bb027c2f44a1acaf39fe892be1b77e
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 15:13:26 2025 -0800
+
+    refactor: Update validation process for indices 67-160 to mask significant bits and validate Bitcoin addresses
+
+commit 991a76d39423932f80aad51d2109e005649add8f
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 15:11:15 2025 -0800
+
+    refactor: Optimize brute force to only test offset-derived values
+
+commit 3f0bed2522751ed8b5e4be0732de524dbcc14b3e
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 15:08:31 2025 -0800
+
+    feat: Add addresses.txt with all 160 Bitcoin addresses
+
+commit dc87fd40a4e9a6ea41796bcef04c3975ae6ee49b
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 15:07:28 2025 -0800
+
+    refactor: Load Bitcoin addresses from addresses.txt instead of hardcoding them
+
+commit 2d220444b184b719bd92a5115401946c79b0b491
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 14:42:20 2025 -0800
+
+    feat: Add comprehensive puzzle solutions analysis and summary
+
+commit 7b4c6adacd60f1512dbf67cf8f5e1217cf6ceb9f
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 14:13:21 2025 -0800
+
+    feat: Improve validation logic for known and unknown solutions
+
+commit 8ca0ab505887291455b25c72f46d010d488fdf18
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 14:10:47 2025 -0800
+
+    fix: Update validate_value method signature and calls
+
+commit a195d1ac839f676b3ca09b827837c60d4d6cb30d
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 14:09:54 2025 -0800
+
+    fix: Handle large numbers better and use reasonable constant ranges for higher indices
+
+commit 718dfc8b6062f45f192306344fc779bbcf6ff8d4
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 14:09:06 2025 -0800
+
+    feat: Add Bitcoin address validation
+
+commit a61e237b3d4e5b4331447e6d87c116b5370b82fb
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 13:58:09 2025 -0800
+
+    feat: Add validation of known solutions and use reasonable constant ranges
+
+commit d9ebdde8d500ca615d54196f1f42922890c86281
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 13:55:29 2025 -0800
+
+    feat: Add known solutions up to index 66
+
+commit e5f224af509910d0cc7a089a930f78bf2b09274e
+Author: accessor-io <acc@accessor.io>
+Date:   Mon Feb 10 13:40:07 2025 -0800
+
+    Initial commit with puzzle solver implementation
+
+commit aa3f84558a257fa032c9bd2f660148459fb07d0f
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 18:10:41 2025 -0800
+
+    fix: Correct transaction input parsing attribute names
+
+commit bd9b4474146d233458111400a94c332a04da452e
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 17:52:06 2025 -0800
+
+    feat: Implement complete Bitcoin Puzzle 67 solution with real data
+
+commit a6f5d9d5c58605911158ce2b3976e2623b34f6c6
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 17:29:46 2025 -0800
+
+    feat: Add transaction validation and hex format checks
+
+commit 236707c03ad43f8ac386efc0b4a9c48f499baf4f
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 16:36:11 2025 -0800
+
+    fix: Implement universal OP_RETURN parser with transaction validation
+
+commit 9aae0d2c097fa3d3b2a3cd5a817b5de507f4a5a0
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 16:33:32 2025 -0800
+
+    fix: Implement atomic OP_RETURN parser with nested pattern handling
+
+commit 54286a4071a611c8ba092cae3520f3fb32e84dd4
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 16:31:04 2025 -0800
+
+    fix: Implement nuclear OP_RETURN parser for malformed transactions
+
+commit 5b7b347573e26f20300fd8d6f2773e53ac9b143d
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 16:16:56 2025 -0800
+
+    fix: Add robust script parsing with proper type checking
+
+commit 915823fa3154ec04fd7369ea1211a074f38f1fb0
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 16:15:25 2025 -0800
+
+    fix: Improve script parsing for empty and OP_RETURN outputs
+
+commit 4480aa210a5b12d85f14c5ddb4ee6851f16f9a81
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 16:08:32 2025 -0800
+
+    fix: Add version-agnostic script parsing
+
+commit 3a42369e66edc09805b159264ce5eee498502246
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 16:06:25 2025 -0800
+
+    fix: Correct script parsing method and transaction modification logic
+
+commit 6adef09382cfb6df65dd0def97450ff550f98bab
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 16:01:16 2025 -0800
+
+    feat: Generalize puzzle solver for indices 1-160 with proper script parsing
+
+commit e657d559d5ffbe1fba1149f874628861affa20aa
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 15:54:22 2025 -0800
+
+    fix: Add OP_RETURN validation and error handling
+
+commit 4162fb77c9c9cc841a02298939a4155bff098391
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 15:51:12 2025 -0800
+
+    fix: Add TXID chunk validation in puzzle solver
+
+commit baa2be2111198ee54cea0d3a8bd35b9df695a953
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 15:32:21 2025 -0800
+
+    fix: Update all references from 'vout' to 'txout_index' for consistency
+
+commit c98bc9841f5f9cdcd23089dc85655bfe76bc3e10
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 15:31:35 2025 -0800
+
+    fix: Update transaction parsing to use correct attribute names
+
+commit ea0ff6a0ebc9742366b5a85088143a152ca5f137
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Feb 9 15:24:11 2025 -0800
+
+    fix: Update imports to use bitcoinutils.constants instead of direct constants import
+
+commit 4a64ce6b10d474f59c59e638965c0bde97bab684
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Feb 5 05:01:47 2025 -0800
+
+    fix: Format imports in prev_tx_algo.min.py to resolve syntax error
+
+commit 9dd388a13b8accf972385297e9f04a70c9130185
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 1 11:22:31 2025 -0800
+
+    Added enhanced transformation functions incorporating all pattern insights
+
+commit a771a0fb6c646f990a00a74e5bf130e4eb330d47
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 1 11:20:14 2025 -0800
+
+    Updated bit distribution to ensure leading zeros and proper bit placement
+
+commit 5678e659b3c5c6732c6838e78e06153487967d05
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 1 11:14:28 2025 -0800
+
+    Enhanced sequence generator with improved entropy matching and bit distribution
+
+commit 754aad9e5671475710cc0a63e2deb40570adadc1
+Author: accessor-io <acc@accessor.io>
+Date:   Sat Feb 1 11:12:21 2025 -0800
+
+    Initial commit: Enhanced sequence generator incorporating all data insights
+
+commit c15f07da7180fa151e2f2bfee60fe4c9b9a8afcd
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 08:04:53 2025 -0800
+
+    feat: Add diversity mechanisms to prevent address repetition
+
+commit f9f0b2a534a2e186d9ab8f1aa12c0ee12817c52a
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 08:02:06 2025 -0800
+
+    fix: Handle cases with no valid candidates in evolution process
+
+commit bf3cf844ec86cd1fd392746e128693a16a5334f7
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 08:01:02 2025 -0800
+
+    feat: Add comprehensive private key logging and storage
+
+commit ea2491782ab6dfab8d9b1b8fbe79c8838ada7b3c
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:57:25 2025 -0800
+
+    fix: Ensure all predictions maintain exactly 67 bits
+
+commit f2960d5bdd9c7daea3b28a9848e4179b80f9bc01
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:56:30 2025 -0800
+
+    feat: Implement continuous evolutionary approach for puzzle solving
+
+commit c041d62aa475b15883249863ca783a233f4564b1
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:55:11 2025 -0800
+
+    fix: Ensure 64-character hex padding for public key
+
+commit d78bc0feda534e8047ccc9a4921604453dcfde86
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:53:57 2025 -0800
+
+    fix: Improve public key hex formatting
+
+commit cde44203c6f661bc1f048b0d8c0ff266a168ea7b
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:53:21 2025 -0800
+
+    feat: Add Bitcoin address generation and validation
+
+commit bc2e6965c1b99af47fff42a9f3d8b30aec822398
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:49:59 2025 -0800
+
+    fix: Ensure exactly 67 bits in all predictions
+
+commit 5ff2b31d6eb3db6dfc1436bfd06da6edf21c52db
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:36:35 2025 -0800
+
+    fix: Improve hex string handling for 67-bit values
+
+commit 5b1779e9a6eea1353537cd99c2404586562ec215
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:36:05 2025 -0800
+
+    feat: Update solver for 67-bit key prediction
+
+commit a6bc56b625f31d5ad4f802ea9acefb99f1303cc6
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:34:17 2025 -0800
+
+    fix: Improve hex string handling in crypto analysis
+
+commit 8e65fec2f5ea96503bd61431ebc5e3d55f654d9a
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:33:46 2025 -0800
+
+    feat: Add cryptographic and polynomial pattern analysis
+
+commit 14ce2202e76543686d5ba4bd186b4d4fbded1638
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:31:52 2025 -0800
+
+    feat: Add value range analysis and adjust validation thresholds
+
+commit 4f1949b754cef734277e135758bdeddd269a202a
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:31:06 2025 -0800
+
+    feat: Add dynamic weights and scoring-based validation
+
+commit 6333b9ecce2b590eabeb4b0964bffa9d6ffe2eea
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:30:17 2025 -0800
+
+    fix: Improve bit pattern analysis with better indexing and error handling
+
+commit 39b7951be42150225931dae49b18a7e5d3d9dff8
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:29:53 2025 -0800
+
+    fix: Correct bit pattern analysis indexing
+
+commit 2269163c55946e4b077aed1d631d01f09f31eac0
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:29:28 2025 -0800
+
+    feat: Add bit pattern analysis and improved validation
+
+commit 00ddb2ae7dec85a54524edd1119e6d56d7b923be
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:28:01 2025 -0800
+
+    feat: Add scaling and improved validation for 32-bit predictions
+
+commit 8461e41770ba126d44a843ca044ec7e02a2ff24f
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:27:02 2025 -0800
+
+    fix: Improve numerical stability and FFT calculations
+
+commit abd05a9048d36c65241317163ecd2e00a3c56ae0
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:24:27 2025 -0800
+
+    chore: Add numpy and pathlib dependencies for puzzle solver
+
+commit ca1d9157fe33f267e1e2bc32c418425cc84131d5
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:24:13 2025 -0800
+
+    feat: Implement comprehensive puzzle solver for index 67 with pattern analysis
+
+commit dab8d6af0ff3dad1a376ef6809d763dab610415d
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:21:24 2025 -0800
+
+    Focus on finding 67-bit keys with improved progress display
+
+commit 59ee1f5889da0b7f9e3a4fceeeb35ceaf44dd4ae
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:19:56 2025 -0800
+
+    Simplify display and improve output visibility
+
+commit e42262b2a1adb09ce468bfdee31d269b7343eb69
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:18:23 2025 -0800
+
+    Implement Hash160 matching for puzzle 67
+
+commit 9e0fabf9fa09354b830a90c3edb0010d0ee23905
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:15:10 2025 -0800
+
+    Switch to leftmost bit pattern matching
+
+commit 44549f8d3faff8b9be3ee8f6c029664c9f7a58c2
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:14:20 2025 -0800
+
+    Implement static multi-line display with ANSI controls
+
+commit f813396765fe4be5ef167b53ea84462851ce793a
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:12:59 2025 -0800
+
+    Switch to rightmost bit pattern matching
+
+commit 3f53e68c4183c4baa8ad39c354bc247e375de678
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:09:07 2025 -0800
+
+    Optimize display with static counters and real-time stats
+
+commit a083353602827a69d6aef3c2d547bdab4186c698
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:06:31 2025 -0800
+
+    Optimize bit counting with masks and improve debugging output
+
+commit 660b056b1be613fcec460fed7a20e36c9d00db50
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:05:07 2025 -0800
+
+    Update solver to focus on specific bit positions for each puzzle
+
+commit b643a64e7c08923a7dbd1c2d57c66f3309e0bdbd
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 07:03:10 2025 -0800
+
+    Simplify to vanity-style bit pattern generation
+
+commit 5f380b56a6c106606bf96cce9c5d9f3bc1476dfa
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:59:37 2025 -0800
+
+    Add test suite for position-based bit masking
+
+commit 29b9834a7902760683c5185ebc9f667eab0fc3e3
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:58:53 2025 -0800
+
+    Fix temporal validation and main execution flow
+
+commit 197b8423181dbf310695b5e27cc7dd6563fbe0f7
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:57:53 2025 -0800
+
+    Implement position-based bit masking for 64-character sequences
+
+commit ba4bd2bc3a6479d9710bb15c404f9a6ecda4ed4d
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:56:41 2025 -0800
+
+    Improve pattern matching with flexible bit count validation and enhanced candidate generation
+
+commit 29b5ea93bc50d8c360612deae93ff45a08b231e0
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:53:12 2025 -0800
+
+    Add comprehensive logging and statistics tracking
+
+commit bb54dcc21f959de884d37ddef3ca1b8dfffc727f
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:50:25 2025 -0800
+
+    Fix initialization order and add default patterns
+
+commit 5dabe66235cc4520c849893fc3a2d67786ffae9c
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:49:28 2025 -0800
+
+    Add README.md with project documentation
+
+commit 0a3f6442f18b98f795f9d050529ce13312142a37
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:48:34 2025 -0800
+
+    Add requirements.txt with necessary dependencies
+
+commit d253cf77e62f998d8a8033dc20905cea43ab61b5
+Author: accessor-io <acc@accessor.io>
+Date:   Fri Jan 31 06:47:47 2025 -0800
+
+    Initial implementation of quantum-inspired puzzle solver with pattern analysis
+
+commit e107f6fcf535451cd7bf2123ea57bd539bf27127
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:31:34 2025 -0800
+
+    Separated known keys into module and updated solver to use them
+
+commit 1aaf92fa2f40bc04d6cdfe08a2893edb4a1abb4d
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:28:12 2025 -0800
+
+    Added retry logic and improved API error handling
+
+commit b67a09c3176d56fef3b52d99459acb27c7555ff3
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:27:22 2025 -0800
+
+    Updated PuzzleSolver class to use new check_address_status function and improved validation
+
+commit 701a59eb770f0d4c90c15668b9485c4ba3c39c94
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:26:00 2025 -0800
+
+    Added robust address status checking with multiple API fallbacks
+
+commit 3a560ff80f2badbb8bf30f86a7579fa26b4058f7
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:24:48 2025 -0800
+
+    Added all puzzle addresses from 1-65 with correct status and values
+
+commit aa6fcda9189fd6da278616e5997f4260d93485b3
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:21:12 2025 -0800
+
+    Added all remaining puzzle addresses from 96 to 160
+
+commit 6f99c12e8c050877d9d9b2a5fbc7a89cd4893715
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:17:52 2025 -0800
+
+    Updated puzzle addresses to match correct index positions from privatekeys.pw
+
+commit 49e0ac351d72f7a2abc40f9809d326ca2789a48c
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:16:29 2025 -0800
+
+    Updated puzzle addresses with correct information from privatekeys.pw
+
+commit 3471eb8be4212dd930ada7ab5e13e68b0d030994
+Author: accessor-io <acc@accessor.io>
+Date:   Thu Jan 30 22:14:54 2025 -0800
+
+    Created puzzle solver with verified addresses and sequence-based transformations
+
+commit 0eeadb0e7e689525cfe38cc673377b66569b1fc6
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Jan 26 14:15:23 2025 -0800
+
+    Added analysis of 66-bit constrained prediction results
+
+commit 8f63d8342bc8985ec2aac5bbc0f0cea4eb41eb47
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Jan 26 14:12:47 2025 -0800
+
+    Added 66-bit requirement analysis and updated prediction script
+
+commit c256bfc94f5d97471727b49d5fc3e70b7168e8b2
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Jan 26 14:05:36 2025 -0800
+
+    Added prediction results and analysis of unexpected properties
+
+commit 5c62344650ff6b3259948774db88fd85c8aeb183
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Jan 26 14:04:20 2025 -0800
+
+    Added extended sequence analysis and next value prediction framework
+
+commit efbbcb21ab9b6d2d938c39aad9d24b0aed7afd28
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Jan 26 14:03:19 2025 -0800
+
+    Added sequence prediction analysis and confirmation
+
+commit 541244de789945a788fcd1fdc5972eed57f5e720
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Jan 26 14:00:20 2025 -0800
+
+    Added analysis of 32bHex.txt sequence and its relationship to previous findings
+
+commit 8ea55a876354a25087d41770cb28462d3a6acbed
+Author: accessor-io <acc@accessor.io>
+Date:   Sun Jan 26 13:57:13 2025 -0800
+
+    Initial documentation of cryptographic analysis findings
+
+commit e48f933f8aafdbbb3b88db372cb68aec0623f2fa
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Jan 22 22:51:18 2025 -0800
+
+    Initial commit: Create EVM puzzle with multiple layers of complexity
+
+commit 0fc69103263f5d2a7b3d2e6eaeb40dd0f00cb449
+Author: accessor-io <acc@accessor.io>
+Date:   Wed Jan 22 21:15:46 2025 -0800
+
+    Add minified versions of code

@@ -1,0 +1,7 @@
+Predicted value for index 67: 96469901924466032640
+Binary representation: 1010011101011001001111100001010111001001100100100100000000000000000
+Hex representation: 53ac9f0ae4c920000
+
+Prediction insights:
+Bit length: 67 bits
+Crypto patterns: {'avalanche': {'mean': 0.29174440298507465, 'std': 0.12741129616470787}, 'entropy': {'mean': 2.3350176071991195, 'std': 0.6306627139040765}, 'hash_chain': {'mean_similarity': 0.5748600746268657, 'std_similarity': 0.11062637419180138}}

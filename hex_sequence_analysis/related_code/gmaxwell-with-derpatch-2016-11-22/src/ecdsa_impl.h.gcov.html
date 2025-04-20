@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - full.lcov - src/ecdsa_impl.h</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - ecdsa_impl.h<span style="font-size: 80%;"> (source / <a href="ecdsa_impl.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">full.lcov</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">131</td>
+            <td class="headerCovTableEntry">146</td>
+            <td class="headerCovTableEntryMed">89.7 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-11-22 23:46:48</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">6</td>
+            <td class="headerCovTableEntry">6</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntry">91</td>
+            <td class="headerCovTableEntry">106</td>
+            <td class="headerCovTableEntryMed">85.8 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">           Branch data     Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>                :            : /**********************************************************************</a>
+<span class="lineNum">       2 </span>                :            :  * Copyright (c) 2013-2015 Pieter Wuille                              *
+<span class="lineNum">       3 </span>                :            :  * Distributed under the MIT software license, see the accompanying   *
+<span class="lineNum">       4 </span>                :            :  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
+<span class="lineNum">       5 </span>                :            :  **********************************************************************/
+<span class="lineNum">       6 </span>                :            : 
+<span class="lineNum">       7 </span>                :            : 
+<span class="lineNum">       8 </span>                :            : #ifndef _SECP256K1_ECDSA_IMPL_H_
+<span class="lineNum">       9 </span>                :            : #define _SECP256K1_ECDSA_IMPL_H_
+<span class="lineNum">      10 </span>                :            : 
+<span class="lineNum">      11 </span>                :            : #include &quot;scalar.h&quot;
+<span class="lineNum">      12 </span>                :            : #include &quot;field.h&quot;
+<span class="lineNum">      13 </span>                :            : #include &quot;group.h&quot;
+<span class="lineNum">      14 </span>                :            : #include &quot;ecmult.h&quot;
+<span class="lineNum">      15 </span>                :            : #include &quot;ecmult_gen.h&quot;
+<span class="lineNum">      16 </span>                :            : #include &quot;ecdsa.h&quot;
+<span class="lineNum">      17 </span>                :            : 
+<span class="lineNum">      18 </span>                :            : /** Group order for secp256k1 defined as 'n' in &quot;Standards for Efficient Cryptography&quot; (SEC2) 2.7.1
+<span class="lineNum">      19 </span>                :            :  *  sage: for t in xrange(1023, -1, -1):
+<span class="lineNum">      20 </span>                :            :  *     ..   p = 2**256 - 2**32 - t
+<span class="lineNum">      21 </span>                :            :  *     ..   if p.is_prime():
+<span class="lineNum">      22 </span>                :            :  *     ..     print '%x'%p
+<span class="lineNum">      23 </span>                :            :  *     ..     break
+<span class="lineNum">      24 </span>                :            :  *   'fffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f'
+<span class="lineNum">      25 </span>                :            :  *  sage: a = 0
+<span class="lineNum">      26 </span>                :            :  *  sage: b = 7
+<span class="lineNum">      27 </span>                :            :  *  sage: F = FiniteField (p)
+<span class="lineNum">      28 </span>                :            :  *  sage: '%x' % (EllipticCurve ([F (a), F (b)]).order())
+<span class="lineNum">      29 </span>                :            :  *   'fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141'
+<span class="lineNum">      30 </span>                :            :  */
+<span class="lineNum">      31 </span>                :            : static const secp256k1_fe secp256k1_ecdsa_const_order_as_fe = SECP256K1_FE_CONST(
+<span class="lineNum">      32 </span>                :            :     0xFFFFFFFFUL, 0xFFFFFFFFUL, 0xFFFFFFFFUL, 0xFFFFFFFEUL,
+<span class="lineNum">      33 </span>                :            :     0xBAAEDCE6UL, 0xAF48A03BUL, 0xBFD25E8CUL, 0xD0364141UL
+<span class="lineNum">      34 </span>                :            : );
+<span class="lineNum">      35 </span>                :            : 
+<span class="lineNum">      36 </span>                :            : /** Difference between field and order, values 'p' and 'n' values defined in
+<span class="lineNum">      37 </span>                :            :  *  &quot;Standards for Efficient Cryptography&quot; (SEC2) 2.7.1.
+<span class="lineNum">      38 </span>                :            :  *  sage: p = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F
+<span class="lineNum">      39 </span>                :            :  *  sage: a = 0
+<span class="lineNum">      40 </span>                :            :  *  sage: b = 7
+<span class="lineNum">      41 </span>                :            :  *  sage: F = FiniteField (p)
+<span class="lineNum">      42 </span>                :            :  *  sage: '%x' % (p - EllipticCurve ([F (a), F (b)]).order())
+<span class="lineNum">      43 </span>                :            :  *   '14551231950b75fc4402da1722fc9baee'
+<span class="lineNum">      44 </span>                :            :  */
+<span class="lineNum">      45 </span>                :            : static const secp256k1_fe secp256k1_ecdsa_const_p_minus_order = SECP256K1_FE_CONST(
+<span class="lineNum">      46 </span>                :            :     0, 0, 0, 1, 0x45512319UL, 0x50B75FC4UL, 0x402DA172UL, 0x2FC9BAEEUL
+<a name="47"><span class="lineNum">      47 </span>                :            : );</a>
+<span class="lineNum">      48 </span>                :            : 
+<span class="lineNum">      49 </span>                :<span class="lineCov">        524 : static int secp256k1_der_read_len(const unsigned char **sigp, const unsigned char *sigend) {</span>
+<span class="lineNum">      50 </span>                :            :     int lenleft, b1;
+<span class="lineNum">      51 </span>                :<span class="lineCov">        524 :     size_t ret = 0;</span>
+<span class="lineNum">      52 </span>        [<span class="branchCov" title="Branch 0 was taken 2 times"> + </span><span class="branchCov" title="Branch 1 was taken 522 times"> + </span>]:<span class="lineCov">        524 :     if (*sigp &gt;= sigend) {</span>
+<span class="lineNum">      53 </span>                :<span class="lineCov">          2 :         return -1;</span>
+<span class="lineNum">      54 </span>                :            :     }
+<span class="lineNum">      55 </span>                :<span class="lineCov">        522 :     b1 = *((*sigp)++);</span>
+<span class="lineNum">      56 </span>        [<span class="branchCov" title="Branch 0 was taken 2 times"> + </span><span class="branchCov" title="Branch 1 was taken 520 times"> + </span>]:<span class="lineCov">        522 :     if (b1 == 0xFF) {</span>
+<span class="lineNum">      57 </span>                :            :         /* X.690-0207 8.1.3.5.c the value 0xFF shall not be used. */
+<span class="lineNum">      58 </span>                :<span class="lineCov">          2 :         return -1;</span>
+<span class="lineNum">      59 </span>                :            :     }
+<span class="lineNum">      60 </span>        [<span class="branchCov" title="Branch 0 was taken 351 times"> + </span><span class="branchCov" title="Branch 1 was taken 169 times"> + </span>]:<span class="lineCov">        520 :     if ((b1 &amp; 0x80) == 0) {</span>
+<span class="lineNum">      61 </span>                :            :         /* X.690-0207 8.1.3.4 short form length octets */
+<span class="lineNum">      62 </span>                :<span class="lineCov">        351 :         return b1;</span>
+<span class="lineNum">      63 </span>                :            :     }
+<span class="lineNum">      64 </span>        [<span class="branchCov" title="Branch 0 was taken 102 times"> + </span><span class="branchCov" title="Branch 1 was taken 67 times"> + </span>]:<span class="lineCov">        169 :     if (b1 == 0x80) {</span>
+<span class="lineNum">      65 </span>                :            :         /* Indefinite length is not allowed in DER. */
+<span class="lineNum">      66 </span>                :<span class="lineCov">        102 :         return -1;</span>
+<span class="lineNum">      67 </span>                :            :     }
+<span class="lineNum">      68 </span>                :            :     /* X.690-207 8.1.3.5 long form length octets */
+<span class="lineNum">      69 </span>                :<span class="lineCov">         67 :     lenleft = b1 &amp; 0x7F;</span>
+<span class="lineNum">      70 </span>        [<span class="branchCov" title="Branch 0 was taken 2 times"> + </span><span class="branchCov" title="Branch 1 was taken 65 times"> + </span>]:<span class="lineCov">         67 :     if (lenleft &gt; sigend - *sigp) {</span>
+<span class="lineNum">      71 </span>                :<span class="lineCov">          2 :         return -1;</span>
+<span class="lineNum">      72 </span>                :            :     }
+<span class="lineNum">      73 </span>        [<span class="branchCov" title="Branch 0 was taken 15 times"> + </span><span class="branchCov" title="Branch 1 was taken 50 times"> + </span>]:<span class="lineCov">         65 :     if (**sigp == 0) {</span>
+<span class="lineNum">      74 </span>                :            :         /* Not the shortest possible length encoding. */
+<span class="lineNum">      75 </span>                :<span class="lineCov">         15 :         return -1;</span>
+<span class="lineNum">      76 </span>                :            :     }
+<span class="lineNum">      77 </span>        [<span class="branchCov" title="Branch 0 was taken 2 times"> + </span><span class="branchCov" title="Branch 1 was taken 48 times"> + </span>]:<span class="lineCov">         50 :     if ((size_t)lenleft &gt; sizeof(size_t)) {</span>
+<span class="lineNum">      78 </span>                :            :         /* The resulting length would exceed the range of a size_t, so
+<span class="lineNum">      79 </span>                :            :          * certainly longer than the passed array size.
+<span class="lineNum">      80 </span>                :            :          */
+<span class="lineNum">      81 </span>                :<span class="lineCov">          2 :         return -1;</span>
+<span class="lineNum">      82 </span>                :            :     }
+<span class="lineNum">      83 </span>        [<span class="branchCov" title="Branch 0 was taken 78 times"> + </span><span class="branchCov" title="Branch 1 was taken 31 times"> + </span>]:<span class="lineCov">        109 :     while (lenleft &gt; 0) {</span>
+<span class="lineNum">      84 </span>                :<span class="lineCov">         78 :         if ((ret &gt;&gt; ((sizeof(size_t) - 1) * 8)) != 0) {</span>
+<span class="lineNum">      85 </span>                :            :         }
+<span class="lineNum">      86 </span>                :<span class="lineCov">         78 :         ret = (ret &lt;&lt; 8) | **sigp;</span>
+<span class="lineNum">      87 </span>        [<span class="branchCov" title="Branch 0 was taken 17 times"> + </span><span class="branchCov" title="Branch 1 was taken 61 times"> + </span>]:<span class="lineCov">         78 :         if (ret + lenleft &gt; (size_t)(sigend - *sigp)) {</span>
+<span class="lineNum">      88 </span>                :            :             /* Result exceeds the length of the passed array. */
+<span class="lineNum">      89 </span>                :<span class="lineCov">         17 :             return -1;</span>
+<span class="lineNum">      90 </span>                :            :         }
+<span class="lineNum">      91 </span>                :<span class="lineCov">         61 :         (*sigp)++;</span>
+<span class="lineNum">      92 </span>                :<span class="lineCov">         61 :         lenleft--;</span>
+<span class="lineNum">      93 </span>                :            :     }
+<span class="lineNum">      94 </span>        [<span class="branchCov" title="Branch 0 was taken 19 times"> + </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">         31 :     if (ret &lt; 128) {</span>
+<span class="lineNum">      95 </span>                :            :         /* Not the shortest possible length encoding. */
+<span class="lineNum">      96 </span>                :<span class="lineCov">         19 :         return -1;</span>
+<span class="lineNum">      97 </span>                :            :     }
+<span class="lineNum">      98 </span>                :<span class="lineCov">         12 :     return ret;</span>
+<a name="99"><span class="lineNum">      99 </span>                :            : }</a>
+<span class="lineNum">     100 </span>                :            : 
+<span class="lineNum">     101 </span>                :<span class="lineCov">        249 : static int secp256k1_der_parse_integer(secp256k1_scalar *r, const unsigned char **sig, const unsigned char *sigend) {</span>
+<span class="lineNum">     102 </span>                :<span class="lineCov">        249 :     int overflow = 0;</span>
+<span class="lineNum">     103 </span>                :<span class="lineCov">        249 :     unsigned char ra[32] = {0};</span>
+<span class="lineNum">     104 </span>                :            :     int rlen;
+<span class="lineNum">     105 </span>                :            : 
+<span class="lineNum">     106 </span>[<span class="branchCov" title="Branch 0 was taken 248 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>][<span class="branchCov" title="Branch 2 was taken 1 time"> + </span><span class="branchCov" title="Branch 3 was taken 247 times"> + </span>]:<span class="lineCov">        249 :     if (*sig == sigend || **sig != 0x02) {</span>
+<span class="lineNum">     107 </span>                :            :         /* Not a primitive integer (X.690-0207 8.3.1). */
+<span class="lineNum">     108 </span>                :<span class="lineCov">          2 :         return 0;</span>
+<span class="lineNum">     109 </span>                :            :     }
+<span class="lineNum">     110 </span>                :<span class="lineCov">        247 :     (*sig)++;</span>
+<span class="lineNum">     111 </span>                :<span class="lineCov">        247 :     rlen = secp256k1_der_read_len(sig, sigend);</span>
+<span class="lineNum">     112 </span>[<span class="branchCov" title="Branch 0 was taken 211 times"> + </span><span class="branchCov" title="Branch 1 was taken 36 times"> + </span>][<span class="branchNoCov" title="Branch 2 was not taken"> - </span><span class="branchCov" title="Branch 3 was taken 211 times"> + </span>]:<span class="lineCov">        247 :     if (rlen &lt;= 0 || (*sig) + rlen &gt; sigend) {</span>
+<span class="lineNum">     113 </span>                :            :         /* Exceeds bounds or not at least length 1 (X.690-0207 8.3.1).  */
+<span class="lineNum">     114 </span>                :<span class="lineCov">         36 :         return 0;</span>
+<span class="lineNum">     115 </span>                :            :     }
+<span class="lineNum">     116 </span>[<span class="branchCov" title="Branch 0 was taken 100 times"> + </span><span class="branchCov" title="Branch 1 was taken 111 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 86 times"> + </span><span class="branchCov" title="Branch 3 was taken 14 times"> + </span>]:<span class="lineCov">        211 :     if (**sig == 0x00 &amp;&amp; rlen &gt; 1 &amp;&amp; (((*sig)[1]) &amp; 0x80) == 0x00) {</span>
+<span class="lineNum">         </span>        [<span class="branchCov" title="Branch 4 was taken 16 times"> + </span><span class="branchCov" title="Branch 5 was taken 70 times"> + </span>]
+<span class="lineNum">     117 </span>                :            :         /* Excessive 0x00 padding. */
+<span class="lineNum">     118 </span>                :<span class="lineCov">         16 :         return 0;</span>
+<span class="lineNum">     119 </span>                :            :     }
+<span class="lineNum">     120 </span>[<span class="branchCov" title="Branch 0 was taken 11 times"> + </span><span class="branchCov" title="Branch 1 was taken 184 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 6 times"> + </span><span class="branchCov" title="Branch 3 was taken 5 times"> + </span>]:<span class="lineCov">        195 :     if (**sig == 0xFF &amp;&amp; rlen &gt; 1 &amp;&amp; (((*sig)[1]) &amp; 0x80) == 0x80) {</span>
+<span class="lineNum">         </span>        [<span class="branchCov" title="Branch 4 was taken 2 times"> + </span><span class="branchCov" title="Branch 5 was taken 4 times"> + </span>]
+<span class="lineNum">     121 </span>                :            :         /* Excessive 0xFF padding. */
+<span class="lineNum">     122 </span>                :<span class="lineCov">          2 :         return 0;</span>
+<span class="lineNum">     123 </span>                :            :     }
+<span class="lineNum">     124 </span>        [<span class="branchCov" title="Branch 0 was taken 15 times"> + </span><span class="branchCov" title="Branch 1 was taken 178 times"> + </span>]:<span class="lineCov">        193 :     if ((**sig &amp; 0x80) == 0x80) {</span>
+<span class="lineNum">     125 </span>                :            :         /* Negative. */
+<span class="lineNum">     126 </span>                :<span class="lineCov">         15 :         overflow = 1;</span>
+<span class="lineNum">     127 </span>                :            :     }
+<span class="lineNum">     128 </span>[<span class="branchCov" title="Branch 0 was taken 263 times"> + </span><span class="branchCov" title="Branch 1 was taken 14 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 84 times"> + </span><span class="branchCov" title="Branch 3 was taken 179 times"> + </span>]:<span class="lineCov">        277 :     while (rlen &gt; 0 &amp;&amp; **sig == 0) {</span>
+<span class="lineNum">     129 </span>                :            :         /* Skip leading zero bytes */
+<span class="lineNum">     130 </span>                :<span class="lineCov">         84 :         rlen--;</span>
+<span class="lineNum">     131 </span>                :<span class="lineCov">         84 :         (*sig)++;</span>
+<span class="lineNum">     132 </span>                :            :     }
+<span class="lineNum">     133 </span>        [<span class="branchCov" title="Branch 0 was taken 3 times"> + </span><span class="branchCov" title="Branch 1 was taken 190 times"> + </span>]:<span class="lineCov">        193 :     if (rlen &gt; 32) {</span>
+<span class="lineNum">     134 </span>                :<span class="lineCov">          3 :         overflow = 1;</span>
+<span class="lineNum">     135 </span>                :            :     }
+<span class="lineNum">     136 </span>        [<span class="branchCov" title="Branch 0 was taken 175 times"> + </span><span class="branchCov" title="Branch 1 was taken 18 times"> + </span>]:<span class="lineCov">        193 :     if (!overflow) {</span>
+<span class="lineNum">     137 </span>                :<span class="lineCov">        175 :         memcpy(ra + 32 - rlen, *sig, rlen);</span>
+<span class="lineNum">     138 </span>                :<span class="lineCov">        175 :         secp256k1_scalar_set_b32(r, ra, &amp;overflow);</span>
+<span class="lineNum">     139 </span>                :            :     }
+<span class="lineNum">     140 </span>        [<span class="branchCov" title="Branch 0 was taken 22 times"> + </span><span class="branchCov" title="Branch 1 was taken 171 times"> + </span>]:<span class="lineCov">        193 :     if (overflow) {</span>
+<span class="lineNum">     141 </span>                :<span class="lineCov">         22 :         secp256k1_scalar_set_int(r, 0);</span>
+<span class="lineNum">     142 </span>                :            :     }
+<span class="lineNum">     143 </span>                :<span class="lineCov">        193 :     (*sig) += rlen;</span>
+<span class="lineNum">     144 </span>                :<span class="lineCov">        249 :     return 1;</span>
+<a name="145"><span class="lineNum">     145 </span>                :            : }</a>
+<span class="lineNum">     146 </span>                :            : 
+<span class="lineNum">     147 </span>                :<span class="lineCov">        288 : static int secp256k1_ecdsa_sig_parse(secp256k1_scalar *rr, secp256k1_scalar *rs, const unsigned char *sig, size_t size) {</span>
+<span class="lineNum">     148 </span>                :<span class="lineCov">        288 :     const unsigned char *sigend = sig + size;</span>
+<span class="lineNum">     149 </span>                :            :     int rlen;
+<span class="lineNum">     150 </span>[<span class="branchCov" title="Branch 0 was taken 288 times"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>][<span class="branchCov" title="Branch 2 was taken 11 times"> + </span><span class="branchCov" title="Branch 3 was taken 277 times"> + </span>]:<span class="lineCov">        288 :     if (sig == sigend || *(sig++) != 0x30) {</span>
+<span class="lineNum">     151 </span>                :            :         /* The encoding doesn't start with a constructed sequence (X.690-0207 8.9.1). */
+<span class="lineNum">     152 </span>                :<span class="lineCov">         11 :         return 0;</span>
+<span class="lineNum">     153 </span>                :            :     }
+<span class="lineNum">     154 </span>                :<span class="lineCov">        277 :     rlen = secp256k1_der_read_len(&amp;sig, sigend);</span>
+<span class="lineNum">     155 </span>[<span class="branchCov" title="Branch 0 was taken 150 times"> + </span><span class="branchCov" title="Branch 1 was taken 127 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 1 time"> + </span><span class="branchCov" title="Branch 3 was taken 149 times"> + </span>]:<span class="lineCov">        277 :     if (rlen &lt; 0 || sig + rlen &gt; sigend) {</span>
+<span class="lineNum">     156 </span>                :            :         /* Tuple exceeds bounds */
+<span class="lineNum">     157 </span>                :<span class="lineCov">        128 :         return 0;</span>
+<span class="lineNum">     158 </span>                :            :     }
+<span class="lineNum">     159 </span>        [<span class="branchCov" title="Branch 0 was taken 7 times"> + </span><span class="branchCov" title="Branch 1 was taken 142 times"> + </span>]:<span class="lineCov">        149 :     if (sig + rlen != sigend) {</span>
+<span class="lineNum">     160 </span>                :            :         /* Garbage after tuple. */
+<span class="lineNum">     161 </span>                :<span class="lineCov">          7 :         return 0;</span>
+<span class="lineNum">     162 </span>                :            :     }
+<span class="lineNum">     163 </span>                :            : 
+<span class="lineNum">     164 </span>        [<span class="branchCov" title="Branch 1 was taken 35 times"> + </span><span class="branchCov" title="Branch 2 was taken 107 times"> + </span>]:<span class="lineCov">        142 :     if (!secp256k1_der_parse_integer(rr, &amp;sig, sigend)) {</span>
+<span class="lineNum">     165 </span>                :<span class="lineCov">         35 :         return 0;</span>
+<span class="lineNum">     166 </span>                :            :     }
+<span class="lineNum">     167 </span>        [<span class="branchCov" title="Branch 1 was taken 21 times"> + </span><span class="branchCov" title="Branch 2 was taken 86 times"> + </span>]:<span class="lineCov">        107 :     if (!secp256k1_der_parse_integer(rs, &amp;sig, sigend)) {</span>
+<span class="lineNum">     168 </span>                :<span class="lineCov">         21 :         return 0;</span>
+<span class="lineNum">     169 </span>                :            :     }
+<span class="lineNum">     170 </span>                :            : 
+<span class="lineNum">     171 </span>        [<span class="branchCov" title="Branch 0 was taken 11 times"> + </span><span class="branchCov" title="Branch 1 was taken 75 times"> + </span>]:<span class="lineCov">         86 :     if (sig != sigend) {</span>
+<span class="lineNum">     172 </span>                :            :         /* Trailing garbage inside tuple. */
+<span class="lineNum">     173 </span>                :<span class="lineCov">         11 :         return 0;</span>
+<span class="lineNum">     174 </span>                :            :     }
+<span class="lineNum">     175 </span>                :            : 
+<span class="lineNum">     176 </span>                :<span class="lineCov">         75 :     return 1;</span>
+<a name="177"><span class="lineNum">     177 </span>                :            : }</a>
+<span class="lineNum">     178 </span>                :            : 
+<span class="lineNum">     179 </span>                :<span class="lineCov">        189 : static int secp256k1_ecdsa_sig_serialize(unsigned char *sig, size_t *size, const secp256k1_scalar* ar, const secp256k1_scalar* as) {</span>
+<span class="lineNum">     180 </span>                :<span class="lineCov">        189 :     unsigned char r[33] = {0}, s[33] = {0};</span>
+<span class="lineNum">     181 </span>                :<span class="lineCov">        189 :     unsigned char *rp = r, *sp = s;</span>
+<span class="lineNum">     182 </span>                :<span class="lineCov">        189 :     size_t lenR = 33, lenS = 33;</span>
+<span class="lineNum">     183 </span>                :<span class="lineCov">        189 :     secp256k1_scalar_get_b32(&amp;r[1], ar);</span>
+<span class="lineNum">     184 </span>                :<span class="lineCov">        189 :     secp256k1_scalar_get_b32(&amp;s[1], as);</span>
+<span class="lineNum">     185 </span>[<span class="branchCov" title="Branch 0 was taken 4857 times"> + </span><span class="branchCov" title="Branch 1 was taken 28 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 4785 times"> + </span><span class="branchCov" title="Branch 3 was taken 72 times"> + </span>]:<span class="lineCov">       4885 :     while (lenR &gt; 1 &amp;&amp; rp[0] == 0 &amp;&amp; rp[1] &lt; 0x80) { lenR--; rp++; }</span>
+<span class="lineNum">         </span>        [<span class="branchCov" title="Branch 4 was taken 4696 times"> + </span><span class="branchCov" title="Branch 5 was taken 89 times"> + </span>]
+<span class="lineNum">     186 </span>[<span class="branchCov" title="Branch 0 was taken 5227 times"> + </span><span class="branchCov" title="Branch 1 was taken 31 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 5151 times"> + </span><span class="branchCov" title="Branch 3 was taken 76 times"> + </span>]:<span class="lineCov">       5258 :     while (lenS &gt; 1 &amp;&amp; sp[0] == 0 &amp;&amp; sp[1] &lt; 0x80) { lenS--; sp++; }</span>
+<span class="lineNum">         </span>        [<span class="branchCov" title="Branch 4 was taken 5069 times"> + </span><span class="branchCov" title="Branch 5 was taken 82 times"> + </span>]
+<span class="lineNum">     187 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 189 times"> + </span>]:<span class="lineCov">        189 :     if (*size &lt; 6+lenS+lenR) {</span>
+<span class="lineNum">     188 </span>                :<span class="lineNoCov">          0 :         *size = 6 + lenS + lenR;</span>
+<span class="lineNum">     189 </span>                :<span class="lineNoCov">          0 :         return 0;</span>
+<span class="lineNum">     190 </span>                :            :     }
+<span class="lineNum">     191 </span>                :<span class="lineCov">        189 :     *size = 6 + lenS + lenR;</span>
+<span class="lineNum">     192 </span>                :<span class="lineCov">        189 :     sig[0] = 0x30;</span>
+<span class="lineNum">     193 </span>                :<span class="lineCov">        189 :     sig[1] = 4 + lenS + lenR;</span>
+<span class="lineNum">     194 </span>                :<span class="lineCov">        189 :     sig[2] = 0x02;</span>
+<span class="lineNum">     195 </span>                :<span class="lineCov">        189 :     sig[3] = lenR;</span>
+<span class="lineNum">     196 </span>                :<span class="lineCov">        189 :     memcpy(sig+4, rp, lenR);</span>
+<span class="lineNum">     197 </span>                :<span class="lineCov">        189 :     sig[4+lenR] = 0x02;</span>
+<span class="lineNum">     198 </span>                :<span class="lineCov">        189 :     sig[5+lenR] = lenS;</span>
+<span class="lineNum">     199 </span>                :<span class="lineCov">        189 :     memcpy(sig+lenR+6, sp, lenS);</span>
+<span class="lineNum">     200 </span>                :<span class="lineCov">        189 :     return 1;</span>
+<a name="201"><span class="lineNum">     201 </span>                :            : }</a>
+<span class="lineNum">     202 </span>                :            : 
+<span class="lineNum">     203 </span>                :<span class="lineCov">      10368 : static int secp256k1_ecdsa_sig_verify(const secp256k1_ecmult_context *ctx, const secp256k1_scalar *sigr, const secp256k1_scalar *sigs, const secp256k1_ge *pubkey, const secp256k1_scalar *message) {</span>
+<span class="lineNum">     204 </span>                :            :     unsigned char c[32];
+<span class="lineNum">     205 </span>                :            :     secp256k1_scalar sn, u1, u2;
+<span class="lineNum">     206 </span>                :            : #if !defined(EXHAUSTIVE_TEST_ORDER)
+<span class="lineNum">     207 </span>                :            :     secp256k1_fe xr;
+<span class="lineNum">     208 </span>                :            : #endif
+<span class="lineNum">     209 </span>                :            :     secp256k1_gej pubkeyj;
+<span class="lineNum">     210 </span>                :            :     secp256k1_gej pr;
+<span class="lineNum">     211 </span>                :            : 
+<span class="lineNum">     212 </span>[<span class="branchCov" title="Branch 1 was taken 10368 times"> + </span><span class="branchNoCov" title="Branch 2 was not taken"> - </span>][<span class="branchNoCov" title="Branch 4 was not taken"> - </span><span class="branchCov" title="Branch 5 was taken 10368 times"> + </span>]:<span class="lineCov">      10368 :     if (secp256k1_scalar_is_zero(sigr) || secp256k1_scalar_is_zero(sigs)) {</span>
+<span class="lineNum">     213 </span>                :<span class="lineNoCov">          0 :         return 0;</span>
+<span class="lineNum">     214 </span>                :            :     }
+<span class="lineNum">     215 </span>                :            : 
+<span class="lineNum">     216 </span>                :<span class="lineCov">      10368 :     secp256k1_scalar_inverse_var(&amp;sn, sigs);</span>
+<span class="lineNum">     217 </span>                :<span class="lineCov">      10368 :     secp256k1_scalar_mul(&amp;u1, &amp;sn, message);</span>
+<span class="lineNum">     218 </span>                :<span class="lineCov">      10368 :     secp256k1_scalar_mul(&amp;u2, &amp;sn, sigr);</span>
+<span class="lineNum">     219 </span>                :<span class="lineCov">      10368 :     secp256k1_gej_set_ge(&amp;pubkeyj, pubkey);</span>
+<span class="lineNum">     220 </span>                :<span class="lineCov">      10368 :     secp256k1_ecmult(ctx, &amp;pr, &amp;pubkeyj, &amp;u2, &amp;u1);</span>
+<span class="lineNum">     221 </span>        [<span class="branchCov" title="Branch 1 was taken 864 times"> + </span><span class="branchCov" title="Branch 2 was taken 9504 times"> + </span>]:<span class="lineCov">      10368 :     if (secp256k1_gej_is_infinity(&amp;pr)) {</span>
+<span class="lineNum">     222 </span>                :<span class="lineCov">        864 :         return 0;</span>
+<span class="lineNum">     223 </span>                :            :     }
+<span class="lineNum">     224 </span>                :            : 
+<span class="lineNum">     225 </span>                :            : #if defined(EXHAUSTIVE_TEST_ORDER)
+<span class="lineNum">     226 </span>                :            : {
+<span class="lineNum">     227 </span>                :            :     secp256k1_scalar computed_r;
+<span class="lineNum">     228 </span>                :<span class="lineCov">       9504 :     int overflow = 0;</span>
+<span class="lineNum">     229 </span>                :            :     secp256k1_ge pr_ge;
+<span class="lineNum">     230 </span>                :<span class="lineCov">       9504 :     secp256k1_ge_set_gej(&amp;pr_ge, &amp;pr);</span>
+<span class="lineNum">     231 </span>                :<span class="lineCov">       9504 :     secp256k1_fe_normalize(&amp;pr_ge.x);</span>
+<span class="lineNum">     232 </span>                :            : 
+<span class="lineNum">     233 </span>                :<span class="lineCov">       9504 :     secp256k1_fe_get_b32(c, &amp;pr_ge.x);</span>
+<span class="lineNum">     234 </span>                :<span class="lineCov">       9504 :     secp256k1_scalar_set_b32(&amp;computed_r, c, &amp;overflow);</span>
+<span class="lineNum">     235 </span>                :            :     /* we fully expect overflow */
+<span class="lineNum">     236 </span>                :<span class="lineCov">      10368 :     return secp256k1_scalar_eq(sigr, &amp;computed_r);</span>
+<span class="lineNum">     237 </span>                :            : }
+<span class="lineNum">     238 </span>                :            : #else
+<span class="lineNum">     239 </span>                :<span class="lineNoCov">          0 :     secp256k1_scalar_get_b32(c, sigr);</span>
+<span class="lineNum">     240 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_set_b32(&amp;xr, c);</span>
+<span class="lineNum">     241 </span>                :            : 
+<span class="lineNum">     242 </span>                :            :     /** We now have the recomputed R point in pr, and its claimed x coordinate (modulo n)
+<span class="lineNum">     243 </span>                :            :      *  in xr. Naively, we would extract the x coordinate from pr (requiring a inversion modulo p),
+<span class="lineNum">     244 </span>                :            :      *  compute the remainder modulo n, and compare it to xr. However:
+<span class="lineNum">     245 </span>                :            :      *
+<span class="lineNum">     246 </span>                :            :      *        xr == X(pr) mod n
+<span class="lineNum">     247 </span>                :            :      *    &lt;=&gt; exists h. (xr + h * n &lt; p &amp;&amp; xr + h * n == X(pr))
+<span class="lineNum">     248 </span>                :            :      *    [Since 2 * n &gt; p, h can only be 0 or 1]
+<span class="lineNum">     249 </span>                :            :      *    &lt;=&gt; (xr == X(pr)) || (xr + n &lt; p &amp;&amp; xr + n == X(pr))
+<span class="lineNum">     250 </span>                :            :      *    [In Jacobian coordinates, X(pr) is pr.x / pr.z^2 mod p]
+<span class="lineNum">     251 </span>                :            :      *    &lt;=&gt; (xr == pr.x / pr.z^2 mod p) || (xr + n &lt; p &amp;&amp; xr + n == pr.x / pr.z^2 mod p)
+<span class="lineNum">     252 </span>                :            :      *    [Multiplying both sides of the equations by pr.z^2 mod p]
+<span class="lineNum">     253 </span>                :            :      *    &lt;=&gt; (xr * pr.z^2 mod p == pr.x) || (xr + n &lt; p &amp;&amp; (xr + n) * pr.z^2 mod p == pr.x)
+<span class="lineNum">     254 </span>                :            :      *
+<span class="lineNum">     255 </span>                :            :      *  Thus, we can avoid the inversion, but we have to check both cases separately.
+<span class="lineNum">     256 </span>                :            :      *  secp256k1_gej_eq_x implements the (xr * pr.z^2 mod p == pr.x) test.
+<span class="lineNum">     257 </span>                :            :      */
+<span class="lineNum">     258 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if (secp256k1_gej_eq_x_var(&amp;xr, &amp;pr)) {</span>
+<span class="lineNum">     259 </span>                :            :         /* xr * pr.z^2 mod p == pr.x, so the signature is valid. */
+<span class="lineNum">     260 </span>                :<span class="lineNoCov">          0 :         return 1;</span>
+<span class="lineNum">     261 </span>                :            :     }
+<span class="lineNum">     262 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if (secp256k1_fe_cmp_var(&amp;xr, &amp;secp256k1_ecdsa_const_p_minus_order) &gt;= 0) {</span>
+<span class="lineNum">     263 </span>                :            :         /* xr + n &gt;= p, so we can skip testing the second case. */
+<span class="lineNum">     264 </span>                :<span class="lineNoCov">          0 :         return 0;</span>
+<span class="lineNum">     265 </span>                :            :     }
+<span class="lineNum">     266 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_add(&amp;xr, &amp;secp256k1_ecdsa_const_order_as_fe);</span>
+<span class="lineNum">     267 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if (secp256k1_gej_eq_x_var(&amp;xr, &amp;pr)) {</span>
+<span class="lineNum">     268 </span>                :            :         /* (xr + n) * pr.z^2 mod p == pr.x, so the signature is valid. */
+<span class="lineNum">     269 </span>                :<span class="lineNoCov">          0 :         return 1;</span>
+<span class="lineNum">     270 </span>                :            :     }
+<span class="lineNum">     271 </span>                :<span class="lineNoCov">          0 :     return 0;</span>
+<span class="lineNum">     272 </span>                :            : #endif
+<a name="273"><span class="lineNum">     273 </span>                :            : }</a>
+<span class="lineNum">     274 </span>                :            : 
+<span class="lineNum">     275 </span>                :<span class="lineCov">       1764 : static int secp256k1_ecdsa_sig_sign(const secp256k1_ecmult_gen_context *ctx, secp256k1_scalar *sigr, secp256k1_scalar *sigs, const secp256k1_scalar *seckey, const secp256k1_scalar *message, const secp256k1_scalar *nonce, int *recid) {</span>
+<span class="lineNum">     276 </span>                :            :     unsigned char b[32];
+<span class="lineNum">     277 </span>                :            :     secp256k1_gej rp;
+<span class="lineNum">     278 </span>                :            :     secp256k1_ge r;
+<span class="lineNum">     279 </span>                :            :     secp256k1_scalar n;
+<span class="lineNum">     280 </span>                :<span class="lineCov">       1764 :     int overflow = 0;</span>
+<span class="lineNum">     281 </span>                :            : 
+<span class="lineNum">     282 </span>                :<span class="lineCov">       1764 :     secp256k1_ecmult_gen(ctx, &amp;rp, nonce);</span>
+<span class="lineNum">     283 </span>                :<span class="lineCov">       1764 :     secp256k1_ge_set_gej(&amp;r, &amp;rp);</span>
+<span class="lineNum">     284 </span>                :<span class="lineCov">       1764 :     secp256k1_fe_normalize(&amp;r.x);</span>
+<span class="lineNum">     285 </span>                :<span class="lineCov">       1764 :     secp256k1_fe_normalize(&amp;r.y);</span>
+<span class="lineNum">     286 </span>                :<span class="lineCov">       1764 :     secp256k1_fe_get_b32(b, &amp;r.x);</span>
+<span class="lineNum">     287 </span>                :<span class="lineCov">       1764 :     secp256k1_scalar_set_b32(sigr, b, &amp;overflow);</span>
+<span class="lineNum">     288 </span>        [<span class="branchCov" title="Branch 1 was taken 12 times"> + </span><span class="branchCov" title="Branch 2 was taken 1752 times"> + </span>]:<span class="lineCov">       1764 :     if (secp256k1_scalar_is_zero(sigr)) {</span>
+<span class="lineNum">     289 </span>                :            :         /* P.x = order is on the curve, so technically sig-&gt;r could end up zero, which would be an invalid signature.
+<span class="lineNum">     290 </span>                :            :          * This branch is cryptographically unreachable as hitting it requires finding the discrete log of P.x = N.
+<span class="lineNum">     291 </span>                :            :          */
+<span class="lineNum">     292 </span>                :<span class="lineCov">         12 :         secp256k1_gej_clear(&amp;rp);</span>
+<span class="lineNum">     293 </span>                :<span class="lineCov">         12 :         secp256k1_ge_clear(&amp;r);</span>
+<span class="lineNum">     294 </span>                :<span class="lineCov">         12 :         return 0;</span>
+<span class="lineNum">     295 </span>                :            :     }
+<span class="lineNum">     296 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 1752 times"> + </span>]:<span class="lineCov">       1752 :     if (recid) {</span>
+<span class="lineNum">     297 </span>                :            :         /* The overflow condition is cryptographically unreachable as hitting it requires finding the discrete log
+<span class="lineNum">     298 </span>                :            :          * of some P where P.x &gt;= order, and only 1 in about 2^127 points meet this criteria.
+<span class="lineNum">     299 </span>                :            :          */
+<span class="lineNum">     300 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :         *recid = (overflow ? 2 : 0) | (secp256k1_fe_is_odd(&amp;r.y) ? 1 : 0);</span>
+<span class="lineNum">     301 </span>                :            :     }
+<span class="lineNum">     302 </span>                :<span class="lineCov">       1752 :     secp256k1_scalar_mul(&amp;n, sigr, seckey);</span>
+<span class="lineNum">     303 </span>                :<span class="lineCov">       1752 :     secp256k1_scalar_add(&amp;n, &amp;n, message);</span>
+<span class="lineNum">     304 </span>                :<span class="lineCov">       1752 :     secp256k1_scalar_inverse(sigs, nonce);</span>
+<span class="lineNum">     305 </span>                :<span class="lineCov">       1752 :     secp256k1_scalar_mul(sigs, sigs, &amp;n);</span>
+<span class="lineNum">     306 </span>                :<span class="lineCov">       1752 :     secp256k1_scalar_clear(&amp;n);</span>
+<span class="lineNum">     307 </span>                :<span class="lineCov">       1752 :     secp256k1_gej_clear(&amp;rp);</span>
+<span class="lineNum">     308 </span>                :<span class="lineCov">       1752 :     secp256k1_ge_clear(&amp;r);</span>
+<span class="lineNum">     309 </span>        [<span class="branchCov" title="Branch 1 was taken 156 times"> + </span><span class="branchCov" title="Branch 2 was taken 1596 times"> + </span>]:<span class="lineCov">       1752 :     if (secp256k1_scalar_is_zero(sigs)) {</span>
+<span class="lineNum">     310 </span>                :<span class="lineCov">        156 :         return 0;</span>
+<span class="lineNum">     311 </span>                :            :     }
+<span class="lineNum">     312 </span>        [<span class="branchCov" title="Branch 1 was taken 798 times"> + </span><span class="branchCov" title="Branch 2 was taken 798 times"> + </span>]:<span class="lineCov">       1596 :     if (secp256k1_scalar_is_high(sigs)) {</span>
+<span class="lineNum">     313 </span>                :<span class="lineCov">        798 :         secp256k1_scalar_negate(sigs, sigs);</span>
+<span class="lineNum">     314 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 798 times"> + </span>]:<span class="lineCov">        798 :         if (recid) {</span>
+<span class="lineNum">     315 </span>                :<span class="lineNoCov">          0 :             *recid ^= 1;</span>
+<span class="lineNum">     316 </span>                :            :         }
+<span class="lineNum">     317 </span>                :            :     }
+<span class="lineNum">     318 </span>                :<span class="lineCov">       1764 :     return 1;</span>
+<span class="lineNum">     319 </span>                :            : }
+<span class="lineNum">     320 </span>                :            : 
+<span class="lineNum">     321 </span>                :            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

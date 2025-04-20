@@ -1,0 +1,5259 @@
+Original hex: 0000000000000000000000000000000000000000000000000000000000000001
+  Bit Patterns:
+    Pattern '0000' appears 252 times
+    Pattern '00000' appears 251 times
+    Pattern '000000' appears 250 times
+    Pattern '0000000' appears 249 times
+    Pattern '00000000' appears 248 times
+  Palindromes found:
+    Length 255 palindrome
+    Length 254 palindrome
+    Length 253 palindrome
+    Length 252 palindrome
+    Length 251 palindrome
+  Repetitive sequences:
+    '0000' repeats 63 times
+    '00000' repeats 51 times
+    '000000' repeats 42 times
+    '0000000' repeats 36 times
+    '00000000' repeats 31 times
+  Symmetry score: 99.22%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000003
+  Bit Patterns:
+    Pattern '0000' appears 251 times
+    Pattern '00000' appears 250 times
+    Pattern '000000' appears 249 times
+    Pattern '0000000' appears 248 times
+    Pattern '00000000' appears 247 times
+  Palindromes found:
+    Length 254 palindrome
+    Length 253 palindrome
+    Length 252 palindrome
+    Length 251 palindrome
+    Length 250 palindrome
+  Repetitive sequences:
+    '0000' repeats 63 times
+    '00000' repeats 50 times
+    '000000' repeats 42 times
+    '0000000' repeats 36 times
+    '00000000' repeats 31 times
+  Symmetry score: 98.44%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000008
+  Bit Patterns:
+    Pattern '0000' appears 249 times
+    Pattern '00000' appears 248 times
+    Pattern '000000' appears 247 times
+    Pattern '0000000' appears 246 times
+    Pattern '00000000' appears 245 times
+  Palindromes found:
+    Length 252 palindrome
+    Length 251 palindrome
+    Length 250 palindrome
+    Length 249 palindrome
+    Length 248 palindrome
+  Repetitive sequences:
+    '0000' repeats 63 times
+    '00000' repeats 50 times
+    '000000' repeats 42 times
+    '0000000' repeats 36 times
+    '00000000' repeats 31 times
+  Symmetry score: 99.22%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000015
+  Bit Patterns:
+    Pattern '0000' appears 248 times
+    Pattern '0101' appears 2 times
+    Pattern '00000' appears 247 times
+    Pattern '000000' appears 246 times
+    Pattern '0000000' appears 245 times
+    Pattern '00000000' appears 244 times
+  Palindromes found:
+    Length 251 palindrome
+    Length 250 palindrome
+    Length 249 palindrome
+    Length 248 palindrome
+    Length 247 palindrome
+  Repetitive sequences:
+    '0000' repeats 62 times
+    '00000' repeats 50 times
+    '000000' repeats 41 times
+    '0000000' repeats 35 times
+    '00000000' repeats 31 times
+  Symmetry score: 97.66%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000031
+  Bit Patterns:
+    Pattern '0000' appears 247 times
+    Pattern '0001' appears 2 times
+    Pattern '00000' appears 246 times
+    Pattern '000000' appears 245 times
+    Pattern '0000000' appears 244 times
+    Pattern '00000000' appears 243 times
+  Palindromes found:
+    Length 250 palindrome
+    Length 249 palindrome
+    Length 248 palindrome
+    Length 247 palindrome
+    Length 246 palindrome
+  Repetitive sequences:
+    '0000' repeats 62 times
+    '0001' repeats 2 times
+    '00000' repeats 50 times
+    '000000' repeats 41 times
+    '0000000' repeats 35 times
+    '00000000' repeats 31 times
+  Symmetry score: 97.66%
+
+Original hex: 000000000000000000000000000000000000000000000000000000000000004c
+  Bit Patterns:
+    Pattern '0000' appears 246 times
+    Pattern '00000' appears 245 times
+    Pattern '000000' appears 244 times
+    Pattern '0000000' appears 243 times
+    Pattern '00000000' appears 242 times
+  Palindromes found:
+    Length 249 palindrome
+    Length 248 palindrome
+    Length 247 palindrome
+    Length 246 palindrome
+    Length 245 palindrome
+  Repetitive sequences:
+    '0000' repeats 62 times
+    '00000' repeats 49 times
+    '000000' repeats 41 times
+    '0000000' repeats 35 times
+    '00000000' repeats 31 times
+  Symmetry score: 97.66%
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000000e0
+  Bit Patterns:
+    Pattern '0000' appears 247 times
+    Pattern '00000' appears 245 times
+    Pattern '000000' appears 243 times
+    Pattern '0000000' appears 242 times
+    Pattern '00000000' appears 241 times
+  Palindromes found:
+    Length 248 palindrome
+    Length 247 palindrome
+    Length 246 palindrome
+    Length 245 palindrome
+    Length 244 palindrome
+  Repetitive sequences:
+    '0000' repeats 63 times
+    '00000' repeats 50 times
+    '000000' repeats 41 times
+    '0000000' repeats 35 times
+    '00000000' repeats 31 times
+  Symmetry score: 97.66%
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000001d3
+  Bit Patterns:
+    Pattern '0000' appears 244 times
+    Pattern '0011' appears 2 times
+    Pattern '00000' appears 243 times
+    Pattern '000000' appears 242 times
+    Pattern '0000000' appears 241 times
+    Pattern '00000000' appears 240 times
+  Palindromes found:
+    Length 247 palindrome
+    Length 246 palindrome
+    Length 245 palindrome
+    Length 244 palindrome
+    Length 243 palindrome
+  Repetitive sequences:
+    '0000' repeats 61 times
+    '0011' repeats 2 times
+    '00000' repeats 49 times
+    '000000' repeats 41 times
+    '0000000' repeats 35 times
+    '00000000' repeats 30 times
+  Symmetry score: 95.31%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000202
+  Bit Patterns:
+    Pattern '0000' appears 247 times
+    Pattern '0001' appears 2 times
+    Pattern '0010' appears 2 times
+    Pattern '00000' appears 245 times
+    Pattern '00001' appears 2 times
+    Pattern '00010' appears 2 times
+    Pattern '000000' appears 243 times
+    Pattern '000001' appears 2 times
+    Pattern '000010' appears 2 times
+    Pattern '0000000' appears 241 times
+    Pattern '0000001' appears 2 times
+    Pattern '0000010' appears 2 times
+    Pattern '00000000' appears 239 times
+    Pattern '00000001' appears 2 times
+    Pattern '00000010' appears 2 times
+  Palindromes found:
+    Length 246 palindrome
+    Length 245 palindrome
+    Length 244 palindrome
+    Length 243 palindrome
+    Length 242 palindrome
+  Repetitive sequences:
+    '0000' repeats 62 times
+    '0001' repeats 2 times
+    '0010' repeats 2 times
+    '00000' repeats 50 times
+    '00001' repeats 2 times
+    '00010' repeats 2 times
+    '000000' repeats 42 times
+    '000001' repeats 2 times
+    '000010' repeats 2 times
+    '0000000' repeats 36 times
+    '0000001' repeats 2 times
+    '0000010' repeats 2 times
+    '00000000' repeats 30 times
+    '00000001' repeats 2 times
+    '00000010' repeats 2 times
+  Symmetry score: 98.44%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000483
+  Bit Patterns:
+    Pattern '0000' appears 244 times
+    Pattern '0001' appears 2 times
+    Pattern '0010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '00000' appears 242 times
+    Pattern '00001' appears 2 times
+    Pattern '00100' appears 2 times
+    Pattern '000000' appears 240 times
+    Pattern '000001' appears 2 times
+    Pattern '0000000' appears 239 times
+    Pattern '00000000' appears 238 times
+  Palindromes found:
+    Length 245 palindrome
+    Length 244 palindrome
+    Length 243 palindrome
+    Length 242 palindrome
+    Length 241 palindrome
+  Repetitive sequences:
+    '0000' repeats 62 times
+    '0001' repeats 2 times
+    '00000' repeats 50 times
+    '00001' repeats 2 times
+    '000000' repeats 40 times
+    '000001' repeats 2 times
+    '0000000' repeats 35 times
+    '00000000' repeats 30 times
+  Symmetry score: 96.88%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000a7b
+  Bit Patterns:
+    Pattern '0000' appears 241 times
+    Pattern '00000' appears 240 times
+    Pattern '000000' appears 239 times
+    Pattern '0000000' appears 238 times
+    Pattern '00000000' appears 237 times
+  Palindromes found:
+    Length 244 palindrome
+    Length 243 palindrome
+    Length 242 palindrome
+    Length 241 palindrome
+    Length 240 palindrome
+  Repetitive sequences:
+    '0000' repeats 61 times
+    '00000' repeats 48 times
+    '000000' repeats 40 times
+    '0000000' repeats 34 times
+    '00000000' repeats 30 times
+  Symmetry score: 93.75%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000001460
+  Bit Patterns:
+    Pattern '0000' appears 242 times
+    Pattern '0001' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 240 times
+    Pattern '000000' appears 238 times
+    Pattern '0000000' appears 237 times
+    Pattern '00000000' appears 236 times
+  Palindromes found:
+    Length 243 palindrome
+    Length 242 palindrome
+    Length 241 palindrome
+    Length 240 palindrome
+    Length 239 palindrome
+  Repetitive sequences:
+    '0000' repeats 61 times
+    '0001' repeats 2 times
+    '1000' repeats 2 times
+    '00000' repeats 49 times
+    '000000' repeats 40 times
+    '0000000' repeats 34 times
+    '00000000' repeats 30 times
+  Symmetry score: 96.88%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000002930
+  Bit Patterns:
+    Pattern '0000' appears 240 times
+    Pattern '0010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '00000' appears 238 times
+    Pattern '01001' appears 2 times
+    Pattern '000000' appears 237 times
+    Pattern '0000000' appears 236 times
+    Pattern '00000000' appears 235 times
+  Palindromes found:
+    Length 242 palindrome
+    Length 241 palindrome
+    Length 240 palindrome
+    Length 239 palindrome
+    Length 238 palindrome
+  Repetitive sequences:
+    '0000' repeats 61 times
+    '0010' repeats 2 times
+    '00000' repeats 48 times
+    '000000' repeats 40 times
+    '0000000' repeats 34 times
+    '00000000' repeats 30 times
+  Symmetry score: 96.09%
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000068f3
+  Bit Patterns:
+    Pattern '0000' appears 238 times
+    Pattern '0001' appears 2 times
+    Pattern '0011' appears 3 times
+    Pattern '00000' appears 237 times
+    Pattern '00011' appears 2 times
+    Pattern '000000' appears 236 times
+    Pattern '0000000' appears 235 times
+    Pattern '00000000' appears 234 times
+  Palindromes found:
+    Length 241 palindrome
+    Length 240 palindrome
+    Length 239 palindrome
+    Length 238 palindrome
+    Length 237 palindrome
+  Repetitive sequences:
+    '0000' repeats 60 times
+    '0001' repeats 2 times
+    '0011' repeats 3 times
+    '00000' repeats 48 times
+    '00011' repeats 2 times
+    '000000' repeats 40 times
+    '0000000' repeats 34 times
+    '00000000' repeats 30 times
+  Symmetry score: 92.97%
+
+Original hex: 000000000000000000000000000000000000000000000000000000000000c936
+  Bit Patterns:
+    Pattern '0000' appears 237 times
+    Pattern '0011' appears 2 times
+    Pattern '0110' appears 3 times
+    Pattern '1001' appears 3 times
+    Pattern '0010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '00000' appears 236 times
+    Pattern '00110' appears 2 times
+    Pattern '10010' appears 2 times
+    Pattern '00100' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '000000' appears 235 times
+    Pattern '100100' appears 2 times
+    Pattern '001001' appears 2 times
+    Pattern '0000000' appears 234 times
+    Pattern '1001001' appears 2 times
+    Pattern '00000000' appears 233 times
+  Palindromes found:
+    Length 240 palindrome
+    Length 239 palindrome
+    Length 238 palindrome
+    Length 237 palindrome
+    Length 236 palindrome
+  Repetitive sequences:
+    '0000' repeats 60 times
+    '0011' repeats 2 times
+    '0110' repeats 2 times
+    '1001' repeats 2 times
+    '00000' repeats 48 times
+    '00110' repeats 2 times
+    '000000' repeats 40 times
+    '0000000' repeats 34 times
+    '00000000' repeats 30 times
+  Symmetry score: 93.75%
+
+Original hex: 000000000000000000000000000000000000000000000000000000000001764f
+  Bit Patterns:
+    Pattern '0000' appears 236 times
+    Pattern '0010' appears 2 times
+    Pattern '1011' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '00000' appears 235 times
+    Pattern '000000' appears 234 times
+    Pattern '0000000' appears 233 times
+    Pattern '00000000' appears 232 times
+  Palindromes found:
+    Length 239 palindrome
+    Length 238 palindrome
+    Length 237 palindrome
+    Length 236 palindrome
+    Length 235 palindrome
+  Repetitive sequences:
+    '0000' repeats 59 times
+    '0010' repeats 2 times
+    '1011' repeats 2 times
+    '0111' repeats 2 times
+    '00000' repeats 47 times
+    '000000' repeats 39 times
+    '0000000' repeats 34 times
+    '00000000' repeats 29 times
+  Symmetry score: 91.41%
+
+Original hex: 000000000000000000000000000000000000000000000000000000000003080d
+  Bit Patterns:
+    Pattern '0000' appears 240 times
+    Pattern '0001' appears 3 times
+    Pattern '0011' appears 2 times
+    Pattern '0110' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 237 times
+    Pattern '00001' appears 3 times
+    Pattern '00011' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '000000' appears 235 times
+    Pattern '000001' appears 2 times
+    Pattern '000011' appears 2 times
+    Pattern '000110' appears 2 times
+    Pattern '0000000' appears 233 times
+    Pattern '0000001' appears 2 times
+    Pattern '0000011' appears 2 times
+    Pattern '0000110' appears 2 times
+    Pattern '00000000' appears 231 times
+    Pattern '00000001' appears 2 times
+    Pattern '00000011' appears 2 times
+    Pattern '00000110' appears 2 times
+  Palindromes found:
+    Length 238 palindrome
+    Length 237 palindrome
+    Length 236 palindrome
+    Length 235 palindrome
+    Length 234 palindrome
+  Repetitive sequences:
+    '0000' repeats 61 times
+    '0001' repeats 3 times
+    '0011' repeats 2 times
+    '0110' repeats 2 times
+    '1000' repeats 2 times
+    '00000' repeats 48 times
+    '00001' repeats 3 times
+    '00011' repeats 2 times
+    '00110' repeats 2 times
+    '10000' repeats 2 times
+    '000000' repeats 40 times
+    '000001' repeats 2 times
+    '000011' repeats 2 times
+    '000110' repeats 2 times
+    '0000000' repeats 35 times
+    '0000001' repeats 2 times
+    '0000011' repeats 2 times
+    '0000110' repeats 2 times
+    '00000000' repeats 29 times
+    '00000001' repeats 2 times
+    '00000011' repeats 2 times
+    '00000110' repeats 2 times
+  Symmetry score: 95.31%
+
+Original hex: 000000000000000000000000000000000000000000000000000000000005749f
+  Bit Patterns:
+    Pattern '0000' appears 234 times
+    Pattern '0010' appears 2 times
+    Pattern '0101' appears 2 times
+    Pattern '1010' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '1111' appears 2 times
+    Pattern '00000' appears 233 times
+    Pattern '01001' appears 2 times
+    Pattern '000000' appears 232 times
+    Pattern '0000000' appears 231 times
+    Pattern '00000000' appears 230 times
+  Palindromes found:
+    Length 237 palindrome
+    Length 236 palindrome
+    Length 235 palindrome
+    Length 234 palindrome
+    Length 233 palindrome
+  Repetitive sequences:
+    '0000' repeats 59 times
+    '0010' repeats 2 times
+    '1010' repeats 2 times
+    '0111' repeats 2 times
+    '00000' repeats 47 times
+    '000000' repeats 39 times
+    '0000000' repeats 33 times
+    '00000000' repeats 29 times
+  Symmetry score: 90.62%
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000d2c55
+  Bit Patterns:
+    Pattern '0000' appears 233 times
+    Pattern '0001' appears 2 times
+    Pattern '0110' appears 2 times
+    Pattern '1010' appears 3 times
+    Pattern '0010' appears 2 times
+    Pattern '0101' appears 4 times
+    Pattern '00000' appears 232 times
+    Pattern '00101' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '10101' appears 2 times
+    Pattern '000000' appears 231 times
+    Pattern '010101' appears 2 times
+    Pattern '0000000' appears 230 times
+    Pattern '00000000' appears 229 times
+  Palindromes found:
+    Length 236 palindrome
+    Length 235 palindrome
+    Length 234 palindrome
+    Length 233 palindrome
+    Length 232 palindrome
+  Repetitive sequences:
+    '0000' repeats 59 times
+    '0001' repeats 2 times
+    '0110' repeats 2 times
+    '1010' repeats 2 times
+    '0010' repeats 2 times
+    '0101' repeats 3 times
+    '00000' repeats 47 times
+    '00101' repeats 2 times
+    '000000' repeats 39 times
+    '0000000' repeats 33 times
+    '00000000' repeats 29 times
+  Symmetry score: 92.19%
+
+Original hex: 00000000000000000000000000000000000000000000000000000000001ba534
+  Bit Patterns:
+    Pattern '0000' appears 232 times
+    Pattern '0011' appears 2 times
+    Pattern '0110' appears 2 times
+    Pattern '1101' appears 3 times
+    Pattern '1010' appears 3 times
+    Pattern '0100' appears 3 times
+    Pattern '1001' appears 2 times
+    Pattern '00000' appears 231 times
+    Pattern '00110' appears 2 times
+    Pattern '01101' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '10100' appears 3 times
+    Pattern '01001' appears 2 times
+    Pattern '000000' appears 230 times
+    Pattern '001101' appears 2 times
+    Pattern '110100' appears 2 times
+    Pattern '101001' appears 2 times
+    Pattern '0000000' appears 229 times
+    Pattern '00000000' appears 228 times
+  Palindromes found:
+    Length 235 palindrome
+    Length 234 palindrome
+    Length 233 palindrome
+    Length 232 palindrome
+    Length 231 palindrome
+  Repetitive sequences:
+    '0000' repeats 58 times
+    '0011' repeats 2 times
+    '0110' repeats 2 times
+    '1101' repeats 3 times
+    '1010' repeats 3 times
+    '0100' repeats 3 times
+    '1001' repeats 2 times
+    '00000' repeats 47 times
+    '00110' repeats 2 times
+    '01101' repeats 2 times
+    '11010' repeats 2 times
+    '10100' repeats 3 times
+    '01001' repeats 2 times
+    '000000' repeats 39 times
+    '001101' repeats 2 times
+    '110100' repeats 2 times
+    '0000000' repeats 33 times
+    '00000000' repeats 29 times
+  Symmetry score: 91.41%
+
+Original hex: 00000000000000000000000000000000000000000000000000000000002de40f
+  Bit Patterns:
+    Pattern '0000' appears 234 times
+    Pattern '0001' appears 2 times
+    Pattern '0010' appears 2 times
+    Pattern '1011' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '1111' appears 2 times
+    Pattern '00000' appears 232 times
+    Pattern '00001' appears 2 times
+    Pattern '01111' appears 2 times
+    Pattern '000000' appears 230 times
+    Pattern '000001' appears 2 times
+    Pattern '0000000' appears 228 times
+    Pattern '0000001' appears 2 times
+    Pattern '00000000' appears 227 times
+  Palindromes found:
+    Length 234 palindrome
+    Length 233 palindrome
+    Length 232 palindrome
+    Length 231 palindrome
+    Length 230 palindrome
+  Repetitive sequences:
+    '0000' repeats 59 times
+    '0001' repeats 2 times
+    '0010' repeats 2 times
+    '0111' repeats 2 times
+    '1111' repeats 2 times
+    '00000' repeats 47 times
+    '00001' repeats 2 times
+    '01111' repeats 2 times
+    '000000' repeats 40 times
+    '000001' repeats 2 times
+    '0000000' repeats 33 times
+    '0000001' repeats 2 times
+    '00000000' repeats 29 times
+  Symmetry score: 90.62%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000556e52
+  Bit Patterns:
+    Pattern '0000' appears 230 times
+    Pattern '0010' appears 3 times
+    Pattern '0101' appears 5 times
+    Pattern '1010' appears 4 times
+    Pattern '1011' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '00000' appears 229 times
+    Pattern '00101' appears 2 times
+    Pattern '01010' appears 4 times
+    Pattern '10101' appears 3 times
+    Pattern '10010' appears 2 times
+    Pattern '000000' appears 228 times
+    Pattern '001010' appears 2 times
+    Pattern '010101' appears 3 times
+    Pattern '101010' appears 2 times
+    Pattern '0000000' appears 227 times
+    Pattern '0101010' appears 2 times
+    Pattern '1010101' appears 2 times
+    Pattern '00000000' appears 226 times
+    Pattern '01010101' appears 2 times
+  Palindromes found:
+    Length 233 palindrome
+    Length 232 palindrome
+    Length 231 palindrome
+    Length 230 palindrome
+    Length 229 palindrome
+  Repetitive sequences:
+    '0000' repeats 58 times
+    '0010' repeats 3 times
+    '0101' repeats 3 times
+    '1010' repeats 3 times
+    '1001' repeats 2 times
+    '00000' repeats 46 times
+    '00101' repeats 2 times
+    '01010' repeats 2 times
+    '10010' repeats 2 times
+    '000000' repeats 38 times
+    '001010' repeats 2 times
+    '0000000' repeats 33 times
+    '00000000' repeats 29 times
+  Symmetry score: 90.62%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000dc2a04
+  Bit Patterns:
+    Pattern '0000' appears 233 times
+    Pattern '0001' appears 3 times
+    Pattern '1000' appears 2 times
+    Pattern '0010' appears 2 times
+    Pattern '0101' appears 2 times
+    Pattern '1010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '00000' appears 230 times
+    Pattern '00001' appears 3 times
+    Pattern '10000' appears 2 times
+    Pattern '00010' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '000000' appears 228 times
+    Pattern '000001' appears 2 times
+    Pattern '000010' appears 2 times
+    Pattern '0000000' appears 226 times
+    Pattern '0000001' appears 2 times
+    Pattern '00000000' appears 225 times
+  Palindromes found:
+    Length 232 palindrome
+    Length 231 palindrome
+    Length 230 palindrome
+    Length 229 palindrome
+    Length 228 palindrome
+  Repetitive sequences:
+    '0000' repeats 60 times
+    '0001' repeats 3 times
+    '1000' repeats 2 times
+    '0010' repeats 2 times
+    '0100' repeats 2 times
+    '00000' repeats 47 times
+    '00001' repeats 3 times
+    '10000' repeats 2 times
+    '00010' repeats 2 times
+    '000000' repeats 39 times
+    '000001' repeats 2 times
+    '000010' repeats 2 times
+    '0000000' repeats 33 times
+    '0000001' repeats 2 times
+    '00000000' repeats 29 times
+  Symmetry score: 92.97%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000001fa5ee5
+  Bit Patterns:
+    Pattern '0000' appears 228 times
+    Pattern '0111' appears 3 times
+    Pattern '1111' appears 4 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '0010' appears 2 times
+    Pattern '0101' appears 2 times
+    Pattern '1011' appears 2 times
+    Pattern '00000' appears 227 times
+    Pattern '01111' appears 2 times
+    Pattern '11111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '10010' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '000000' appears 226 times
+    Pattern '111101' appears 2 times
+    Pattern '100101' appears 2 times
+    Pattern '0000000' appears 225 times
+    Pattern '00000000' appears 224 times
+  Palindromes found:
+    Length 231 palindrome
+    Length 230 palindrome
+    Length 229 palindrome
+    Length 228 palindrome
+    Length 227 palindrome
+  Repetitive sequences:
+    '0000' repeats 57 times
+    '0111' repeats 3 times
+    '1111' repeats 2 times
+    '1110' repeats 3 times
+    '1101' repeats 2 times
+    '1001' repeats 2 times
+    '0010' repeats 2 times
+    '0101' repeats 2 times
+    '1011' repeats 2 times
+    '00000' repeats 46 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '11101' repeats 2 times
+    '10010' repeats 2 times
+    '00101' repeats 2 times
+    '10111' repeats 2 times
+    '000000' repeats 38 times
+    '111101' repeats 2 times
+    '100101' repeats 2 times
+    '0000000' repeats 33 times
+    '00000000' repeats 28 times
+  Symmetry score: 86.72%
+
+Original hex: 000000000000000000000000000000000000000000000000000000000340326e
+  Bit Patterns:
+    Pattern '0000' appears 232 times
+    Pattern '0001' appears 2 times
+    Pattern '0011' appears 3 times
+    Pattern '0110' appears 3 times
+    Pattern '1101' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '00000' appears 230 times
+    Pattern '00001' appears 2 times
+    Pattern '00011' appears 2 times
+    Pattern '00110' appears 3 times
+    Pattern '01101' appears 2 times
+    Pattern '000000' appears 228 times
+    Pattern '000001' appears 2 times
+    Pattern '000011' appears 2 times
+    Pattern '000110' appears 2 times
+    Pattern '001101' appears 2 times
+    Pattern '0000000' appears 226 times
+    Pattern '0000001' appears 2 times
+    Pattern '0000011' appears 2 times
+    Pattern '0000110' appears 2 times
+    Pattern '00000000' appears 224 times
+    Pattern '00000001' appears 2 times
+    Pattern '00000011' appears 2 times
+    Pattern '00000110' appears 2 times
+  Palindromes found:
+    Length 230 palindrome
+    Length 229 palindrome
+    Length 228 palindrome
+    Length 227 palindrome
+    Length 226 palindrome
+  Repetitive sequences:
+    '0000' repeats 59 times
+    '0001' repeats 2 times
+    '0011' repeats 3 times
+    '0110' repeats 3 times
+    '1101' repeats 2 times
+    '0100' repeats 2 times
+    '00000' repeats 47 times
+    '00001' repeats 2 times
+    '00011' repeats 2 times
+    '00110' repeats 3 times
+    '01101' repeats 2 times
+    '000000' repeats 39 times
+    '000001' repeats 2 times
+    '000011' repeats 2 times
+    '000110' repeats 2 times
+    '001101' repeats 2 times
+    '0000000' repeats 33 times
+    '0000001' repeats 2 times
+    '0000011' repeats 2 times
+    '0000110' repeats 2 times
+    '00000000' repeats 29 times
+    '00000001' repeats 2 times
+    '00000011' repeats 2 times
+    '00000110' repeats 2 times
+  Symmetry score: 91.41%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000006ac3875
+  Bit Patterns:
+    Pattern '0000' appears 228 times
+    Pattern '0001' appears 3 times
+    Pattern '0011' appears 3 times
+    Pattern '0110' appears 2 times
+    Pattern '1101' appears 2 times
+    Pattern '1010' appears 3 times
+    Pattern '0101' appears 3 times
+    Pattern '1100' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '1110' appears 2 times
+    Pattern '00000' appears 225 times
+    Pattern '00001' appears 3 times
+    Pattern '00011' appears 3 times
+    Pattern '11010' appears 2 times
+    Pattern '10101' appears 3 times
+    Pattern '11000' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '00111' appears 2 times
+    Pattern '01110' appears 2 times
+    Pattern '000000' appears 224 times
+    Pattern '000011' appears 3 times
+    Pattern '110101' appears 2 times
+    Pattern '110000' appears 2 times
+    Pattern '100001' appears 2 times
+    Pattern '000111' appears 2 times
+    Pattern '001110' appears 2 times
+    Pattern '0000000' appears 223 times
+    Pattern '1100001' appears 2 times
+    Pattern '1000011' appears 2 times
+    Pattern '0000111' appears 2 times
+    Pattern '0001110' appears 2 times
+    Pattern '00000000' appears 222 times
+    Pattern '11000011' appears 2 times
+    Pattern '10000111' appears 2 times
+    Pattern '00001110' appears 2 times
+  Palindromes found:
+    Length 229 palindrome
+    Length 228 palindrome
+    Length 227 palindrome
+    Length 226 palindrome
+    Length 225 palindrome
+  Repetitive sequences:
+    '0000' repeats 59 times
+    '0001' repeats 3 times
+    '0011' repeats 3 times
+    '0110' repeats 2 times
+    '1101' repeats 2 times
+    '1010' repeats 2 times
+    '0101' repeats 2 times
+    '1100' repeats 2 times
+    '1000' repeats 2 times
+    '0111' repeats 2 times
+    '1110' repeats 2 times
+    '00000' repeats 45 times
+    '00001' repeats 3 times
+    '00011' repeats 3 times
+    '11010' repeats 2 times
+    '10101' repeats 2 times
+    '11000' repeats 2 times
+    '10000' repeats 2 times
+    '00111' repeats 2 times
+    '01110' repeats 2 times
+    '000000' repeats 38 times
+    '000011' repeats 3 times
+    '110101' repeats 2 times
+    '110000' repeats 2 times
+    '100001' repeats 2 times
+    '000111' repeats 2 times
+    '001110' repeats 2 times
+    '0000000' repeats 32 times
+    '1100001' repeats 2 times
+    '1000011' repeats 2 times
+    '0000111' repeats 2 times
+    '0001110' repeats 2 times
+    '00000000' repeats 28 times
+  Symmetry score: 89.06%
+
+Original hex: 000000000000000000000000000000000000000000000000000000000d916ce8
+  Bit Patterns:
+    Pattern '0000' appears 225 times
+    Pattern '0001' appears 2 times
+    Pattern '0011' appears 2 times
+    Pattern '0110' appears 4 times
+    Pattern '1101' appears 3 times
+    Pattern '1011' appears 3 times
+    Pattern '1100' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '0010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 224 times
+    Pattern '01101' appears 2 times
+    Pattern '11011' appears 2 times
+    Pattern '10110' appears 3 times
+    Pattern '01100' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '01000' appears 2 times
+    Pattern '000000' appears 223 times
+    Pattern '011011' appears 2 times
+    Pattern '110110' appears 2 times
+    Pattern '101100' appears 2 times
+    Pattern '011001' appears 2 times
+    Pattern '0000000' appears 222 times
+    Pattern '0110110' appears 2 times
+    Pattern '1101100' appears 2 times
+    Pattern '1011001' appears 2 times
+    Pattern '00000000' appears 221 times
+    Pattern '01101100' appears 2 times
+    Pattern '11011001' appears 2 times
+  Palindromes found:
+    Length 228 palindrome
+    Length 227 palindrome
+    Length 226 palindrome
+    Length 225 palindrome
+    Length 224 palindrome
+  Repetitive sequences:
+    '0000' repeats 57 times
+    '0001' repeats 2 times
+    '0011' repeats 2 times
+    '0110' repeats 2 times
+    '1101' repeats 3 times
+    '1011' repeats 2 times
+    '1100' repeats 2 times
+    '1001' repeats 2 times
+    '0010' repeats 2 times
+    '0100' repeats 2 times
+    '1000' repeats 2 times
+    '00000' repeats 45 times
+    '01101' repeats 2 times
+    '11011' repeats 2 times
+    '10110' repeats 2 times
+    '01100' repeats 2 times
+    '11001' repeats 2 times
+    '01000' repeats 2 times
+    '000000' repeats 38 times
+    '011011' repeats 2 times
+    '110110' repeats 2 times
+    '101100' repeats 2 times
+    '011001' repeats 2 times
+    '0000000' repeats 32 times
+    '0110110' repeats 2 times
+    '1101100' repeats 2 times
+    '1011001' repeats 2 times
+    '00000000' repeats 28 times
+    '01101100' repeats 2 times
+    '11011001' repeats 2 times
+  Symmetry score: 89.06%
+
+Original hex: 0000000000000000000000000000000000000000000000000000000017e2551e
+  Bit Patterns:
+    Pattern '0000' appears 224 times
+    Pattern '0001' appears 3 times
+    Pattern '0010' appears 3 times
+    Pattern '0101' appears 4 times
+    Pattern '0111' appears 2 times
+    Pattern '1111' appears 4 times
+    Pattern '1110' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '1010' appears 3 times
+    Pattern '00000' appears 223 times
+    Pattern '00010' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '01111' appears 2 times
+    Pattern '11111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '10001' appears 2 times
+    Pattern '01010' appears 3 times
+    Pattern '10101' appears 2 times
+    Pattern '000000' appears 222 times
+    Pattern '010101' appears 2 times
+    Pattern '101010' appears 2 times
+    Pattern '0000000' appears 221 times
+    Pattern '0101010' appears 2 times
+    Pattern '00000000' appears 220 times
+  Palindromes found:
+    Length 227 palindrome
+    Length 226 palindrome
+    Length 225 palindrome
+    Length 224 palindrome
+    Length 223 palindrome
+  Repetitive sequences:
+    '0000' repeats 56 times
+    '0001' repeats 3 times
+    '0010' repeats 2 times
+    '0101' repeats 3 times
+    '0111' repeats 2 times
+    '1111' repeats 2 times
+    '1110' repeats 2 times
+    '1000' repeats 2 times
+    '0100' repeats 2 times
+    '1010' repeats 2 times
+    '00000' repeats 45 times
+    '00010' repeats 2 times
+    '00101' repeats 2 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '10001' repeats 2 times
+    '000000' repeats 37 times
+    '0000000' repeats 32 times
+    '00000000' repeats 28 times
+  Symmetry score: 87.50%
+
+Original hex: 000000000000000000000000000000000000000000000000000000003d94cd64
+  Bit Patterns:
+    Pattern '0000' appears 223 times
+    Pattern '0011' appears 3 times
+    Pattern '1101' appears 2 times
+    Pattern '1011' appears 2 times
+    Pattern '0110' appears 4 times
+    Pattern '1100' appears 3 times
+    Pattern '1001' appears 4 times
+    Pattern '0010' appears 2 times
+    Pattern '0101' appears 2 times
+    Pattern '1010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '00000' appears 222 times
+    Pattern '10110' appears 2 times
+    Pattern '01100' appears 3 times
+    Pattern '11001' appears 3 times
+    Pattern '10010' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '000000' appears 221 times
+    Pattern '101100' appears 2 times
+    Pattern '011001' appears 3 times
+    Pattern '110010' appears 2 times
+    Pattern '100110' appears 2 times
+    Pattern '0000000' appears 220 times
+    Pattern '1011001' appears 2 times
+    Pattern '0110010' appears 2 times
+    Pattern '00000000' appears 219 times
+    Pattern '10110010' appears 2 times
+  Palindromes found:
+    Length 226 palindrome
+    Length 225 palindrome
+    Length 224 palindrome
+    Length 223 palindrome
+    Length 222 palindrome
+  Repetitive sequences:
+    '0000' repeats 56 times
+    '0011' repeats 3 times
+    '1101' repeats 2 times
+    '1011' repeats 2 times
+    '0110' repeats 4 times
+    '1100' repeats 3 times
+    '1001' repeats 4 times
+    '0010' repeats 2 times
+    '0101' repeats 2 times
+    '1010' repeats 2 times
+    '0100' repeats 2 times
+    '00000' repeats 45 times
+    '10110' repeats 2 times
+    '01100' repeats 3 times
+    '11001' repeats 3 times
+    '10010' repeats 2 times
+    '000000' repeats 37 times
+    '101100' repeats 2 times
+    '011001' repeats 3 times
+    '110010' repeats 2 times
+    '0000000' repeats 32 times
+    '1011001' repeats 2 times
+    '0110010' repeats 2 times
+    '00000000' repeats 28 times
+    '10110010' repeats 2 times
+  Symmetry score: 87.50%
+
+Original hex: 000000000000000000000000000000000000000000000000000000007d4fe747
+  Bit Patterns:
+    Pattern '0000' appears 222 times
+    Pattern '0001' appears 2 times
+    Pattern '0011' appears 4 times
+    Pattern '0111' appears 4 times
+    Pattern '1111' appears 6 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 2 times
+    Pattern '1010' appears 3 times
+    Pattern '0100' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '00000' appears 221 times
+    Pattern '00011' appears 2 times
+    Pattern '00111' appears 4 times
+    Pattern '01111' appears 2 times
+    Pattern '11111' appears 4 times
+    Pattern '11110' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '000000' appears 220 times
+    Pattern '000111' appears 2 times
+    Pattern '001111' appears 2 times
+    Pattern '011111' appears 2 times
+    Pattern '111110' appears 2 times
+    Pattern '111010' appears 2 times
+    Pattern '100111' appears 2 times
+    Pattern '111111' appears 2 times
+    Pattern '0000000' appears 219 times
+    Pattern '0011111' appears 2 times
+    Pattern '00000000' appears 218 times
+  Palindromes found:
+    Length 225 palindrome
+    Length 224 palindrome
+    Length 223 palindrome
+    Length 222 palindrome
+    Length 221 palindrome
+  Repetitive sequences:
+    '0000' repeats 56 times
+    '0001' repeats 2 times
+    '0011' repeats 4 times
+    '0111' repeats 4 times
+    '1111' repeats 2 times
+    '1110' repeats 3 times
+    '1101' repeats 2 times
+    '1010' repeats 2 times
+    '0100' repeats 2 times
+    '1001' repeats 2 times
+    '00000' repeats 45 times
+    '00011' repeats 2 times
+    '00111' repeats 4 times
+    '01111' repeats 2 times
+    '11111' repeats 2 times
+    '11110' repeats 2 times
+    '11101' repeats 2 times
+    '11010' repeats 2 times
+    '10100' repeats 2 times
+    '10011' repeats 2 times
+    '000000' repeats 37 times
+    '000111' repeats 2 times
+    '001111' repeats 2 times
+    '011111' repeats 2 times
+    '111110' repeats 2 times
+    '111010' repeats 2 times
+    '100111' repeats 2 times
+    '0000000' repeats 32 times
+    '0011111' repeats 2 times
+    '00000000' repeats 28 times
+  Symmetry score: 83.59%
+
+Original hex: 00000000000000000000000000000000000000000000000000000000b862a62e
+  Bit Patterns:
+    Pattern '0000' appears 222 times
+    Pattern '0001' appears 4 times
+    Pattern '0010' appears 3 times
+    Pattern '0101' appears 4 times
+    Pattern '1011' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '1110' appears 2 times
+    Pattern '1100' appears 3 times
+    Pattern '1000' appears 3 times
+    Pattern '0011' appears 2 times
+    Pattern '0110' appears 2 times
+    Pattern '1010' appears 2 times
+    Pattern '00000' appears 220 times
+    Pattern '00001' appears 2 times
+    Pattern '00010' appears 3 times
+    Pattern '00101' appears 3 times
+    Pattern '01011' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '01110' appears 2 times
+    Pattern '11000' appears 3 times
+    Pattern '00110' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '10001' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '000000' appears 219 times
+    Pattern '000101' appears 3 times
+    Pattern '001011' appears 2 times
+    Pattern '010111' appears 2 times
+    Pattern '101110' appears 2 times
+    Pattern '001100' appears 2 times
+    Pattern '011000' appears 2 times
+    Pattern '110001' appears 2 times
+    Pattern '100010' appears 2 times
+    Pattern '0000000' appears 218 times
+    Pattern '0001011' appears 2 times
+    Pattern '0010111' appears 2 times
+    Pattern '0101110' appears 2 times
+    Pattern '0011000' appears 2 times
+    Pattern '0110001' appears 2 times
+    Pattern '1100010' appears 2 times
+    Pattern '1000101' appears 2 times
+    Pattern '00000000' appears 217 times
+    Pattern '00010111' appears 2 times
+    Pattern '00101110' appears 2 times
+    Pattern '00110001' appears 2 times
+    Pattern '01100010' appears 2 times
+    Pattern '11000101' appears 2 times
+  Palindromes found:
+    Length 224 palindrome
+    Length 223 palindrome
+    Length 222 palindrome
+    Length 221 palindrome
+    Length 220 palindrome
+  Repetitive sequences:
+    '0000' repeats 57 times
+    '0001' repeats 4 times
+    '0010' repeats 3 times
+    '0101' repeats 3 times
+    '1011' repeats 2 times
+    '0111' repeats 2 times
+    '1110' repeats 2 times
+    '1100' repeats 3 times
+    '1000' repeats 3 times
+    '0011' repeats 2 times
+    '0110' repeats 2 times
+    '00000' repeats 44 times
+    '00001' repeats 2 times
+    '00010' repeats 3 times
+    '00101' repeats 3 times
+    '01011' repeats 2 times
+    '10111' repeats 2 times
+    '01110' repeats 2 times
+    '11000' repeats 3 times
+    '00110' repeats 2 times
+    '01100' repeats 2 times
+    '10001' repeats 2 times
+    '000000' repeats 37 times
+    '000101' repeats 3 times
+    '001011' repeats 2 times
+    '010111' repeats 2 times
+    '101110' repeats 2 times
+    '001100' repeats 2 times
+    '011000' repeats 2 times
+    '110001' repeats 2 times
+    '100010' repeats 2 times
+    '0000000' repeats 32 times
+    '0001011' repeats 2 times
+    '0010111' repeats 2 times
+    '0101110' repeats 2 times
+    '0011000' repeats 2 times
+    '0110001' repeats 2 times
+    '1100010' repeats 2 times
+    '1000101' repeats 2 times
+    '00000000' repeats 28 times
+    '00010111' repeats 2 times
+    '00101110' repeats 2 times
+    '00110001' repeats 2 times
+    '01100010' repeats 2 times
+    '11000101' repeats 2 times
+  Symmetry score: 88.28%
+
+Original hex: 00000000000000000000000000000000000000000000000000000001a96ca8d8
+  Bit Patterns:
+    Pattern '0000' appears 220 times
+    Pattern '0001' appears 2 times
+    Pattern '0011' appears 2 times
+    Pattern '0110' appears 5 times
+    Pattern '1101' appears 3 times
+    Pattern '1010' appears 4 times
+    Pattern '0101' appears 4 times
+    Pattern '0100' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '0010' appears 2 times
+    Pattern '1011' appears 3 times
+    Pattern '1100' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 219 times
+    Pattern '00011' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '01101' appears 3 times
+    Pattern '10101' appears 2 times
+    Pattern '01010' appears 3 times
+    Pattern '10100' appears 2 times
+    Pattern '10010' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '10110' appears 3 times
+    Pattern '11011' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '000000' appears 218 times
+    Pattern '000110' appears 2 times
+    Pattern '001101' appears 2 times
+    Pattern '101010' appears 2 times
+    Pattern '010100' appears 2 times
+    Pattern '100101' appears 2 times
+    Pattern '011011' appears 2 times
+    Pattern '110110' appears 2 times
+    Pattern '101100' appears 2 times
+    Pattern '0000000' appears 217 times
+    Pattern '0001101' appears 2 times
+    Pattern '1010100' appears 2 times
+    Pattern '0110110' appears 2 times
+    Pattern '1101100' appears 2 times
+    Pattern '00000000' appears 216 times
+    Pattern '01101100' appears 2 times
+  Palindromes found:
+    Length 223 palindrome
+    Length 222 palindrome
+    Length 221 palindrome
+    Length 220 palindrome
+    Length 219 palindrome
+  Repetitive sequences:
+    '0000' repeats 55 times
+    '0001' repeats 2 times
+    '0011' repeats 2 times
+    '0110' repeats 3 times
+    '1101' repeats 3 times
+    '1010' repeats 2 times
+    '0101' repeats 3 times
+    '0100' repeats 2 times
+    '1001' repeats 2 times
+    '0010' repeats 2 times
+    '1011' repeats 2 times
+    '1100' repeats 2 times
+    '1000' repeats 2 times
+    '00000' repeats 44 times
+    '00011' repeats 2 times
+    '00110' repeats 2 times
+    '01101' repeats 3 times
+    '10101' repeats 2 times
+    '01010' repeats 2 times
+    '10100' repeats 2 times
+    '10010' repeats 2 times
+    '00101' repeats 2 times
+    '10110' repeats 2 times
+    '11011' repeats 2 times
+    '01100' repeats 2 times
+    '000000' repeats 37 times
+    '000110' repeats 2 times
+    '001101' repeats 2 times
+    '101010' repeats 2 times
+    '010100' repeats 2 times
+    '100101' repeats 2 times
+    '011011' repeats 2 times
+    '110110' repeats 2 times
+    '101100' repeats 2 times
+    '0000000' repeats 31 times
+    '0001101' repeats 2 times
+    '1010100' repeats 2 times
+    '0110110' repeats 2 times
+    '1101100' repeats 2 times
+    '00000000' repeats 27 times
+    '01101100' repeats 2 times
+  Symmetry score: 87.50%
+
+Original hex: 000000000000000000000000000000000000000000000000000000034a65911d
+  Bit Patterns:
+    Pattern '0000' appears 219 times
+    Pattern '0001' appears 3 times
+    Pattern '0011' appears 3 times
+    Pattern '0110' appears 3 times
+    Pattern '1101' appears 2 times
+    Pattern '1010' appears 2 times
+    Pattern '0100' appears 4 times
+    Pattern '1001' appears 4 times
+    Pattern '0010' appears 4 times
+    Pattern '0101' appears 2 times
+    Pattern '1100' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 218 times
+    Pattern '00011' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '10010' appears 3 times
+    Pattern '00101' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '00100' appears 2 times
+    Pattern '01000' appears 2 times
+    Pattern '10001' appears 2 times
+    Pattern '000000' appears 217 times
+    Pattern '101001' appears 2 times
+    Pattern '100101' appears 2 times
+    Pattern '011001' appears 2 times
+    Pattern '110010' appears 2 times
+    Pattern '001000' appears 2 times
+    Pattern '010001' appears 2 times
+    Pattern '0000000' appears 216 times
+    Pattern '0110010' appears 2 times
+    Pattern '0010001' appears 2 times
+    Pattern '00000000' appears 215 times
+  Palindromes found:
+    Length 222 palindrome
+    Length 221 palindrome
+    Length 220 palindrome
+    Length 219 palindrome
+    Length 218 palindrome
+  Repetitive sequences:
+    '0000' repeats 55 times
+    '0001' repeats 3 times
+    '0011' repeats 3 times
+    '0110' repeats 3 times
+    '1101' repeats 2 times
+    '1010' repeats 2 times
+    '0100' repeats 4 times
+    '1001' repeats 4 times
+    '0010' repeats 4 times
+    '0101' repeats 2 times
+    '1100' repeats 2 times
+    '1000' repeats 2 times
+    '00000' repeats 44 times
+    '00011' repeats 2 times
+    '00110' repeats 2 times
+    '10100' repeats 2 times
+    '01001' repeats 2 times
+    '10010' repeats 3 times
+    '00101' repeats 2 times
+    '01100' repeats 2 times
+    '11001' repeats 2 times
+    '000000' repeats 37 times
+    '100101' repeats 2 times
+    '011001' repeats 2 times
+    '110010' repeats 2 times
+    '0000000' repeats 31 times
+    '00000000' repeats 27 times
+  Symmetry score: 87.50%
+
+Original hex: 00000000000000000000000000000000000000000000000000000004aed21170
+  Bit Patterns:
+    Pattern '0000' appears 220 times
+    Pattern '0001' appears 3 times
+    Pattern '0010' appears 5 times
+    Pattern '0100' appears 4 times
+    Pattern '1001' appears 2 times
+    Pattern '0101' appears 3 times
+    Pattern '1010' appears 2 times
+    Pattern '1011' appears 3 times
+    Pattern '0111' appears 2 times
+    Pattern '1110' appears 2 times
+    Pattern '1101' appears 2 times
+    Pattern '1000' appears 3 times
+    Pattern '00000' appears 217 times
+    Pattern '00001' appears 2 times
+    Pattern '00010' appears 3 times
+    Pattern '00100' appears 3 times
+    Pattern '01001' appears 2 times
+    Pattern '10010' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '01110' appears 2 times
+    Pattern '01000' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '000000' appears 216 times
+    Pattern '000010' appears 2 times
+    Pattern '000100' appears 2 times
+    Pattern '010010' appears 2 times
+    Pattern '010111' appears 2 times
+    Pattern '101110' appears 2 times
+    Pattern '001000' appears 2 times
+    Pattern '0000000' appears 215 times
+    Pattern '0000100' appears 2 times
+    Pattern '0101110' appears 2 times
+    Pattern '00000000' appears 214 times
+  Palindromes found:
+    Length 221 palindrome
+    Length 220 palindrome
+    Length 219 palindrome
+    Length 218 palindrome
+    Length 217 palindrome
+  Repetitive sequences:
+    '0000' repeats 57 times
+    '0001' repeats 3 times
+    '0010' repeats 4 times
+    '0100' repeats 3 times
+    '1001' repeats 2 times
+    '0101' repeats 2 times
+    '1010' repeats 2 times
+    '1011' repeats 3 times
+    '0111' repeats 2 times
+    '1110' repeats 2 times
+    '1000' repeats 3 times
+    '00000' repeats 44 times
+    '00001' repeats 2 times
+    '00010' repeats 2 times
+    '00100' repeats 3 times
+    '01001' repeats 2 times
+    '10010' repeats 2 times
+    '00101' repeats 2 times
+    '01011' repeats 2 times
+    '10111' repeats 2 times
+    '01110' repeats 2 times
+    '01000' repeats 2 times
+    '10000' repeats 2 times
+    '000000' repeats 36 times
+    '000010' repeats 2 times
+    '000100' repeats 2 times
+    '010010' repeats 2 times
+    '010111' repeats 2 times
+    '101110' repeats 2 times
+    '0000000' repeats 31 times
+    '0000100' repeats 2 times
+    '0101110' repeats 2 times
+    '00000000' repeats 27 times
+  Symmetry score: 88.28%
+
+Original hex: 00000000000000000000000000000000000000000000000000000009de820a7c
+  Bit Patterns:
+    Pattern '0000' appears 221 times
+    Pattern '0001' appears 3 times
+    Pattern '0010' appears 3 times
+    Pattern '0100' appears 4 times
+    Pattern '1001' appears 2 times
+    Pattern '0011' appears 2 times
+    Pattern '0111' appears 3 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 2 times
+    Pattern '1111' appears 3 times
+    Pattern '1010' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 218 times
+    Pattern '00001' appears 3 times
+    Pattern '00010' appears 3 times
+    Pattern '00100' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '00111' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '01111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '01000' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '000000' appears 215 times
+    Pattern '000001' appears 3 times
+    Pattern '000010' appears 3 times
+    Pattern '000100' appears 2 times
+    Pattern '010011' appears 2 times
+    Pattern '100111' appears 2 times
+    Pattern '010000' appears 2 times
+    Pattern '100000' appears 2 times
+    Pattern '0000000' appears 214 times
+    Pattern '0000010' appears 3 times
+    Pattern '0000100' appears 2 times
+    Pattern '0100111' appears 2 times
+    Pattern '0100000' appears 2 times
+    Pattern '1000001' appears 2 times
+    Pattern '00000000' appears 213 times
+    Pattern '00000100' appears 2 times
+    Pattern '01000001' appears 2 times
+    Pattern '10000010' appears 2 times
+  Palindromes found:
+    Length 220 palindrome
+    Length 219 palindrome
+    Length 218 palindrome
+    Length 217 palindrome
+    Length 216 palindrome
+  Repetitive sequences:
+    '0000' repeats 57 times
+    '0001' repeats 3 times
+    '0010' repeats 3 times
+    '0100' repeats 4 times
+    '1001' repeats 2 times
+    '0011' repeats 2 times
+    '0111' repeats 3 times
+    '1110' repeats 3 times
+    '1101' repeats 2 times
+    '1111' repeats 2 times
+    '1010' repeats 2 times
+    '1000' repeats 2 times
+    '00000' repeats 46 times
+    '00001' repeats 3 times
+    '00010' repeats 3 times
+    '00100' repeats 2 times
+    '01001' repeats 2 times
+    '10011' repeats 2 times
+    '00111' repeats 2 times
+    '11101' repeats 2 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '10100' repeats 2 times
+    '01000' repeats 2 times
+    '10000' repeats 2 times
+    '000000' repeats 36 times
+    '000001' repeats 3 times
+    '000010' repeats 3 times
+    '000100' repeats 2 times
+    '010011' repeats 2 times
+    '100111' repeats 2 times
+    '010000' repeats 2 times
+    '100000' repeats 2 times
+    '0000000' repeats 31 times
+    '0000010' repeats 2 times
+    '0000100' repeats 2 times
+    '0100111' repeats 2 times
+    '00000000' repeats 27 times
+    '00000100' repeats 2 times
+  Symmetry score: 86.72%
+
+Original hex: 0000000000000000000000000000000000000000000000000000001757756a93
+  Bit Patterns:
+    Pattern '0000' appears 216 times
+    Pattern '0010' appears 2 times
+    Pattern '0101' appears 7 times
+    Pattern '1011' appears 4 times
+    Pattern '0111' appears 3 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 4 times
+    Pattern '1010' appears 7 times
+    Pattern '0100' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '00000' appears 215 times
+    Pattern '01011' appears 3 times
+    Pattern '10111' appears 3 times
+    Pattern '01110' appears 3 times
+    Pattern '11101' appears 3 times
+    Pattern '11010' appears 3 times
+    Pattern '10101' appears 6 times
+    Pattern '01010' appears 4 times
+    Pattern '01001' appears 2 times
+    Pattern '000000' appears 214 times
+    Pattern '010111' appears 2 times
+    Pattern '101110' appears 3 times
+    Pattern '011101' appears 3 times
+    Pattern '111010' appears 2 times
+    Pattern '110101' appears 3 times
+    Pattern '101010' appears 4 times
+    Pattern '010101' appears 3 times
+    Pattern '101011' appears 2 times
+    Pattern '0000000' appears 213 times
+    Pattern '0101110' appears 2 times
+    Pattern '1011101' appears 3 times
+    Pattern '0111010' appears 2 times
+    Pattern '1110101' appears 2 times
+    Pattern '1101010' appears 3 times
+    Pattern '1010101' appears 3 times
+    Pattern '0101011' appears 2 times
+    Pattern '00000000' appears 212 times
+    Pattern '01011101' appears 2 times
+    Pattern '10111010' appears 2 times
+    Pattern '01110101' appears 2 times
+    Pattern '11101010' appears 2 times
+    Pattern '11010101' appears 3 times
+    Pattern '10101011' appears 2 times
+  Palindromes found:
+    Length 219 palindrome
+    Length 218 palindrome
+    Length 217 palindrome
+    Length 216 palindrome
+    Length 215 palindrome
+  Repetitive sequences:
+    '0000' repeats 54 times
+    '0010' repeats 2 times
+    '0101' repeats 4 times
+    '1011' repeats 4 times
+    '0111' repeats 3 times
+    '1110' repeats 3 times
+    '1101' repeats 4 times
+    '1010' repeats 4 times
+    '00000' repeats 43 times
+    '01011' repeats 3 times
+    '10111' repeats 2 times
+    '01110' repeats 2 times
+    '11101' repeats 2 times
+    '11010' repeats 3 times
+    '10101' repeats 3 times
+    '01010' repeats 3 times
+    '000000' repeats 36 times
+    '010111' repeats 2 times
+    '101110' repeats 2 times
+    '011101' repeats 2 times
+    '111010' repeats 2 times
+    '110101' repeats 3 times
+    '101010' repeats 3 times
+    '010101' repeats 3 times
+    '101011' repeats 2 times
+    '0000000' repeats 31 times
+    '0101110' repeats 2 times
+    '1011101' repeats 2 times
+    '0111010' repeats 2 times
+    '1110101' repeats 2 times
+    '1101010' repeats 3 times
+    '1010101' repeats 3 times
+    '0101011' repeats 2 times
+    '00000000' repeats 27 times
+    '01011101' repeats 2 times
+    '10111010' repeats 2 times
+    '01110101' repeats 2 times
+    '11101010' repeats 2 times
+    '11010101' repeats 2 times
+    '10101011' repeats 2 times
+  Symmetry score: 82.81%
+
+Original hex: 00000000000000000000000000000000000000000000000000000022382facd0
+  Bit Patterns:
+    Pattern '0000' appears 218 times
+    Pattern '0001' appears 4 times
+    Pattern '0010' appears 3 times
+    Pattern '0100' appears 3 times
+    Pattern '1000' appears 4 times
+    Pattern '0011' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '1110' appears 2 times
+    Pattern '1100' appears 2 times
+    Pattern '0101' appears 2 times
+    Pattern '1011' appears 2 times
+    Pattern '1111' appears 2 times
+    Pattern '1101' appears 2 times
+    Pattern '1010' appears 2 times
+    Pattern '0110' appears 2 times
+    Pattern '00000' appears 215 times
+    Pattern '00001' appears 2 times
+    Pattern '00010' appears 3 times
+    Pattern '00100' appears 2 times
+    Pattern '01000' appears 3 times
+    Pattern '10001' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '000000' appears 213 times
+    Pattern '000001' appears 2 times
+    Pattern '000010' appears 2 times
+    Pattern '000100' appears 2 times
+    Pattern '001000' appears 2 times
+    Pattern '010001' appears 2 times
+    Pattern '0000000' appears 212 times
+    Pattern '0000010' appears 2 times
+    Pattern '0001000' appears 2 times
+    Pattern '0010001' appears 2 times
+    Pattern '00000000' appears 211 times
+    Pattern '00010001' appears 2 times
+  Palindromes found:
+    Length 218 palindrome
+    Length 217 palindrome
+    Length 216 palindrome
+    Length 215 palindrome
+    Length 214 palindrome
+  Repetitive sequences:
+    '0000' repeats 56 times
+    '0001' repeats 4 times
+    '0010' repeats 3 times
+    '0100' repeats 3 times
+    '1000' repeats 4 times
+    '0011' repeats 2 times
+    '0111' repeats 2 times
+    '1110' repeats 2 times
+    '1100' repeats 2 times
+    '0101' repeats 2 times
+    '1011' repeats 2 times
+    '1101' repeats 2 times
+    '1010' repeats 2 times
+    '0110' repeats 2 times
+    '00000' repeats 44 times
+    '00001' repeats 2 times
+    '00010' repeats 2 times
+    '01000' repeats 2 times
+    '10000' repeats 2 times
+    '01011' repeats 2 times
+    '11010' repeats 2 times
+    '000000' repeats 36 times
+    '000001' repeats 2 times
+    '000010' repeats 2 times
+    '0000000' repeats 31 times
+    '0000010' repeats 2 times
+    '00000000' repeats 27 times
+  Symmetry score: 86.72%
+
+Original hex: 0000000000000000000000000000000000000000000000000000004b5f8303e9
+  Bit Patterns:
+    Pattern '0000' appears 219 times
+    Pattern '0001' appears 3 times
+    Pattern '0010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '0101' appears 2 times
+    Pattern '1011' appears 2 times
+    Pattern '0110' appears 2 times
+    Pattern '1101' appears 2 times
+    Pattern '1010' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '1111' appears 5 times
+    Pattern '1110' appears 2 times
+    Pattern '1100' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '0011' appears 2 times
+    Pattern '00000' appears 216 times
+    Pattern '00001' appears 3 times
+    Pattern '01001' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '01111' appears 2 times
+    Pattern '11111' appears 3 times
+    Pattern '11110' appears 2 times
+    Pattern '11000' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '00011' appears 2 times
+    Pattern '000000' appears 213 times
+    Pattern '000001' appears 3 times
+    Pattern '011111' appears 2 times
+    Pattern '111110' appears 2 times
+    Pattern '110000' appears 2 times
+    Pattern '100000' appears 2 times
+    Pattern '000011' appears 2 times
+    Pattern '0000000' appears 211 times
+    Pattern '0000001' appears 2 times
+    Pattern '1100000' appears 2 times
+    Pattern '0000011' appears 2 times
+    Pattern '00000000' appears 210 times
+  Palindromes found:
+    Length 217 palindrome
+    Length 216 palindrome
+    Length 215 palindrome
+    Length 214 palindrome
+    Length 213 palindrome
+  Repetitive sequences:
+    '0000' repeats 56 times
+    '0001' repeats 3 times
+    '0100' repeats 2 times
+    '1001' repeats 2 times
+    '0101' repeats 2 times
+    '1011' repeats 2 times
+    '0110' repeats 2 times
+    '1101' repeats 2 times
+    '1010' repeats 2 times
+    '0111' repeats 2 times
+    '1111' repeats 2 times
+    '1110' repeats 2 times
+    '1100' repeats 2 times
+    '1000' repeats 2 times
+    '0011' repeats 2 times
+    '00000' repeats 45 times
+    '00001' repeats 3 times
+    '01001' repeats 2 times
+    '01011' repeats 2 times
+    '11010' repeats 2 times
+    '01111' repeats 2 times
+    '11111' repeats 2 times
+    '11110' repeats 2 times
+    '11000' repeats 2 times
+    '10000' repeats 2 times
+    '00011' repeats 2 times
+    '000000' repeats 37 times
+    '000001' repeats 3 times
+    '011111' repeats 2 times
+    '111110' repeats 2 times
+    '110000' repeats 2 times
+    '100000' repeats 2 times
+    '000011' repeats 2 times
+    '0000000' repeats 31 times
+    '0000001' repeats 2 times
+    '1100000' repeats 2 times
+    '0000011' repeats 2 times
+    '00000000' repeats 27 times
+  Symmetry score: 84.38%
+
+Original hex: 000000000000000000000000000000000000000000000000000000e9ae4933d6
+  Bit Patterns:
+    Pattern '0000' appears 213 times
+    Pattern '0011' appears 4 times
+    Pattern '0111' appears 3 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 3 times
+    Pattern '1010' appears 3 times
+    Pattern '0100' appears 4 times
+    Pattern '1001' appears 6 times
+    Pattern '0110' appears 3 times
+    Pattern '0101' appears 2 times
+    Pattern '1011' appears 2 times
+    Pattern '1100' appears 2 times
+    Pattern '0010' appears 3 times
+    Pattern '00000' appears 212 times
+    Pattern '00111' appears 2 times
+    Pattern '01110' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '11010' appears 3 times
+    Pattern '01001' appears 4 times
+    Pattern '10011' appears 3 times
+    Pattern '00110' appears 2 times
+    Pattern '10101' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '10010' appears 3 times
+    Pattern '00100' appears 3 times
+    Pattern '000000' appears 211 times
+    Pattern '111010' appears 2 times
+    Pattern '010011' appears 2 times
+    Pattern '100110' appears 2 times
+    Pattern '110101' appears 2 times
+    Pattern '101011' appears 2 times
+    Pattern '100100' appears 3 times
+    Pattern '001001' appears 3 times
+    Pattern '010010' appears 2 times
+    Pattern '0000000' appears 210 times
+    Pattern '0100110' appears 2 times
+    Pattern '1101011' appears 2 times
+    Pattern '1001001' appears 3 times
+    Pattern '0010010' appears 2 times
+    Pattern '0100100' appears 2 times
+    Pattern '00000000' appears 209 times
+    Pattern '10010010' appears 2 times
+    Pattern '00100100' appears 2 times
+    Pattern '01001001' appears 2 times
+  Palindromes found:
+    Length 216 palindrome
+    Length 215 palindrome
+    Length 214 palindrome
+    Length 213 palindrome
+    Length 212 palindrome
+  Repetitive sequences:
+    '0000' repeats 54 times
+    '0011' repeats 4 times
+    '0111' repeats 3 times
+    '1110' repeats 3 times
+    '1101' repeats 3 times
+    '1010' repeats 3 times
+    '0100' repeats 3 times
+    '1001' repeats 4 times
+    '0110' repeats 3 times
+    '0101' repeats 2 times
+    '1011' repeats 2 times
+    '1100' repeats 2 times
+    '0010' repeats 2 times
+    '00000' repeats 43 times
+    '00111' repeats 2 times
+    '01110' repeats 2 times
+    '11101' repeats 2 times
+    '11010' repeats 3 times
+    '01001' repeats 3 times
+    '10011' repeats 2 times
+    '00110' repeats 2 times
+    '10101' repeats 2 times
+    '01011' repeats 2 times
+    '11001' repeats 2 times
+    '10010' repeats 2 times
+    '00100' repeats 2 times
+    '000000' repeats 36 times
+    '111010' repeats 2 times
+    '010011' repeats 2 times
+    '100110' repeats 2 times
+    '110101' repeats 2 times
+    '101011' repeats 2 times
+    '100100' repeats 2 times
+    '001001' repeats 2 times
+    '0000000' repeats 30 times
+    '0100110' repeats 2 times
+    '1101011' repeats 2 times
+    '00000000' repeats 27 times
+  Symmetry score: 82.81%
+
+Original hex: 00000000000000000000000000000000000000000000000000000153869acc5b
+  Bit Patterns:
+    Pattern '0000' appears 213 times
+    Pattern '0001' appears 3 times
+    Pattern '0010' appears 2 times
+    Pattern '0101' appears 4 times
+    Pattern '1010' appears 4 times
+    Pattern '0100' appears 2 times
+    Pattern '1001' appears 3 times
+    Pattern '0011' appears 4 times
+    Pattern '1100' appears 3 times
+    Pattern '1000' appears 2 times
+    Pattern '0110' appears 5 times
+    Pattern '1101' appears 3 times
+    Pattern '1011' appears 3 times
+    Pattern '00000' appears 211 times
+    Pattern '00001' appears 2 times
+    Pattern '00010' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '10101' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '10011' appears 3 times
+    Pattern '11000' appears 2 times
+    Pattern '00110' appears 3 times
+    Pattern '01101' appears 3 times
+    Pattern '11010' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '10110' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '000000' appears 210 times
+    Pattern '000101' appears 2 times
+    Pattern '101001' appears 2 times
+    Pattern '010011' appears 2 times
+    Pattern '001101' appears 2 times
+    Pattern '011010' appears 2 times
+    Pattern '100110' appears 2 times
+    Pattern '010110' appears 2 times
+    Pattern '0000000' appears 209 times
+    Pattern '1010011' appears 2 times
+    Pattern '0011010' appears 2 times
+    Pattern '00000000' appears 208 times
+  Palindromes found:
+    Length 215 palindrome
+    Length 214 palindrome
+    Length 213 palindrome
+    Length 212 palindrome
+    Length 211 palindrome
+  Repetitive sequences:
+    '0000' repeats 54 times
+    '0001' repeats 3 times
+    '0010' repeats 2 times
+    '0101' repeats 3 times
+    '1010' repeats 3 times
+    '0100' repeats 2 times
+    '1001' repeats 3 times
+    '0011' repeats 4 times
+    '1100' repeats 3 times
+    '1000' repeats 2 times
+    '0110' repeats 5 times
+    '1101' repeats 3 times
+    '1011' repeats 2 times
+    '00000' repeats 43 times
+    '00001' repeats 2 times
+    '00010' repeats 2 times
+    '00101' repeats 2 times
+    '10101' repeats 2 times
+    '10100' repeats 2 times
+    '01001' repeats 2 times
+    '10011' repeats 3 times
+    '11000' repeats 2 times
+    '00110' repeats 3 times
+    '01101' repeats 3 times
+    '11010' repeats 2 times
+    '01011' repeats 2 times
+    '10110' repeats 2 times
+    '000000' repeats 35 times
+    '000101' repeats 2 times
+    '101001' repeats 2 times
+    '010011' repeats 2 times
+    '001101' repeats 2 times
+    '011010' repeats 2 times
+    '100110' repeats 2 times
+    '010110' repeats 2 times
+    '0000000' repeats 30 times
+    '1010011' repeats 2 times
+    '00000000' repeats 26 times
+  Symmetry score: 83.59%
+
+Original hex: 000000000000000000000000000000000000000000000000000002a221c58d8f
+  Bit Patterns:
+    Pattern '0000' appears 212 times
+    Pattern '0001' appears 7 times
+    Pattern '0010' appears 4 times
+    Pattern '0101' appears 3 times
+    Pattern '1010' appears 2 times
+    Pattern '0100' appears 3 times
+    Pattern '1000' appears 6 times
+    Pattern '0011' appears 3 times
+    Pattern '0111' appears 2 times
+    Pattern '1100' appears 3 times
+    Pattern '1011' appears 2 times
+    Pattern '0110' appears 3 times
+    Pattern '00000' appears 210 times
+    Pattern '00001' appears 2 times
+    Pattern '00010' appears 4 times
+    Pattern '00101' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '01000' appears 3 times
+    Pattern '10001' appears 5 times
+    Pattern '00100' appears 2 times
+    Pattern '00011' appears 3 times
+    Pattern '00111' appears 2 times
+    Pattern '11000' appears 3 times
+    Pattern '10110' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '000000' appears 209 times
+    Pattern '000101' appears 2 times
+    Pattern '010001' appears 2 times
+    Pattern '100010' appears 3 times
+    Pattern '000100' appears 2 times
+    Pattern '001000' appears 2 times
+    Pattern '000111' appears 2 times
+    Pattern '110001' appears 3 times
+    Pattern '101100' appears 2 times
+    Pattern '011000' appears 2 times
+    Pattern '100011' appears 2 times
+    Pattern '0000000' appears 208 times
+    Pattern '0100010' appears 2 times
+    Pattern '1000100' appears 2 times
+    Pattern '0001000' appears 2 times
+    Pattern '1011000' appears 2 times
+    Pattern '0110001' appears 2 times
+    Pattern '1100011' appears 2 times
+    Pattern '00000000' appears 207 times
+    Pattern '01000100' appears 2 times
+    Pattern '10001000' appears 2 times
+    Pattern '10110001' appears 2 times
+    Pattern '01100011' appears 2 times
+  Palindromes found:
+    Length 214 palindrome
+    Length 213 palindrome
+    Length 212 palindrome
+    Length 211 palindrome
+    Length 210 palindrome
+  Repetitive sequences:
+    '0000' repeats 54 times
+    '0001' repeats 7 times
+    '0010' repeats 4 times
+    '0101' repeats 2 times
+    '0100' repeats 3 times
+    '1000' repeats 6 times
+    '0011' repeats 3 times
+    '0111' repeats 2 times
+    '1100' repeats 3 times
+    '1011' repeats 2 times
+    '0110' repeats 2 times
+    '00000' repeats 42 times
+    '00001' repeats 2 times
+    '00010' repeats 3 times
+    '00101' repeats 2 times
+    '01000' repeats 2 times
+    '10001' repeats 4 times
+    '00011' repeats 3 times
+    '00111' repeats 2 times
+    '11000' repeats 3 times
+    '10110' repeats 2 times
+    '01100' repeats 2 times
+    '000000' repeats 35 times
+    '000101' repeats 2 times
+    '100010' repeats 2 times
+    '000111' repeats 2 times
+    '110001' repeats 3 times
+    '101100' repeats 2 times
+    '011000' repeats 2 times
+    '100011' repeats 2 times
+    '0000000' repeats 30 times
+    '1011000' repeats 2 times
+    '0110001' repeats 2 times
+    '1100011' repeats 2 times
+    '00000000' repeats 26 times
+    '10110001' repeats 2 times
+    '01100011' repeats 2 times
+  Symmetry score: 85.16%
+
+Original hex: 000000000000000000000000000000000000000000000000000006bd3b27c591
+  Bit Patterns:
+    Pattern '0000' appears 210 times
+    Pattern '0001' appears 3 times
+    Pattern '0011' appears 3 times
+    Pattern '0110' appears 3 times
+    Pattern '1101' appears 3 times
+    Pattern '1010' appears 2 times
+    Pattern '0101' appears 2 times
+    Pattern '1011' appears 3 times
+    Pattern '0111' appears 3 times
+    Pattern '1111' appears 3 times
+    Pattern '1110' appears 3 times
+    Pattern '0100' appears 3 times
+    Pattern '1001' appears 4 times
+    Pattern '1100' appears 3 times
+    Pattern '0010' appears 3 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 209 times
+    Pattern '11010' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '01111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '00111' appears 2 times
+    Pattern '10110' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '10010' appears 2 times
+    Pattern '00100' appears 2 times
+    Pattern '10001' appears 2 times
+    Pattern '000000' appears 208 times
+    Pattern '010011' appears 2 times
+    Pattern '100111' appears 2 times
+    Pattern '101100' appears 2 times
+    Pattern '011001' appears 2 times
+    Pattern '110010' appears 2 times
+    Pattern '100100' appears 2 times
+    Pattern '0000000' appears 207 times
+    Pattern '0100111' appears 2 times
+    Pattern '1011001' appears 2 times
+    Pattern '0110010' appears 2 times
+    Pattern '1100100' appears 2 times
+    Pattern '00000000' appears 206 times
+    Pattern '10110010' appears 2 times
+    Pattern '01100100' appears 2 times
+  Palindromes found:
+    Length 213 palindrome
+    Length 212 palindrome
+    Length 211 palindrome
+    Length 210 palindrome
+    Length 209 palindrome
+  Repetitive sequences:
+    '0000' repeats 53 times
+    '0001' repeats 3 times
+    '0011' repeats 3 times
+    '0110' repeats 3 times
+    '1101' repeats 3 times
+    '1010' repeats 2 times
+    '0101' repeats 2 times
+    '1011' repeats 3 times
+    '0111' repeats 3 times
+    '1111' repeats 2 times
+    '1110' repeats 3 times
+    '0100' repeats 3 times
+    '1001' repeats 3 times
+    '1100' repeats 3 times
+    '0010' repeats 3 times
+    '1000' repeats 2 times
+    '00000' repeats 42 times
+    '11010' repeats 2 times
+    '01011' repeats 2 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '11101' repeats 2 times
+    '01001' repeats 2 times
+    '10011' repeats 2 times
+    '00111' repeats 2 times
+    '10110' repeats 2 times
+    '01100' repeats 2 times
+    '11001' repeats 2 times
+    '10010' repeats 2 times
+    '00100' repeats 2 times
+    '10001' repeats 2 times
+    '000000' repeats 35 times
+    '010011' repeats 2 times
+    '100111' repeats 2 times
+    '101100' repeats 2 times
+    '011001' repeats 2 times
+    '110010' repeats 2 times
+    '100100' repeats 2 times
+    '0000000' repeats 30 times
+    '0100111' repeats 2 times
+    '1011001' repeats 2 times
+    '0110010' repeats 2 times
+    '1100100' repeats 2 times
+    '00000000' repeats 26 times
+    '10110010' repeats 2 times
+    '01100100' repeats 2 times
+  Symmetry score: 81.25%
+
+Original hex: 00000000000000000000000000000000000000000000000000000e02b35a358f
+  Bit Patterns:
+    Pattern '0000' appears 213 times
+    Pattern '0001' appears 4 times
+    Pattern '0011' appears 4 times
+    Pattern '0111' appears 2 times
+    Pattern '1100' appears 3 times
+    Pattern '1000' appears 3 times
+    Pattern '0101' appears 4 times
+    Pattern '1010' appears 4 times
+    Pattern '1011' appears 3 times
+    Pattern '0110' appears 5 times
+    Pattern '1101' appears 3 times
+    Pattern '00000' appears 211 times
+    Pattern '00001' appears 2 times
+    Pattern '00011' appears 3 times
+    Pattern '00111' appears 2 times
+    Pattern '11000' appears 2 times
+    Pattern '10101' appears 3 times
+    Pattern '01011' appears 3 times
+    Pattern '10110' appears 3 times
+    Pattern '01100' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '01101' appears 3 times
+    Pattern '11010' appears 3 times
+    Pattern '10001' appears 2 times
+    Pattern '000000' appears 209 times
+    Pattern '000001' appears 2 times
+    Pattern '000111' appears 2 times
+    Pattern '101011' appears 3 times
+    Pattern '010110' appears 3 times
+    Pattern '101100' appears 2 times
+    Pattern '001101' appears 2 times
+    Pattern '011010' appears 3 times
+    Pattern '110101' appears 2 times
+    Pattern '100011' appears 2 times
+    Pattern '0000000' appears 207 times
+    Pattern '0000001' appears 2 times
+    Pattern '1010110' appears 3 times
+    Pattern '0101100' appears 2 times
+    Pattern '0011010' appears 2 times
+    Pattern '0110101' appears 2 times
+    Pattern '1101011' appears 2 times
+    Pattern '00000000' appears 205 times
+    Pattern '00000001' appears 2 times
+    Pattern '10101100' appears 2 times
+    Pattern '00110101' appears 2 times
+    Pattern '01101011' appears 2 times
+    Pattern '11010110' appears 2 times
+  Palindromes found:
+    Length 212 palindrome
+    Length 211 palindrome
+    Length 210 palindrome
+    Length 209 palindrome
+    Length 208 palindrome
+  Repetitive sequences:
+    '0000' repeats 54 times
+    '0001' repeats 4 times
+    '0011' repeats 4 times
+    '0111' repeats 2 times
+    '1100' repeats 3 times
+    '1000' repeats 3 times
+    '0101' repeats 3 times
+    '1010' repeats 4 times
+    '1011' repeats 3 times
+    '0110' repeats 5 times
+    '1101' repeats 3 times
+    '00000' repeats 43 times
+    '00001' repeats 2 times
+    '00011' repeats 3 times
+    '00111' repeats 2 times
+    '11000' repeats 2 times
+    '10101' repeats 3 times
+    '01011' repeats 3 times
+    '10110' repeats 3 times
+    '01100' repeats 2 times
+    '00110' repeats 2 times
+    '01101' repeats 3 times
+    '11010' repeats 3 times
+    '10001' repeats 2 times
+    '000000' repeats 36 times
+    '000001' repeats 2 times
+    '000111' repeats 2 times
+    '101011' repeats 3 times
+    '010110' repeats 3 times
+    '101100' repeats 2 times
+    '001101' repeats 2 times
+    '011010' repeats 2 times
+    '110101' repeats 2 times
+    '100011' repeats 2 times
+    '0000000' repeats 31 times
+    '0000001' repeats 2 times
+    '1010110' repeats 3 times
+    '0101100' repeats 2 times
+    '0011010' repeats 2 times
+    '0110101' repeats 2 times
+    '1101011' repeats 2 times
+    '00000000' repeats 26 times
+    '00000001' repeats 2 times
+    '10101100' repeats 2 times
+    '00110101' repeats 2 times
+    '01101011' repeats 2 times
+    '11010110' repeats 2 times
+  Symmetry score: 82.81%
+
+Original hex: 0000000000000000000000000000000000000000000000000000122fca143c05
+  Bit Patterns:
+    Pattern '0000' appears 214 times
+    Pattern '0001' appears 5 times
+    Pattern '0010' appears 6 times
+    Pattern '0100' appears 4 times
+    Pattern '1001' appears 2 times
+    Pattern '1000' appears 4 times
+    Pattern '0101' appears 4 times
+    Pattern '0111' appears 2 times
+    Pattern '1111' appears 4 times
+    Pattern '1110' appears 2 times
+    Pattern '1100' appears 2 times
+    Pattern '1010' appears 2 times
+    Pattern '00000' appears 210 times
+    Pattern '00001' appears 4 times
+    Pattern '00010' appears 4 times
+    Pattern '00100' appears 2 times
+    Pattern '10010' appears 2 times
+    Pattern '01000' appears 3 times
+    Pattern '00101' appears 4 times
+    Pattern '01111' appears 2 times
+    Pattern '11111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11100' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '10000' appears 3 times
+    Pattern '000000' appears 208 times
+    Pattern '000001' appears 2 times
+    Pattern '000010' appears 3 times
+    Pattern '000101' appears 3 times
+    Pattern '111100' appears 2 times
+    Pattern '001010' appears 2 times
+    Pattern '010100' appears 2 times
+    Pattern '101000' appears 2 times
+    Pattern '010000' appears 2 times
+    Pattern '100001' appears 2 times
+    Pattern '0000000' appears 206 times
+    Pattern '0000001' appears 2 times
+    Pattern '0000010' appears 2 times
+    Pattern '0010100' appears 2 times
+    Pattern '0101000' appears 2 times
+    Pattern '1010000' appears 2 times
+    Pattern '0100001' appears 2 times
+    Pattern '0000101' appears 2 times
+    Pattern '00000000' appears 204 times
+    Pattern '00000001' appears 2 times
+    Pattern '00000010' appears 2 times
+    Pattern '00101000' appears 2 times
+    Pattern '01010000' appears 2 times
+    Pattern '10100001' appears 2 times
+  Palindromes found:
+    Length 211 palindrome
+    Length 210 palindrome
+    Length 209 palindrome
+    Length 208 palindrome
+    Length 207 palindrome
+  Repetitive sequences:
+    '0000' repeats 55 times
+    '0001' repeats 5 times
+    '0010' repeats 5 times
+    '0100' repeats 3 times
+    '1001' repeats 2 times
+    '1000' repeats 4 times
+    '0101' repeats 4 times
+    '0111' repeats 2 times
+    '1111' repeats 2 times
+    '1110' repeats 2 times
+    '1100' repeats 2 times
+    '1010' repeats 2 times
+    '00000' repeats 43 times
+    '00001' repeats 4 times
+    '00010' repeats 4 times
+    '10010' repeats 2 times
+    '01000' repeats 3 times
+    '00101' repeats 4 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '11100' repeats 2 times
+    '01010' repeats 2 times
+    '10100' repeats 2 times
+    '10000' repeats 3 times
+    '000000' repeats 36 times
+    '000001' repeats 2 times
+    '000010' repeats 3 times
+    '000101' repeats 3 times
+    '111100' repeats 2 times
+    '001010' repeats 2 times
+    '010100' repeats 2 times
+    '101000' repeats 2 times
+    '010000' repeats 2 times
+    '100001' repeats 2 times
+    '0000000' repeats 31 times
+    '0000001' repeats 2 times
+    '0000010' repeats 2 times
+    '0010100' repeats 2 times
+    '0101000' repeats 2 times
+    '1010000' repeats 2 times
+    '0100001' repeats 2 times
+    '0000101' repeats 2 times
+    '00000000' repeats 26 times
+    '00000001' repeats 2 times
+    '00000010' repeats 2 times
+  Symmetry score: 85.16%
+
+Original hex: 00000000000000000000000000000000000000000000000000002ec18388d544
+  Bit Patterns:
+    Pattern '0000' appears 211 times
+    Pattern '0001' appears 6 times
+    Pattern '0010' appears 3 times
+    Pattern '0101' appears 4 times
+    Pattern '1011' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '1110' appears 2 times
+    Pattern '1101' appears 2 times
+    Pattern '0110' appears 3 times
+    Pattern '1100' appears 3 times
+    Pattern '1000' appears 5 times
+    Pattern '0011' appears 3 times
+    Pattern '0100' appears 3 times
+    Pattern '1010' appears 4 times
+    Pattern '00000' appears 208 times
+    Pattern '00001' appears 3 times
+    Pattern '00010' appears 3 times
+    Pattern '01110' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '11000' appears 3 times
+    Pattern '10000' appears 2 times
+    Pattern '00011' appears 3 times
+    Pattern '00110' appears 2 times
+    Pattern '10001' appears 3 times
+    Pattern '00100' appears 2 times
+    Pattern '01000' appears 2 times
+    Pattern '10101' appears 3 times
+    Pattern '01010' appears 3 times
+    Pattern '000000' appears 205 times
+    Pattern '000001' appears 3 times
+    Pattern '011000' appears 2 times
+    Pattern '110000' appears 2 times
+    Pattern '100000' appears 2 times
+    Pattern '000011' appears 2 times
+    Pattern '000110' appears 2 times
+    Pattern '100010' appears 2 times
+    Pattern '000100' appears 2 times
+    Pattern '010001' appears 2 times
+    Pattern '101010' appears 3 times
+    Pattern '010101' appears 2 times
+    Pattern '0000000' appears 204 times
+    Pattern '0110000' appears 2 times
+    Pattern '1100000' appears 2 times
+    Pattern '1000001' appears 2 times
+    Pattern '0000011' appears 2 times
+    Pattern '1000100' appears 2 times
+    Pattern '1010101' appears 2 times
+    Pattern '0101010' appears 2 times
+    Pattern '00000000' appears 203 times
+    Pattern '01100000' appears 2 times
+    Pattern '11000001' appears 2 times
+    Pattern '10000011' appears 2 times
+    Pattern '10101010' appears 2 times
+  Palindromes found:
+    Length 210 palindrome
+    Length 209 palindrome
+    Length 208 palindrome
+    Length 207 palindrome
+    Length 206 palindrome
+  Repetitive sequences:
+    '0000' repeats 54 times
+    '0001' repeats 6 times
+    '0010' repeats 3 times
+    '0101' repeats 3 times
+    '1011' repeats 2 times
+    '0111' repeats 2 times
+    '1110' repeats 2 times
+    '1101' repeats 2 times
+    '0110' repeats 3 times
+    '1100' repeats 3 times
+    '1000' repeats 5 times
+    '0011' repeats 3 times
+    '0100' repeats 3 times
+    '1010' repeats 2 times
+    '00000' repeats 44 times
+    '00001' repeats 3 times
+    '00010' repeats 3 times
+    '01110' repeats 2 times
+    '01100' repeats 2 times
+    '11000' repeats 3 times
+    '10000' repeats 2 times
+    '00011' repeats 3 times
+    '00110' repeats 2 times
+    '10001' repeats 2 times
+    '00100' repeats 2 times
+    '01000' repeats 2 times
+    '000000' repeats 35 times
+    '000001' repeats 3 times
+    '011000' repeats 2 times
+    '110000' repeats 2 times
+    '100000' repeats 2 times
+    '000011' repeats 2 times
+    '000110' repeats 2 times
+    '100010' repeats 2 times
+    '000100' repeats 2 times
+    '010001' repeats 2 times
+    '0000000' repeats 30 times
+    '0110000' repeats 2 times
+    '1100000' repeats 2 times
+    '1000001' repeats 2 times
+    '0000011' repeats 2 times
+    '1000100' repeats 2 times
+    '00000000' repeats 26 times
+  Symmetry score: 85.16%
+
+Original hex: 00000000000000000000000000000000000000000000000000006cd610b53cba
+  Bit Patterns:
+    Pattern '0000' appears 208 times
+    Pattern '0001' appears 3 times
+    Pattern '0011' appears 3 times
+    Pattern '0110' appears 5 times
+    Pattern '1101' appears 4 times
+    Pattern '1011' appears 4 times
+    Pattern '1100' appears 3 times
+    Pattern '1001' appears 3 times
+    Pattern '1010' appears 4 times
+    Pattern '0101' appears 4 times
+    Pattern '1000' appears 2 times
+    Pattern '0010' appears 3 times
+    Pattern '0100' appears 2 times
+    Pattern '0111' appears 2 times
+    Pattern '1110' appears 2 times
+    Pattern '00000' appears 205 times
+    Pattern '00001' appears 3 times
+    Pattern '00110' appears 2 times
+    Pattern '01101' appears 3 times
+    Pattern '10110' appears 3 times
+    Pattern '01100' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '11010' appears 3 times
+    Pattern '10101' appears 2 times
+    Pattern '01011' appears 3 times
+    Pattern '10000' appears 2 times
+    Pattern '00010' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '000000' appears 204 times
+    Pattern '001101' appears 2 times
+    Pattern '101100' appears 2 times
+    Pattern '011010' appears 2 times
+    Pattern '110101' appears 2 times
+    Pattern '010110' appears 2 times
+    Pattern '100001' appears 2 times
+    Pattern '000010' appears 2 times
+    Pattern '001011' appears 2 times
+    Pattern '0000000' appears 203 times
+    Pattern '0110101' appears 2 times
+    Pattern '1000010' appears 2 times
+    Pattern '00000000' appears 202 times
+  Palindromes found:
+    Length 209 palindrome
+    Length 208 palindrome
+    Length 207 palindrome
+    Length 206 palindrome
+    Length 205 palindrome
+  Repetitive sequences:
+    '0000' repeats 54 times
+    '0001' repeats 3 times
+    '0011' repeats 3 times
+    '0110' repeats 4 times
+    '1101' repeats 4 times
+    '1011' repeats 4 times
+    '1100' repeats 3 times
+    '1001' repeats 3 times
+    '1010' repeats 3 times
+    '0101' repeats 4 times
+    '1000' repeats 2 times
+    '0010' repeats 3 times
+    '0100' repeats 2 times
+    '0111' repeats 2 times
+    '1110' repeats 2 times
+    '00000' repeats 41 times
+    '00001' repeats 3 times
+    '00110' repeats 2 times
+    '01101' repeats 3 times
+    '10110' repeats 3 times
+    '01100' repeats 2 times
+    '11001' repeats 2 times
+    '10011' repeats 2 times
+    '11010' repeats 3 times
+    '10101' repeats 2 times
+    '01011' repeats 3 times
+    '10000' repeats 2 times
+    '00010' repeats 2 times
+    '00101' repeats 2 times
+    '000000' repeats 34 times
+    '001101' repeats 2 times
+    '101100' repeats 2 times
+    '011010' repeats 2 times
+    '110101' repeats 2 times
+    '010110' repeats 2 times
+    '001011' repeats 2 times
+    '0000000' repeats 29 times
+    '0110101' repeats 2 times
+    '00000000' repeats 26 times
+  Symmetry score: 81.25%
+
+Original hex: 0000000000000000000000000000000000000000000000000000ade6d7ce3b9b
+  Bit Patterns:
+    Pattern '0000' appears 205 times
+    Pattern '0001' appears 2 times
+    Pattern '0101' appears 3 times
+    Pattern '1010' appears 2 times
+    Pattern '1011' appears 6 times
+    Pattern '0110' appears 4 times
+    Pattern '1101' appears 5 times
+    Pattern '0111' appears 5 times
+    Pattern '1111' appears 3 times
+    Pattern '1110' appears 5 times
+    Pattern '1100' appears 4 times
+    Pattern '1001' appears 3 times
+    Pattern '0011' appears 4 times
+    Pattern '00000' appears 204 times
+    Pattern '10101' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '10110' appears 2 times
+    Pattern '01101' appears 4 times
+    Pattern '11011' appears 4 times
+    Pattern '10111' appears 3 times
+    Pattern '01111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11100' appears 4 times
+    Pattern '11001' appears 3 times
+    Pattern '10011' appears 3 times
+    Pattern '00110' appears 2 times
+    Pattern '00111' appears 2 times
+    Pattern '01110' appears 3 times
+    Pattern '000000' appears 203 times
+    Pattern '101011' appears 2 times
+    Pattern '101101' appears 2 times
+    Pattern '011011' appears 3 times
+    Pattern '110111' appears 2 times
+    Pattern '101111' appears 2 times
+    Pattern '111100' appears 2 times
+    Pattern '111001' appears 3 times
+    Pattern '110011' appears 3 times
+    Pattern '100110' appears 2 times
+    Pattern '001101' appears 2 times
+    Pattern '001110' appears 2 times
+    Pattern '011100' appears 2 times
+    Pattern '0000000' appears 202 times
+    Pattern '1111001' appears 2 times
+    Pattern '1110011' appears 3 times
+    Pattern '1100110' appears 2 times
+    Pattern '1001101' appears 2 times
+    Pattern '0011011' appears 2 times
+    Pattern '00000000' appears 201 times
+    Pattern '11110011' appears 2 times
+    Pattern '11100110' appears 2 times
+    Pattern '11001101' appears 2 times
+    Pattern '10011011' appears 2 times
+  Palindromes found:
+    Length 208 palindrome
+    Length 207 palindrome
+    Length 206 palindrome
+    Length 205 palindrome
+    Length 204 palindrome
+  Repetitive sequences:
+    '0000' repeats 52 times
+    '0001' repeats 2 times
+    '0101' repeats 2 times
+    '1010' repeats 2 times
+    '1011' repeats 5 times
+    '0110' repeats 3 times
+    '1101' repeats 4 times
+    '0111' repeats 5 times
+    '1111' repeats 2 times
+    '1110' repeats 5 times
+    '1100' repeats 4 times
+    '1001' repeats 3 times
+    '0011' repeats 4 times
+    '00000' repeats 41 times
+    '10101' repeats 2 times
+    '01011' repeats 2 times
+    '10110' repeats 2 times
+    '01101' repeats 3 times
+    '11011' repeats 4 times
+    '10111' repeats 3 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '11100' repeats 4 times
+    '11001' repeats 3 times
+    '10011' repeats 3 times
+    '00110' repeats 2 times
+    '00111' repeats 2 times
+    '01110' repeats 2 times
+    '000000' repeats 34 times
+    '101011' repeats 2 times
+    '101101' repeats 2 times
+    '011011' repeats 3 times
+    '110111' repeats 2 times
+    '101111' repeats 2 times
+    '111100' repeats 2 times
+    '111001' repeats 3 times
+    '110011' repeats 3 times
+    '100110' repeats 2 times
+    '001101' repeats 2 times
+    '001110' repeats 2 times
+    '011100' repeats 2 times
+    '0000000' repeats 29 times
+    '1111001' repeats 2 times
+    '1110011' repeats 3 times
+    '1100110' repeats 2 times
+    '1001101' repeats 2 times
+    '0011011' repeats 2 times
+    '00000000' repeats 26 times
+    '11110011' repeats 2 times
+    '11100110' repeats 2 times
+    '11001101' repeats 2 times
+    '10011011' repeats 2 times
+  Symmetry score: 75.78%
+
+Original hex: 000000000000000000000000000000000000000000000000000174176b015f4d
+  Bit Patterns:
+    Pattern '0000' appears 210 times
+    Pattern '0001' appears 3 times
+    Pattern '0010' appears 3 times
+    Pattern '0101' appears 5 times
+    Pattern '1011' appears 5 times
+    Pattern '0111' appears 3 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 5 times
+    Pattern '1010' appears 4 times
+    Pattern '0100' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '0110' appears 3 times
+    Pattern '1111' appears 2 times
+    Pattern '00000' appears 207 times
+    Pattern '00001' appears 3 times
+    Pattern '00010' appears 3 times
+    Pattern '00101' appears 3 times
+    Pattern '01011' appears 4 times
+    Pattern '10111' appears 3 times
+    Pattern '01110' appears 2 times
+    Pattern '11101' appears 3 times
+    Pattern '11010' appears 3 times
+    Pattern '10100' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '10110' appears 2 times
+    Pattern '01101' appears 2 times
+    Pattern '10101' appears 2 times
+    Pattern '000000' appears 204 times
+    Pattern '000001' appears 3 times
+    Pattern '000010' appears 3 times
+    Pattern '000101' appears 3 times
+    Pattern '001011' appears 2 times
+    Pattern '010111' appears 3 times
+    Pattern '101110' appears 2 times
+    Pattern '011101' appears 2 times
+    Pattern '111010' appears 2 times
+    Pattern '110100' appears 2 times
+    Pattern '100000' appears 2 times
+    Pattern '101011' appears 2 times
+    Pattern '0000000' appears 202 times
+    Pattern '0000001' appears 2 times
+    Pattern '0000010' appears 3 times
+    Pattern '0000101' appears 3 times
+    Pattern '0001011' appears 2 times
+    Pattern '0010111' appears 2 times
+    Pattern '0101110' appears 2 times
+    Pattern '1011101' appears 2 times
+    Pattern '1110100' appears 2 times
+    Pattern '00000000' appears 200 times
+    Pattern '00000001' appears 2 times
+    Pattern '00000010' appears 2 times
+    Pattern '00000101' appears 3 times
+    Pattern '00001011' appears 2 times
+    Pattern '00010111' appears 2 times
+    Pattern '00101110' appears 2 times
+    Pattern '01011101' appears 2 times
+  Palindromes found:
+    Length 207 palindrome
+    Length 206 palindrome
+    Length 205 palindrome
+    Length 204 palindrome
+    Length 203 palindrome
+  Repetitive sequences:
+    '0000' repeats 53 times
+    '0001' repeats 3 times
+    '0010' repeats 3 times
+    '0101' repeats 4 times
+    '1011' repeats 5 times
+    '0111' repeats 3 times
+    '1110' repeats 3 times
+    '1101' repeats 4 times
+    '1010' repeats 4 times
+    '0100' repeats 2 times
+    '1000' repeats 2 times
+    '0110' repeats 3 times
+    '00000' repeats 43 times
+    '00001' repeats 3 times
+    '00010' repeats 3 times
+    '00101' repeats 3 times
+    '01011' repeats 4 times
+    '10111' repeats 3 times
+    '01110' repeats 2 times
+    '11101' repeats 3 times
+    '11010' repeats 3 times
+    '10100' repeats 2 times
+    '10000' repeats 2 times
+    '10110' repeats 2 times
+    '01101' repeats 2 times
+    '10101' repeats 2 times
+    '000000' repeats 35 times
+    '000001' repeats 3 times
+    '000010' repeats 3 times
+    '000101' repeats 3 times
+    '001011' repeats 2 times
+    '010111' repeats 3 times
+    '101110' repeats 2 times
+    '011101' repeats 2 times
+    '111010' repeats 2 times
+    '110100' repeats 2 times
+    '100000' repeats 2 times
+    '101011' repeats 2 times
+    '0000000' repeats 30 times
+    '0000001' repeats 2 times
+    '0000010' repeats 3 times
+    '0000101' repeats 3 times
+    '0001011' repeats 2 times
+    '0010111' repeats 2 times
+    '0101110' repeats 2 times
+    '1011101' repeats 2 times
+    '1110100' repeats 2 times
+    '00000000' repeats 25 times
+    '00000001' repeats 2 times
+    '00000010' repeats 2 times
+    '00000101' repeats 3 times
+    '00001011' repeats 2 times
+    '00010111' repeats 2 times
+    '00101110' repeats 2 times
+    '01011101' repeats 2 times
+  Symmetry score: 80.47%
+
+Original hex: 00000000000000000000000000000000000000000000000000022bd43c2e9354
+  Bit Patterns:
+    Pattern '0000' appears 205 times
+    Pattern '0001' appears 4 times
+    Pattern '0010' appears 4 times
+    Pattern '0100' appears 5 times
+    Pattern '1000' appears 3 times
+    Pattern '0101' appears 6 times
+    Pattern '1010' appears 7 times
+    Pattern '1011' appears 2 times
+    Pattern '0111' appears 3 times
+    Pattern '1111' appears 2 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 3 times
+    Pattern '0011' appears 2 times
+    Pattern '1001' appears 2 times
+    Pattern '00000' appears 202 times
+    Pattern '00001' appears 3 times
+    Pattern '00010' appears 3 times
+    Pattern '00100' appears 2 times
+    Pattern '01000' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '01010' appears 4 times
+    Pattern '10101' appears 4 times
+    Pattern '01011' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '01111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '11010' appears 3 times
+    Pattern '10100' appears 3 times
+    Pattern '10000' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '000000' appears 201 times
+    Pattern '000010' appears 2 times
+    Pattern '000101' appears 2 times
+    Pattern '010101' appears 2 times
+    Pattern '010111' appears 2 times
+    Pattern '011110' appears 2 times
+    Pattern '111010' appears 2 times
+    Pattern '110101' appears 2 times
+    Pattern '101010' appears 3 times
+    Pattern '010100' appears 2 times
+    Pattern '100001' appears 2 times
+    Pattern '0000000' appears 200 times
+    Pattern '1101010' appears 2 times
+    Pattern '1010100' appears 2 times
+    Pattern '00000000' appears 199 times
+  Palindromes found:
+    Length 206 palindrome
+    Length 205 palindrome
+    Length 204 palindrome
+    Length 203 palindrome
+    Length 202 palindrome
+  Repetitive sequences:
+    '0000' repeats 53 times
+    '0001' repeats 4 times
+    '0010' repeats 4 times
+    '0100' repeats 4 times
+    '1000' repeats 3 times
+    '0101' repeats 4 times
+    '1010' repeats 5 times
+    '1011' repeats 2 times
+    '0111' repeats 3 times
+    '1111' repeats 2 times
+    '1110' repeats 3 times
+    '1101' repeats 3 times
+    '0011' repeats 2 times
+    '00000' repeats 41 times
+    '00001' repeats 3 times
+    '00010' repeats 2 times
+    '00100' repeats 2 times
+    '01000' repeats 2 times
+    '00101' repeats 2 times
+    '01010' repeats 3 times
+    '10101' repeats 3 times
+    '01011' repeats 2 times
+    '10111' repeats 2 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '11101' repeats 2 times
+    '11010' repeats 3 times
+    '10100' repeats 3 times
+    '10000' repeats 2 times
+    '000000' repeats 34 times
+    '000010' repeats 2 times
+    '000101' repeats 2 times
+    '010101' repeats 2 times
+    '010111' repeats 2 times
+    '011110' repeats 2 times
+    '111010' repeats 2 times
+    '110101' repeats 2 times
+    '101010' repeats 2 times
+    '010100' repeats 2 times
+    '100001' repeats 2 times
+    '0000000' repeats 29 times
+    '1101010' repeats 2 times
+    '1010100' repeats 2 times
+    '00000000' repeats 25 times
+  Symmetry score: 81.25%
+
+Original hex: 00000000000000000000000000000000000000000000000000075070a1a009d4
+  Bit Patterns:
+    Pattern '0000' appears 212 times
+    Pattern '0001' appears 5 times
+    Pattern '0011' appears 4 times
+    Pattern '0111' appears 3 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 3 times
+    Pattern '1010' appears 6 times
+    Pattern '0101' appears 3 times
+    Pattern '0100' appears 5 times
+    Pattern '1000' appears 4 times
+    Pattern '0010' appears 2 times
+    Pattern '00000' appears 207 times
+    Pattern '00001' appears 5 times
+    Pattern '00011' appears 3 times
+    Pattern '00111' appears 3 times
+    Pattern '01110' appears 3 times
+    Pattern '11101' appears 2 times
+    Pattern '11010' appears 3 times
+    Pattern '10101' appears 2 times
+    Pattern '01010' appears 3 times
+    Pattern '10100' appears 4 times
+    Pattern '01000' appears 3 times
+    Pattern '10000' appears 4 times
+    Pattern '00010' appears 2 times
+    Pattern '000000' appears 204 times
+    Pattern '000001' appears 3 times
+    Pattern '000011' appears 3 times
+    Pattern '000111' appears 2 times
+    Pattern '001110' appears 3 times
+    Pattern '011101' appears 2 times
+    Pattern '111010' appears 2 times
+    Pattern '110101' appears 2 times
+    Pattern '101010' appears 2 times
+    Pattern '010100' appears 3 times
+    Pattern '101000' appears 3 times
+    Pattern '010000' appears 3 times
+    Pattern '100000' appears 2 times
+    Pattern '100001' appears 2 times
+    Pattern '000010' appears 2 times
+    Pattern '0000000' appears 202 times
+    Pattern '0000001' appears 2 times
+    Pattern '0000011' appears 2 times
+    Pattern '0000111' appears 2 times
+    Pattern '0001110' appears 2 times
+    Pattern '0011101' appears 2 times
+    Pattern '0111010' appears 2 times
+    Pattern '1110101' appears 2 times
+    Pattern '1101010' appears 2 times
+    Pattern '1010100' appears 2 times
+    Pattern '0101000' appears 2 times
+    Pattern '1010000' appears 3 times
+    Pattern '0100000' appears 2 times
+    Pattern '00000000' appears 200 times
+    Pattern '00000001' appears 2 times
+    Pattern '00000111' appears 2 times
+    Pattern '00001110' appears 2 times
+    Pattern '00111010' appears 2 times
+    Pattern '01110101' appears 2 times
+    Pattern '11101010' appears 2 times
+    Pattern '11010100' appears 2 times
+    Pattern '01010000' appears 2 times
+    Pattern '10100000' appears 2 times
+  Palindromes found:
+    Length 205 palindrome
+    Length 204 palindrome
+    Length 203 palindrome
+    Length 202 palindrome
+    Length 201 palindrome
+  Repetitive sequences:
+    '0000' repeats 56 times
+    '0001' repeats 5 times
+    '0011' repeats 4 times
+    '0111' repeats 3 times
+    '1110' repeats 3 times
+    '1101' repeats 3 times
+    '1010' repeats 4 times
+    '0101' repeats 3 times
+    '0100' repeats 5 times
+    '1000' repeats 4 times
+    '0010' repeats 2 times
+    '00000' repeats 43 times
+    '00001' repeats 5 times
+    '00011' repeats 3 times
+    '00111' repeats 3 times
+    '01110' repeats 3 times
+    '11101' repeats 2 times
+    '11010' repeats 3 times
+    '10101' repeats 2 times
+    '01010' repeats 3 times
+    '10100' repeats 4 times
+    '01000' repeats 3 times
+    '10000' repeats 4 times
+    '00010' repeats 2 times
+    '000000' repeats 35 times
+    '000001' repeats 3 times
+    '000011' repeats 3 times
+    '000111' repeats 2 times
+    '001110' repeats 3 times
+    '011101' repeats 2 times
+    '111010' repeats 2 times
+    '110101' repeats 2 times
+    '101010' repeats 2 times
+    '010100' repeats 3 times
+    '101000' repeats 3 times
+    '010000' repeats 3 times
+    '100000' repeats 2 times
+    '100001' repeats 2 times
+    '000010' repeats 2 times
+    '0000000' repeats 30 times
+    '0000001' repeats 2 times
+    '0000011' repeats 2 times
+    '0000111' repeats 2 times
+    '0001110' repeats 2 times
+    '0011101' repeats 2 times
+    '0111010' repeats 2 times
+    '1110101' repeats 2 times
+    '1101010' repeats 2 times
+    '1010100' repeats 2 times
+    '0101000' repeats 2 times
+    '1010000' repeats 3 times
+    '0100000' repeats 2 times
+    '00000000' repeats 26 times
+    '00000001' repeats 2 times
+    '00000111' repeats 2 times
+    '00001110' repeats 2 times
+    '00111010' repeats 2 times
+    '01110101' repeats 2 times
+    '11101010' repeats 2 times
+    '11010100' repeats 2 times
+    '01010000' repeats 2 times
+    '10100000' repeats 2 times
+  Symmetry score: 85.16%
+
+Original hex: 000000000000000000000000000000000000000000000000000efae164cb9e3c
+  Bit Patterns:
+    Pattern '0000' appears 202 times
+    Pattern '0001' appears 3 times
+    Pattern '0011' appears 4 times
+    Pattern '0111' appears 6 times
+    Pattern '1110' appears 6 times
+    Pattern '1101' appears 2 times
+    Pattern '1011' appears 4 times
+    Pattern '1111' appears 4 times
+    Pattern '0101' appears 3 times
+    Pattern '1100' appears 6 times
+    Pattern '1000' appears 2 times
+    Pattern '0010' appears 3 times
+    Pattern '0110' appears 2 times
+    Pattern '1001' appears 4 times
+    Pattern '00000' appears 200 times
+    Pattern '00001' appears 2 times
+    Pattern '00011' appears 2 times
+    Pattern '00111' appears 3 times
+    Pattern '01110' appears 3 times
+    Pattern '11101' appears 2 times
+    Pattern '10111' appears 3 times
+    Pattern '01111' appears 3 times
+    Pattern '11110' appears 3 times
+    Pattern '01011' appears 3 times
+    Pattern '11100' appears 4 times
+    Pattern '11000' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '11001' appears 3 times
+    Pattern '10010' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '000000' appears 199 times
+    Pattern '000111' appears 2 times
+    Pattern '010111' appears 2 times
+    Pattern '101110' appears 2 times
+    Pattern '011100' appears 2 times
+    Pattern '111000' appears 2 times
+    Pattern '001011' appears 2 times
+    Pattern '011001' appears 2 times
+    Pattern '110010' appears 2 times
+    Pattern '001111' appears 2 times
+    Pattern '011110' appears 2 times
+    Pattern '111100' appears 2 times
+    Pattern '0000000' appears 198 times
+    Pattern '0101110' appears 2 times
+    Pattern '1011100' appears 2 times
+    Pattern '0110010' appears 2 times
+    Pattern '0011110' appears 2 times
+    Pattern '0111100' appears 2 times
+    Pattern '00000000' appears 197 times
+    Pattern '01011100' appears 2 times
+    Pattern '00111100' appears 2 times
+  Palindromes found:
+    Length 204 palindrome
+    Length 203 palindrome
+    Length 202 palindrome
+    Length 201 palindrome
+    Length 200 palindrome
+  Repetitive sequences:
+    '0000' repeats 52 times
+    '0001' repeats 3 times
+    '0011' repeats 4 times
+    '0111' repeats 6 times
+    '1110' repeats 6 times
+    '1101' repeats 2 times
+    '1011' repeats 4 times
+    '1111' repeats 3 times
+    '0101' repeats 3 times
+    '1100' repeats 6 times
+    '1000' repeats 2 times
+    '0010' repeats 3 times
+    '0110' repeats 2 times
+    '1001' repeats 3 times
+    '00000' repeats 40 times
+    '00001' repeats 2 times
+    '00011' repeats 2 times
+    '00111' repeats 3 times
+    '01110' repeats 3 times
+    '11101' repeats 2 times
+    '10111' repeats 3 times
+    '01111' repeats 3 times
+    '11110' repeats 3 times
+    '01011' repeats 3 times
+    '11100' repeats 4 times
+    '11000' repeats 2 times
+    '00101' repeats 2 times
+    '01100' repeats 2 times
+    '11001' repeats 3 times
+    '10010' repeats 2 times
+    '10011' repeats 2 times
+    '000000' repeats 34 times
+    '000111' repeats 2 times
+    '010111' repeats 2 times
+    '101110' repeats 2 times
+    '011100' repeats 2 times
+    '111000' repeats 2 times
+    '001011' repeats 2 times
+    '011001' repeats 2 times
+    '110010' repeats 2 times
+    '001111' repeats 2 times
+    '011110' repeats 2 times
+    '111100' repeats 2 times
+    '0000000' repeats 29 times
+    '0101110' repeats 2 times
+    '1011100' repeats 2 times
+    '0110010' repeats 2 times
+    '0011110' repeats 2 times
+    '0111100' repeats 2 times
+    '00000000' repeats 25 times
+    '01011100' repeats 2 times
+  Symmetry score: 76.56%
+
+Original hex: 00000000000000000000000000000000000000000000000000180788e47e326c
+  Bit Patterns:
+    Pattern '0000' appears 205 times
+    Pattern '0001' appears 6 times
+    Pattern '0011' appears 6 times
+    Pattern '0110' appears 4 times
+    Pattern '1100' appears 6 times
+    Pattern '1000' appears 5 times
+    Pattern '0111' appears 3 times
+    Pattern '1111' appears 4 times
+    Pattern '1110' appears 3 times
+    Pattern '0010' appears 3 times
+    Pattern '0100' appears 3 times
+    Pattern '1001' appears 3 times
+    Pattern '00000' appears 203 times
+    Pattern '00001' appears 2 times
+    Pattern '00011' appears 5 times
+    Pattern '00110' appears 3 times
+    Pattern '01100' appears 3 times
+    Pattern '11000' appears 3 times
+    Pattern '00111' appears 3 times
+    Pattern '01111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11100' appears 3 times
+    Pattern '10001' appears 4 times
+    Pattern '00100' appears 3 times
+    Pattern '01000' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '10010' appears 2 times
+    Pattern '11111' appears 2 times
+    Pattern '000000' appears 201 times
+    Pattern '000001' appears 2 times
+    Pattern '000011' appears 2 times
+    Pattern '000110' appears 2 times
+    Pattern '001100' appears 2 times
+    Pattern '000111' appears 3 times
+    Pattern '001111' appears 2 times
+    Pattern '111100' appears 2 times
+    Pattern '111000' appears 2 times
+    Pattern '110001' appears 2 times
+    Pattern '001000' appears 2 times
+    Pattern '010001' appears 2 times
+    Pattern '100011' appears 3 times
+    Pattern '110010' appears 2 times
+    Pattern '100100' appears 2 times
+    Pattern '0000000' appears 199 times
+    Pattern '0000001' appears 2 times
+    Pattern '0000011' appears 2 times
+    Pattern '0001100' appears 2 times
+    Pattern '0001111' appears 2 times
+    Pattern '1111000' appears 2 times
+    Pattern '1110001' appears 2 times
+    Pattern '0010001' appears 2 times
+    Pattern '0100011' appears 2 times
+    Pattern '1000111' appears 2 times
+    Pattern '1100100' appears 2 times
+    Pattern '00000000' appears 197 times
+    Pattern '00000001' appears 2 times
+    Pattern '00000011' appears 2 times
+    Pattern '11110001' appears 2 times
+    Pattern '00100011' appears 2 times
+    Pattern '01000111' appears 2 times
+  Palindromes found:
+    Length 203 palindrome
+    Length 202 palindrome
+    Length 201 palindrome
+    Length 200 palindrome
+    Length 199 palindrome
+  Repetitive sequences:
+    '0000' repeats 52 times
+    '0001' repeats 6 times
+    '0011' repeats 6 times
+    '0110' repeats 3 times
+    '1100' repeats 6 times
+    '1000' repeats 5 times
+    '0111' repeats 3 times
+    '1111' repeats 2 times
+    '1110' repeats 3 times
+    '0010' repeats 3 times
+    '0100' repeats 3 times
+    '1001' repeats 2 times
+    '00000' repeats 41 times
+    '00001' repeats 2 times
+    '00011' repeats 5 times
+    '00110' repeats 3 times
+    '01100' repeats 3 times
+    '11000' repeats 3 times
+    '00111' repeats 3 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '11100' repeats 3 times
+    '10001' repeats 3 times
+    '00100' repeats 3 times
+    '01000' repeats 2 times
+    '11001' repeats 2 times
+    '10010' repeats 2 times
+    '000000' repeats 34 times
+    '000001' repeats 2 times
+    '000011' repeats 2 times
+    '000110' repeats 2 times
+    '001100' repeats 2 times
+    '000111' repeats 3 times
+    '001111' repeats 2 times
+    '111100' repeats 2 times
+    '111000' repeats 2 times
+    '110001' repeats 2 times
+    '001000' repeats 2 times
+    '010001' repeats 2 times
+    '100011' repeats 3 times
+    '110010' repeats 2 times
+    '100100' repeats 2 times
+    '0000000' repeats 30 times
+    '0000001' repeats 2 times
+    '0000011' repeats 2 times
+    '0001100' repeats 2 times
+    '0001111' repeats 2 times
+    '1111000' repeats 2 times
+    '1110001' repeats 2 times
+    '0010001' repeats 2 times
+    '0100011' repeats 2 times
+    '1000111' repeats 2 times
+    '1100100' repeats 2 times
+    '00000000' repeats 26 times
+    '00000001' repeats 2 times
+    '00000011' repeats 2 times
+    '11110001' repeats 2 times
+    '00100011' repeats 2 times
+    '01000111' repeats 2 times
+  Symmetry score: 81.25%
+
+Original hex: 00000000000000000000000000000000000000000000000000236fb6d5ad1f43
+  Bit Patterns:
+    Pattern '0000' appears 200 times
+    Pattern '0001' appears 4 times
+    Pattern '0100' appears 3 times
+    Pattern '1000' appears 3 times
+    Pattern '0011' appears 3 times
+    Pattern '0110' appears 7 times
+    Pattern '1101' appears 9 times
+    Pattern '1011' appears 7 times
+    Pattern '0111' appears 2 times
+    Pattern '1111' appears 4 times
+    Pattern '1110' appears 2 times
+    Pattern '1010' appears 5 times
+    Pattern '0101' appears 3 times
+    Pattern '00000' appears 198 times
+    Pattern '00001' appears 2 times
+    Pattern '01000' appears 3 times
+    Pattern '10001' appears 2 times
+    Pattern '00011' appears 3 times
+    Pattern '01101' appears 7 times
+    Pattern '11011' appears 5 times
+    Pattern '10110' appears 6 times
+    Pattern '01111' appears 2 times
+    Pattern '11111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '11010' appears 4 times
+    Pattern '10101' appears 3 times
+    Pattern '01011' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '000000' appears 197 times
+    Pattern '010001' appears 2 times
+    Pattern '100011' appears 2 times
+    Pattern '011011' appears 4 times
+    Pattern '110110' appears 4 times
+    Pattern '101101' appears 6 times
+    Pattern '011111' appears 2 times
+    Pattern '111110' appears 2 times
+    Pattern '111101' appears 2 times
+    Pattern '011010' appears 3 times
+    Pattern '110101' appears 2 times
+    Pattern '101011' appears 2 times
+    Pattern '010110' appears 2 times
+    Pattern '110100' appears 2 times
+    Pattern '101000' appears 2 times
+    Pattern '0000000' appears 196 times
+    Pattern '0100011' appears 2 times
+    Pattern '0110110' appears 3 times
+    Pattern '1101101' appears 4 times
+    Pattern '1011011' appears 3 times
+    Pattern '0111110' appears 2 times
+    Pattern '1111101' appears 2 times
+    Pattern '1011010' appears 3 times
+    Pattern '0110101' appears 2 times
+    Pattern '1010110' appears 2 times
+    Pattern '0101101' appears 2 times
+    Pattern '1101000' appears 2 times
+    Pattern '00000000' appears 195 times
+    Pattern '01101101' appears 3 times
+    Pattern '11011011' appears 3 times
+    Pattern '01111101' appears 2 times
+    Pattern '10110110' appears 2 times
+    Pattern '10110101' appears 2 times
+    Pattern '10101101' appears 2 times
+    Pattern '01011010' appears 2 times
+  Palindromes found:
+    Length 202 palindrome
+    Length 201 palindrome
+    Length 200 palindrome
+    Length 199 palindrome
+    Length 198 palindrome
+  Repetitive sequences:
+    '0000' repeats 51 times
+    '0001' repeats 4 times
+    '0100' repeats 3 times
+    '1000' repeats 3 times
+    '0011' repeats 3 times
+    '0110' repeats 5 times
+    '1101' repeats 6 times
+    '1011' repeats 5 times
+    '0111' repeats 2 times
+    '1111' repeats 2 times
+    '1110' repeats 2 times
+    '1010' repeats 4 times
+    '0101' repeats 2 times
+    '00000' repeats 40 times
+    '00001' repeats 2 times
+    '01000' repeats 3 times
+    '10001' repeats 2 times
+    '00011' repeats 3 times
+    '01101' repeats 5 times
+    '11011' repeats 3 times
+    '10110' repeats 5 times
+    '01111' repeats 2 times
+    '11111' repeats 2 times
+    '11110' repeats 2 times
+    '11101' repeats 2 times
+    '11010' repeats 4 times
+    '10101' repeats 2 times
+    '01011' repeats 2 times
+    '10100' repeats 2 times
+    '000000' repeats 33 times
+    '010001' repeats 2 times
+    '100011' repeats 2 times
+    '011011' repeats 2 times
+    '110110' repeats 3 times
+    '101101' repeats 4 times
+    '011111' repeats 2 times
+    '111110' repeats 2 times
+    '111101' repeats 2 times
+    '011010' repeats 2 times
+    '110101' repeats 2 times
+    '110100' repeats 2 times
+    '101000' repeats 2 times
+    '0000000' repeats 28 times
+    '0100011' repeats 2 times
+    '0110110' repeats 2 times
+    '1101101' repeats 2 times
+    '1011011' repeats 2 times
+    '0111110' repeats 2 times
+    '1111101' repeats 2 times
+    '1011010' repeats 2 times
+    '0110101' repeats 2 times
+    '1101000' repeats 2 times
+    '00000000' repeats 25 times
+    '01101101' repeats 2 times
+    '11011011' repeats 2 times
+    '01111101' repeats 2 times
+  Symmetry score: 75.00%
+
+Original hex: 000000000000000000000000000000000000000000000000006abe1f9b67e114
+  Bit Patterns:
+    Pattern '0000' appears 200 times
+    Pattern '0001' appears 4 times
+    Pattern '0011' appears 4 times
+    Pattern '0110' appears 4 times
+    Pattern '1101' appears 3 times
+    Pattern '1010' appears 4 times
+    Pattern '0101' appears 4 times
+    Pattern '1011' appears 3 times
+    Pattern '0111' appears 3 times
+    Pattern '1111' appears 8 times
+    Pattern '1110' appears 3 times
+    Pattern '1100' appears 4 times
+    Pattern '1000' appears 3 times
+    Pattern '1001' appears 2 times
+    Pattern '0010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '00000' appears 197 times
+    Pattern '00001' appears 3 times
+    Pattern '00011' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '01101' appears 3 times
+    Pattern '10101' appears 3 times
+    Pattern '01010' appears 3 times
+    Pattern '01111' appears 3 times
+    Pattern '11111' appears 5 times
+    Pattern '11110' appears 3 times
+    Pattern '11100' appears 3 times
+    Pattern '11000' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '00111' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '11011' appears 2 times
+    Pattern '10110' appears 2 times
+    Pattern '00010' appears 2 times
+    Pattern '000000' appears 196 times
+    Pattern '000011' appears 2 times
+    Pattern '001101' appears 2 times
+    Pattern '101010' appears 2 times
+    Pattern '010101' appears 2 times
+    Pattern '011111' appears 3 times
+    Pattern '111110' appears 3 times
+    Pattern '111100' appears 3 times
+    Pattern '111000' appears 2 times
+    Pattern '110000' appears 2 times
+    Pattern '100001' appears 2 times
+    Pattern '001111' appears 2 times
+    Pattern '111111' appears 2 times
+    Pattern '110011' appears 2 times
+    Pattern '011011' appears 2 times
+    Pattern '110110' appears 2 times
+    Pattern '0000000' appears 195 times
+    Pattern '1010101' appears 2 times
+    Pattern '1111100' appears 3 times
+    Pattern '1111000' appears 2 times
+    Pattern '1110000' appears 2 times
+    Pattern '1100001' appears 2 times
+    Pattern '0011111' appears 2 times
+    Pattern '0111111' appears 2 times
+    Pattern '1111110' appears 2 times
+    Pattern '0110110' appears 2 times
+    Pattern '00000000' appears 194 times
+    Pattern '11111000' appears 2 times
+    Pattern '11110000' appears 2 times
+    Pattern '11100001' appears 2 times
+    Pattern '00111111' appears 2 times
+    Pattern '01111110' appears 2 times
+    Pattern '11111100' appears 2 times
+  Palindromes found:
+    Length 201 palindrome
+    Length 200 palindrome
+    Length 199 palindrome
+    Length 198 palindrome
+    Length 197 palindrome
+  Repetitive sequences:
+    '0000' repeats 52 times
+    '0001' repeats 4 times
+    '0011' repeats 4 times
+    '0110' repeats 3 times
+    '1101' repeats 2 times
+    '1010' repeats 3 times
+    '0101' repeats 3 times
+    '1011' repeats 2 times
+    '0111' repeats 3 times
+    '1111' repeats 3 times
+    '1110' repeats 3 times
+    '1100' repeats 4 times
+    '1000' repeats 3 times
+    '1001' repeats 2 times
+    '0010' repeats 2 times
+    '0100' repeats 2 times
+    '00000' repeats 40 times
+    '00001' repeats 3 times
+    '00011' repeats 2 times
+    '00110' repeats 2 times
+    '01101' repeats 2 times
+    '01010' repeats 2 times
+    '01111' repeats 3 times
+    '11111' repeats 3 times
+    '11110' repeats 3 times
+    '11100' repeats 3 times
+    '11000' repeats 2 times
+    '10000' repeats 2 times
+    '00111' repeats 2 times
+    '11001' repeats 2 times
+    '10011' repeats 2 times
+    '000000' repeats 33 times
+    '000011' repeats 2 times
+    '001101' repeats 2 times
+    '011111' repeats 3 times
+    '111110' repeats 3 times
+    '111100' repeats 3 times
+    '111000' repeats 2 times
+    '110000' repeats 2 times
+    '100001' repeats 2 times
+    '001111' repeats 2 times
+    '111111' repeats 2 times
+    '110011' repeats 2 times
+    '0000000' repeats 28 times
+    '1111100' repeats 3 times
+    '1111000' repeats 2 times
+    '1110000' repeats 2 times
+    '1100001' repeats 2 times
+    '0011111' repeats 2 times
+    '0111111' repeats 2 times
+    '1111110' repeats 2 times
+    '00000000' repeats 25 times
+    '11111000' repeats 2 times
+    '11110000' repeats 2 times
+    '11100001' repeats 2 times
+    '00111111' repeats 2 times
+    '01111110' repeats 2 times
+    '11111100' repeats 2 times
+  Symmetry score: 75.78%
+
+Original hex: 000000000000000000000000000000000000000000000000009d18b63ac4ffdf
+  Bit Patterns:
+    Pattern '0000' appears 197 times
+    Pattern '0001' appears 5 times
+    Pattern '0010' appears 3 times
+    Pattern '0100' appears 3 times
+    Pattern '1001' appears 2 times
+    Pattern '0011' appears 4 times
+    Pattern '0111' appears 4 times
+    Pattern '1110' appears 3 times
+    Pattern '1101' appears 4 times
+    Pattern '1010' appears 2 times
+    Pattern '1000' appears 4 times
+    Pattern '0110' appears 4 times
+    Pattern '1100' appears 3 times
+    Pattern '0101' appears 2 times
+    Pattern '1011' appears 4 times
+    Pattern '1111' appears 9 times
+    Pattern '00000' appears 196 times
+    Pattern '00010' appears 3 times
+    Pattern '00100' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '00111' appears 3 times
+    Pattern '01110' appears 2 times
+    Pattern '11101' appears 3 times
+    Pattern '11010' appears 2 times
+    Pattern '10001' appears 4 times
+    Pattern '00011' appears 2 times
+    Pattern '01100' appears 3 times
+    Pattern '11000' appears 3 times
+    Pattern '01011' appears 2 times
+    Pattern '10110' appears 3 times
+    Pattern '11011' appears 2 times
+    Pattern '01111' appears 2 times
+    Pattern '11111' appears 7 times
+    Pattern '000000' appears 195 times
+    Pattern '000100' appears 2 times
+    Pattern '001001' appears 2 times
+    Pattern '010011' appears 2 times
+    Pattern '100111' appears 2 times
+    Pattern '001110' appears 2 times
+    Pattern '011101' appears 2 times
+    Pattern '111010' appears 2 times
+    Pattern '100011' appears 2 times
+    Pattern '011000' appears 3 times
+    Pattern '110001' appears 3 times
+    Pattern '100010' appears 2 times
+    Pattern '010110' appears 2 times
+    Pattern '101100' appears 2 times
+    Pattern '011111' appears 2 times
+    Pattern '111111' appears 5 times
+    Pattern '0000000' appears 194 times
+    Pattern '0001001' appears 2 times
+    Pattern '0010011' appears 2 times
+    Pattern '0100111' appears 2 times
+    Pattern '0011101' appears 2 times
+    Pattern '0111010' appears 2 times
+    Pattern '0110001' appears 3 times
+    Pattern '1100010' appears 2 times
+    Pattern '1011000' appears 2 times
+    Pattern '1111111' appears 4 times
+    Pattern '00000000' appears 193 times
+    Pattern '00010011' appears 2 times
+    Pattern '00100111' appears 2 times
+    Pattern '00111010' appears 2 times
+    Pattern '01100010' appears 2 times
+    Pattern '10110001' appears 2 times
+    Pattern '11111111' appears 3 times
+  Palindromes found:
+    Length 200 palindrome
+    Length 199 palindrome
+    Length 198 palindrome
+    Length 197 palindrome
+    Length 196 palindrome
+  Repetitive sequences:
+    '0000' repeats 50 times
+    '0001' repeats 5 times
+    '0010' repeats 3 times
+    '0100' repeats 3 times
+    '1001' repeats 2 times
+    '0011' repeats 4 times
+    '0111' repeats 4 times
+    '1110' repeats 3 times
+    '1101' repeats 4 times
+    '1010' repeats 2 times
+    '1000' repeats 4 times
+    '0110' repeats 3 times
+    '1100' repeats 3 times
+    '0101' repeats 2 times
+    '1011' repeats 3 times
+    '1111' repeats 3 times
+    '00000' repeats 40 times
+    '00010' repeats 3 times
+    '00100' repeats 2 times
+    '01001' repeats 2 times
+    '10011' repeats 2 times
+    '00111' repeats 3 times
+    '01110' repeats 2 times
+    '11101' repeats 3 times
+    '11010' repeats 2 times
+    '10001' repeats 4 times
+    '00011' repeats 2 times
+    '01100' repeats 3 times
+    '11000' repeats 3 times
+    '01011' repeats 2 times
+    '10110' repeats 2 times
+    '11011' repeats 2 times
+    '01111' repeats 2 times
+    '11111' repeats 3 times
+    '000000' repeats 33 times
+    '000100' repeats 2 times
+    '001001' repeats 2 times
+    '010011' repeats 2 times
+    '100111' repeats 2 times
+    '001110' repeats 2 times
+    '011101' repeats 2 times
+    '111010' repeats 2 times
+    '100011' repeats 2 times
+    '011000' repeats 3 times
+    '110001' repeats 3 times
+    '100010' repeats 2 times
+    '010110' repeats 2 times
+    '101100' repeats 2 times
+    '011111' repeats 2 times
+    '0000000' repeats 28 times
+    '0001001' repeats 2 times
+    '0010011' repeats 2 times
+    '0100111' repeats 2 times
+    '0011101' repeats 2 times
+    '0111010' repeats 2 times
+    '0110001' repeats 3 times
+    '1100010' repeats 2 times
+    '1011000' repeats 2 times
+    '00000000' repeats 25 times
+    '00010011' repeats 2 times
+    '00100111' repeats 2 times
+    '00111010' repeats 2 times
+    '01100010' repeats 2 times
+    '10110001' repeats 2 times
+  Symmetry score: 73.44%
+
+Original hex: 00000000000000000000000000000000000000000000000001eb25c90795d61c
+  Bit Patterns:
+    Pattern '0000' appears 199 times
+    Pattern '0001' appears 3 times
+    Pattern '0011' appears 3 times
+    Pattern '0111' appears 5 times
+    Pattern '1111' appears 2 times
+    Pattern '1110' appears 5 times
+    Pattern '1101' appears 2 times
+    Pattern '1010' appears 3 times
+    Pattern '0101' appears 5 times
+    Pattern '1011' appears 4 times
+    Pattern '0110' appears 2 times
+    Pattern '1100' appears 5 times
+    Pattern '1001' appears 5 times
+    Pattern '0010' appears 5 times
+    Pattern '0100' appears 3 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 196 times
+    Pattern '00001' appears 3 times
+    Pattern '00011' appears 3 times
+    Pattern '00111' appears 3 times
+    Pattern '01111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '10101' appears 3 times
+    Pattern '01011' appears 4 times
+    Pattern '10110' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '11001' appears 3 times
+    Pattern '10010' appears 5 times
+    Pattern '00100' appears 3 times
+    Pattern '01001' appears 2 times
+    Pattern '00101' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '01110' appears 3 times
+    Pattern '11100' appears 3 times
+    Pattern '10000' appears 2 times
+    Pattern '000000' appears 194 times
+    Pattern '000001' appears 2 times
+    Pattern '000011' appears 3 times
+    Pattern '000111' appears 3 times
+    Pattern '001111' appears 2 times
+    Pattern '011110' appears 2 times
+    Pattern '111010' appears 2 times
+    Pattern '110101' appears 2 times
+    Pattern '101011' appears 3 times
+    Pattern '010110' appears 2 times
+    Pattern '101100' appears 2 times
+    Pattern '110010' appears 3 times
+    Pattern '100100' appears 3 times
+    Pattern '001001' appears 2 times
+    Pattern '010010' appears 2 times
+    Pattern '100101' appears 2 times
+    Pattern '010111' appears 2 times
+    Pattern '101110' appears 2 times
+    Pattern '011100' appears 2 times
+    Pattern '111001' appears 2 times
+    Pattern '0000000' appears 193 times
+    Pattern '0000011' appears 2 times
+    Pattern '0000111' appears 3 times
+    Pattern '0001111' appears 2 times
+    Pattern '0011110' appears 2 times
+    Pattern '1110101' appears 2 times
+    Pattern '1101011' appears 2 times
+    Pattern '1010110' appears 2 times
+    Pattern '0101100' appears 2 times
+    Pattern '1100100' appears 2 times
+    Pattern '1001001' appears 2 times
+    Pattern '0010010' appears 2 times
+    Pattern '0101110' appears 2 times
+    Pattern '1110010' appears 2 times
+    Pattern '00000000' appears 192 times
+    Pattern '00000111' appears 2 times
+    Pattern '00001111' appears 2 times
+    Pattern '00011110' appears 2 times
+    Pattern '11101011' appears 2 times
+    Pattern '11010110' appears 2 times
+    Pattern '10101100' appears 2 times
+    Pattern '11001001' appears 2 times
+    Pattern '10010010' appears 2 times
+  Palindromes found:
+    Length 199 palindrome
+    Length 198 palindrome
+    Length 197 palindrome
+    Length 196 palindrome
+    Length 195 palindrome
+  Repetitive sequences:
+    '0000' repeats 51 times
+    '0001' repeats 3 times
+    '0011' repeats 3 times
+    '0111' repeats 5 times
+    '1111' repeats 2 times
+    '1110' repeats 5 times
+    '1101' repeats 2 times
+    '1010' repeats 3 times
+    '0101' repeats 4 times
+    '1011' repeats 4 times
+    '0110' repeats 2 times
+    '1100' repeats 5 times
+    '1001' repeats 3 times
+    '0010' repeats 3 times
+    '0100' repeats 2 times
+    '1000' repeats 2 times
+    '00000' repeats 40 times
+    '00001' repeats 3 times
+    '00011' repeats 3 times
+    '00111' repeats 3 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '11101' repeats 2 times
+    '11010' repeats 2 times
+    '10101' repeats 3 times
+    '01011' repeats 4 times
+    '10110' repeats 2 times
+    '01100' repeats 2 times
+    '11001' repeats 3 times
+    '10010' repeats 3 times
+    '00100' repeats 2 times
+    '01001' repeats 2 times
+    '00101' repeats 2 times
+    '10111' repeats 2 times
+    '01110' repeats 3 times
+    '11100' repeats 3 times
+    '10000' repeats 2 times
+    '000000' repeats 33 times
+    '000001' repeats 2 times
+    '000011' repeats 3 times
+    '000111' repeats 3 times
+    '001111' repeats 2 times
+    '011110' repeats 2 times
+    '111010' repeats 2 times
+    '110101' repeats 2 times
+    '101011' repeats 3 times
+    '010110' repeats 2 times
+    '101100' repeats 2 times
+    '110010' repeats 3 times
+    '100100' repeats 2 times
+    '001001' repeats 2 times
+    '010010' repeats 2 times
+    '100101' repeats 2 times
+    '010111' repeats 2 times
+    '101110' repeats 2 times
+    '011100' repeats 2 times
+    '111001' repeats 2 times
+    '0000000' repeats 28 times
+    '0000011' repeats 2 times
+    '0000111' repeats 3 times
+    '0001111' repeats 2 times
+    '0011110' repeats 2 times
+    '1110101' repeats 2 times
+    '1101011' repeats 2 times
+    '1010110' repeats 2 times
+    '0101100' repeats 2 times
+    '1100100' repeats 2 times
+    '1001001' repeats 2 times
+    '0010010' repeats 2 times
+    '0101110' repeats 2 times
+    '1110010' repeats 2 times
+    '00000000' repeats 24 times
+    '00000111' repeats 2 times
+    '00001111' repeats 2 times
+    '00011110' repeats 2 times
+    '11101011' repeats 2 times
+    '11010110' repeats 2 times
+    '10101100' repeats 2 times
+    '11001001' repeats 2 times
+    '10010010' repeats 2 times
+  Symmetry score: 77.34%
+
+Original hex: 00000000000000000000000000000000000000000000000002c675b852189a21
+  Bit Patterns:
+    Pattern '0000' appears 198 times
+    Pattern '0001' appears 7 times
+    Pattern '0010' appears 5 times
+    Pattern '0101' appears 3 times
+    Pattern '1011' appears 3 times
+    Pattern '0110' appears 5 times
+    Pattern '1100' appears 4 times
+    Pattern '1000' appears 6 times
+    Pattern '0011' appears 4 times
+    Pattern '1001' appears 3 times
+    Pattern '0111' appears 2 times
+    Pattern '1110' appears 2 times
+    Pattern '1101' appears 3 times
+    Pattern '1010' appears 3 times
+    Pattern '0100' appears 5 times
+    Pattern '00000' appears 194 times
+    Pattern '00001' appears 4 times
+    Pattern '00010' appears 4 times
+    Pattern '00101' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '10110' appears 2 times
+    Pattern '01100' appears 3 times
+    Pattern '11000' appears 3 times
+    Pattern '10001' appears 3 times
+    Pattern '00011' appears 2 times
+    Pattern '00110' appears 3 times
+    Pattern '10011' appears 2 times
+    Pattern '01110' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '01101' appears 2 times
+    Pattern '10000' appears 3 times
+    Pattern '10100' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '00100' appears 3 times
+    Pattern '01000' appears 3 times
+    Pattern '000000' appears 193 times
+    Pattern '000010' appears 2 times
+    Pattern '000101' appears 2 times
+    Pattern '010110' appears 2 times
+    Pattern '011000' appears 2 times
+    Pattern '110001' appears 2 times
+    Pattern '000110' appears 2 times
+    Pattern '001100' appears 2 times
+    Pattern '100001' appears 3 times
+    Pattern '001000' appears 2 times
+    Pattern '010000' appears 2 times
+    Pattern '100010' appears 2 times
+    Pattern '000100' appears 2 times
+    Pattern '0000000' appears 192 times
+    Pattern '0000101' appears 2 times
+    Pattern '0110001' appears 2 times
+    Pattern '0001100' appears 2 times
+    Pattern '0010000' appears 2 times
+    Pattern '0100001' appears 2 times
+    Pattern '1000100' appears 2 times
+    Pattern '00000000' appears 191 times
+    Pattern '00100001' appears 2 times
+  Palindromes found:
+    Length 198 palindrome
+    Length 197 palindrome
+    Length 196 palindrome
+    Length 195 palindrome
+    Length 194 palindrome
+  Repetitive sequences:
+    '0000' repeats 52 times
+    '0001' repeats 7 times
+    '0010' repeats 5 times
+    '0101' repeats 3 times
+    '1011' repeats 2 times
+    '0110' repeats 5 times
+    '1100' repeats 4 times
+    '1000' repeats 6 times
+    '0011' repeats 4 times
+    '1001' repeats 3 times
+    '0111' repeats 2 times
+    '1110' repeats 2 times
+    '1101' repeats 3 times
+    '1010' repeats 3 times
+    '0100' repeats 4 times
+    '00000' repeats 39 times
+    '00001' repeats 4 times
+    '00010' repeats 4 times
+    '00101' repeats 2 times
+    '01011' repeats 2 times
+    '10110' repeats 2 times
+    '01100' repeats 3 times
+    '11000' repeats 3 times
+    '10001' repeats 3 times
+    '00011' repeats 2 times
+    '00110' repeats 3 times
+    '10011' repeats 2 times
+    '01110' repeats 2 times
+    '11010' repeats 2 times
+    '01101' repeats 2 times
+    '10000' repeats 3 times
+    '10100' repeats 2 times
+    '01001' repeats 2 times
+    '00100' repeats 3 times
+    '01000' repeats 2 times
+    '000000' repeats 33 times
+    '000010' repeats 2 times
+    '000101' repeats 2 times
+    '010110' repeats 2 times
+    '011000' repeats 2 times
+    '110001' repeats 2 times
+    '000110' repeats 2 times
+    '001100' repeats 2 times
+    '100001' repeats 3 times
+    '001000' repeats 2 times
+    '010000' repeats 2 times
+    '100010' repeats 2 times
+    '000100' repeats 2 times
+    '0000000' repeats 28 times
+    '0000101' repeats 2 times
+    '0110001' repeats 2 times
+    '0001100' repeats 2 times
+    '0010000' repeats 2 times
+    '0100001' repeats 2 times
+    '1000100' repeats 2 times
+    '00000000' repeats 24 times
+    '00100001' repeats 2 times
+  Symmetry score: 80.47%
+
+Original hex: 00000000000000000000000000000000000000000000000007496cbb87cab44f
+  Bit Patterns:
+    Pattern '0000' appears 195 times
+    Pattern '0001' appears 3 times
+    Pattern '0011' appears 3 times
+    Pattern '0111' appears 5 times
+    Pattern '1110' appears 4 times
+    Pattern '1101' appears 4 times
+    Pattern '1010' appears 4 times
+    Pattern '0100' appears 4 times
+    Pattern '1001' appears 5 times
+    Pattern '0010' appears 5 times
+    Pattern '0101' appears 5 times
+    Pattern '1011' appears 5 times
+    Pattern '0110' appears 3 times
+    Pattern '1100' appears 3 times
+    Pattern '1000' appears 2 times
+    Pattern '1111' appears 3 times
+    Pattern '00000' appears 193 times
+    Pattern '00001' appears 2 times
+    Pattern '00011' appears 2 times
+    Pattern '00111' appears 3 times
+    Pattern '01110' appears 3 times
+    Pattern '11101' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '01001' appears 3 times
+    Pattern '10010' appears 4 times
+    Pattern '00100' appears 2 times
+    Pattern '00101' appears 3 times
+    Pattern '01011' appears 3 times
+    Pattern '10110' appears 3 times
+    Pattern '01101' appears 2 times
+    Pattern '11011' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '11100' appears 2 times
+    Pattern '01111' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '10101' appears 2 times
+    Pattern '000000' appears 192 times
+    Pattern '000011' appears 2 times
+    Pattern '000111' appears 2 times
+    Pattern '011101' appears 2 times
+    Pattern '110100' appears 2 times
+    Pattern '010010' appears 2 times
+    Pattern '001001' appears 2 times
+    Pattern '100101' appears 3 times
+    Pattern '001011' appears 2 times
+    Pattern '010110' appears 2 times
+    Pattern '101101' appears 2 times
+    Pattern '110010' appears 2 times
+    Pattern '101110' appears 2 times
+    Pattern '001111' appears 2 times
+    Pattern '010101' appears 2 times
+    Pattern '0000000' appears 191 times
+    Pattern '0000111' appears 2 times
+    Pattern '1001011' appears 2 times
+    Pattern '0101101' appears 2 times
+    Pattern '1100101' appears 2 times
+    Pattern '00000000' appears 190 times
+  Palindromes found:
+    Length 197 palindrome
+    Length 196 palindrome
+    Length 195 palindrome
+    Length 194 palindrome
+    Length 193 palindrome
+  Repetitive sequences:
+    '0000' repeats 50 times
+    '0001' repeats 3 times
+    '0011' repeats 3 times
+    '0111' repeats 5 times
+    '1110' repeats 4 times
+    '1101' repeats 4 times
+    '1010' repeats 3 times
+    '0100' repeats 3 times
+    '1001' repeats 4 times
+    '0010' repeats 4 times
+    '0101' repeats 4 times
+    '1011' repeats 4 times
+    '0110' repeats 2 times
+    '1100' repeats 3 times
+    '1000' repeats 2 times
+    '1111' repeats 2 times
+    '00000' repeats 39 times
+    '00001' repeats 2 times
+    '00011' repeats 2 times
+    '00111' repeats 3 times
+    '01110' repeats 2 times
+    '11101' repeats 2 times
+    '11010' repeats 2 times
+    '10100' repeats 2 times
+    '01001' repeats 2 times
+    '10010' repeats 3 times
+    '00100' repeats 2 times
+    '00101' repeats 3 times
+    '01011' repeats 3 times
+    '10110' repeats 2 times
+    '01101' repeats 2 times
+    '11011' repeats 2 times
+    '11001' repeats 2 times
+    '11100' repeats 2 times
+    '01111' repeats 2 times
+    '000000' repeats 32 times
+    '000011' repeats 2 times
+    '000111' repeats 2 times
+    '011101' repeats 2 times
+    '110100' repeats 2 times
+    '001001' repeats 2 times
+    '100101' repeats 3 times
+    '001011' repeats 2 times
+    '010110' repeats 2 times
+    '101101' repeats 2 times
+    '110010' repeats 2 times
+    '001111' repeats 2 times
+    '0000000' repeats 28 times
+    '0000111' repeats 2 times
+    '1001011' repeats 2 times
+    '0101101' repeats 2 times
+    '1100101' repeats 2 times
+    '00000000' repeats 24 times
+  Symmetry score: 74.22%
+
+Original hex: 0000000000000000000000000000000000000000000000000fc07a1825367bbe
+  Bit Patterns:
+    Pattern '0000' appears 200 times
+    Pattern '0001' appears 4 times
+    Pattern '0011' appears 5 times
+    Pattern '0111' appears 5 times
+    Pattern '1111' appears 7 times
+    Pattern '1110' appears 5 times
+    Pattern '1100' appears 3 times
+    Pattern '1000' appears 3 times
+    Pattern '1101' appears 4 times
+    Pattern '1010' appears 2 times
+    Pattern '0100' appears 3 times
+    Pattern '0110' appears 3 times
+    Pattern '0010' appears 2 times
+    Pattern '1001' appears 3 times
+    Pattern '1011' appears 3 times
+    Pattern '00000' appears 196 times
+    Pattern '00001' appears 4 times
+    Pattern '00011' appears 3 times
+    Pattern '00111' appears 3 times
+    Pattern '01111' appears 4 times
+    Pattern '11111' appears 3 times
+    Pattern '11110' appears 4 times
+    Pattern '11000' appears 2 times
+    Pattern '10000' appears 3 times
+    Pattern '11101' appears 3 times
+    Pattern '10100' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '01100' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '10011' appears 2 times
+    Pattern '11011' appears 3 times
+    Pattern '10111' appears 2 times
+    Pattern '000000' appears 193 times
+    Pattern '000001' appears 3 times
+    Pattern '000011' appears 3 times
+    Pattern '000111' appears 2 times
+    Pattern '001111' appears 3 times
+    Pattern '011111' appears 2 times
+    Pattern '111110' appears 2 times
+    Pattern '110000' appears 2 times
+    Pattern '100000' appears 2 times
+    Pattern '011110' appears 2 times
+    Pattern '111101' appears 2 times
+    Pattern '111011' appears 2 times
+    Pattern '110111' appears 2 times
+    Pattern '0000000' appears 191 times
+    Pattern '0000001' appears 2 times
+    Pattern '0000011' appears 2 times
+    Pattern '0000111' appears 2 times
+    Pattern '0001111' appears 2 times
+    Pattern '1100000' appears 2 times
+    Pattern '0011110' appears 2 times
+    Pattern '0111101' appears 2 times
+    Pattern '1110111' appears 2 times
+    Pattern '00000000' appears 189 times
+    Pattern '00000001' appears 2 times
+    Pattern '00000011' appears 2 times
+    Pattern '00000111' appears 2 times
+    Pattern '00001111' appears 2 times
+    Pattern '00111101' appears 2 times
+  Palindromes found:
+    Length 196 palindrome
+    Length 195 palindrome
+    Length 194 palindrome
+    Length 193 palindrome
+    Length 192 palindrome
+  Repetitive sequences:
+    '0000' repeats 52 times
+    '0001' repeats 4 times
+    '0011' repeats 5 times
+    '0111' repeats 5 times
+    '1111' repeats 4 times
+    '1110' repeats 5 times
+    '1100' repeats 3 times
+    '1000' repeats 3 times
+    '1101' repeats 4 times
+    '1010' repeats 2 times
+    '0100' repeats 3 times
+    '0110' repeats 2 times
+    '1001' repeats 3 times
+    '1011' repeats 3 times
+    '00000' repeats 41 times
+    '00001' repeats 4 times
+    '00011' repeats 3 times
+    '00111' repeats 3 times
+    '01111' repeats 4 times
+    '11111' repeats 2 times
+    '11110' repeats 4 times
+    '11000' repeats 2 times
+    '10000' repeats 3 times
+    '11101' repeats 2 times
+    '10100' repeats 2 times
+    '00110' repeats 2 times
+    '01100' repeats 2 times
+    '01001' repeats 2 times
+    '10011' repeats 2 times
+    '11011' repeats 2 times
+    '000000' repeats 33 times
+    '000001' repeats 3 times
+    '000011' repeats 3 times
+    '000111' repeats 2 times
+    '001111' repeats 3 times
+    '011111' repeats 2 times
+    '111110' repeats 2 times
+    '110000' repeats 2 times
+    '100000' repeats 2 times
+    '011110' repeats 2 times
+    '111101' repeats 2 times
+    '0000000' repeats 29 times
+    '0000001' repeats 2 times
+    '0000011' repeats 2 times
+    '0000111' repeats 2 times
+    '0001111' repeats 2 times
+    '1100000' repeats 2 times
+    '0011110' repeats 2 times
+    '0111101' repeats 2 times
+    '00000000' repeats 24 times
+    '00000001' repeats 2 times
+    '00000011' repeats 2 times
+    '00000111' repeats 2 times
+    '00001111' repeats 2 times
+    '00111101' repeats 2 times
+  Symmetry score: 75.00%
+
+Original hex: 00000000000000000000000000000000000000000000000013c96a3742f64906
+  Bit Patterns:
+    Pattern '0000' appears 195 times
+    Pattern '0001' appears 4 times
+    Pattern '0010' appears 7 times
+    Pattern '0100' appears 7 times
+    Pattern '1001' appears 6 times
+    Pattern '0011' appears 3 times
+    Pattern '0111' appears 3 times
+    Pattern '1111' appears 2 times
+    Pattern '1110' appears 3 times
+    Pattern '1100' appears 2 times
+    Pattern '0101' appears 3 times
+    Pattern '1011' appears 4 times
+    Pattern '0110' appears 4 times
+    Pattern '1101' appears 4 times
+    Pattern '1010' appears 3 times
+    Pattern '1000' appears 3 times
+    Pattern '00000' appears 192 times
+    Pattern '00001' appears 3 times
+    Pattern '00010' appears 2 times
+    Pattern '00100' appears 5 times
+    Pattern '01001' appears 4 times
+    Pattern '01111' appears 2 times
+    Pattern '11110' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '10010' appears 5 times
+    Pattern '00101' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '10110' appears 2 times
+    Pattern '01101' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '01000' appears 3 times
+    Pattern '00011' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '11011' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '11101' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '000000' appears 190 times
+    Pattern '000001' appears 2 times
+    Pattern '000010' appears 2 times
+    Pattern '001001' appears 4 times
+    Pattern '011110' appears 2 times
+    Pattern '110010' appears 2 times
+    Pattern '100100' appears 4 times
+    Pattern '010010' appears 3 times
+    Pattern '001011' appears 2 times
+    Pattern '101000' appears 2 times
+    Pattern '000110' appears 2 times
+    Pattern '010000' appears 2 times
+    Pattern '0000000' appears 189 times
+    Pattern '1100100' appears 2 times
+    Pattern '1001001' appears 3 times
+    Pattern '0010010' appears 3 times
+    Pattern '0100100' appears 2 times
+    Pattern '00000000' appears 188 times
+    Pattern '11001001' appears 2 times
+    Pattern '10010010' appears 3 times
+    Pattern '00100100' appears 2 times
+  Palindromes found:
+    Length 195 palindrome
+    Length 194 palindrome
+    Length 193 palindrome
+    Length 192 palindrome
+    Length 191 palindrome
+  Repetitive sequences:
+    '0000' repeats 50 times
+    '0001' repeats 4 times
+    '0010' repeats 5 times
+    '0100' repeats 6 times
+    '1001' repeats 4 times
+    '0011' repeats 3 times
+    '0111' repeats 3 times
+    '1111' repeats 2 times
+    '1110' repeats 3 times
+    '1100' repeats 2 times
+    '0101' repeats 3 times
+    '1011' repeats 4 times
+    '0110' repeats 4 times
+    '1101' repeats 4 times
+    '1010' repeats 2 times
+    '1000' repeats 3 times
+    '00000' repeats 40 times
+    '00001' repeats 3 times
+    '00010' repeats 2 times
+    '00100' repeats 4 times
+    '01001' repeats 3 times
+    '01111' repeats 2 times
+    '11110' repeats 2 times
+    '11001' repeats 2 times
+    '10010' repeats 3 times
+    '00101' repeats 2 times
+    '01011' repeats 2 times
+    '10110' repeats 2 times
+    '01101' repeats 2 times
+    '11010' repeats 2 times
+    '10100' repeats 2 times
+    '01000' repeats 3 times
+    '00011' repeats 2 times
+    '00110' repeats 2 times
+    '11011' repeats 2 times
+    '10111' repeats 2 times
+    '11101' repeats 2 times
+    '10000' repeats 2 times
+    '000000' repeats 32 times
+    '000001' repeats 2 times
+    '000010' repeats 2 times
+    '001001' repeats 3 times
+    '011110' repeats 2 times
+    '110010' repeats 2 times
+    '100100' repeats 3 times
+    '010010' repeats 2 times
+    '001011' repeats 2 times
+    '101000' repeats 2 times
+    '000110' repeats 2 times
+    '010000' repeats 2 times
+    '0000000' repeats 27 times
+    '1100100' repeats 2 times
+    '1001001' repeats 2 times
+    '0010010' repeats 2 times
+    '00000000' repeats 24 times
+    '11001001' repeats 2 times
+    '10010010' repeats 2 times
+  Symmetry score: 77.34%
+
+Original hex: 000000000000000000000000000000000000000000000000363d541eb611abee
+  Bit Patterns:
+    Pattern '0000' appears 194 times
+    Pattern '0001' appears 5 times
+    Pattern '0011' appears 4 times
+    Pattern '0110' appears 5 times
+    Pattern '1101' appears 6 times
+    Pattern '1011' appears 5 times
+    Pattern '1100' appears 2 times
+    Pattern '1000' appears 4 times
+    Pattern '0111' appears 4 times
+    Pattern '1111' appears 4 times
+    Pattern '1110' appears 4 times
+    Pattern '1010' appears 7 times
+    Pattern '0101' appears 6 times
+    Pattern '0100' appears 2 times
+    Pattern '00000' appears 191 times
+    Pattern '00001' appears 3 times
+    Pattern '00011' appears 4 times
+    Pattern '00110' appears 2 times
+    Pattern '01101' appears 3 times
+    Pattern '11011' appears 3 times
+    Pattern '10110' appears 3 times
+    Pattern '01100' appears 2 times
+    Pattern '11000' appears 2 times
+    Pattern '10001' appears 2 times
+    Pattern '00111' appears 2 times
+    Pattern '01111' appears 3 times
+    Pattern '11110' appears 3 times
+    Pattern '11101' appears 3 times
+    Pattern '11010' appears 3 times
+    Pattern '10101' appears 6 times
+    Pattern '01010' appears 4 times
+    Pattern '01000' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '000000' appears 189 times
+    Pattern '000001' appears 2 times
+    Pattern '000011' appears 2 times
+    Pattern '000110' appears 2 times
+    Pattern '001101' appears 2 times
+    Pattern '011011' appears 2 times
+    Pattern '110110' appears 2 times
+    Pattern '101100' appears 2 times
+    Pattern '011000' appears 2 times
+    Pattern '100011' appears 2 times
+    Pattern '000111' appears 2 times
+    Pattern '001111' appears 2 times
+    Pattern '011110' appears 2 times
+    Pattern '111101' appears 3 times
+    Pattern '111010' appears 2 times
+    Pattern '110101' appears 3 times
+    Pattern '101010' appears 4 times
+    Pattern '010101' appears 3 times
+    Pattern '101011' appears 2 times
+    Pattern '0000000' appears 188 times
+    Pattern '0000011' appears 2 times
+    Pattern '0001101' appears 2 times
+    Pattern '0110110' appears 2 times
+    Pattern '1101100' appears 2 times
+    Pattern '1011000' appears 2 times
+    Pattern '0001111' appears 2 times
+    Pattern '0011110' appears 2 times
+    Pattern '0111101' appears 2 times
+    Pattern '1111010' appears 2 times
+    Pattern '1110101' appears 2 times
+    Pattern '1101010' appears 2 times
+    Pattern '1010101' appears 3 times
+    Pattern '0101010' appears 2 times
+    Pattern '00000000' appears 187 times
+    Pattern '01101100' appears 2 times
+    Pattern '11011000' appears 2 times
+    Pattern '00011110' appears 2 times
+    Pattern '00111101' appears 2 times
+    Pattern '01111010' appears 2 times
+    Pattern '11110101' appears 2 times
+    Pattern '11010101' appears 2 times
+    Pattern '10101010' appears 2 times
+  Palindromes found:
+    Length 194 palindrome
+    Length 193 palindrome
+    Length 192 palindrome
+    Length 191 palindrome
+    Length 190 palindrome
+  Repetitive sequences:
+    '0000' repeats 50 times
+    '0001' repeats 5 times
+    '0011' repeats 4 times
+    '0110' repeats 3 times
+    '1101' repeats 6 times
+    '1011' repeats 4 times
+    '1100' repeats 2 times
+    '1000' repeats 4 times
+    '0111' repeats 4 times
+    '1111' repeats 3 times
+    '1110' repeats 4 times
+    '1010' repeats 4 times
+    '0101' repeats 4 times
+    '0100' repeats 2 times
+    '00000' repeats 39 times
+    '00001' repeats 3 times
+    '00011' repeats 4 times
+    '00110' repeats 2 times
+    '01101' repeats 3 times
+    '11011' repeats 3 times
+    '10110' repeats 2 times
+    '01100' repeats 2 times
+    '11000' repeats 2 times
+    '10001' repeats 2 times
+    '00111' repeats 2 times
+    '01111' repeats 3 times
+    '11110' repeats 3 times
+    '11101' repeats 3 times
+    '11010' repeats 3 times
+    '10101' repeats 3 times
+    '01010' repeats 2 times
+    '01000' repeats 2 times
+    '10000' repeats 2 times
+    '01011' repeats 2 times
+    '10111' repeats 2 times
+    '000000' repeats 32 times
+    '000001' repeats 2 times
+    '000011' repeats 2 times
+    '000110' repeats 2 times
+    '001101' repeats 2 times
+    '011011' repeats 2 times
+    '110110' repeats 2 times
+    '101100' repeats 2 times
+    '011000' repeats 2 times
+    '100011' repeats 2 times
+    '000111' repeats 2 times
+    '001111' repeats 2 times
+    '011110' repeats 2 times
+    '111101' repeats 3 times
+    '111010' repeats 2 times
+    '110101' repeats 3 times
+    '101010' repeats 2 times
+    '010101' repeats 2 times
+    '101011' repeats 2 times
+    '0000000' repeats 27 times
+    '0000011' repeats 2 times
+    '0001101' repeats 2 times
+    '0110110' repeats 2 times
+    '1101100' repeats 2 times
+    '1011000' repeats 2 times
+    '0001111' repeats 2 times
+    '0011110' repeats 2 times
+    '0111101' repeats 2 times
+    '1111010' repeats 2 times
+    '1110101' repeats 2 times
+    '1101010' repeats 2 times
+    '1010101' repeats 2 times
+    '00000000' repeats 24 times
+    '01101100' repeats 2 times
+    '11011000' repeats 2 times
+    '00011110' repeats 2 times
+    '00111101' repeats 2 times
+    '01111010' repeats 2 times
+    '11110101' repeats 2 times
+    '11010101' repeats 2 times
+  Symmetry score: 73.44%
+
+Original hex: 0000000000000000000000000000000000000000000000007cce5efdaccf6808
+  Bit Patterns:
+    Pattern '0000' appears 194 times
+    Pattern '0001' appears 2 times
+    Pattern '0011' appears 5 times
+    Pattern '0111' appears 5 times
+    Pattern '1111' appears 7 times
+    Pattern '1110' appears 5 times
+    Pattern '1100' appears 5 times
+    Pattern '1001' appears 5 times
+    Pattern '0110' appears 5 times
+    Pattern '0010' appears 2 times
+    Pattern '0101' appears 2 times
+    Pattern '1011' appears 5 times
+    Pattern '1101' appears 5 times
+    Pattern '1010' appears 2 times
+    Pattern '0100' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '00000' appears 192 times
+    Pattern '00001' appears 2 times
+    Pattern '00111' appears 3 times
+    Pattern '01111' appears 4 times
+    Pattern '11111' appears 3 times
+    Pattern '11110' appears 4 times
+    Pattern '11100' appears 2 times
+    Pattern '11001' appears 5 times
+    Pattern '10011' appears 4 times
+    Pattern '00110' appears 2 times
+    Pattern '01100' appears 3 times
+    Pattern '01011' appears 2 times
+    Pattern '10111' appears 2 times
+    Pattern '11101' appears 3 times
+    Pattern '11011' appears 3 times
+    Pattern '10110' appears 3 times
+    Pattern '01101' appears 2 times
+    Pattern '11010' appears 2 times
+    Pattern '01000' appears 2 times
+    Pattern '000000' appears 190 times
+    Pattern '000001' appears 2 times
+    Pattern '001111' appears 2 times
+    Pattern '011111' appears 2 times
+    Pattern '111110' appears 2 times
+    Pattern '111001' appears 2 times
+    Pattern '110011' appears 4 times
+    Pattern '100110' appears 2 times
+    Pattern '001100' appears 2 times
+    Pattern '011001' appears 3 times
+    Pattern '100111' appears 2 times
+    Pattern '101111' appears 2 times
+    Pattern '011110' appears 2 times
+    Pattern '111101' appears 3 times
+    Pattern '111011' appears 3 times
+    Pattern '110110' appears 2 times
+    Pattern '101101' appears 2 times
+    Pattern '011010' appears 2 times
+    Pattern '0000000' appears 188 times
+    Pattern '0000001' appears 2 times
+    Pattern '1100110' appears 2 times
+    Pattern '1001100' appears 2 times
+    Pattern '0011001' appears 2 times
+    Pattern '0110011' appears 3 times
+    Pattern '1100111' appears 2 times
+    Pattern '0111101' appears 2 times
+    Pattern '1111011' appears 3 times
+    Pattern '1110110' appears 2 times
+    Pattern '1101101' appears 2 times
+    Pattern '1011010' appears 2 times
+    Pattern '00000000' appears 186 times
+    Pattern '00000001' appears 2 times
+    Pattern '11001100' appears 2 times
+    Pattern '10011001' appears 2 times
+    Pattern '00110011' appears 2 times
+    Pattern '01100111' appears 2 times
+    Pattern '01111011' appears 2 times
+    Pattern '11110110' appears 2 times
+    Pattern '11101101' appears 2 times
+    Pattern '11011010' appears 2 times
+  Palindromes found:
+    Length 193 palindrome
+    Length 192 palindrome
+    Length 191 palindrome
+    Length 190 palindrome
+    Length 189 palindrome
+  Repetitive sequences:
+    '0000' repeats 49 times
+    '0001' repeats 2 times
+    '0011' repeats 5 times
+    '0111' repeats 5 times
+    '1111' repeats 4 times
+    '1110' repeats 5 times
+    '1100' repeats 5 times
+    '1001' repeats 5 times
+    '0110' repeats 5 times
+    '0010' repeats 2 times
+    '0101' repeats 2 times
+    '1011' repeats 5 times
+    '1101' repeats 3 times
+    '1010' repeats 2 times
+    '0100' repeats 2 times
+    '1000' repeats 2 times
+    '00000' repeats 39 times
+    '00001' repeats 2 times
+    '00111' repeats 3 times
+    '01111' repeats 4 times
+    '11111' repeats 2 times
+    '11110' repeats 4 times
+    '11100' repeats 2 times
+    '11001' repeats 3 times
+    '10011' repeats 2 times
+    '00110' repeats 2 times
+    '01100' repeats 2 times
+    '01011' repeats 2 times
+    '10111' repeats 2 times
+    '11101' repeats 3 times
+    '11011' repeats 3 times
+    '10110' repeats 3 times
+    '01101' repeats 2 times
+    '11010' repeats 2 times
+    '01000' repeats 2 times
+    '000000' repeats 33 times
+    '000001' repeats 2 times
+    '001111' repeats 2 times
+    '011111' repeats 2 times
+    '111110' repeats 2 times
+    '111001' repeats 2 times
+    '110011' repeats 2 times
+    '100110' repeats 2 times
+    '001100' repeats 2 times
+    '011001' repeats 2 times
+    '100111' repeats 2 times
+    '011110' repeats 2 times
+    '111101' repeats 3 times
+    '111011' repeats 3 times
+    '110110' repeats 2 times
+    '101101' repeats 2 times
+    '011010' repeats 2 times
+    '0000000' repeats 28 times
+    '0000001' repeats 2 times
+    '1100110' repeats 2 times
+    '1001100' repeats 2 times
+    '0011001' repeats 2 times
+    '0110011' repeats 2 times
+    '1100111' repeats 2 times
+    '0111101' repeats 2 times
+    '1111011' repeats 3 times
+    '1110110' repeats 2 times
+    '1101101' repeats 2 times
+    '1011010' repeats 2 times
+    '00000000' repeats 24 times
+    '00000001' repeats 2 times
+    '11001100' repeats 2 times
+    '10011001' repeats 2 times
+    '00110011' repeats 2 times
+    '01100111' repeats 2 times
+    '01111011' repeats 2 times
+    '11110110' repeats 2 times
+    '11101101' repeats 2 times
+    '11011010' repeats 2 times
+  Symmetry score: 71.88%
+
+Original hex: 000000000000000000000000000000000000000000000000f7051f27b09112d4
+  Bit Patterns:
+    Pattern '0000' appears 192 times
+    Pattern '0001' appears 6 times
+    Pattern '0011' appears 3 times
+    Pattern '0111' appears 4 times
+    Pattern '1111' appears 4 times
+    Pattern '1110' appears 4 times
+    Pattern '1101' appears 3 times
+    Pattern '1011' appears 3 times
+    Pattern '1100' appears 3 times
+    Pattern '1000' appears 5 times
+    Pattern '0010' appears 7 times
+    Pattern '0101' appears 3 times
+    Pattern '1010' appears 3 times
+    Pattern '0100' appears 7 times
+    Pattern '1001' appears 4 times
+    Pattern '0110' appears 2 times
+    Pattern '00000' appears 189 times
+    Pattern '00001' appears 3 times
+    Pattern '00011' appears 2 times
+    Pattern '00111' appears 3 times
+    Pattern '01111' appears 3 times
+    Pattern '11110' appears 3 times
+    Pattern '11101' appears 2 times
+    Pattern '11011' appears 2 times
+    Pattern '11100' appears 2 times
+    Pattern '11000' appears 2 times
+    Pattern '10000' appears 2 times
+    Pattern '00010' appears 4 times
+    Pattern '00101' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '01000' appears 3 times
+    Pattern '10001' appears 3 times
+    Pattern '10010' appears 3 times
+    Pattern '00100' appears 5 times
+    Pattern '01001' appears 3 times
+    Pattern '10110' appears 2 times
+    Pattern '000000' appears 187 times
+    Pattern '000001' appears 2 times
+    Pattern '000111' appears 2 times
+    Pattern '001111' appears 3 times
+    Pattern '011110' appears 2 times
+    Pattern '111101' appears 2 times
+    Pattern '111011' appears 2 times
+    Pattern '110000' appears 2 times
+    Pattern '000010' appears 2 times
+    Pattern '010100' appears 2 times
+    Pattern '010001' appears 3 times
+    Pattern '100100' appears 2 times
+    Pattern '001001' appears 3 times
+    Pattern '000100' appears 3 times
+    Pattern '010010' appears 2 times
+    Pattern '001000' appears 2 times
+    Pattern '100010' appears 2 times
+    Pattern '0000000' appears 186 times
+    Pattern '0001111' appears 2 times
+    Pattern '0011110' appears 2 times
+    Pattern '0111101' appears 2 times
+    Pattern '1111011' appears 2 times
+    Pattern '0001001' appears 2 times
+    Pattern '0010010' appears 2 times
+    Pattern '0010001' appears 2 times
+    Pattern '0100010' appears 2 times
+    Pattern '1000100' appears 2 times
+    Pattern '00000000' appears 185 times
+    Pattern '00111101' appears 2 times
+    Pattern '01111011' appears 2 times
+    Pattern '00010010' appears 2 times
+    Pattern '00100010' appears 2 times
+    Pattern '01000100' appears 2 times
+  Palindromes found:
+    Length 192 palindrome
+    Length 191 palindrome
+    Length 190 palindrome
+    Length 189 palindrome
+    Length 188 palindrome
+  Repetitive sequences:
+    '0000' repeats 50 times
+    '0001' repeats 6 times
+    '0011' repeats 3 times
+    '0111' repeats 4 times
+    '1111' repeats 3 times
+    '1110' repeats 4 times
+    '1101' repeats 3 times
+    '1011' repeats 3 times
+    '1100' repeats 3 times
+    '1000' repeats 5 times
+    '0010' repeats 5 times
+    '0101' repeats 3 times
+    '1010' repeats 2 times
+    '0100' repeats 6 times
+    '1001' repeats 3 times
+    '0110' repeats 2 times
+    '00000' repeats 39 times
+    '00001' repeats 3 times
+    '00011' repeats 2 times
+    '00111' repeats 3 times
+    '01111' repeats 3 times
+    '11110' repeats 3 times
+    '11101' repeats 2 times
+    '11011' repeats 2 times
+    '11100' repeats 2 times
+    '11000' repeats 2 times
+    '10000' repeats 2 times
+    '00010' repeats 3 times
+    '00101' repeats 2 times
+    '01010' repeats 2 times
+    '10100' repeats 2 times
+    '01000' repeats 2 times
+    '10001' repeats 2 times
+    '10010' repeats 3 times
+    '00100' repeats 3 times
+    '01001' repeats 3 times
+    '10110' repeats 2 times
+    '000000' repeats 32 times
+    '000001' repeats 2 times
+    '000111' repeats 2 times
+    '001111' repeats 3 times
+    '011110' repeats 2 times
+    '111101' repeats 2 times
+    '111011' repeats 2 times
+    '110000' repeats 2 times
+    '000010' repeats 2 times
+    '010100' repeats 2 times
+    '010001' repeats 2 times
+    '100100' repeats 2 times
+    '001001' repeats 3 times
+    '000100' repeats 2 times
+    '010010' repeats 2 times
+    '0000000' repeats 27 times
+    '0001111' repeats 2 times
+    '0011110' repeats 2 times
+    '0111101' repeats 2 times
+    '1111011' repeats 2 times
+    '0001001' repeats 2 times
+    '0010010' repeats 2 times
+    '00000000' repeats 24 times
+    '00111101' repeats 2 times
+    '01111011' repeats 2 times
+    '00010010' repeats 2 times
+  Symmetry score: 76.56%
+
+Original hex: 000000000000000000000000000000000000000000000001a838b13505b26867
+  Bit Patterns:
+    Pattern '0000' appears 193 times
+    Pattern '0001' appears 6 times
+    Pattern '0011' appears 6 times
+    Pattern '0110' appears 7 times
+    Pattern '1101' appears 4 times
+    Pattern '1010' appears 5 times
+    Pattern '0101' appears 4 times
+    Pattern '0100' appears 5 times
+    Pattern '1000' appears 5 times
+    Pattern '0111' appears 2 times
+    Pattern '1100' appears 4 times
+    Pattern '0010' appears 4 times
+    Pattern '1011' appears 3 times
+    Pattern '1001' appears 4 times
+    Pattern '00000' appears 189 times
+    Pattern '00001' appears 4 times
+    Pattern '00011' appears 3 times
+    Pattern '00110' appears 4 times
+    Pattern '01101' appears 4 times
+    Pattern '11010' appears 3 times
+    Pattern '10101' appears 2 times
+    Pattern '01010' appears 2 times
+    Pattern '10100' appears 3 times
+    Pattern '01000' appears 3 times
+    Pattern '10000' appears 3 times
+    Pattern '00111' appears 2 times
+    Pattern '11000' appears 2 times
+    Pattern '10001' appears 2 times
+    Pattern '00010' appears 3 times
+    Pattern '00101' appears 2 times
+    Pattern '01011' appears 2 times
+    Pattern '10110' appears 3 times
+    Pattern '01100' appears 3 times
+    Pattern '00100' appears 2 times
+    Pattern '01001' appears 2 times
+    Pattern '10011' appears 3 times
+    Pattern '11001' appears 2 times
+    Pattern '000000' appears 186 times
+    Pattern '000001' appears 3 times
+    Pattern '000011' appears 3 times
+    Pattern '000110' appears 2 times
+    Pattern '001101' appears 3 times
+    Pattern '011010' appears 3 times
+    Pattern '110101' appears 2 times
+    Pattern '101010' appears 2 times
+    Pattern '010100' appears 2 times
+    Pattern '101000' appears 3 times
+    Pattern '010000' appears 3 times
+    Pattern '100000' appears 2 times
+    Pattern '110001' appears 2 times
+    Pattern '100010' appears 2 times
+    Pattern '000101' appears 2 times
+    Pattern '001011' appears 2 times
+    Pattern '010110' appears 2 times
+    Pattern '101100' appears 2 times
+    Pattern '001001' appears 2 times
+    Pattern '010011' appears 2 times
+    Pattern '100110' appears 2 times
+    Pattern '011001' appears 2 times
+    Pattern '0000000' appears 185 times
+    Pattern '0000011' appears 2 times
+    Pattern '0000110' appears 2 times
+    Pattern '0011010' appears 3 times
+    Pattern '0110101' appears 2 times
+    Pattern '1101010' appears 2 times
+    Pattern '1010100' appears 2 times
+    Pattern '0101000' appears 2 times
+    Pattern '1010000' appears 3 times
+    Pattern '0100000' appears 2 times
+    Pattern '1000001' appears 2 times
+    Pattern '1100010' appears 2 times
+    Pattern '0001011' appears 2 times
+    Pattern '0010110' appears 2 times
+    Pattern '0010011' appears 2 times
+    Pattern '0100110' appears 2 times
+    Pattern '1001101' appears 2 times
+    Pattern '00000000' appears 184 times
+    Pattern '00110101' appears 2 times
+    Pattern '01101010' appears 2 times
+    Pattern '11010100' appears 2 times
+    Pattern '10101000' appears 2 times
+    Pattern '01010000' appears 2 times
+    Pattern '10100000' appears 2 times
+    Pattern '01000001' appears 2 times
+    Pattern '00010110' appears 2 times
+    Pattern '00100110' appears 2 times
+    Pattern '01001101' appears 2 times
+    Pattern '10011010' appears 2 times
+  Palindromes found:
+    Length 191 palindrome
+    Length 190 palindrome
+    Length 189 palindrome
+    Length 188 palindrome
+    Length 187 palindrome
+  Repetitive sequences:
+    '0000' repeats 50 times
+    '0001' repeats 6 times
+    '0011' repeats 6 times
+    '0110' repeats 6 times
+    '1101' repeats 4 times
+    '1010' repeats 3 times
+    '0101' repeats 4 times
+    '0100' repeats 5 times
+    '1000' repeats 5 times
+    '0111' repeats 2 times
+    '1100' repeats 4 times
+    '0010' repeats 4 times
+    '1011' repeats 2 times
+    '1001' repeats 3 times
+    '00000' repeats 40 times
+    '00001' repeats 4 times
+    '00011' repeats 3 times
+    '00110' repeats 4 times
+    '01101' repeats 4 times
+    '11010' repeats 3 times
+    '10101' repeats 2 times
+    '01010' repeats 2 times
+    '10100' repeats 3 times
+    '01000' repeats 3 times
+    '10000' repeats 3 times
+    '00111' repeats 2 times
+    '11000' repeats 2 times
+    '10001' repeats 2 times
+    '00010' repeats 3 times
+    '00101' repeats 2 times
+    '01011' repeats 2 times
+    '10110' repeats 2 times
+    '01100' repeats 3 times
+    '00100' repeats 2 times
+    '01001' repeats 2 times
+    '10011' repeats 3 times
+    '11001' repeats 2 times
+    '000000' repeats 31 times
+    '000001' repeats 3 times
+    '000011' repeats 3 times
+    '000110' repeats 2 times
+    '001101' repeats 3 times
+    '011010' repeats 3 times
+    '110101' repeats 2 times
+    '101010' repeats 2 times
+    '010100' repeats 2 times
+    '101000' repeats 3 times
+    '010000' repeats 3 times
+    '100000' repeats 2 times
+    '110001' repeats 2 times
+    '100010' repeats 2 times
+    '000101' repeats 2 times
+    '001011' repeats 2 times
+    '010110' repeats 2 times
+    '101100' repeats 2 times
+    '001001' repeats 2 times
+    '010011' repeats 2 times
+    '100110' repeats 2 times
+    '011001' repeats 2 times
+    '0000000' repeats 27 times
+    '0000011' repeats 2 times
+    '0000110' repeats 2 times
+    '0011010' repeats 3 times
+    '0110101' repeats 2 times
+    '1101010' repeats 2 times
+    '1010100' repeats 2 times
+    '0101000' repeats 2 times
+    '1010000' repeats 3 times
+    '0100000' repeats 2 times
+    '1000001' repeats 2 times
+    '1100010' repeats 2 times
+    '0001011' repeats 2 times
+    '0010110' repeats 2 times
+    '0010011' repeats 2 times
+    '0100110' repeats 2 times
+    '1001101' repeats 2 times
+    '00000000' repeats 23 times
+    '00110101' repeats 2 times
+    '01101010' repeats 2 times
+    '11010100' repeats 2 times
+    '10101000' repeats 2 times
+    '01010000' repeats 2 times
+    '10100000' repeats 2 times
+    '01000001' repeats 2 times
+    '00010110' repeats 2 times
+    '00100110' repeats 2 times
+    '01001101' repeats 2 times
+    '10011010' repeats 2 times
+  Symmetry score: 77.34%
+
+Original hex: 000000000000000000000000000000000000000000000002832ed74f2b5e35ee
+  Bit Patterns:
+    Pattern '0000' appears 189 times
+    Pattern '0001' appears 3 times
+    Pattern '0010' appears 3 times
+    Pattern '0101' appears 7 times
+    Pattern '1010' appears 6 times
+    Pattern '0100' appears 2 times
+    Pattern '1000' appears 2 times
+    Pattern '0011' appears 3 times
+    Pattern '0110' appears 4 times
+    Pattern '1100' appears 3 times
+    Pattern '1001' appears 3 times
+    Pattern '1011' appears 7 times
+    Pattern '0111' appears 6 times
+    Pattern '1110' appears 6 times
+    Pattern '1101' appears 6 times
+    Pattern '1111' appears 3 times
+    Pattern '00000' appears 187 times
+    Pattern '00001' appears 2 times
+    Pattern '00101' appears 3 times
+    Pattern '01010' appears 2 times
+    Pattern '10100' appears 2 times
+    Pattern '00011' appears 2 times
+    Pattern '00110' appears 2 times
+    Pattern '11001' appears 2 times
+    Pattern '10010' appears 2 times
+    Pattern '01011' appears 5 times
+    Pattern '10111' appears 5 times
+    Pattern '01110' appears 3 times
+    Pattern '11101' appears 3 times
+    Pattern '11011' appears 2 times
+    Pattern '10110' appears 2 times
+    Pattern '01101' appears 3 times
+    Pattern '11010' appears 4 times
+    Pattern '10101' appears 4 times
+    Pattern '01111' appears 3 times
+    Pattern '11110' appears 3 times
+    Pattern '11100' appears 2 times
+    Pattern '000000' appears 185 times
+    Pattern '000001' appears 2 times
+    Pattern '001010' appears 2 times
+    Pattern '000110' appears 2 times
+    Pattern '110010' appears 2 times
+    Pattern '100101' appears 2 times
+    Pattern '010111' appears 4 times
+    Pattern '101110' appears 3 times
+    Pattern '011101' appears 2 times
+    Pattern '111011' appears 2 times
+    Pattern '101101' appears 2 times
+    Pattern '011010' appears 3 times
+    Pattern '110101' appears 3 times
+    Pattern '101011' appears 4 times
+    Pattern '011110' appears 3 times
+    Pattern '111100' appears 2 times
+    Pattern '101111' appears 2 times
+    Pattern '0000000' appears 184 times
+    Pattern '1100101' appears 2 times
+    Pattern '0101110' appears 2 times
+    Pattern '1011101' appears 2 times
+    Pattern '1011010' appears 2 times
+    Pattern '0110101' appears 3 times
+    Pattern '1101011' appears 3 times
+    Pattern '1010111' appears 3 times
+    Pattern '0111100' appears 2 times
+    Pattern '0101111' appears 2 times
+    Pattern '1011110' appears 2 times
+    Pattern '00000000' appears 183 times
+    Pattern '01011101' appears 2 times
+    Pattern '10110101' appears 2 times
+    Pattern '01101011' appears 3 times
+    Pattern '11010111' appears 3 times
+    Pattern '10101111' appears 2 times
+    Pattern '01011110' appears 2 times
+  Palindromes found:
+    Length 190 palindrome
+    Length 189 palindrome
+    Length 188 palindrome
+    Length 187 palindrome
+    Length 186 palindrome
+  Repetitive sequences:
+    '0000' repeats 48 times
+    '0001' repeats 3 times
+    '0010' repeats 3 times
+    '0101' repeats 6 times
+    '1010' repeats 6 times
+    '0100' repeats 2 times
+    '1000' repeats 2 times
+    '0011' repeats 3 times
+    '0110' repeats 4 times
+    '1100' repeats 3 times
+    '1001' repeats 3 times
+    '1011' repeats 7 times
+    '0111' repeats 6 times
+    '1110' repeats 6 times
+    '1101' repeats 5 times
+    '1111' repeats 3 times
+    '00000' repeats 39 times
+    '00001' repeats 2 times
+    '00101' repeats 3 times
+    '01010' repeats 2 times
+    '10100' repeats 2 times
+    '00011' repeats 2 times
+    '00110' repeats 2 times
+    '11001' repeats 2 times
+    '10010' repeats 2 times
+    '01011' repeats 5 times
+    '10111' repeats 5 times
+    '01110' repeats 3 times
+    '11101' repeats 3 times
+    '11011' repeats 2 times
+    '10110' repeats 2 times
+    '01101' repeats 3 times
+    '11010' repeats 4 times
+    '10101' repeats 4 times
+    '01111' repeats 3 times
+    '11110' repeats 3 times
+    '11100' repeats 2 times
+    '000000' repeats 31 times
+    '000001' repeats 2 times
+    '001010' repeats 2 times
+    '000110' repeats 2 times
+    '110010' repeats 2 times
+    '100101' repeats 2 times
+    '010111' repeats 4 times
+    '101110' repeats 3 times
+    '011101' repeats 2 times
+    '111011' repeats 2 times
+    '101101' repeats 2 times
+    '011010' repeats 3 times
+    '110101' repeats 3 times
+    '101011' repeats 3 times
+    '011110' repeats 3 times
+    '111100' repeats 2 times
+    '101111' repeats 2 times
+    '0000000' repeats 27 times
+    '1100101' repeats 2 times
+    '0101110' repeats 2 times
+    '1011101' repeats 2 times
+    '1011010' repeats 2 times
+    '0110101' repeats 3 times
+    '1101011' repeats 3 times
+    '1010111' repeats 3 times
+    '0111100' repeats 2 times
+    '0101111' repeats 2 times
+    '1011110' repeats 2 times
+    '00000000' repeats 23 times
+    '01011101' repeats 2 times
+    '10110101' repeats 2 times
+    '01101011' repeats 3 times
+    '11010111' repeats 3 times
+    '10101111' repeats 2 times
+    '01011110' repeats 2 times
+  Symmetry score: 70.31%
+

@@ -1,0 +1,75 @@
+# Python virtual environment
+puzzle-env/
+
+# Bytecode files
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Log files
+*.log
+logs/*
+!logs/.gitkeep
+
+# Checkpoints and progress files
+rowhammer_progress.json
+rowhammer_closest_addresses.json
+
+# Results (don't commit automatically, reserve for manual commits)
+term68_solution.txt
+term68_rowhammer_result.json
+term68_best_candidate.json
+
+# Jupyter Notebooks (if used for analysis)
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.so
+
+# Data files
+*.wav
+*.raw
+*.json
+*.csv
+
+# Environment
+.env
+.venv/
+venv/
+
+# Test outputs
+tests/*/actual_outputs/
+!tests/*/expected_outputs/
+tests/*/actual_outputs/
+
+# Nested Git repositories
+audio_search/
+bitcoin_research/
+hex_sequence_analysis/crypto_tools/wordwallet/
+libraries/
+optimized_68_search/
+shors_algorithm/
+
+# Backups
+*.tar.gz
+.git_broken_backup_local/
+
+solvers/cryptos/
+wizards-wallet/

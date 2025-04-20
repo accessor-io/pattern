@@ -1,0 +1,336 @@
+Schnorr Signature Component Analysis
+================================================================================
+
+Potential Signature Components:
+----------------------------------------
+
+String 1:
+Potential r value: True
+Entropy bits: 0.0039
+Could be pubkey: True
+
+String 2:
+Potential r value: True
+Entropy bits: 0.0078
+Could be pubkey: True
+
+String 3:
+Potential r value: True
+Entropy bits: 0.0117
+Could be pubkey: True
+
+String 4:
+Potential r value: True
+Entropy bits: 0.0039
+Could be pubkey: False
+
+String 5:
+Potential r value: True
+Entropy bits: 0.0117
+Could be pubkey: True
+
+String 6:
+Potential r value: True
+Entropy bits: 0.0117
+Could be pubkey: True
+
+String 7:
+Potential r value: True
+Entropy bits: 0.0117
+Could be pubkey: False
+
+String 8:
+Potential r value: True
+Entropy bits: 0.0117
+Could be pubkey: False
+
+String 9:
+Potential r value: True
+Entropy bits: 0.0234
+Could be pubkey: True
+
+String 10:
+Potential r value: True
+Entropy bits: 0.0078
+Could be pubkey: False
+
+String 11:
+Potential r value: True
+Entropy bits: 0.0156
+Could be pubkey: True
+
+String 12:
+Potential r value: True
+Entropy bits: 0.0312
+Could be pubkey: True
+
+String 13:
+Potential r value: True
+Entropy bits: 0.0156
+Could be pubkey: False
+
+String 14:
+Potential r value: True
+Entropy bits: 0.0195
+Could be pubkey: False
+
+String 15:
+Potential r value: True
+Entropy bits: 0.0352
+Could be pubkey: True
+
+String 16:
+Potential r value: True
+Entropy bits: 0.0312
+Could be pubkey: False
+
+String 17:
+Potential r value: True
+Entropy bits: 0.0430
+Could be pubkey: True
+
+String 18:
+Potential r value: True
+Entropy bits: 0.0234
+Could be pubkey: True
+
+String 19:
+Potential r value: True
+Entropy bits: 0.0469
+Could be pubkey: True
+
+String 20:
+Potential r value: True
+Entropy bits: 0.0391
+Could be pubkey: True
+
+String 21:
+Potential r value: True
+Entropy bits: 0.0430
+Could be pubkey: False
+
+String 22:
+Potential r value: True
+Entropy bits: 0.0469
+Could be pubkey: True
+
+String 23:
+Potential r value: True
+Entropy bits: 0.0469
+Could be pubkey: False
+
+String 24:
+Potential r value: True
+Entropy bits: 0.0352
+Could be pubkey: False
+
+String 25:
+Potential r value: True
+Entropy bits: 0.0664
+Could be pubkey: True
+
+String 26:
+Potential r value: True
+Entropy bits: 0.0430
+Could be pubkey: False
+
+String 27:
+Potential r value: True
+Entropy bits: 0.0547
+Could be pubkey: True
+
+String 28:
+Potential r value: True
+Entropy bits: 0.0547
+Could be pubkey: False
+
+String 29:
+Potential r value: True
+Entropy bits: 0.0625
+Could be pubkey: False
+
+String 30:
+Potential r value: True
+Entropy bits: 0.0625
+Could be pubkey: False
+
+String 31:
+Potential r value: True
+Entropy bits: 0.0820
+Could be pubkey: True
+
+String 32:
+Potential r value: True
+Entropy bits: 0.0586
+Could be pubkey: False
+
+String 33:
+Potential r value: True
+Entropy bits: 0.0625
+Could be pubkey: False
+
+String 34:
+Potential r value: True
+Entropy bits: 0.0625
+Could be pubkey: True
+
+String 35:
+Potential r value: True
+Entropy bits: 0.0586
+Could be pubkey: False
+
+String 36:
+Potential r value: True
+Entropy bits: 0.0664
+Could be pubkey: False
+
+String 37:
+Potential r value: True
+Entropy bits: 0.0859
+Could be pubkey: True
+
+String 38:
+Potential r value: True
+Entropy bits: 0.0664
+Could be pubkey: False
+
+String 39:
+Potential r value: True
+Entropy bits: 0.0781
+Could be pubkey: True
+
+String 40:
+Potential r value: True
+Entropy bits: 0.0859
+Could be pubkey: False
+
+String 41:
+Potential r value: True
+Entropy bits: 0.0820
+Could be pubkey: True
+
+String 42:
+Potential r value: True
+Entropy bits: 0.0742
+Could be pubkey: True
+
+String 43:
+Potential r value: True
+Entropy bits: 0.0938
+Could be pubkey: True
+
+String 44:
+Potential r value: True
+Entropy bits: 0.0859
+Could be pubkey: True
+
+String 45:
+Potential r value: True
+Entropy bits: 0.0742
+Could be pubkey: True
+
+String 46:
+Potential r value: True
+Entropy bits: 0.0742
+Could be pubkey: False
+
+String 47:
+Potential r value: True
+Entropy bits: 0.0938
+Could be pubkey: False
+
+String 48:
+Potential r value: True
+Entropy bits: 0.1211
+Could be pubkey: True
+
+String 49:
+Potential r value: True
+Entropy bits: 0.0977
+Could be pubkey: True
+
+String 50:
+Potential r value: True
+Entropy bits: 0.0938
+Could be pubkey: False
+
+String 51:
+Potential r value: True
+Entropy bits: 0.0742
+Could be pubkey: False
+
+String 52:
+Potential r value: True
+Entropy bits: 0.1172
+Could be pubkey: False
+
+String 53:
+Potential r value: True
+Entropy bits: 0.0938
+Could be pubkey: False
+
+String 54:
+Potential r value: True
+Entropy bits: 0.1250
+Could be pubkey: True
+
+String 55:
+Potential r value: True
+Entropy bits: 0.1211
+Could be pubkey: False
+
+String 56:
+Potential r value: True
+Entropy bits: 0.1328
+Could be pubkey: True
+
+String 57:
+Potential r value: True
+Entropy bits: 0.1133
+Could be pubkey: False
+
+String 58:
+Potential r value: True
+Entropy bits: 0.0977
+Could be pubkey: True
+
+String 59:
+Potential r value: True
+Entropy bits: 0.1289
+Could be pubkey: True
+
+String 60:
+Potential r value: True
+Entropy bits: 0.1250
+Could be pubkey: False
+
+String 61:
+Potential r value: True
+Entropy bits: 0.1133
+Could be pubkey: False
+
+String 62:
+Potential r value: True
+Entropy bits: 0.1328
+Could be pubkey: False
+
+String 63:
+Potential r value: True
+Entropy bits: 0.1406
+Could be pubkey: False
+
+String 64:
+Potential r value: True
+Entropy bits: 0.1172
+Could be pubkey: False
+
+String 65:
+Potential r value: True
+Entropy bits: 0.1133
+Could be pubkey: True
+
+Sequence Properties:
+----------------------------------------
+Possible nonces: 65
+Low entropy values: 65
+Potential pubkeys: 32

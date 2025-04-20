@@ -1,0 +1,61 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="audio_processing_system",
+    version="1.0.0",
+    packages=find_packages(),
+    install_requires=[
+        "numpy>=1.21.0",
+        "scipy>=1.7.0",
+        "sounddevice>=0.4.3",
+        "python-rtmidi>=1.4.9",
+        "PyQt6>=6.2.0",
+        "matplotlib>=3.4.0",
+        "librosa>=0.8.1",
+        "numba>=0.54.0",
+        "pyaudio>=0.2.11",
+        "soundfile>=0.10.3",
+        "pytorch>=1.9.0",
+        "tensorflow>=2.6.0",
+        "scikit-learn>=0.24.2",
+        "pandas>=1.3.0",
+        "jack-client>=0.5.3",
+        "pyloudnorm>=0.1.0",
+    ],
+    extras_require={
+        'dev': [
+            'pytest>=6.0',
+            'pytest-cov>=2.0',
+            'flake8>=3.9.0',
+            'black>=21.5b2',
+            'mypy>=0.910',
+        ],
+        'docs': [
+            'sphinx>=4.0.2',
+            'sphinx-rtd-theme>=0.5.2',
+            'sphinx-autodoc-typehints>=1.12.0',
+        ],
+    },
+    entry_points={
+        'console_scripts': [
+            'audio_system=audio_processing_system.main:main',
+        ],
+    },
+    author="Your Name",
+    author_email="your.email@example.com",
+    description="Comprehensive audio processing and synthesis system",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/yourusername/audio_processing_system",
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Multimedia :: Sound/Audio",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
+    python_requires=">=3.8",
+) 

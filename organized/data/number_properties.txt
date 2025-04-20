@@ -1,0 +1,520 @@
+Number 1:
+  Decimal: 1
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000000001
+  Binary Length: 1
+  Number of Digits: 1
+  Is Prime: False
+  Square Root: 1.00
+
+Number 2:
+  Decimal: 3
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000000003
+  Binary Length: 2
+  Number of Digits: 1
+  Is Prime: True
+  Square Root: 1.73
+
+Number 3:
+  Decimal: 8
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000000008
+  Binary Length: 4
+  Number of Digits: 1
+  Is Prime: False
+  Square Root: 2.83
+
+Number 4:
+  Decimal: 21
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000000015
+  Binary Length: 5
+  Number of Digits: 2
+  Is Prime: False
+  Square Root: 4.58
+
+Number 5:
+  Decimal: 49
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000000031
+  Binary Length: 6
+  Number of Digits: 2
+  Is Prime: False
+  Square Root: 7.00
+
+Number 6:
+  Decimal: 76
+  Hex: 0x000000000000000000000000000000000000000000000000000000000000004c
+  Binary Length: 7
+  Number of Digits: 2
+  Is Prime: False
+  Square Root: 8.72
+
+Number 7:
+  Decimal: 224
+  Hex: 0x00000000000000000000000000000000000000000000000000000000000000e0
+  Binary Length: 8
+  Number of Digits: 3
+  Is Prime: False
+  Square Root: 14.97
+
+Number 8:
+  Decimal: 467
+  Hex: 0x00000000000000000000000000000000000000000000000000000000000001d3
+  Binary Length: 9
+  Number of Digits: 3
+  Is Prime: True
+  Square Root: 21.61
+
+Number 9:
+  Decimal: 514
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000000202
+  Binary Length: 10
+  Number of Digits: 3
+  Is Prime: False
+  Square Root: 22.67
+
+Number 10:
+  Decimal: 1155
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000000483
+  Binary Length: 11
+  Number of Digits: 4
+  Is Prime: False
+  Square Root: 33.99
+
+Number 11:
+  Decimal: 2683
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000000a7b
+  Binary Length: 12
+  Number of Digits: 4
+  Is Prime: True
+  Square Root: 51.80
+
+Number 12:
+  Decimal: 5216
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000001460
+  Binary Length: 13
+  Number of Digits: 4
+  Is Prime: False
+  Square Root: 72.22
+
+Number 13:
+  Decimal: 10544
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000002930
+  Binary Length: 14
+  Number of Digits: 5
+  Is Prime: False
+  Square Root: 102.68
+
+Number 14:
+  Decimal: 26867
+  Hex: 0x00000000000000000000000000000000000000000000000000000000000068f3
+  Binary Length: 15
+  Number of Digits: 5
+  Is Prime: False
+  Square Root: 163.91
+
+Number 15:
+  Decimal: 51510
+  Hex: 0x000000000000000000000000000000000000000000000000000000000000c936
+  Binary Length: 16
+  Number of Digits: 5
+  Is Prime: False
+  Square Root: 226.96
+
+Number 16:
+  Decimal: 95823
+  Hex: 0x000000000000000000000000000000000000000000000000000000000001764f
+  Binary Length: 17
+  Number of Digits: 5
+  Is Prime: False
+  Square Root: 309.55
+
+Number 17:
+  Decimal: 198669
+  Hex: 0x000000000000000000000000000000000000000000000000000000000003080d
+  Binary Length: 18
+  Number of Digits: 6
+  Is Prime: False
+  Square Root: 445.72
+
+Number 18:
+  Decimal: 357535
+  Hex: 0x000000000000000000000000000000000000000000000000000000000005749f
+  Binary Length: 19
+  Number of Digits: 6
+  Is Prime: False
+  Square Root: 597.94
+
+Number 19:
+  Decimal: 863317
+  Hex: 0x00000000000000000000000000000000000000000000000000000000000d2c55
+  Binary Length: 20
+  Number of Digits: 6
+  Is Prime: False
+  Square Root: 929.15
+
+Number 20:
+  Decimal: 1811764
+  Hex: 0x00000000000000000000000000000000000000000000000000000000001ba534
+  Binary Length: 21
+  Number of Digits: 7
+  Is Prime: False
+  Square Root: 1346.02
+
+Number 21:
+  Decimal: 3007503
+  Hex: 0x00000000000000000000000000000000000000000000000000000000002de40f
+  Binary Length: 22
+  Number of Digits: 7
+  Is Prime: False
+  Square Root: 1734.22
+
+Number 22:
+  Decimal: 5598802
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000556e52
+  Binary Length: 23
+  Number of Digits: 7
+  Is Prime: False
+  Square Root: 2366.18
+
+Number 23:
+  Decimal: 14428676
+  Hex: 0x0000000000000000000000000000000000000000000000000000000000dc2a04
+  Binary Length: 24
+  Number of Digits: 8
+  Is Prime: False
+  Square Root: 3798.51
+
+Number 24:
+  Decimal: 33185509
+  Hex: 0x0000000000000000000000000000000000000000000000000000000001fa5ee5
+  Binary Length: 25
+  Number of Digits: 8
+  Is Prime: False
+  Square Root: 5760.69
+
+Number 25:
+  Decimal: 54538862
+  Hex: 0x000000000000000000000000000000000000000000000000000000000340326e
+  Binary Length: 26
+  Number of Digits: 8
+  Is Prime: False
+  Square Root: 7385.04
+
+Number 26:
+  Decimal: 111949941
+  Hex: 0x0000000000000000000000000000000000000000000000000000000006ac3875
+  Binary Length: 27
+  Number of Digits: 9
+  Is Prime: False
+  Square Root: 10580.64
+
+Number 27:
+  Decimal: 227634408
+  Hex: 0x000000000000000000000000000000000000000000000000000000000d916ce8
+  Binary Length: 28
+  Number of Digits: 9
+  Is Prime: False
+  Square Root: 15087.56
+
+Number 28:
+  Decimal: 400708894
+  Hex: 0x0000000000000000000000000000000000000000000000000000000017e2551e
+  Binary Length: 29
+  Number of Digits: 9
+  Is Prime: False
+  Square Root: 20017.71
+
+Number 29:
+  Decimal: 1033162084
+  Hex: 0x000000000000000000000000000000000000000000000000000000003d94cd64
+  Binary Length: 30
+  Number of Digits: 10
+  Is Prime: False
+  Square Root: 32142.84
+
+Number 30:
+  Decimal: 2102388551
+  Hex: 0x000000000000000000000000000000000000000000000000000000007d4fe747
+  Binary Length: 31
+  Number of Digits: 10
+  Is Prime: False
+  Square Root: 45851.81
+
+Number 31:
+  Decimal: 3093472814
+  Hex: 0x00000000000000000000000000000000000000000000000000000000b862a62e
+  Binary Length: 32
+  Number of Digits: 10
+  Is Prime: False
+  Square Root: 55619.00
+
+Number 32:
+  Decimal: 7137437912
+  Hex: 0x00000000000000000000000000000000000000000000000000000001a96ca8d8
+  Binary Length: 33
+  Number of Digits: 10
+  Is Prime: False
+  Square Root: 84483.36
+
+Number 33:
+  Decimal: 14133072157
+  Hex: 0x000000000000000000000000000000000000000000000000000000034a65911d
+  Binary Length: 34
+  Number of Digits: 11
+  Is Prime: False
+  Square Root: 118882.60
+
+Number 34:
+  Decimal: 20112871792
+  Hex: 0x00000000000000000000000000000000000000000000000000000004aed21170
+  Binary Length: 35
+  Number of Digits: 11
+  Is Prime: False
+  Square Root: 141819.86
+
+Number 35:
+  Decimal: 42387769980
+  Hex: 0x00000000000000000000000000000000000000000000000000000009de820a7c
+  Binary Length: 36
+  Number of Digits: 11
+  Is Prime: False
+  Square Root: 205882.90
+
+Number 36:
+  Decimal: 100251560595
+  Hex: 0x0000000000000000000000000000000000000000000000000000001757756a93
+  Binary Length: 37
+  Number of Digits: 12
+  Is Prime: False
+  Square Root: 316625.27
+
+Number 37:
+  Decimal: 146971536592
+  Hex: 0x00000000000000000000000000000000000000000000000000000022382facd0
+  Binary Length: 38
+  Number of Digits: 12
+  Is Prime: False
+  Square Root: 383368.67
+
+Number 38:
+  Decimal: 323724968937
+  Hex: 0x0000000000000000000000000000000000000000000000000000004b5f8303e9
+  Binary Length: 39
+  Number of Digits: 12
+  Is Prime: False
+  Square Root: 568968.34
+
+Number 39:
+  Decimal: 1003651412950
+  Hex: 0x000000000000000000000000000000000000000000000000000000e9ae4933d6
+  Binary Length: 40
+  Number of Digits: 13
+  Is Prime: False
+  Square Root: 1001824.04
+
+Number 40:
+  Decimal: 1458252205147
+  Hex: 0x00000000000000000000000000000000000000000000000000000153869acc5b
+  Binary Length: 41
+  Number of Digits: 13
+  Is Prime: False
+  Square Root: 1207581.14
+
+Number 41:
+  Decimal: 2895374552463
+  Hex: 0x000000000000000000000000000000000000000000000000000002a221c58d8f
+  Binary Length: 42
+  Number of Digits: 13
+  Is Prime: False
+  Square Root: 1701580.02
+
+Number 42:
+  Decimal: 7409811047825
+  Hex: 0x000000000000000000000000000000000000000000000000000006bd3b27c591
+  Binary Length: 43
+  Number of Digits: 13
+  Is Prime: False
+  Square Root: 2722096.81
+
+Number 43:
+  Decimal: 15404761757071
+  Hex: 0x00000000000000000000000000000000000000000000000000000e02b35a358f
+  Binary Length: 44
+  Number of Digits: 14
+  Is Prime: False
+  Square Root: 3924890.03
+
+Number 44:
+  Decimal: 19996463086597
+  Hex: 0x0000000000000000000000000000000000000000000000000000122fca143c05
+  Binary Length: 45
+  Number of Digits: 14
+  Is Prime: False
+  Square Root: 4471740.50
+
+Number 45:
+  Decimal: 51408670348612
+  Hex: 0x00000000000000000000000000000000000000000000000000002ec18388d544
+  Binary Length: 46
+  Number of Digits: 14
+  Is Prime: False
+  Square Root: 7169983.99
+
+Number 46:
+  Decimal: 119666659114170
+  Hex: 0x00000000000000000000000000000000000000000000000000006cd610b53cba
+  Binary Length: 47
+  Number of Digits: 15
+  Is Prime: False
+  Square Root: 10939225.71
+
+Number 47:
+  Decimal: 191206974700443
+  Hex: 0x0000000000000000000000000000000000000000000000000000ade6d7ce3b9b
+  Binary Length: 48
+  Number of Digits: 15
+  Is Prime: False
+  Square Root: 13827761.02
+
+Number 48:
+  Decimal: 409118905032525
+  Hex: 0x000000000000000000000000000000000000000000000000000174176b015f4d
+  Binary Length: 49
+  Number of Digits: 15
+  Is Prime: False
+  Square Root: 20226687.94
+
+Number 49:
+  Decimal: 611140496167764
+  Hex: 0x00000000000000000000000000000000000000000000000000022bd43c2e9354
+  Binary Length: 50
+  Number of Digits: 15
+  Is Prime: False
+  Square Root: 24721255.96
+
+Number 50:
+  Decimal: 2058769515153876
+  Hex: 0x00000000000000000000000000000000000000000000000000075070a1a009d4
+  Binary Length: 51
+  Number of Digits: 16
+  Is Prime: False
+  Square Root: 45373665.44
+
+Number 51:
+  Decimal: 4216495639600700
+  Hex: 0x000000000000000000000000000000000000000000000000000efae164cb9e3c
+  Binary Length: 52
+  Number of Digits: 16
+  Is Prime: False
+  Square Root: 64934548.89
+
+Number 52:
+  Decimal: 6763683971478124
+  Hex: 0x00000000000000000000000000000000000000000000000000180788e47e326c
+  Binary Length: 53
+  Number of Digits: 16
+  Is Prime: False
+  Square Root: 82241619.46
+
+Number 53:
+  Decimal: 9974455244496707
+  Hex: 0x00000000000000000000000000000000000000000000000000236fb6d5ad1f43
+  Binary Length: 54
+  Number of Digits: 16
+  Is Prime: False
+  Square Root: 99872194.55
+
+Number 54:
+  Decimal: 30045390491869460
+  Hex: 0x000000000000000000000000000000000000000000000000006abe1f9b67e114
+  Binary Length: 55
+  Number of Digits: 17
+  Is Prime: False
+  Square Root: 173336062.29
+
+Number 55:
+  Decimal: 44218742292676575
+  Hex: 0x000000000000000000000000000000000000000000000000009d18b63ac4ffdf
+  Binary Length: 56
+  Number of Digits: 17
+  Is Prime: False
+  Square Root: 210282529.69
+
+Number 56:
+  Decimal: 138245758910846492
+  Hex: 0x00000000000000000000000000000000000000000000000001eb25c90795d61c
+  Binary Length: 57
+  Number of Digits: 18
+  Is Prime: False
+  Square Root: 371814145.66
+
+Number 57:
+  Decimal: 199976667976342049
+  Hex: 0x00000000000000000000000000000000000000000000000002c675b852189a21
+  Binary Length: 58
+  Number of Digits: 18
+  Is Prime: False
+  Square Root: 447187508.74
+
+Number 58:
+  Decimal: 525070384258266191
+  Hex: 0x00000000000000000000000000000000000000000000000007496cbb87cab44f
+  Binary Length: 59
+  Number of Digits: 18
+  Is Prime: False
+  Square Root: 724617405.43
+
+Number 59:
+  Decimal: 1135041350219496382
+  Hex: 0x0000000000000000000000000000000000000000000000000fc07a1825367bbe
+  Binary Length: 60
+  Number of Digits: 19
+  Is Prime: False
+  Square Root: 1065383194.08
+
+Number 60:
+  Decimal: 1425787542618654982
+  Hex: 0x00000000000000000000000000000000000000000000000013c96a3742f64906
+  Binary Length: 61
+  Number of Digits: 19
+  Is Prime: False
+  Square Root: 1194063458.37
+
+Number 61:
+  Decimal: 3908372542507822062
+  Hex: 0x000000000000000000000000000000000000000000000000363d541eb611abee
+  Binary Length: 62
+  Number of Digits: 19
+  Is Prime: False
+  Square Root: 1976960430.18
+
+Number 62:
+  Decimal: 8993229949524469768
+  Hex: 0x0000000000000000000000000000000000000000000000007cce5efdaccf6808
+  Binary Length: 63
+  Number of Digits: 19
+  Is Prime: False
+  Square Root: 2998871445.98
+
+Number 63:
+  Decimal: 17799667357578236628
+  Hex: 0x000000000000000000000000000000000000000000000000f7051f27b09112d4
+  Binary Length: 64
+  Number of Digits: 20
+  Is Prime: False
+  Square Root: 4218965199.85
+
+Number 64:
+  Decimal: 30568377312064202855
+  Hex: 0x000000000000000000000000000000000000000000000001a838b13505b26867
+  Binary Length: 65
+  Number of Digits: 20
+  Is Prime: False
+  Square Root: 5528867633.80
+
+Number 65:
+  Decimal: 46346217550346335726
+  Hex: 0x000000000000000000000000000000000000000000000002832ed74f2b5e35ee
+  Binary Length: 66
+  Number of Digits: 20
+  Is Prime: False
+  Square Root: 6807805634.00
+

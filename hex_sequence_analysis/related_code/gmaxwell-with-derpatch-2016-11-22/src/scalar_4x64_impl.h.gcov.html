@@ -1,0 +1,1091 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - full.lcov - src/scalar_4x64_impl.h</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - scalar_4x64_impl.h<span style="font-size: 80%;"> (source / <a href="scalar_4x64_impl.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">full.lcov</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">41</td>
+            <td class="headerCovTableEntry">238</td>
+            <td class="headerCovTableEntryLo">17.2 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-11-22 23:46:48</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntry">22</td>
+            <td class="headerCovTableEntryLo">22.7 %</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntry">400</td>
+            <td class="headerCovTableEntryLo">0.2 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">           Branch data     Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>                :            : /**********************************************************************</a>
+<span class="lineNum">       2 </span>                :            :  * Copyright (c) 2013, 2014 Pieter Wuille                             *
+<span class="lineNum">       3 </span>                :            :  * Distributed under the MIT software license, see the accompanying   *
+<span class="lineNum">       4 </span>                :            :  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
+<span class="lineNum">       5 </span>                :            :  **********************************************************************/
+<span class="lineNum">       6 </span>                :            : 
+<span class="lineNum">       7 </span>                :            : #ifndef _SECP256K1_SCALAR_REPR_IMPL_H_
+<span class="lineNum">       8 </span>                :            : #define _SECP256K1_SCALAR_REPR_IMPL_H_
+<span class="lineNum">       9 </span>                :            : 
+<span class="lineNum">      10 </span>                :            : /* Limbs of the secp256k1 order. */
+<span class="lineNum">      11 </span>                :            : #define SECP256K1_N_0 ((uint64_t)0xBFD25E8CD0364141ULL)
+<span class="lineNum">      12 </span>                :            : #define SECP256K1_N_1 ((uint64_t)0xBAAEDCE6AF48A03BULL)
+<span class="lineNum">      13 </span>                :            : #define SECP256K1_N_2 ((uint64_t)0xFFFFFFFFFFFFFFFEULL)
+<span class="lineNum">      14 </span>                :            : #define SECP256K1_N_3 ((uint64_t)0xFFFFFFFFFFFFFFFFULL)
+<span class="lineNum">      15 </span>                :            : 
+<span class="lineNum">      16 </span>                :            : /* Limbs of 2^256 minus the secp256k1 order. */
+<span class="lineNum">      17 </span>                :            : #define SECP256K1_N_C_0 (~SECP256K1_N_0 + 1)
+<span class="lineNum">      18 </span>                :            : #define SECP256K1_N_C_1 (~SECP256K1_N_1)
+<span class="lineNum">      19 </span>                :            : #define SECP256K1_N_C_2 (1)
+<span class="lineNum">      20 </span>                :            : 
+<span class="lineNum">      21 </span>                :            : /* Limbs of half the secp256k1 order. */
+<span class="lineNum">      22 </span>                :            : #define SECP256K1_N_H_0 ((uint64_t)0xDFE92F46681B20A0ULL)
+<span class="lineNum">      23 </span>                :            : #define SECP256K1_N_H_1 ((uint64_t)0x5D576E7357A4501DULL)
+<span class="lineNum">      24 </span>                :            : #define SECP256K1_N_H_2 ((uint64_t)0xFFFFFFFFFFFFFFFFULL)
+<a name="25"><span class="lineNum">      25 </span>                :            : #define SECP256K1_N_H_3 ((uint64_t)0x7FFFFFFFFFFFFFFFULL)</a>
+<span class="lineNum">      26 </span>                :            : 
+<span class="lineNum">      27 </span>                :<span class="lineNoCov">          0 : SECP256K1_INLINE static void secp256k1_scalar_clear(secp256k1_scalar *r) {</span>
+<span class="lineNum">      28 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[0] = 0;</span>
+<span class="lineNum">      29 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[1] = 0;</span>
+<span class="lineNum">      30 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[2] = 0;</span>
+<span class="lineNum">      31 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[3] = 0;</span>
+<a name="32"><span class="lineNum">      32 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">      33 </span>                :            : 
+<span class="lineNum">      34 </span>                :<span class="lineCov">         22 : SECP256K1_INLINE static void secp256k1_scalar_set_int(secp256k1_scalar *r, unsigned int v) {</span>
+<span class="lineNum">      35 </span>                :<span class="lineCov">         22 :     r-&gt;d[0] = v;</span>
+<span class="lineNum">      36 </span>                :<span class="lineCov">         22 :     r-&gt;d[1] = 0;</span>
+<span class="lineNum">      37 </span>                :<span class="lineCov">         22 :     r-&gt;d[2] = 0;</span>
+<span class="lineNum">      38 </span>                :<span class="lineCov">         22 :     r-&gt;d[3] = 0;</span>
+<a name="39"><span class="lineNum">      39 </span>                :<span class="lineCov">         22 : }</span></a>
+<span class="lineNum">      40 </span>                :            : 
+<span class="lineNum">      41 </span>                :<span class="lineNoCov">          0 : SECP256K1_INLINE static unsigned int secp256k1_scalar_get_bits(const secp256k1_scalar *a, unsigned int offset, unsigned int count) {</span>
+<span class="lineNum">      42 </span>                :<span class="lineNoCov">          0 :     VERIFY_CHECK((offset + count - 1) &gt;&gt; 6 == offset &gt;&gt; 6);</span>
+<span class="lineNum">      43 </span>                :<span class="lineNoCov">          0 :     return (a-&gt;d[offset &gt;&gt; 6] &gt;&gt; (offset &amp; 0x3F)) &amp; ((((uint64_t)1) &lt;&lt; count) - 1);</span>
+<a name="44"><span class="lineNum">      44 </span>                :            : }</a>
+<span class="lineNum">      45 </span>                :            : 
+<span class="lineNum">      46 </span>                :<span class="lineNoCov">          0 : SECP256K1_INLINE static unsigned int secp256k1_scalar_get_bits_var(const secp256k1_scalar *a, unsigned int offset, unsigned int count) {</span>
+<span class="lineNum">      47 </span>                :            :     VERIFY_CHECK(count &lt; 32);
+<span class="lineNum">      48 </span>                :<span class="lineNoCov">          0 :     VERIFY_CHECK(offset + count &lt;= 256);</span>
+<span class="lineNum">      49 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if ((offset + count - 1) &gt;&gt; 6 == offset &gt;&gt; 6) {</span>
+<span class="lineNum">      50 </span>                :<span class="lineNoCov">          0 :         return secp256k1_scalar_get_bits(a, offset, count);</span>
+<span class="lineNum">      51 </span>                :            :     } else {
+<span class="lineNum">      52 </span>                :<span class="lineNoCov">          0 :         VERIFY_CHECK((offset &gt;&gt; 6) + 1 &lt; 4);</span>
+<span class="lineNum">      53 </span>                :<span class="lineNoCov">          0 :         return ((a-&gt;d[offset &gt;&gt; 6] &gt;&gt; (offset &amp; 0x3F)) | (a-&gt;d[(offset &gt;&gt; 6) + 1] &lt;&lt; (64 - (offset &amp; 0x3F)))) &amp; ((((uint64_t)1) &lt;&lt; count) - 1);</span>
+<span class="lineNum">      54 </span>                :            :     }
+<a name="55"><span class="lineNum">      55 </span>                :            : }</a>
+<span class="lineNum">      56 </span>                :            : 
+<span class="lineNum">      57 </span>                :<span class="lineCov">       1141 : SECP256K1_INLINE static int secp256k1_scalar_check_overflow(const secp256k1_scalar *a) {</span>
+<span class="lineNum">      58 </span>                :<span class="lineCov">       1141 :     int yes = 0;</span>
+<span class="lineNum">      59 </span>                :<span class="lineCov">       1141 :     int no = 0;</span>
+<span class="lineNum">      60 </span>                :<span class="lineCov">       1141 :     no |= (a-&gt;d[3] &lt; SECP256K1_N_3); /* No need for a &gt; check. */</span>
+<span class="lineNum">      61 </span>                :<span class="lineCov">       1141 :     no |= (a-&gt;d[2] &lt; SECP256K1_N_2);</span>
+<span class="lineNum">      62 </span>                :<span class="lineCov">       1141 :     yes |= (a-&gt;d[2] &gt; SECP256K1_N_2) &amp; ~no;</span>
+<span class="lineNum">      63 </span>                :<span class="lineCov">       1141 :     no |= (a-&gt;d[1] &lt; SECP256K1_N_1);</span>
+<span class="lineNum">      64 </span>                :<span class="lineCov">       1141 :     yes |= (a-&gt;d[1] &gt; SECP256K1_N_1) &amp; ~no;</span>
+<span class="lineNum">      65 </span>                :<span class="lineCov">       1141 :     yes |= (a-&gt;d[0] &gt;= SECP256K1_N_0) &amp; ~no;</span>
+<span class="lineNum">      66 </span>                :<span class="lineCov">       1141 :     return yes;</span>
+<a name="67"><span class="lineNum">      67 </span>                :            : }</a>
+<span class="lineNum">      68 </span>                :            : 
+<span class="lineNum">      69 </span>                :<span class="lineCov">       1141 : SECP256K1_INLINE static int secp256k1_scalar_reduce(secp256k1_scalar *r, unsigned int overflow) {</span>
+<span class="lineNum">      70 </span>                :            :     uint128_t t;
+<span class="lineNum">      71 </span>                :            :     VERIFY_CHECK(overflow &lt;= 1);
+<span class="lineNum">      72 </span>                :<span class="lineCov">       1141 :     t = (uint128_t)r-&gt;d[0] + overflow * SECP256K1_N_C_0;</span>
+<span class="lineNum">      73 </span>                :<span class="lineCov">       1141 :     r-&gt;d[0] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">      74 </span>                :<span class="lineCov">       1141 :     t += (uint128_t)r-&gt;d[1] + overflow * SECP256K1_N_C_1;</span>
+<span class="lineNum">      75 </span>                :<span class="lineCov">       1141 :     r-&gt;d[1] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">      76 </span>                :<span class="lineCov">       1141 :     t += (uint128_t)r-&gt;d[2] + overflow * SECP256K1_N_C_2;</span>
+<span class="lineNum">      77 </span>                :<span class="lineCov">       1141 :     r-&gt;d[2] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">      78 </span>                :<span class="lineCov">       1141 :     t += (uint64_t)r-&gt;d[3];</span>
+<span class="lineNum">      79 </span>                :<span class="lineCov">       1141 :     r-&gt;d[3] = t &amp; 0xFFFFFFFFFFFFFFFFULL;</span>
+<span class="lineNum">      80 </span>                :<span class="lineCov">       1141 :     return overflow;</span>
+<a name="81"><span class="lineNum">      81 </span>                :            : }</a>
+<span class="lineNum">      82 </span>                :            : 
+<span class="lineNum">      83 </span>                :<span class="lineNoCov">          0 : static int secp256k1_scalar_add(secp256k1_scalar *r, const secp256k1_scalar *a, const secp256k1_scalar *b) {</span>
+<span class="lineNum">      84 </span>                :            :     int overflow;
+<span class="lineNum">      85 </span>                :<span class="lineNoCov">          0 :     uint128_t t = (uint128_t)a-&gt;d[0] + b-&gt;d[0];</span>
+<span class="lineNum">      86 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[0] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">      87 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)a-&gt;d[1] + b-&gt;d[1];</span>
+<span class="lineNum">      88 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[1] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">      89 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)a-&gt;d[2] + b-&gt;d[2];</span>
+<span class="lineNum">      90 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[2] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">      91 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)a-&gt;d[3] + b-&gt;d[3];</span>
+<span class="lineNum">      92 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[3] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">      93 </span>                :<span class="lineNoCov">          0 :     overflow = t + secp256k1_scalar_check_overflow(r);</span>
+<span class="lineNum">      94 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     VERIFY_CHECK(overflow == 0 || overflow == 1);</span>
+<span class="lineNum">      95 </span>                :<span class="lineNoCov">          0 :     secp256k1_scalar_reduce(r, overflow);</span>
+<span class="lineNum">      96 </span>                :<span class="lineNoCov">          0 :     return overflow;</span>
+<a name="97"><span class="lineNum">      97 </span>                :            : }</a>
+<span class="lineNum">      98 </span>                :            : 
+<span class="lineNum">      99 </span>                :<span class="lineNoCov">          0 : static void secp256k1_scalar_cadd_bit(secp256k1_scalar *r, unsigned int bit, int flag) {</span>
+<span class="lineNum">     100 </span>                :            :     uint128_t t;
+<span class="lineNum">     101 </span>                :            :     VERIFY_CHECK(bit &lt; 256);
+<span class="lineNum">     102 </span>                :<span class="lineNoCov">          0 :     bit += ((uint32_t) flag - 1) &amp; 0x100;  /* forcing (bit &gt;&gt; 6) &gt; 3 makes this a noop */</span>
+<span class="lineNum">     103 </span>                :<span class="lineNoCov">          0 :     t = (uint128_t)r-&gt;d[0] + (((uint64_t)((bit &gt;&gt; 6) == 0)) &lt;&lt; (bit &amp; 0x3F));</span>
+<span class="lineNum">     104 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[0] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">     105 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)r-&gt;d[1] + (((uint64_t)((bit &gt;&gt; 6) == 1)) &lt;&lt; (bit &amp; 0x3F));</span>
+<span class="lineNum">     106 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[1] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">     107 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)r-&gt;d[2] + (((uint64_t)((bit &gt;&gt; 6) == 2)) &lt;&lt; (bit &amp; 0x3F));</span>
+<span class="lineNum">     108 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[2] = t &amp; 0xFFFFFFFFFFFFFFFFULL; t &gt;&gt;= 64;</span>
+<span class="lineNum">     109 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)r-&gt;d[3] + (((uint64_t)((bit &gt;&gt; 6) == 3)) &lt;&lt; (bit &amp; 0x3F));</span>
+<span class="lineNum">     110 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[3] = t &amp; 0xFFFFFFFFFFFFFFFFULL;</span>
+<span class="lineNum">     111 </span>                :            : #ifdef VERIFY
+<span class="lineNum">     112 </span>                :<span class="lineNoCov">          0 :     VERIFY_CHECK((t &gt;&gt; 64) == 0);</span>
+<span class="lineNum">     113 </span>                :<span class="lineNoCov">          0 :     VERIFY_CHECK(secp256k1_scalar_check_overflow(r) == 0);</span>
+<span class="lineNum">     114 </span>                :            : #endif
+<a name="115"><span class="lineNum">     115 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     116 </span>                :            : 
+<span class="lineNum">     117 </span>                :<span class="lineCov">       1141 : static void secp256k1_scalar_set_b32(secp256k1_scalar *r, const unsigned char *b32, int *overflow) {</span>
+<span class="lineNum">     118 </span>                :            :     int over;
+<span class="lineNum">     119 </span>                :<span class="lineCov">       1141 :     r-&gt;d[0] = (uint64_t)b32[31] | (uint64_t)b32[30] &lt;&lt; 8 | (uint64_t)b32[29] &lt;&lt; 16 | (uint64_t)b32[28] &lt;&lt; 24 | (uint64_t)b32[27] &lt;&lt; 32 | (uint64_t)b32[26] &lt;&lt; 40 | (uint64_t)b32[25] &lt;&lt; 48 | (uint64_t)b32[24] &lt;&lt; 56;</span>
+<span class="lineNum">     120 </span>                :<span class="lineCov">       1141 :     r-&gt;d[1] = (uint64_t)b32[23] | (uint64_t)b32[22] &lt;&lt; 8 | (uint64_t)b32[21] &lt;&lt; 16 | (uint64_t)b32[20] &lt;&lt; 24 | (uint64_t)b32[19] &lt;&lt; 32 | (uint64_t)b32[18] &lt;&lt; 40 | (uint64_t)b32[17] &lt;&lt; 48 | (uint64_t)b32[16] &lt;&lt; 56;</span>
+<span class="lineNum">     121 </span>                :<span class="lineCov">       1141 :     r-&gt;d[2] = (uint64_t)b32[15] | (uint64_t)b32[14] &lt;&lt; 8 | (uint64_t)b32[13] &lt;&lt; 16 | (uint64_t)b32[12] &lt;&lt; 24 | (uint64_t)b32[11] &lt;&lt; 32 | (uint64_t)b32[10] &lt;&lt; 40 | (uint64_t)b32[9] &lt;&lt; 48 | (uint64_t)b32[8] &lt;&lt; 56;</span>
+<span class="lineNum">     122 </span>                :<span class="lineCov">       1141 :     r-&gt;d[3] = (uint64_t)b32[7] | (uint64_t)b32[6] &lt;&lt; 8 | (uint64_t)b32[5] &lt;&lt; 16 | (uint64_t)b32[4] &lt;&lt; 24 | (uint64_t)b32[3] &lt;&lt; 32 | (uint64_t)b32[2] &lt;&lt; 40 | (uint64_t)b32[1] &lt;&lt; 48 | (uint64_t)b32[0] &lt;&lt; 56;</span>
+<span class="lineNum">     123 </span>                :<span class="lineCov">       1141 :     over = secp256k1_scalar_reduce(r, secp256k1_scalar_check_overflow(r));</span>
+<span class="lineNum">     124 </span>        [<span class="branchCov" title="Branch 0 was taken 1141 times"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>]:<span class="lineCov">       1141 :     if (overflow) {</span>
+<span class="lineNum">     125 </span>                :<span class="lineCov">       1141 :         *overflow = over;</span>
+<span class="lineNum">     126 </span>                :            :     }
+<a name="127"><span class="lineNum">     127 </span>                :<span class="lineCov">       1141 : }</span></a>
+<span class="lineNum">     128 </span>                :            : 
+<span class="lineNum">     129 </span>                :<span class="lineCov">        898 : static void secp256k1_scalar_get_b32(unsigned char *bin, const secp256k1_scalar* a) {</span>
+<span class="lineNum">     130 </span>                :<span class="lineCov">        898 :     bin[0] = a-&gt;d[3] &gt;&gt; 56; bin[1] = a-&gt;d[3] &gt;&gt; 48; bin[2] = a-&gt;d[3] &gt;&gt; 40; bin[3] = a-&gt;d[3] &gt;&gt; 32; bin[4] = a-&gt;d[3] &gt;&gt; 24; bin[5] = a-&gt;d[3] &gt;&gt; 16; bin[6] = a-&gt;d[3] &gt;&gt; 8; bin[7] = a-&gt;d[3];</span>
+<span class="lineNum">     131 </span>                :<span class="lineCov">        898 :     bin[8] = a-&gt;d[2] &gt;&gt; 56; bin[9] = a-&gt;d[2] &gt;&gt; 48; bin[10] = a-&gt;d[2] &gt;&gt; 40; bin[11] = a-&gt;d[2] &gt;&gt; 32; bin[12] = a-&gt;d[2] &gt;&gt; 24; bin[13] = a-&gt;d[2] &gt;&gt; 16; bin[14] = a-&gt;d[2] &gt;&gt; 8; bin[15] = a-&gt;d[2];</span>
+<span class="lineNum">     132 </span>                :<span class="lineCov">        898 :     bin[16] = a-&gt;d[1] &gt;&gt; 56; bin[17] = a-&gt;d[1] &gt;&gt; 48; bin[18] = a-&gt;d[1] &gt;&gt; 40; bin[19] = a-&gt;d[1] &gt;&gt; 32; bin[20] = a-&gt;d[1] &gt;&gt; 24; bin[21] = a-&gt;d[1] &gt;&gt; 16; bin[22] = a-&gt;d[1] &gt;&gt; 8; bin[23] = a-&gt;d[1];</span>
+<span class="lineNum">     133 </span>                :<span class="lineCov">        898 :     bin[24] = a-&gt;d[0] &gt;&gt; 56; bin[25] = a-&gt;d[0] &gt;&gt; 48; bin[26] = a-&gt;d[0] &gt;&gt; 40; bin[27] = a-&gt;d[0] &gt;&gt; 32; bin[28] = a-&gt;d[0] &gt;&gt; 24; bin[29] = a-&gt;d[0] &gt;&gt; 16; bin[30] = a-&gt;d[0] &gt;&gt; 8; bin[31] = a-&gt;d[0];</span>
+<a name="134"><span class="lineNum">     134 </span>                :<span class="lineCov">        898 : }</span></a>
+<span class="lineNum">     135 </span>                :            : 
+<span class="lineNum">     136 </span>                :<span class="lineNoCov">          0 : SECP256K1_INLINE static int secp256k1_scalar_is_zero(const secp256k1_scalar *a) {</span>
+<span class="lineNum">     137 </span>                :<span class="lineNoCov">          0 :     return (a-&gt;d[0] | a-&gt;d[1] | a-&gt;d[2] | a-&gt;d[3]) == 0;</span>
+<a name="138"><span class="lineNum">     138 </span>                :            : }</a>
+<span class="lineNum">     139 </span>                :            : 
+<span class="lineNum">     140 </span>                :<span class="lineNoCov">          0 : static void secp256k1_scalar_negate(secp256k1_scalar *r, const secp256k1_scalar *a) {</span>
+<span class="lineNum">     141 </span>                :<span class="lineNoCov">          0 :     uint64_t nonzero = 0xFFFFFFFFFFFFFFFFULL * (secp256k1_scalar_is_zero(a) == 0);</span>
+<span class="lineNum">     142 </span>                :<span class="lineNoCov">          0 :     uint128_t t = (uint128_t)(~a-&gt;d[0]) + SECP256K1_N_0 + 1;</span>
+<span class="lineNum">     143 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[0] = t &amp; nonzero; t &gt;&gt;= 64;</span>
+<span class="lineNum">     144 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)(~a-&gt;d[1]) + SECP256K1_N_1;</span>
+<span class="lineNum">     145 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[1] = t &amp; nonzero; t &gt;&gt;= 64;</span>
+<span class="lineNum">     146 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)(~a-&gt;d[2]) + SECP256K1_N_2;</span>
+<span class="lineNum">     147 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[2] = t &amp; nonzero; t &gt;&gt;= 64;</span>
+<span class="lineNum">     148 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)(~a-&gt;d[3]) + SECP256K1_N_3;</span>
+<span class="lineNum">     149 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[3] = t &amp; nonzero;</span>
+<a name="150"><span class="lineNum">     150 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     151 </span>                :            : 
+<span class="lineNum">     152 </span>                :<span class="lineNoCov">          0 : SECP256K1_INLINE static int secp256k1_scalar_is_one(const secp256k1_scalar *a) {</span>
+<span class="lineNum">     153 </span>                :<span class="lineNoCov">          0 :     return ((a-&gt;d[0] ^ 1) | a-&gt;d[1] | a-&gt;d[2] | a-&gt;d[3]) == 0;</span>
+<a name="154"><span class="lineNum">     154 </span>                :            : }</a>
+<span class="lineNum">     155 </span>                :            : 
+<span class="lineNum">     156 </span>                :<span class="lineNoCov">          0 : static int secp256k1_scalar_is_high(const secp256k1_scalar *a) {</span>
+<span class="lineNum">     157 </span>                :<span class="lineNoCov">          0 :     int yes = 0;</span>
+<span class="lineNum">     158 </span>                :<span class="lineNoCov">          0 :     int no = 0;</span>
+<span class="lineNum">     159 </span>                :<span class="lineNoCov">          0 :     no |= (a-&gt;d[3] &lt; SECP256K1_N_H_3);</span>
+<span class="lineNum">     160 </span>                :<span class="lineNoCov">          0 :     yes |= (a-&gt;d[3] &gt; SECP256K1_N_H_3) &amp; ~no;</span>
+<span class="lineNum">     161 </span>                :<span class="lineNoCov">          0 :     no |= (a-&gt;d[2] &lt; SECP256K1_N_H_2) &amp; ~yes; /* No need for a &gt; check. */</span>
+<span class="lineNum">     162 </span>                :<span class="lineNoCov">          0 :     no |= (a-&gt;d[1] &lt; SECP256K1_N_H_1) &amp; ~yes;</span>
+<span class="lineNum">     163 </span>                :<span class="lineNoCov">          0 :     yes |= (a-&gt;d[1] &gt; SECP256K1_N_H_1) &amp; ~no;</span>
+<span class="lineNum">     164 </span>                :<span class="lineNoCov">          0 :     yes |= (a-&gt;d[0] &gt; SECP256K1_N_H_0) &amp; ~no;</span>
+<span class="lineNum">     165 </span>                :<span class="lineNoCov">          0 :     return yes;</span>
+<a name="166"><span class="lineNum">     166 </span>                :            : }</a>
+<span class="lineNum">     167 </span>                :            : 
+<span class="lineNum">     168 </span>                :<span class="lineNoCov">          0 : static int secp256k1_scalar_cond_negate(secp256k1_scalar *r, int flag) {</span>
+<span class="lineNum">     169 </span>                :            :     /* If we are flag = 0, mask = 00...00 and this is a no-op;
+<span class="lineNum">     170 </span>                :            :      * if we are flag = 1, mask = 11...11 and this is identical to secp256k1_scalar_negate */
+<span class="lineNum">     171 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     uint64_t mask = !flag - 1;</span>
+<span class="lineNum">     172 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     uint64_t nonzero = (secp256k1_scalar_is_zero(r) != 0) - 1;</span>
+<span class="lineNum">     173 </span>                :<span class="lineNoCov">          0 :     uint128_t t = (uint128_t)(r-&gt;d[0] ^ mask) + ((SECP256K1_N_0 + 1) &amp; mask);</span>
+<span class="lineNum">     174 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[0] = t &amp; nonzero; t &gt;&gt;= 64;</span>
+<span class="lineNum">     175 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)(r-&gt;d[1] ^ mask) + (SECP256K1_N_1 &amp; mask);</span>
+<span class="lineNum">     176 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[1] = t &amp; nonzero; t &gt;&gt;= 64;</span>
+<span class="lineNum">     177 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)(r-&gt;d[2] ^ mask) + (SECP256K1_N_2 &amp; mask);</span>
+<span class="lineNum">     178 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[2] = t &amp; nonzero; t &gt;&gt;= 64;</span>
+<span class="lineNum">     179 </span>                :<span class="lineNoCov">          0 :     t += (uint128_t)(r-&gt;d[3] ^ mask) + (SECP256K1_N_3 &amp; mask);</span>
+<span class="lineNum">     180 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[3] = t &amp; nonzero;</span>
+<span class="lineNum">     181 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     return 2 * (mask == 0) - 1;</span>
+<span class="lineNum">     182 </span>                :            : }
+<span class="lineNum">     183 </span>                :            : 
+<span class="lineNum">     184 </span>                :            : /* Inspired by the macros in OpenSSL's crypto/bn/asm/x86_64-gcc.c. */
+<span class="lineNum">     185 </span>                :            : 
+<span class="lineNum">     186 </span>                :            : /** Add a*b to the number defined by (c0,c1,c2). c2 must never overflow. */
+<span class="lineNum">     187 </span>                :            : #define muladd(a,b) { \
+<span class="lineNum">     188 </span>                :            :     uint64_t tl, th; \
+<span class="lineNum">     189 </span>                :            :     { \
+<span class="lineNum">     190 </span>                :            :         uint128_t t = (uint128_t)a * b; \
+<span class="lineNum">     191 </span>                :            :         th = t &gt;&gt; 64;         /* at most 0xFFFFFFFFFFFFFFFE */ \
+<span class="lineNum">     192 </span>                :            :         tl = t; \
+<span class="lineNum">     193 </span>                :            :     } \
+<span class="lineNum">     194 </span>                :            :     c0 += tl;                 /* overflow is handled on the next line */ \
+<span class="lineNum">     195 </span>                :            :     th += (c0 &lt; tl) ? 1 : 0;  /* at most 0xFFFFFFFFFFFFFFFF */ \
+<span class="lineNum">     196 </span>                :            :     c1 += th;                 /* overflow is handled on the next line */ \
+<span class="lineNum">     197 </span>                :            :     c2 += (c1 &lt; th) ? 1 : 0;  /* never overflows by contract (verified in the next line) */ \
+<span class="lineNum">     198 </span>                :            :     VERIFY_CHECK((c1 &gt;= th) || (c2 != 0)); \
+<span class="lineNum">     199 </span>                :            : }
+<span class="lineNum">     200 </span>                :            : 
+<span class="lineNum">     201 </span>                :            : /** Add a*b to the number defined by (c0,c1). c1 must never overflow. */
+<span class="lineNum">     202 </span>                :            : #define muladd_fast(a,b) { \
+<span class="lineNum">     203 </span>                :            :     uint64_t tl, th; \
+<span class="lineNum">     204 </span>                :            :     { \
+<span class="lineNum">     205 </span>                :            :         uint128_t t = (uint128_t)a * b; \
+<span class="lineNum">     206 </span>                :            :         th = t &gt;&gt; 64;         /* at most 0xFFFFFFFFFFFFFFFE */ \
+<span class="lineNum">     207 </span>                :            :         tl = t; \
+<span class="lineNum">     208 </span>                :            :     } \
+<span class="lineNum">     209 </span>                :            :     c0 += tl;                 /* overflow is handled on the next line */ \
+<span class="lineNum">     210 </span>                :            :     th += (c0 &lt; tl) ? 1 : 0;  /* at most 0xFFFFFFFFFFFFFFFF */ \
+<span class="lineNum">     211 </span>                :            :     c1 += th;                 /* never overflows by contract (verified in the next line) */ \
+<span class="lineNum">     212 </span>                :            :     VERIFY_CHECK(c1 &gt;= th); \
+<span class="lineNum">     213 </span>                :            : }
+<span class="lineNum">     214 </span>                :            : 
+<span class="lineNum">     215 </span>                :            : /** Add 2*a*b to the number defined by (c0,c1,c2). c2 must never overflow. */
+<span class="lineNum">     216 </span>                :            : #define muladd2(a,b) { \
+<span class="lineNum">     217 </span>                :            :     uint64_t tl, th, th2, tl2; \
+<span class="lineNum">     218 </span>                :            :     { \
+<span class="lineNum">     219 </span>                :            :         uint128_t t = (uint128_t)a * b; \
+<span class="lineNum">     220 </span>                :            :         th = t &gt;&gt; 64;               /* at most 0xFFFFFFFFFFFFFFFE */ \
+<span class="lineNum">     221 </span>                :            :         tl = t; \
+<span class="lineNum">     222 </span>                :            :     } \
+<span class="lineNum">     223 </span>                :            :     th2 = th + th;                  /* at most 0xFFFFFFFFFFFFFFFE (in case th was 0x7FFFFFFFFFFFFFFF) */ \
+<span class="lineNum">     224 </span>                :            :     c2 += (th2 &lt; th) ? 1 : 0;       /* never overflows by contract (verified the next line) */ \
+<span class="lineNum">     225 </span>                :            :     VERIFY_CHECK((th2 &gt;= th) || (c2 != 0)); \
+<span class="lineNum">     226 </span>                :            :     tl2 = tl + tl;                  /* at most 0xFFFFFFFFFFFFFFFE (in case the lowest 63 bits of tl were 0x7FFFFFFFFFFFFFFF) */ \
+<span class="lineNum">     227 </span>                :            :     th2 += (tl2 &lt; tl) ? 1 : 0;      /* at most 0xFFFFFFFFFFFFFFFF */ \
+<span class="lineNum">     228 </span>                :            :     c0 += tl2;                      /* overflow is handled on the next line */ \
+<span class="lineNum">     229 </span>                :            :     th2 += (c0 &lt; tl2) ? 1 : 0;      /* second overflow is handled on the next line */ \
+<span class="lineNum">     230 </span>                :            :     c2 += (c0 &lt; tl2) &amp; (th2 == 0);  /* never overflows by contract (verified the next line) */ \
+<span class="lineNum">     231 </span>                :            :     VERIFY_CHECK((c0 &gt;= tl2) || (th2 != 0) || (c2 != 0)); \
+<span class="lineNum">     232 </span>                :            :     c1 += th2;                      /* overflow is handled on the next line */ \
+<span class="lineNum">     233 </span>                :            :     c2 += (c1 &lt; th2) ? 1 : 0;       /* never overflows by contract (verified the next line) */ \
+<span class="lineNum">     234 </span>                :            :     VERIFY_CHECK((c1 &gt;= th2) || (c2 != 0)); \
+<span class="lineNum">     235 </span>                :            : }
+<span class="lineNum">     236 </span>                :            : 
+<span class="lineNum">     237 </span>                :            : /** Add a to the number defined by (c0,c1,c2). c2 must never overflow. */
+<span class="lineNum">     238 </span>                :            : #define sumadd(a) { \
+<span class="lineNum">     239 </span>                :            :     unsigned int over; \
+<span class="lineNum">     240 </span>                :            :     c0 += (a);                  /* overflow is handled on the next line */ \
+<span class="lineNum">     241 </span>                :            :     over = (c0 &lt; (a)) ? 1 : 0; \
+<span class="lineNum">     242 </span>                :            :     c1 += over;                 /* overflow is handled on the next line */ \
+<span class="lineNum">     243 </span>                :            :     c2 += (c1 &lt; over) ? 1 : 0;  /* never overflows by contract */ \
+<span class="lineNum">     244 </span>                :            : }
+<span class="lineNum">     245 </span>                :            : 
+<span class="lineNum">     246 </span>                :            : /** Add a to the number defined by (c0,c1). c1 must never overflow, c2 must be zero. */
+<span class="lineNum">     247 </span>                :            : #define sumadd_fast(a) { \
+<span class="lineNum">     248 </span>                :            :     c0 += (a);                 /* overflow is handled on the next line */ \
+<span class="lineNum">     249 </span>                :            :     c1 += (c0 &lt; (a)) ? 1 : 0;  /* never overflows by contract (verified the next line) */ \
+<span class="lineNum">     250 </span>                :            :     VERIFY_CHECK((c1 != 0) | (c0 &gt;= (a))); \
+<span class="lineNum">     251 </span>                :            :     VERIFY_CHECK(c2 == 0); \
+<span class="lineNum">     252 </span>                :            : }
+<span class="lineNum">     253 </span>                :            : 
+<span class="lineNum">     254 </span>                :            : /** Extract the lowest 64 bits of (c0,c1,c2) into n, and left shift the number 64 bits. */
+<span class="lineNum">     255 </span>                :            : #define extract(n) { \
+<span class="lineNum">     256 </span>                :            :     (n) = c0; \
+<span class="lineNum">     257 </span>                :            :     c0 = c1; \
+<span class="lineNum">     258 </span>                :            :     c1 = c2; \
+<span class="lineNum">     259 </span>                :            :     c2 = 0; \
+<span class="lineNum">     260 </span>                :            : }
+<span class="lineNum">     261 </span>                :            : 
+<span class="lineNum">     262 </span>                :            : /** Extract the lowest 64 bits of (c0,c1,c2) into n, and left shift the number 64 bits. c2 is required to be zero. */
+<span class="lineNum">     263 </span>                :            : #define extract_fast(n) { \
+<span class="lineNum">     264 </span>                :            :     (n) = c0; \
+<span class="lineNum">     265 </span>                :            :     c0 = c1; \
+<span class="lineNum">     266 </span>                :            :     c1 = 0; \
+<span class="lineNum">     267 </span>                :            :     VERIFY_CHECK(c2 == 0); \
+<a name="268"><span class="lineNum">     268 </span>                :            : }</a>
+<span class="lineNum">     269 </span>                :            : 
+<span class="lineNum">     270 </span>                :<span class="lineNoCov">          0 : static void secp256k1_scalar_reduce_512(secp256k1_scalar *r, const uint64_t *l) {</span>
+<span class="lineNum">     271 </span>                :            : #ifdef USE_ASM_X86_64
+<span class="lineNum">     272 </span>                :            :     /* Reduce 512 bits into 385. */
+<span class="lineNum">     273 </span>                :            :     uint64_t m0, m1, m2, m3, m4, m5, m6;
+<span class="lineNum">     274 </span>                :            :     uint64_t p0, p1, p2, p3, p4;
+<span class="lineNum">     275 </span>                :            :     uint64_t c;
+<span class="lineNum">     276 </span>                :            : 
+<span class="lineNum">     277 </span>                :            :     __asm__ __volatile__(
+<span class="lineNum">     278 </span>                :            :     /* Preload. */
+<span class="lineNum">     279 </span>                :            :     &quot;movq 32(%%rsi), %%r11\n&quot;
+<span class="lineNum">     280 </span>                :            :     &quot;movq 40(%%rsi), %%r12\n&quot;
+<span class="lineNum">     281 </span>                :            :     &quot;movq 48(%%rsi), %%r13\n&quot;
+<span class="lineNum">     282 </span>                :            :     &quot;movq 56(%%rsi), %%r14\n&quot;
+<span class="lineNum">     283 </span>                :            :     /* Initialize r8,r9,r10 */
+<span class="lineNum">     284 </span>                :            :     &quot;movq 0(%%rsi), %%r8\n&quot;
+<span class="lineNum">     285 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     286 </span>                :            :     &quot;xorq %%r10, %%r10\n&quot;
+<span class="lineNum">     287 </span>                :            :     /* (r8,r9) += n0 * c0 */
+<span class="lineNum">     288 </span>                :            :     &quot;movq %8, %%rax\n&quot;
+<span class="lineNum">     289 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     290 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     291 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     292 </span>                :            :     /* extract m0 */
+<span class="lineNum">     293 </span>                :            :     &quot;movq %%r8, %q0\n&quot;
+<span class="lineNum">     294 </span>                :            :     &quot;xorq %%r8, %%r8\n&quot;
+<span class="lineNum">     295 </span>                :            :     /* (r9,r10) += l1 */
+<span class="lineNum">     296 </span>                :            :     &quot;addq 8(%%rsi), %%r9\n&quot;
+<span class="lineNum">     297 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     298 </span>                :            :     /* (r9,r10,r8) += n1 * c0 */
+<span class="lineNum">     299 </span>                :            :     &quot;movq %8, %%rax\n&quot;
+<span class="lineNum">     300 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     301 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     302 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     303 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     304 </span>                :            :     /* (r9,r10,r8) += n0 * c1 */
+<span class="lineNum">     305 </span>                :            :     &quot;movq %9, %%rax\n&quot;
+<span class="lineNum">     306 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     307 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     308 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     309 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     310 </span>                :            :     /* extract m1 */
+<span class="lineNum">     311 </span>                :            :     &quot;movq %%r9, %q1\n&quot;
+<span class="lineNum">     312 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     313 </span>                :            :     /* (r10,r8,r9) += l2 */
+<span class="lineNum">     314 </span>                :            :     &quot;addq 16(%%rsi), %%r10\n&quot;
+<span class="lineNum">     315 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     316 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     317 </span>                :            :     /* (r10,r8,r9) += n2 * c0 */
+<span class="lineNum">     318 </span>                :            :     &quot;movq %8, %%rax\n&quot;
+<span class="lineNum">     319 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     320 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     321 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     322 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     323 </span>                :            :     /* (r10,r8,r9) += n1 * c1 */
+<span class="lineNum">     324 </span>                :            :     &quot;movq %9, %%rax\n&quot;
+<span class="lineNum">     325 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     326 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     327 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     328 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     329 </span>                :            :     /* (r10,r8,r9) += n0 */
+<span class="lineNum">     330 </span>                :            :     &quot;addq %%r11, %%r10\n&quot;
+<span class="lineNum">     331 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     332 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     333 </span>                :            :     /* extract m2 */
+<span class="lineNum">     334 </span>                :            :     &quot;movq %%r10, %q2\n&quot;
+<span class="lineNum">     335 </span>                :            :     &quot;xorq %%r10, %%r10\n&quot;
+<span class="lineNum">     336 </span>                :            :     /* (r8,r9,r10) += l3 */
+<span class="lineNum">     337 </span>                :            :     &quot;addq 24(%%rsi), %%r8\n&quot;
+<span class="lineNum">     338 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     339 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     340 </span>                :            :     /* (r8,r9,r10) += n3 * c0 */
+<span class="lineNum">     341 </span>                :            :     &quot;movq %8, %%rax\n&quot;
+<span class="lineNum">     342 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     343 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     344 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     345 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     346 </span>                :            :     /* (r8,r9,r10) += n2 * c1 */
+<span class="lineNum">     347 </span>                :            :     &quot;movq %9, %%rax\n&quot;
+<span class="lineNum">     348 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     349 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     350 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     351 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     352 </span>                :            :     /* (r8,r9,r10) += n1 */
+<span class="lineNum">     353 </span>                :            :     &quot;addq %%r12, %%r8\n&quot;
+<span class="lineNum">     354 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     355 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     356 </span>                :            :     /* extract m3 */
+<span class="lineNum">     357 </span>                :            :     &quot;movq %%r8, %q3\n&quot;
+<span class="lineNum">     358 </span>                :            :     &quot;xorq %%r8, %%r8\n&quot;
+<span class="lineNum">     359 </span>                :            :     /* (r9,r10,r8) += n3 * c1 */
+<span class="lineNum">     360 </span>                :            :     &quot;movq %9, %%rax\n&quot;
+<span class="lineNum">     361 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     362 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     363 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     364 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     365 </span>                :            :     /* (r9,r10,r8) += n2 */
+<span class="lineNum">     366 </span>                :            :     &quot;addq %%r13, %%r9\n&quot;
+<span class="lineNum">     367 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     368 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     369 </span>                :            :     /* extract m4 */
+<span class="lineNum">     370 </span>                :            :     &quot;movq %%r9, %q4\n&quot;
+<span class="lineNum">     371 </span>                :            :     /* (r10,r8) += n3 */
+<span class="lineNum">     372 </span>                :            :     &quot;addq %%r14, %%r10\n&quot;
+<span class="lineNum">     373 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     374 </span>                :            :     /* extract m5 */
+<span class="lineNum">     375 </span>                :            :     &quot;movq %%r10, %q5\n&quot;
+<span class="lineNum">     376 </span>                :            :     /* extract m6 */
+<span class="lineNum">     377 </span>                :            :     &quot;movq %%r8, %q6\n&quot;
+<span class="lineNum">     378 </span>                :            :     : &quot;=g&quot;(m0), &quot;=g&quot;(m1), &quot;=g&quot;(m2), &quot;=g&quot;(m3), &quot;=g&quot;(m4), &quot;=g&quot;(m5), &quot;=g&quot;(m6)
+<span class="lineNum">     379 </span>                :            :     : &quot;S&quot;(l), &quot;n&quot;(SECP256K1_N_C_0), &quot;n&quot;(SECP256K1_N_C_1)
+<span class="lineNum">     380 </span>                :            :     : &quot;rax&quot;, &quot;rdx&quot;, &quot;r8&quot;, &quot;r9&quot;, &quot;r10&quot;, &quot;r11&quot;, &quot;r12&quot;, &quot;r13&quot;, &quot;r14&quot;, &quot;cc&quot;);
+<span class="lineNum">     381 </span>                :            : 
+<span class="lineNum">     382 </span>                :            :     /* Reduce 385 bits into 258. */
+<span class="lineNum">     383 </span>                :            :     __asm__ __volatile__(
+<span class="lineNum">     384 </span>                :            :     /* Preload */
+<span class="lineNum">     385 </span>                :            :     &quot;movq %q9, %%r11\n&quot;
+<span class="lineNum">     386 </span>                :            :     &quot;movq %q10, %%r12\n&quot;
+<span class="lineNum">     387 </span>                :            :     &quot;movq %q11, %%r13\n&quot;
+<span class="lineNum">     388 </span>                :            :     /* Initialize (r8,r9,r10) */
+<span class="lineNum">     389 </span>                :            :     &quot;movq %q5, %%r8\n&quot;
+<span class="lineNum">     390 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     391 </span>                :            :     &quot;xorq %%r10, %%r10\n&quot;
+<span class="lineNum">     392 </span>                :            :     /* (r8,r9) += m4 * c0 */
+<span class="lineNum">     393 </span>                :            :     &quot;movq %12, %%rax\n&quot;
+<span class="lineNum">     394 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     395 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     396 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     397 </span>                :            :     /* extract p0 */
+<span class="lineNum">     398 </span>                :            :     &quot;movq %%r8, %q0\n&quot;
+<span class="lineNum">     399 </span>                :            :     &quot;xorq %%r8, %%r8\n&quot;
+<span class="lineNum">     400 </span>                :            :     /* (r9,r10) += m1 */
+<span class="lineNum">     401 </span>                :            :     &quot;addq %q6, %%r9\n&quot;
+<span class="lineNum">     402 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     403 </span>                :            :     /* (r9,r10,r8) += m5 * c0 */
+<span class="lineNum">     404 </span>                :            :     &quot;movq %12, %%rax\n&quot;
+<span class="lineNum">     405 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     406 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     407 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     408 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     409 </span>                :            :     /* (r9,r10,r8) += m4 * c1 */
+<span class="lineNum">     410 </span>                :            :     &quot;movq %13, %%rax\n&quot;
+<span class="lineNum">     411 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     412 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     413 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     414 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     415 </span>                :            :     /* extract p1 */
+<span class="lineNum">     416 </span>                :            :     &quot;movq %%r9, %q1\n&quot;
+<span class="lineNum">     417 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     418 </span>                :            :     /* (r10,r8,r9) += m2 */
+<span class="lineNum">     419 </span>                :            :     &quot;addq %q7, %%r10\n&quot;
+<span class="lineNum">     420 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     421 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     422 </span>                :            :     /* (r10,r8,r9) += m6 * c0 */
+<span class="lineNum">     423 </span>                :            :     &quot;movq %12, %%rax\n&quot;
+<span class="lineNum">     424 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     425 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     426 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     427 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     428 </span>                :            :     /* (r10,r8,r9) += m5 * c1 */
+<span class="lineNum">     429 </span>                :            :     &quot;movq %13, %%rax\n&quot;
+<span class="lineNum">     430 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     431 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     432 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     433 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     434 </span>                :            :     /* (r10,r8,r9) += m4 */
+<span class="lineNum">     435 </span>                :            :     &quot;addq %%r11, %%r10\n&quot;
+<span class="lineNum">     436 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     437 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     438 </span>                :            :     /* extract p2 */
+<span class="lineNum">     439 </span>                :            :     &quot;movq %%r10, %q2\n&quot;
+<span class="lineNum">     440 </span>                :            :     /* (r8,r9) += m3 */
+<span class="lineNum">     441 </span>                :            :     &quot;addq %q8, %%r8\n&quot;
+<span class="lineNum">     442 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     443 </span>                :            :     /* (r8,r9) += m6 * c1 */
+<span class="lineNum">     444 </span>                :            :     &quot;movq %13, %%rax\n&quot;
+<span class="lineNum">     445 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     446 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     447 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     448 </span>                :            :     /* (r8,r9) += m5 */
+<span class="lineNum">     449 </span>                :            :     &quot;addq %%r12, %%r8\n&quot;
+<span class="lineNum">     450 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     451 </span>                :            :     /* extract p3 */
+<span class="lineNum">     452 </span>                :            :     &quot;movq %%r8, %q3\n&quot;
+<span class="lineNum">     453 </span>                :            :     /* (r9) += m6 */
+<span class="lineNum">     454 </span>                :            :     &quot;addq %%r13, %%r9\n&quot;
+<span class="lineNum">     455 </span>                :            :     /* extract p4 */
+<span class="lineNum">     456 </span>                :            :     &quot;movq %%r9, %q4\n&quot;
+<span class="lineNum">     457 </span>                :            :     : &quot;=&amp;g&quot;(p0), &quot;=&amp;g&quot;(p1), &quot;=&amp;g&quot;(p2), &quot;=g&quot;(p3), &quot;=g&quot;(p4)
+<span class="lineNum">     458 </span>                :            :     : &quot;g&quot;(m0), &quot;g&quot;(m1), &quot;g&quot;(m2), &quot;g&quot;(m3), &quot;g&quot;(m4), &quot;g&quot;(m5), &quot;g&quot;(m6), &quot;n&quot;(SECP256K1_N_C_0), &quot;n&quot;(SECP256K1_N_C_1)
+<span class="lineNum">     459 </span>                :            :     : &quot;rax&quot;, &quot;rdx&quot;, &quot;r8&quot;, &quot;r9&quot;, &quot;r10&quot;, &quot;r11&quot;, &quot;r12&quot;, &quot;r13&quot;, &quot;cc&quot;);
+<span class="lineNum">     460 </span>                :            : 
+<span class="lineNum">     461 </span>                :            :     /* Reduce 258 bits into 256. */
+<span class="lineNum">     462 </span>                :            :     __asm__ __volatile__(
+<span class="lineNum">     463 </span>                :            :     /* Preload */
+<span class="lineNum">     464 </span>                :            :     &quot;movq %q5, %%r10\n&quot;
+<span class="lineNum">     465 </span>                :            :     /* (rax,rdx) = p4 * c0 */
+<span class="lineNum">     466 </span>                :            :     &quot;movq %7, %%rax\n&quot;
+<span class="lineNum">     467 </span>                :            :     &quot;mulq %%r10\n&quot;
+<span class="lineNum">     468 </span>                :            :     /* (rax,rdx) += p0 */
+<span class="lineNum">     469 </span>                :            :     &quot;addq %q1, %%rax\n&quot;
+<span class="lineNum">     470 </span>                :            :     &quot;adcq $0, %%rdx\n&quot;
+<span class="lineNum">     471 </span>                :            :     /* extract r0 */
+<span class="lineNum">     472 </span>                :            :     &quot;movq %%rax, 0(%q6)\n&quot;
+<span class="lineNum">     473 </span>                :            :     /* Move to (r8,r9) */
+<span class="lineNum">     474 </span>                :            :     &quot;movq %%rdx, %%r8\n&quot;
+<span class="lineNum">     475 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     476 </span>                :            :     /* (r8,r9) += p1 */
+<span class="lineNum">     477 </span>                :            :     &quot;addq %q2, %%r8\n&quot;
+<span class="lineNum">     478 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     479 </span>                :            :     /* (r8,r9) += p4 * c1 */
+<span class="lineNum">     480 </span>                :            :     &quot;movq %8, %%rax\n&quot;
+<span class="lineNum">     481 </span>                :            :     &quot;mulq %%r10\n&quot;
+<span class="lineNum">     482 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     483 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     484 </span>                :            :     /* Extract r1 */
+<span class="lineNum">     485 </span>                :            :     &quot;movq %%r8, 8(%q6)\n&quot;
+<span class="lineNum">     486 </span>                :            :     &quot;xorq %%r8, %%r8\n&quot;
+<span class="lineNum">     487 </span>                :            :     /* (r9,r8) += p4 */
+<span class="lineNum">     488 </span>                :            :     &quot;addq %%r10, %%r9\n&quot;
+<span class="lineNum">     489 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     490 </span>                :            :     /* (r9,r8) += p2 */
+<span class="lineNum">     491 </span>                :            :     &quot;addq %q3, %%r9\n&quot;
+<span class="lineNum">     492 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     493 </span>                :            :     /* Extract r2 */
+<span class="lineNum">     494 </span>                :            :     &quot;movq %%r9, 16(%q6)\n&quot;
+<span class="lineNum">     495 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     496 </span>                :            :     /* (r8,r9) += p3 */
+<span class="lineNum">     497 </span>                :            :     &quot;addq %q4, %%r8\n&quot;
+<span class="lineNum">     498 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     499 </span>                :            :     /* Extract r3 */
+<span class="lineNum">     500 </span>                :            :     &quot;movq %%r8, 24(%q6)\n&quot;
+<span class="lineNum">     501 </span>                :            :     /* Extract c */
+<span class="lineNum">     502 </span>                :            :     &quot;movq %%r9, %q0\n&quot;
+<span class="lineNum">     503 </span>                :            :     : &quot;=g&quot;(c)
+<span class="lineNum">     504 </span>                :            :     : &quot;g&quot;(p0), &quot;g&quot;(p1), &quot;g&quot;(p2), &quot;g&quot;(p3), &quot;g&quot;(p4), &quot;D&quot;(r), &quot;n&quot;(SECP256K1_N_C_0), &quot;n&quot;(SECP256K1_N_C_1)
+<span class="lineNum">     505 </span>                :            :     : &quot;rax&quot;, &quot;rdx&quot;, &quot;r8&quot;, &quot;r9&quot;, &quot;r10&quot;, &quot;cc&quot;, &quot;memory&quot;);
+<span class="lineNum">     506 </span>                :            : #else
+<span class="lineNum">     507 </span>                :            :     uint128_t c;
+<span class="lineNum">     508 </span>                :            :     uint64_t c0, c1, c2;
+<span class="lineNum">     509 </span>                :<span class="lineNoCov">          0 :     uint64_t n0 = l[4], n1 = l[5], n2 = l[6], n3 = l[7];</span>
+<span class="lineNum">     510 </span>                :            :     uint64_t m0, m1, m2, m3, m4, m5;
+<span class="lineNum">     511 </span>                :            :     uint32_t m6;
+<span class="lineNum">     512 </span>                :            :     uint64_t p0, p1, p2, p3;
+<span class="lineNum">     513 </span>                :            :     uint32_t p4;
+<span class="lineNum">     514 </span>                :            : 
+<span class="lineNum">     515 </span>                :            :     /* Reduce 512 bits into 385. */
+<span class="lineNum">     516 </span>                :            :     /* m[0..6] = l[0..3] + n[0..3] * SECP256K1_N_C. */
+<span class="lineNum">     517 </span>                :<span class="lineNoCov">          0 :     c0 = l[0]; c1 = 0; c2 = 0;</span>
+<span class="lineNum">     518 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd_fast(n0, SECP256K1_N_C_0);</span>
+<span class="lineNum">     519 </span>                :<span class="lineNoCov">          0 :     extract_fast(m0);</span>
+<span class="lineNum">     520 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd_fast(l[1]);</span>
+<span class="lineNum">     521 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(n1, SECP256K1_N_C_0);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     522 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(n0, SECP256K1_N_C_1);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     523 </span>                :<span class="lineNoCov">          0 :     extract(m1);</span>
+<span class="lineNum">     524 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd(l[2]);</span>
+<span class="lineNum">     525 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(n2, SECP256K1_N_C_0);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     526 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(n1, SECP256K1_N_C_1);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     527 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd(n0);</span>
+<span class="lineNum">     528 </span>                :<span class="lineNoCov">          0 :     extract(m2);</span>
+<span class="lineNum">     529 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd(l[3]);</span>
+<span class="lineNum">     530 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(n3, SECP256K1_N_C_0);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     531 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(n2, SECP256K1_N_C_1);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     532 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd(n1);</span>
+<span class="lineNum">     533 </span>                :<span class="lineNoCov">          0 :     extract(m3);</span>
+<span class="lineNum">     534 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(n3, SECP256K1_N_C_1);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     535 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd(n2);</span>
+<span class="lineNum">     536 </span>                :<span class="lineNoCov">          0 :     extract(m4);</span>
+<span class="lineNum">     537 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd_fast(n3);</span>
+<span class="lineNum">     538 </span>                :<span class="lineNoCov">          0 :     extract_fast(m5);</span>
+<span class="lineNum">     539 </span>                :            :     VERIFY_CHECK(c0 &lt;= 1);
+<span class="lineNum">     540 </span>                :<span class="lineNoCov">          0 :     m6 = c0;</span>
+<span class="lineNum">     541 </span>                :            : 
+<span class="lineNum">     542 </span>                :            :     /* Reduce 385 bits into 258. */
+<span class="lineNum">     543 </span>                :            :     /* p[0..4] = m[0..3] + m[4..6] * SECP256K1_N_C. */
+<span class="lineNum">     544 </span>                :<span class="lineNoCov">          0 :     c0 = m0; c1 = 0; c2 = 0;</span>
+<span class="lineNum">     545 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd_fast(m4, SECP256K1_N_C_0);</span>
+<span class="lineNum">     546 </span>                :<span class="lineNoCov">          0 :     extract_fast(p0);</span>
+<span class="lineNum">     547 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd_fast(m1);</span>
+<span class="lineNum">     548 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(m5, SECP256K1_N_C_0);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     549 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(m4, SECP256K1_N_C_1);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     550 </span>                :<span class="lineNoCov">          0 :     extract(p1);</span>
+<span class="lineNum">     551 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd(m2);</span>
+<span class="lineNum">     552 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(m6, SECP256K1_N_C_0);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     553 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(m5, SECP256K1_N_C_1);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     554 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd(m4);</span>
+<span class="lineNum">     555 </span>                :<span class="lineNoCov">          0 :     extract(p2);</span>
+<span class="lineNum">     556 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd_fast(m3);</span>
+<span class="lineNum">     557 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd_fast(m6, SECP256K1_N_C_1);</span>
+<span class="lineNum">     558 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     sumadd_fast(m5);</span>
+<span class="lineNum">     559 </span>                :<span class="lineNoCov">          0 :     extract_fast(p3);</span>
+<span class="lineNum">     560 </span>                :<span class="lineNoCov">          0 :     p4 = c0 + m6;</span>
+<span class="lineNum">     561 </span>                :            :     VERIFY_CHECK(p4 &lt;= 2);
+<span class="lineNum">     562 </span>                :            : 
+<span class="lineNum">     563 </span>                :            :     /* Reduce 258 bits into 256. */
+<span class="lineNum">     564 </span>                :            :     /* r[0..3] = p[0..3] + p[4] * SECP256K1_N_C. */
+<span class="lineNum">     565 </span>                :<span class="lineNoCov">          0 :     c = p0 + (uint128_t)SECP256K1_N_C_0 * p4;</span>
+<span class="lineNum">     566 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[0] = c &amp; 0xFFFFFFFFFFFFFFFFULL; c &gt;&gt;= 64;</span>
+<span class="lineNum">     567 </span>                :<span class="lineNoCov">          0 :     c += p1 + (uint128_t)SECP256K1_N_C_1 * p4;</span>
+<span class="lineNum">     568 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[1] = c &amp; 0xFFFFFFFFFFFFFFFFULL; c &gt;&gt;= 64;</span>
+<span class="lineNum">     569 </span>                :<span class="lineNoCov">          0 :     c += p2 + (uint128_t)p4;</span>
+<span class="lineNum">     570 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[2] = c &amp; 0xFFFFFFFFFFFFFFFFULL; c &gt;&gt;= 64;</span>
+<span class="lineNum">     571 </span>                :<span class="lineNoCov">          0 :     c += p3;</span>
+<span class="lineNum">     572 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[3] = c &amp; 0xFFFFFFFFFFFFFFFFULL; c &gt;&gt;= 64;</span>
+<span class="lineNum">     573 </span>                :            : #endif
+<span class="lineNum">     574 </span>                :            : 
+<span class="lineNum">     575 </span>                :            :     /* Final reduction of r. */
+<span class="lineNum">     576 </span>                :<span class="lineNoCov">          0 :     secp256k1_scalar_reduce(r, c + secp256k1_scalar_check_overflow(r));</span>
+<a name="577"><span class="lineNum">     577 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     578 </span>                :            : 
+<span class="lineNum">     579 </span>                :<span class="lineNoCov">          0 : static void secp256k1_scalar_mul_512(uint64_t l[8], const secp256k1_scalar *a, const secp256k1_scalar *b) {</span>
+<span class="lineNum">     580 </span>                :            : #ifdef USE_ASM_X86_64
+<span class="lineNum">     581 </span>                :            :     const uint64_t *pb = b-&gt;d;
+<span class="lineNum">     582 </span>                :            :     __asm__ __volatile__(
+<span class="lineNum">     583 </span>                :            :     /* Preload */
+<span class="lineNum">     584 </span>                :            :     &quot;movq 0(%%rdi), %%r15\n&quot;
+<span class="lineNum">     585 </span>                :            :     &quot;movq 8(%%rdi), %%rbx\n&quot;
+<span class="lineNum">     586 </span>                :            :     &quot;movq 16(%%rdi), %%rcx\n&quot;
+<span class="lineNum">     587 </span>                :            :     &quot;movq 0(%%rdx), %%r11\n&quot;
+<span class="lineNum">     588 </span>                :            :     &quot;movq 8(%%rdx), %%r12\n&quot;
+<span class="lineNum">     589 </span>                :            :     &quot;movq 16(%%rdx), %%r13\n&quot;
+<span class="lineNum">     590 </span>                :            :     &quot;movq 24(%%rdx), %%r14\n&quot;
+<span class="lineNum">     591 </span>                :            :     /* (rax,rdx) = a0 * b0 */
+<span class="lineNum">     592 </span>                :            :     &quot;movq %%r15, %%rax\n&quot;
+<span class="lineNum">     593 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     594 </span>                :            :     /* Extract l0 */
+<span class="lineNum">     595 </span>                :            :     &quot;movq %%rax, 0(%%rsi)\n&quot;
+<span class="lineNum">     596 </span>                :            :     /* (r8,r9,r10) = (rdx) */
+<span class="lineNum">     597 </span>                :            :     &quot;movq %%rdx, %%r8\n&quot;
+<span class="lineNum">     598 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     599 </span>                :            :     &quot;xorq %%r10, %%r10\n&quot;
+<span class="lineNum">     600 </span>                :            :     /* (r8,r9,r10) += a0 * b1 */
+<span class="lineNum">     601 </span>                :            :     &quot;movq %%r15, %%rax\n&quot;
+<span class="lineNum">     602 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     603 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     604 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     605 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     606 </span>                :            :     /* (r8,r9,r10) += a1 * b0 */
+<span class="lineNum">     607 </span>                :            :     &quot;movq %%rbx, %%rax\n&quot;
+<span class="lineNum">     608 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     609 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     610 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     611 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     612 </span>                :            :     /* Extract l1 */
+<span class="lineNum">     613 </span>                :            :     &quot;movq %%r8, 8(%%rsi)\n&quot;
+<span class="lineNum">     614 </span>                :            :     &quot;xorq %%r8, %%r8\n&quot;
+<span class="lineNum">     615 </span>                :            :     /* (r9,r10,r8) += a0 * b2 */
+<span class="lineNum">     616 </span>                :            :     &quot;movq %%r15, %%rax\n&quot;
+<span class="lineNum">     617 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     618 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     619 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     620 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     621 </span>                :            :     /* (r9,r10,r8) += a1 * b1 */
+<span class="lineNum">     622 </span>                :            :     &quot;movq %%rbx, %%rax\n&quot;
+<span class="lineNum">     623 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     624 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     625 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     626 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     627 </span>                :            :     /* (r9,r10,r8) += a2 * b0 */
+<span class="lineNum">     628 </span>                :            :     &quot;movq %%rcx, %%rax\n&quot;
+<span class="lineNum">     629 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     630 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     631 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     632 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     633 </span>                :            :     /* Extract l2 */
+<span class="lineNum">     634 </span>                :            :     &quot;movq %%r9, 16(%%rsi)\n&quot;
+<span class="lineNum">     635 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     636 </span>                :            :     /* (r10,r8,r9) += a0 * b3 */
+<span class="lineNum">     637 </span>                :            :     &quot;movq %%r15, %%rax\n&quot;
+<span class="lineNum">     638 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     639 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     640 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     641 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     642 </span>                :            :     /* Preload a3 */
+<span class="lineNum">     643 </span>                :            :     &quot;movq 24(%%rdi), %%r15\n&quot;
+<span class="lineNum">     644 </span>                :            :     /* (r10,r8,r9) += a1 * b2 */
+<span class="lineNum">     645 </span>                :            :     &quot;movq %%rbx, %%rax\n&quot;
+<span class="lineNum">     646 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     647 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     648 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     649 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     650 </span>                :            :     /* (r10,r8,r9) += a2 * b1 */
+<span class="lineNum">     651 </span>                :            :     &quot;movq %%rcx, %%rax\n&quot;
+<span class="lineNum">     652 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     653 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     654 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     655 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     656 </span>                :            :     /* (r10,r8,r9) += a3 * b0 */
+<span class="lineNum">     657 </span>                :            :     &quot;movq %%r15, %%rax\n&quot;
+<span class="lineNum">     658 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     659 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     660 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     661 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     662 </span>                :            :     /* Extract l3 */
+<span class="lineNum">     663 </span>                :            :     &quot;movq %%r10, 24(%%rsi)\n&quot;
+<span class="lineNum">     664 </span>                :            :     &quot;xorq %%r10, %%r10\n&quot;
+<span class="lineNum">     665 </span>                :            :     /* (r8,r9,r10) += a1 * b3 */
+<span class="lineNum">     666 </span>                :            :     &quot;movq %%rbx, %%rax\n&quot;
+<span class="lineNum">     667 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     668 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     669 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     670 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     671 </span>                :            :     /* (r8,r9,r10) += a2 * b2 */
+<span class="lineNum">     672 </span>                :            :     &quot;movq %%rcx, %%rax\n&quot;
+<span class="lineNum">     673 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     674 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     675 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     676 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     677 </span>                :            :     /* (r8,r9,r10) += a3 * b1 */
+<span class="lineNum">     678 </span>                :            :     &quot;movq %%r15, %%rax\n&quot;
+<span class="lineNum">     679 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     680 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     681 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     682 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     683 </span>                :            :     /* Extract l4 */
+<span class="lineNum">     684 </span>                :            :     &quot;movq %%r8, 32(%%rsi)\n&quot;
+<span class="lineNum">     685 </span>                :            :     &quot;xorq %%r8, %%r8\n&quot;
+<span class="lineNum">     686 </span>                :            :     /* (r9,r10,r8) += a2 * b3 */
+<span class="lineNum">     687 </span>                :            :     &quot;movq %%rcx, %%rax\n&quot;
+<span class="lineNum">     688 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     689 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     690 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     691 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     692 </span>                :            :     /* (r9,r10,r8) += a3 * b2 */
+<span class="lineNum">     693 </span>                :            :     &quot;movq %%r15, %%rax\n&quot;
+<span class="lineNum">     694 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     695 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     696 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     697 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     698 </span>                :            :     /* Extract l5 */
+<span class="lineNum">     699 </span>                :            :     &quot;movq %%r9, 40(%%rsi)\n&quot;
+<span class="lineNum">     700 </span>                :            :     /* (r10,r8) += a3 * b3 */
+<span class="lineNum">     701 </span>                :            :     &quot;movq %%r15, %%rax\n&quot;
+<span class="lineNum">     702 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     703 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     704 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     705 </span>                :            :     /* Extract l6 */
+<span class="lineNum">     706 </span>                :            :     &quot;movq %%r10, 48(%%rsi)\n&quot;
+<span class="lineNum">     707 </span>                :            :     /* Extract l7 */
+<span class="lineNum">     708 </span>                :            :     &quot;movq %%r8, 56(%%rsi)\n&quot;
+<span class="lineNum">     709 </span>                :            :     : &quot;+d&quot;(pb)
+<span class="lineNum">     710 </span>                :            :     : &quot;S&quot;(l), &quot;D&quot;(a-&gt;d)
+<span class="lineNum">     711 </span>                :            :     : &quot;rax&quot;, &quot;rbx&quot;, &quot;rcx&quot;, &quot;r8&quot;, &quot;r9&quot;, &quot;r10&quot;, &quot;r11&quot;, &quot;r12&quot;, &quot;r13&quot;, &quot;r14&quot;, &quot;r15&quot;, &quot;cc&quot;, &quot;memory&quot;);
+<span class="lineNum">     712 </span>                :            : #else
+<span class="lineNum">     713 </span>                :            :     /* 160 bit accumulator. */
+<span class="lineNum">     714 </span>                :<span class="lineNoCov">          0 :     uint64_t c0 = 0, c1 = 0;</span>
+<span class="lineNum">     715 </span>                :<span class="lineNoCov">          0 :     uint32_t c2 = 0;</span>
+<span class="lineNum">     716 </span>                :            : 
+<span class="lineNum">     717 </span>                :            :     /* l[0..7] = a[0..3] * b[0..3]. */
+<span class="lineNum">     718 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd_fast(a-&gt;d[0], b-&gt;d[0]);</span>
+<span class="lineNum">     719 </span>                :<span class="lineNoCov">          0 :     extract_fast(l[0]);</span>
+<span class="lineNum">     720 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[0], b-&gt;d[1]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     721 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[1], b-&gt;d[0]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     722 </span>                :<span class="lineNoCov">          0 :     extract(l[1]);</span>
+<span class="lineNum">     723 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[0], b-&gt;d[2]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     724 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[1], b-&gt;d[1]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     725 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[2], b-&gt;d[0]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     726 </span>                :<span class="lineNoCov">          0 :     extract(l[2]);</span>
+<span class="lineNum">     727 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[0], b-&gt;d[3]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     728 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[1], b-&gt;d[2]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     729 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[2], b-&gt;d[1]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     730 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[3], b-&gt;d[0]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     731 </span>                :<span class="lineNoCov">          0 :     extract(l[3]);</span>
+<span class="lineNum">     732 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[1], b-&gt;d[3]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     733 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[2], b-&gt;d[2]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     734 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[3], b-&gt;d[1]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     735 </span>                :<span class="lineNoCov">          0 :     extract(l[4]);</span>
+<span class="lineNum">     736 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[2], b-&gt;d[3]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     737 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[3], b-&gt;d[2]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     738 </span>                :<span class="lineNoCov">          0 :     extract(l[5]);</span>
+<span class="lineNum">     739 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd_fast(a-&gt;d[3], b-&gt;d[3]);</span>
+<span class="lineNum">     740 </span>                :<span class="lineNoCov">          0 :     extract_fast(l[6]);</span>
+<span class="lineNum">     741 </span>                :            :     VERIFY_CHECK(c1 == 0);
+<span class="lineNum">     742 </span>                :<span class="lineNoCov">          0 :     l[7] = c0;</span>
+<span class="lineNum">     743 </span>                :            : #endif
+<a name="744"><span class="lineNum">     744 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     745 </span>                :            : 
+<span class="lineNum">     746 </span>                :<span class="lineNoCov">          0 : static void secp256k1_scalar_sqr_512(uint64_t l[8], const secp256k1_scalar *a) {</span>
+<span class="lineNum">     747 </span>                :            : #ifdef USE_ASM_X86_64
+<span class="lineNum">     748 </span>                :            :     __asm__ __volatile__(
+<span class="lineNum">     749 </span>                :            :     /* Preload */
+<span class="lineNum">     750 </span>                :            :     &quot;movq 0(%%rdi), %%r11\n&quot;
+<span class="lineNum">     751 </span>                :            :     &quot;movq 8(%%rdi), %%r12\n&quot;
+<span class="lineNum">     752 </span>                :            :     &quot;movq 16(%%rdi), %%r13\n&quot;
+<span class="lineNum">     753 </span>                :            :     &quot;movq 24(%%rdi), %%r14\n&quot;
+<span class="lineNum">     754 </span>                :            :     /* (rax,rdx) = a0 * a0 */
+<span class="lineNum">     755 </span>                :            :     &quot;movq %%r11, %%rax\n&quot;
+<span class="lineNum">     756 </span>                :            :     &quot;mulq %%r11\n&quot;
+<span class="lineNum">     757 </span>                :            :     /* Extract l0 */
+<span class="lineNum">     758 </span>                :            :     &quot;movq %%rax, 0(%%rsi)\n&quot;
+<span class="lineNum">     759 </span>                :            :     /* (r8,r9,r10) = (rdx,0) */
+<span class="lineNum">     760 </span>                :            :     &quot;movq %%rdx, %%r8\n&quot;
+<span class="lineNum">     761 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     762 </span>                :            :     &quot;xorq %%r10, %%r10\n&quot;
+<span class="lineNum">     763 </span>                :            :     /* (r8,r9,r10) += 2 * a0 * a1 */
+<span class="lineNum">     764 </span>                :            :     &quot;movq %%r11, %%rax\n&quot;
+<span class="lineNum">     765 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     766 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     767 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     768 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     769 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     770 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     771 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     772 </span>                :            :     /* Extract l1 */
+<span class="lineNum">     773 </span>                :            :     &quot;movq %%r8, 8(%%rsi)\n&quot;
+<span class="lineNum">     774 </span>                :            :     &quot;xorq %%r8, %%r8\n&quot;
+<span class="lineNum">     775 </span>                :            :     /* (r9,r10,r8) += 2 * a0 * a2 */
+<span class="lineNum">     776 </span>                :            :     &quot;movq %%r11, %%rax\n&quot;
+<span class="lineNum">     777 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     778 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     779 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     780 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     781 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     782 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     783 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     784 </span>                :            :     /* (r9,r10,r8) += a1 * a1 */
+<span class="lineNum">     785 </span>                :            :     &quot;movq %%r12, %%rax\n&quot;
+<span class="lineNum">     786 </span>                :            :     &quot;mulq %%r12\n&quot;
+<span class="lineNum">     787 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     788 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     789 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     790 </span>                :            :     /* Extract l2 */
+<span class="lineNum">     791 </span>                :            :     &quot;movq %%r9, 16(%%rsi)\n&quot;
+<span class="lineNum">     792 </span>                :            :     &quot;xorq %%r9, %%r9\n&quot;
+<span class="lineNum">     793 </span>                :            :     /* (r10,r8,r9) += 2 * a0 * a3 */
+<span class="lineNum">     794 </span>                :            :     &quot;movq %%r11, %%rax\n&quot;
+<span class="lineNum">     795 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     796 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     797 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     798 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     799 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     800 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     801 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     802 </span>                :            :     /* (r10,r8,r9) += 2 * a1 * a2 */
+<span class="lineNum">     803 </span>                :            :     &quot;movq %%r12, %%rax\n&quot;
+<span class="lineNum">     804 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     805 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     806 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     807 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     808 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     809 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     810 </span>                :            :     &quot;adcq $0, %%r9\n&quot;
+<span class="lineNum">     811 </span>                :            :     /* Extract l3 */
+<span class="lineNum">     812 </span>                :            :     &quot;movq %%r10, 24(%%rsi)\n&quot;
+<span class="lineNum">     813 </span>                :            :     &quot;xorq %%r10, %%r10\n&quot;
+<span class="lineNum">     814 </span>                :            :     /* (r8,r9,r10) += 2 * a1 * a3 */
+<span class="lineNum">     815 </span>                :            :     &quot;movq %%r12, %%rax\n&quot;
+<span class="lineNum">     816 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     817 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     818 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     819 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     820 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     821 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     822 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     823 </span>                :            :     /* (r8,r9,r10) += a2 * a2 */
+<span class="lineNum">     824 </span>                :            :     &quot;movq %%r13, %%rax\n&quot;
+<span class="lineNum">     825 </span>                :            :     &quot;mulq %%r13\n&quot;
+<span class="lineNum">     826 </span>                :            :     &quot;addq %%rax, %%r8\n&quot;
+<span class="lineNum">     827 </span>                :            :     &quot;adcq %%rdx, %%r9\n&quot;
+<span class="lineNum">     828 </span>                :            :     &quot;adcq $0, %%r10\n&quot;
+<span class="lineNum">     829 </span>                :            :     /* Extract l4 */
+<span class="lineNum">     830 </span>                :            :     &quot;movq %%r8, 32(%%rsi)\n&quot;
+<span class="lineNum">     831 </span>                :            :     &quot;xorq %%r8, %%r8\n&quot;
+<span class="lineNum">     832 </span>                :            :     /* (r9,r10,r8) += 2 * a2 * a3 */
+<span class="lineNum">     833 </span>                :            :     &quot;movq %%r13, %%rax\n&quot;
+<span class="lineNum">     834 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     835 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     836 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     837 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     838 </span>                :            :     &quot;addq %%rax, %%r9\n&quot;
+<span class="lineNum">     839 </span>                :            :     &quot;adcq %%rdx, %%r10\n&quot;
+<span class="lineNum">     840 </span>                :            :     &quot;adcq $0, %%r8\n&quot;
+<span class="lineNum">     841 </span>                :            :     /* Extract l5 */
+<span class="lineNum">     842 </span>                :            :     &quot;movq %%r9, 40(%%rsi)\n&quot;
+<span class="lineNum">     843 </span>                :            :     /* (r10,r8) += a3 * a3 */
+<span class="lineNum">     844 </span>                :            :     &quot;movq %%r14, %%rax\n&quot;
+<span class="lineNum">     845 </span>                :            :     &quot;mulq %%r14\n&quot;
+<span class="lineNum">     846 </span>                :            :     &quot;addq %%rax, %%r10\n&quot;
+<span class="lineNum">     847 </span>                :            :     &quot;adcq %%rdx, %%r8\n&quot;
+<span class="lineNum">     848 </span>                :            :     /* Extract l6 */
+<span class="lineNum">     849 </span>                :            :     &quot;movq %%r10, 48(%%rsi)\n&quot;
+<span class="lineNum">     850 </span>                :            :     /* Extract l7 */
+<span class="lineNum">     851 </span>                :            :     &quot;movq %%r8, 56(%%rsi)\n&quot;
+<span class="lineNum">     852 </span>                :            :     :
+<span class="lineNum">     853 </span>                :            :     : &quot;S&quot;(l), &quot;D&quot;(a-&gt;d)
+<span class="lineNum">     854 </span>                :            :     : &quot;rax&quot;, &quot;rdx&quot;, &quot;r8&quot;, &quot;r9&quot;, &quot;r10&quot;, &quot;r11&quot;, &quot;r12&quot;, &quot;r13&quot;, &quot;r14&quot;, &quot;cc&quot;, &quot;memory&quot;);
+<span class="lineNum">     855 </span>                :            : #else
+<span class="lineNum">     856 </span>                :            :     /* 160 bit accumulator. */
+<span class="lineNum">     857 </span>                :<span class="lineNoCov">          0 :     uint64_t c0 = 0, c1 = 0;</span>
+<span class="lineNum">     858 </span>                :<span class="lineNoCov">          0 :     uint32_t c2 = 0;</span>
+<span class="lineNum">     859 </span>                :            : 
+<span class="lineNum">     860 </span>                :            :     /* l[0..7] = a[0..3] * b[0..3]. */
+<span class="lineNum">     861 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd_fast(a-&gt;d[0], a-&gt;d[0]);</span>
+<span class="lineNum">     862 </span>                :<span class="lineNoCov">          0 :     extract_fast(l[0]);</span>
+<span class="lineNum">     863 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd2(a-&gt;d[0], a-&gt;d[1]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 8 was not executed"> # </span><span class="branchNoExec" title="Branch 9 was not executed"> # </span>][<span class="branchNoExec" title="Branch 10 was not executed"> # </span><span class="branchNoExec" title="Branch 11 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 12 was not executed"> # </span><span class="branchNoExec" title="Branch 13 was not executed"> # </span>][<span class="branchNoExec" title="Branch 14 was not executed"> # </span><span class="branchNoExec" title="Branch 15 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 16 was not executed"> # </span><span class="branchNoExec" title="Branch 17 was not executed"> # </span>][<span class="branchNoExec" title="Branch 18 was not executed"> # </span><span class="branchNoExec" title="Branch 19 was not executed"> # </span>]
+<span class="lineNum">         </span>        [<span class="branchNoExec" title="Branch 20 was not executed"> # </span><span class="branchNoExec" title="Branch 21 was not executed"> # </span>]
+<span class="lineNum">     864 </span>                :<span class="lineNoCov">          0 :     extract(l[1]);</span>
+<span class="lineNum">     865 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd2(a-&gt;d[0], a-&gt;d[2]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 8 was not executed"> # </span><span class="branchNoExec" title="Branch 9 was not executed"> # </span>][<span class="branchNoExec" title="Branch 10 was not executed"> # </span><span class="branchNoExec" title="Branch 11 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 12 was not executed"> # </span><span class="branchNoExec" title="Branch 13 was not executed"> # </span>][<span class="branchNoExec" title="Branch 14 was not executed"> # </span><span class="branchNoExec" title="Branch 15 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 16 was not executed"> # </span><span class="branchNoExec" title="Branch 17 was not executed"> # </span>][<span class="branchNoExec" title="Branch 18 was not executed"> # </span><span class="branchNoExec" title="Branch 19 was not executed"> # </span>]
+<span class="lineNum">         </span>        [<span class="branchNoExec" title="Branch 20 was not executed"> # </span><span class="branchNoExec" title="Branch 21 was not executed"> # </span>]
+<span class="lineNum">     866 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[1], a-&gt;d[1]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     867 </span>                :<span class="lineNoCov">          0 :     extract(l[2]);</span>
+<span class="lineNum">     868 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd2(a-&gt;d[0], a-&gt;d[3]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 8 was not executed"> # </span><span class="branchNoExec" title="Branch 9 was not executed"> # </span>][<span class="branchNoExec" title="Branch 10 was not executed"> # </span><span class="branchNoExec" title="Branch 11 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 12 was not executed"> # </span><span class="branchNoExec" title="Branch 13 was not executed"> # </span>][<span class="branchNoExec" title="Branch 14 was not executed"> # </span><span class="branchNoExec" title="Branch 15 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 16 was not executed"> # </span><span class="branchNoExec" title="Branch 17 was not executed"> # </span>][<span class="branchNoExec" title="Branch 18 was not executed"> # </span><span class="branchNoExec" title="Branch 19 was not executed"> # </span>]
+<span class="lineNum">         </span>        [<span class="branchNoExec" title="Branch 20 was not executed"> # </span><span class="branchNoExec" title="Branch 21 was not executed"> # </span>]
+<span class="lineNum">     869 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd2(a-&gt;d[1], a-&gt;d[2]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 8 was not executed"> # </span><span class="branchNoExec" title="Branch 9 was not executed"> # </span>][<span class="branchNoExec" title="Branch 10 was not executed"> # </span><span class="branchNoExec" title="Branch 11 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 12 was not executed"> # </span><span class="branchNoExec" title="Branch 13 was not executed"> # </span>][<span class="branchNoExec" title="Branch 14 was not executed"> # </span><span class="branchNoExec" title="Branch 15 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 16 was not executed"> # </span><span class="branchNoExec" title="Branch 17 was not executed"> # </span>][<span class="branchNoExec" title="Branch 18 was not executed"> # </span><span class="branchNoExec" title="Branch 19 was not executed"> # </span>]
+<span class="lineNum">         </span>        [<span class="branchNoExec" title="Branch 20 was not executed"> # </span><span class="branchNoExec" title="Branch 21 was not executed"> # </span>]
+<span class="lineNum">     870 </span>                :<span class="lineNoCov">          0 :     extract(l[3]);</span>
+<span class="lineNum">     871 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd2(a-&gt;d[1], a-&gt;d[3]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 8 was not executed"> # </span><span class="branchNoExec" title="Branch 9 was not executed"> # </span>][<span class="branchNoExec" title="Branch 10 was not executed"> # </span><span class="branchNoExec" title="Branch 11 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 12 was not executed"> # </span><span class="branchNoExec" title="Branch 13 was not executed"> # </span>][<span class="branchNoExec" title="Branch 14 was not executed"> # </span><span class="branchNoExec" title="Branch 15 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 16 was not executed"> # </span><span class="branchNoExec" title="Branch 17 was not executed"> # </span>][<span class="branchNoExec" title="Branch 18 was not executed"> # </span><span class="branchNoExec" title="Branch 19 was not executed"> # </span>]
+<span class="lineNum">         </span>        [<span class="branchNoExec" title="Branch 20 was not executed"> # </span><span class="branchNoExec" title="Branch 21 was not executed"> # </span>]
+<span class="lineNum">     872 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd(a-&gt;d[2], a-&gt;d[2]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">     873 </span>                :<span class="lineNoCov">          0 :     extract(l[4]);</span>
+<span class="lineNum">     874 </span>[<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>][<span class="branchNoExec" title="Branch 2 was not executed"> # </span><span class="branchNoExec" title="Branch 3 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd2(a-&gt;d[2], a-&gt;d[3]);</span>
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>][<span class="branchNoExec" title="Branch 6 was not executed"> # </span><span class="branchNoExec" title="Branch 7 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 8 was not executed"> # </span><span class="branchNoExec" title="Branch 9 was not executed"> # </span>][<span class="branchNoExec" title="Branch 10 was not executed"> # </span><span class="branchNoExec" title="Branch 11 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 12 was not executed"> # </span><span class="branchNoExec" title="Branch 13 was not executed"> # </span>][<span class="branchNoExec" title="Branch 14 was not executed"> # </span><span class="branchNoExec" title="Branch 15 was not executed"> # </span>]
+<span class="lineNum">         </span>[<span class="branchNoExec" title="Branch 16 was not executed"> # </span><span class="branchNoExec" title="Branch 17 was not executed"> # </span>][<span class="branchNoExec" title="Branch 18 was not executed"> # </span><span class="branchNoExec" title="Branch 19 was not executed"> # </span>]
+<span class="lineNum">         </span>        [<span class="branchNoExec" title="Branch 20 was not executed"> # </span><span class="branchNoExec" title="Branch 21 was not executed"> # </span>]
+<span class="lineNum">     875 </span>                :<span class="lineNoCov">          0 :     extract(l[5]);</span>
+<span class="lineNum">     876 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     muladd_fast(a-&gt;d[3], a-&gt;d[3]);</span>
+<span class="lineNum">     877 </span>                :<span class="lineNoCov">          0 :     extract_fast(l[6]);</span>
+<span class="lineNum">     878 </span>                :            :     VERIFY_CHECK(c1 == 0);
+<span class="lineNum">     879 </span>                :<span class="lineNoCov">          0 :     l[7] = c0;</span>
+<span class="lineNum">     880 </span>                :            : #endif
+<span class="lineNum">     881 </span>                :<span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     882 </span>                :            : 
+<span class="lineNum">     883 </span>                :            : #undef sumadd
+<span class="lineNum">     884 </span>                :            : #undef sumadd_fast
+<span class="lineNum">     885 </span>                :            : #undef muladd
+<span class="lineNum">     886 </span>                :            : #undef muladd_fast
+<span class="lineNum">     887 </span>                :            : #undef muladd2
+<span class="lineNum">     888 </span>                :            : #undef extract
+<a name="889"><span class="lineNum">     889 </span>                :            : #undef extract_fast</a>
+<span class="lineNum">     890 </span>                :            : 
+<span class="lineNum">     891 </span>                :<span class="lineNoCov">          0 : static void secp256k1_scalar_mul(secp256k1_scalar *r, const secp256k1_scalar *a, const secp256k1_scalar *b) {</span>
+<span class="lineNum">     892 </span>                :            :     uint64_t l[8];
+<span class="lineNum">     893 </span>                :<span class="lineNoCov">          0 :     secp256k1_scalar_mul_512(l, a, b);</span>
+<span class="lineNum">     894 </span>                :<span class="lineNoCov">          0 :     secp256k1_scalar_reduce_512(r, l);</span>
+<a name="895"><span class="lineNum">     895 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     896 </span>                :            : 
+<span class="lineNum">     897 </span>                :<span class="lineNoCov">          0 : static int secp256k1_scalar_shr_int(secp256k1_scalar *r, int n) {</span>
+<span class="lineNum">     898 </span>                :            :     int ret;
+<span class="lineNum">     899 </span>                :            :     VERIFY_CHECK(n &gt; 0);
+<span class="lineNum">     900 </span>                :            :     VERIFY_CHECK(n &lt; 16);
+<span class="lineNum">     901 </span>                :<span class="lineNoCov">          0 :     ret = r-&gt;d[0] &amp; ((1 &lt;&lt; n) - 1);</span>
+<span class="lineNum">     902 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[0] = (r-&gt;d[0] &gt;&gt; n) + (r-&gt;d[1] &lt;&lt; (64 - n));</span>
+<span class="lineNum">     903 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[1] = (r-&gt;d[1] &gt;&gt; n) + (r-&gt;d[2] &lt;&lt; (64 - n));</span>
+<span class="lineNum">     904 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[2] = (r-&gt;d[2] &gt;&gt; n) + (r-&gt;d[3] &lt;&lt; (64 - n));</span>
+<span class="lineNum">     905 </span>                :<span class="lineNoCov">          0 :     r-&gt;d[3] = (r-&gt;d[3] &gt;&gt; n);</span>
+<span class="lineNum">     906 </span>                :<span class="lineNoCov">          0 :     return ret;</span>
+<a name="907"><span class="lineNum">     907 </span>                :            : }</a>
+<span class="lineNum">     908 </span>                :            : 
+<span class="lineNum">     909 </span>                :<span class="lineNoCov">          0 : static void secp256k1_scalar_sqr(secp256k1_scalar *r, const secp256k1_scalar *a) {</span>
+<span class="lineNum">     910 </span>                :            :     uint64_t l[8];
+<span class="lineNum">     911 </span>                :<span class="lineNoCov">          0 :     secp256k1_scalar_sqr_512(l, a);</span>
+<span class="lineNum">     912 </span>                :<span class="lineNoCov">          0 :     secp256k1_scalar_reduce_512(r, l);</span>
+<span class="lineNum">     913 </span>                :<span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     914 </span>                :            : 
+<span class="lineNum">     915 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     916 </span>                :            : static void secp256k1_scalar_split_128(secp256k1_scalar *r1, secp256k1_scalar *r2, const secp256k1_scalar *a) {
+<span class="lineNum">     917 </span>                :            :     r1-&gt;d[0] = a-&gt;d[0];
+<span class="lineNum">     918 </span>                :            :     r1-&gt;d[1] = a-&gt;d[1];
+<span class="lineNum">     919 </span>                :            :     r1-&gt;d[2] = 0;
+<span class="lineNum">     920 </span>                :            :     r1-&gt;d[3] = 0;
+<span class="lineNum">     921 </span>                :            :     r2-&gt;d[0] = a-&gt;d[2];
+<span class="lineNum">     922 </span>                :            :     r2-&gt;d[1] = a-&gt;d[3];
+<span class="lineNum">     923 </span>                :            :     r2-&gt;d[2] = 0;
+<span class="lineNum">     924 </span>                :            :     r2-&gt;d[3] = 0;
+<span class="lineNum">     925 </span>                :            : }
+<a name="926"><span class="lineNum">     926 </span>                :            : #endif</a>
+<span class="lineNum">     927 </span>                :            : 
+<span class="lineNum">     928 </span>                :<span class="lineNoCov">          0 : SECP256K1_INLINE static int secp256k1_scalar_eq(const secp256k1_scalar *a, const secp256k1_scalar *b) {</span>
+<span class="lineNum">     929 </span>                :<span class="lineNoCov">          0 :     return ((a-&gt;d[0] ^ b-&gt;d[0]) | (a-&gt;d[1] ^ b-&gt;d[1]) | (a-&gt;d[2] ^ b-&gt;d[2]) | (a-&gt;d[3] ^ b-&gt;d[3])) == 0;</span>
+<span class="lineNum">     930 </span>                :            : }
+<span class="lineNum">     931 </span>                :            : 
+<span class="lineNum">     932 </span>                :            : SECP256K1_INLINE static void secp256k1_scalar_mul_shift_var(secp256k1_scalar *r, const secp256k1_scalar *a, const secp256k1_scalar *b, unsigned int shift) {
+<span class="lineNum">     933 </span>                :            :     uint64_t l[8];
+<span class="lineNum">     934 </span>                :            :     unsigned int shiftlimbs;
+<span class="lineNum">     935 </span>                :            :     unsigned int shiftlow;
+<span class="lineNum">     936 </span>                :            :     unsigned int shifthigh;
+<span class="lineNum">     937 </span>                :            :     VERIFY_CHECK(shift &gt;= 256);
+<span class="lineNum">     938 </span>                :            :     secp256k1_scalar_mul_512(l, a, b);
+<span class="lineNum">     939 </span>                :            :     shiftlimbs = shift &gt;&gt; 6;
+<span class="lineNum">     940 </span>                :            :     shiftlow = shift &amp; 0x3F;
+<span class="lineNum">     941 </span>                :            :     shifthigh = 64 - shiftlow;
+<span class="lineNum">     942 </span>                :            :     r-&gt;d[0] = shift &lt; 512 ? (l[0 + shiftlimbs] &gt;&gt; shiftlow | (shift &lt; 448 &amp;&amp; shiftlow ? (l[1 + shiftlimbs] &lt;&lt; shifthigh) : 0)) : 0;
+<span class="lineNum">     943 </span>                :            :     r-&gt;d[1] = shift &lt; 448 ? (l[1 + shiftlimbs] &gt;&gt; shiftlow | (shift &lt; 384 &amp;&amp; shiftlow ? (l[2 + shiftlimbs] &lt;&lt; shifthigh) : 0)) : 0;
+<span class="lineNum">     944 </span>                :            :     r-&gt;d[2] = shift &lt; 384 ? (l[2 + shiftlimbs] &gt;&gt; shiftlow | (shift &lt; 320 &amp;&amp; shiftlow ? (l[3 + shiftlimbs] &lt;&lt; shifthigh) : 0)) : 0;
+<span class="lineNum">     945 </span>                :            :     r-&gt;d[3] = shift &lt; 320 ? (l[3 + shiftlimbs] &gt;&gt; shiftlow) : 0;
+<span class="lineNum">     946 </span>                :            :     secp256k1_scalar_cadd_bit(r, 0, (l[(shift - 1) &gt;&gt; 6] &gt;&gt; ((shift - 1) &amp; 0x3f)) &amp; 1);
+<span class="lineNum">     947 </span>                :            : }
+<span class="lineNum">     948 </span>                :            : 
+<span class="lineNum">     949 </span>                :            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

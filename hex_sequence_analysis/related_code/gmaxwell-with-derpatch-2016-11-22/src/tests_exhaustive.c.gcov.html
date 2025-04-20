@@ -1,0 +1,400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - full.lcov - src/tests_exhaustive.c</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - tests_exhaustive.c<span style="font-size: 80%;"> (source / <a href="tests_exhaustive.c.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">full.lcov</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">139</td>
+            <td class="headerCovTableEntry">140</td>
+            <td class="headerCovTableEntryHi">99.3 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-11-22 23:46:48</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">10</td>
+            <td class="headerCovTableEntry">10</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntry">67</td>
+            <td class="headerCovTableEntry">86</td>
+            <td class="headerCovTableEntryMed">77.9 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">           Branch data     Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>                :            : /***********************************************************************</a>
+<span class="lineNum">       2 </span>                :            :  * Copyright (c) 2016 Andrew Poelstra                                 *
+<span class="lineNum">       3 </span>                :            :  * Distributed under the MIT software license, see the accompanying   *
+<span class="lineNum">       4 </span>                :            :  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
+<span class="lineNum">       5 </span>                :            :  **********************************************************************/
+<span class="lineNum">       6 </span>                :            : 
+<span class="lineNum">       7 </span>                :            : #if defined HAVE_CONFIG_H
+<span class="lineNum">       8 </span>                :            : #include &quot;libsecp256k1-config.h&quot;
+<span class="lineNum">       9 </span>                :            : #endif
+<span class="lineNum">      10 </span>                :            : 
+<span class="lineNum">      11 </span>                :            : #include &lt;stdio.h&gt;
+<span class="lineNum">      12 </span>                :            : #include &lt;stdlib.h&gt;
+<span class="lineNum">      13 </span>                :            : 
+<span class="lineNum">      14 </span>                :            : #include &lt;time.h&gt;
+<span class="lineNum">      15 </span>                :            : 
+<span class="lineNum">      16 </span>                :            : #undef USE_ECMULT_STATIC_PRECOMPUTATION
+<span class="lineNum">      17 </span>                :            : 
+<span class="lineNum">      18 </span>                :            : /* see group_impl.h for allowable values */
+<span class="lineNum">      19 </span>                :            : #define EXHAUSTIVE_TEST_ORDER 13
+<span class="lineNum">      20 </span>                :            : #include &quot;include/secp256k1.h&quot;
+<span class="lineNum">      21 </span>                :            : #include &quot;group.h&quot;
+<span class="lineNum">      22 </span>                :            : #include &quot;secp256k1.c&quot;
+<span class="lineNum">      23 </span>                :            : #include &quot;testrand_impl.h&quot;
+<span class="lineNum">      24 </span>                :            : 
+<span class="lineNum">      25 </span>                :            : #ifndef EXHAUSTIVE_TEST_ORDER
+<span class="lineNum">      26 </span>                :            : #error Cannot run exhastive tests without a valid group order specified.
+<span class="lineNum">      27 </span>                :            : #endif
+<a name="28"><span class="lineNum">      28 </span>                :            : </a>
+<span class="lineNum">      29 </span>                :            : /** stolen from tests.c */
+<span class="lineNum">      30 </span>                :<span class="lineCov">         12 : void ge_equals_ge(const secp256k1_ge *a, const secp256k1_ge *b) {</span>
+<span class="lineNum">      31 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">         12 :     CHECK(a-&gt;infinity == b-&gt;infinity);</span>
+<span class="lineNum">      32 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">         12 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">      33 </span>                :<span class="lineNoCov">          0 :         return;</span>
+<span class="lineNum">      34 </span>                :            :     }
+<span class="lineNum">      35 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 12 times"> + </span>]:<span class="lineCov">         12 :     CHECK(secp256k1_fe_equal_var(&amp;a-&gt;x, &amp;b-&gt;x));</span>
+<span class="lineNum">      36 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 12 times"> + </span>]:<span class="lineCov">         12 :     CHECK(secp256k1_fe_equal_var(&amp;a-&gt;y, &amp;b-&gt;y));</span>
+<a name="37"><span class="lineNum">      37 </span>                :            : }</a>
+<span class="lineNum">      38 </span>                :            : 
+<span class="lineNum">      39 </span>                :<span class="lineCov">       4600 : void ge_equals_gej(const secp256k1_ge *a, const secp256k1_gej *b) {</span>
+<span class="lineNum">      40 </span>                :            :     secp256k1_fe z2s;
+<span class="lineNum">      41 </span>                :            :     secp256k1_fe u1, u2, s1, s2;
+<span class="lineNum">      42 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 4600 times"> + </span>]:<span class="lineCov">       4600 :     CHECK(a-&gt;infinity == b-&gt;infinity);</span>
+<span class="lineNum">      43 </span>        [<span class="branchCov" title="Branch 0 was taken 352 times"> + </span><span class="branchCov" title="Branch 1 was taken 4248 times"> + </span>]:<span class="lineCov">       4600 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">      44 </span>                :<span class="lineCov">        352 :         return;</span>
+<span class="lineNum">      45 </span>                :            :     }
+<span class="lineNum">      46 </span>                :            :     /* Check a.x * b.z^2 == b.x &amp;&amp; a.y * b.z^3 == b.y, to avoid inverses. */
+<span class="lineNum">      47 </span>                :<span class="lineCov">       4248 :     secp256k1_fe_sqr(&amp;z2s, &amp;b-&gt;z);</span>
+<span class="lineNum">      48 </span>                :<span class="lineCov">       4248 :     secp256k1_fe_mul(&amp;u1, &amp;a-&gt;x, &amp;z2s);</span>
+<span class="lineNum">      49 </span>                :<span class="lineCov">       4248 :     u2 = b-&gt;x; secp256k1_fe_normalize_weak(&amp;u2);</span>
+<span class="lineNum">      50 </span>                :<span class="lineCov">       4248 :     secp256k1_fe_mul(&amp;s1, &amp;a-&gt;y, &amp;z2s); secp256k1_fe_mul(&amp;s1, &amp;s1, &amp;b-&gt;z);</span>
+<span class="lineNum">      51 </span>                :<span class="lineCov">       4248 :     s2 = b-&gt;y; secp256k1_fe_normalize_weak(&amp;s2);</span>
+<span class="lineNum">      52 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 4248 times"> + </span>]:<span class="lineCov">       4248 :     CHECK(secp256k1_fe_equal_var(&amp;u1, &amp;u2));</span>
+<span class="lineNum">      53 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 4248 times"> + </span>]:<span class="lineCov">       4248 :     CHECK(secp256k1_fe_equal_var(&amp;s1, &amp;s2));</span>
+<a name="54"><span class="lineNum">      54 </span>                :            : }</a>
+<span class="lineNum">      55 </span>                :            : 
+<span class="lineNum">      56 </span>                :<span class="lineCov">         12 : void random_fe(secp256k1_fe *x) {</span>
+<span class="lineNum">      57 </span>                :            :     unsigned char bin[32];
+<span class="lineNum">      58 </span>                :            :     do {
+<span class="lineNum">      59 </span>                :<span class="lineCov">         24 :         secp256k1_rand256(bin);</span>
+<span class="lineNum">      60 </span>        [<span class="branchCov" title="Branch 1 was taken 12 times"> + </span><span class="branchNoCov" title="Branch 2 was not taken"> - </span>]:<span class="lineCov">         12 :         if (secp256k1_fe_set_b32(x, bin)) {</span>
+<span class="lineNum">      61 </span>                :<span class="lineCov">         12 :             return;</span>
+<span class="lineNum">      62 </span>                :            :         }
+<span class="lineNum">      63 </span>                :            :     } while(1);
+<span class="lineNum">      64 </span>                :            : }
+<a name="65"><span class="lineNum">      65 </span>                :            : /** END stolen from tests.c */</a>
+<span class="lineNum">      66 </span>                :            : 
+<span class="lineNum">      67 </span>                :<span class="lineCov">       1764 : int secp256k1_nonce_function_smallint(unsigned char *nonce32, const unsigned char *msg32,</span>
+<span class="lineNum">      68 </span>                :            :                                       const unsigned char *key32, const unsigned char *algo16,
+<span class="lineNum">      69 </span>                :            :                                       void *data, unsigned int attempt) {
+<span class="lineNum">      70 </span>                :            :     secp256k1_scalar s;
+<span class="lineNum">      71 </span>                :<span class="lineCov">       1764 :     int *idata = data;</span>
+<span class="lineNum">      72 </span>                :            :     (void)msg32;
+<span class="lineNum">      73 </span>                :            :     (void)key32;
+<span class="lineNum">      74 </span>                :            :     (void)algo16;
+<span class="lineNum">      75 </span>                :            :     /* Some nonces cannot be used because they'd cause s and/or r to be zero.
+<span class="lineNum">      76 </span>                :            :      * The signing function has retry logic here that just re-calls the nonce
+<span class="lineNum">      77 </span>                :            :      * function with an increased `attempt`. So if attempt &gt; 0 this means we
+<span class="lineNum">      78 </span>                :            :      * need to change the nonce to avoid an infinite loop. */
+<span class="lineNum">      79 </span>        [<span class="branchCov" title="Branch 0 was taken 168 times"> + </span><span class="branchCov" title="Branch 1 was taken 1596 times"> + </span>]:<span class="lineCov">       1764 :     if (attempt &gt; 0) {</span>
+<span class="lineNum">      80 </span>                :<span class="lineCov">        168 :         (*idata)++;</span>
+<span class="lineNum">      81 </span>                :            :     }
+<span class="lineNum">      82 </span>                :<span class="lineCov">       1764 :     secp256k1_scalar_set_int(&amp;s, *idata);</span>
+<span class="lineNum">      83 </span>                :<span class="lineCov">       1764 :     secp256k1_scalar_get_b32(nonce32, &amp;s);</span>
+<span class="lineNum">      84 </span>                :<span class="lineCov">       1764 :     return 1;</span>
+<a name="85"><span class="lineNum">      85 </span>                :            : }</a>
+<span class="lineNum">      86 </span>                :            : 
+<span class="lineNum">      87 </span>                :<span class="lineCov">          1 : void test_exhaustive_addition(const secp256k1_ge *group, const secp256k1_gej *groupj, int order) {</span>
+<span class="lineNum">      88 </span>                :            :     int i, j;
+<span class="lineNum">      89 </span>                :            : 
+<span class="lineNum">      90 </span>                :            :     /* Sanity-check (and check infinity functions) */
+<span class="lineNum">      91 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 1 time"> + </span>]:<span class="lineCov">          1 :     CHECK(secp256k1_ge_is_infinity(&amp;group[0]));</span>
+<span class="lineNum">      92 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 1 time"> + </span>]:<span class="lineCov">          1 :     CHECK(secp256k1_gej_is_infinity(&amp;groupj[0]));</span>
+<span class="lineNum">      93 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         13 :     for (i = 1; i &lt; order; i++) {</span>
+<span class="lineNum">      94 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 12 times"> + </span>]:<span class="lineCov">         12 :         CHECK(!secp256k1_ge_is_infinity(&amp;group[i]));</span>
+<span class="lineNum">      95 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 12 times"> + </span>]:<span class="lineCov">         12 :         CHECK(!secp256k1_gej_is_infinity(&amp;groupj[i]));</span>
+<span class="lineNum">      96 </span>                :            :     }
+<span class="lineNum">      97 </span>                :            : 
+<span class="lineNum">      98 </span>                :            :     /* Check all addition formulae */
+<span class="lineNum">      99 </span>        [<span class="branchCov" title="Branch 0 was taken 13 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         14 :     for (j = 0; j &lt; order; j++) {</span>
+<span class="lineNum">     100 </span>                :            :         secp256k1_fe fe_inv;
+<span class="lineNum">     101 </span>                :<span class="lineCov">         13 :         secp256k1_fe_inv(&amp;fe_inv, &amp;groupj[j].z);</span>
+<span class="lineNum">     102 </span>        [<span class="branchCov" title="Branch 0 was taken 169 times"> + </span><span class="branchCov" title="Branch 1 was taken 13 times"> + </span>]:<span class="lineCov">        182 :         for (i = 0; i &lt; order; i++) {</span>
+<span class="lineNum">     103 </span>                :            :             secp256k1_ge zless_gej;
+<span class="lineNum">     104 </span>                :            :             secp256k1_gej tmp;
+<span class="lineNum">     105 </span>                :            :             /* add_var */
+<span class="lineNum">     106 </span>                :<span class="lineCov">        169 :             secp256k1_gej_add_var(&amp;tmp, &amp;groupj[i], &amp;groupj[j], NULL);</span>
+<span class="lineNum">     107 </span>                :<span class="lineCov">        169 :             ge_equals_gej(&amp;group[(i + j) % order], &amp;tmp);</span>
+<span class="lineNum">     108 </span>                :            :             /* add_ge */
+<span class="lineNum">     109 </span>        [<span class="branchCov" title="Branch 0 was taken 156 times"> + </span><span class="branchCov" title="Branch 1 was taken 13 times"> + </span>]:<span class="lineCov">        169 :             if (j &gt; 0) {</span>
+<span class="lineNum">     110 </span>                :<span class="lineCov">        156 :                 secp256k1_gej_add_ge(&amp;tmp, &amp;groupj[i], &amp;group[j]);</span>
+<span class="lineNum">     111 </span>                :<span class="lineCov">        156 :                 ge_equals_gej(&amp;group[(i + j) % order], &amp;tmp);</span>
+<span class="lineNum">     112 </span>                :            :             }
+<span class="lineNum">     113 </span>                :            :             /* add_ge_var */
+<span class="lineNum">     114 </span>                :<span class="lineCov">        169 :             secp256k1_gej_add_ge_var(&amp;tmp, &amp;groupj[i], &amp;group[j], NULL);</span>
+<span class="lineNum">     115 </span>                :<span class="lineCov">        169 :             ge_equals_gej(&amp;group[(i + j) % order], &amp;tmp);</span>
+<span class="lineNum">     116 </span>                :            :             /* add_zinv_var */
+<span class="lineNum">     117 </span>                :<span class="lineCov">        169 :             zless_gej.infinity = groupj[j].infinity;</span>
+<span class="lineNum">     118 </span>                :<span class="lineCov">        169 :             zless_gej.x = groupj[j].x;</span>
+<span class="lineNum">     119 </span>                :<span class="lineCov">        169 :             zless_gej.y = groupj[j].y;</span>
+<span class="lineNum">     120 </span>                :<span class="lineCov">        169 :             secp256k1_gej_add_zinv_var(&amp;tmp, &amp;groupj[i], &amp;zless_gej, &amp;fe_inv);</span>
+<span class="lineNum">     121 </span>                :<span class="lineCov">        169 :             ge_equals_gej(&amp;group[(i + j) % order], &amp;tmp);</span>
+<span class="lineNum">     122 </span>                :            :         }
+<span class="lineNum">     123 </span>                :            :     }
+<span class="lineNum">     124 </span>                :            : 
+<span class="lineNum">     125 </span>                :            :     /* Check doubling */
+<span class="lineNum">     126 </span>        [<span class="branchCov" title="Branch 0 was taken 13 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         14 :     for (i = 0; i &lt; order; i++) {</span>
+<span class="lineNum">     127 </span>                :            :         secp256k1_gej tmp;
+<span class="lineNum">     128 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         13 :         if (i &gt; 0) {</span>
+<span class="lineNum">     129 </span>                :<span class="lineCov">         12 :             secp256k1_gej_double_nonzero(&amp;tmp, &amp;groupj[i], NULL);</span>
+<span class="lineNum">     130 </span>                :<span class="lineCov">         12 :             ge_equals_gej(&amp;group[(2 * i) % order], &amp;tmp);</span>
+<span class="lineNum">     131 </span>                :            :         }
+<span class="lineNum">     132 </span>                :<span class="lineCov">         13 :         secp256k1_gej_double_var(&amp;tmp, &amp;groupj[i], NULL);</span>
+<span class="lineNum">     133 </span>                :<span class="lineCov">         13 :         ge_equals_gej(&amp;group[(2 * i) % order], &amp;tmp);</span>
+<span class="lineNum">     134 </span>                :            :     }
+<span class="lineNum">     135 </span>                :            : 
+<span class="lineNum">     136 </span>                :            :     /* Check negation */
+<span class="lineNum">     137 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         13 :     for (i = 1; i &lt; order; i++) {</span>
+<span class="lineNum">     138 </span>                :            :         secp256k1_ge tmp;
+<span class="lineNum">     139 </span>                :            :         secp256k1_gej tmpj;
+<span class="lineNum">     140 </span>                :<span class="lineCov">         12 :         secp256k1_ge_neg(&amp;tmp, &amp;group[i]);</span>
+<span class="lineNum">     141 </span>                :<span class="lineCov">         12 :         ge_equals_ge(&amp;group[order - i], &amp;tmp);</span>
+<span class="lineNum">     142 </span>                :<span class="lineCov">         12 :         secp256k1_gej_neg(&amp;tmpj, &amp;groupj[i]);</span>
+<span class="lineNum">     143 </span>                :<span class="lineCov">         12 :         ge_equals_gej(&amp;group[order - i], &amp;tmpj);</span>
+<span class="lineNum">     144 </span>                :            :     }
+<a name="145"><span class="lineNum">     145 </span>                :<span class="lineCov">          1 : }</span></a>
+<span class="lineNum">     146 </span>                :            : 
+<span class="lineNum">     147 </span>                :<span class="lineCov">          1 : void test_exhaustive_ecmult(const secp256k1_context *ctx, const secp256k1_ge *group, const secp256k1_gej *groupj, int order) {</span>
+<span class="lineNum">     148 </span>                :            :     int i, j, r_log;
+<span class="lineNum">     149 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         13 :     for (r_log = 1; r_log &lt; order; r_log++) {</span>
+<span class="lineNum">     150 </span>        [<span class="branchCov" title="Branch 0 was taken 156 times"> + </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">        168 :         for (j = 0; j &lt; order; j++) {</span>
+<span class="lineNum">     151 </span>        [<span class="branchCov" title="Branch 0 was taken 2028 times"> + </span><span class="branchCov" title="Branch 1 was taken 156 times"> + </span>]:<span class="lineCov">       2184 :             for (i = 0; i &lt; order; i++) {</span>
+<span class="lineNum">     152 </span>                :            :                 secp256k1_gej tmp;
+<span class="lineNum">     153 </span>                :            :                 secp256k1_scalar na, ng;
+<span class="lineNum">     154 </span>                :<span class="lineCov">       2028 :                 secp256k1_scalar_set_int(&amp;na, i);</span>
+<span class="lineNum">     155 </span>                :<span class="lineCov">       2028 :                 secp256k1_scalar_set_int(&amp;ng, j);</span>
+<span class="lineNum">     156 </span>                :            : 
+<span class="lineNum">     157 </span>                :<span class="lineCov">       2028 :                 secp256k1_ecmult(&amp;ctx-&gt;ecmult_ctx, &amp;tmp, &amp;groupj[r_log], &amp;na, &amp;ng);</span>
+<span class="lineNum">     158 </span>                :<span class="lineCov">       2028 :                 ge_equals_gej(&amp;group[(i * r_log + j) % order], &amp;tmp);</span>
+<span class="lineNum">     159 </span>                :            : 
+<span class="lineNum">     160 </span>        [<span class="branchCov" title="Branch 0 was taken 1872 times"> + </span><span class="branchCov" title="Branch 1 was taken 156 times"> + </span>]:<span class="lineCov">       2028 :                 if (i &gt; 0) {</span>
+<span class="lineNum">     161 </span>                :<span class="lineCov">       1872 :                     secp256k1_ecmult_const(&amp;tmp, &amp;group[i], &amp;ng);</span>
+<span class="lineNum">     162 </span>                :<span class="lineCov">       1872 :                     ge_equals_gej(&amp;group[(i * j) % order], &amp;tmp);</span>
+<span class="lineNum">     163 </span>                :            :                 }
+<span class="lineNum">     164 </span>                :            :             }
+<span class="lineNum">     165 </span>                :            :         }
+<span class="lineNum">     166 </span>                :            :     }
+<a name="167"><span class="lineNum">     167 </span>                :<span class="lineCov">          1 : }</span></a>
+<span class="lineNum">     168 </span>                :            : 
+<span class="lineNum">     169 </span>                :<span class="lineCov">     271164 : void r_from_k(secp256k1_scalar *r, const secp256k1_ge *group, int k) {</span>
+<span class="lineNum">     170 </span>                :            :     secp256k1_fe x;
+<span class="lineNum">     171 </span>                :            :     unsigned char x_bin[32];
+<span class="lineNum">     172 </span>                :<span class="lineCov">     271164 :     k %= EXHAUSTIVE_TEST_ORDER;</span>
+<span class="lineNum">     173 </span>                :<span class="lineCov">     271164 :     x = group[k].x;</span>
+<span class="lineNum">     174 </span>                :<span class="lineCov">     271164 :     secp256k1_fe_normalize(&amp;x);</span>
+<span class="lineNum">     175 </span>                :<span class="lineCov">     271164 :     secp256k1_fe_get_b32(x_bin, &amp;x);</span>
+<span class="lineNum">     176 </span>                :<span class="lineCov">     271164 :     secp256k1_scalar_set_b32(r, x_bin, NULL);</span>
+<a name="177"><span class="lineNum">     177 </span>                :<span class="lineCov">     271164 : }</span></a>
+<span class="lineNum">     178 </span>                :            : 
+<span class="lineNum">     179 </span>                :<span class="lineCov">          1 : void test_exhaustive_verify(const secp256k1_context *ctx, const secp256k1_ge *group, int order) {</span>
+<span class="lineNum">     180 </span>                :            :     int s, r, msg, key;
+<span class="lineNum">     181 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         13 :     for (s = 1; s &lt; order; s++) {</span>
+<span class="lineNum">     182 </span>        [<span class="branchCov" title="Branch 0 was taken 144 times"> + </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">        156 :         for (r = 1; r &lt; order; r++) {</span>
+<span class="lineNum">     183 </span>        [<span class="branchCov" title="Branch 0 was taken 1728 times"> + </span><span class="branchCov" title="Branch 1 was taken 144 times"> + </span>]:<span class="lineCov">       1872 :             for (msg = 1; msg &lt; order; msg++) {</span>
+<span class="lineNum">     184 </span>        [<span class="branchCov" title="Branch 0 was taken 20736 times"> + </span><span class="branchCov" title="Branch 1 was taken 1728 times"> + </span>]:<span class="lineCov">      22464 :                 for (key = 1; key &lt; order; key++) {</span>
+<span class="lineNum">     185 </span>                :            :                     secp256k1_ge nonconst_ge;
+<span class="lineNum">     186 </span>                :            :                     secp256k1_ecdsa_signature sig;
+<span class="lineNum">     187 </span>                :            :                     secp256k1_pubkey pk;
+<span class="lineNum">     188 </span>                :            :                     secp256k1_scalar sk_s, msg_s, r_s, s_s;
+<span class="lineNum">     189 </span>                :            :                     secp256k1_scalar s_times_k_s, msg_plus_r_times_sk_s;
+<span class="lineNum">     190 </span>                :            :                     int k, should_verify;
+<span class="lineNum">     191 </span>                :            :                     unsigned char msg32[32];
+<span class="lineNum">     192 </span>                :            : 
+<span class="lineNum">     193 </span>                :<span class="lineCov">      20736 :                     secp256k1_scalar_set_int(&amp;s_s, s);</span>
+<span class="lineNum">     194 </span>                :<span class="lineCov">      20736 :                     secp256k1_scalar_set_int(&amp;r_s, r);</span>
+<span class="lineNum">     195 </span>                :<span class="lineCov">      20736 :                     secp256k1_scalar_set_int(&amp;msg_s, msg);</span>
+<span class="lineNum">     196 </span>                :<span class="lineCov">      20736 :                     secp256k1_scalar_set_int(&amp;sk_s, key);</span>
+<span class="lineNum">     197 </span>                :            : 
+<span class="lineNum">     198 </span>                :            :                     /* Verify by hand */
+<span class="lineNum">     199 </span>                :            :                     /* Run through every k value that gives us this r and check that *one* works.
+<span class="lineNum">     200 </span>                :            :                      * Note there could be none, there could be multiple, ECDSA is weird. */
+<span class="lineNum">     201 </span>                :<span class="lineCov">      20736 :                     should_verify = 0;</span>
+<span class="lineNum">     202 </span>        [<span class="branchCov" title="Branch 0 was taken 269568 times"> + </span><span class="branchCov" title="Branch 1 was taken 20736 times"> + </span>]:<span class="lineCov">     290304 :                     for (k = 0; k &lt; order; k++) {</span>
+<span class="lineNum">     203 </span>                :            :                         secp256k1_scalar check_x_s;
+<span class="lineNum">     204 </span>                :<span class="lineCov">     269568 :                         r_from_k(&amp;check_x_s, group, k);</span>
+<span class="lineNum">     205 </span>        [<span class="branchCov" title="Branch 0 was taken 20736 times"> + </span><span class="branchCov" title="Branch 1 was taken 248832 times"> + </span>]:<span class="lineCov">     269568 :                         if (r_s == check_x_s) {</span>
+<span class="lineNum">     206 </span>                :<span class="lineCov">      20736 :                             secp256k1_scalar_set_int(&amp;s_times_k_s, k);</span>
+<span class="lineNum">     207 </span>                :<span class="lineCov">      20736 :                             secp256k1_scalar_mul(&amp;s_times_k_s, &amp;s_times_k_s, &amp;s_s);</span>
+<span class="lineNum">     208 </span>                :<span class="lineCov">      20736 :                             secp256k1_scalar_mul(&amp;msg_plus_r_times_sk_s, &amp;r_s, &amp;sk_s);</span>
+<span class="lineNum">     209 </span>                :<span class="lineCov">      20736 :                             secp256k1_scalar_add(&amp;msg_plus_r_times_sk_s, &amp;msg_plus_r_times_sk_s, &amp;msg_s);</span>
+<span class="lineNum">     210 </span>                :<span class="lineCov">      20736 :                             should_verify |= secp256k1_scalar_eq(&amp;s_times_k_s, &amp;msg_plus_r_times_sk_s);</span>
+<span class="lineNum">     211 </span>                :            :                         }
+<span class="lineNum">     212 </span>                :            :                     }
+<span class="lineNum">     213 </span>                :            :                     /* nb we have a &quot;high s&quot; rule */
+<span class="lineNum">     214 </span>                :<span class="lineCov">      20736 :                     should_verify &amp;= !secp256k1_scalar_is_high(&amp;s_s);</span>
+<span class="lineNum">     215 </span>                :            : 
+<span class="lineNum">     216 </span>                :            :                     /* Verify by calling verify */
+<span class="lineNum">     217 </span>                :<span class="lineCov">      20736 :                     secp256k1_ecdsa_signature_save(&amp;sig, &amp;r_s, &amp;s_s);</span>
+<span class="lineNum">     218 </span>                :<span class="lineCov">      20736 :                     memcpy(&amp;nonconst_ge, &amp;group[sk_s], sizeof(nonconst_ge));</span>
+<span class="lineNum">     219 </span>                :<span class="lineCov">      20736 :                     secp256k1_pubkey_save(&amp;pk, &amp;nonconst_ge);</span>
+<span class="lineNum">     220 </span>                :<span class="lineCov">      20736 :                     secp256k1_scalar_get_b32(msg32, &amp;msg_s);</span>
+<span class="lineNum">     221 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 20736 times"> + </span>]:<span class="lineCov">      20736 :                     CHECK(should_verify ==</span>
+<span class="lineNum">     222 </span>                :            :                           secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pk));
+<span class="lineNum">     223 </span>                :            :                 }
+<span class="lineNum">     224 </span>                :            :             }
+<span class="lineNum">     225 </span>                :            :         }
+<span class="lineNum">     226 </span>                :            :     }
+<a name="227"><span class="lineNum">     227 </span>                :<span class="lineCov">          1 : }</span></a>
+<span class="lineNum">     228 </span>                :            : 
+<span class="lineNum">     229 </span>                :<span class="lineCov">          1 : void test_exhaustive_sign(const secp256k1_context *ctx, const secp256k1_ge *group, int order) {</span>
+<span class="lineNum">     230 </span>                :            :     int i, j, k;
+<span class="lineNum">     231 </span>                :            : 
+<span class="lineNum">     232 </span>                :            :     /* Loop */
+<span class="lineNum">     233 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         13 :     for (i = 1; i &lt; order; i++) {  /* message */</span>
+<span class="lineNum">     234 </span>        [<span class="branchCov" title="Branch 0 was taken 144 times"> + </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">        156 :         for (j = 1; j &lt; order; j++) {  /* key */</span>
+<span class="lineNum">     235 </span>        [<span class="branchCov" title="Branch 0 was taken 1596 times"> + </span><span class="branchCov" title="Branch 1 was taken 144 times"> + </span>]:<span class="lineCov">       1740 :             for (k = 1; k &lt; order; k++) {  /* nonce */</span>
+<span class="lineNum">     236 </span>                :            :                 secp256k1_ecdsa_signature sig;
+<span class="lineNum">     237 </span>                :            :                 secp256k1_scalar sk, msg, r, s, expected_r;
+<span class="lineNum">     238 </span>                :            :                 unsigned char sk32[32], msg32[32];
+<span class="lineNum">     239 </span>                :<span class="lineCov">       1596 :                 secp256k1_scalar_set_int(&amp;msg, i);</span>
+<span class="lineNum">     240 </span>                :<span class="lineCov">       1596 :                 secp256k1_scalar_set_int(&amp;sk, j);</span>
+<span class="lineNum">     241 </span>                :<span class="lineCov">       1596 :                 secp256k1_scalar_get_b32(sk32, &amp;sk);</span>
+<span class="lineNum">     242 </span>                :<span class="lineCov">       1596 :                 secp256k1_scalar_get_b32(msg32, &amp;msg);</span>
+<span class="lineNum">     243 </span>                :            : 
+<span class="lineNum">     244 </span>                :<span class="lineCov">       1596 :                 secp256k1_ecdsa_sign(ctx, &amp;sig, msg32, sk32, secp256k1_nonce_function_smallint, &amp;k);</span>
+<span class="lineNum">     245 </span>                :            : 
+<span class="lineNum">     246 </span>                :<span class="lineCov">       1596 :                 secp256k1_ecdsa_signature_load(ctx, &amp;r, &amp;s, &amp;sig);</span>
+<span class="lineNum">     247 </span>                :            :                 /* Note that we compute expected_r *after* signing -- this is important
+<span class="lineNum">     248 </span>                :            :                  * because our nonce-computing function function might change k during
+<span class="lineNum">     249 </span>                :            :                  * signing. */
+<span class="lineNum">     250 </span>                :<span class="lineCov">       1596 :                 r_from_k(&amp;expected_r, group, k);</span>
+<span class="lineNum">     251 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 1596 times"> + </span>]:<span class="lineCov">       1596 :                 CHECK(r == expected_r);</span>
+<span class="lineNum">     252 </span>[<span class="branchCov" title="Branch 0 was taken 798 times"> + </span><span class="branchCov" title="Branch 1 was taken 798 times"> + </span>][<span class="branchNoCov" title="Branch 2 was not taken"> - </span><span class="branchCov" title="Branch 3 was taken 798 times"> + </span>]:<span class="lineCov">       1596 :                 CHECK((k * s) % order == (i + r * j) % order ||</span>
+<span class="lineNum">     253 </span>                :            :                       (k * (EXHAUSTIVE_TEST_ORDER - s)) % order == (i + r * j) % order);
+<span class="lineNum">     254 </span>                :            :             }
+<span class="lineNum">     255 </span>                :            :         }
+<span class="lineNum">     256 </span>                :            :     }
+<span class="lineNum">     257 </span>                :            : 
+<span class="lineNum">     258 </span>                :            :     /* We would like to verify zero-knowledge here by counting how often every
+<span class="lineNum">     259 </span>                :            :      * possible (s, r) tuple appears, but because the group order is larger
+<span class="lineNum">     260 </span>                :            :      * than the field order, when coercing the x-values to scalar values, some
+<span class="lineNum">     261 </span>                :            :      * appear more often than others, so we are actually not zero-knowledge.
+<span class="lineNum">     262 </span>                :            :      * (This effect also appears in the real code, but the difference is on the
+<span class="lineNum">     263 </span>                :            :      * order of 1/2^128th the field order, so the deviation is not useful to a
+<span class="lineNum">     264 </span>                :            :      * computationally bounded attacker.)
+<span class="lineNum">     265 </span>                :            :      */
+<a name="266"><span class="lineNum">     266 </span>                :<span class="lineCov">          1 : }</span></a>
+<span class="lineNum">     267 </span>                :            : 
+<span class="lineNum">     268 </span>                :<span class="lineCov">          1 : int main(void) {</span>
+<span class="lineNum">     269 </span>                :            :     int i;
+<span class="lineNum">     270 </span>                :            :     secp256k1_gej groupj[EXHAUSTIVE_TEST_ORDER];
+<span class="lineNum">     271 </span>                :            :     secp256k1_ge group[EXHAUSTIVE_TEST_ORDER];
+<span class="lineNum">     272 </span>                :            : 
+<span class="lineNum">     273 </span>                :            :     /* Build context */
+<span class="lineNum">     274 </span>                :<span class="lineCov">          1 :     secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);</span>
+<span class="lineNum">     275 </span>                :            : 
+<span class="lineNum">     276 </span>                :            :     /* TODO set z = 1, then do num_tests runs with random z values */
+<span class="lineNum">     277 </span>                :            : 
+<span class="lineNum">     278 </span>                :            :     /* Generate the entire group */
+<span class="lineNum">     279 </span>                :<span class="lineCov">          1 :     secp256k1_gej_set_infinity(&amp;groupj[0]);</span>
+<span class="lineNum">     280 </span>                :<span class="lineCov">          1 :     secp256k1_ge_set_gej(&amp;group[0], &amp;groupj[0]);</span>
+<span class="lineNum">     281 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">         13 :     for (i = 1; i &lt; EXHAUSTIVE_TEST_ORDER; i++) {</span>
+<span class="lineNum">     282 </span>                :            :         /* Set a different random z-value for each Jacobian point */
+<span class="lineNum">     283 </span>                :            :         secp256k1_fe z;
+<span class="lineNum">     284 </span>                :<span class="lineCov">         12 :         random_fe(&amp;z);</span>
+<span class="lineNum">     285 </span>                :            : 
+<span class="lineNum">     286 </span>                :<span class="lineCov">         12 :         secp256k1_gej_add_ge(&amp;groupj[i], &amp;groupj[i - 1], &amp;secp256k1_ge_const_g);</span>
+<span class="lineNum">     287 </span>                :<span class="lineCov">         12 :         secp256k1_ge_set_gej(&amp;group[i], &amp;groupj[i]);</span>
+<span class="lineNum">     288 </span>                :<span class="lineCov">         12 :         secp256k1_gej_rescale(&amp;groupj[i], &amp;z);</span>
+<span class="lineNum">     289 </span>                :            : 
+<span class="lineNum">     290 </span>                :            :         /* Verify against ecmult_gen */
+<span class="lineNum">     291 </span>                :            :         {
+<span class="lineNum">     292 </span>                :            :             secp256k1_scalar scalar_i;
+<span class="lineNum">     293 </span>                :            :             secp256k1_gej generatedj;
+<span class="lineNum">     294 </span>                :            :             secp256k1_ge generated;
+<span class="lineNum">     295 </span>                :            : 
+<span class="lineNum">     296 </span>                :<span class="lineCov">         12 :             secp256k1_scalar_set_int(&amp;scalar_i, i);</span>
+<span class="lineNum">     297 </span>                :<span class="lineCov">         12 :             secp256k1_ecmult_gen(&amp;ctx-&gt;ecmult_gen_ctx, &amp;generatedj, &amp;scalar_i);</span>
+<span class="lineNum">     298 </span>                :<span class="lineCov">         12 :             secp256k1_ge_set_gej(&amp;generated, &amp;generatedj);</span>
+<span class="lineNum">     299 </span>                :            : 
+<span class="lineNum">     300 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">         12 :             CHECK(group[i].infinity == 0);</span>
+<span class="lineNum">     301 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">         12 :             CHECK(generated.infinity == 0);</span>
+<span class="lineNum">     302 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 12 times"> + </span>]:<span class="lineCov">         12 :             CHECK(secp256k1_fe_equal_var(&amp;generated.x, &amp;group[i].x));</span>
+<span class="lineNum">     303 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 12 times"> + </span>]:<span class="lineCov">         12 :             CHECK(secp256k1_fe_equal_var(&amp;generated.y, &amp;group[i].y));</span>
+<span class="lineNum">     304 </span>                :            :         }
+<span class="lineNum">     305 </span>                :            :     }
+<span class="lineNum">     306 </span>                :            : 
+<span class="lineNum">     307 </span>                :            :     /* Run the tests */
+<span class="lineNum">     308 </span>                :<span class="lineCov">          1 :     test_exhaustive_addition(group, groupj, EXHAUSTIVE_TEST_ORDER);</span>
+<span class="lineNum">     309 </span>                :<span class="lineCov">          1 :     test_exhaustive_ecmult(ctx, group, groupj, EXHAUSTIVE_TEST_ORDER);</span>
+<span class="lineNum">     310 </span>                :<span class="lineCov">          1 :     test_exhaustive_sign(ctx, group, EXHAUSTIVE_TEST_ORDER);</span>
+<span class="lineNum">     311 </span>                :<span class="lineCov">          1 :     test_exhaustive_verify(ctx, group, EXHAUSTIVE_TEST_ORDER);</span>
+<span class="lineNum">     312 </span>                :            : 
+<span class="lineNum">     313 </span>                :<span class="lineCov">          1 :     return 0;</span>
+<span class="lineNum">     314 </span>                :            : }
+<span class="lineNum">     315 </span>                :            : 
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

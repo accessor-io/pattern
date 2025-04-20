@@ -1,0 +1,858 @@
+Starting key sequence generation using KNOWN_SOLUTIONS...
+
+--- Processing Index 1 (Target: 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH) ---
+  Known Private Key (Int): 1
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000001
+  Derived Address: 14K8jYFPWYDabJd7bMtA9LXaYqr88T6YfE
+  WARNING: Derived address MISMATCHES expected address for Index 1!
+    Expected: 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH
+    Applying transformation for index 1 based on char 'B'...
+      Rule for 'B': (Input * 2 + 1) mod n
+    Verifying transformation to Index 2:
+      Calculated Next Key: 3
+      Known Next Key:      3
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 2 (Target: 1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb) ---
+  Known Private Key (Int): 3
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000003
+  Derived Address: 1FrrdzfaGG51bWTnHQmp6H7NrAh5ETmMzf
+  WARNING: Derived address MISMATCHES expected address for Index 2!
+    Expected: 1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb
+    Applying transformation for index 2 based on char 'C'...
+      Rule for 'C' at index 2: (Input * 2 + 1) mod n
+    Verifying transformation to Index 3:
+      Calculated Next Key: 7
+      Known Next Key:      7
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 3 (Target: 19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA) ---
+  Known Private Key (Int): 7
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000007
+  Derived Address: 1HaSLisUo6pSYeWhnJhzftGuMgnMAVuLuP
+  WARNING: Derived address MISMATCHES expected address for Index 3!
+    Expected: 19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA
+    Applying transformation for index 3 based on char '9'...
+      Rule for '9': (Input + 1) mod n
+    Verifying transformation to Index 4:
+      Calculated Next Key: 8
+      Known Next Key:      8
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 4 (Target: 1EhqbyUMvvs7BfL8goY6qcPbD6YKfPqb7e) ---
+  Known Private Key (Int): 8
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000008
+  Derived Address: 19bjhLQLDvvL1yVMJhrWdtGXJEiitxh462
+  WARNING: Derived address MISMATCHES expected address for Index 4!
+    Expected: 1EhqbyUMvvs7BfL8goY6qcPbD6YKfPqb7e
+    Applying transformation for index 4 based on char 'E'...
+      Rule for 'E' at index 4: (Input * 2 + 5) mod n
+    Verifying transformation to Index 5:
+      Calculated Next Key: 21
+      Known Next Key:      21
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 5 (Target: 1E6NuFjCi27W5zoXg8TRdcSRq84zJeBW3k) ---
+  Known Private Key (Int): 21
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000015
+  Derived Address: 1PHGSqWcEtpkhLz2DivDNFNMmfrcpDNqb1
+  WARNING: Derived address MISMATCHES expected address for Index 5!
+    Expected: 1E6NuFjCi27W5zoXg8TRdcSRq84zJeBW3k
+    Applying transformation for index 5 based on char 'E'...
+      Rule for 'E' at index 5: (Input * 2 + 7) mod n
+    Verifying transformation to Index 6:
+      Calculated Next Key: 49
+      Known Next Key:      49
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 6 (Target: 1PitScNLyp2HCygzadCh7FveTnfmpPbfp8) ---
+  Known Private Key (Int): 49
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000031
+  Derived Address: 1L8w2ZHU4nqSdwGes6mDsH2ndhvNh8W8XD
+  WARNING: Derived address MISMATCHES expected address for Index 6!
+    Expected: 1PitScNLyp2HCygzadCh7FveTnfmpPbfp8
+    Applying transformation for index 6 based on char 'P'...
+      Rule for 'P' at index 6: (Input + 27) mod n
+    Verifying transformation to Index 7:
+      Calculated Next Key: 76
+      Known Next Key:      76
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 7 (Target: 1McVt1vMtCC7yn5b9wgX1833yCcLXzueeC) ---
+  Known Private Key (Int): 76
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000000000004c
+  Derived Address: 1NUfP8ADNnFUwLXfGs5at9HdoQCY9vK9q1
+  WARNING: Derived address MISMATCHES expected address for Index 7!
+    Expected: 1McVt1vMtCC7yn5b9wgX1833yCcLXzueeC
+    Applying transformation for index 7 based on char 'M'...
+      Rule for 'M' at index 7: (Input * 3 - 4) mod n
+    Verifying transformation to Index 8:
+      Calculated Next Key: 224
+      Known Next Key:      224
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 8 (Target: 1M92tSqNmQLYw33fuBvjmeadirh1ysMBxK) ---
+  Known Private Key (Int): 224
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000000000e0
+  Derived Address: 1CXPjpcCtmf9YVna29ei1SML5pP9tqPiEf
+  WARNING: Derived address MISMATCHES expected address for Index 8!
+    Expected: 1M92tSqNmQLYw33fuBvjmeadirh1ysMBxK
+    Applying transformation for index 8 based on char 'M'...
+      Rule for 'M' at index 8: (Input * 2 + 19) mod n
+    Verifying transformation to Index 9:
+      Calculated Next Key: 467
+      Known Next Key:      467
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 9 (Target: 1CQFwcjw1dwhtkVWBttNLDtqL7ivBonGPV) ---
+  Known Private Key (Int): 467
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000000001d3
+  Derived Address: 1LenwfsmrkZGwgKm6yzLp1stenhUgLHsd9
+  WARNING: Derived address MISMATCHES expected address for Index 9!
+    Expected: 1CQFwcjw1dwhtkVWBttNLDtqL7ivBonGPV
+    Applying transformation for index 9 based on char 'C'...
+      Rule for 'C' at index 9: (Input + 47) mod n
+    Verifying transformation to Index 10:
+      Calculated Next Key: 514
+      Known Next Key:      514
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 10 (Target: 1LeBZP5QCwwgXRtmVUvTVrraqPUokyLHqe) ---
+  Known Private Key (Int): 514
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000202
+  Derived Address: 17GfYQhGZgX2NzWrJREn59NwWDxSLgAU8V
+  WARNING: Derived address MISMATCHES expected address for Index 10!
+    Expected: 1LeBZP5QCwwgXRtmVUvTVrraqPUokyLHqe
+    Applying transformation for index 10 based on char 'L'...
+      Rule for 'L': (Input * 2 + 127) mod n
+    Verifying transformation to Index 11:
+      Calculated Next Key: 1155
+      Known Next Key:      1155
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 11 (Target: 1PgQVLmst3Z314JrQn5TNiys8Hc38TcXJu) ---
+  Known Private Key (Int): 1155
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000483
+  Derived Address: 12LynuFbiyNZo36iYXAd4iMVrUnQ9zo17x
+  WARNING: Derived address MISMATCHES expected address for Index 11!
+    Expected: 1PgQVLmst3Z314JrQn5TNiys8Hc38TcXJu
+    Applying transformation for index 11 based on char 'P'...
+      Rule for 'P' at index 11: (Input * 2 + 373) mod n
+    Verifying transformation to Index 12:
+      Calculated Next Key: 2683
+      Known Next Key:      2683
+      Transformation CORRECT (based on current placeholder logic).
+
+--- Processing Index 12 (Target: 1DBaumZxUkM4qMQRt2LVWyFJq5kDtSZQot) ---
+  Known Private Key (Int): 2683
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000000a7b
+  Derived Address: 1DvtzHXnjbaYBBPeDPQeou97X77CWEtG8Q
+  WARNING: Derived address MISMATCHES expected address for Index 12!
+    Expected: 1DBaumZxUkM4qMQRt2LVWyFJq5kDtSZQot
+    Applying transformation for index 12 based on char 'D'...
+      Rule for 'D': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 13:
+      Calculated Next Key: 2695
+      Known Next Key:      5216
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 13 (Target: 1Pie8JkxBT6MGPz9Nvi3fsPkr2D8q3GBc1) ---
+  Known Private Key (Int): 5216
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000001460
+  Derived Address: 1E3FCu78RfHqTq1z97otgcoXJiMY4ugYh
+  WARNING: Derived address MISMATCHES expected address for Index 13!
+    Expected: 1Pie8JkxBT6MGPz9Nvi3fsPkr2D8q3GBc1
+    Applying transformation for index 13 based on char 'P'...
+      Rule for 'P' at index 13: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 14:
+      Calculated Next Key: 5229
+      Known Next Key:      10544
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 14 (Target: 1ErZWg5cFCe4Vw5BzgfzB74VNLaXEiEkhk) ---
+  Known Private Key (Int): 10544
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000002930
+  Derived Address: 1B7Aw3w8HJPzJ7kPpAmNHN3mHf8Y3sUmhK
+  WARNING: Derived address MISMATCHES expected address for Index 14!
+    Expected: 1ErZWg5cFCe4Vw5BzgfzB74VNLaXEiEkhk
+    Applying transformation for index 14 based on char 'E'...
+      Rule for 'E' at index 14: (Input * 2 + 25) mod n
+    Verifying transformation to Index 15:
+      Calculated Next Key: 21113
+      Known Next Key:      26867
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 15 (Target: 1QCbW9HWnwQWiQqVo5exhAnmfqKRrCRsvW) ---
+  Known Private Key (Int): 26867
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000000068f3
+  Derived Address: 1LwRMx6xMoeTj1VeG1Ne4BrxHeDrrYNWPA
+  WARNING: Derived address MISMATCHES expected address for Index 15!
+    Expected: 1QCbW9HWnwQWiQqVo5exhAnmfqKRrCRsvW
+    Applying transformation for index 15 based on char 'Q'...
+      Rule for 'Q': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 16:
+      Calculated Next Key: 26882
+      Known Next Key:      51510
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 16 (Target: 1BDyrQ6WoF8VN3g9SAS1iKZcPzFfnDVieY) ---
+  Known Private Key (Int): 51510
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000000000c936
+  Derived Address: 1Pzxmb4gZq8SCFnEmijtZJRVYqy2UsLaq3
+  WARNING: Derived address MISMATCHES expected address for Index 16!
+    Expected: 1BDyrQ6WoF8VN3g9SAS1iKZcPzFfnDVieY
+    Applying transformation for index 16 based on char 'B'...
+      Rule for 'B': (Input * 2 + 1) mod n
+    Verifying transformation to Index 17:
+      Calculated Next Key: 103021
+      Known Next Key:      95823
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 17 (Target: 1HduPEXZRdG26SUT5Yk83mLkPyjnZuJ7Bm) ---
+  Known Private Key (Int): 95823
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000000001764f
+  Derived Address: 1Shup9UTRnUqHG2F1PcKFL3mrR57TUdaF
+  WARNING: Derived address MISMATCHES expected address for Index 17!
+    Expected: 1HduPEXZRdG26SUT5Yk83mLkPyjnZuJ7Bm
+    Applying transformation for index 17 based on char 'H'...
+      Rule for 'H': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 18:
+      Calculated Next Key: 95840
+      Known Next Key:      198669
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 18 (Target: 1GnNTmTVLZiqQfLbAdp9DVdicEnB5GoERE) ---
+  Known Private Key (Int): 198669
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000000003080d
+  Derived Address: 1DunUY6KoJbG7HB1fQ5PtCppFrbhg9bVqC
+  WARNING: Derived address MISMATCHES expected address for Index 18!
+    Expected: 1GnNTmTVLZiqQfLbAdp9DVdicEnB5GoERE
+    Applying transformation for index 18 based on char 'G'...
+      Rule for 'G': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 19:
+      Calculated Next Key: 198687
+      Known Next Key:      357535
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 19 (Target: 1NWmZRpHH4XSPwsW6dsS3nrNWfL1yrJj4w) ---
+  Known Private Key (Int): 357535
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000000005749f
+  Derived Address: 153dnWYRDJRUp5DoU8DMDC6t9du6ciYFcd
+  WARNING: Derived address MISMATCHES expected address for Index 19!
+    Expected: 1NWmZRpHH4XSPwsW6dsS3nrNWfL1yrJj4w
+    Applying transformation for index 19 based on char 'N'...
+      Rule for 'N': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 20:
+      Calculated Next Key: 357554
+      Known Next Key:      863317
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 20 (Target: 1HsMJxNiV7TLxmoF6uJNkydxPFDog4NQum) ---
+  Known Private Key (Int): 863317
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000000d2c55
+  Derived Address: 19wDMwoBhugFaPrfvkToyk1hhEQxRWU5Uh
+  WARNING: Derived address MISMATCHES expected address for Index 20!
+    Expected: 1HsMJxNiV7TLxmoF6uJNkydxPFDog4NQum
+    Applying transformation for index 20 based on char '4'...
+      Rule for '4': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 21:
+      Calculated Next Key: 863337
+      Known Next Key:      1811764
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 21 (Target: 14oFNXucftsHiUMY8uctg6N487riuyXs4h) ---
+  Known Private Key (Int): 1811764
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000001ba534
+  Derived Address: 1NthqxAg2XEHwsgqzA7oPSaM7SHqEr1g9f
+  WARNING: Derived address MISMATCHES expected address for Index 21!
+    Expected: 14oFNXucftsHiUMY8uctg6N487riuyXs4h
+    Applying transformation for index 21 based on char 'C'...
+      Rule for 'C' at index 21: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 22:
+      Calculated Next Key: 1811785
+      Known Next Key:      3007503
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 22 (Target: 1CfZWK1QTQE3eS9qn61dQjV89KDjZzfNcv) ---
+  Known Private Key (Int): 3007503
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000002de40f
+  Derived Address: 12Q7r3rbPfGHQi57UzzGHq2hkWKGKSWU1x
+  WARNING: Derived address MISMATCHES expected address for Index 22!
+    Expected: 1CfZWK1QTQE3eS9qn61dQjV89KDjZzfNcv
+    Applying transformation for index 22 based on char 'L'...
+      Rule for 'L': (Input * 2 + 127) mod n
+    Verifying transformation to Index 23:
+      Calculated Next Key: 6015133
+      Known Next Key:      5598802
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 23 (Target: 1L2GM8eE7mJWLdo3HZS6su1832NX2txaac) ---
+  Known Private Key (Int): 5598802
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000556e52
+  Derived Address: 18tCfaMZvGN3obKM2g74HZoc5ZGtQkWZSy
+  WARNING: Derived address MISMATCHES expected address for Index 23!
+    Expected: 1L2GM8eE7mJWLdo3HZS6su1832NX2txaac
+    Applying transformation for index 23 based on char 'r'...
+      Rule for 'r': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 24:
+      Calculated Next Key: 5598825
+      Known Next Key:      14428676
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 24 (Target: 1rSnXMr63jdCuegJFuidJqWxUPV7AtUf7) ---
+  Known Private Key (Int): 14428676
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000000dc2a04
+  Derived Address: 15Hr7bVmFwQAML99PM14ABaK45TEyDiDNE
+  WARNING: Derived address MISMATCHES expected address for Index 24!
+    Expected: 1rSnXMr63jdCuegJFuidJqWxUPV7AtUf7
+    Applying transformation for index 24 based on char '5'...
+      Rule for '5': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 25:
+      Calculated Next Key: 14428700
+      Known Next Key:      33185509
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 25 (Target: 15JhYXn6Mx3oF4Y7PcTAv2wVVAuCFFQNiP) ---
+  Known Private Key (Int): 33185509
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000001fa5ee5
+  Derived Address: 1Fn1F5tLPD18PBipteSH9bR5NcUoQ9N9cc
+  WARNING: Derived address MISMATCHES expected address for Index 25!
+    Expected: 15JhYXn6Mx3oF4Y7PcTAv2wVVAuCFFQNiP
+    Applying transformation for index 25 based on char 'J'...
+      Rule for 'J': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 26:
+      Calculated Next Key: 33185534
+      Known Next Key:      54538862
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 26 (Target: 1JVnST957hGztonaWK6FougdtjxzHzRMMg) ---
+  Known Private Key (Int): 54538862
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000000340326e
+  Derived Address: 1J5CDPfq7j6uWSFMGnMp56YjfysHza2DYG
+  WARNING: Derived address MISMATCHES expected address for Index 26!
+    Expected: 1JVnST957hGztonaWK6FougdtjxzHzRMMg
+    Applying transformation for index 26 based on char '2'...
+      Rule for '2': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 27:
+      Calculated Next Key: 54538888
+      Known Next Key:      111949941
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 27 (Target: 128z5d7nN7PkCuX5qoA4Ys6pmxUYnEy86k) ---
+  Known Private Key (Int): 111949941
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000006ac3875
+  Derived Address: 16LLu8JUnCnXDaL3NfBtv6hXQ7XZQucuKi
+  WARNING: Derived address MISMATCHES expected address for Index 27!
+    Expected: 128z5d7nN7PkCuX5qoA4Ys6pmxUYnEy86k
+    Applying transformation for index 27 based on char '8'...
+      Rule for '8': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 28:
+      Calculated Next Key: 111949968
+      Known Next Key:      227634408
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 28 (Target: 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY) ---
+  Known Private Key (Int): 227634408
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000000d916ce8
+  Derived Address: 13DXprXLrwhpbZ7yfoyqJ9CUiugDznoTgx
+  WARNING: Derived address MISMATCHES expected address for Index 28!
+    Expected: 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY
+    Applying transformation for index 28 based on char 'H'...
+      Rule for 'H': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 29:
+      Calculated Next Key: 227634436
+      Known Next Key:      400708894
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 29 (Target: 19EEC52krRUK1RkUAEZmQdjTyHT7Gp1TYT) ---
+  Known Private Key (Int): 400708894
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000000017e2551e
+  Derived Address: 1JXbDYsJ6w2pSwy5G1j716GxYUdGzjzUBf
+  WARNING: Derived address MISMATCHES expected address for Index 29!
+    Expected: 19EEC52krRUK1RkUAEZmQdjTyHT7Gp1TYT
+    Applying transformation for index 29 based on char 'L'...
+      Rule for 'L': (Input * 2 + 127) mod n
+    Verifying transformation to Index 30:
+      Calculated Next Key: 801417915
+      Known Next Key:      1033162084
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 30 (Target: 1LHtnpd8nU5VHEMkG2TMYYNUjjLc992bps) ---
+  Known Private Key (Int): 1033162084
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000003d94cd64
+  Derived Address: 135cYQMijkPiB1m52kvuPaYQm2pv148B5v
+  WARNING: Derived address MISMATCHES expected address for Index 30!
+    Expected: 1LHtnpd8nU5VHEMkG2TMYYNUjjLc992bps
+    Applying transformation for index 30 based on char 'F'...
+      Rule for 'F': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 31:
+      Calculated Next Key: 1033162114
+      Known Next Key:      2102388551
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 31 (Target: 1LhE6sCTuGae42Axu1L1ZB7L96yi9irEBE) ---
+  Known Private Key (Int): 2102388551
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000007d4fe747
+  Derived Address: 1ApMBM5Da1oQkgi8f6J5L2LuiDCjWFUjHY
+  WARNING: Derived address MISMATCHES expected address for Index 31!
+    Expected: 1LhE6sCTuGae42Axu1L1ZB7L96yi9irEBE
+    Applying transformation for index 31 based on char 'P'...
+      Rule for 'P' at index 31: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 32:
+      Calculated Next Key: 2102388582
+      Known Next Key:      3093472814
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 32 (Target: 1FRoHA9xewq7DjrZ1psWJVeTer8gHRqEvR) ---
+  Known Private Key (Int): 3093472814
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000b862a62e
+  Derived Address: 15HmvCk7VyKSYb8X3U5V86FnbWTyzbXSoC
+  WARNING: Derived address MISMATCHES expected address for Index 32!
+    Expected: 1FRoHA9xewq7DjrZ1psWJVeTer8gHRqEvR
+    Applying transformation for index 32 based on char 'W'...
+      Rule for 'W': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 33:
+      Calculated Next Key: 3093472846
+      Known Next Key:      2842470616
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 33 (Target: 187swFMjz1G54ycVU56B7jZFHFTNVQFDiu) ---
+  Known Private Key (Int): 2842470616
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000a96ca8d8
+  Derived Address: 18oKco51SGeEgxXUiUuXwNVnBs7FsL89Bd
+  WARNING: Derived address MISMATCHES expected address for Index 33!
+    Expected: 187swFMjz1G54ycVU56B7jZFHFTNVQFDiu
+    Applying transformation for index 33 based on char 'B'...
+      Rule for 'B': (Input * 2 + 1) mod n
+    Verifying transformation to Index 34:
+      Calculated Next Key: 5684941233
+      Known Next Key:      1248170269
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 34 (Target: 1PWABE7oUahG2AFFQhhvViQovnCr4rEv7Q) ---
+  Known Private Key (Int): 1248170269
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000004a65911d
+  Derived Address: 16BJXpe6g4LiGMC9yT23R9GB4MitF1MKZH
+  WARNING: Derived address MISMATCHES expected address for Index 34!
+    Expected: 1PWABE7oUahG2AFFQhhvViQovnCr4rEv7Q
+    Applying transformation for index 34 based on char 'i'...
+      Rule for 'i': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 35:
+      Calculated Next Key: 1248170303
+      Known Next Key:      2933002608
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 35 (Target: 1PWCx5fovoEaoBowAvF5k91m2Xat9bMgwb) ---
+  Known Private Key (Int): 2933002608
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000000aed21170
+  Derived Address: 1Knbch92LLdDXFJxj6HAUG4qkLoSKwwBPb
+  WARNING: Derived address MISMATCHES expected address for Index 35!
+    Expected: 1PWCx5fovoEaoBowAvF5k91m2Xat9bMgwb
+    Applying transformation for index 35 based on char '4'...
+      Rule for '4': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 36:
+      Calculated Next Key: 2933002643
+      Known Next Key:      42387769980
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 36 (Target: 1Be2UF9NLfyLFbtm3TCbmuocc9N1Kduci1) ---
+  Known Private Key (Int): 42387769980
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000009de820a7c
+  Derived Address: 1KxghZwHCmXM6ZiZP65XSB6kPjQ68et441
+  WARNING: Derived address MISMATCHES expected address for Index 36!
+    Expected: 1Be2UF9NLfyLFbtm3TCbmuocc9N1Kduci1
+    Applying transformation for index 36 based on char 'H'...
+      Rule for 'H': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 37:
+      Calculated Next Key: 42387770016
+      Known Next Key:      100251560595
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 37 (Target: 14iXhn8bGajVWegZHJ18vJLHhntcpL4dex) ---
+  Known Private Key (Int): 100251560595
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000001757756a93
+  Derived Address: 1GeohuFW1uJ7dBoBAwdQda1KnXi6h3rPsW
+  WARNING: Derived address MISMATCHES expected address for Index 37!
+    Expected: 14iXhn8bGajVWegZHJ18vJLHhntcpL4dex
+    Applying transformation for index 37 based on char 'E'...
+      Rule for 'E' at index 37: (Input * 2 + 71) mod n
+    Verifying transformation to Index 38:
+      Calculated Next Key: 200503121261
+      Known Next Key:      146971536592
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 38 (Target: 1HBtApAFA9B2YZw3G2YKSMCtb3dVnjuNe2) ---
+  Known Private Key (Int): 146971536592
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000022382facd0
+  Derived Address: 1B4o6H2q6Mms1QeWUoF9chJ2ToSSc62KXw
+  WARNING: Derived address MISMATCHES expected address for Index 38!
+    Expected: 1HBtApAFA9B2YZw3G2YKSMCtb3dVnjuNe2
+    Applying transformation for index 38 based on char '2'...
+      Rule for '2': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 39:
+      Calculated Next Key: 146971536630
+      Known Next Key:      323724968937
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 39 (Target: 122AJhKLEfkFBaGAd84pLp1kfE7xK3GdT8) ---
+  Known Private Key (Int): 323724968937
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000004b5f8303e9
+  Derived Address: 1EC2gZeEf9L9aUqZ8S2QtnCCTTjRcMcEQo
+  WARNING: Derived address MISMATCHES expected address for Index 39!
+    Expected: 122AJhKLEfkFBaGAd84pLp1kfE7xK3GdT8
+    Applying transformation for index 39 based on char 'C'...
+      Rule for 'C' at index 39: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 40:
+      Calculated Next Key: 323724968976
+      Known Next Key:      1003651412950
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 40 (Target: 1EeAxcprB2PpCnr34VfZdFrkUWuxyiNEFv) ---
+  Known Private Key (Int): 1003651412950
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000000e9ae4933d6
+  Derived Address: 1JoB3XKpDHkjEwK6R3oFSirScB83yNw4wF
+  WARNING: Derived address MISMATCHES expected address for Index 40!
+    Expected: 1EeAxcprB2PpCnr34VfZdFrkUWuxyiNEFv
+    Applying transformation for index 40 based on char 'N'...
+      Rule for 'N': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 41:
+      Calculated Next Key: 1003651412990
+      Known Next Key:      1458252205147
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 41 (Target: 1L5sU9qvJeuwQUdt4y1eiLmquFxKjtHr3E) ---
+  Known Private Key (Int): 1458252205147
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000153869acc5b
+  Derived Address: 1BBVkY4B4autzwFmcSFcr6a6kopqi6QLUd
+  WARNING: Derived address MISMATCHES expected address for Index 41!
+    Expected: 1L5sU9qvJeuwQUdt4y1eiLmquFxKjtHr3E
+    Applying transformation for index 41 based on char 'E'...
+      Rule for 'E' at index 41: (Input * 2 + 79) mod n
+    Verifying transformation to Index 42:
+      Calculated Next Key: 2916504410373
+      Known Next Key:      2895374552463
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 42 (Target: 1E32GPWgDyeyQac4aJxm9HVoLrrEYPnM4N) ---
+  Known Private Key (Int): 2895374552463
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000002a221c58d8f
+  Derived Address: 1Jv5drT1ssBpcByVmSuYKxvCbooAPtE4fM
+  WARNING: Derived address MISMATCHES expected address for Index 42!
+    Expected: 1E32GPWgDyeyQac4aJxm9HVoLrrEYPnM4N
+    Applying transformation for index 42 based on char '3'...
+      Rule for '3': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 43:
+      Calculated Next Key: 2895374552505
+      Known Next Key:      7409811047825
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 43 (Target: 1PiFuqGpG8yGM5v6rNHWS3TjsG6awgEGA1) ---
+  Known Private Key (Int): 7409811047825
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000006bd3b27c591
+  Derived Address: 15TLAEGTFbbRBwXVSmFPDiSnvWorqwoFTj
+  WARNING: Derived address MISMATCHES expected address for Index 43!
+    Expected: 1PiFuqGpG8yGM5v6rNHWS3TjsG6awgEGA1
+    Applying transformation for index 43 based on char 'N'...
+      Rule for 'N': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 44:
+      Calculated Next Key: 7409811047868
+      Known Next Key:      15404761757071
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 44 (Target: 1CkR2uS7LmFwc3T2jV8C1BhWb5mQaoxedF) ---
+  Known Private Key (Int): 15404761757071
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000000e02b35a358f
+  Derived Address: 1BStCNxEciTtVK6ANkGatyDyebWA4azz5m
+  WARNING: Derived address MISMATCHES expected address for Index 44!
+    Expected: 1CkR2uS7LmFwc3T2jV8C1BhWb5mQaoxedF
+    Applying transformation for index 44 based on char 'P'...
+      Rule for 'P' at index 44: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 45:
+      Calculated Next Key: 15404761757115
+      Known Next Key:      19996463086597
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 45 (Target: 1NtiLNGegHWE3Mp9g2JPkgx6wUg4TW7bbk) ---
+  Known Private Key (Int): 19996463086597
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000122fca143c05
+  Derived Address: 1JzQkKLT63YbwWfm7rt65ZUWU2Ej93xSm1
+  WARNING: Derived address MISMATCHES expected address for Index 45!
+    Expected: 1NtiLNGegHWE3Mp9g2JPkgx6wUg4TW7bbk
+    Applying transformation for index 45 based on char 'F'...
+      Rule for 'F': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 46:
+      Calculated Next Key: 19996463086642
+      Known Next Key:      51408670348612
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 46 (Target: 1F3JRMWudBaj48EhwcHDdpeuy2jwACNxjP) ---
+  Known Private Key (Int): 51408670348612
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000002ec18388d544
+  Derived Address: 1Agy9UTiJCzBHTNpgGwJsFdubTQjjpkacE
+  WARNING: Derived address MISMATCHES expected address for Index 46!
+    Expected: 1F3JRMWudBaj48EhwcHDdpeuy2jwACNxjP
+    Applying transformation for index 46 based on char 'D'...
+      Rule for 'D': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 47:
+      Calculated Next Key: 51408670348658
+      Known Next Key:      119666659114170
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 47 (Target: 1Pd8VvT49sHKsmqrQiP61RsVwmXCZ6ay7Z) ---
+  Known Private Key (Int): 119666659114170
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000006cd610b53cba
+  Derived Address: 1HMEeNu4uzNW8qRn3idwzNiiS2Tv16jitg
+  WARNING: Derived address MISMATCHES expected address for Index 47!
+    Expected: 1Pd8VvT49sHKsmqrQiP61RsVwmXCZ6ay7Z
+    Applying transformation for index 47 based on char '2'...
+      Rule for '2': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 48:
+      Calculated Next Key: 119666659114217
+      Known Next Key:      191206974700443
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 48 (Target: 1DFYhaB2J9q1LLZJWKTnscPWos9VBqDHzv) ---
+  Known Private Key (Int): 191206974700443
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000000ade6d7ce3b9b
+  Derived Address: 17uVKW3A1iftFV3AtTTcrp1iPZPWxrAwH6
+  WARNING: Derived address MISMATCHES expected address for Index 48!
+    Expected: 1DFYhaB2J9q1LLZJWKTnscPWos9VBqDHzv
+    Applying transformation for index 48 based on char 'N'...
+      Rule for 'N': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 49:
+      Calculated Next Key: 191206974700491
+      Known Next Key:      409118905032525
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 49 (Target: 12CiUhYVTTH33w3SPUBqcpMoqnApAV4WCF) ---
+  Known Private Key (Int): 409118905032525
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000174176b015f4d
+  Derived Address: 14jarAAWXrg1RiawSHP8xF2JwEm4njBUio
+  WARNING: Derived address MISMATCHES expected address for Index 49!
+    Expected: 12CiUhYVTTH33w3SPUBqcpMoqnApAV4WCF
+    Applying transformation for index 49 based on char '5'...
+      Rule for '5': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 50:
+      Calculated Next Key: 409118905032574
+      Known Next Key:      611140496167764
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 50 (Target: 1MEzite4ReNuWaL5Ds17ePKt2dCxWEofwk) ---
+  Known Private Key (Int): 611140496167764
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000022bd43c2e9354
+  Derived Address: 1E7DRFHt3BhuzMvr9uooR4F4NsXojK3nMo
+  WARNING: Derived address MISMATCHES expected address for Index 50!
+    Expected: 1MEzite4ReNuWaL5Ds17ePKt2dCxWEofwk
+    Applying transformation for index 50 based on char 'a'...
+      Rule for 'a': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 51:
+      Calculated Next Key: 611140496167814
+      Known Next Key:      2058769515153876
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 51 (Target: 1NpnQyZ7x24ud82b7WiRNvPm6N8bqGQnaS) ---
+  Known Private Key (Int): 2058769515153876
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000075070a1a009d4
+  Derived Address: 1E4PKabH3Gq51zTTars9EBLX4vwqwQHSde
+  WARNING: Derived address MISMATCHES expected address for Index 51!
+    Expected: 1NpnQyZ7x24ud82b7WiRNvPm6N8bqGQnaS
+    Applying transformation for index 51 based on char '7'...
+      Rule for '7': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 52:
+      Calculated Next Key: 2058769515153927
+      Known Next Key:      4216495639600700
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 52 (Target: 15z9c9sVpu6fwNiK7dMAFgMYSK4GqsGZim) ---
+  Known Private Key (Int): 4216495639600700
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000000efae164cb9e3c
+  Derived Address: 1BwvJ8XgmmF43AQTBxkU9VdSiTvz9CoFSF
+  WARNING: Derived address MISMATCHES expected address for Index 52!
+    Expected: 15z9c9sVpu6fwNiK7dMAFgMYSK4GqsGZim
+    Applying transformation for index 52 based on char 'c'...
+      Rule for 'c': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 53:
+      Calculated Next Key: 4216495639600752
+      Known Next Key:      6763683971478124
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 53 (Target: 15K1YKJMiJ4fpesTVUcByoz334rHmknxmT) ---
+  Known Private Key (Int): 6763683971478124
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000180788e47e326c
+  Derived Address: 145J6m57aScLAvHnCCpyFuR4RuPeNdYHqw
+  WARNING: Derived address MISMATCHES expected address for Index 53!
+    Expected: 15K1YKJMiJ4fpesTVUcByoz334rHmknxmT
+    Applying transformation for index 53 based on char 'A'...
+      Rule for 'A': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 54:
+      Calculated Next Key: 6763683971478177
+      Known Next Key:      9974455244496707
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 54 (Target: 1KYUv7nSvXx4642TKeuC2SNdTk326uUpFy) ---
+  Known Private Key (Int): 9974455244496707
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000000236fb6d5ad1f43
+  Derived Address: 176y5A6CgJTE9DvjA8PGriaVWx6MfpHhvd
+  WARNING: Derived address MISMATCHES expected address for Index 54!
+    Expected: 1KYUv7nSvXx4642TKeuC2SNdTk326uUpFy
+    Applying transformation for index 54 based on char 'K'...
+      Rule for 'K': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 55:
+      Calculated Next Key: 9974455244496761
+      Known Next Key:      30045390491869460
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 55 (Target: 1LzhS3k3e9Ub8i2W1V8xQFdB8n2MYCHPCa) ---
+  Known Private Key (Int): 30045390491869460
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000006abe1f9b67e114
+  Derived Address: 14ZFbgra58pRGNUAAujbuPdQcuRo6vp45D
+  WARNING: Derived address MISMATCHES expected address for Index 55!
+    Expected: 1LzhS3k3e9Ub8i2W1V8xQFdB8n2MYCHPCa
+    Applying transformation for index 55 based on char 'M'...
+      Rule for 'M' at index 55: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 56:
+      Calculated Next Key: 30045390491869515
+      Known Next Key:      44218742292676575
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 56 (Target: 17aPYR1m6pVAacXg1PTDDU7XafvK1dxvhi) ---
+  Known Private Key (Int): 44218742292676575
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000009d18b63ac4ffdf
+  Derived Address: 19ezpAMbiiF1yn5NPysTNjtna2ht37Wcbn
+  WARNING: Derived address MISMATCHES expected address for Index 56!
+    Expected: 17aPYR1m6pVAacXg1PTDDU7XafvK1dxvhi
+    Applying transformation for index 56 based on char 'J'...
+      Rule for 'J': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 57:
+      Calculated Next Key: 44218742292676631
+      Known Next Key:      138245758910846492
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 57 (Target: 15c9mPGLku1HuW9LRtBf4jcHVpBUt8txKz) ---
+  Known Private Key (Int): 138245758910846492
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000001eb25c90795d61c
+  Derived Address: 17mjZdrwBuSqAYiKkztMC8bzfYzv9c9jbg
+  WARNING: Derived address MISMATCHES expected address for Index 57!
+    Expected: 15c9mPGLku1HuW9LRtBf4jcHVpBUt8txKz
+    Applying transformation for index 57 based on char 'H'...
+      Rule for 'H': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 58:
+      Calculated Next Key: 138245758910846549
+      Known Next Key:      199976667976342049
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 58 (Target: 1Dn8NF8qDyyfHMktmuoQLGyjWmZXgvosXf) ---
+  Known Private Key (Int): 199976667976342049
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000002c675b852189a21
+  Derived Address: 15KvjZpqZ2hvrbFmMtfSz7WGA2Yq8XMmwT
+  WARNING: Derived address MISMATCHES expected address for Index 58!
+    Expected: 1Dn8NF8qDyyfHMktmuoQLGyjWmZXgvosXf
+    Applying transformation for index 58 based on char 'N'...
+      Rule for 'N': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 59:
+      Calculated Next Key: 199976667976342107
+      Known Next Key:      525070384258266191
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 59 (Target: 1HAX2n9Uruu9YDt4cqRgYcvtGvZj1rbUyt) ---
+  Known Private Key (Int): 525070384258266191
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000007496cbb87cab44f
+  Derived Address: 1F3yfXCAYybhR9pAEe4hBUpo1mkszoNmmv
+  WARNING: Derived address MISMATCHES expected address for Index 59!
+    Expected: 1HAX2n9Uruu9YDt4cqRgYcvtGvZj1rbUyt
+    Applying transformation for index 59 based on char 'g'...
+      Rule for 'g': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 60:
+      Calculated Next Key: 525070384258266250
+      Known Next Key:      1135041350219496382
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 60 (Target: 1Kn5h2qpgw9mWE5jKpk8PP4qvvJ1QVy8su) ---
+  Known Private Key (Int): 1135041350219496382
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000000fc07a1825367bbe
+  Derived Address: 179ZcaFKax1TE8tSCrQ9KtfwFY51cpTkJr
+  WARNING: Derived address MISMATCHES expected address for Index 60!
+    Expected: 1Kn5h2qpgw9mWE5jKpk8PP4qvvJ1QVy8su
+    Applying transformation for index 60 based on char 'B'...
+      Rule for 'B': (Input * 2 + 1) mod n
+    Verifying transformation to Index 61:
+      Calculated Next Key: 2270082700438992765
+      Known Next Key:      1425787542618654982
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 61 (Target: 1AVJKwzs9AskraJLGHAZPiaZcrpDr1U6AB) ---
+  Known Private Key (Int): 1425787542618654982
+  Known Private Key (Hex): 00000000000000000000000000000000000000000000000013c96a3742f64906
+  Derived Address: 15QQtFxXYVZsoELmihGpN1vhKQygnq2ekR
+  WARNING: Derived address MISMATCHES expected address for Index 61!
+    Expected: 1AVJKwzs9AskraJLGHAZPiaZcrpDr1U6AB
+    Applying transformation for index 61 based on char 'P'...
+      Rule for 'P' at index 61: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 62:
+      Calculated Next Key: 1425787542618655043
+      Known Next Key:      3908372542507822062
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 62 (Target: 1Me6EfpwZK5kQziBwBfvLiHjaPGxCKLoJi) ---
+  Known Private Key (Int): 3908372542507822062
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000363d541eb611abee
+  Derived Address: 1FTnCXk4cAhPoyW4G496m1arEnLGDaXgjD
+  WARNING: Derived address MISMATCHES expected address for Index 62!
+    Expected: 1Me6EfpwZK5kQziBwBfvLiHjaPGxCKLoJi
+    Applying transformation for index 62 based on char 'M'...
+      Rule for 'M' at index 62: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 63:
+      Calculated Next Key: 3908372542507822124
+      Known Next Key:      8993229949524469768
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 63 (Target: 1NpYjtLira16LfGbGwZJ5JbDPh3ai9bjf4) ---
+  Known Private Key (Int): 8993229949524469768
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000007cce5efdaccf6808
+  Derived Address: 1FwWaQbsv1F5bTzcWUC1aGzq2H6Q5FPpW4
+  WARNING: Derived address MISMATCHES expected address for Index 63!
+    Expected: 1NpYjtLira16LfGbGwZJ5JbDPh3ai9bjf4
+    Applying transformation for index 63 based on char '9'...
+      Rule for '9': (Input + 1) mod n
+    Verifying transformation to Index 64:
+      Calculated Next Key: 8993229949524469769
+      Known Next Key:      17799667357578236628
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 64 (Target: 16jY7qLJnxb7CHZyqBP8qca9d51gAjyXQN) ---
+  Known Private Key (Int): 17799667357578236628
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000f7051f27b09112d4
+  Derived Address: 17wzZCYkwoxSch3jMFWtPSMDra6qr9VUsG
+  WARNING: Derived address MISMATCHES expected address for Index 64!
+    Expected: 16jY7qLJnxb7CHZyqBP8qca9d51gAjyXQN
+    Applying transformation for index 64 based on char 'P'...
+      Rule for 'P' at index 64: UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 65:
+      Calculated Next Key: 17799667357578236692
+      Known Next Key:      12121633238354651239
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 65 (Target: 18ZMbwUFLMHoZBbfpCjUJQTCMCbktshgpe) ---
+  Known Private Key (Int): 12121633238354651239
+  Known Private Key (Hex): 000000000000000000000000000000000000000000000000a838b13505b26867
+  Derived Address: 1DyuzwECRU1fakwV14zYA1Jfsigjcfghv8
+  WARNING: Derived address MISMATCHES expected address for Index 65!
+    Expected: 18ZMbwUFLMHoZBbfpCjUJQTCMCbktshgpe
+    Applying transformation for index 65 based on char 'K'...
+      Rule for 'K': UNKNOWN - Using placeholder logic
+    Verifying transformation to Index 66:
+      Calculated Next Key: 12121633238354651304
+      Known Next Key:      2896638596896646126
+      Transformation INCORRECT (based on current placeholder logic).
+
+--- Processing Index 66 (Target: 13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so) ---
+  Known Private Key (Int): 2896638596896646126
+  Known Private Key (Hex): 0000000000000000000000000000000000000000000000002832ed74f2b5e3ee
+  Derived Address: 1APhteQxLwb9ENE5fmyykvZTVHFCVmnN9U
+  WARNING: Derived address MISMATCHES expected address for Index 66!
+    Expected: 13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so
+    Cannot verify transformation to Index 67 (key not provided).
+
+Sequence generation/verification complete.
+Verified 0 addresses using known keys.
+Correctly predicted 11 key transformations (using placeholder logic).

@@ -1,0 +1,29 @@
+name: Cryptographic Analysis
+on: [push, schedule]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          
+      - name: Build Core Solver
+        run: cargo build --release
+        
+      - name: Run Python Analysis
+        run: |
+          pip install -r analysis_tools/requirements.txt
+          python -m analysis_tools.pattern_detector
+          
+      - name: Upload Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: analysis-results
+          path: |
+            output/bit_heatmap.png
+            output/xor_diff_graph.svg 

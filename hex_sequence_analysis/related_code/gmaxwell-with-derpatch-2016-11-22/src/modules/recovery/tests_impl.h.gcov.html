@@ -1,0 +1,335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - full.lcov - src/modules/recovery/tests_impl.h</title>
+  <link rel="stylesheet" type="text/css" href="../../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../../index.html">top level</a> - <a href="index.html">src/modules/recovery</a> - tests_impl.h<span style="font-size: 80%;"> (source / <a href="tests_impl.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">full.lcov</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">119</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-11-22 23:46:48</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">3</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">148</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr><td><img src="../../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">           Branch data     Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>                :            : /**********************************************************************</a>
+<span class="lineNum">       2 </span>                :            :  * Copyright (c) 2013-2015 Pieter Wuille                              *
+<span class="lineNum">       3 </span>                :            :  * Distributed under the MIT software license, see the accompanying   *
+<span class="lineNum">       4 </span>                :            :  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
+<span class="lineNum">       5 </span>                :            :  **********************************************************************/
+<span class="lineNum">       6 </span>                :            : 
+<span class="lineNum">       7 </span>                :            : #ifndef _SECP256K1_MODULE_RECOVERY_TESTS_
+<a name="8"><span class="lineNum">       8 </span>                :            : #define _SECP256K1_MODULE_RECOVERY_TESTS_</a>
+<span class="lineNum">       9 </span>                :            : 
+<span class="lineNum">      10 </span>                :<span class="lineNoCov">          0 : void test_ecdsa_recovery_end_to_end(void) {</span>
+<span class="lineNum">      11 </span>                :<span class="lineNoCov">          0 :     unsigned char extra[32] = {0x00};</span>
+<span class="lineNum">      12 </span>                :            :     unsigned char privkey[32];
+<span class="lineNum">      13 </span>                :            :     unsigned char message[32];
+<span class="lineNum">      14 </span>                :            :     secp256k1_ecdsa_signature signature[5];
+<span class="lineNum">      15 </span>                :            :     secp256k1_ecdsa_recoverable_signature rsignature[5];
+<span class="lineNum">      16 </span>                :            :     unsigned char sig[74];
+<span class="lineNum">      17 </span>                :            :     secp256k1_pubkey pubkey;
+<span class="lineNum">      18 </span>                :            :     secp256k1_pubkey recpubkey;
+<span class="lineNum">      19 </span>                :<span class="lineNoCov">          0 :     int recid = 0;</span>
+<span class="lineNum">      20 </span>                :            : 
+<span class="lineNum">      21 </span>                :            :     /* Generate a random key and message. */
+<span class="lineNum">      22 </span>                :            :     {
+<span class="lineNum">      23 </span>                :            :         secp256k1_scalar msg, key;
+<span class="lineNum">      24 </span>                :<span class="lineNoCov">          0 :         random_scalar_order_test(&amp;msg);</span>
+<span class="lineNum">      25 </span>                :<span class="lineNoCov">          0 :         random_scalar_order_test(&amp;key);</span>
+<span class="lineNum">      26 </span>                :<span class="lineNoCov">          0 :         secp256k1_scalar_get_b32(privkey, &amp;key);</span>
+<span class="lineNum">      27 </span>                :<span class="lineNoCov">          0 :         secp256k1_scalar_get_b32(message, &amp;msg);</span>
+<span class="lineNum">      28 </span>                :            :     }
+<span class="lineNum">      29 </span>                :            : 
+<span class="lineNum">      30 </span>                :            :     /* Construct and verify corresponding public key. */
+<span class="lineNum">      31 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ec_seckey_verify(ctx, privkey) == 1);</span>
+<span class="lineNum">      32 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ec_pubkey_create(ctx, &amp;pubkey, privkey) == 1);</span>
+<span class="lineNum">      33 </span>                :            : 
+<span class="lineNum">      34 </span>                :            :     /* Serialize/parse compact and verify/recover. */
+<span class="lineNum">      35 </span>                :<span class="lineNoCov">          0 :     extra[0] = 0;</span>
+<span class="lineNum">      36 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_sign_recoverable(ctx, &amp;rsignature[0], message, privkey, NULL, NULL) == 1);</span>
+<span class="lineNum">      37 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_sign(ctx, &amp;signature[0], message, privkey, NULL, NULL) == 1);</span>
+<span class="lineNum">      38 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_sign_recoverable(ctx, &amp;rsignature[4], message, privkey, NULL, NULL) == 1);</span>
+<span class="lineNum">      39 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_sign_recoverable(ctx, &amp;rsignature[1], message, privkey, NULL, extra) == 1);</span>
+<span class="lineNum">      40 </span>                :<span class="lineNoCov">          0 :     extra[31] = 1;</span>
+<span class="lineNum">      41 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_sign_recoverable(ctx, &amp;rsignature[2], message, privkey, NULL, extra) == 1);</span>
+<span class="lineNum">      42 </span>                :<span class="lineNoCov">          0 :     extra[31] = 0;</span>
+<span class="lineNum">      43 </span>                :<span class="lineNoCov">          0 :     extra[0] = 1;</span>
+<span class="lineNum">      44 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_sign_recoverable(ctx, &amp;rsignature[3], message, privkey, NULL, extra) == 1);</span>
+<span class="lineNum">      45 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_serialize_compact(ctx, sig, &amp;recid, &amp;rsignature[4]) == 1);</span>
+<span class="lineNum">      46 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_convert(ctx, &amp;signature[4], &amp;rsignature[4]) == 1);</span>
+<span class="lineNum">      47 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(memcmp(&amp;signature[4], &amp;signature[0], 64) == 0);</span>
+<span class="lineNum">      48 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_verify(ctx, &amp;signature[4], message, &amp;pubkey) == 1);</span>
+<span class="lineNum">      49 </span>                :<span class="lineNoCov">          0 :     memset(&amp;rsignature[4], 0, sizeof(rsignature[4]));</span>
+<span class="lineNum">      50 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsignature[4], sig, recid) == 1);</span>
+<span class="lineNum">      51 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_convert(ctx, &amp;signature[4], &amp;rsignature[4]) == 1);</span>
+<span class="lineNum">      52 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_verify(ctx, &amp;signature[4], message, &amp;pubkey) == 1);</span>
+<span class="lineNum">      53 </span>                :            :     /* Parse compact (with recovery id) and recover. */
+<span class="lineNum">      54 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsignature[4], sig, recid) == 1);</span>
+<span class="lineNum">      55 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recover(ctx, &amp;recpubkey, &amp;rsignature[4], message) == 1);</span>
+<span class="lineNum">      56 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(memcmp(&amp;pubkey, &amp;recpubkey, sizeof(pubkey)) == 0);</span>
+<span class="lineNum">      57 </span>                :            :     /* Serialize/destroy/parse signature and verify again. */
+<span class="lineNum">      58 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_serialize_compact(ctx, sig, &amp;recid, &amp;rsignature[4]) == 1);</span>
+<span class="lineNum">      59 </span>                :<span class="lineNoCov">          0 :     sig[secp256k1_rand_bits(6)] += 1 + secp256k1_rand_int(255);</span>
+<span class="lineNum">      60 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsignature[4], sig, recid) == 1);</span>
+<span class="lineNum">      61 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_convert(ctx, &amp;signature[4], &amp;rsignature[4]) == 1);</span>
+<span class="lineNum">      62 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_verify(ctx, &amp;signature[4], message, &amp;pubkey) == 0);</span>
+<span class="lineNum">      63 </span>                :            :     /* Recover again */
+<span class="lineNum">      64 </span>[<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>][<span class="branchNoExec" title="Branch 3 was not executed"> # </span><span class="branchNoExec" title="Branch 4 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recover(ctx, &amp;recpubkey, &amp;rsignature[4], message) == 0 ||</span>
+<span class="lineNum">      65 </span>                :            :           memcmp(&amp;pubkey, &amp;recpubkey, sizeof(pubkey)) != 0);
+<span class="lineNum">      66 </span>                :<span class="lineNoCov">          0 : }</span>
+<a name="67"><span class="lineNum">      67 </span>                :            : </a>
+<span class="lineNum">      68 </span>                :            : /* Tests several edge cases. */
+<span class="lineNum">      69 </span>                :<span class="lineNoCov">          0 : void test_ecdsa_recovery_edge_cases(void) {</span>
+<span class="lineNum">      70 </span>                :<span class="lineNoCov">          0 :     const unsigned char msg32[32] = {</span>
+<span class="lineNum">      71 </span>                :            :         'T', 'h', 'i', 's', ' ', 'i', 's', ' ',
+<span class="lineNum">      72 </span>                :            :         'a', ' ', 'v', 'e', 'r', 'y', ' ', 's',
+<span class="lineNum">      73 </span>                :            :         'e', 'c', 'r', 'e', 't', ' ', 'm', 'e',
+<span class="lineNum">      74 </span>                :            :         's', 's', 'a', 'g', 'e', '.', '.', '.'
+<span class="lineNum">      75 </span>                :            :     };
+<span class="lineNum">      76 </span>                :<span class="lineNoCov">          0 :     const unsigned char sig64[64] = {</span>
+<span class="lineNum">      77 </span>                :            :         /* Generated by signing the above message with nonce 'This is the nonce we will use...'
+<span class="lineNum">      78 </span>                :            :          * and secret key 0 (which is not valid), resulting in recid 0. */
+<span class="lineNum">      79 </span>                :            :         0x67, 0xCB, 0x28, 0x5F, 0x9C, 0xD1, 0x94, 0xE8,
+<span class="lineNum">      80 </span>                :            :         0x40, 0xD6, 0x29, 0x39, 0x7A, 0xF5, 0x56, 0x96,
+<span class="lineNum">      81 </span>                :            :         0x62, 0xFD, 0xE4, 0x46, 0x49, 0x99, 0x59, 0x63,
+<span class="lineNum">      82 </span>                :            :         0x17, 0x9A, 0x7D, 0xD1, 0x7B, 0xD2, 0x35, 0x32,
+<span class="lineNum">      83 </span>                :            :         0x4B, 0x1B, 0x7D, 0xF3, 0x4C, 0xE1, 0xF6, 0x8E,
+<span class="lineNum">      84 </span>                :            :         0x69, 0x4F, 0xF6, 0xF1, 0x1A, 0xC7, 0x51, 0xDD,
+<span class="lineNum">      85 </span>                :            :         0x7D, 0xD7, 0x3E, 0x38, 0x7E, 0xE4, 0xFC, 0x86,
+<span class="lineNum">      86 </span>                :            :         0x6E, 0x1B, 0xE8, 0xEC, 0xC7, 0xDD, 0x95, 0x57
+<span class="lineNum">      87 </span>                :            :     };
+<span class="lineNum">      88 </span>                :            :     secp256k1_pubkey pubkey;
+<span class="lineNum">      89 </span>                :            :     /* signature (r,s) = (4,4), which can be recovered with all 4 recids. */
+<span class="lineNum">      90 </span>                :<span class="lineNoCov">          0 :     const unsigned char sigb64[64] = {</span>
+<span class="lineNum">      91 </span>                :            :         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">      92 </span>                :            :         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">      93 </span>                :            :         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">      94 </span>                :            :         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04,
+<span class="lineNum">      95 </span>                :            :         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">      96 </span>                :            :         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">      97 </span>                :            :         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">      98 </span>                :            :         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04,
+<span class="lineNum">      99 </span>                :            :     };
+<span class="lineNum">     100 </span>                :            :     secp256k1_pubkey pubkeyb;
+<span class="lineNum">     101 </span>                :            :     secp256k1_ecdsa_recoverable_signature rsig;
+<span class="lineNum">     102 </span>                :            :     secp256k1_ecdsa_signature sig;
+<span class="lineNum">     103 </span>                :            :     int recid;
+<span class="lineNum">     104 </span>                :            : 
+<span class="lineNum">     105 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sig64, 0));</span>
+<span class="lineNum">     106 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(!secp256k1_ecdsa_recover(ctx, &amp;pubkey, &amp;rsig, msg32));</span>
+<span class="lineNum">     107 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sig64, 1));</span>
+<span class="lineNum">     108 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recover(ctx, &amp;pubkey, &amp;rsig, msg32));</span>
+<span class="lineNum">     109 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sig64, 2));</span>
+<span class="lineNum">     110 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(!secp256k1_ecdsa_recover(ctx, &amp;pubkey, &amp;rsig, msg32));</span>
+<span class="lineNum">     111 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sig64, 3));</span>
+<span class="lineNum">     112 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :     CHECK(!secp256k1_ecdsa_recover(ctx, &amp;pubkey, &amp;rsig, msg32));</span>
+<span class="lineNum">     113 </span>                :            : 
+<span class="lineNum">     114 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     for (recid = 0; recid &lt; 4; recid++) {</span>
+<span class="lineNum">     115 </span>                :            :         int i;
+<span class="lineNum">     116 </span>                :            :         int recid2;
+<span class="lineNum">     117 </span>                :            :         /* (4,4) encoded in DER. */
+<span class="lineNum">     118 </span>                :<span class="lineNoCov">          0 :         unsigned char sigbder[8] = {0x30, 0x06, 0x02, 0x01, 0x04, 0x02, 0x01, 0x04};</span>
+<span class="lineNum">     119 </span>                :<span class="lineNoCov">          0 :         unsigned char sigcder_zr[7] = {0x30, 0x05, 0x02, 0x00, 0x02, 0x01, 0x01};</span>
+<span class="lineNum">     120 </span>                :<span class="lineNoCov">          0 :         unsigned char sigcder_zs[7] = {0x30, 0x05, 0x02, 0x01, 0x01, 0x02, 0x00};</span>
+<span class="lineNum">     121 </span>                :<span class="lineNoCov">          0 :         unsigned char sigbderalt1[39] = {</span>
+<span class="lineNum">     122 </span>                :            :             0x30, 0x25, 0x02, 0x20, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     123 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     124 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     125 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     126 </span>                :            :             0x00, 0x00, 0x00, 0x04, 0x02, 0x01, 0x04,
+<span class="lineNum">     127 </span>                :            :         };
+<span class="lineNum">     128 </span>                :<span class="lineNoCov">          0 :         unsigned char sigbderalt2[39] = {</span>
+<span class="lineNum">     129 </span>                :            :             0x30, 0x25, 0x02, 0x01, 0x04, 0x02, 0x20, 0x00,
+<span class="lineNum">     130 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     131 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     132 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     133 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04,
+<span class="lineNum">     134 </span>                :            :         };
+<span class="lineNum">     135 </span>                :<span class="lineNoCov">          0 :         unsigned char sigbderalt3[40] = {</span>
+<span class="lineNum">     136 </span>                :            :             0x30, 0x26, 0x02, 0x21, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     137 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     138 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     139 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     140 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x04, 0x02, 0x01, 0x04,
+<span class="lineNum">     141 </span>                :            :         };
+<span class="lineNum">     142 </span>                :<span class="lineNoCov">          0 :         unsigned char sigbderalt4[40] = {</span>
+<span class="lineNum">     143 </span>                :            :             0x30, 0x26, 0x02, 0x01, 0x04, 0x02, 0x21, 0x00,
+<span class="lineNum">     144 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     145 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     146 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     147 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04,
+<span class="lineNum">     148 </span>                :            :         };
+<span class="lineNum">     149 </span>                :            :         /* (order + r,4) encoded in DER. */
+<span class="lineNum">     150 </span>                :<span class="lineNoCov">          0 :         unsigned char sigbderlong[40] = {</span>
+<span class="lineNum">     151 </span>                :            :             0x30, 0x26, 0x02, 0x21, 0x00, 0xFF, 0xFF, 0xFF,
+<span class="lineNum">     152 </span>                :            :             0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
+<span class="lineNum">     153 </span>                :            :             0xFF, 0xFF, 0xFF, 0xFF, 0xFE, 0xBA, 0xAE, 0xDC,
+<span class="lineNum">     154 </span>                :            :             0xE6, 0xAF, 0x48, 0xA0, 0x3B, 0xBF, 0xD2, 0x5E,
+<span class="lineNum">     155 </span>                :            :             0x8C, 0xD0, 0x36, 0x41, 0x45, 0x02, 0x01, 0x04
+<span class="lineNum">     156 </span>                :            :         };
+<span class="lineNum">     157 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sigb64, recid) == 1);</span>
+<span class="lineNum">     158 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_recover(ctx, &amp;pubkeyb, &amp;rsig, msg32) == 1);</span>
+<span class="lineNum">     159 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbder, sizeof(sigbder)) == 1);</span>
+<span class="lineNum">     160 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyb) == 1);</span>
+<span class="lineNum">     161 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :         for (recid2 = 0; recid2 &lt; 4; recid2++) {</span>
+<span class="lineNum">     162 </span>                :            :             secp256k1_pubkey pubkey2b;
+<span class="lineNum">     163 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :             CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sigb64, recid2) == 1);</span>
+<span class="lineNum">     164 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :             CHECK(secp256k1_ecdsa_recover(ctx, &amp;pubkey2b, &amp;rsig, msg32) == 1);</span>
+<span class="lineNum">     165 </span>                :            :             /* Verifying with (order + r,4) should always fail. */
+<span class="lineNum">     166 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :             CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbderlong, sizeof(sigbderlong)) == 1);</span>
+<span class="lineNum">     167 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :             CHECK(secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyb) == 0);</span>
+<span class="lineNum">     168 </span>                :            :         }
+<span class="lineNum">     169 </span>                :            :         /* DER parsing tests. */
+<span class="lineNum">     170 </span>                :            :         /* Zero length r/s. */
+<span class="lineNum">     171 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigcder_zr, sizeof(sigcder_zr)) == 0);</span>
+<span class="lineNum">     172 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigcder_zs, sizeof(sigcder_zs)) == 0);</span>
+<span class="lineNum">     173 </span>                :            :         /* Leading zeros. */
+<span class="lineNum">     174 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbderalt1, sizeof(sigbderalt1)) == 0);</span>
+<span class="lineNum">     175 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbderalt2, sizeof(sigbderalt2)) == 0);</span>
+<span class="lineNum">     176 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbderalt3, sizeof(sigbderalt3)) == 0);</span>
+<span class="lineNum">     177 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbderalt4, sizeof(sigbderalt4)) == 0);</span>
+<span class="lineNum">     178 </span>                :<span class="lineNoCov">          0 :         sigbderalt3[4] = 1;</span>
+<span class="lineNum">     179 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbderalt3, sizeof(sigbderalt3)) == 1);</span>
+<span class="lineNum">     180 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyb) == 0);</span>
+<span class="lineNum">     181 </span>                :<span class="lineNoCov">          0 :         sigbderalt4[7] = 1;</span>
+<span class="lineNum">     182 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbderalt4, sizeof(sigbderalt4)) == 1);</span>
+<span class="lineNum">     183 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyb) == 0);</span>
+<span class="lineNum">     184 </span>                :            :         /* Damage signature. */
+<span class="lineNum">     185 </span>                :<span class="lineNoCov">          0 :         sigbder[7]++;</span>
+<span class="lineNum">     186 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbder, sizeof(sigbder)) == 1);</span>
+<span class="lineNum">     187 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyb) == 0);</span>
+<span class="lineNum">     188 </span>                :<span class="lineNoCov">          0 :         sigbder[7]--;</span>
+<span class="lineNum">     189 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbder, 6) == 0);</span>
+<span class="lineNum">     190 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbder, sizeof(sigbder) - 1) == 0);</span>
+<span class="lineNum">     191 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :         for(i = 0; i &lt; 8; i++) {</span>
+<span class="lineNum">     192 </span>                :            :             int c;
+<span class="lineNum">     193 </span>                :<span class="lineNoCov">          0 :             unsigned char orig = sigbder[i];</span>
+<span class="lineNum">     194 </span>                :            :             /*Try every single-byte change.*/
+<span class="lineNum">     195 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :             for (c = 0; c &lt; 256; c++) {</span>
+<span class="lineNum">     196 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :                 if (c == orig ) {</span>
+<span class="lineNum">     197 </span>                :<span class="lineNoCov">          0 :                     continue;</span>
+<span class="lineNum">     198 </span>                :            :                 }
+<span class="lineNum">     199 </span>                :<span class="lineNoCov">          0 :                 sigbder[i] = c;</span>
+<span class="lineNum">     200 </span>[<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>][<span class="branchNoExec" title="Branch 4 was not executed"> # </span><span class="branchNoExec" title="Branch 5 was not executed"> # </span>]:<span class="lineNoCov">          0 :                 CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigbder, sizeof(sigbder)) == 0 || secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyb) == 0);</span>
+<span class="lineNum">     201 </span>                :            :             }
+<span class="lineNum">     202 </span>                :<span class="lineNoCov">          0 :             sigbder[i] = orig;</span>
+<span class="lineNum">     203 </span>                :            :         }
+<span class="lineNum">     204 </span>                :            :     }
+<span class="lineNum">     205 </span>                :            : 
+<span class="lineNum">     206 </span>                :            :     /* Test r/s equal to zero */
+<span class="lineNum">     207 </span>                :            :     {
+<span class="lineNum">     208 </span>                :            :         /* (1,1) encoded in DER. */
+<span class="lineNum">     209 </span>                :<span class="lineNoCov">          0 :         unsigned char sigcder[8] = {0x30, 0x06, 0x02, 0x01, 0x01, 0x02, 0x01, 0x01};</span>
+<span class="lineNum">     210 </span>                :<span class="lineNoCov">          0 :         unsigned char sigc64[64] = {</span>
+<span class="lineNum">     211 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     212 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     213 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     214 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
+<span class="lineNum">     215 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     216 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     217 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+<span class="lineNum">     218 </span>                :            :             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
+<span class="lineNum">     219 </span>                :            :         };
+<span class="lineNum">     220 </span>                :            :         secp256k1_pubkey pubkeyc;
+<span class="lineNum">     221 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sigc64, 0) == 1);</span>
+<span class="lineNum">     222 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_recover(ctx, &amp;pubkeyc, &amp;rsig, msg32) == 1);</span>
+<span class="lineNum">     223 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigcder, sizeof(sigcder)) == 1);</span>
+<span class="lineNum">     224 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyc) == 1);</span>
+<span class="lineNum">     225 </span>                :<span class="lineNoCov">          0 :         sigcder[4] = 0;</span>
+<span class="lineNum">     226 </span>                :<span class="lineNoCov">          0 :         sigc64[31] = 0;</span>
+<span class="lineNum">     227 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sigc64, 0) == 1);</span>
+<span class="lineNum">     228 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_recover(ctx, &amp;pubkeyb, &amp;rsig, msg32) == 0);</span>
+<span class="lineNum">     229 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigcder, sizeof(sigcder)) == 1);</span>
+<span class="lineNum">     230 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyc) == 0);</span>
+<span class="lineNum">     231 </span>                :<span class="lineNoCov">          0 :         sigcder[4] = 1;</span>
+<span class="lineNum">     232 </span>                :<span class="lineNoCov">          0 :         sigcder[7] = 0;</span>
+<span class="lineNum">     233 </span>                :<span class="lineNoCov">          0 :         sigc64[31] = 1;</span>
+<span class="lineNum">     234 </span>                :<span class="lineNoCov">          0 :         sigc64[63] = 0;</span>
+<span class="lineNum">     235 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_recoverable_signature_parse_compact(ctx, &amp;rsig, sigc64, 0) == 1);</span>
+<span class="lineNum">     236 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_recover(ctx, &amp;pubkeyb, &amp;rsig, msg32) == 0);</span>
+<span class="lineNum">     237 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_signature_parse_der(ctx, &amp;sig, sigcder, sizeof(sigcder)) == 1);</span>
+<span class="lineNum">     238 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_ecdsa_verify(ctx, &amp;sig, msg32, &amp;pubkeyc) == 0);</span>
+<span class="lineNum">     239 </span>                :            :     }
+<a name="240"><span class="lineNum">     240 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     241 </span>                :            : 
+<span class="lineNum">     242 </span>                :<span class="lineNoCov">          0 : void run_recovery_tests(void) {</span>
+<span class="lineNum">     243 </span>                :            :     int i;
+<span class="lineNum">     244 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     for (i = 0; i &lt; 64*count; i++) {</span>
+<span class="lineNum">     245 </span>                :<span class="lineNoCov">          0 :         test_ecdsa_recovery_end_to_end();</span>
+<span class="lineNum">     246 </span>                :            :     }
+<span class="lineNum">     247 </span>                :<span class="lineNoCov">          0 :     test_ecdsa_recovery_edge_cases();</span>
+<span class="lineNum">     248 </span>                :<span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     249 </span>                :            : 
+<span class="lineNum">     250 </span>                :            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
