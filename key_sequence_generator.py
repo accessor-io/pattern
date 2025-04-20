@@ -449,8 +449,14 @@ def analyze_known_transitions():
         # Get corresponding char from FULL_STRING (0-indexed)
         str_idx = idx_n - 1 # Transition from n to n+1 uses char at n-1
         transition_char = "N/A"
+        char_b58_index = -1 # Default value if char is not found or index out of bounds
         if 0 <= str_idx < len(FULL_STRING):
             transition_char = FULL_STRING[str_idx]
+            try:
+                char_b58_index = BASE58_ALPHABET.index(transition_char)
+            except ValueError:
+                print(f"WARN: Character '{transition_char}' not found in BASE58_ALPHABET.")
+                char_b58_index = -1 # Indicate invalid char
         else:
             print(f"WARN: Index {str_idx} out of bounds for FULL_STRING (len {len(FULL_STRING)}) for transition {idx_n}->{idx_n_plus_1}")
 
@@ -460,7 +466,7 @@ def analyze_known_transitions():
                 diff_map[transition_char] = []
             diff_map[transition_char].append(diff_mod_n)
 
-        print(f"Transition {idx_n: >2} -> {idx_n_plus_1: >2} (Char: {transition_char}):")
+        print(f"Transition {idx_n: >2} -> {idx_n_plus_1: >2} (Char: '{transition_char}' / B58 Idx: {char_b58_index: >2}):")
         print(f"  Key[{idx_n: >2}] = {hex(key_n)}")
         print(f"  Key[{idx_n_plus_1: >2}] = {hex(key_n_plus_1)}")
         print(f"  Difference: {hex(diff)} ({diff})")
