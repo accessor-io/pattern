@@ -424,6 +424,9 @@ def analyze_known_transitions():
     print("\n--- Analyzing Known Key Transitions ---")
     sorted_indices = sorted(KNOWN_SOLUTIONS.keys())
 
+    # Dictionary to map transition character to observed modular differences
+    diff_map = {}
+
     if len(FULL_STRING) < len(sorted_indices) - 1:
         print(f"WARN: FULL_STRING length ({len(FULL_STRING)}) is less than required for transitions ({len(sorted_indices) - 1}).")
 
@@ -440,6 +443,7 @@ def analyze_known_transitions():
         key_n_plus_1 = KNOWN_SOLUTIONS[idx_n_plus_1]
 
         diff = key_n_plus_1 - key_n
+        diff_mod_n = (key_n_plus_1 - key_n) % N # Modular difference
         ratio = "N/A" if key_n == 0 else key_n_plus_1 / key_n
 
         # Get corresponding char from FULL_STRING (0-indexed)
@@ -450,16 +454,17 @@ def analyze_known_transitions():
         else:
             print(f"WARN: Index {str_idx} out of bounds for FULL_STRING (len {len(FULL_STRING)}) for transition {idx_n}->{idx_n_plus_1}")
 
+        # Store the difference for this character
+        if transition_char != "N/A":
+            if transition_char not in diff_map:
+                diff_map[transition_char] = []
+            diff_map[transition_char].append(diff_mod_n)
 
         print(f"Transition {idx_n: >2} -> {idx_n_plus_1: >2} (Char: {transition_char}):")
         print(f"  Key[{idx_n: >2}] = {hex(key_n)}")
         print(f"  Key[{idx_n_plus_1: >2}] = {hex(key_n_plus_1)}")
         print(f"  Difference: {hex(diff)} ({diff})")
-
-        # Modular difference
-        diff_mod_n = (key_n_plus_1 - key_n) % N
         print(f"  Diff mod N: {hex(diff_mod_n)}")
-
         print(f"  Ratio: {ratio:.4f}" if isinstance(ratio, (float, int)) else f"  Ratio: {ratio}")
 
         # Check simple rules (modulo N)
@@ -470,17 +475,23 @@ def analyze_known_transitions():
             rule_checks.append("key_n*2 % N")
         if key_n_plus_1 == key_n_times_2_plus_1_mod_n:
             rule_checks.append("key_n*2+1 % N")
-        # Check if adding the non-modular difference works mod N (often true if diff is small)
-        if key_n_plus_1 == (key_n + diff) % N:
-            rule_checks.append("key_n + diff % N") # Diff here is non-modular diff
+        if key_n_plus_1 == (key_n + diff) % N: # Tautology check
+            rule_checks.append("key_n + diff % N")
 
         if rule_checks:
             print(f"  Simple Rules Match: {', '.join(rule_checks)}")
         else:
             print("  Simple Rules Match: None")
-
-        # Add more analysis here (bitwise ops, etc.) if needed
         print("---")
+
+    # Print the summary map
+    print("\n--- Character to Modular Difference (mod N) Map ---")
+    sorted_chars = sorted(diff_map.keys())
+    for char in sorted_chars:
+        # Use set to show unique differences for each char
+        unique_diffs_hex = {hex(d) for d in diff_map[char]}
+        print(f"Character '{char}': {unique_diffs_hex}")
+    print("-----------------------------------------------------")
 
 
 # --- Main Execution ---
