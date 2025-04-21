@@ -1186,8 +1186,11 @@ def generate_sequence_from_rules(max_pos=10):
 
 # Update main function to include our new analysis
 if __name__ == "__main__":
-    # analyze_first_address_derivation()
-    analyze_address_derivation() # Run for the first key by default
+    # Analyze the first address derivation (should now use fallback if needed)
+    analyze_first_address_derivation()
+
+    # Analyze general derivation for debugging if needed (optional)
+    # analyze_address_derivation()
 
     print("\n===== Key Transition Analysis =====\n")
 
@@ -1212,11 +1215,16 @@ if __name__ == "__main__":
     analyze_diff_char_relationships(analysis_range=full_analysis_range)
     print("End of character-difference analysis")
 
-    # Attempt to generate sequence using rules
-    generate_sequence_from_rules(max_pos=15) # Generate first 15 positions
-
     # Optional: Generate and print all keys/addresses if needed
     # generate_keys_and_addresses(KNOWN_SOLUTIONS["1"]["privkey_hex"], len(KNOWN_SOLUTIONS))
 
     # Example: Analyze transition at a specific position (e.g., position 68)
     # analyze_transitions(analysis_range=len(KNOWN_SOLUTIONS)-1) # Call the main transition analyzer
+
+    print("===== End of Position 69 Test =====")
+
+    # --- Verify provided details for k_70 ---
+    pos_to_verify = 70 # Ensure this line correctly assigns 70
+    print(f"\n===== Verifying Provided Details for Position {pos_to_verify} =====")
+    if pos_to_verify in KNOWN_SOLUTIONS:
+        k_verify = KNOWN_SOLUTIONS[pos_to_verify]
