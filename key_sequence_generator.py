@@ -1187,33 +1187,33 @@ def generate_sequence_from_rules(max_pos=10):
 # Update main function to include our new analysis
 if __name__ == "__main__":
     # Analyze the first address derivation (should now use fallback if needed)
-    analyze_first_address_derivation()
+    # analyze_first_address_derivation() # Commented out for generation focus
 
     # Analyze general derivation for debugging if needed (optional)
     # analyze_address_derivation()
 
-    print("\n===== Key Transition Analysis =====\n")
+    # print("\n===== Key Transition Analysis =====\n") # Commented out
 
     # Determine the full range for analysis based on known solutions
     # -1 because transitions occur between keys (e.g., 160 keys -> 159 transitions)
-    full_analysis_range = len(KNOWN_SOLUTIONS) -1
-    if full_analysis_range < 1:
-        print("WARN: Not enough known solutions to analyze transitions.")
-        full_analysis_range = 0 # Prevent errors
+    # full_analysis_range = len(KNOWN_SOLUTIONS) -1
+    # if full_analysis_range < 1:
+    #     print("WARN: Not enough known solutions to analyze transitions.")
+    #     full_analysis_range = 0 # Prevent errors
 
-    # Call analysis functions with the full range
+    # Call analysis functions with the full range (Commented out for generation focus)
     # analyze_known_transitions() # This one seems to analyze all available
-    analyze_differences_between_known_keys(analysis_range=full_analysis_range)
-    check_transition_formulas(analysis_range=full_analysis_range)
-    analyze_special_operations(analysis_range=full_analysis_range)
-    analyze_control_characters(analysis_range=full_analysis_range) # Analyze full string length
+    # analyze_differences_between_known_keys(analysis_range=full_analysis_range)
+    # check_transition_formulas(analysis_range=full_analysis_range)
+    # analyze_special_operations(analysis_range=full_analysis_range)
+    # analyze_control_characters(analysis_range=full_analysis_range) # Analyze full string length
 
-    print("\n===== End of Analysis =====\n")
+    # print("\n===== End of Analysis =====\n") # Commented out
 
-    # Additional analysis (might need adjustment)
-    print("--- Analyzing Character-Difference Relationships (full sequence) ---")
-    analyze_diff_char_relationships(analysis_range=full_analysis_range)
-    print("End of character-difference analysis")
+    # Additional analysis (might need adjustment) (Commented out for generation focus)
+    # print("--- Analyzing Character-Difference Relationships (full sequence) ---")
+    # analyze_diff_char_relationships(analysis_range=full_analysis_range)
+    # print("End of character-difference analysis")
 
     # Optional: Generate and print all keys/addresses if needed
     # generate_keys_and_addresses(KNOWN_SOLUTIONS["1"]["privkey_hex"], len(KNOWN_SOLUTIONS))
@@ -1221,10 +1221,27 @@ if __name__ == "__main__":
     # Example: Analyze transition at a specific position (e.g., position 68)
     # analyze_transitions(analysis_range=len(KNOWN_SOLUTIONS)-1) # Call the main transition analyzer
 
-    print("===== End of Position 69 Test =====")
+    # print("===== End of Position 69 Test =====") # Commented out
 
-    # --- Verify provided details for k_70 ---
-    pos_to_verify = 70 # Ensure this line correctly assigns 70
-    print(f"\n===== Verifying Provided Details for Position {pos_to_verify} =====")
-    if pos_to_verify in KNOWN_SOLUTIONS:
-        k_verify = KNOWN_SOLUTIONS[pos_to_verify]
+    # --- Verify provided details for k_70 --- (Commented out)
+    # pos_to_verify = 70 # Ensure this line correctly assigns 70
+    # print(f"\n===== Verifying Provided Details for Position {pos_to_verify} =====")
+    # if pos_to_verify in KNOWN_SOLUTIONS:
+    #     k_verify = KNOWN_SOLUTIONS[pos_to_verify]
+
+    # --- Generate sequence based on implemented rules ---
+    print("\n===== Attempting Sequence Generation =====")
+    # Note: This function currently only has rules defined up to position 15.
+    # Generation will stop there unless more rules are added to the function.
+    generated_sequence = generate_sequence_from_rules(max_pos=160)
+
+    if generated_sequence:
+        print("\n--- Generated Keys ---")
+        # Sort keys by position before printing
+        for pos in sorted(generated_sequence.keys()):
+             print(f"Position {pos}: {hex(generated_sequence[pos])}")
+        print(f"Total keys generated: {len(generated_sequence)}")
+    else:
+        print("\nGeneration failed or produced no keys.")
+
+    print("\n===== Script Finished =====")

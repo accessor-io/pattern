@@ -64,5 +64,14 @@ KNOWN_SOLUTIONS = {
     63: 0x7cce5efdaccf6808,
     64: 0xf7051f27b09112d4,
     65: 0xa838b13505b26867,
-    66: 0x2832ed74f2b5e3ee
+    66: 0x2832ed74f2b5e3ee,
+    67: 0x730fc235c1942c1ae,
+    68: 0xbebb3940cd0fc1491,
+    70: 0x349b84b6431a6c4ef1,
+    75: 0x4c5ce114686a1336e07,
+    80: 0xea1a5c66dcc11b5ad180,
+    85: 0x11720c4f018d51b8cebba8,
+    90: 0x2ce00bb2136a445c71e85bf,
+    95: 0x527a792b183c7f64a0e8b1f4,
+    100: 0xaf55fc59c335c8ec67ed24826
 }

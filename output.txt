@@ -1,0 +1,3190 @@
+
+===== Address Derivation Analysis =====
+Private Key (hex): 0000000000000000000000000000000000000000000000000000000000000001
+Target Address: 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH
+Decoded address (hex): 00751e76e8199196d454941c45d1b3a323f1433bd6510d1634
+Version byte: 00
+Address hash160 payload: 751e76e8199196d454941c45d1b3a323f1433bd6
+Address checksum: 510d1634
+✓ Checksum verification PASSED
+Derived public key point:
+  x: 55066263022277343669578718895168534326250603453777594175500187360389116729240
+  y: 32670510020758816978083085130507043184471273380659243275938904335757337482424
+Uncompressed public key: 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8
+WARN: hashlib.new('ripemd160') failed. Using custom implementation.
+Standard derived hash160: c1143dc021a1f3fceb1896daf5b617e7f64289f7
+✗ Hash160 verification FAILED - Address was NOT derived using standard method
+  Hex diff: b40a4b2838306528bf8c8a9f2405b4c40701b221
+Custom derived hash160: c1143dc021a1f3fceb1896daf5b617e7f64289f7
+✗ Custom Hash160 verification FAILED
+  Hex diff: b40a4b2838306528bf8c8a9f2405b4c40701b221
+SHA256 of pubkey: 50929b74c1a04954b78b4b6035e97a5e078a5a0f28ec96d547bfee9ace803ac0
+
+Comparing with first few known addresses:
+Address #2: 1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb
+  Hash160: 7dd65592d0ab2fe0d0257d571abf032cd9db93dc
+Address #3: 19dT9XKRkMAjCZyWpVu48pj1AknS1Yf3sC
+  Hash160: 5ea5cea8d7daa9ae325f3d6ed61d7a33c82af369
+Address #4: 1PEr4gG45YhKPPu4E1DZ5Y1TNK1T7D7t4s
+  Hash160: f3f1217c7b064af484546a35fc75ec228f9e3181
+Address #5: 1NfgFXmVkekdsXpjoHAfWzQMSw8JpME4LV
+  Hash160: edab36733c08dc0c09c6a965bf07392b12fa6198
+
+===== Key Transition Analysis =====
+
+--- Analyzing Differences Between Known Keys ---
+
+Position 2, Character: 'C' (ASCII 67)
+  Previous key: 1
+  Current key:  3
+  Difference:   2
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494335
+  % Change:     200.00%
+  ✓ Current key is exactly 3 times previous key
+
+Position 3, Character: '9' (ASCII 57)
+  Previous key: 3
+  Current key:  7
+  Difference:   4
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494333
+  % Change:     133.33%
+
+Position 4, Character: 'E' (ASCII 69)
+  Previous key: 7
+  Current key:  8
+  Difference:   1
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494336
+  % Change:     14.29%
+
+Position 5, Character: 'E' (ASCII 69)
+  Previous key: 8
+  Current key:  21
+  Difference:   13
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494324
+  % Change:     162.50%
+
+Position 6, Character: 'P' (ASCII 80)
+  Previous key: 21
+  Current key:  49
+  Difference:   28
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494309
+  % Change:     133.33%
+
+Position 7, Character: 'M' (ASCII 77)
+  Previous key: 49
+  Current key:  76
+  Difference:   27
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494310
+  % Change:     55.10%
+
+Position 8, Character: 'M' (ASCII 77)
+  Previous key: 76
+  Current key:  224
+  Difference:   148
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494189
+  % Change:     194.74%
+
+Position 9, Character: 'C' (ASCII 67)
+  Previous key: 224
+  Current key:  467
+  Difference:   243
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494094
+  % Change:     108.48%
+
+Position 10, Character: 'L' (ASCII 76)
+  Previous key: 467
+  Current key:  514
+  Difference:   47
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494290
+  % Change:     10.06%
+
+Position 11, Character: 'P' (ASCII 80)
+  Previous key: 514
+  Current key:  1155
+  Difference:   641
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161493696
+  % Change:     124.71%
+
+Position 12, Character: 'D' (ASCII 68)
+  Previous key: 1155
+  Current key:  2683
+  Difference:   1528
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161492809
+  % Change:     132.29%
+
+Position 13, Character: 'P' (ASCII 80)
+  Previous key: 2683
+  Current key:  5216
+  Difference:   2533
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161491804
+  % Change:     94.41%
+
+Position 14, Character: 'E' (ASCII 69)
+  Previous key: 5216
+  Current key:  10544
+  Difference:   5328
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161489009
+  % Change:     102.15%
+
+Position 15, Character: 'Q' (ASCII 81)
+  Previous key: 10544
+  Current key:  26867
+  Difference:   16323
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161478014
+  % Change:     154.81%
+
+Position 16, Character: 'B' (ASCII 66)
+  Previous key: 26867
+  Current key:  51510
+  Difference:   24643
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161469694
+  % Change:     91.72%
+
+Position 17, Character: 'H' (ASCII 72)
+  Previous key: 51510
+  Current key:  95823
+  Difference:   44313
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161450024
+  % Change:     86.03%
+
+Position 18, Character: 'G' (ASCII 71)
+  Previous key: 95823
+  Current key:  198669
+  Difference:   102846
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161391491
+  % Change:     107.33%
+
+Position 19, Character: 'N' (ASCII 78)
+  Previous key: 198669
+  Current key:  357535
+  Difference:   158866
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161335471
+  % Change:     79.97%
+
+Position 20, Character: '4' (ASCII 52)
+  Previous key: 357535
+  Current key:  863317
+  Difference:   505782
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518160988555
+  % Change:     141.46%
+
+Position 21, Character: 'C' (ASCII 67)
+  Previous key: 863317
+  Current key:  1811764
+  Difference:   948447
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518160545890
+  % Change:     109.86%
+
+Position 22, Character: 'L' (ASCII 76)
+  Previous key: 1811764
+  Current key:  3007503
+  Difference:   1195739
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518160298598
+  % Change:     66.00%
+
+Position 23, Character: 'r' (ASCII 114)
+  Previous key: 3007503
+  Current key:  5598802
+  Difference:   2591299
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518158903038
+  % Change:     86.16%
+
+Position 24, Character: '5' (ASCII 53)
+  Previous key: 5598802
+  Current key:  14428676
+  Difference:   8829874
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518152664463
+  % Change:     157.71%
+
+Position 25, Character: 'J' (ASCII 74)
+  Previous key: 14428676
+  Current key:  33185509
+  Difference:   18756833
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518142737504
+  % Change:     130.00%
+
+Position 26, Character: '2' (ASCII 50)
+  Previous key: 33185509
+  Current key:  54538862
+  Difference:   21353353
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518140140984
+  % Change:     64.35%
+
+Position 27, Character: '8' (ASCII 56)
+  Previous key: 54538862
+  Current key:  111949941
+  Difference:   57411079
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518104083258
+  % Change:     105.27%
+
+Position 28, Character: 'H' (ASCII 72)
+  Previous key: 111949941
+  Current key:  227634408
+  Difference:   115684467
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518045809870
+  % Change:     103.34%
+
+Position 29, Character: 'L' (ASCII 76)
+  Previous key: 227634408
+  Current key:  400708894
+  Difference:   173074486
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141517988419851
+  % Change:     76.03%
+
+Position 30, Character: 'F' (ASCII 70)
+  Previous key: 400708894
+  Current key:  1033162084
+  Difference:   632453190
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141517529041147
+  % Change:     157.83%
+  ✓ Difference is 42163546 times the character index+1 (15)
+
+Position 31, Character: 'P' (ASCII 80)
+  Previous key: 1033162084
+  Current key:  2102388551
+  Difference:   1069226467
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141517092267870
+  % Change:     103.49%
+
+Position 32, Character: 'W' (ASCII 87)
+  Previous key: 2102388551
+  Current key:  3093472814
+  Difference:   991084263
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141517170410074
+  % Change:     47.14%
+
+Position 33, Character: 'B' (ASCII 66)
+  Previous key: 3093472814
+  Current key:  2842470616
+  Difference:   115792089237316195423570985008687907852837564279074904382605163141517910492139
+  Neg. Diff:    251002198
+  % Change:     3743109967324774930146174383057925790111977655302314902469291282530304.00%
+
+Position 34, Character: 'i' (ASCII 105)
+  Previous key: 2842470616
+  Current key:  1248170269
+  Difference:   115792089237316195423570985008687907852837564279074904382605163141516567193990
+  Neg. Diff:    1594300347
+  % Change:     4073642435757590851867323590802975133083095525979412868349384972042240.00%
+
+Position 35, Character: '4' (ASCII 52)
+  Previous key: 1248170269
+  Current key:  2933002608
+  Difference:   1684832339
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141516476661998
+  % Change:     134.98%
+
+Position 36, Character: 'H' (ASCII 72)
+  Previous key: 2933002608
+  Current key:  42387769980
+  Difference:   39454767372
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141478706726965
+  % Change:     1345.20%
+
+Position 37, Character: 'E' (ASCII 69)
+  Previous key: 42387769980
+  Current key:  100251560595
+  Difference:   57863790615
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141460297703722
+  % Change:     136.51%
+
+Position 38, Character: '2' (ASCII 50)
+  Previous key: 100251560595
+  Current key:  146971536592
+  Difference:   46719975997
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141471441518340
+  % Change:     46.60%
+
+Position 39, Character: 'C' (ASCII 67)
+  Previous key: 146971536592
+  Current key:  323724968937
+  Difference:   176753432345
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141341408061992
+  % Change:     120.26%
+
+Position 40, Character: 'N' (ASCII 78)
+  Previous key: 323724968937
+  Current key:  1003651412950
+  Difference:   679926444013
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163140838235050324
+  % Change:     210.03%
+
+Position 41, Character: 'E' (ASCII 69)
+  Previous key: 1003651412950
+  Current key:  1458252205147
+  Difference:   454600792197
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141063560702140
+  % Change:     45.29%
+
+Position 42, Character: '3' (ASCII 51)
+  Previous key: 1458252205147
+  Current key:  2895374552463
+  Difference:   1437122347316
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163140081039147021
+  % Change:     98.55%
+
+Position 43, Character: 'N' (ASCII 78)
+  Previous key: 2895374552463
+  Current key:  7409811047825
+  Difference:   4514436495362
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163137003724998975
+  % Change:     155.92%
+
+Position 44, Character: 'P' (ASCII 80)
+  Previous key: 7409811047825
+  Current key:  15404761757071
+  Difference:   7994950709246
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163133523210785091
+  % Change:     107.90%
+
+Position 45, Character: 'F' (ASCII 70)
+  Previous key: 15404761757071
+  Current key:  19996463086597
+  Difference:   4591701329526
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163136926460164811
+  % Change:     29.81%
+
+Position 46, Character: 'D' (ASCII 68)
+  Previous key: 19996463086597
+  Current key:  51408670348612
+  Difference:   31412207262015
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163110105954232322
+  % Change:     157.09%
+
+Position 47, Character: '2' (ASCII 50)
+  Previous key: 51408670348612
+  Current key:  119666659114170
+  Difference:   68257988765558
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163073260172728779
+  % Change:     132.78%
+  ✓ Difference is 34128994382779 times the character index+1 (2)
+
+Position 48, Character: 'N' (ASCII 78)
+  Previous key: 119666659114170
+  Current key:  191206974700443
+  Difference:   71540315586273
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163069977845908064
+  % Change:     59.78%
+
+Position 49, Character: '5' (ASCII 53)
+  Previous key: 191206974700443
+  Current key:  409118905032525
+  Difference:   217911930332082
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605162923606231162255
+  % Change:     113.97%
+
+Position 50, Character: 'a' (ASCII 97)
+  Previous key: 409118905032525
+  Current key:  611140496167764
+  Difference:   202021591135239
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605162939496570359098
+  % Change:     49.38%
+
+Position 51, Character: '7' (ASCII 55)
+  Previous key: 611140496167764
+  Current key:  2058769515153876
+  Difference:   1447629018986112
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605161693889142508225
+  % Change:     236.87%
+
+Position 52, Character: 'c' (ASCII 99)
+  Previous key: 2058769515153876
+  Current key:  4216495639600700
+  Difference:   2157726124446824
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605160983792037047513
+  % Change:     104.81%
+
+Position 53, Character: 'A' (ASCII 65)
+  Previous key: 4216495639600700
+  Current key:  6763683971478124
+  Difference:   2547188331877424
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605160594329829616913
+  % Change:     60.41%
+
+Position 54, Character: 'K' (ASCII 75)
+  Previous key: 6763683971478124
+  Current key:  9974455244496707
+  Difference:   3210771273018583
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605159930746888475754
+  % Change:     47.47%
+
+Position 55, Character: 'M' (ASCII 77)
+  Previous key: 9974455244496707
+  Current key:  30045390491869460
+  Difference:   20070935247372753
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605143070582914121584
+  % Change:     201.22%
+
+Position 56, Character: 'J' (ASCII 74)
+  Previous key: 30045390491869460
+  Current key:  44218742292676575
+  Difference:   14173351800807115
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605148968166360687222
+  % Change:     47.17%
+
+Position 57, Character: 'H' (ASCII 72)
+  Previous key: 44218742292676575
+  Current key:  138245758910846492
+  Difference:   94027016618169917
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605069114501543324420
+  % Change:     212.64%
+
+Position 58, Character: 'N' (ASCII 78)
+  Previous key: 138245758910846492
+  Current key:  199976667976342049
+  Difference:   61730909065495557
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605101410609095998780
+  % Change:     44.65%
+
+Position 59, Character: 'g' (ASCII 103)
+  Previous key: 199976667976342049
+  Current key:  525070384258266191
+  Difference:   325093716281924142
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382604838047801879570195
+  % Change:     162.57%
+
+Position 60, Character: 'B' (ASCII 66)
+  Previous key: 525070384258266191
+  Current key:  1135041350219496382
+  Difference:   609970965961230191
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382604553170552200264146
+  % Change:     116.17%
+
+Position 61, Character: 'P' (ASCII 80)
+  Previous key: 1135041350219496382
+  Current key:  1425787542618654982
+  Difference:   290746192399158600
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382604872395325762335737
+  % Change:     25.62%
+
+Position 62, Character: 'M' (ASCII 77)
+  Previous key: 1425787542618654982
+  Current key:  3908372542507822062
+  Difference:   2482584999889167080
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382602680556518272327257
+  % Change:     174.12%
+
+Position 63, Character: '9' (ASCII 57)
+  Previous key: 3908372542507822062
+  Current key:  8993229949524469768
+  Difference:   5084857407016647706
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382600078284111144846631
+  % Change:     130.10%
+
+Position 64, Character: 'P' (ASCII 80)
+  Previous key: 8993229949524469768
+  Current key:  17799667357578236628
+  Difference:   8806437408053766860
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382596356704110107727477
+  % Change:     97.92%
+
+Position 65, Character: 'K' (ASCII 75)
+  Previous key: 17799667357578236628
+  Current key:  12121633238354651239
+  Difference:   115792089237316195423570985008687907852837564279074904382599485107398937908948
+  Neg. Diff:    5678034119223585389
+  % Change:     650529512215954594304451522033462548523124347582424100634624.00%
+
+Position 66, Character: '6' (ASCII 54)
+  Previous key: 12121633238354651239
+  Current key:  2896638596896646126
+  Difference:   115792089237316195423570985008687907852837564279074904382595938146876703489224
+  Neg. Diff:    9224994641458005113
+  % Change:     955251548701645112168891391481794765453937239913658184630272.00%
+
+--- Testing Transition Formulas ---
+
+Position 2:
+  Character: 'C' (ASCII 67, Base58 index: 11)
+  ~ CLOSE: k + 1 = 2
+    Difference: -1
+  ✓ MATCH! k + 2
+  ~ CLOSE: k * 2 = 2
+    Difference: -1
+  ✓ MATCH! k * 3
+  ~ CLOSE: k^2 = 1
+    Difference: -2
+  ✓ MATCH! k + position
+  ~ CLOSE: k * position = 2
+    Difference: -1
+  ~ CLOSE: k ^ position = 1
+    Difference: -2
+  ~ CLOSE: k + ASCII(char) = 68
+    Difference: 65
+  ~ CLOSE: k * ASCII(char) = 67
+    Difference: 64
+  ~ CLOSE: k XOR ASCII(char) = 66
+    Difference: 63
+  ~ CLOSE: k + Base58_idx = 12
+    Difference: 9
+  ~ CLOSE: k * Base58_idx = 11
+    Difference: 8
+  ~ CLOSE: k XOR Base58_idx = 10
+    Difference: 7
+  ✓ MATCH! k << 1 | 1
+  ~ CLOSE: k << 2 | 3 = 7
+    Difference: 4
+  ✓ MATCH! k << 1 + k
+  ~ CLOSE: k * position + Base58_idx = 13
+    Difference: 10
+  ~ CLOSE: k * position + ASCII(char) = 69
+    Difference: 66
+  ~ CLOSE: k * ASCII(char) + position = 69
+    Difference: 66
+
+Position 3:
+  Character: '9' (ASCII 57, Base58 index: 8)
+  ~ CLOSE: k + 1 = 4
+    Difference: -3
+  ~ CLOSE: k + 2 = 5
+    Difference: -2
+  ~ CLOSE: k * 2 = 6
+    Difference: -1
+  ~ CLOSE: k * 3 = 9
+    Difference: 2
+  ~ CLOSE: k^2 = 9
+    Difference: 2
+  ~ CLOSE: k + position = 6
+    Difference: -1
+  ~ CLOSE: k * position = 9
+    Difference: 2
+  ~ CLOSE: k ^ position = 27
+    Difference: 20
+  ~ CLOSE: k + ASCII(char) = 60
+    Difference: 53
+  ~ CLOSE: k * ASCII(char) = 171
+    Difference: 164
+  ~ CLOSE: k XOR ASCII(char) = 58
+    Difference: 51
+  ~ CLOSE: k + Base58_idx = 11
+    Difference: 4
+  ~ CLOSE: k * Base58_idx = 24
+    Difference: 17
+  ~ CLOSE: k XOR Base58_idx = 11
+    Difference: 4
+  ✓ MATCH! k << 1 | 1
+  ~ CLOSE: k << 2 | 3 = 15
+    Difference: 8
+  ~ CLOSE: k << 1 + k = 9
+    Difference: 2
+  ~ CLOSE: k * position + Base58_idx = 17
+    Difference: 10
+  ~ CLOSE: k * position + ASCII(char) = 66
+    Difference: 59
+  ~ CLOSE: k * ASCII(char) + position = 174
+    Difference: 167
+
+Position 4:
+  Character: 'E' (ASCII 69, Base58 index: 13)
+  ✓ MATCH! k + 1
+  ~ CLOSE: k + 2 = 9
+    Difference: 1
+  ~ CLOSE: k * 2 = 14
+    Difference: 6
+  ~ CLOSE: k * 3 = 21
+    Difference: 13
+  ~ CLOSE: k^2 = 49
+    Difference: 41
+  ~ CLOSE: k + position = 11
+    Difference: 3
+  ~ CLOSE: k * position = 28
+    Difference: 20
+  ~ CLOSE: k ^ position = 2401
+    Difference: 2393
+  ~ CLOSE: k + ASCII(char) = 76
+    Difference: 68
+  ~ CLOSE: k * ASCII(char) = 483
+    Difference: 475
+  ~ CLOSE: k XOR ASCII(char) = 66
+    Difference: 58
+  ~ CLOSE: k + Base58_idx = 20
+    Difference: 12
+  ~ CLOSE: k * Base58_idx = 91
+    Difference: 83
+  ~ CLOSE: k XOR Base58_idx = 10
+    Difference: 2
+  ~ CLOSE: k << 1 | 1 = 15
+    Difference: 7
+  ~ CLOSE: k << 2 | 3 = 31
+    Difference: 23
+  ~ CLOSE: k << 1 + k = 21
+    Difference: 13
+  ~ CLOSE: k * position + Base58_idx = 41
+    Difference: 33
+  ~ CLOSE: k * position + ASCII(char) = 97
+    Difference: 89
+  ~ CLOSE: k * ASCII(char) + position = 487
+    Difference: 479
+
+Position 5:
+  Character: 'E' (ASCII 69, Base58 index: 13)
+  ~ CLOSE: k + 1 = 9
+    Difference: -12
+  ~ CLOSE: k + 2 = 10
+    Difference: -11
+  ~ CLOSE: k * 2 = 16
+    Difference: -5
+  ~ CLOSE: k * 3 = 24
+    Difference: 3
+  ~ CLOSE: k^2 = 64
+    Difference: 43
+  ~ CLOSE: k + position = 13
+    Difference: -8
+  ~ CLOSE: k * position = 40
+    Difference: 19
+  ~ CLOSE: k ^ position = 32768
+    Difference: 32747
+  ~ CLOSE: k + ASCII(char) = 77
+    Difference: 56
+  ~ CLOSE: k * ASCII(char) = 552
+    Difference: 531
+  ~ CLOSE: k XOR ASCII(char) = 77
+    Difference: 56
+  ✓ MATCH! k + Base58_idx
+  ~ CLOSE: k * Base58_idx = 104
+    Difference: 83
+  ~ CLOSE: k XOR Base58_idx = 5
+    Difference: -16
+  ~ CLOSE: k << 1 | 1 = 17
+    Difference: -4
+  ~ CLOSE: k << 2 | 3 = 35
+    Difference: 14
+  ~ CLOSE: k << 1 + k = 24
+    Difference: 3
+  ~ CLOSE: k * position + Base58_idx = 53
+    Difference: 32
+  ~ CLOSE: k * position + ASCII(char) = 109
+    Difference: 88
+  ~ CLOSE: k * ASCII(char) + position = 557
+    Difference: 536
+
+Position 6:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 22
+    Difference: -27
+  ~ CLOSE: k + 2 = 23
+    Difference: -26
+  ~ CLOSE: k * 2 = 42
+    Difference: -7
+  ~ CLOSE: k * 3 = 63
+    Difference: 14
+  ~ CLOSE: k^2 = 441
+    Difference: 392
+  ~ CLOSE: k + position = 27
+    Difference: -22
+  ~ CLOSE: k * position = 126
+    Difference: 77
+  ~ CLOSE: k ^ position = 85766121
+    Difference: 85766072
+  ~ CLOSE: k + ASCII(char) = 101
+    Difference: 52
+  ~ CLOSE: k * ASCII(char) = 1680
+    Difference: 1631
+  ~ CLOSE: k XOR ASCII(char) = 69
+    Difference: 20
+  ~ CLOSE: k + Base58_idx = 43
+    Difference: -6
+  ~ CLOSE: k * Base58_idx = 462
+    Difference: 413
+  ~ CLOSE: k XOR Base58_idx = 3
+    Difference: -46
+  ~ CLOSE: k << 1 | 1 = 43
+    Difference: -6
+  ~ CLOSE: k << 2 | 3 = 87
+    Difference: 38
+  ~ CLOSE: k << 1 + k = 63
+    Difference: 14
+  ~ CLOSE: k * position + Base58_idx = 148
+    Difference: 99
+  ~ CLOSE: k * position + ASCII(char) = 206
+    Difference: 157
+  ~ CLOSE: k * ASCII(char) + position = 1686
+    Difference: 1637
+
+Position 7:
+  Character: 'M' (ASCII 77, Base58 index: 20)
+  ~ CLOSE: k + 1 = 50
+    Difference: -26
+  ~ CLOSE: k + 2 = 51
+    Difference: -25
+  ~ CLOSE: k * 2 = 98
+    Difference: 22
+  ~ CLOSE: k * 3 = 147
+    Difference: 71
+  ~ CLOSE: k^2 = 2401
+    Difference: 2325
+  ~ CLOSE: k + position = 56
+    Difference: -20
+  ~ CLOSE: k * position = 343
+    Difference: 267
+  ~ CLOSE: k ^ position = 678223072849
+    Difference: 678223072773
+  ~ CLOSE: k + ASCII(char) = 126
+    Difference: 50
+  ~ CLOSE: k * ASCII(char) = 3773
+    Difference: 3697
+  ~ CLOSE: k XOR ASCII(char) = 124
+    Difference: 48
+  ~ CLOSE: k + Base58_idx = 69
+    Difference: -7
+  ~ CLOSE: k * Base58_idx = 980
+    Difference: 904
+  ~ CLOSE: k XOR Base58_idx = 37
+    Difference: -39
+  ~ CLOSE: k << 1 | 1 = 99
+    Difference: 23
+  ~ CLOSE: k << 2 | 3 = 199
+    Difference: 123
+  ~ CLOSE: k << 1 + k = 147
+    Difference: 71
+  ~ CLOSE: k * position + Base58_idx = 363
+    Difference: 287
+  ~ CLOSE: k * position + ASCII(char) = 420
+    Difference: 344
+  ~ CLOSE: k * ASCII(char) + position = 3780
+    Difference: 3704
+
+Position 8:
+  Character: 'M' (ASCII 77, Base58 index: 20)
+  ~ CLOSE: k + 1 = 77
+    Difference: -147
+  ~ CLOSE: k + 2 = 78
+    Difference: -146
+  ~ CLOSE: k * 2 = 152
+    Difference: -72
+  ~ CLOSE: k * 3 = 228
+    Difference: 4
+  ~ CLOSE: k^2 = 5776
+    Difference: 5552
+  ~ CLOSE: k + position = 84
+    Difference: -140
+  ~ CLOSE: k * position = 608
+    Difference: 384
+  ~ CLOSE: k ^ position = 1113034787454976
+    Difference: 1113034787454752
+  ~ CLOSE: k + ASCII(char) = 153
+    Difference: -71
+  ~ CLOSE: k * ASCII(char) = 5852
+    Difference: 5628
+  ~ CLOSE: k XOR ASCII(char) = 1
+    Difference: -223
+  ~ CLOSE: k + Base58_idx = 96
+    Difference: -128
+  ~ CLOSE: k * Base58_idx = 1520
+    Difference: 1296
+  ~ CLOSE: k XOR Base58_idx = 88
+    Difference: -136
+  ~ CLOSE: k << 1 | 1 = 153
+    Difference: -71
+  ~ CLOSE: k << 2 | 3 = 307
+    Difference: 83
+  ~ CLOSE: k << 1 + k = 228
+    Difference: 4
+  ~ CLOSE: k * position + Base58_idx = 628
+    Difference: 404
+  ~ CLOSE: k * position + ASCII(char) = 685
+    Difference: 461
+  ~ CLOSE: k * ASCII(char) + position = 5860
+    Difference: 5636
+
+Position 9:
+  Character: 'C' (ASCII 67, Base58 index: 11)
+  ~ CLOSE: k + 1 = 225
+    Difference: -242
+  ~ CLOSE: k + 2 = 226
+    Difference: -241
+  ~ CLOSE: k * 2 = 448
+    Difference: -19
+  ~ CLOSE: k * 3 = 672
+    Difference: 205
+  ~ CLOSE: k^2 = 50176
+    Difference: 49709
+  ~ CLOSE: k + position = 233
+    Difference: -234
+  ~ CLOSE: k * position = 2016
+    Difference: 1549
+  ~ CLOSE: k ^ position = 1419816323814495617024
+    Difference: 1419816323814495616557
+  ~ CLOSE: k + ASCII(char) = 291
+    Difference: -176
+  ~ CLOSE: k * ASCII(char) = 15008
+    Difference: 14541
+  ~ CLOSE: k XOR ASCII(char) = 163
+    Difference: -304
+  ~ CLOSE: k + Base58_idx = 235
+    Difference: -232
+  ~ CLOSE: k * Base58_idx = 2464
+    Difference: 1997
+  ~ CLOSE: k XOR Base58_idx = 235
+    Difference: -232
+  ~ CLOSE: k << 1 | 1 = 449
+    Difference: -18
+  ~ CLOSE: k << 2 | 3 = 899
+    Difference: 432
+  ~ CLOSE: k << 1 + k = 672
+    Difference: 205
+  ~ CLOSE: k * position + Base58_idx = 2027
+    Difference: 1560
+  ~ CLOSE: k * position + ASCII(char) = 2083
+    Difference: 1616
+  ~ CLOSE: k * ASCII(char) + position = 15017
+    Difference: 14550
+
+Position 10:
+  Character: 'L' (ASCII 76, Base58 index: 19)
+  ~ CLOSE: k + 1 = 468
+    Difference: -46
+  ~ CLOSE: k + 2 = 469
+    Difference: -45
+  ~ CLOSE: k * 2 = 934
+    Difference: 420
+  ~ CLOSE: k * 3 = 1401
+    Difference: 887
+  ~ CLOSE: k^2 = 218089
+    Difference: 217575
+  ~ CLOSE: k + position = 477
+    Difference: -37
+  ~ CLOSE: k * position = 4670
+    Difference: 4156
+  ~ CLOSE: k ^ position = 493365532643394582186749449
+    Difference: 493365532643394582186748935
+  ~ CLOSE: k + ASCII(char) = 543
+    Difference: 29
+  ~ CLOSE: k * ASCII(char) = 35492
+    Difference: 34978
+  ~ CLOSE: k XOR ASCII(char) = 415
+    Difference: -99
+  ~ CLOSE: k + Base58_idx = 486
+    Difference: -28
+  ~ CLOSE: k * Base58_idx = 8873
+    Difference: 8359
+  ~ CLOSE: k XOR Base58_idx = 448
+    Difference: -66
+  ~ CLOSE: k << 1 | 1 = 935
+    Difference: 421
+  ~ CLOSE: k << 2 | 3 = 1871
+    Difference: 1357
+  ~ CLOSE: k << 1 + k = 1401
+    Difference: 887
+  ~ CLOSE: k * position + Base58_idx = 4689
+    Difference: 4175
+  ~ CLOSE: k * position + ASCII(char) = 4746
+    Difference: 4232
+  ~ CLOSE: k * ASCII(char) + position = 35502
+    Difference: 34988
+
+Position 11:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 515
+    Difference: -640
+  ~ CLOSE: k + 2 = 516
+    Difference: -639
+  ~ CLOSE: k * 2 = 1028
+    Difference: -127
+  ~ CLOSE: k * 3 = 1542
+    Difference: 387
+  ~ CLOSE: k^2 = 264196
+    Difference: 263041
+  ~ CLOSE: k + position = 525
+    Difference: -630
+  ~ CLOSE: k * position = 5654
+    Difference: 4499
+  ~ CLOSE: k ^ position = 661598190829553353623447537664
+    Difference: 661598190829553353623447536509
+  ~ CLOSE: k + ASCII(char) = 594
+    Difference: -561
+  ~ CLOSE: k * ASCII(char) = 41120
+    Difference: 39965
+  ~ CLOSE: k XOR ASCII(char) = 594
+    Difference: -561
+  ~ CLOSE: k + Base58_idx = 536
+    Difference: -619
+  ~ CLOSE: k * Base58_idx = 11308
+    Difference: 10153
+  ~ CLOSE: k XOR Base58_idx = 532
+    Difference: -623
+  ~ CLOSE: k << 1 | 1 = 1029
+    Difference: -126
+  ~ CLOSE: k << 2 | 3 = 2059
+    Difference: 904
+  ~ CLOSE: k << 1 + k = 1542
+    Difference: 387
+  ~ CLOSE: k * position + Base58_idx = 5676
+    Difference: 4521
+  ~ CLOSE: k * position + ASCII(char) = 5734
+    Difference: 4579
+  ~ CLOSE: k * ASCII(char) + position = 41131
+    Difference: 39976
+
+Position 12:
+  Character: 'D' (ASCII 68, Base58 index: 12)
+  ~ CLOSE: k + 1 = 1156
+    Difference: -1527
+  ~ CLOSE: k + 2 = 1157
+    Difference: -1526
+  ~ CLOSE: k * 2 = 2310
+    Difference: -373
+  ~ CLOSE: k * 3 = 3465
+    Difference: 782
+  ~ CLOSE: k^2 = 1334025
+    Difference: 1331342
+  ~ CLOSE: k + position = 1167
+    Difference: -1516
+  ~ CLOSE: k * position = 13860
+    Difference: 11177
+  ~ CLOSE: k ^ position = 5636166454101769740584664101806640625
+    Difference: 5636166454101769740584664101806637942
+  ~ CLOSE: k + ASCII(char) = 1223
+    Difference: -1460
+  ~ CLOSE: k * ASCII(char) = 78540
+    Difference: 75857
+  ~ CLOSE: k XOR ASCII(char) = 1223
+    Difference: -1460
+  ~ CLOSE: k + Base58_idx = 1167
+    Difference: -1516
+  ~ CLOSE: k * Base58_idx = 13860
+    Difference: 11177
+  ~ CLOSE: k XOR Base58_idx = 1167
+    Difference: -1516
+  ~ CLOSE: k << 1 | 1 = 2311
+    Difference: -372
+  ~ CLOSE: k << 2 | 3 = 4623
+    Difference: 1940
+  ~ CLOSE: k << 1 + k = 3465
+    Difference: 782
+  ~ CLOSE: k * position + Base58_idx = 13872
+    Difference: 11189
+  ~ CLOSE: k * position + ASCII(char) = 13928
+    Difference: 11245
+  ~ CLOSE: k * ASCII(char) + position = 78552
+    Difference: 75869
+
+Position 13:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 2684
+    Difference: -2532
+  ~ CLOSE: k + 2 = 2685
+    Difference: -2531
+  ~ CLOSE: k * 2 = 5366
+    Difference: 150
+  ~ CLOSE: k * 3 = 8049
+    Difference: 2833
+  ~ CLOSE: k^2 = 7198489
+    Difference: 7193273
+  ~ CLOSE: k + position = 2696
+    Difference: -2520
+  ~ CLOSE: k * position = 34879
+    Difference: 29663
+  ~ CLOSE: k ^ position = 373309244464393678391670540243778309717245163
+    Difference: 373309244464393678391670540243778309717239947
+  ~ CLOSE: k + ASCII(char) = 2763
+    Difference: -2453
+  ~ CLOSE: k * ASCII(char) = 214640
+    Difference: 209424
+  ~ CLOSE: k XOR ASCII(char) = 2603
+    Difference: -2613
+  ~ CLOSE: k + Base58_idx = 2705
+    Difference: -2511
+  ~ CLOSE: k * Base58_idx = 59026
+    Difference: 53810
+  ~ CLOSE: k XOR Base58_idx = 2669
+    Difference: -2547
+  ~ CLOSE: k << 1 | 1 = 5367
+    Difference: 151
+  ~ CLOSE: k << 2 | 3 = 10735
+    Difference: 5519
+  ~ CLOSE: k << 1 + k = 8049
+    Difference: 2833
+  ~ CLOSE: k * position + Base58_idx = 34901
+    Difference: 29685
+  ~ CLOSE: k * position + ASCII(char) = 34959
+    Difference: 29743
+  ~ CLOSE: k * ASCII(char) + position = 214653
+    Difference: 209437
+
+Position 14:
+  Character: 'E' (ASCII 69, Base58 index: 13)
+  ~ CLOSE: k + 1 = 5217
+    Difference: -5327
+  ~ CLOSE: k + 2 = 5218
+    Difference: -5326
+  ~ CLOSE: k * 2 = 10432
+    Difference: -112
+  ~ CLOSE: k * 3 = 15648
+    Difference: 5104
+  ~ CLOSE: k^2 = 27206656
+    Difference: 27196112
+  ~ CLOSE: k + position = 5230
+    Difference: -5314
+  ~ CLOSE: k * position = 73024
+    Difference: 62480
+  ~ CLOSE: k ^ position = 11033826689708235659973223281430725784274170581876736
+    Difference: 11033826689708235659973223281430725784274170581866192
+  ~ CLOSE: k + ASCII(char) = 5285
+    Difference: -5259
+  ~ CLOSE: k * ASCII(char) = 359904
+    Difference: 349360
+  ~ CLOSE: k XOR ASCII(char) = 5157
+    Difference: -5387
+  ~ CLOSE: k + Base58_idx = 5229
+    Difference: -5315
+  ~ CLOSE: k * Base58_idx = 67808
+    Difference: 57264
+  ~ CLOSE: k XOR Base58_idx = 5229
+    Difference: -5315
+  ~ CLOSE: k << 1 | 1 = 10433
+    Difference: -111
+  ~ CLOSE: k << 2 | 3 = 20867
+    Difference: 10323
+  ~ CLOSE: k << 1 + k = 15648
+    Difference: 5104
+  ~ CLOSE: k * position + Base58_idx = 73037
+    Difference: 62493
+  ~ CLOSE: k * position + ASCII(char) = 73093
+    Difference: 62549
+  ~ CLOSE: k * ASCII(char) + position = 359918
+    Difference: 349374
+
+Position 15:
+  Character: 'Q' (ASCII 81, Base58 index: 23)
+  ~ CLOSE: k + 1 = 10545
+    Difference: -16322
+  ~ CLOSE: k + 2 = 10546
+    Difference: -16321
+  ~ CLOSE: k * 2 = 21088
+    Difference: -5779
+  ~ CLOSE: k * 3 = 31632
+    Difference: 4765
+  ~ CLOSE: k^2 = 111175936
+    Difference: 111149069
+  ~ CLOSE: k + position = 10559
+    Difference: -16308
+  ~ CLOSE: k * position = 158160
+    Difference: 131293
+  ~ CLOSE: k ^ position = 2213507300802470459830035586250317892123694214454964780007424
+    Difference: 2213507300802470459830035586250317892123694214454964779980557
+  ~ CLOSE: k + ASCII(char) = 10625
+    Difference: -16242
+  ~ CLOSE: k * ASCII(char) = 854064
+    Difference: 827197
+  ~ CLOSE: k XOR ASCII(char) = 10593
+    Difference: -16274
+  ~ CLOSE: k + Base58_idx = 10567
+    Difference: -16300
+  ~ CLOSE: k * Base58_idx = 242512
+    Difference: 215645
+  ~ CLOSE: k XOR Base58_idx = 10535
+    Difference: -16332
+  ~ CLOSE: k << 1 | 1 = 21089
+    Difference: -5778
+  ~ CLOSE: k << 2 | 3 = 42179
+    Difference: 15312
+  ~ CLOSE: k << 1 + k = 31632
+    Difference: 4765
+  ~ CLOSE: k * position + Base58_idx = 158183
+    Difference: 131316
+  ~ CLOSE: k * position + ASCII(char) = 158241
+    Difference: 131374
+  ~ CLOSE: k * ASCII(char) + position = 854079
+    Difference: 827212
+
+Position 16:
+  Character: 'B' (ASCII 66, Base58 index: 10)
+  ~ CLOSE: k + 1 = 26868
+    Difference: -24642
+  ~ CLOSE: k + 2 = 26869
+    Difference: -24641
+  ~ CLOSE: k * 2 = 53734
+    Difference: 2224
+  ~ CLOSE: k * 3 = 80601
+    Difference: 29091
+  ~ CLOSE: k^2 = 721835689
+    Difference: 721784179
+  ~ CLOSE: k + position = 26883
+    Difference: -24627
+  ~ CLOSE: k * position = 429872
+    Difference: 378362
+  ~ CLOSE: k ^ position = 73706672464449240897609115052434178508808281644345462474872002616841281
+    Difference: 73706672464449240897609115052434178508808281644345462474872002616789771
+  ~ CLOSE: k + ASCII(char) = 26933
+    Difference: -24577
+  ~ CLOSE: k * ASCII(char) = 1773222
+    Difference: 1721712
+  ~ CLOSE: k XOR ASCII(char) = 26801
+    Difference: -24709
+  ~ CLOSE: k + Base58_idx = 26877
+    Difference: -24633
+  ~ CLOSE: k * Base58_idx = 268670
+    Difference: 217160
+  ~ CLOSE: k XOR Base58_idx = 26873
+    Difference: -24637
+  ~ CLOSE: k << 1 | 1 = 53735
+    Difference: 2225
+  ~ CLOSE: k << 2 | 3 = 107471
+    Difference: 55961
+  ~ CLOSE: k << 1 + k = 80601
+    Difference: 29091
+  ~ CLOSE: k * position + Base58_idx = 429882
+    Difference: 378372
+  ~ CLOSE: k * position + ASCII(char) = 429938
+    Difference: 378428
+  ~ CLOSE: k * ASCII(char) + position = 1773238
+    Difference: 1721728
+
+Position 17:
+  Character: 'H' (ASCII 72, Base58 index: 16)
+  ~ CLOSE: k + 1 = 51511
+    Difference: -44312
+  ~ CLOSE: k + 2 = 51512
+    Difference: -44311
+  ~ CLOSE: k * 2 = 103020
+    Difference: 7197
+  ~ CLOSE: k * 3 = 154530
+    Difference: 58707
+  ~ CLOSE: k^2 = 2653280100
+    Difference: 2653184277
+  ~ CLOSE: k + position = 51527
+    Difference: -44296
+  ~ CLOSE: k * position = 875670
+    Difference: 779847
+  ~ CLOSE: k + ASCII(char) = 51582
+    Difference: -44241
+  ~ CLOSE: k * ASCII(char) = 3708720
+    Difference: 3612897
+  ~ CLOSE: k XOR ASCII(char) = 51582
+    Difference: -44241
+  ~ CLOSE: k + Base58_idx = 51526
+    Difference: -44297
+  ~ CLOSE: k * Base58_idx = 824160
+    Difference: 728337
+  ~ CLOSE: k XOR Base58_idx = 51494
+    Difference: -44329
+  ~ CLOSE: k << 1 | 1 = 103021
+    Difference: 7198
+  ~ CLOSE: k << 2 | 3 = 206043
+    Difference: 110220
+  ~ CLOSE: k << 1 + k = 154530
+    Difference: 58707
+  ~ CLOSE: k * position + Base58_idx = 875686
+    Difference: 779863
+  ~ CLOSE: k * position + ASCII(char) = 875742
+    Difference: 779919
+  ~ CLOSE: k * ASCII(char) + position = 3708737
+    Difference: 3612914
+
+Position 18:
+  Character: 'G' (ASCII 71, Base58 index: 15)
+  ~ CLOSE: k + 1 = 95824
+    Difference: -102845
+  ~ CLOSE: k + 2 = 95825
+    Difference: -102844
+  ~ CLOSE: k * 2 = 191646
+    Difference: -7023
+  ~ CLOSE: k * 3 = 287469
+    Difference: 88800
+  ~ CLOSE: k^2 = 9182047329
+    Difference: 9181848660
+  ~ CLOSE: k + position = 95841
+    Difference: -102828
+  ~ CLOSE: k * position = 1724814
+    Difference: 1526145
+  ~ CLOSE: k + ASCII(char) = 95894
+    Difference: -102775
+  ~ CLOSE: k * ASCII(char) = 6803433
+    Difference: 6604764
+  ~ CLOSE: k XOR ASCII(char) = 95752
+    Difference: -102917
+  ~ CLOSE: k + Base58_idx = 95838
+    Difference: -102831
+  ~ CLOSE: k * Base58_idx = 1437345
+    Difference: 1238676
+  ~ CLOSE: k XOR Base58_idx = 95808
+    Difference: -102861
+  ~ CLOSE: k << 1 | 1 = 191647
+    Difference: -7022
+  ~ CLOSE: k << 2 | 3 = 383295
+    Difference: 184626
+  ~ CLOSE: k << 1 + k = 287469
+    Difference: 88800
+  ~ CLOSE: k * position + Base58_idx = 1724829
+    Difference: 1526160
+  ~ CLOSE: k * position + ASCII(char) = 1724885
+    Difference: 1526216
+  ~ CLOSE: k * ASCII(char) + position = 6803451
+    Difference: 6604782
+
+Position 19:
+  Character: 'N' (ASCII 78, Base58 index: 21)
+  ~ CLOSE: k + 1 = 198670
+    Difference: -158865
+  ~ CLOSE: k + 2 = 198671
+    Difference: -158864
+  ~ CLOSE: k * 2 = 397338
+    Difference: 39803
+  ~ CLOSE: k * 3 = 596007
+    Difference: 238472
+  ~ CLOSE: k^2 = 39469371561
+    Difference: 39469014026
+  ~ CLOSE: k + position = 198688
+    Difference: -158847
+  ~ CLOSE: k * position = 3774711
+    Difference: 3417176
+  ~ CLOSE: k + ASCII(char) = 198747
+    Difference: -158788
+  ~ CLOSE: k * ASCII(char) = 15496182
+    Difference: 15138647
+  ~ CLOSE: k XOR ASCII(char) = 198723
+    Difference: -158812
+  ~ CLOSE: k + Base58_idx = 198690
+    Difference: -158845
+  ~ CLOSE: k * Base58_idx = 4172049
+    Difference: 3814514
+  ~ CLOSE: k XOR Base58_idx = 198680
+    Difference: -158855
+  ~ CLOSE: k << 1 | 1 = 397339
+    Difference: 39804
+  ~ CLOSE: k << 2 | 3 = 794679
+    Difference: 437144
+  ~ CLOSE: k << 1 + k = 596007
+    Difference: 238472
+  ~ CLOSE: k * position + Base58_idx = 3774732
+    Difference: 3417197
+  ~ CLOSE: k * position + ASCII(char) = 3774789
+    Difference: 3417254
+  ~ CLOSE: k * ASCII(char) + position = 15496201
+    Difference: 15138666
+
+Position 20:
+  Character: '4' (ASCII 52, Base58 index: 3)
+  ~ CLOSE: k + 1 = 357536
+    Difference: -505781
+  ~ CLOSE: k + 2 = 357537
+    Difference: -505780
+  ~ CLOSE: k * 2 = 715070
+    Difference: -148247
+  ~ CLOSE: k * 3 = 1072605
+    Difference: 209288
+  ~ CLOSE: k^2 = 127831276225
+    Difference: 127830412908
+  ~ CLOSE: k + position = 357555
+    Difference: -505762
+  ~ CLOSE: k * position = 7150700
+    Difference: 6287383
+  ~ CLOSE: k + ASCII(char) = 357587
+    Difference: -505730
+  ~ CLOSE: k * ASCII(char) = 18591820
+    Difference: 17728503
+  ~ CLOSE: k XOR ASCII(char) = 357547
+    Difference: -505770
+  ~ CLOSE: k + Base58_idx = 357538
+    Difference: -505779
+  ~ CLOSE: k * Base58_idx = 1072605
+    Difference: 209288
+  ~ CLOSE: k XOR Base58_idx = 357532
+    Difference: -505785
+  ~ CLOSE: k << 1 | 1 = 715071
+    Difference: -148246
+  ~ CLOSE: k << 2 | 3 = 1430143
+    Difference: 566826
+  ~ CLOSE: k << 1 + k = 1072605
+    Difference: 209288
+  ~ CLOSE: k * position + Base58_idx = 7150703
+    Difference: 6287386
+  ~ CLOSE: k * position + ASCII(char) = 7150752
+    Difference: 6287435
+  ~ CLOSE: k * ASCII(char) + position = 18591840
+    Difference: 17728523
+
+Position 21:
+  Character: 'C' (ASCII 67, Base58 index: 11)
+  ~ CLOSE: k + 1 = 863318
+    Difference: -948446
+  ~ CLOSE: k + 2 = 863319
+    Difference: -948445
+  ~ CLOSE: k * 2 = 1726634
+    Difference: -85130
+  ~ CLOSE: k * 3 = 2589951
+    Difference: 778187
+  ~ CLOSE: k^2 = 745316242489
+    Difference: 745314430725
+  ~ CLOSE: k + position = 863338
+    Difference: -948426
+  ~ CLOSE: k * position = 18129657
+    Difference: 16317893
+  ~ CLOSE: k + ASCII(char) = 863384
+    Difference: -948380
+  ~ CLOSE: k * ASCII(char) = 57842239
+    Difference: 56030475
+  ~ CLOSE: k XOR ASCII(char) = 863254
+    Difference: -948510
+  ~ CLOSE: k + Base58_idx = 863328
+    Difference: -948436
+  ~ CLOSE: k * Base58_idx = 9496487
+    Difference: 7684723
+  ~ CLOSE: k XOR Base58_idx = 863326
+    Difference: -948438
+  ~ CLOSE: k << 1 | 1 = 1726635
+    Difference: -85129
+  ~ CLOSE: k << 2 | 3 = 3453271
+    Difference: 1641507
+  ~ CLOSE: k << 1 + k = 2589951
+    Difference: 778187
+  ~ CLOSE: k * position + Base58_idx = 18129668
+    Difference: 16317904
+  ~ CLOSE: k * position + ASCII(char) = 18129724
+    Difference: 16317960
+  ~ CLOSE: k * ASCII(char) + position = 57842260
+    Difference: 56030496
+
+Position 22:
+  Character: 'L' (ASCII 76, Base58 index: 19)
+  ~ CLOSE: k + 1 = 1811765
+    Difference: -1195738
+  ~ CLOSE: k + 2 = 1811766
+    Difference: -1195737
+  ~ CLOSE: k * 2 = 3623528
+    Difference: 616025
+  ~ CLOSE: k * 3 = 5435292
+    Difference: 2427789
+  ~ CLOSE: k^2 = 3282488791696
+    Difference: 3282485784193
+  ~ CLOSE: k + position = 1811786
+    Difference: -1195717
+  ~ CLOSE: k * position = 39858808
+    Difference: 36851305
+  ~ CLOSE: k + ASCII(char) = 1811840
+    Difference: -1195663
+  ~ CLOSE: k * ASCII(char) = 137694064
+    Difference: 134686561
+  ~ CLOSE: k XOR ASCII(char) = 1811832
+    Difference: -1195671
+  ~ CLOSE: k + Base58_idx = 1811783
+    Difference: -1195720
+  ~ CLOSE: k * Base58_idx = 34423516
+    Difference: 31416013
+  ~ CLOSE: k XOR Base58_idx = 1811751
+    Difference: -1195752
+  ~ CLOSE: k << 1 | 1 = 3623529
+    Difference: 616026
+  ~ CLOSE: k << 2 | 3 = 7247059
+    Difference: 4239556
+  ~ CLOSE: k << 1 + k = 5435292
+    Difference: 2427789
+  ~ CLOSE: k * position + Base58_idx = 39858827
+    Difference: 36851324
+  ~ CLOSE: k * position + ASCII(char) = 39858884
+    Difference: 36851381
+  ~ CLOSE: k * ASCII(char) + position = 137694086
+    Difference: 134686583
+
+Position 23:
+  Character: 'r' (ASCII 114, Base58 index: 49)
+  ~ CLOSE: k + 1 = 3007504
+    Difference: -2591298
+  ~ CLOSE: k + 2 = 3007505
+    Difference: -2591297
+  ~ CLOSE: k * 2 = 6015006
+    Difference: 416204
+  ~ CLOSE: k * 3 = 9022509
+    Difference: 3423707
+  ~ CLOSE: k^2 = 9045074295009
+    Difference: 9045068696207
+  ~ CLOSE: k + position = 3007526
+    Difference: -2591276
+  ~ CLOSE: k * position = 69172569
+    Difference: 63573767
+  ~ CLOSE: k + ASCII(char) = 3007617
+    Difference: -2591185
+  ~ CLOSE: k * ASCII(char) = 342855342
+    Difference: 337256540
+  ~ CLOSE: k XOR ASCII(char) = 3007613
+    Difference: -2591189
+  ~ CLOSE: k + Base58_idx = 3007552
+    Difference: -2591250
+  ~ CLOSE: k * Base58_idx = 147367647
+    Difference: 141768845
+  ~ CLOSE: k XOR Base58_idx = 3007550
+    Difference: -2591252
+  ~ CLOSE: k << 1 | 1 = 6015007
+    Difference: 416205
+  ~ CLOSE: k << 2 | 3 = 12030015
+    Difference: 6431213
+  ~ CLOSE: k << 1 + k = 9022509
+    Difference: 3423707
+  ~ CLOSE: k * position + Base58_idx = 69172618
+    Difference: 63573816
+  ~ CLOSE: k * position + ASCII(char) = 69172683
+    Difference: 63573881
+  ~ CLOSE: k * ASCII(char) + position = 342855365
+    Difference: 337256563
+
+Position 24:
+  Character: '5' (ASCII 53, Base58 index: 4)
+  ~ CLOSE: k + 1 = 5598803
+    Difference: -8829873
+  ~ CLOSE: k + 2 = 5598804
+    Difference: -8829872
+  ~ CLOSE: k * 2 = 11197604
+    Difference: -3231072
+  ~ CLOSE: k * 3 = 16796406
+    Difference: 2367730
+  ~ CLOSE: k^2 = 31346583835204
+    Difference: 31346569406528
+  ~ CLOSE: k + position = 5598826
+    Difference: -8829850
+  ~ CLOSE: k * position = 134371248
+    Difference: 119942572
+  ~ CLOSE: k + ASCII(char) = 5598855
+    Difference: -8829821
+  ~ CLOSE: k * ASCII(char) = 296736506
+    Difference: 282307830
+  ~ CLOSE: k XOR ASCII(char) = 5598823
+    Difference: -8829853
+  ~ CLOSE: k + Base58_idx = 5598806
+    Difference: -8829870
+  ~ CLOSE: k * Base58_idx = 22395208
+    Difference: 7966532
+  ~ CLOSE: k XOR Base58_idx = 5598806
+    Difference: -8829870
+  ~ CLOSE: k << 1 | 1 = 11197605
+    Difference: -3231071
+  ~ CLOSE: k << 2 | 3 = 22395211
+    Difference: 7966535
+  ~ CLOSE: k << 1 + k = 16796406
+    Difference: 2367730
+  ~ CLOSE: k * position + Base58_idx = 134371252
+    Difference: 119942576
+  ~ CLOSE: k * position + ASCII(char) = 134371301
+    Difference: 119942625
+  ~ CLOSE: k * ASCII(char) + position = 296736530
+    Difference: 282307854
+
+Position 25:
+  Character: 'J' (ASCII 74, Base58 index: 17)
+  ~ CLOSE: k + 1 = 14428677
+    Difference: -18756832
+  ~ CLOSE: k + 2 = 14428678
+    Difference: -18756831
+  ~ CLOSE: k * 2 = 28857352
+    Difference: -4328157
+  ~ CLOSE: k * 3 = 43286028
+    Difference: 10100519
+  ~ CLOSE: k^2 = 208186691112976
+    Difference: 208186657927467
+  ~ CLOSE: k + position = 14428701
+    Difference: -18756808
+  ~ CLOSE: k * position = 360716900
+    Difference: 327531391
+  ~ CLOSE: k + ASCII(char) = 14428750
+    Difference: -18756759
+  ~ CLOSE: k * ASCII(char) = 1067722024
+    Difference: 1034536515
+  ~ CLOSE: k XOR ASCII(char) = 14428750
+    Difference: -18756759
+  ~ CLOSE: k + Base58_idx = 14428693
+    Difference: -18756816
+  ~ CLOSE: k * Base58_idx = 245287492
+    Difference: 212101983
+  ~ CLOSE: k XOR Base58_idx = 14428693
+    Difference: -18756816
+  ~ CLOSE: k << 1 | 1 = 28857353
+    Difference: -4328156
+  ~ CLOSE: k << 2 | 3 = 57714707
+    Difference: 24529198
+  ~ CLOSE: k << 1 + k = 43286028
+    Difference: 10100519
+  ~ CLOSE: k * position + Base58_idx = 360716917
+    Difference: 327531408
+  ~ CLOSE: k * position + ASCII(char) = 360716974
+    Difference: 327531465
+  ~ CLOSE: k * ASCII(char) + position = 1067722049
+    Difference: 1034536540
+
+Position 26:
+  Character: '2' (ASCII 50, Base58 index: 1)
+  ~ CLOSE: k + 1 = 33185510
+    Difference: -21353352
+  ~ CLOSE: k + 2 = 33185511
+    Difference: -21353351
+  ~ CLOSE: k * 2 = 66371018
+    Difference: 11832156
+  ~ CLOSE: k * 3 = 99556527
+    Difference: 45017665
+  ~ CLOSE: k^2 = 1101278007589081
+    Difference: 1101277953050219
+  ~ CLOSE: k + position = 33185535
+    Difference: -21353327
+  ~ CLOSE: k * position = 862823234
+    Difference: 808284372
+  ~ CLOSE: k + ASCII(char) = 33185559
+    Difference: -21353303
+  ~ CLOSE: k * ASCII(char) = 1659275450
+    Difference: 1604736588
+  ~ CLOSE: k XOR ASCII(char) = 33185495
+    Difference: -21353367
+  ~ CLOSE: k + Base58_idx = 33185510
+    Difference: -21353352
+  ~ CLOSE: k * Base58_idx = 33185509
+    Difference: -21353353
+  ~ CLOSE: k XOR Base58_idx = 33185508
+    Difference: -21353354
+  ~ CLOSE: k << 1 | 1 = 66371019
+    Difference: 11832157
+  ~ CLOSE: k << 2 | 3 = 132742039
+    Difference: 78203177
+  ~ CLOSE: k << 1 + k = 99556527
+    Difference: 45017665
+  ~ CLOSE: k * position + Base58_idx = 862823235
+    Difference: 808284373
+  ~ CLOSE: k * position + ASCII(char) = 862823284
+    Difference: 808284422
+  ~ CLOSE: k * ASCII(char) + position = 1659275476
+    Difference: 1604736614
+
+Position 27:
+  Character: '8' (ASCII 56, Base58 index: 7)
+  ~ CLOSE: k + 1 = 54538863
+    Difference: -57411078
+  ~ CLOSE: k + 2 = 54538864
+    Difference: -57411077
+  ~ CLOSE: k * 2 = 109077724
+    Difference: -2872217
+  ~ CLOSE: k * 3 = 163616586
+    Difference: 51666645
+  ~ CLOSE: k^2 = 2974487468255044
+    Difference: 2974487356305103
+  ~ CLOSE: k + position = 54538889
+    Difference: -57411052
+  ~ CLOSE: k * position = 1472549274
+    Difference: 1360599333
+  ~ CLOSE: k + ASCII(char) = 54538918
+    Difference: -57411023
+  ~ CLOSE: k * ASCII(char) = 3054176272
+    Difference: 2942226331
+  ~ CLOSE: k XOR ASCII(char) = 54538838
+    Difference: -57411103
+  ~ CLOSE: k + Base58_idx = 54538869
+    Difference: -57411072
+  ~ CLOSE: k * Base58_idx = 381772034
+    Difference: 269822093
+  ~ CLOSE: k XOR Base58_idx = 54538857
+    Difference: -57411084
+  ~ CLOSE: k << 1 | 1 = 109077725
+    Difference: -2872216
+  ~ CLOSE: k << 2 | 3 = 218155451
+    Difference: 106205510
+  ~ CLOSE: k << 1 + k = 163616586
+    Difference: 51666645
+  ~ CLOSE: k * position + Base58_idx = 1472549281
+    Difference: 1360599340
+  ~ CLOSE: k * position + ASCII(char) = 1472549330
+    Difference: 1360599389
+  ~ CLOSE: k * ASCII(char) + position = 3054176299
+    Difference: 2942226358
+
+Position 28:
+  Character: 'H' (ASCII 72, Base58 index: 16)
+  ~ CLOSE: k + 1 = 111949942
+    Difference: -115684466
+  ~ CLOSE: k + 2 = 111949943
+    Difference: -115684465
+  ~ CLOSE: k * 2 = 223899882
+    Difference: -3734526
+  ~ CLOSE: k * 3 = 335849823
+    Difference: 108215415
+  ~ CLOSE: k^2 = 12532789289903481
+    Difference: 12532789062269073
+  ~ CLOSE: k + position = 111949969
+    Difference: -115684439
+  ~ CLOSE: k * position = 3134598348
+    Difference: 2906963940
+  ~ CLOSE: k + ASCII(char) = 111950013
+    Difference: -115684395
+  ~ CLOSE: k * ASCII(char) = 8060395752
+    Difference: 7832761344
+  ~ CLOSE: k XOR ASCII(char) = 111949885
+    Difference: -115684523
+  ~ CLOSE: k + Base58_idx = 111949957
+    Difference: -115684451
+  ~ CLOSE: k * Base58_idx = 1791199056
+    Difference: 1563564648
+  ~ CLOSE: k XOR Base58_idx = 111949925
+    Difference: -115684483
+  ~ CLOSE: k << 1 | 1 = 223899883
+    Difference: -3734525
+  ~ CLOSE: k << 2 | 3 = 447799767
+    Difference: 220165359
+  ~ CLOSE: k << 1 + k = 335849823
+    Difference: 108215415
+  ~ CLOSE: k * position + Base58_idx = 3134598364
+    Difference: 2906963956
+  ~ CLOSE: k * position + ASCII(char) = 3134598420
+    Difference: 2906964012
+  ~ CLOSE: k * ASCII(char) + position = 8060395780
+    Difference: 7832761372
+
+Position 29:
+  Character: 'L' (ASCII 76, Base58 index: 19)
+  ~ CLOSE: k + 1 = 227634409
+    Difference: -173074485
+  ~ CLOSE: k + 2 = 227634410
+    Difference: -173074484
+  ~ CLOSE: k * 2 = 455268816
+    Difference: 54559922
+  ~ CLOSE: k * 3 = 682903224
+    Difference: 282194330
+  ~ CLOSE: k^2 = 51817423705510464
+    Difference: 51817423304801570
+  ~ CLOSE: k + position = 227634437
+    Difference: -173074457
+  ~ CLOSE: k * position = 6601397832
+    Difference: 6200688938
+  ~ CLOSE: k + ASCII(char) = 227634484
+    Difference: -173074410
+  ~ CLOSE: k * ASCII(char) = 17300215008
+    Difference: 16899506114
+  ~ CLOSE: k XOR ASCII(char) = 227634340
+    Difference: -173074554
+  ~ CLOSE: k + Base58_idx = 227634427
+    Difference: -173074467
+  ~ CLOSE: k * Base58_idx = 4325053752
+    Difference: 3924344858
+  ~ CLOSE: k XOR Base58_idx = 227634427
+    Difference: -173074467
+  ~ CLOSE: k << 1 | 1 = 455268817
+    Difference: 54559923
+  ~ CLOSE: k << 2 | 3 = 910537635
+    Difference: 509828741
+  ~ CLOSE: k << 1 + k = 682903224
+    Difference: 282194330
+  ~ CLOSE: k * position + Base58_idx = 6601397851
+    Difference: 6200688957
+  ~ CLOSE: k * position + ASCII(char) = 6601397908
+    Difference: 6200689014
+  ~ CLOSE: k * ASCII(char) + position = 17300215037
+    Difference: 16899506143
+
+Position 30:
+  Character: 'F' (ASCII 70, Base58 index: 14)
+  ~ CLOSE: k + 1 = 400708895
+    Difference: -632453189
+  ~ CLOSE: k + 2 = 400708896
+    Difference: -632453188
+  ~ CLOSE: k * 2 = 801417788
+    Difference: -231744296
+  ~ CLOSE: k * 3 = 1202126682
+    Difference: 168964598
+  ~ CLOSE: k^2 = 160567617730703236
+    Difference: 160567616697541152
+  ~ CLOSE: k + position = 400708924
+    Difference: -632453160
+  ~ CLOSE: k * position = 12021266820
+    Difference: 10988104736
+  ~ CLOSE: k + ASCII(char) = 400708964
+    Difference: -632453120
+  ~ CLOSE: k * ASCII(char) = 28049622580
+    Difference: 27016460496
+  ~ CLOSE: k XOR ASCII(char) = 400708952
+    Difference: -632453132
+  ~ CLOSE: k + Base58_idx = 400708908
+    Difference: -632453176
+  ~ CLOSE: k * Base58_idx = 5609924516
+    Difference: 4576762432
+  ~ CLOSE: k XOR Base58_idx = 400708880
+    Difference: -632453204
+  ~ CLOSE: k << 1 | 1 = 801417789
+    Difference: -231744295
+  ~ CLOSE: k << 2 | 3 = 1602835579
+    Difference: 569673495
+  ~ CLOSE: k << 1 + k = 1202126682
+    Difference: 168964598
+  ~ CLOSE: k * position + Base58_idx = 12021266834
+    Difference: 10988104750
+  ~ CLOSE: k * position + ASCII(char) = 12021266890
+    Difference: 10988104806
+  ~ CLOSE: k * ASCII(char) + position = 28049622610
+    Difference: 27016460526
+
+Position 31:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 1033162085
+    Difference: -1069226466
+  ~ CLOSE: k + 2 = 1033162086
+    Difference: -1069226465
+  ~ CLOSE: k * 2 = 2066324168
+    Difference: -36064383
+  ~ CLOSE: k * 3 = 3099486252
+    Difference: 997097701
+  ~ CLOSE: k^2 = 1067423891815223056
+    Difference: 1067423889712834505
+  ~ CLOSE: k + position = 1033162115
+    Difference: -1069226436
+  ~ CLOSE: k * position = 32028024604
+    Difference: 29925636053
+  ~ CLOSE: k + ASCII(char) = 1033162164
+    Difference: -1069226387
+  ~ CLOSE: k * ASCII(char) = 82652966720
+    Difference: 80550578169
+  ~ CLOSE: k XOR ASCII(char) = 1033162036
+    Difference: -1069226515
+  ~ CLOSE: k + Base58_idx = 1033162106
+    Difference: -1069226445
+  ~ CLOSE: k * Base58_idx = 22729565848
+    Difference: 20627177297
+  ~ CLOSE: k XOR Base58_idx = 1033162098
+    Difference: -1069226453
+  ~ CLOSE: k << 1 | 1 = 2066324169
+    Difference: -36064382
+  ~ CLOSE: k << 2 | 3 = 4132648339
+    Difference: 2030259788
+  ~ CLOSE: k << 1 + k = 3099486252
+    Difference: 997097701
+  ~ CLOSE: k * position + Base58_idx = 32028024626
+    Difference: 29925636075
+  ~ CLOSE: k * position + ASCII(char) = 32028024684
+    Difference: 29925636133
+  ~ CLOSE: k * ASCII(char) + position = 82652966751
+    Difference: 80550578200
+
+Position 32:
+  Character: 'W' (ASCII 87, Base58 index: 29)
+  ~ CLOSE: k + 1 = 2102388552
+    Difference: -991084262
+  ~ CLOSE: k + 2 = 2102388553
+    Difference: -991084261
+  ~ CLOSE: k * 2 = 4204777102
+    Difference: 1111304288
+  ~ CLOSE: k * 3 = 6307165653
+    Difference: 3213692839
+  ~ CLOSE: k^2 = 4420037619375879601
+    Difference: 4420037616282406787
+  ~ CLOSE: k + position = 2102388583
+    Difference: -991084231
+  ~ CLOSE: k * position = 67276433632
+    Difference: 64182960818
+  ~ CLOSE: k + ASCII(char) = 2102388638
+    Difference: -991084176
+  ~ CLOSE: k * ASCII(char) = 182907803937
+    Difference: 179814331123
+  ~ CLOSE: k XOR ASCII(char) = 2102388496
+    Difference: -991084318
+  ~ CLOSE: k + Base58_idx = 2102388580
+    Difference: -991084234
+  ~ CLOSE: k * Base58_idx = 60969267979
+    Difference: 57875795165
+  ~ CLOSE: k XOR Base58_idx = 2102388570
+    Difference: -991084244
+  ~ CLOSE: k << 1 | 1 = 4204777103
+    Difference: 1111304289
+  ~ CLOSE: k << 2 | 3 = 8409554207
+    Difference: 5316081393
+  ~ CLOSE: k << 1 + k = 6307165653
+    Difference: 3213692839
+  ~ CLOSE: k * position + Base58_idx = 67276433661
+    Difference: 64182960847
+  ~ CLOSE: k * position + ASCII(char) = 67276433719
+    Difference: 64182960905
+  ~ CLOSE: k * ASCII(char) + position = 182907803969
+    Difference: 179814331155
+
+Position 33:
+  Character: 'B' (ASCII 66, Base58 index: 10)
+  ~ CLOSE: k + 1 = 3093472815
+    Difference: 251002199
+  ~ CLOSE: k + 2 = 3093472816
+    Difference: 251002200
+  ~ CLOSE: k * 2 = 6186945628
+    Difference: 3344475012
+  ~ CLOSE: k * 3 = 9280418442
+    Difference: 6437947826
+  ~ CLOSE: k^2 = 9569574050957078596
+    Difference: 9569574048114607980
+  ~ CLOSE: k + position = 3093472847
+    Difference: 251002231
+  ~ CLOSE: k * position = 102084602862
+    Difference: 99242132246
+  ~ CLOSE: k + ASCII(char) = 3093472880
+    Difference: 251002264
+  ~ CLOSE: k * ASCII(char) = 204169205724
+    Difference: 201326735108
+  ~ CLOSE: k XOR ASCII(char) = 3093472876
+    Difference: 251002260
+  ~ CLOSE: k + Base58_idx = 3093472824
+    Difference: 251002208
+  ~ CLOSE: k * Base58_idx = 30934728140
+    Difference: 28092257524
+  ~ CLOSE: k XOR Base58_idx = 3093472804
+    Difference: 251002188
+  ~ CLOSE: k << 1 | 1 = 6186945629
+    Difference: 3344475013
+  ~ CLOSE: k << 2 | 3 = 12373891259
+    Difference: 9531420643
+  ~ CLOSE: k << 1 + k = 9280418442
+    Difference: 6437947826
+  ~ CLOSE: k * position + Base58_idx = 102084602872
+    Difference: 99242132256
+  ~ CLOSE: k * position + ASCII(char) = 102084602928
+    Difference: 99242132312
+  ~ CLOSE: k * ASCII(char) + position = 204169205757
+    Difference: 201326735141
+
+Position 34:
+  Character: 'i' (ASCII 105, Base58 index: 41)
+  ~ CLOSE: k + 1 = 2842470617
+    Difference: 1594300348
+  ~ CLOSE: k + 2 = 2842470618
+    Difference: 1594300349
+  ~ CLOSE: k * 2 = 5684941232
+    Difference: 4436770963
+  ~ CLOSE: k * 3 = 8527411848
+    Difference: 7279241579
+  ~ CLOSE: k^2 = 8079639202823419456
+    Difference: 8079639201575249187
+  ~ CLOSE: k + position = 2842470650
+    Difference: 1594300381
+  ~ CLOSE: k * position = 96644000944
+    Difference: 95395830675
+  ~ CLOSE: k + ASCII(char) = 2842470721
+    Difference: 1594300452
+  ~ CLOSE: k * ASCII(char) = 298459414680
+    Difference: 297211244411
+  ~ CLOSE: k XOR ASCII(char) = 2842470577
+    Difference: 1594300308
+  ~ CLOSE: k + Base58_idx = 2842470657
+    Difference: 1594300388
+  ~ CLOSE: k * Base58_idx = 116541295256
+    Difference: 115293124987
+  ~ CLOSE: k XOR Base58_idx = 2842470641
+    Difference: 1594300372
+  ~ CLOSE: k << 1 | 1 = 5684941233
+    Difference: 4436770964
+  ~ CLOSE: k << 2 | 3 = 11369882467
+    Difference: 10121712198
+  ~ CLOSE: k << 1 + k = 8527411848
+    Difference: 7279241579
+  ~ CLOSE: k * position + Base58_idx = 96644000985
+    Difference: 95395830716
+  ~ CLOSE: k * position + ASCII(char) = 96644001049
+    Difference: 95395830780
+  ~ CLOSE: k * ASCII(char) + position = 298459414714
+    Difference: 297211244445
+
+Position 35:
+  Character: '4' (ASCII 52, Base58 index: 3)
+  ~ CLOSE: k + 1 = 1248170270
+    Difference: -1684832338
+  ~ CLOSE: k + 2 = 1248170271
+    Difference: -1684832337
+  ~ CLOSE: k * 2 = 2496340538
+    Difference: -436662070
+  ~ CLOSE: k * 3 = 3744510807
+    Difference: 811508199
+  ~ CLOSE: k^2 = 1557929020415532361
+    Difference: 1557929017482529753
+  ~ CLOSE: k + position = 1248170304
+    Difference: -1684832304
+  ~ CLOSE: k * position = 43685959415
+    Difference: 40752956807
+  ~ CLOSE: k + ASCII(char) = 1248170321
+    Difference: -1684832287
+  ~ CLOSE: k * ASCII(char) = 64904853988
+    Difference: 61971851380
+  ~ CLOSE: k XOR ASCII(char) = 1248170281
+    Difference: -1684832327
+  ~ CLOSE: k + Base58_idx = 1248170272
+    Difference: -1684832336
+  ~ CLOSE: k * Base58_idx = 3744510807
+    Difference: 811508199
+  ~ CLOSE: k XOR Base58_idx = 1248170270
+    Difference: -1684832338
+  ~ CLOSE: k << 1 | 1 = 2496340539
+    Difference: -436662069
+  ~ CLOSE: k << 2 | 3 = 4992681079
+    Difference: 2059678471
+  ~ CLOSE: k << 1 + k = 3744510807
+    Difference: 811508199
+  ~ CLOSE: k * position + Base58_idx = 43685959418
+    Difference: 40752956810
+  ~ CLOSE: k * position + ASCII(char) = 43685959467
+    Difference: 40752956859
+  ~ CLOSE: k * ASCII(char) + position = 64904854023
+    Difference: 61971851415
+
+Position 36:
+  Character: 'H' (ASCII 72, Base58 index: 16)
+  ~ CLOSE: k + 1 = 2933002609
+    Difference: -39454767371
+  ~ CLOSE: k + 2 = 2933002610
+    Difference: -39454767370
+  ~ CLOSE: k * 2 = 5866005216
+    Difference: -36521764764
+  ~ CLOSE: k * 3 = 8799007824
+    Difference: -33588762156
+  ~ CLOSE: k^2 = 8602504298534801664
+    Difference: 8602504256147031684
+  ~ CLOSE: k + position = 2933002644
+    Difference: -39454767336
+  ~ CLOSE: k * position = 105588093888
+    Difference: 63200323908
+  ~ CLOSE: k + ASCII(char) = 2933002680
+    Difference: -39454767300
+  ~ CLOSE: k * ASCII(char) = 211176187776
+    Difference: 168788417796
+  ~ CLOSE: k XOR ASCII(char) = 2933002552
+    Difference: -39454767428
+  ~ CLOSE: k + Base58_idx = 2933002624
+    Difference: -39454767356
+  ~ CLOSE: k * Base58_idx = 46928041728
+    Difference: 4540271748
+  ~ CLOSE: k XOR Base58_idx = 2933002592
+    Difference: -39454767388
+  ~ CLOSE: k << 1 | 1 = 5866005217
+    Difference: -36521764763
+  ~ CLOSE: k << 2 | 3 = 11732010435
+    Difference: -30655759545
+  ~ CLOSE: k << 1 + k = 8799007824
+    Difference: -33588762156
+  ~ CLOSE: k * position + Base58_idx = 105588093904
+    Difference: 63200323924
+  ~ CLOSE: k * position + ASCII(char) = 105588093960
+    Difference: 63200323980
+  ~ CLOSE: k * ASCII(char) + position = 211176187812
+    Difference: 168788417832
+
+Position 37:
+  Character: 'E' (ASCII 69, Base58 index: 13)
+  ~ CLOSE: k + 1 = 42387769981
+    Difference: -57863790614
+  ~ CLOSE: k + 2 = 42387769982
+    Difference: -57863790613
+  ~ CLOSE: k * 2 = 84775539960
+    Difference: -15476020635
+  ~ CLOSE: k * 3 = 127163309940
+    Difference: 26911749345
+  ~ CLOSE: k^2 = 1796723043877389200400
+    Difference: 1796723043777137639805
+  ~ CLOSE: k + position = 42387770017
+    Difference: -57863790578
+  ~ CLOSE: k * position = 1568347489260
+    Difference: 1468095928665
+  ~ CLOSE: k + ASCII(char) = 42387770049
+    Difference: -57863790546
+  ~ CLOSE: k * ASCII(char) = 2924756128620
+    Difference: 2824504568025
+  ~ CLOSE: k XOR ASCII(char) = 42387769913
+    Difference: -57863790682
+  ~ CLOSE: k + Base58_idx = 42387769993
+    Difference: -57863790602
+  ~ CLOSE: k * Base58_idx = 551041009740
+    Difference: 450789449145
+  ~ CLOSE: k XOR Base58_idx = 42387769969
+    Difference: -57863790626
+  ~ CLOSE: k << 1 | 1 = 84775539961
+    Difference: -15476020634
+  ~ CLOSE: k << 2 | 3 = 169551079923
+    Difference: 69299519328
+  ~ CLOSE: k << 1 + k = 127163309940
+    Difference: 26911749345
+  ~ CLOSE: k * position + Base58_idx = 1568347489273
+    Difference: 1468095928678
+  ~ CLOSE: k * position + ASCII(char) = 1568347489329
+    Difference: 1468095928734
+  ~ CLOSE: k * ASCII(char) + position = 2924756128657
+    Difference: 2824504568062
+
+Position 38:
+  Character: '2' (ASCII 50, Base58 index: 1)
+  ~ CLOSE: k + 1 = 100251560596
+    Difference: -46719975996
+  ~ CLOSE: k + 2 = 100251560597
+    Difference: -46719975995
+  ~ CLOSE: k * 2 = 200503121190
+    Difference: 53531584598
+  ~ CLOSE: k * 3 = 300754681785
+    Difference: 153783145193
+  ~ CLOSE: k^2 = 10050375401732956754025
+    Difference: 10050375401585985217433
+  ~ CLOSE: k + position = 100251560633
+    Difference: -46719975959
+  ~ CLOSE: k * position = 3809559302610
+    Difference: 3662587766018
+  ~ CLOSE: k + ASCII(char) = 100251560645
+    Difference: -46719975947
+  ~ CLOSE: k * ASCII(char) = 5012578029750
+    Difference: 4865606493158
+  ~ CLOSE: k XOR ASCII(char) = 100251560609
+    Difference: -46719975983
+  ~ CLOSE: k + Base58_idx = 100251560596
+    Difference: -46719975996
+  ~ CLOSE: k * Base58_idx = 100251560595
+    Difference: -46719975997
+  ~ CLOSE: k XOR Base58_idx = 100251560594
+    Difference: -46719975998
+  ~ CLOSE: k << 1 | 1 = 200503121191
+    Difference: 53531584599
+  ~ CLOSE: k << 2 | 3 = 401006242383
+    Difference: 254034705791
+  ~ CLOSE: k << 1 + k = 300754681785
+    Difference: 153783145193
+  ~ CLOSE: k * position + Base58_idx = 3809559302611
+    Difference: 3662587766019
+  ~ CLOSE: k * position + ASCII(char) = 3809559302660
+    Difference: 3662587766068
+  ~ CLOSE: k * ASCII(char) + position = 5012578029788
+    Difference: 4865606493196
+
+Position 39:
+  Character: 'C' (ASCII 67, Base58 index: 11)
+  ~ CLOSE: k + 1 = 146971536593
+    Difference: -176753432344
+  ~ CLOSE: k + 2 = 146971536594
+    Difference: -176753432343
+  ~ CLOSE: k * 2 = 293943073184
+    Difference: -29781895753
+  ~ CLOSE: k * 3 = 440914609776
+    Difference: 117189640839
+  ~ CLOSE: k^2 = 21600632568213594974464
+    Difference: 21600632567889870005527
+  ~ CLOSE: k + position = 146971536631
+    Difference: -176753432306
+  ~ CLOSE: k * position = 5731889927088
+    Difference: 5408164958151
+  ~ CLOSE: k + ASCII(char) = 146971536659
+    Difference: -176753432278
+  ~ CLOSE: k * ASCII(char) = 9847092951664
+    Difference: 9523367982727
+  ~ CLOSE: k XOR ASCII(char) = 146971536531
+    Difference: -176753432406
+  ~ CLOSE: k + Base58_idx = 146971536603
+    Difference: -176753432334
+  ~ CLOSE: k * Base58_idx = 1616686902512
+    Difference: 1292961933575
+  ~ CLOSE: k XOR Base58_idx = 146971536603
+    Difference: -176753432334
+  ~ CLOSE: k << 1 | 1 = 293943073185
+    Difference: -29781895752
+  ~ CLOSE: k << 2 | 3 = 587886146371
+    Difference: 264161177434
+  ~ CLOSE: k << 1 + k = 440914609776
+    Difference: 117189640839
+  ~ CLOSE: k * position + Base58_idx = 5731889927099
+    Difference: 5408164958162
+  ~ CLOSE: k * position + ASCII(char) = 5731889927155
+    Difference: 5408164958218
+  ~ CLOSE: k * ASCII(char) + position = 9847092951703
+    Difference: 9523367982766
+
+Position 40:
+  Character: 'N' (ASCII 78, Base58 index: 21)
+  ~ CLOSE: k + 1 = 323724968938
+    Difference: -679926444012
+  ~ CLOSE: k + 2 = 323724968939
+    Difference: -679926444011
+  ~ CLOSE: k * 2 = 647449937874
+    Difference: -356201475076
+  ~ CLOSE: k * 3 = 971174906811
+    Difference: -32476506139
+  ~ CLOSE: k^2 = 104797855513261614909969
+    Difference: 104797855512257963497019
+  ~ CLOSE: k + position = 323724968977
+    Difference: -679926443973
+  ~ CLOSE: k * position = 12948998757480
+    Difference: 11945347344530
+  ~ CLOSE: k + ASCII(char) = 323724969015
+    Difference: -679926443935
+  ~ CLOSE: k * ASCII(char) = 25250547577086
+    Difference: 24246896164136
+  ~ CLOSE: k XOR ASCII(char) = 323724968871
+    Difference: -679926444079
+  ~ CLOSE: k + Base58_idx = 323724968958
+    Difference: -679926443992
+  ~ CLOSE: k * Base58_idx = 6798224347677
+    Difference: 5794572934727
+  ~ CLOSE: k XOR Base58_idx = 323724968956
+    Difference: -679926443994
+  ~ CLOSE: k << 1 | 1 = 647449937875
+    Difference: -356201475075
+  ~ CLOSE: k << 2 | 3 = 1294899875751
+    Difference: 291248462801
+  ~ CLOSE: k << 1 + k = 971174906811
+    Difference: -32476506139
+  ~ CLOSE: k * position + Base58_idx = 12948998757501
+    Difference: 11945347344551
+  ~ CLOSE: k * position + ASCII(char) = 12948998757558
+    Difference: 11945347344608
+  ~ CLOSE: k * ASCII(char) + position = 25250547577126
+    Difference: 24246896164176
+
+Position 41:
+  Character: 'E' (ASCII 69, Base58 index: 13)
+  ~ CLOSE: k + 1 = 1003651412951
+    Difference: -454600792196
+  ~ CLOSE: k + 2 = 1003651412952
+    Difference: -454600792195
+  ~ CLOSE: k * 2 = 2007302825900
+    Difference: 549050620753
+  ~ CLOSE: k * 3 = 3010954238850
+    Difference: 1552702033703
+  ~ CLOSE: k^2 = 1007316158716531427702500
+    Difference: 1007316158715073175497353
+  ~ CLOSE: k + position = 1003651412991
+    Difference: -454600792156
+  ~ CLOSE: k * position = 41149707930950
+    Difference: 39691455725803
+  ~ CLOSE: k + ASCII(char) = 1003651413019
+    Difference: -454600792128
+  ~ CLOSE: k * ASCII(char) = 69251947493550
+    Difference: 67793695288403
+  ~ CLOSE: k XOR ASCII(char) = 1003651412883
+    Difference: -454600792264
+  ~ CLOSE: k + Base58_idx = 1003651412963
+    Difference: -454600792184
+  ~ CLOSE: k * Base58_idx = 13047468368350
+    Difference: 11589216163203
+  ~ CLOSE: k XOR Base58_idx = 1003651412955
+    Difference: -454600792192
+  ~ CLOSE: k << 1 | 1 = 2007302825901
+    Difference: 549050620754
+  ~ CLOSE: k << 2 | 3 = 4014605651803
+    Difference: 2556353446656
+  ~ CLOSE: k << 1 + k = 3010954238850
+    Difference: 1552702033703
+  ~ CLOSE: k * position + Base58_idx = 41149707930963
+    Difference: 39691455725816
+  ~ CLOSE: k * position + ASCII(char) = 41149707931019
+    Difference: 39691455725872
+  ~ CLOSE: k * ASCII(char) + position = 69251947493591
+    Difference: 67793695288444
+
+Position 42:
+  Character: '3' (ASCII 51, Base58 index: 2)
+  ~ CLOSE: k + 1 = 1458252205148
+    Difference: -1437122347315
+  ~ CLOSE: k + 2 = 1458252205149
+    Difference: -1437122347314
+  ~ CLOSE: k * 2 = 2916504410294
+    Difference: 21129857831
+  ~ CLOSE: k * 3 = 4374756615441
+    Difference: 1479382062978
+  ~ CLOSE: k^2 = 2126499493816088173291609
+    Difference: 2126499493813192798739146
+  ~ CLOSE: k + position = 1458252205189
+    Difference: -1437122347274
+  ~ CLOSE: k * position = 61246592616174
+    Difference: 58351218063711
+  ~ CLOSE: k + ASCII(char) = 1458252205198
+    Difference: -1437122347265
+  ~ CLOSE: k * ASCII(char) = 74370862462497
+    Difference: 71475487910034
+  ~ CLOSE: k XOR ASCII(char) = 1458252205160
+    Difference: -1437122347303
+  ~ CLOSE: k + Base58_idx = 1458252205149
+    Difference: -1437122347314
+  ~ CLOSE: k * Base58_idx = 2916504410294
+    Difference: 21129857831
+  ~ CLOSE: k XOR Base58_idx = 1458252205145
+    Difference: -1437122347318
+  ~ CLOSE: k << 1 | 1 = 2916504410295
+    Difference: 21129857832
+  ~ CLOSE: k << 2 | 3 = 5833008820591
+    Difference: 2937634268128
+  ~ CLOSE: k << 1 + k = 4374756615441
+    Difference: 1479382062978
+  ~ CLOSE: k * position + Base58_idx = 61246592616176
+    Difference: 58351218063713
+  ~ CLOSE: k * position + ASCII(char) = 61246592616225
+    Difference: 58351218063762
+  ~ CLOSE: k * ASCII(char) + position = 74370862462539
+    Difference: 71475487910076
+
+Position 43:
+  Character: 'N' (ASCII 78, Base58 index: 21)
+  ~ CLOSE: k + 1 = 2895374552464
+    Difference: -4514436495361
+  ~ CLOSE: k + 2 = 2895374552465
+    Difference: -4514436495360
+  ~ CLOSE: k * 2 = 5790749104926
+    Difference: -1619061942899
+  ~ CLOSE: k * 3 = 8686123657389
+    Difference: 1276312609564
+  ~ CLOSE: k^2 = 8383193799050317539366369
+    Difference: 8383193799042907728318544
+  ~ CLOSE: k + position = 2895374552506
+    Difference: -4514436495319
+  ~ CLOSE: k * position = 124501105755909
+    Difference: 117091294708084
+  ~ CLOSE: k + ASCII(char) = 2895374552541
+    Difference: -4514436495284
+  ~ CLOSE: k * ASCII(char) = 225839215092114
+    Difference: 218429404044289
+  ~ CLOSE: k XOR ASCII(char) = 2895374552513
+    Difference: -4514436495312
+  ~ CLOSE: k + Base58_idx = 2895374552484
+    Difference: -4514436495341
+  ~ CLOSE: k * Base58_idx = 60802865601723
+    Difference: 53393054553898
+  ~ CLOSE: k XOR Base58_idx = 2895374552474
+    Difference: -4514436495351
+  ~ CLOSE: k << 1 | 1 = 5790749104927
+    Difference: -1619061942898
+  ~ CLOSE: k << 2 | 3 = 11581498209855
+    Difference: 4171687162030
+  ~ CLOSE: k << 1 + k = 8686123657389
+    Difference: 1276312609564
+  ~ CLOSE: k * position + Base58_idx = 124501105755930
+    Difference: 117091294708105
+  ~ CLOSE: k * position + ASCII(char) = 124501105755987
+    Difference: 117091294708162
+  ~ CLOSE: k * ASCII(char) + position = 225839215092157
+    Difference: 218429404044332
+
+Position 44:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 7409811047826
+    Difference: -7994950709245
+  ~ CLOSE: k + 2 = 7409811047827
+    Difference: -7994950709244
+  ~ CLOSE: k * 2 = 14819622095650
+    Difference: -585139661421
+  ~ CLOSE: k * 3 = 22229433143475
+    Difference: 6824671386404
+  ~ CLOSE: k^2 = 54905299764469424437230625
+    Difference: 54905299764454019675473554
+  ~ CLOSE: k + position = 7409811047869
+    Difference: -7994950709202
+  ~ CLOSE: k * position = 326031686104300
+    Difference: 310626924347229
+  ~ CLOSE: k + ASCII(char) = 7409811047905
+    Difference: -7994950709166
+  ~ CLOSE: k * ASCII(char) = 592784883826000
+    Difference: 577380122068929
+  ~ CLOSE: k XOR ASCII(char) = 7409811047873
+    Difference: -7994950709198
+  ~ CLOSE: k + Base58_idx = 7409811047847
+    Difference: -7994950709224
+  ~ CLOSE: k * Base58_idx = 163015843052150
+    Difference: 147611081295079
+  ~ CLOSE: k XOR Base58_idx = 7409811047815
+    Difference: -7994950709256
+  ~ CLOSE: k << 1 | 1 = 14819622095651
+    Difference: -585139661420
+  ~ CLOSE: k << 2 | 3 = 29639244191303
+    Difference: 14234482434232
+  ~ CLOSE: k << 1 + k = 22229433143475
+    Difference: 6824671386404
+  ~ CLOSE: k * position + Base58_idx = 326031686104322
+    Difference: 310626924347251
+  ~ CLOSE: k * position + ASCII(char) = 326031686104380
+    Difference: 310626924347309
+  ~ CLOSE: k * ASCII(char) + position = 592784883826044
+    Difference: 577380122068973
+
+Position 45:
+  Character: 'F' (ASCII 70, Base58 index: 14)
+  ~ CLOSE: k + 1 = 15404761757072
+    Difference: -4591701329525
+  ~ CLOSE: k + 2 = 15404761757073
+    Difference: -4591701329524
+  ~ CLOSE: k * 2 = 30809523514142
+    Difference: 10813060427545
+  ~ CLOSE: k * 3 = 46214285271213
+    Difference: 26217822184616
+  ~ CLOSE: k^2 = 237306684792117203218499041
+    Difference: 237306684792097206755412444
+  ~ CLOSE: k + position = 15404761757116
+    Difference: -4591701329481
+  ~ CLOSE: k * position = 693214279068195
+    Difference: 673217815981598
+  ~ CLOSE: k + ASCII(char) = 15404761757141
+    Difference: -4591701329456
+  ~ CLOSE: k * ASCII(char) = 1078333322994970
+    Difference: 1058336859908373
+  ~ CLOSE: k XOR ASCII(char) = 15404761757129
+    Difference: -4591701329468
+  ~ CLOSE: k + Base58_idx = 15404761757085
+    Difference: -4591701329512
+  ~ CLOSE: k * Base58_idx = 215666664598994
+    Difference: 195670201512397
+  ~ CLOSE: k XOR Base58_idx = 15404761757057
+    Difference: -4591701329540
+  ~ CLOSE: k << 1 | 1 = 30809523514143
+    Difference: 10813060427546
+  ~ CLOSE: k << 2 | 3 = 61619047028287
+    Difference: 41622583941690
+  ~ CLOSE: k << 1 + k = 46214285271213
+    Difference: 26217822184616
+  ~ CLOSE: k * position + Base58_idx = 693214279068209
+    Difference: 673217815981612
+  ~ CLOSE: k * position + ASCII(char) = 693214279068265
+    Difference: 673217815981668
+  ~ CLOSE: k * ASCII(char) + position = 1078333322995015
+    Difference: 1058336859908418
+
+Position 46:
+  Character: 'D' (ASCII 68, Base58 index: 12)
+  ~ CLOSE: k + 1 = 19996463086598
+    Difference: -31412207262014
+  ~ CLOSE: k + 2 = 19996463086599
+    Difference: -31412207262013
+  ~ CLOSE: k * 2 = 39992926173194
+    Difference: -11415744175418
+  ~ CLOSE: k * 3 = 59989389259791
+    Difference: 8580718911179
+  ~ CLOSE: k^2 = 399858535973636420321040409
+    Difference: 399858535973585011650691797
+  ~ CLOSE: k + position = 19996463086643
+    Difference: -31412207261969
+  ~ CLOSE: k * position = 919837301983462
+    Difference: 868428631634850
+  ~ CLOSE: k + ASCII(char) = 19996463086665
+    Difference: -31412207261947
+  ~ CLOSE: k * ASCII(char) = 1359759489888596
+    Difference: 1308350819539984
+  ~ CLOSE: k XOR ASCII(char) = 19996463086657
+    Difference: -31412207261955
+  ~ CLOSE: k + Base58_idx = 19996463086609
+    Difference: -31412207262003
+  ~ CLOSE: k * Base58_idx = 239957557039164
+    Difference: 188548886690552
+  ~ CLOSE: k XOR Base58_idx = 19996463086601
+    Difference: -31412207262011
+  ~ CLOSE: k << 1 | 1 = 39992926173195
+    Difference: -11415744175417
+  ~ CLOSE: k << 2 | 3 = 79985852346391
+    Difference: 28577181997779
+  ~ CLOSE: k << 1 + k = 59989389259791
+    Difference: 8580718911179
+  ~ CLOSE: k * position + Base58_idx = 919837301983474
+    Difference: 868428631634862
+  ~ CLOSE: k * position + ASCII(char) = 919837301983530
+    Difference: 868428631634918
+  ~ CLOSE: k * ASCII(char) + position = 1359759489888642
+    Difference: 1308350819540030
+
+Position 47:
+  Character: '2' (ASCII 50, Base58 index: 1)
+  ~ CLOSE: k + 1 = 51408670348613
+    Difference: -68257988765557
+  ~ CLOSE: k + 2 = 51408670348614
+    Difference: -68257988765556
+  ~ CLOSE: k * 2 = 102817340697224
+    Difference: -16849318416946
+  ~ CLOSE: k * 3 = 154226011045836
+    Difference: 34559351931666
+  ~ CLOSE: k^2 = 2642851387012258653610326544
+    Difference: 2642851387012138986951212374
+  ~ CLOSE: k + position = 51408670348659
+    Difference: -68257988765511
+  ~ CLOSE: k * position = 2416207506384764
+    Difference: 2296540847270594
+  ~ CLOSE: k + ASCII(char) = 51408670348662
+    Difference: -68257988765508
+  ~ CLOSE: k * ASCII(char) = 2570433517430600
+    Difference: 2450766858316430
+  ~ CLOSE: k XOR ASCII(char) = 51408670348662
+    Difference: -68257988765508
+  ~ CLOSE: k + Base58_idx = 51408670348613
+    Difference: -68257988765557
+  ~ CLOSE: k * Base58_idx = 51408670348612
+    Difference: -68257988765558
+  ~ CLOSE: k XOR Base58_idx = 51408670348613
+    Difference: -68257988765557
+  ~ CLOSE: k << 1 | 1 = 102817340697225
+    Difference: -16849318416945
+  ~ CLOSE: k << 2 | 3 = 205634681394451
+    Difference: 85968022280281
+  ~ CLOSE: k << 1 + k = 154226011045836
+    Difference: 34559351931666
+  ~ CLOSE: k * position + Base58_idx = 2416207506384765
+    Difference: 2296540847270595
+  ~ CLOSE: k * position + ASCII(char) = 2416207506384814
+    Difference: 2296540847270644
+  ~ CLOSE: k * ASCII(char) + position = 2570433517430647
+    Difference: 2450766858316477
+
+Position 48:
+  Character: 'N' (ASCII 78, Base58 index: 21)
+  ~ CLOSE: k + 1 = 119666659114171
+    Difference: -71540315586272
+  ~ CLOSE: k + 2 = 119666659114172
+    Difference: -71540315586271
+  ~ CLOSE: k * 2 = 239333318228340
+    Difference: 48126343527897
+  ~ CLOSE: k * 3 = 358999977342510
+    Difference: 167793002642067
+  ~ CLOSE: k^2 = 14320109303546965929094788900
+    Difference: 14320109303546774722120088457
+  ~ CLOSE: k + position = 119666659114218
+    Difference: -71540315586225
+  ~ CLOSE: k * position = 5743999637480160
+    Difference: 5552792662779717
+  ~ CLOSE: k + ASCII(char) = 119666659114248
+    Difference: -71540315586195
+  ~ CLOSE: k * ASCII(char) = 9333999410905260
+    Difference: 9142792436204817
+  ~ CLOSE: k XOR ASCII(char) = 119666659114228
+    Difference: -71540315586215
+  ~ CLOSE: k + Base58_idx = 119666659114191
+    Difference: -71540315586252
+  ~ CLOSE: k * Base58_idx = 2512999841397570
+    Difference: 2321792866697127
+  ~ CLOSE: k XOR Base58_idx = 119666659114159
+    Difference: -71540315586284
+  ~ CLOSE: k << 1 | 1 = 239333318228341
+    Difference: 48126343527898
+  ~ CLOSE: k << 2 | 3 = 478666636456683
+    Difference: 287459661756240
+  ~ CLOSE: k << 1 + k = 358999977342510
+    Difference: 167793002642067
+  ~ CLOSE: k * position + Base58_idx = 5743999637480181
+    Difference: 5552792662779738
+  ~ CLOSE: k * position + ASCII(char) = 5743999637480238
+    Difference: 5552792662779795
+  ~ CLOSE: k * ASCII(char) + position = 9333999410905308
+    Difference: 9142792436204865
+
+Position 49:
+  Character: '5' (ASCII 53, Base58 index: 4)
+  ~ CLOSE: k + 1 = 191206974700444
+    Difference: -217911930332081
+  ~ CLOSE: k + 2 = 191206974700445
+    Difference: -217911930332080
+  ~ CLOSE: k * 2 = 382413949400886
+    Difference: -26704955631639
+  ~ CLOSE: k * 3 = 573620924101329
+    Difference: 164502019068804
+  ~ CLOSE: k^2 = 36560107174095849469584396249
+    Difference: 36560107174095440350679363724
+  ~ CLOSE: k + position = 191206974700492
+    Difference: -217911930332033
+  ~ CLOSE: k * position = 9369141760321707
+    Difference: 8960022855289182
+  ~ CLOSE: k + ASCII(char) = 191206974700496
+    Difference: -217911930332029
+  ~ CLOSE: k * ASCII(char) = 10133969659123479
+    Difference: 9724850754090954
+  ~ CLOSE: k XOR ASCII(char) = 191206974700462
+    Difference: -217911930332063
+  ~ CLOSE: k + Base58_idx = 191206974700447
+    Difference: -217911930332078
+  ~ CLOSE: k * Base58_idx = 764827898801772
+    Difference: 355708993769247
+  ~ CLOSE: k XOR Base58_idx = 191206974700447
+    Difference: -217911930332078
+  ~ CLOSE: k << 1 | 1 = 382413949400887
+    Difference: -26704955631638
+  ~ CLOSE: k << 2 | 3 = 764827898801775
+    Difference: 355708993769250
+  ~ CLOSE: k << 1 + k = 573620924101329
+    Difference: 164502019068804
+  ~ CLOSE: k * position + Base58_idx = 9369141760321711
+    Difference: 8960022855289186
+  ~ CLOSE: k * position + ASCII(char) = 9369141760321760
+    Difference: 8960022855289235
+  ~ CLOSE: k * ASCII(char) + position = 10133969659123528
+    Difference: 9724850754091003
+
+Position 50:
+  Character: 'a' (ASCII 97, Base58 index: 33)
+  ~ CLOSE: k + 1 = 409118905032526
+    Difference: -202021591135238
+  ~ CLOSE: k + 2 = 409118905032527
+    Difference: -202021591135237
+  ~ CLOSE: k * 2 = 818237810065050
+    Difference: 207097313897286
+  ~ CLOSE: k * 3 = 1227356715097575
+    Difference: 616216218929811
+  ~ CLOSE: k^2 = 167378278455012209771307875625
+    Difference: 167378278455011598630811707861
+  ~ CLOSE: k + position = 409118905032575
+    Difference: -202021591135189
+  ~ CLOSE: k * position = 20455945251626250
+    Difference: 19844804755458486
+  ~ CLOSE: k + ASCII(char) = 409118905032622
+    Difference: -202021591135142
+  ~ CLOSE: k * ASCII(char) = 39684533788154925
+    Difference: 39073393291987161
+  ~ CLOSE: k XOR ASCII(char) = 409118905032492
+    Difference: -202021591135272
+  ~ CLOSE: k + Base58_idx = 409118905032558
+    Difference: -202021591135206
+  ~ CLOSE: k * Base58_idx = 13500923866073325
+    Difference: 12889783369905561
+  ~ CLOSE: k XOR Base58_idx = 409118905032556
+    Difference: -202021591135208
+  ~ CLOSE: k << 1 | 1 = 818237810065051
+    Difference: 207097313897287
+  ~ CLOSE: k << 2 | 3 = 1636475620130103
+    Difference: 1025335123962339
+  ~ CLOSE: k << 1 + k = 1227356715097575
+    Difference: 616216218929811
+  ~ CLOSE: k * position + Base58_idx = 20455945251626283
+    Difference: 19844804755458519
+  ~ CLOSE: k * position + ASCII(char) = 20455945251626347
+    Difference: 19844804755458583
+  ~ CLOSE: k * ASCII(char) + position = 39684533788154975
+    Difference: 39073393291987211
+
+Position 51:
+  Character: '7' (ASCII 55, Base58 index: 6)
+  ~ CLOSE: k + 1 = 611140496167765
+    Difference: -1447629018986111
+  ~ CLOSE: k + 2 = 611140496167766
+    Difference: -1447629018986110
+  ~ CLOSE: k * 2 = 1222280992335528
+    Difference: -836488522818348
+  ~ CLOSE: k * 3 = 1833421488503292
+    Difference: -225348026650584
+  ~ CLOSE: k^2 = 373492706056180764370032759696
+    Difference: 373492706056178705600517605820
+  ~ CLOSE: k + position = 611140496167815
+    Difference: -1447629018986061
+  ~ CLOSE: k * position = 31168165304555964
+    Difference: 29109395789402088
+  ~ CLOSE: k + ASCII(char) = 611140496167819
+    Difference: -1447629018986057
+  ~ CLOSE: k * ASCII(char) = 33612727289227020
+    Difference: 31553957774073144
+  ~ CLOSE: k XOR ASCII(char) = 611140496167779
+    Difference: -1447629018986097
+  ~ CLOSE: k + Base58_idx = 611140496167770
+    Difference: -1447629018986106
+  ~ CLOSE: k * Base58_idx = 3666842977006584
+    Difference: 1608073461852708
+  ~ CLOSE: k XOR Base58_idx = 611140496167762
+    Difference: -1447629018986114
+  ~ CLOSE: k << 1 | 1 = 1222280992335529
+    Difference: -836488522818347
+  ~ CLOSE: k << 2 | 3 = 2444561984671059
+    Difference: 385792469517183
+  ~ CLOSE: k << 1 + k = 1833421488503292
+    Difference: -225348026650584
+  ~ CLOSE: k * position + Base58_idx = 31168165304555970
+    Difference: 29109395789402094
+  ~ CLOSE: k * position + ASCII(char) = 31168165304556019
+    Difference: 29109395789402143
+  ~ CLOSE: k * ASCII(char) + position = 33612727289227071
+    Difference: 31553957774073195
+
+Position 52:
+  Character: 'c' (ASCII 99, Base58 index: 35)
+  ~ CLOSE: k + 1 = 2058769515153877
+    Difference: -2157726124446823
+  ~ CLOSE: k + 2 = 2058769515153878
+    Difference: -2157726124446822
+  ~ CLOSE: k * 2 = 4117539030307752
+    Difference: -98956609292948
+  ~ CLOSE: k * 3 = 6176308545461628
+    Difference: 1959812905860928
+  ~ CLOSE: k^2 = 4238531916526925660803957823376
+    Difference: 4238531916526921444308318222676
+  ~ CLOSE: k + position = 2058769515153928
+    Difference: -2157726124446772
+  ~ CLOSE: k * position = 107056014788001552
+    Difference: 102839519148400852
+  ~ CLOSE: k + ASCII(char) = 2058769515153975
+    Difference: -2157726124446725
+  ~ CLOSE: k * ASCII(char) = 203818182000233724
+    Difference: 199601686360633024
+  ~ CLOSE: k XOR ASCII(char) = 2058769515153847
+    Difference: -2157726124446853
+  ~ CLOSE: k + Base58_idx = 2058769515153911
+    Difference: -2157726124446789
+  ~ CLOSE: k * Base58_idx = 72056933030385660
+    Difference: 67840437390784960
+  ~ CLOSE: k XOR Base58_idx = 2058769515153911
+    Difference: -2157726124446789
+  ~ CLOSE: k << 1 | 1 = 4117539030307753
+    Difference: -98956609292947
+  ~ CLOSE: k << 2 | 3 = 8235078060615507
+    Difference: 4018582421014807
+  ~ CLOSE: k << 1 + k = 6176308545461628
+    Difference: 1959812905860928
+  ~ CLOSE: k * position + Base58_idx = 107056014788001587
+    Difference: 102839519148400887
+  ~ CLOSE: k * position + ASCII(char) = 107056014788001651
+    Difference: 102839519148400951
+  ~ CLOSE: k * ASCII(char) + position = 203818182000233776
+    Difference: 199601686360633076
+
+Position 53:
+  Character: 'A' (ASCII 65, Base58 index: 9)
+  ~ CLOSE: k + 1 = 4216495639600701
+    Difference: -2547188331877423
+  ~ CLOSE: k + 2 = 4216495639600702
+    Difference: -2547188331877422
+  ~ CLOSE: k * 2 = 8432991279201400
+    Difference: 1669307307723276
+  ~ CLOSE: k * 3 = 12649486918802100
+    Difference: 5885802947323976
+  ~ CLOSE: k^2 = 17778835478771716182055440490000
+    Difference: 17778835478771709418371469011876
+  ~ CLOSE: k + position = 4216495639600753
+    Difference: -2547188331877371
+  ~ CLOSE: k * position = 223474268898837100
+    Difference: 216710584927358976
+  ~ CLOSE: k + ASCII(char) = 4216495639600765
+    Difference: -2547188331877359
+  ~ CLOSE: k * ASCII(char) = 274072216574045500
+    Difference: 267308532602567376
+  ~ CLOSE: k XOR ASCII(char) = 4216495639600765
+    Difference: -2547188331877359
+  ~ CLOSE: k + Base58_idx = 4216495639600709
+    Difference: -2547188331877415
+  ~ CLOSE: k * Base58_idx = 37948460756406300
+    Difference: 31184776784928176
+  ~ CLOSE: k XOR Base58_idx = 4216495639600693
+    Difference: -2547188331877431
+  ~ CLOSE: k << 1 | 1 = 8432991279201401
+    Difference: 1669307307723277
+  ~ CLOSE: k << 2 | 3 = 16865982558402803
+    Difference: 10102298586924679
+  ~ CLOSE: k << 1 + k = 12649486918802100
+    Difference: 5885802947323976
+  ~ CLOSE: k * position + Base58_idx = 223474268898837109
+    Difference: 216710584927358985
+  ~ CLOSE: k * position + ASCII(char) = 223474268898837165
+    Difference: 216710584927359041
+  ~ CLOSE: k * ASCII(char) + position = 274072216574045553
+    Difference: 267308532602567429
+
+Position 54:
+  Character: 'K' (ASCII 75, Base58 index: 18)
+  ~ CLOSE: k + 1 = 6763683971478125
+    Difference: -3210771273018582
+  ~ CLOSE: k + 2 = 6763683971478126
+    Difference: -3210771273018581
+  ~ CLOSE: k * 2 = 13527367942956248
+    Difference: 3552912698459541
+  ~ CLOSE: k * 3 = 20291051914434372
+    Difference: 10316596669937665
+  ~ CLOSE: k^2 = 45747420866030088111129410559376
+    Difference: 45747420866030078136674166062669
+  ~ CLOSE: k + position = 6763683971478178
+    Difference: -3210771273018529
+  ~ CLOSE: k * position = 365238934459818696
+    Difference: 355264479215321989
+  ~ CLOSE: k + ASCII(char) = 6763683971478199
+    Difference: -3210771273018508
+  ~ CLOSE: k * ASCII(char) = 507276297860859300
+    Difference: 497301842616362593
+  ~ CLOSE: k XOR ASCII(char) = 6763683971478055
+    Difference: -3210771273018652
+  ~ CLOSE: k + Base58_idx = 6763683971478142
+    Difference: -3210771273018565
+  ~ CLOSE: k * Base58_idx = 121746311486606232
+    Difference: 111771856242109525
+  ~ CLOSE: k XOR Base58_idx = 6763683971478142
+    Difference: -3210771273018565
+  ~ CLOSE: k << 1 | 1 = 13527367942956249
+    Difference: 3552912698459542
+  ~ CLOSE: k << 2 | 3 = 27054735885912499
+    Difference: 17080280641415792
+  ~ CLOSE: k << 1 + k = 20291051914434372
+    Difference: 10316596669937665
+  ~ CLOSE: k * position + Base58_idx = 365238934459818714
+    Difference: 355264479215322007
+  ~ CLOSE: k * position + ASCII(char) = 365238934459818771
+    Difference: 355264479215322064
+  ~ CLOSE: k * ASCII(char) + position = 507276297860859354
+    Difference: 497301842616362647
+
+Position 55:
+  Character: 'M' (ASCII 77, Base58 index: 20)
+  ~ CLOSE: k + 1 = 9974455244496708
+    Difference: -20070935247372752
+  ~ CLOSE: k + 2 = 9974455244496709
+    Difference: -20070935247372751
+  ~ CLOSE: k * 2 = 19948910488993414
+    Difference: -10096480002876046
+  ~ CLOSE: k * 3 = 29923365733490121
+    Difference: -122024758379339
+  ~ CLOSE: k^2 = 99489757424467863018009733843849
+    Difference: 99489757424467832972619241974389
+  ~ CLOSE: k + position = 9974455244496762
+    Difference: -20070935247372698
+  ~ CLOSE: k * position = 548595038447318885
+    Difference: 518549647955449425
+  ~ CLOSE: k + ASCII(char) = 9974455244496784
+    Difference: -20070935247372676
+  ~ CLOSE: k * ASCII(char) = 768033053826246439
+    Difference: 737987663334376979
+  ~ CLOSE: k XOR ASCII(char) = 9974455244496654
+    Difference: -20070935247372806
+  ~ CLOSE: k + Base58_idx = 9974455244496727
+    Difference: -20070935247372733
+  ~ CLOSE: k * Base58_idx = 199489104889934140
+    Difference: 169443714398064680
+  ~ CLOSE: k XOR Base58_idx = 9974455244496727
+    Difference: -20070935247372733
+  ~ CLOSE: k << 1 | 1 = 19948910488993415
+    Difference: -10096480002876045
+  ~ CLOSE: k << 2 | 3 = 39897820977986831
+    Difference: 9852430486117371
+  ~ CLOSE: k << 1 + k = 29923365733490121
+    Difference: -122024758379339
+  ~ CLOSE: k * position + Base58_idx = 548595038447318905
+    Difference: 518549647955449445
+  ~ CLOSE: k * position + ASCII(char) = 548595038447318962
+    Difference: 518549647955449502
+  ~ CLOSE: k * ASCII(char) + position = 768033053826246494
+    Difference: 737987663334377034
+
+Position 56:
+  Character: 'J' (ASCII 74, Base58 index: 17)
+  ~ CLOSE: k + 1 = 30045390491869461
+    Difference: -14173351800807114
+  ~ CLOSE: k + 2 = 30045390491869462
+    Difference: -14173351800807113
+  ~ CLOSE: k * 2 = 60090780983738920
+    Difference: 15872038691062345
+  ~ CLOSE: k * 3 = 90136171475608380
+    Difference: 45917429182931805
+  ~ CLOSE: k^2 = 902725489808919751514365680691600
+    Difference: 902725489808919707295623388015025
+  ~ CLOSE: k + position = 30045390491869516
+    Difference: -14173351800807059
+  ~ CLOSE: k * position = 1682541867544689760
+    Difference: 1638323125252013185
+  ~ CLOSE: k + ASCII(char) = 30045390491869534
+    Difference: -14173351800807041
+  ~ CLOSE: k * ASCII(char) = 2223358896398340040
+    Difference: 2179140154105663465
+  ~ CLOSE: k XOR ASCII(char) = 30045390491869534
+    Difference: -14173351800807041
+  ~ CLOSE: k + Base58_idx = 30045390491869477
+    Difference: -14173351800807098
+  ~ CLOSE: k * Base58_idx = 510771638361780820
+    Difference: 466552896069104245
+  ~ CLOSE: k XOR Base58_idx = 30045390491869445
+    Difference: -14173351800807130
+  ~ CLOSE: k << 1 | 1 = 60090780983738921
+    Difference: 15872038691062346
+  ~ CLOSE: k << 2 | 3 = 120181561967477843
+    Difference: 75962819674801268
+  ~ CLOSE: k << 1 + k = 90136171475608380
+    Difference: 45917429182931805
+  ~ CLOSE: k * position + Base58_idx = 1682541867544689777
+    Difference: 1638323125252013202
+  ~ CLOSE: k * position + ASCII(char) = 1682541867544689834
+    Difference: 1638323125252013259
+  ~ CLOSE: k * ASCII(char) + position = 2223358896398340096
+    Difference: 2179140154105663521
+
+Position 57:
+  Character: 'H' (ASCII 72, Base58 index: 16)
+  ~ CLOSE: k + 1 = 44218742292676576
+    Difference: -94027016618169916
+  ~ CLOSE: k + 2 = 44218742292676577
+    Difference: -94027016618169915
+  ~ CLOSE: k * 2 = 88437484585353150
+    Difference: -49808274325493342
+  ~ CLOSE: k * 3 = 132656226878029725
+    Difference: -5589532032816767
+  ~ CLOSE: k^2 = 1955297169946144004396877553730625
+    Difference: 1955297169946143866151118642884133
+  ~ CLOSE: k + position = 44218742292676632
+    Difference: -94027016618169860
+  ~ CLOSE: k * position = 2520468310682564775
+    Difference: 2382222551771718283
+  ~ CLOSE: k + ASCII(char) = 44218742292676647
+    Difference: -94027016618169845
+  ~ CLOSE: k * ASCII(char) = 3183749445072713400
+    Difference: 3045503686161866908
+  ~ CLOSE: k XOR ASCII(char) = 44218742292676503
+    Difference: -94027016618169989
+  ~ CLOSE: k + Base58_idx = 44218742292676591
+    Difference: -94027016618169901
+  ~ CLOSE: k * Base58_idx = 707499876682825200
+    Difference: 569254117771978708
+  ~ CLOSE: k XOR Base58_idx = 44218742292676559
+    Difference: -94027016618169933
+  ~ CLOSE: k << 1 | 1 = 88437484585353151
+    Difference: -49808274325493341
+  ~ CLOSE: k << 2 | 3 = 176874969170706303
+    Difference: 38629210259859811
+  ~ CLOSE: k << 1 + k = 132656226878029725
+    Difference: -5589532032816767
+  ~ CLOSE: k * position + Base58_idx = 2520468310682564791
+    Difference: 2382222551771718299
+  ~ CLOSE: k * position + ASCII(char) = 2520468310682564847
+    Difference: 2382222551771718355
+  ~ CLOSE: k * ASCII(char) + position = 3183749445072713457
+    Difference: 3045503686161866965
+
+Position 58:
+  Character: 'N' (ASCII 78, Base58 index: 21)
+  ~ CLOSE: k + 1 = 138245758910846493
+    Difference: -61730909065495556
+  ~ CLOSE: k + 2 = 138245758910846494
+    Difference: -61730909065495555
+  ~ CLOSE: k * 2 = 276491517821692984
+    Difference: 76514849845350935
+  ~ CLOSE: k * 3 = 414737276732539476
+    Difference: 214760608756197427
+  ~ CLOSE: k^2 = 19111889856835892246003203988706064
+    Difference: 19111889856835892046026536012364015
+  ~ CLOSE: k + position = 138245758910846550
+    Difference: -61730909065495499
+  ~ CLOSE: k * position = 8018254016829096536
+    Difference: 7818277348852754487
+  ~ CLOSE: k + ASCII(char) = 138245758910846570
+    Difference: -61730909065495479
+  ~ CLOSE: k * ASCII(char) = 10783169195046026376
+    Difference: 10583192527069684327
+  ~ CLOSE: k XOR ASCII(char) = 138245758910846546
+    Difference: -61730909065495503
+  ~ CLOSE: k + Base58_idx = 138245758910846513
+    Difference: -61730909065495536
+  ~ CLOSE: k * Base58_idx = 2903160937127776332
+    Difference: 2703184269151434283
+  ~ CLOSE: k XOR Base58_idx = 138245758910846473
+    Difference: -61730909065495576
+  ~ CLOSE: k << 1 | 1 = 276491517821692985
+    Difference: 76514849845350936
+  ~ CLOSE: k << 2 | 3 = 552983035643385971
+    Difference: 353006367667043922
+  ~ CLOSE: k << 1 + k = 414737276732539476
+    Difference: 214760608756197427
+  ~ CLOSE: k * position + Base58_idx = 8018254016829096557
+    Difference: 7818277348852754508
+  ~ CLOSE: k * position + ASCII(char) = 8018254016829096614
+    Difference: 7818277348852754565
+  ~ CLOSE: k * ASCII(char) + position = 10783169195046026434
+    Difference: 10583192527069684385
+
+Position 59:
+  Character: 'g' (ASCII 103, Base58 index: 39)
+  ~ CLOSE: k + 1 = 199976667976342050
+    Difference: -325093716281924141
+  ~ CLOSE: k + 2 = 199976667976342051
+    Difference: -325093716281924140
+  ~ CLOSE: k * 2 = 399953335952684098
+    Difference: -125117048305582093
+  ~ CLOSE: k * 3 = 599930003929026147
+    Difference: 74859619670759956
+  ~ CLOSE: k^2 = 39990667734920147575185162645518401
+    Difference: 39990667734920147050114778387252210
+  ~ CLOSE: k + position = 199976667976342108
+    Difference: -325093716281924083
+  ~ CLOSE: k * position = 11798623410604180891
+    Difference: 11273553026345914700
+  ~ CLOSE: k + ASCII(char) = 199976667976342152
+    Difference: -325093716281924039
+  ~ CLOSE: k * ASCII(char) = 20597596801563231047
+    Difference: 20072526417304964856
+  ~ CLOSE: k XOR ASCII(char) = 199976667976342086
+    Difference: -325093716281924105
+  ~ CLOSE: k + Base58_idx = 199976667976342088
+    Difference: -325093716281924103
+  ~ CLOSE: k * Base58_idx = 7799090051077339911
+    Difference: 7274019666819073720
+  ~ CLOSE: k XOR Base58_idx = 199976667976342022
+    Difference: -325093716281924169
+  ~ CLOSE: k << 1 | 1 = 399953335952684099
+    Difference: -125117048305582092
+  ~ CLOSE: k << 2 | 3 = 799906671905368199
+    Difference: 274836287647102008
+  ~ CLOSE: k << 1 + k = 599930003929026147
+    Difference: 74859619670759956
+  ~ CLOSE: k * position + Base58_idx = 11798623410604180930
+    Difference: 11273553026345914739
+  ~ CLOSE: k * position + ASCII(char) = 11798623410604180994
+    Difference: 11273553026345914803
+  ~ CLOSE: k * ASCII(char) + position = 20597596801563231106
+    Difference: 20072526417304964915
+
+Position 60:
+  Character: 'B' (ASCII 66, Base58 index: 10)
+  ~ CLOSE: k + 1 = 525070384258266192
+    Difference: -609970965961230190
+  ~ CLOSE: k + 2 = 525070384258266193
+    Difference: -609970965961230189
+  ~ CLOSE: k * 2 = 1050140768516532382
+    Difference: -84900581702964000
+  ~ CLOSE: k * 3 = 1575211152774798573
+    Difference: 440169802555302191
+  ~ CLOSE: k^2 = 275698908425123312231876113413648481
+    Difference: 275698908425123311096834763194152099
+  ~ CLOSE: k + position = 525070384258266251
+    Difference: -609970965961230131
+  ~ CLOSE: k * position = 31504223055495971460
+    Difference: 30369181705276475078
+  ~ CLOSE: k + ASCII(char) = 525070384258266257
+    Difference: -609970965961230125
+  ~ CLOSE: k * ASCII(char) = 34654645361045568606
+    Difference: 33519604010826072224
+  ~ CLOSE: k XOR ASCII(char) = 525070384258266125
+    Difference: -609970965961230257
+  ~ CLOSE: k + Base58_idx = 525070384258266201
+    Difference: -609970965961230181
+  ~ CLOSE: k * Base58_idx = 5250703842582661910
+    Difference: 4115662492363165528
+  ~ CLOSE: k XOR Base58_idx = 525070384258266181
+    Difference: -609970965961230201
+  ~ CLOSE: k << 1 | 1 = 1050140768516532383
+    Difference: -84900581702963999
+  ~ CLOSE: k << 2 | 3 = 2100281537033064767
+    Difference: 965240186813568385
+  ~ CLOSE: k << 1 + k = 1575211152774798573
+    Difference: 440169802555302191
+  ~ CLOSE: k * position + Base58_idx = 31504223055495971470
+    Difference: 30369181705276475088
+  ~ CLOSE: k * position + ASCII(char) = 31504223055495971526
+    Difference: 30369181705276475144
+  ~ CLOSE: k * ASCII(char) + position = 34654645361045568666
+    Difference: 33519604010826072284
+
+Position 61:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 1135041350219496383
+    Difference: -290746192399158599
+  ~ CLOSE: k + 2 = 1135041350219496384
+    Difference: -290746192399158598
+  ~ CLOSE: k * 2 = 2270082700438992764
+    Difference: 844295157820337782
+  ~ CLOSE: k * 3 = 3405124050658489146
+    Difference: 1979336508039834164
+  ~ CLOSE: k^2 = 1288318866708097439538970061711089924
+    Difference: 1288318866708097438113182519092434942
+  ~ CLOSE: k + position = 1135041350219496443
+    Difference: -290746192399158539
+  ~ CLOSE: k * position = 69237522363389279302
+    Difference: 67811734820770624320
+  ~ CLOSE: k + ASCII(char) = 1135041350219496462
+    Difference: -290746192399158520
+  ~ CLOSE: k * ASCII(char) = 90803308017559710560
+    Difference: 89377520474941055578
+  ~ CLOSE: k XOR ASCII(char) = 1135041350219496430
+    Difference: -290746192399158552
+  ~ CLOSE: k + Base58_idx = 1135041350219496404
+    Difference: -290746192399158578
+  ~ CLOSE: k * Base58_idx = 24970909704828920404
+    Difference: 23545122162210265422
+  ~ CLOSE: k XOR Base58_idx = 1135041350219496360
+    Difference: -290746192399158622
+  ~ CLOSE: k << 1 | 1 = 2270082700438992765
+    Difference: 844295157820337783
+  ~ CLOSE: k << 2 | 3 = 4540165400877985531
+    Difference: 3114377858259330549
+  ~ CLOSE: k << 1 + k = 3405124050658489146
+    Difference: 1979336508039834164
+  ~ CLOSE: k * position + Base58_idx = 69237522363389279324
+    Difference: 67811734820770624342
+  ~ CLOSE: k * position + ASCII(char) = 69237522363389279382
+    Difference: 67811734820770624400
+  ~ CLOSE: k * ASCII(char) + position = 90803308017559710621
+    Difference: 89377520474941055639
+
+Position 62:
+  Character: 'M' (ASCII 77, Base58 index: 20)
+  ~ CLOSE: k + 1 = 1425787542618654983
+    Difference: -2482584999889167079
+  ~ CLOSE: k + 2 = 1425787542618654984
+    Difference: -2482584999889167078
+  ~ CLOSE: k * 2 = 2851575085237309964
+    Difference: -1056797457270512098
+  ~ CLOSE: k * 3 = 4277362627855964946
+    Difference: 368990085348142884
+  ~ CLOSE: k^2 = 2032870116686542896646402474753420324
+    Difference: 2032870116686542892738029932245598262
+  ~ CLOSE: k + position = 1425787542618655044
+    Difference: -2482584999889167018
+  ~ CLOSE: k * position = 88398827642356608884
+    Difference: 84490455099848786822
+  ~ CLOSE: k + ASCII(char) = 1425787542618655059
+    Difference: -2482584999889167003
+  ~ CLOSE: k * ASCII(char) = 109785640781636433614
+    Difference: 105877268239128611552
+  ~ CLOSE: k XOR ASCII(char) = 1425787542618655051
+    Difference: -2482584999889167011
+  ~ CLOSE: k + Base58_idx = 1425787542618655002
+    Difference: -2482584999889167060
+  ~ CLOSE: k * Base58_idx = 28515750852373099640
+    Difference: 24607378309865277578
+  ~ CLOSE: k XOR Base58_idx = 1425787542618654994
+    Difference: -2482584999889167068
+  ~ CLOSE: k << 1 | 1 = 2851575085237309965
+    Difference: -1056797457270512097
+  ~ CLOSE: k << 2 | 3 = 5703150170474619931
+    Difference: 1794777627966797869
+  ~ CLOSE: k << 1 + k = 4277362627855964946
+    Difference: 368990085348142884
+  ~ CLOSE: k * position + Base58_idx = 88398827642356608904
+    Difference: 84490455099848786842
+  ~ CLOSE: k * position + ASCII(char) = 88398827642356608961
+    Difference: 84490455099848786899
+  ~ CLOSE: k * ASCII(char) + position = 109785640781636433676
+    Difference: 105877268239128611614
+
+Position 63:
+  Character: '9' (ASCII 57, Base58 index: 8)
+  ~ CLOSE: k + 1 = 3908372542507822063
+    Difference: -5084857407016647705
+  ~ CLOSE: k + 2 = 3908372542507822064
+    Difference: -5084857407016647704
+  ~ CLOSE: k * 2 = 7816745085015644124
+    Difference: -1176484864508825644
+  ~ CLOSE: k * 3 = 11725117627523466186
+    Difference: 2731887677998996418
+  ~ CLOSE: k^2 = 15275375931029057370943126454653931844
+    Difference: 15275375931029057361949896505129462076
+  ~ CLOSE: k + position = 3908372542507822125
+    Difference: -5084857407016647643
+  ~ CLOSE: k * position = 246227470177992789906
+    Difference: 237234240228468320138
+  ~ CLOSE: k + ASCII(char) = 3908372542507822119
+    Difference: -5084857407016647649
+  ~ CLOSE: k * ASCII(char) = 222777234922945857534
+    Difference: 213784004973421387766
+  ~ CLOSE: k XOR ASCII(char) = 3908372542507822039
+    Difference: -5084857407016647729
+  ~ CLOSE: k + Base58_idx = 3908372542507822070
+    Difference: -5084857407016647698
+  ~ CLOSE: k * Base58_idx = 31266980340062576496
+    Difference: 22273750390538106728
+  ~ CLOSE: k XOR Base58_idx = 3908372542507822054
+    Difference: -5084857407016647714
+  ~ CLOSE: k << 1 | 1 = 7816745085015644125
+    Difference: -1176484864508825643
+  ~ CLOSE: k << 2 | 3 = 15633490170031288251
+    Difference: 6640260220506818483
+  ~ CLOSE: k << 1 + k = 11725117627523466186
+    Difference: 2731887677998996418
+  ~ CLOSE: k * position + Base58_idx = 246227470177992789914
+    Difference: 237234240228468320146
+  ~ CLOSE: k * position + ASCII(char) = 246227470177992789963
+    Difference: 237234240228468320195
+  ~ CLOSE: k * ASCII(char) + position = 222777234922945857597
+    Difference: 213784004973421387829
+
+Position 64:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 8993229949524469769
+    Difference: -8806437408053766859
+  ~ CLOSE: k + 2 = 8993229949524469770
+    Difference: -8806437408053766858
+  ~ CLOSE: k * 2 = 17986459899048939536
+    Difference: 186792541470702908
+  ~ CLOSE: k * 3 = 26979689848573409304
+    Difference: 9180022490995172676
+  ~ CLOSE: k^2 = 80878184925023897051120432201545973824
+    Difference: 80878184925023897033320764843967737196
+  ~ CLOSE: k + position = 8993229949524469832
+    Difference: -8806437408053766796
+  ~ CLOSE: k * position = 575566716769566065152
+    Difference: 557767049411987828524
+  ~ CLOSE: k + ASCII(char) = 8993229949524469848
+    Difference: -8806437408053766780
+  ~ CLOSE: k * ASCII(char) = 719458395961957581440
+    Difference: 701658728604379344812
+  ~ CLOSE: k XOR ASCII(char) = 8993229949524469848
+    Difference: -8806437408053766780
+  ~ CLOSE: k + Base58_idx = 8993229949524469790
+    Difference: -8806437408053766838
+  ~ CLOSE: k * Base58_idx = 197851058889538334896
+    Difference: 180051391531960098268
+  ~ CLOSE: k XOR Base58_idx = 8993229949524469790
+    Difference: -8806437408053766838
+  ~ CLOSE: k << 1 | 1 = 17986459899048939537
+    Difference: 186792541470702909
+  ~ CLOSE: k << 2 | 3 = 35972919798097879075
+    Difference: 18173252440519642447
+  ~ CLOSE: k << 1 + k = 26979689848573409304
+    Difference: 9180022490995172676
+  ~ CLOSE: k * position + Base58_idx = 575566716769566065174
+    Difference: 557767049411987828546
+  ~ CLOSE: k * position + ASCII(char) = 575566716769566065232
+    Difference: 557767049411987828604
+  ~ CLOSE: k * ASCII(char) + position = 719458395961957581504
+    Difference: 701658728604379344876
+
+Position 65:
+  Character: 'K' (ASCII 75, Base58 index: 18)
+  ~ CLOSE: k + 1 = 17799667357578236629
+    Difference: 5678034119223585390
+  ~ CLOSE: k + 2 = 17799667357578236630
+    Difference: 5678034119223585391
+  ~ CLOSE: k * 2 = 35599334715156473256
+    Difference: 23477701476801822017
+  ~ CLOSE: k * 3 = 53399002072734709884
+    Difference: 41277368834380058645
+  ~ CLOSE: k^2 = 316828158040436204713401061989960810384
+    Difference: 316828158040436204701279428751606159145
+  ~ CLOSE: k + position = 17799667357578236693
+    Difference: 5678034119223585454
+  ~ CLOSE: k * position = 1156978378242585380820
+    Difference: 1144856745004230729581
+  ~ CLOSE: k + ASCII(char) = 17799667357578236703
+    Difference: 5678034119223585464
+  ~ CLOSE: k * ASCII(char) = 1334975051818367747100
+    Difference: 1322853418580013095861
+  ~ CLOSE: k XOR ASCII(char) = 17799667357578236575
+    Difference: 5678034119223585336
+  ~ CLOSE: k + Base58_idx = 17799667357578236646
+    Difference: 5678034119223585407
+  ~ CLOSE: k * Base58_idx = 320394012436408259304
+    Difference: 308272379198053608065
+  ~ CLOSE: k XOR Base58_idx = 17799667357578236614
+    Difference: 5678034119223585375
+  ~ CLOSE: k << 1 | 1 = 35599334715156473257
+    Difference: 23477701476801822018
+  ~ CLOSE: k << 2 | 3 = 71198669430312946515
+    Difference: 59077036191958295276
+  ~ CLOSE: k << 1 + k = 53399002072734709884
+    Difference: 41277368834380058645
+  ~ CLOSE: k * position + Base58_idx = 1156978378242585380838
+    Difference: 1144856745004230729599
+  ~ CLOSE: k * position + ASCII(char) = 1156978378242585380895
+    Difference: 1144856745004230729656
+  ~ CLOSE: k * ASCII(char) + position = 1334975051818367747165
+    Difference: 1322853418580013095926
+
+Position 66:
+  Character: '6' (ASCII 54, Base58 index: 5)
+  ~ CLOSE: k + 1 = 12121633238354651240
+    Difference: 9224994641458005114
+  ~ CLOSE: k + 2 = 12121633238354651241
+    Difference: 9224994641458005115
+  ~ CLOSE: k * 2 = 24243266476709302478
+    Difference: 21346627879812656352
+  ~ CLOSE: k * 3 = 36364899715063953717
+    Difference: 33468261118167307591
+  ~ CLOSE: k^2 = 146933992365184269137246341265324235121
+    Difference: 146933992365184269134349702668427588995
+  ~ CLOSE: k + position = 12121633238354651305
+    Difference: 9224994641458005179
+  ~ CLOSE: k * position = 800027793731406981774
+    Difference: 797131155134510335648
+  ~ CLOSE: k + ASCII(char) = 12121633238354651293
+    Difference: 9224994641458005167
+  ~ CLOSE: k * ASCII(char) = 654568194871151166906
+    Difference: 651671556274254520780
+  ~ CLOSE: k XOR ASCII(char) = 12121633238354651217
+    Difference: 9224994641458005091
+  ~ CLOSE: k + Base58_idx = 12121633238354651244
+    Difference: 9224994641458005118
+  ~ CLOSE: k * Base58_idx = 60608166191773256195
+    Difference: 57711527594876610069
+  ~ CLOSE: k XOR Base58_idx = 12121633238354651234
+    Difference: 9224994641458005108
+  ~ CLOSE: k << 1 | 1 = 24243266476709302479
+    Difference: 21346627879812656353
+  ~ CLOSE: k << 2 | 3 = 48486532953418604959
+    Difference: 45589894356521958833
+  ~ CLOSE: k << 1 + k = 36364899715063953717
+    Difference: 33468261118167307591
+  ~ CLOSE: k * position + Base58_idx = 800027793731406981779
+    Difference: 797131155134510335653
+  ~ CLOSE: k * position + ASCII(char) = 800027793731406981828
+    Difference: 797131155134510335702
+  ~ CLOSE: k * ASCII(char) + position = 654568194871151166972
+    Difference: 651671556274254520846
+
+Tested 1300 formulas across 65 transitions
+Found 8 exact matches
+
+--- Testing Special Operations ---
+
+Position 2, Character 'C' (index 11):
+  × Not doubled at position 2
