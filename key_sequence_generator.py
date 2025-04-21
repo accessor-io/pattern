@@ -1148,12 +1148,18 @@ def generate_sequence_from_rules(max_pos=10):
             print(f"    -> Applied Pos 14 Rule: (key_prev * 2 + 112) % N = 0x{key_current:x}")
 
         elif pos == 15:
-            # Position 15: 'E' -> key = 0x2930, next_key = 0x68cd. Diff = 16285
-            # Rule: key_current = (key_prev * 2 + 5741) % N? (21088 + 5741 = 26829 = 0x68cd. YES!)
-            # Origin of 5741? Not immediately obvious.
-            key_current = (key_prev * 2 + 5741) % N
-            print(f"    -> Applied Pos 15 Rule: (key_prev * 2 + 5741) % N = 0x{key_current:x}")
+            # Position 15: 'E' -> key = 0x2930, next_key = 0x68f3. Diff = 16323 (0x3fC3)
+            # Old Rule: (key_prev * 2 + 5741) % N = 0x68cd (Incorrect)
+            # New Rule: (key_prev + 16323) % N seems to match the known difference.
+            key_current = (key_prev + 16323) % N
+            print(f"    -> Applied Pos 15 Rule: (key_prev + 16323) % N = 0x{key_current:x}")
 
+        elif pos == 16:
+            # Position 16: 'Q' -> key = 0x68f3, next_key = 0xc936. Diff = 24643 (0x6043)
+            # Rule: Try adding the observed difference.
+            key_current = (key_prev + 24643) % N
+            print(f"    -> Applied Pos 16 Rule: (key_prev + 24643) % N = 0x{key_current:x}")
+            
         else:
             # Default/Placeholder for unhandled positions
             print(f"  Position {pos} (Char '{char}'): No specific rule implemented yet.")
