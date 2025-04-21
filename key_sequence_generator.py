@@ -1350,13 +1350,13 @@ def generate_sequence_from_rules(max_pos=10):
             key_current = (key_prev + 8806437408053766860) % N
             # print(f"    -> Applied Pos 64 Rule: (key_prev + 8806437408053766860) % N = 0x{key_current:x}")
         elif pos == 65:
-            # Auto-added Rule: Add diff 0xef85c1c15a4b9b1613f3b628d9cc85b45a65938a7b3529b53c13a085c900146c (115792089237316195423570985008687907852837564279074904382599485107398937908948)
-            key_current = (key_prev + 115792089237316195423570985008687907852837564279074904382599485107398937908948) % N
-            # print(f"    -> Applied Pos 65 Rule: (key_prev + 115792089237316195423570985008687907852837564279074904382599485107398937908948) % N = 0x{key_current:x}")
+            # Auto-added Rule: Add diff 0xef85c1c15a4b9b1613f3b628d9cc85b45a65938a7b3529b53c13a085c900146c (115792089237316195423570985008687907852837564279074904382605163141517910492139)
+            key_current = (key_prev + 115792089237316195423570985008687907852837564279074904382605163141517910492139) % N
+            # print(f"    -> Applied Pos 65 Rule: (key_prev + 115792089237316195423570985008687907852837564279074904382605163141517910492139) % N = 0x{key_current:x}")
         elif pos == 66:
-            # Auto-added Rule: Add diff 0xf18478440d121e7a284c5e3435e1f9d31386819a5e133c3d0296e54f774ce71c (115792089237316195423570985008687907852837564279074904382595938146876703489224)
-            key_current = (key_prev + 115792089237316195423570985008687907852837564279074904382595938146876703489224) % N
-            # print(f"    -> Applied Pos 66 Rule: (key_prev + 115792089237316195423570985008687907852837564279074904382595938146876703489224) % N = 0x{key_current:x}")
+            # Auto-added Rule: Add diff 0xf18478440d121e7a284c5e3435e1f9d31386819a5e133c3d0296e54f774ce71c (115792089237316195423570985008687907852837564279074904382599485107398937908948)
+            key_current = (key_prev + 115792089237316195423570985008687907852837564279074904382599485107398937908948) % N
+            # print(f"    -> Applied Pos 66 Rule: (key_prev + 115792089237316195423570985008687907852837564279074904382599485107398937908948) % N = 0x{key_current:x}")
         elif pos == 67:
             # Auto-added Rule: Add diff 0x1c2525e0f8 (129760305005489610176)
             key_current = (key_prev + 129760305005489610176) % N
@@ -1399,61 +1399,45 @@ def generate_sequence_from_rules(max_pos=10):
 # Update main function to include our new analysis
 if __name__ == "__main__":
     # Analyze the first address derivation (should now use fallback if needed)
-    # analyze_first_address_derivation() # Commented out for generation focus
+    # analyze_first_address_derivation() # Keep commented out
 
     # Analyze general derivation for debugging if needed (optional)
     # analyze_address_derivation()
 
-    # print("\n===== Key Transition Analysis =====\n") # Commented out
+    print("\n===== Key Transition Analysis =====\n") # Re-enable
 
     # Determine the full range for analysis based on known solutions
     # -1 because transitions occur between keys (e.g., 160 keys -> 159 transitions)
-    # full_analysis_range = len(KNOWN_SOLUTIONS) -1
-    # if full_analysis_range < 1:
-    #     print("WARN: Not enough known solutions to analyze transitions.")
-    #     full_analysis_range = 0 # Prevent errors
+    # We only have consecutive keys up to 68, so analyze 67 transitions (1->2 ... 67->68)
+    analysis_range = 68 # Analyze up to the last known consecutive key
+    print(f"Running analysis for transitions up to position {analysis_range}")
 
-    # Call analysis functions with the full range (Commented out for generation focus)
-    # analyze_known_transitions() # This one seems to analyze all available
-    # analyze_differences_between_known_keys(analysis_range=full_analysis_range)
-    # check_transition_formulas(analysis_range=full_analysis_range)
-    # analyze_special_operations(analysis_range=full_analysis_range)
-    # analyze_control_characters(analysis_range=full_analysis_range) # Analyze full string length
+    # Call analysis functions with the specified range
+    analyze_differences_between_known_keys(analysis_range=analysis_range)
+    check_transition_formulas(analysis_range=analysis_range)
+    analyze_special_operations(analysis_range=analysis_range)
+    # analyze_control_characters(analysis_range=analysis_range) # This might not be relevant now
 
-    # print("\n===== End of Analysis =====\n") # Commented out
+    print("\n===== End of Transition Analysis =====\n") # Modified title
 
-    # Additional analysis (might need adjustment) (Commented out for generation focus)
+    # Additional analysis (might need adjustment)
     # print("--- Analyzing Character-Difference Relationships (full sequence) ---")
-    # analyze_diff_char_relationships(analysis_range=full_analysis_range)
+    # analyze_diff_char_relationships(analysis_range=analysis_range)
     # print("End of character-difference analysis")
 
-    # Optional: Generate and print all keys/addresses if needed
-    # generate_keys_and_addresses(KNOWN_SOLUTIONS["1"]["privkey_hex"], len(KNOWN_SOLUTIONS))
-
-    # Example: Analyze transition at a specific position (e.g., position 68)
-    # analyze_transitions(analysis_range=len(KNOWN_SOLUTIONS)-1) # Call the main transition analyzer
-
-    # print("===== End of Position 69 Test =====") # Commented out
-
-    # --- Verify provided details for k_70 --- (Commented out)
-    # pos_to_verify = 70 # Ensure this line correctly assigns 70
-    # print(f"\n===== Verifying Provided Details for Position {pos_to_verify} =====")
-    # if pos_to_verify in KNOWN_SOLUTIONS:
-    #     k_verify = KNOWN_SOLUTIONS[pos_to_verify]
-
-    # --- Generate sequence based on implemented rules ---
-    print("\n===== Attempting Sequence Generation =====")
-    # Note: This function currently only has rules defined up to position 15.
-    # Generation will stop there unless more rules are added to the function.
-    generated_sequence = generate_sequence_from_rules(max_pos=160)
-
-    if generated_sequence:
-        print("\n--- Generated Keys ---")
-        # Sort keys by position before printing
-        for pos in sorted(generated_sequence.keys()):
-             print(f"Position {pos}: {hex(generated_sequence[pos])}")
-        print(f"Total keys generated: {len(generated_sequence)}")
-    else:
-        print("\nGeneration failed or produced no keys.")
+    # --- Generate sequence based on implemented rules --- (Commented out)
+    # print("\n===== Attempting Sequence Generation =====")
+    # # Note: This function currently only has rules defined up to position 15.
+    # # Generation will stop there unless more rules are added to the function.
+    # generated_sequence = generate_sequence_from_rules(max_pos=160)
+    #
+    # if generated_sequence:
+    #     print("\n--- Generated Keys ---")
+    #     # Sort keys by position before printing
+    #     for pos in sorted(generated_sequence.keys()):
+    #          print(f"Position {pos}: {hex(generated_sequence[pos])}")
+    #     print(f"Total keys generated: {len(generated_sequence)}")
+    # else:
+    #     print("\nGeneration failed or produced no keys.")
 
     print("\n===== Script Finished =====")
