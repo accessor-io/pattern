@@ -1146,20 +1146,226 @@ def generate_sequence_from_rules(max_pos=10):
             # Rule k*2+112? 5216*2+112 = 10432+112 = 10544. Yes.
             key_current = (key_prev * 2 + 112) % N
             print(f"    -> Applied Pos 14 Rule: (key_prev * 2 + 112) % N = 0x{key_current:x}")
-
         elif pos == 15:
             # Position 15: 'E' -> key = 0x2930, next_key = 0x68f3. Diff = 16323 (0x3fC3)
             # Old Rule: (key_prev * 2 + 5741) % N = 0x68cd (Incorrect)
             # New Rule: (key_prev + 16323) % N seems to match the known difference.
             key_current = (key_prev + 16323) % N
             print(f"    -> Applied Pos 15 Rule: (key_prev + 16323) % N = 0x{key_current:x}")
-
         elif pos == 16:
             # Position 16: 'Q' -> key = 0x68f3, next_key = 0xc936. Diff = 24643 (0x6043)
             # Rule: Try adding the observed difference.
             key_current = (key_prev + 24643) % N
             print(f"    -> Applied Pos 16 Rule: (key_prev + 24643) % N = 0x{key_current:x}")
-            
+        elif pos == 17:
+            # Auto-added Rule: Add diff 0xad19 (44313)
+            key_current = (key_prev + 44313) % N
+            # print(f"    -> Applied Pos 17 Rule: (key_prev + 44313) % N = 0x{key_current:x}")
+        elif pos == 18:
+            # Auto-added Rule: Add diff 0x191be (102846)
+            key_current = (key_prev + 102846) % N
+            # print(f"    -> Applied Pos 18 Rule: (key_prev + 102846) % N = 0x{key_current:x}")
+        elif pos == 19:
+            # Auto-added Rule: Add diff 0x26c92 (158866)
+            key_current = (key_prev + 158866) % N
+            # print(f"    -> Applied Pos 19 Rule: (key_prev + 158866) % N = 0x{key_current:x}")
+        elif pos == 20:
+            # Auto-added Rule: Add diff 0x7b7b6 (505782)
+            key_current = (key_prev + 505782) % N
+            # print(f"    -> Applied Pos 20 Rule: (key_prev + 505782) % N = 0x{key_current:x}")
+        elif pos == 21:
+            # Auto-added Rule: Add diff 0xe79df (948447)
+            key_current = (key_prev + 948447) % N
+            # print(f"    -> Applied Pos 21 Rule: (key_prev + 948447) % N = 0x{key_current:x}")
+        elif pos == 22:
+            # Auto-added Rule: Add diff 0x123f1b (1195739)
+            key_current = (key_prev + 1195739) % N
+            # print(f"    -> Applied Pos 22 Rule: (key_prev + 1195739) % N = 0x{key_current:x}")
+        elif pos == 23:
+            # Auto-added Rule: Add diff 0x278a43 (2591299)
+            key_current = (key_prev + 2591299) % N
+            # print(f"    -> Applied Pos 23 Rule: (key_prev + 2591299) % N = 0x{key_current:x}")
+        elif pos == 24:
+            # Auto-added Rule: Add diff 0x86bbd8 (8829874)
+            key_current = (key_prev + 8829874) % N
+            # print(f"    -> Applied Pos 24 Rule: (key_prev + 8829874) % N = 0x{key_current:x}")
+        elif pos == 25:
+            # Auto-added Rule: Add diff 0x11e30e1 (18756833)
+            key_current = (key_prev + 18756833) % N
+            # print(f"    -> Applied Pos 25 Rule: (key_prev + 18756833) % N = 0x{key_current:x}")
+        elif pos == 26:
+            # Auto-added Rule: Add diff 0x145c389 (21353353)
+            key_current = (key_prev + 21353353) % N
+            # print(f"    -> Applied Pos 26 Rule: (key_prev + 21353353) % N = 0x{key_current:x}")
+        elif pos == 27:
+            # Auto-added Rule: Add diff 0x36c0607 (57411079)
+            key_current = (key_prev + 57411079) % N
+            # print(f"    -> Applied Pos 27 Rule: (key_prev + 57411079) % N = 0x{key_current:x}")
+        elif pos == 28:
+            # Auto-added Rule: Add diff 0x6e5343b (115684467)
+            key_current = (key_prev + 115684467) % N
+            # print(f"    -> Applied Pos 28 Rule: (key_prev + 115684467) % N = 0x{key_current:x}")
+        elif pos == 29:
+            # Auto-added Rule: Add diff 0xa50e83a (173074486)
+            key_current = (key_prev + 173074486) % N
+            # print(f"    -> Applied Pos 29 Rule: (key_prev + 173074486) % N = 0x{key_current:x}")
+        elif pos == 30:
+            # Auto-added Rule: Add diff 0x25ac0cce (632453190)
+            key_current = (key_prev + 632453190) % N
+            # print(f"    -> Applied Pos 30 Rule: (key_prev + 632453190) % N = 0x{key_current:x}")
+        elif pos == 31:
+            # Auto-added Rule: Add diff 0x3fbcf5e3 (1069226467)
+            key_current = (key_prev + 1069226467) % N
+            # print(f"    -> Applied Pos 31 Rule: (key_prev + 1069226467) % N = 0x{key_current:x}")
+        elif pos == 32:
+            # Auto-added Rule: Add diff 0x3b069b4b (991084263)
+            key_current = (key_prev + 991084263) % N
+            # print(f"    -> Applied Pos 32 Rule: (key_prev + 991084263) % N = 0x{key_current:x}")
+        elif pos == 33:
+            # Auto-added Rule: Add diff 0xee260a69c70b421046cf5a7d14f5c46f82413c1f0f51bd2e1e85b7385527930b (115792089237316195423570985008687907852837564279074904382605163141517910492139)
+            key_current = (key_prev + 115792089237316195423570985008687907852837564279074904382605163141517910492139) % N
+            # print(f"    -> Applied Pos 33 Rule: (key_prev + 115792089237316195423570985008687907852837564279074904382605163141517910492139) % N = 0x{key_current:x}")
+        elif pos == 34:
+            # Auto-added Rule: Add diff 0xfefffffffffedcc089c3e1e8f3c6c0b616582a4e41f4a9793942af3fd986 (115792089237316195423570985008687907852837564279074904382605163141516567193990)
+            key_current = (key_prev + 115792089237316195423570985008687907852837564279074904382605163141516567193990) % N
+            # print(f"    -> Applied Pos 34 Rule: (key_prev + 115792089237316195423570985008687907852837564279074904382605163141516567193990) % N = 0x{key_current:x}")
+        elif pos == 35:
+            # Auto-added Rule: Add diff 0x64652747 (1684832339)
+            key_current = (key_prev + 1684832339) % N
+            # print(f"    -> Applied Pos 35 Rule: (key_prev + 1684832339) % N = 0x{key_current:x}")
+        elif pos == 36:
+            # Auto-added Rule: Add diff 0x92b4d790c (39454767372)
+            key_current = (key_prev + 39454767372) % N
+            # print(f"    -> Applied Pos 36 Rule: (key_prev + 39454767372) % N = 0x{key_current:x}")
+        elif pos == 37:
+            # Auto-added Rule: Add diff 0xd787b941b (57863790615)
+            key_current = (key_prev + 57863790615) % N
+            # print(f"    -> Applied Pos 37 Rule: (key_prev + 57863790615) % N = 0x{key_current:x}")
+        elif pos == 38:
+            # Auto-added Rule: Add diff 0xad6a35d5 (46719975997)
+            key_current = (key_prev + 46719975997) % N
+            # print(f"    -> Applied Pos 38 Rule: (key_prev + 46719975997) % N = 0x{key_current:x}")
+        elif pos == 39:
+            # Auto-added Rule: Add diff 0x294663019 (176753432345)
+            key_current = (key_prev + 176753432345) % N
+            # print(f"    -> Applied Pos 39 Rule: (key_prev + 176753432345) % N = 0x{key_current:x}")
+        elif pos == 40:
+            # Auto-added Rule: Add diff 0x9ea590ad5 (679926444013)
+            key_current = (key_prev + 679926444013) % N
+            # print(f"    -> Applied Pos 40 Rule: (key_prev + 679926444013) % N = 0x{key_current:x}")
+        elif pos == 41:
+            # Auto-added Rule: Add diff 0x698009e4d (454600792197)
+            key_current = (key_prev + 454600792197) % N
+            # print(f"    -> Applied Pos 41 Rule: (key_prev + 454600792197) % N = 0x{key_current:x}")
+        elif pos == 42:
+            # Auto-added Rule: Add diff 0x15234f564 (1437122347316)
+            key_current = (key_prev + 1437122347316) % N
+            # print(f"    -> Applied Pos 42 Rule: (key_prev + 1437122347316) % N = 0x{key_current:x}")
+        elif pos == 43:
+            # Auto-added Rule: Add diff 0x41c379fce (4514436495362)
+            key_current = (key_prev + 4514436495362) % N
+            # print(f"    -> Applied Pos 43 Rule: (key_prev + 4514436495362) % N = 0x{key_current:x}")
+        elif pos == 44:
+            # Auto-added Rule: Add diff 0x74b1647ae (7994950709246)
+            key_current = (key_prev + 7994950709246) % N
+            # print(f"    -> Applied Pos 44 Rule: (key_prev + 7994950709246) % N = 0x{key_current:x}")
+        elif pos == 45:
+            # Auto-added Rule: Add diff 0x42e6c898a (4591701329526)
+            key_current = (key_prev + 4591701329526) % N
+            # print(f"    -> Applied Pos 45 Rule: (key_prev + 4591701329526) % N = 0x{key_current:x}")
+        elif pos == 46:
+            # Auto-added Rule: Add diff 0x2d9400e87 (31412207262015)
+            key_current = (key_prev + 31412207262015) % N
+            # print(f"    -> Applied Pos 46 Rule: (key_prev + 31412207262015) % N = 0x{key_current:x}")
+        elif pos == 47:
+            # Auto-added Rule: Add diff 0x6371d8a96 (68257988765558)
+            key_current = (key_prev + 68257988765558) % N
+            # print(f"    -> Applied Pos 47 Rule: (key_prev + 68257988765558) % N = 0x{key_current:x}")
+        elif pos == 48:
+            # Auto-added Rule: Add diff 0x68a779735 (71540315586273)
+            key_current = (key_prev + 71540315586273) % N
+            # print(f"    -> Applied Pos 48 Rule: (key_prev + 71540315586273) % N = 0x{key_current:x}")
+        elif pos == 49:
+            # Auto-added Rule: Add diff 0x1fb056ea6 (217911930332082)
+            key_current = (key_prev + 217911930332082) % N
+            # print(f"    -> Applied Pos 49 Rule: (key_prev + 217911930332082) % N = 0x{key_current:x}")
+        elif pos == 50:
+            # Auto-added Rule: Add diff 0x1d03c96d7 (202021591135239)
+            key_current = (key_prev + 202021591135239) % N
+            # print(f"    -> Applied Pos 50 Rule: (key_prev + 202021591135239) % N = 0x{key_current:x}")
+        elif pos == 51:
+            # Auto-added Rule: Add diff 0x14b90f17c0 (1447629018986112)
+            key_current = (key_prev + 1447629018986112) % N
+            # print(f"    -> Applied Pos 51 Rule: (key_prev + 1447629018986112) % N = 0x{key_current:x}")
+        elif pos == 52:
+            # Auto-added Rule: Add diff 0x1ec97d3898 (2157726124446824)
+            key_current = (key_prev + 2157726124446824) % N
+            # print(f"    -> Applied Pos 52 Rule: (key_prev + 2157726124446824) % N = 0x{key_current:x}")
+        elif pos == 53:
+            # Auto-added Rule: Add diff 0x242c3a02c (2547188331877424)
+            key_current = (key_prev + 2547188331877424) % N
+            # print(f"    -> Applied Pos 53 Rule: (key_prev + 2547188331877424) % N = 0x{key_current:x}")
+        elif pos == 54:
+            # Auto-added Rule: Add diff 0x2def1683b (3210771273018583)
+            key_current = (key_prev + 3210771273018583) % N
+            # print(f"    -> Applied Pos 54 Rule: (key_prev + 3210771273018583) % N = 0x{key_current:x}")
+        elif pos == 55:
+            # Auto-added Rule: Add diff 0x11fb497f15 (20070935247372753)
+            key_current = (key_prev + 20070935247372753) % N
+            # print(f"    -> Applied Pos 55 Rule: (key_prev + 20070935247372753) % N = 0x{key_current:x}")
+        elif pos == 56:
+            # Auto-added Rule: Add diff 0xc9497328b (14173351800807115)
+            key_current = (key_prev + 14173351800807115) % N
+            # print(f"    -> Applied Pos 56 Rule: (key_prev + 14173351800807115) % N = 0x{key_current:x}")
+        elif pos == 57:
+            # Auto-added Rule: Add diff 0x5367400f5 (94027016618169917)
+            key_current = (key_prev + 94027016618169917) % N
+            # print(f"    -> Applied Pos 57 Rule: (key_prev + 94027016618169917) % N = 0x{key_current:x}")
+        elif pos == 58:
+            # Auto-added Rule: Add diff 0x35c22a90d (61730909065495557)
+            key_current = (key_prev + 61730909065495557) % N
+            # print(f"    -> Applied Pos 58 Rule: (key_prev + 61730909065495557) % N = 0x{key_current:x}")
+        elif pos == 59:
+            # Auto-added Rule: Add diff 0x12c0f0e2e (325093716281924142)
+            key_current = (key_prev + 325093716281924142) % N
+            # print(f"    -> Applied Pos 59 Rule: (key_prev + 325093716281924142) % N = 0x{key_current:x}")
+        elif pos == 60:
+            # Auto-added Rule: Add diff 0x222c4755f (609970965961230191)
+            key_current = (key_prev + 609970965961230191) % N
+            # print(f"    -> Applied Pos 60 Rule: (key_prev + 609970965961230191) % N = 0x{key_current:x}")
+        elif pos == 61:
+            # Auto-added Rule: Add diff 0x102398174 (290746192399158600)
+            key_current = (key_prev + 290746192399158600) % N
+            # print(f"    -> Applied Pos 61 Rule: (key_prev + 290746192399158600) % N = 0x{key_current:x}")
+        elif pos == 62:
+            # Auto-added Rule: Add diff 0x8a2eb528 (2482584999889167080)
+            key_current = (key_prev + 2482584999889167080) % N
+            # print(f"    -> Applied Pos 62 Rule: (key_prev + 2482584999889167080) % N = 0x{key_current:x}")
+        elif pos == 63:
+            # Auto-added Rule: Add diff 0x11d9b37a (5084857407016647706)
+            key_current = (key_prev + 5084857407016647706) % N
+            # print(f"    -> Applied Pos 63 Rule: (key_prev + 5084857407016647706) % N = 0x{key_current:x}")
+        elif pos == 64:
+            # Auto-added Rule: Add diff 0x1e79591c (8806437408053766860)
+            key_current = (key_prev + 8806437408053766860) % N
+            # print(f"    -> Applied Pos 64 Rule: (key_prev + 8806437408053766860) % N = 0x{key_current:x}")
+        elif pos == 65:
+            # Auto-added Rule: Add diff 0xef85c1c15a4b9b1613f3b628d9cc85b45a65938a7b3529b53c13a085c900146c (115792089237316195423570985008687907852837564279074904382599485107398937908948)
+            key_current = (key_prev + 115792089237316195423570985008687907852837564279074904382599485107398937908948) % N
+            # print(f"    -> Applied Pos 65 Rule: (key_prev + 115792089237316195423570985008687907852837564279074904382599485107398937908948) % N = 0x{key_current:x}")
+        elif pos == 66:
+            # Auto-added Rule: Add diff 0xf18478440d121e7a284c5e3435e1f9d31386819a5e133c3d0296e54f774ce71c (115792089237316195423570985008687907852837564279074904382595938146876703489224)
+            key_current = (key_prev + 115792089237316195423570985008687907852837564279074904382595938146876703489224) % N
+            # print(f"    -> Applied Pos 66 Rule: (key_prev + 115792089237316195423570985008687907852837564279074904382595938146876703489224) % N = 0x{key_current:x}")
+        elif pos == 67:
+            # Auto-added Rule: Add diff 0x1c2525e0f8 (129760305005489610176)
+            key_current = (key_prev + 129760305005489610176) % N
+            # print(f"    -> Applied Pos 67 Rule: (key_prev + 129760305005489610176) % N = 0x{key_current:x}")
+        elif pos == 68:
+            # Auto-added Rule: Add diff 0x13592e200b (87241322610929783523)
+            key_current = (key_prev + 87241322610929783523) % N
+            # print(f"    -> Applied Pos 68 Rule: (key_prev + 87241322610929783523) % N = 0x{key_current:x}")
+
         else:
             # Default/Placeholder for unhandled positions
             print(f"  Position {pos} (Char '{char}'): No specific rule implemented yet.")
