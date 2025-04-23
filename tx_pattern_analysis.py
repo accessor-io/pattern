@@ -1,6 +1,15 @@
 import hashlib
 from typing import List, Tuple
 import re
+from collections import defaultdict
+
+def find_repeating_sequences(s: str, min_len: int = 2, max_len: int = 5):
+    sequences = defaultdict(list)
+    for length in range(min_len, max_len + 1):
+        for i in range(len(s) - length + 1):
+            seq = s[i:i+length]
+            sequences[seq].append(i)
+    return {k: v for k, v in sequences.items() if len(v) > 1}
 
 def analyze_tx_patterns():
     # Transaction details
@@ -26,6 +35,13 @@ def analyze_tx_patterns():
     print(f"Uppercase: {uppercase} ({(uppercase/len(target_string))*100:.2f}%)")
     print(f"Lowercase: {lowercase} ({(lowercase/len(target_string))*100:.2f}%)")
     print(f"Digits: {digits} ({(digits/len(target_string))*100:.2f}%)\n")
+
+    # Repeating sequence analysis
+    print("Repeating Sequence Analysis:")
+    repeating = find_repeating_sequences(target_string)
+    for seq, positions in repeating.items():
+        print(f"Sequence '{seq}' found at positions: {positions}")
+    print()
 
     # Sequential pattern analysis
     print("Sequential Pattern Analysis:")
