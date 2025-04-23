@@ -1,5 +1,6 @@
 import hashlib
 from typing import List, Tuple
+import re
 
 def analyze_tx_patterns():
     # Transaction details
@@ -16,6 +17,22 @@ def analyze_tx_patterns():
     print("Transaction Pattern Analysis:")
     print(f"TXID: {txid}")
     print(f"Block Height: {block_height}\n")
+
+    # Character type analysis
+    print("Character Type Distribution in Target String:")
+    uppercase = sum(1 for c in target_string if c.isupper())
+    lowercase = sum(1 for c in target_string if c.islower())
+    digits = sum(1 for c in target_string if c.isdigit())
+    print(f"Uppercase: {uppercase} ({(uppercase/len(target_string))*100:.2f}%)")
+    print(f"Lowercase: {lowercase} ({(lowercase/len(target_string))*100:.2f}%)")
+    print(f"Digits: {digits} ({(digits/len(target_string))*100:.2f}%)\n")
+
+    # Sequential pattern analysis
+    print("Sequential Pattern Analysis:")
+    for i in range(len(target_string)-1):
+        if ord(target_string[i+1]) - ord(target_string[i]) == 1:
+            print(f"Sequential chars found: {target_string[i]}{target_string[i+1]} at position {i}")
+    print()
 
     # Output Position Analysis
     print("Output Position Analysis:")
@@ -58,6 +75,19 @@ def analyze_tx_patterns():
     output_xor = outputs[0] ^ outputs[1]
     xor_pos = output_xor % len(target_string)
     print(f"Output XOR pattern -> pos {xor_pos} -> '{target_string[xor_pos]}'")
+
+    # Distance analysis between mapped positions
+    print("\nDistance Analysis:")
+    positions = [
+        output_sum % len(target_string),
+        block_pos,
+        pattern_pos,
+        xor_pos
+    ]
+    for i in range(len(positions)):
+        for j in range(i+1, len(positions)):
+            dist = abs(positions[i] - positions[j])
+            print(f"Distance between pos {positions[i]} and {positions[j]}: {dist}")
 
     # Potential shift values
     print("\nPotential Shift Values:")
