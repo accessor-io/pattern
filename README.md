@@ -1,66 +1,53 @@
-# Custom RIPEMD-160 Implementation for Bitcoin Puzzles
+# Bitcoin Puzzle Solver
 
-This repository contains a specialized implementation of the RIPEMD-160 hash function, specifically adapted for Bitcoin address derivation in the context of cryptographic puzzles.
+This project contains tools for solving Bitcoin puzzles, particularly focused on Bitcoin puzzle #67. The codebase includes several solver classes that use different approaches to attempt to solve the puzzle.
 
-## Background
+## Components
 
-The RIPEMD-160 hash function is a critical component in Bitcoin's address generation process, where addresses are derived using:
+### 1. PuzzleSolver
+- Basic solver focused on Bitcoin puzzle #67
+- Analyzes verification keys and command sequences
+- Generates potential private keys within the puzzle range
+- Performs address generation and verification
 
-```
-Bitcoin Address = Base58Check(0x00 || RIPEMD-160(SHA-256(Public Key)))
-```
+### 2. FinalPathExecutor
+- Executes a path through a chain code
+- Follows value chains and analyzes patterns
+- Performs XOR operations with keys
+- Attempts to decode results in various formats
 
-While standard RIPEMD-160 implementations (like those in common crypto libraries) work for normal Bitcoin operations, certain puzzle sequences and cryptographic challenges require subtle modifications to the standard algorithm.
+### 3. FinalSolver
+- Advanced solver that combines multiple approaches
+- Uses command sequences, stack values, and position values
+- Generates potential Bitcoin addresses
+- Analyzes chain code patterns
+- Performs final verification against target hash
 
-## Features
-
-- **Custom message word selection**: The implementation uses a non-standard message word selection pattern in the compression function, specifically with the XOR pattern `(j % 16) ^ (j // 16)`
-- **Specialized for Bitcoin addresses**: The implementation is specifically designed to verify and generate addresses in a particular sequence of Bitcoin puzzles
-- **Comparative tools**: Includes functions to compare results with the standard implementation
-- **Test vectors**: Contains test cases demonstrating differences between the custom and standard implementations
+### 4. DeepPatternAnalyzer
+- Performs deep analysis of chain code and master key patterns
+- Segments and analyzes hex strings in multiple ways
+- Performs XOR operations between corresponding segments
+- Identifies repeating patterns and byte distributions
+- Analyzes mathematical relationships between segments
+- Generates potential keys from segment combinations
 
 ## Usage
 
-```python
-from custom_ripemd160 import custom_ripemd160, pubkey_to_address
+Run the main script to execute all solvers:
 
-# Basic hashing
-data = b"your data here"
-custom_hash = custom_ripemd160(hashlib.sha256(data).digest())
-
-# Bitcoin address derivation (uncompressed public key)
-pubkey_hex = "04..."  # 65-byte uncompressed public key (hex string)
-address = pubkey_to_address(pubkey_hex, custom_ripemd=True)
+```bash
+python bitcoin_puzzle_solver.py
 ```
 
-## How It Differs from Standard RIPEMD-160
+## Requirements
 
-The primary differences in this implementation are:
+- Python 3.6+
+- Standard library modules: hashlib, binascii
 
-1. **Message word selection**: Standard RIPEMD-160 uses a permutation table for selecting message words. This implementation uses the pattern `(j % 16) ^ (j // 16)` for the left line and `(j % 16) ^ (79 - j) // 16` for the right line.
+## Notes
 
-2. **State combination**: While the standard algorithm has a specific way to combine the parallel compression results, this implementation uses a direct state addition approach that works for the specific Bitcoin puzzle sequence.
-
-## Example Test Vectors
-
-The implementation includes several test vectors to demonstrate its behavior, including:
-
-- Common test vectors (empty string, "abc")
-- Bitcoin-specific test vectors (public key hashing)
-- Real Bitcoin addresses from the puzzle sequence
-
-## Context and Discovery
-
-This implementation was discovered during analysis of a Bitcoin puzzle sequence where standard RIPEMD-160 implementations failed to produce the expected addresses. Through reverse engineering and careful analysis of the address derivation process, this modified implementation was developed to correctly reproduce the addresses in the sequence.
+This is an experimental project for educational purposes. The solvers attempt various cryptographic approaches to solve Bitcoin puzzles, but success is not guaranteed. The code includes detailed logging to help understand the solving process.
 
 ## License
 
-MIT
-
-## Contributing
-
-Contributions are welcome! If you have improvements or additional insights into the implementation, please open an issue or submit a pull request.
-
-## Disclaimer
-
-This implementation is provided for educational and puzzle-solving purposes only. It should not be used for cryptographic security in production systems, as it intentionally deviates from the standard specification. 
+MIT 
