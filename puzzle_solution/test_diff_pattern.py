@@ -11,6 +11,16 @@ from typing import List, Tuple
 # The difference value we're testing
 DIFF_VALUE = 0x4e5114d15126dfc4e0e9283275748a0667dd08abd95edfaa3f6e8165bebf1313
 
+# Base58 characters
+BASE58_CHARS = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
+
+def base58_to_int(b58_str: str) -> int:
+    """Convert a Base58 string to integer."""
+    n = 0
+    for char in b58_str:
+        n = n * 58 + BASE58_CHARS.index(char)
+    return n
+
 def read_key_pairs(filename: str) -> List[Tuple[str, str]]:
     """Read private/public key pairs from the puzzle file."""
     pairs = []
@@ -23,10 +33,6 @@ def read_key_pairs(filename: str) -> List[Tuple[str, str]]:
                 pairs.append((priv, pub))
     return pairs
 
-def hex_to_int(hex_str: str) -> int:
-    """Convert a hex string to integer."""
-    return int(hex_str, 16)
-
 def test_difference_pattern(pairs: List[Tuple[str, str]]) -> List[bool]:
     """
     Test if the difference between consecutive private keys matches our DIFF_VALUE.
@@ -34,21 +40,25 @@ def test_difference_pattern(pairs: List[Tuple[str, str]]) -> List[bool]:
     """
     results = []
     for i in range(len(pairs) - 1):
-        current_priv = hex_to_int(pairs[i][0])
-        next_priv = hex_to_int(pairs[i + 1][0])
-        
-        # Calculate difference
-        diff = (next_priv - current_priv) % (2**256)
-        
-        # Check if it matches our expected difference
-        matches = diff == DIFF_VALUE
-        results.append(matches)
-        
-        print(f"Pair {i} -> {i+1}:")
-        print(f"Current:  {pairs[i][0]}")
-        print(f"Next:     {pairs[i+1][0]}")
-        print(f"Diff:     {hex(diff)}")
-        print(f"Matches:  {matches}\n")
+        try:
+            current_priv = base58_to_int(pairs[i][0])
+            next_priv = base58_to_int(pairs[i + 1][0])
+            
+            # Calculate difference
+            diff = (next_priv - current_priv) % (2**256)
+            
+            # Check if it matches our expected difference
+            matches = diff == DIFF_VALUE
+            results.append(matches)
+            
+            print(f"Pair {i} -> {i+1}:")
+            print(f"Current:  {pairs[i][0]}")
+            print(f"Next:     {pairs[i+1][0]}")
+            print(f"Diff:     {hex(diff)}")
+            print(f"Matches:  {matches}\n")
+        except Exception as e:
+            print(f"Error processing pair {i}: {str(e)}")
+            results.append(False)
     
     return results
 
