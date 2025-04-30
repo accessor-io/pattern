@@ -186,17 +186,25 @@ def analyze_value_patterns(chain_info: Dict) -> Dict:
     # Analyze bit and byte patterns in matching values
     for val in chain_info['values']:
         if val['matches']:
-            # Convert hash to binary and look for repeating patterns
-            hash_bits = bin(int(val['full_hash'], 16))[2:].zfill(256)
-            for i in range(len(hash_bits) - 7):
-                bit_pattern = hash_bits[i:i+8]
-                patterns['bit_patterns'][bit_pattern] += 1
-            
-            # Look for repeating byte patterns
-            hash_bytes = bytes.fromhex(val['full_hash'][2:])
-            for i in range(len(hash_bytes) - 3):
-                byte_pattern = hash_bytes[i:i+4]
-                patterns['byte_patterns'][byte_pattern.hex()] += 1
+            try:
+                # Convert hash to binary and look for repeating patterns
+                hash_hex = val['full_hash'][2:] if val['full_hash'].startswith('0x') else val['full_hash']
+                hash_hex = hash_hex.zfill(64)  # Ensure it's 32 bytes (64 hex chars)
+                hash_int = int(hash_hex, 16)
+                hash_bits = format(hash_int, '0256b')
+                
+                for i in range(len(hash_bits) - 7):
+                    bit_pattern = hash_bits[i:i+8]
+                    patterns['bit_patterns'][bit_pattern] += 1
+                
+                # Look for repeating byte patterns
+                hash_bytes = bytes.fromhex(hash_hex)
+                for i in range(len(hash_bytes) - 3):
+                    byte_pattern = hash_bytes[i:i+4]
+                    patterns['byte_patterns'][byte_pattern.hex()] += 1
+            except (ValueError, TypeError) as e:
+                print(f"Warning: Error processing hash value {val['full_hash']}: {e}")
+                continue
     
     return patterns
 
