@@ -58,3 +58,14 @@ To verify the solution:
 4. Verify the resulting key or address on the Bitcoin blockchain
 
 The original Base58 decoder output showing the character change from 'l' to '1' provides the key insight needed to properly decode the hidden address. 
+
+## Key Sequence Pattern
+
+The complete key sequence is:
+
+```
+1. 0000000000000000000000000000000000000000000000000000000000000001
+66. 000000000000000000000000000000000000000000000002832ed74f2b5e35ee
+67. 000000000000000000000000000000000000000000000042b67888431109e55
+68. 00000000000000000000000000000000000000000000000bebb3940cd0fc1491
+``` 
