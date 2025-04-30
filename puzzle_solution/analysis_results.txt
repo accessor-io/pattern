@@ -1,0 +1,293 @@
+
+===== Address Derivation Analysis =====
+Private Key (hex): 0000000000000000000000000000000000000000000000000000000000000001
+Target Address: 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH
+Decoded address (hex): 00751e76e8199196d454941c45d1b3a323f1433bd6510d1634
+Version byte: 00
+Address hash160 payload: 751e76e8199196d454941c45d1b3a323f1433bd6
+Address checksum: 510d1634
+✓ Checksum verification PASSED
+Derived public key point:
+  x: 55066263022277343669578718895168534326250603453777594175500187360389116729240
+  y: 32670510020758816978083085130507043184471273380659243275938904335757337482424
+Uncompressed public key: 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8
+WARN: hashlib.new('ripemd160') failed. Using custom implementation.
+Standard derived hash160: c1143dc021a1f3fceb1896daf5b617e7f64289f7
+✗ Hash160 verification FAILED - Address was NOT derived using standard method
+  Hex diff: b40a4b2838306528bf8c8a9f2405b4c40701b221
+Custom derived hash160: c1143dc021a1f3fceb1896daf5b617e7f64289f7
+✗ Custom Hash160 verification FAILED
+  Hex diff: b40a4b2838306528bf8c8a9f2405b4c40701b221
+SHA256 of pubkey: 50929b74c1a04954b78b4b6035e97a5e078a5a0f28ec96d547bfee9ace803ac0
+
+Comparing with first few known addresses:
+Address #2: 1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb
+  Hash160: 7dd65592d0ab2fe0d0257d571abf032cd9db93dc
+Address #3: 19dT9XKRkMAjCZyWpVu48pj1AknS1Yf3sC
+  Hash160: 5ea5cea8d7daa9ae325f3d6ed61d7a33c82af369
+Address #4: 1PEr4gG45YhKPPu4E1DZ5Y1TNK1T7D7t4s
+  Hash160: f3f1217c7b064af484546a35fc75ec228f9e3181
+Address #5: 1NfgFXmVkekdsXpjoHAfWzQMSw8JpME4LV
+  Hash160: edab36733c08dc0c09c6a965bf07392b12fa6198
+
+===== Key Transition Analysis =====
+
+--- Analyzing Differences Between Known Keys (first 10 transitions) ---
+
+Position 2, Character: 'C' (ASCII 67)
+  Previous key: 1
+  Current key:  3
+  Difference:   2
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494335
+  % Change:     200.00%
+  ✓ Current key is exactly 3 times previous key
+
+Position 3, Character: '9' (ASCII 57)
+  Previous key: 3
+  Current key:  7
+  Difference:   4
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494333
+  % Change:     133.33%
+
+Position 4, Character: 'E' (ASCII 69)
+  Previous key: 7
+  Current key:  8
+  Difference:   1
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494336
+  % Change:     14.29%
+
+Position 5, Character: 'E' (ASCII 69)
+  Previous key: 8
+  Current key:  21
+  Difference:   13
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494324
+  % Change:     162.50%
+
+Position 6, Character: 'P' (ASCII 80)
+  Previous key: 21
+  Current key:  49
+  Difference:   28
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494309
+  % Change:     133.33%
+
+Position 7, Character: 'M' (ASCII 77)
+  Previous key: 49
+  Current key:  76
+  Difference:   27
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494310
+  % Change:     55.10%
+
+Position 8, Character: 'M' (ASCII 77)
+  Previous key: 76
+  Current key:  224
+  Difference:   148
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494189
+  % Change:     194.74%
+
+Position 9, Character: 'C' (ASCII 67)
+  Previous key: 224
+  Current key:  467
+  Difference:   243
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494094
+  % Change:     108.48%
+
+Position 10, Character: 'L' (ASCII 76)
+  Previous key: 467
+  Current key:  514
+  Difference:   47
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161494290
+  % Change:     10.06%
+
+Position 11, Character: 'P' (ASCII 80)
+  Previous key: 514
+  Current key:  1155
+  Difference:   641
+  Neg. Diff:    115792089237316195423570985008687907852837564279074904382605163141518161493696
+  % Change:     124.71%
+
+--- Testing Transition Formulas (first 10 transitions) ---
+
+Position 2:
+  Character: 'C' (ASCII 67, Base58 index: 11)
+  ~ CLOSE: k + 1 = 2
+    Difference: -1
+  ✓ MATCH! k + 2
+  ~ CLOSE: k * 2 = 2
+    Difference: -1
+  ✓ MATCH! k * 3
+  ~ CLOSE: k^2 = 1
+    Difference: -2
+  ✓ MATCH! k + position
+  ✓ MATCH! k << 1 | 1
+  ✓ MATCH! k << 1 + k
+
+Position 3:
+  Character: '9' (ASCII 57, Base58 index: 8)
+  ~ CLOSE: k + 1 = 4
+    Difference: -3
+  ~ CLOSE: k + 2 = 5
+    Difference: -2
+  ~ CLOSE: k * 2 = 6
+    Difference: -1
+  ~ CLOSE: k * 3 = 9
+    Difference: 2
+  ~ CLOSE: k^2 = 9
+    Difference: 2
+  ✓ MATCH! k << 1 | 1
+
+Position 4:
+  Character: 'E' (ASCII 69, Base58 index: 13)
+  ✓ MATCH! k + 1
+  ~ CLOSE: k + 2 = 9
+    Difference: 1
+  ~ CLOSE: k * 2 = 14
+    Difference: 6
+  ~ CLOSE: k * 3 = 21
+    Difference: 13
+  ~ CLOSE: k^2 = 49
+    Difference: 41
+
+Position 5:
+  Character: 'E' (ASCII 69, Base58 index: 13)
+  ~ CLOSE: k + 1 = 9
+    Difference: -12
+  ~ CLOSE: k + 2 = 10
+    Difference: -11
+  ~ CLOSE: k * 2 = 16
+    Difference: -5
+  ~ CLOSE: k * 3 = 24
+    Difference: 3
+  ~ CLOSE: k^2 = 64
+    Difference: 43
+  ✓ MATCH! k + Base58_idx
+
+Position 6:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 22
+    Difference: -27
+  ~ CLOSE: k + 2 = 23
+    Difference: -26
+  ~ CLOSE: k * 2 = 42
+    Difference: -7
+  ~ CLOSE: k * 3 = 63
+    Difference: 14
+  ~ CLOSE: k^2 = 441
+    Difference: 392
+
+Position 7:
+  Character: 'M' (ASCII 77, Base58 index: 20)
+  ~ CLOSE: k + 1 = 50
+    Difference: -26
+  ~ CLOSE: k + 2 = 51
+    Difference: -25
+  ~ CLOSE: k * 2 = 98
+    Difference: 22
+  ~ CLOSE: k * 3 = 147
+    Difference: 71
+  ~ CLOSE: k^2 = 2401
+    Difference: 2325
+
+Position 8:
+  Character: 'M' (ASCII 77, Base58 index: 20)
+  ~ CLOSE: k + 1 = 77
+    Difference: -147
+  ~ CLOSE: k + 2 = 78
+    Difference: -146
+  ~ CLOSE: k * 2 = 152
+    Difference: -72
+  ~ CLOSE: k * 3 = 228
+    Difference: 4
+  ~ CLOSE: k^2 = 5776
+    Difference: 5552
+
+Position 9:
+  Character: 'C' (ASCII 67, Base58 index: 11)
+  ~ CLOSE: k + 1 = 225
+    Difference: -242
+  ~ CLOSE: k + 2 = 226
+    Difference: -241
+  ~ CLOSE: k * 2 = 448
+    Difference: -19
+  ~ CLOSE: k * 3 = 672
+    Difference: 205
+  ~ CLOSE: k^2 = 50176
+    Difference: 49709
+
+Position 10:
+  Character: 'L' (ASCII 76, Base58 index: 19)
+  ~ CLOSE: k + 1 = 468
+    Difference: -46
+  ~ CLOSE: k + 2 = 469
+    Difference: -45
+  ~ CLOSE: k * 2 = 934
+    Difference: 420
+  ~ CLOSE: k * 3 = 1401
+    Difference: 887
+  ~ CLOSE: k^2 = 218089
+    Difference: 217575
+
+Position 11:
+  Character: 'P' (ASCII 80, Base58 index: 22)
+  ~ CLOSE: k + 1 = 515
+    Difference: -640
+  ~ CLOSE: k + 2 = 516
+    Difference: -639
+  ~ CLOSE: k * 2 = 1028
+    Difference: -127
+  ~ CLOSE: k * 3 = 1542
+    Difference: 387
+  ~ CLOSE: k^2 = 264196
+    Difference: 263041
+
+Tested 198 formulas across 10 transitions
+Found 8 exact matches
+
+--- Testing Special Operations (first 10 transitions) ---
+
+Position 2, Character 'C' (index 11):
+  × Not doubled at position 2
+  ✓ MATCH! Key + sum of prime factors (2) at position 2
+
+Position 3, Character '9' (index 8):
+
+Position 4, Character 'E' (index 13):
+
+Position 5, Character 'E' (index 13):
+  × Not doubled at position 5
+
+Position 6, Character 'P' (index 22):
+
+Position 7, Character 'M' (index 20):
+
+Position 8, Character 'M' (index 20):
+
+Position 9, Character 'C' (index 11):
+
+Position 10, Character 'L' (index 19):
+  × Not doubled at position 10
+
+Position 11, Character 'P' (index 22):
+
+--- Control Character Analysis (first 10 control characters) ---
+Control characters found at positions: []
+
+===== End of Analysis =====
+
+--- Analyzing Character-Difference Relationships (first 10 transitions) ---
+Position 2: 'C' (ASCII 67) => Diff: 2
+Position 3: '9' (ASCII 57) => Diff: 4
+Position 4: 'E' (ASCII 69) => Diff: 1
+Position 5: 'E' (ASCII 69) => Diff: 13
+Position 6: 'P' (ASCII 80) => Diff: 28
+Position 7: 'M' (ASCII 77) => Diff: 27
+Position 8: 'M' (ASCII 77) => Diff: 148
+Position 9: 'C' (ASCII 67) => Diff: 243
+Position 10: 'L' (ASCII 76) => Diff: 47
+Position 11: 'P' (ASCII 80) => Diff: 641
+
+Checking for simple mathematical relationships between characters and differences:
+
+Differences that are exact multiples of their positions:
+  Multiple of 2: 2 times (20.0%)
+
+End of character-difference analysis
