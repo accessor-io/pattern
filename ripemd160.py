@@ -102,8 +102,8 @@ def ripemd160(message):
     for i in range(0, len(message), 64):
         _compress(message[i:i+64], state)
 
-    # Produce final hash value (big-endian)
-    return b''.join(x.to_bytes(4, 'big') for x in state)
+    # Produce final hash value (little-endian)
+    return b''.join(x.to_bytes(4, 'little') for x in state)
 
 def hexdigest(message):
     """Return the RIPEMD160 hash as a hexadecimal string."""
