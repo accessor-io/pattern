@@ -1,10 +1,9 @@
-"""Pure Python implementation of the RIPEMD160 algorithm.
-
-This implementation does not rely on any external libraries or system dependencies.
-It is based on the RIPEMD160 specification and various open source implementations.
+"""Pure Python implementation of RIPEMD160 hash function.
+Based on the Bitcoin implementation that has been verified to work correctly.
 """
 
 def _f(j, x, y, z):
+    """The f function."""
     if 0 <= j <= 15:
         return x ^ y ^ z
     elif 16 <= j <= 31:
@@ -13,26 +12,57 @@ def _f(j, x, y, z):
         return (x | ~y) ^ z
     elif 48 <= j <= 63:
         return (x & z) | (y & ~z)
-    else:  # 64 <= j <= 79
+    elif 64 <= j <= 79:
         return x ^ (y | ~z)
+    else:
+        return 0
 
-def _rol(value, bits):
-    return ((value << bits) | (value >> (32 - bits))) & 0xffffffff
+def _k(j):
+    """The k values."""
+    if 0 <= j <= 15:
+        return 0x00000000
+    elif 16 <= j <= 31:
+        return 0x5A827999
+    elif 32 <= j <= 47:
+        return 0x6ED9EBA1
+    elif 48 <= j <= 63:
+        return 0x8F1BBCDC
+    elif 64 <= j <= 79:
+        return 0xA953FD4E
+    else:
+        return 0
+
+def _kk(j):
+    """The kk values."""
+    if 0 <= j <= 15:
+        return 0x50A28BE6
+    elif 16 <= j <= 31:
+        return 0x5C4DD124
+    elif 32 <= j <= 47:
+        return 0x6D703EF3
+    elif 48 <= j <= 63:
+        return 0x7A6D76E9
+    elif 64 <= j <= 79:
+        return 0x00000000
+    else:
+        return 0
+
+def _rol(n, b):
+    """Rotate left."""
+    return ((n << b) | (n >> (32 - b))) & 0xffffffff
 
 def _compress(block, state):
-    # Message schedule
-    W = [int.from_bytes(block[i:i+4], 'little') for i in range(0, 64, 4)]
+    """The compression function."""
+    # Convert block to words
+    X = [int.from_bytes(block[i:i+4], 'little') for i in range(0, 64, 4)]
     
     # Initialize working variables
-    a1, b1, c1, d1, e1 = state
-    a2, b2, c2, d2, e2 = state
+    h = list(state)  # Make a copy
+    a1, b1, c1, d1, e1 = h
+    a2, b2, c2, d2, e2 = h
 
-    # Round constants
-    K1 = [0x00000000, 0x5A827999, 0x6ED9EBA1, 0x8F1BBCDC, 0xA953FD4E]
-    K2 = [0x50A28BE6, 0x5C4DD124, 0x6D703EF3, 0x7A6D76E9, 0x00000000]
-
-    # Message schedule indexes
-    R1 = [
+    # Message schedule
+    R = [
         0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
         7, 4, 13, 1, 10, 6, 15, 3, 12, 0, 9, 5, 2, 14, 11, 8,
         3, 10, 14, 4, 9, 15, 8, 1, 2, 7, 0, 6, 13, 11, 5, 12,
@@ -40,7 +70,7 @@ def _compress(block, state):
         4, 0, 5, 9, 7, 12, 2, 10, 14, 1, 3, 8, 11, 6, 15, 13
     ]
 
-    R2 = [
+    Rp = [
         5, 14, 7, 0, 9, 2, 11, 4, 13, 6, 15, 8, 1, 10, 3, 12,
         6, 11, 3, 7, 0, 13, 5, 10, 14, 15, 8, 12, 4, 9, 1, 2,
         15, 5, 1, 3, 7, 14, 6, 9, 11, 8, 12, 2, 10, 0, 4, 13,
@@ -48,8 +78,7 @@ def _compress(block, state):
         12, 15, 10, 4, 1, 5, 8, 7, 6, 2, 13, 14, 0, 3, 9, 11
     ]
 
-    # Rotation amounts
-    S1 = [
+    S = [
         11, 14, 15, 12, 5, 8, 7, 9, 11, 13, 14, 15, 6, 7, 9, 8,
         7, 6, 8, 13, 11, 9, 7, 15, 7, 12, 15, 9, 11, 7, 13, 12,
         11, 13, 6, 7, 14, 9, 13, 15, 14, 8, 13, 6, 5, 12, 7, 5,
@@ -57,7 +86,7 @@ def _compress(block, state):
         9, 15, 5, 11, 6, 8, 13, 12, 5, 12, 13, 14, 11, 8, 5, 6
     ]
 
-    S2 = [
+    Sp = [
         8, 9, 9, 11, 13, 15, 15, 5, 7, 7, 8, 11, 14, 14, 12, 6,
         9, 13, 15, 7, 12, 8, 9, 11, 7, 7, 12, 7, 6, 15, 13, 11,
         9, 7, 15, 11, 8, 6, 6, 14, 12, 13, 5, 14, 13, 13, 7, 5,
@@ -68,11 +97,11 @@ def _compress(block, state):
     # Main loop
     for j in range(80):
         # Left side
-        t = (_rol(a1 + _f(j, b1, c1, d1) + W[R1[j]] + K1[j//16], S1[j]) + e1) & 0xffffffff
+        t = (_rol(a1 + _f(j, b1, c1, d1) + X[R[j]] + _k(j), S[j]) + e1) & 0xffffffff
         a1, b1, c1, d1, e1 = e1, t, _rol(b1, 10), c1, d1
 
         # Right side
-        t = (_rol(a2 + _f(79-j, b2, c2, d2) + W[R2[j]] + K2[j//16], S2[j]) + e2) & 0xffffffff
+        t = (_rol(a2 + _f(79-j, b2, c2, d2) + X[Rp[j]] + _kk(j), Sp[j]) + e2) & 0xffffffff
         a2, b2, c2, d2, e2 = e2, t, _rol(b2, 10), c2, d2
 
     # Combine results
@@ -84,7 +113,7 @@ def _compress(block, state):
     state[0] = t
 
 def ripemd160(message):
-    """Core RIPEMD160 algorithm."""
+    """RIPEMD160 hash function."""
     if isinstance(message, str):
         message = message.encode()
 
@@ -102,7 +131,7 @@ def ripemd160(message):
     for i in range(0, len(message), 64):
         _compress(message[i:i+64], state)
 
-    # Produce final hash value (little-endian)
+    # Produce final hash value
     return b''.join(x.to_bytes(4, 'little') for x in state)
 
 def hexdigest(message):
