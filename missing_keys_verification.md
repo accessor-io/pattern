@@ -8,25 +8,25 @@ This document identifies discrepancies between our calculated Bitcoin private ke
   - Original (incorrect): `00000000000000000000000000000000000000000000000730fc235c1942c1ae`
   - Corrected to: `000000000000000000000000000000000000000000000042b67888431109e55`
 
-## Additional Discrepancies Found
+- **Puzzle #68**
+  - Original (incorrect): `00000000000000000000000000000000000000000000000bebb3940cd0fc1491`
+  - Corrected to: `0000000000000000000000000000000000000000000006ae965fd35c6ed443`
+
+- **Puzzle #70**
+  - Original (incorrect): `0000000000000000000000000000000000000000000000349b84b6431a6c4ef1`
+  - Corrected to: `00000000000000000000000000000000000000000000118894482ae9ee46db`
+
+- **Puzzle #75**
+  - Original (incorrect): `0000000000000000000000000000000000000000000004c5ce114686a1336e07`
+  - Corrected to: `0000000000000000000000000000000000000000000000c28697cb0d12ef73d0`
+
+- **Puzzle #80**
+  - Original (incorrect): `00000000000000000000000000000000000000000000ea1a5c66dcc11b5ad180`
+  - Corrected to: `0000000000000000000000000000000000000000000000086d511a01baba3840cb`
+
+## Additional Discrepancies Still Needing Verification
 
 Comparing our current solution in `verified_bitcoin_sequence.txt` with the known keys in `all_known_private_keys.md`:
-
-### Puzzle #68
-- Our value: `00000000000000000000000000000000000000000000000bebb3940cd0fc1491`
-- Known key: `0000000000000000000000000000000000000000000006ae965fd35c6ed443`
-
-### Puzzle #70
-- Our value: `0000000000000000000000000000000000000000000000349b84b6431a6c4ef1`
-- Known key: `00000000000000000000000000000000000000000000118894482ae9ee46db`
-
-### Puzzle #75
-- Our value: `0000000000000000000000000000000000000000000004c5ce114686a1336e07`
-- Known key: `0000000000000000000000000000000000000000000000c28697cb0d12ef73d0`
-
-### Puzzle #80
-- Our value: `00000000000000000000000000000000000000000000ea1a5c66dcc11b5ad180`
-- Known key: `0000000000000000000000000000000000000000000000086d511a01baba3840cb`
 
 ### Puzzle #85
 - Our value: `00000000000000000000000000000000000000000011720c4f018d51b8cebba8`
@@ -70,7 +70,7 @@ Comparing our current solution in `verified_bitcoin_sequence.txt` with the known
 
 ## Next Steps
 
-1. Update `verified_bitcoin_sequence.txt` with the correct values for puzzles #68, #70, #75, and #80
+1. ✅ Update `verified_bitcoin_sequence.txt` with the correct values for puzzles #68, #70, #75, and #80
 2. Search for additional verified keys for puzzles #85-#130 to ensure our solution is accurate
 3. Regenerate the complete sequence once all known keys are properly integrated
 

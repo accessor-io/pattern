@@ -1,0 +1,51 @@
+ Repository: /home/dot/pattern
+No commits by acc@accessor.io or clthorpe@gmail.com found in this repository
+
+Repository: /home/dot/pattern
+2025-04-30 13:39:17 -0700 e402d8f Add script to analyze comprehensive results /home/dot/pattern
+2025-04-30 13:00:15 -0700 7065f16 Fix hex string handling in analysis script /home/dot/pattern
+2025-04-30 12:58:22 -0700 34e8e7c Add comprehensive puzzle chain analysis script /home/dot/pattern
+2025-04-30 12:54:24 -0700 0970ede Add elliptic curve pattern analysis script /home/dot/pattern
+2025-04-30 12:52:11 -0700 9d956b9 Add script to analyze public key patterns /home/dot/pattern
+2025-04-30 12:50:17 -0700 c818bef Add script to test key generation patterns /home/dot/pattern
+2025-04-30 12:47:56 -0700 3c24556 Update test script to handle Base58 Bitcoin private keys /home/dot/pattern
+2025-04-30 12:47:06 -0700 7264667 Add test script for cryptographic difference pattern /home/dot/pattern
+2025-04-30 10:57:31 -0700 5828f95 Organize all important Bitcoin puzzle files into a single folder /home/dot/pattern
+2025-04-30 10:47:37 -0700 8da295c Update README with complete solution documentation /home/dot/pattern
+2025-04-30 10:46:55 -0700 c057721 Add Python implementation of the Bitcoin key pattern puzzle solver /home/dot/pattern
+2025-04-30 10:45:32 -0700 07ae195 Add comprehensive workflow solution for Bitcoin key pattern puzzle /home/dot/pattern
+2025-04-30 04:30:29 -0700 05807ce Update Bitcoin puzzle sequence with correct known keys for #68, #70, #75, and #80 /home/dot/pattern
+2025-04-30 04:27:14 -0700 617ad98 Document missing and incorrect keys in Bitcoin puzzle sequence /home/dot/pattern
+2025-04-30 04:06:35 -0700 dc4496b Fix puzzle #67 private key to match official known solution /home/dot/pattern
+2025-04-30 03:34:34 -0700 907680e Add puzzle #67 verification document /home/dot/pattern
+2025-04-30 03:14:32 -0700 ffb46ad Adding comprehensive list of all 160 private keys and generation script /home/dot/pattern
+2025-04-30 03:09:15 -0700 2c0ae37 Adding comprehensive final report on the Bitcoin key pattern puzzle investigation /home/dot/pattern
+2025-04-30 03:08:19 -0700 8e0d33f Adding scripts to derive and verify private keys for the Bitcoin address puzzle /home/dot/pattern
+2025-04-30 02:58:29 -0700 9537ce8 Adding final findings and conclusions from the Bitcoin key pattern puzzle /home/dot/pattern
+2025-04-30 02:57:43 -0700 8aeaf77 Adding scripts to analyze invalid Bitcoin address and finding valid version with corrected checksum /home/dot/pattern
+2025-04-30 02:46:33 -0700 8eed971 Adding comprehensive analysis of all 160 keys and final solution documentation /home/dot/pattern
+2025-04-30 02:35:48 -0700 cf9c05f Adding solution scripts and final analysis for Bitcoin key pattern puzzle /home/dot/pattern
+2025-04-23 14:49:24 -0700 5c7b987 Add DeepPatternAnalyzer class for advanced pattern analysis /home/dot/pattern
+2025-04-23 14:33:29 -0700 d787aac fix: Update Bitcoin puzzle key generation algorithm to match correct sequence pattern /home/dot/pattern
+2025-04-23 01:18:39 -0700 2c40c89 Added repeating sequence analysis /home/dot/pattern
+2025-04-23 01:16:20 -0700 b5a4e2c Added character distribution and sequential pattern analysis /home/dot/pattern
+2025-04-23 01:11:15 -0700 4c48551 Enhanced transaction pattern analysis with additional decoding approaches /home/dot/pattern
+2025-04-22 04:56:56 -0700 f478d22 Add test harness to verify 5x52 field conversions against known sequence /home/dot/pattern
+2025-04-22 03:39:43 -0700 aef4510 feat: Add Base58Check Bitcoin address validator script /home/dot/pattern
+2025-04-21 13:35:22 -0700 77a1f06 feat: Add function to check number range [2^72, 2^73-1] /home/dot/pattern
+2025-04-20 23:48:06 -0700 86e15ad refactor: Re-enable analysis functions up to pos 68 /home/dot/pattern
+2025-04-20 23:44:50 -0700 3c7968a feat: Add rules for positions 17-68 based on known diffs /home/dot/pattern
+2025-04-20 23:39:17 -0700 5599c0c feat: Correct rule for pos 15 and add rule for pos 16 /home/dot/pattern
+2025-04-20 23:35:03 -0700 4804378 feat: Modify main to call generate_sequence_from_rules(160) /home/dot/pattern
+2025-04-20 18:30:16 -0700 e94c6c1 Fix: Use hash160 helper in analyze_first_address_derivation /home/dot/pattern
+2025-04-20 15:45:48 -0700 d466b3f feat: Implement and test sequence generation rules up to pos 14 /home/dot/pattern
+2025-04-20 13:00:23 -0700 a3bb5b2 Added transitions analysis summary document /home/dot/pattern
+2025-04-20 12:58:45 -0700 1901554 Updated key sequence generator script with improvements to transitions analysis functions /home/dot/pattern
+2025-04-20 12:15:37 -0700 af10e1d Feat: Add Base58 index to transition analysis output /home/dot/pattern
+2025-04-20 12:12:08 -0700 7832a81 Feat: Add XOR difference to transition analysis /home/dot/pattern
+2025-04-20 12:10:08 -0700 1768436 Feat: Add character to modular difference mapping /home/dot/pattern
+2025-04-20 12:07:24 -0700 ef3445c Feat: Enhance transition analysis with mod N diff and simple rules /home/dot/pattern
+2025-04-20 12:02:06 -0700 bb0e64e Feat: Add known key transition analysis function /home/dot/pattern
+2025-04-20 11:53:37 -0700 7291584 Fix: Correct syntax error in pubkey_to_address call /home/dot/pattern
+2025-04-20 11:49:55 -0700 b1706a0 Initial commit (recovering from repo corruption) /home/dot/pattern
+

@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+ #!/usr/bin/python3
 
 import os
 from run_all_analyses import read_hex_strings, ensure_output_dir, write_analysis

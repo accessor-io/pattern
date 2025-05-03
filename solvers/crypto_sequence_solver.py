@@ -25,7 +25,7 @@ def generate_next_key(prev_key_hex: str, index: int) -> str:
     masked_key = (
         index_header +
         hmac_digest[:16] +
-        bytes(8)
+        bytes(24)
     )
     
     return f"0x{masked_key.hex()}"

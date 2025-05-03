@@ -1,4 +1,4 @@
-/*
+ /*
  * Andrew Poelstra, December 2011
  * This code is public domain.
  */

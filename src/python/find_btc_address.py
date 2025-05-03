@@ -199,7 +199,7 @@ def main():
     logger.info(f"Loaded {len(base_values)} sequence values as search bases")
     
     # Define transformations to try
-    transformations = {
+     transformations = {
         "no_change": lambda x: x,
         "add_1": lambda x: x + 1,
         "subtract_1": lambda x: x - 1,

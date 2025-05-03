@@ -1,0 +1,6 @@
+Repository: /home/dot/pattern/pattern
+No commits by acc@accessor.io or clthorpe@gmail.com found in this repository
+
+Repository: /home/dot/pattern/pattern
+2025-04-30 10:42:31 -0700 d84454e Initial commit to track all files /home/dot/pattern/pattern
+

@@ -1,8 +1,8 @@
 import sys
 
-# Define the bounds using bit shifts for efficiency
-LOWER_BOUND = 1 << 72  # 2^72
-UPPER_BOUND = (1 << 73) - 1 # 2^73 - 1
+# These lines run ONLY ONCE when the script/module is loaded
+LOWER_BOUND = 1 << 72      # Calculated once
+UPPER_BOUND = (1 << 73) - 1 # Calculated once
 
 def is_in_specific_hex_range(number_to_check: int) -> bool:
     """
@@ -20,6 +20,7 @@ def is_in_specific_hex_range(number_to_check: int) -> bool:
     if not isinstance(number_to_check, int):
         raise TypeError("Input must be an integer.")
 
+    # This check uses the pre-calculated constants and is very fast
     return LOWER_BOUND <= number_to_check <= UPPER_BOUND
 
 # Example Usage (optional, can be run if the script is executed directly)

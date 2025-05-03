@@ -43,7 +43,7 @@ def privkey_to_address(private_key):
         return f"Error: {str(e)}"
 
 # Approach 1: Check if the keys form a valid seed phrase when combined
-keys_hex = [hex(KNOWN_KEYS[i])[2:] for i in range(1, 67) if i in KNOWN_KEYS]
+keys_hex = [hex(KNOWN_KEYS[i])[2:] for i in range(1, 160) if i in KNOWN_KEYS]
 
 print("Approach 1: Examining if keys form seed phrases")
 chunks = [keys_hex[i:i+12] for i in range(0, len(keys_hex), 12)]
@@ -53,7 +53,7 @@ print()
 
 # Approach 2: Check if adjacent keys represent private/public key pairs
 print("Approach 2: Looking for private/public key pairs")
-for i in range(1, 66):
+for i in range(1, 160):
     if i in KNOWN_KEYS and i+1 in KNOWN_KEYS:
         print(f"Keys {i} & {i+1}: {hex(KNOWN_KEYS[i])} -> {hex(KNOWN_KEYS[i+1])}")
 print()
@@ -64,7 +64,7 @@ print("Approach 3: Concatenating keys with ASCII values spelling something meani
 
 # First, filter for keys with ASCII representations
 ascii_keys = {}
-for i in range(1, 67):
+for i in range(1, 160):
     if i in KNOWN_KEYS:
         key = KNOWN_KEYS[i]
         hex_str = hex(key)[2:].lstrip('0')
@@ -97,7 +97,7 @@ except Exception as e:
 
 # Approach 4: Try all keys as potential private keys to get Bitcoin addresses
 print("\nApproach 4: Generate Bitcoin addresses from each key")
-for i in range(1, 67):
+for i in range(1, 160):
     if i in KNOWN_KEYS:
         key = KNOWN_KEYS[i]
         if key < 2**256:  # Valid range for Bitcoin private keys
@@ -106,7 +106,7 @@ for i in range(1, 67):
 
 # Approach 5: Check if the keys, when sorted, reveal a pattern
 print("\nApproach 5: Sorted keys analysis")
-sorted_keys = sorted([(i, KNOWN_KEYS[i]) for i in range(1, 67) if i in KNOWN_KEYS], key=lambda x: x[1])
+sorted_keys = sorted([(i, KNOWN_KEYS[i]) for i in range(1, 160) if i in KNOWN_KEYS], key=lambda x: x[1])
 print("Keys sorted by value:")
 for idx, (original_idx, key) in enumerate(sorted_keys):
     print(f"Position {idx+1}: Key {original_idx} = {hex(key)}")
@@ -126,6 +126,6 @@ bitcoin_constants = {
 }
 
 for name, constant in bitcoin_constants.items():
-    for i in range(1, 67):
+    for i in range(1, 160):
         if i in KNOWN_KEYS and KNOWN_KEYS[i] == constant:
             print(f"Key {i} matches {name}: {hex(constant)}") 

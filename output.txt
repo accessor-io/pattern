@@ -3181,6 +3181,164 @@ Position 66:
   ~ CLOSE: k * ASCII(char) + position = 654568194871151166972
     Difference: 651671556274254520846
 
+Position 67:
+  Character: 'z' (ASCII 122, Base58 index: 32)
+  ~ CLOSE: k + 1 = 2896638596896646127
+    Difference: 2896638596896646126
+  ~ CLOSE: k + 2 = 2896638596896646128
+    Difference: 2896638596896646127
+  ~ CLOSE: k * 2 = 5793277193793292252
+    Difference: 5793277193793292251
+  ~ CLOSE: k * 3 = 8689915790689938378
+    Difference: 8689915790689938377
+  ~ CLOSE: k^2 = 8390088323815696651
+    Difference: 8390088323815696650
+  ~ CLOSE: k + position = 2896638596896646193
+    Difference: 2896638596896646192
+  ~ CLOSE: k * position = 194074785792175290509
+    Difference: 194074785792175290508
+  ~ CLOSE: k + ASCII(char) = 2896638596896646248
+    Difference: 2896638596896646247
+  ~ CLOSE: k * ASCII(char) = 353389908821790827474
+    Difference: 353389908821790827473
+  ~ CLOSE: k XOR ASCII(char) = 2896638596896646013
+    Difference: 2896638596896646012
+  ~ CLOSE: k + Base58_idx = 2896638596896646158
+    Difference: 2896638596896646157
+  ~ CLOSE: k * Base58_idx = 92692435102298276064
+    Difference: 92692435102298276063
+  ~ CLOSE: k XOR Base58_idx = 2896638596896646095
+    Difference: 2896638596896646094
+  ~ CLOSE: k << 1 | 1 = 5793277193793292253
+    Difference: 5793277193793292252
+  ~ CLOSE: k << 2 | 3 = 11586554387586584707
+    Difference: 11586554387586584706
+  ~ CLOSE: k << 1 + k = 8689915790689938378
+    Difference: 8689915790689938377
+  ~ CLOSE: k * position + Base58_idx = 194074785792175290541
+    Difference: 194074785792175290540
+  ~ CLOSE: k * position + ASCII(char) = 194074785792175290631
+    Difference: 194074785792175290630
+  ~ CLOSE: k * ASCII(char) + position = 353389908821790827541
+    Difference: 353389908821790827540
+
+Position 68:
+  Character: 'D' (ASCII 68, Base58 index: 12)
+  ~ CLOSE: k + 1 = 1
+    Difference: 0
+  ~ CLOSE: k + 2 = 2
+    Difference: 1
+  ~ CLOSE: k * 2 = 0
+    Difference: 1
+  ~ CLOSE: k * 3 = 0
+    Difference: 1
+  ~ CLOSE: k^2 = 0
+    Difference: 1
+  ~ CLOSE: k + position = 68
+    Difference: 67
+  ~ CLOSE: k + ASCII(char) = 68
+    Difference: 67
+  ~ CLOSE: k * ASCII(char) = 0
+    Difference: 1
+  ~ CLOSE: k XOR ASCII(char) = 68
+    Difference: 67
+  ~ CLOSE: k + Base58_idx = 12
+    Difference: 11
+  ~ CLOSE: k * Base58_idx = 0
+    Difference: 1
+  ~ CLOSE: k XOR Base58_idx = 12
+    Difference: 11
+  ~ CLOSE: k << 1 | 1 = 1
+    Difference: 0
+  ~ CLOSE: k << 2 | 3 = 3
+    Difference: 2
+  ~ CLOSE: k << 1 + k = 0
+    Difference: 1
+  ~ CLOSE: k * position + Base58_idx = 12
+    Difference: 11
+  ~ CLOSE: k * position + ASCII(char) = 68
+    Difference: 67
+  ~ CLOSE: k * ASCII(char) + position = 68
+    Difference: 67
+
+Position 69:
+  Character: 'n' (ASCII 110, Base58 index: 45)
+  ~ CLOSE: k + 1 = 1
+    Difference: 0
+  ~ CLOSE: k + 2 = 2
+    Difference: 1
+  ~ CLOSE: k * 2 = 0
+    Difference: 1
+  ~ CLOSE: k * 3 = 0
+    Difference: 1
+  ~ CLOSE: k^2 = 0
+    Difference: 1
+  ~ CLOSE: k + position = 69
+    Difference: 68
+  ~ CLOSE: k + ASCII(char) = 110
+    Difference: 109
+  ~ CLOSE: k * ASCII(char) = 0
+    Difference: 1
+  ~ CLOSE: k XOR ASCII(char) = 110
+    Difference: 109
+  ~ CLOSE: k + Base58_idx = 45
+    Difference: 44
+  ~ CLOSE: k * Base58_idx = 0
+    Difference: 1
+  ~ CLOSE: k XOR Base58_idx = 45
+    Difference: 44
+  ~ CLOSE: k << 1 | 1 = 1
+    Difference: 0
+  ~ CLOSE: k << 2 | 3 = 3
+    Difference: 2
+  ~ CLOSE: k << 1 + k = 0
+    Difference: 1
+  ~ CLOSE: k * position + Base58_idx = 45
+    Difference: 44
+  ~ CLOSE: k * position + ASCII(char) = 110
+    Difference: 109
+  ~ CLOSE: k * ASCII(char) + position = 69
+    Difference: 68
+
+Position 70:
+  Character: '7' (ASCII 55, Base58 index: 6)
+  ~ CLOSE: k + 1 = 1
+    Difference: 0
+  ~ CLOSE: k + 2 = 2
+    Difference: 1
+  ~ CLOSE: k * 2 = 0
+    Difference: 1
+  ~ CLOSE: k * 3 = 0
+    Difference: 1
+  ~ CLOSE: k^2 = 0
+    Difference: 1
+  ~ CLOSE: k + position = 70
+    Difference: 69
+  ~ CLOSE: k + ASCII(char) = 55
+    Difference: 54
+  ~ CLOSE: k * ASCII(char) = 0
+    Difference: 1
+  ~ CLOSE: k XOR ASCII(char) = 55
+    Difference: 54
+  ~ CLOSE: k + Base58_idx = 6
+    Difference: 5
+  ~ CLOSE: k * Base58_idx = 0
+    Difference: 1
+  ~ CLOSE: k XOR Base58_idx = 6
+    Difference: 5
+  ~ CLOSE: k << 1 | 1 = 1
+    Difference: 0
+  ~ CLOSE: k << 2 | 3 = 3
+    Difference: 2
+  ~ CLOSE: k << 1 + k = 0
+    Difference: 1
+  ~ CLOSE: k * position + Base58_idx = 6
+    Difference: 5
+  ~ CLOSE: k * position + ASCII(char) = 55
+    Difference: 54
+  ~ CLOSE: k * ASCII(char) + position = 70
+    Difference: 69
+
 Tested 1300 formulas across 65 transitions
 Found 8 exact matches
 

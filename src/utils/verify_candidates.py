@@ -1,4 +1,4 @@
-import hashlib
+ import hashlib
 import base58
 
 def generate_candidates():
