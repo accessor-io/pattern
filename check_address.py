@@ -81,10 +81,10 @@ def get_address(private_key_hex):
     
     # Apply special patterns based on position
     if private_key_hex == key69:
-        # Position 69: Double the key
+        # Position 69: k * 2
         private_key_int *= 2
     elif private_key_hex == key70:
-        # Position 70: Key + 1
+        # Position 70: k + 1
         private_key_int += 1
     
     # Get public key point
