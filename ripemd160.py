@@ -73,11 +73,11 @@ def ripemd160(message):
         message = message.encode()
 
     h = [h0, h1, h2, h3, h4]  # Initialize state
-    length = len(message)
+    length = len(message) * 8  # Length in bits
     
     # Pre-processing: padding
     message += b'\x80'
-    while (len(message) + 8) % 64 != 0:
+    while (len(message) % 64) != 56:
         message += b'\x00'
     
     message += length.to_bytes(8, byteorder='little')
@@ -104,12 +104,15 @@ def ripemd160(message):
         
         # Main loop
         for j in range(80):
+            # Left side
             T = (rol(A + f(j, B, C, D) + X[r[j]] + K[j//16], s[j]) + E) & 0xffffffff
             A = E
             E = D
             D = rol(C, 10)
             C = B
             B = T
+            
+            # Right side
             T = (rol(AA + f(79-j, BB, CC, DD) + X[rr[j]] + KK[j//16], ss[j]) + EE) & 0xffffffff
             AA = EE
             EE = DD
@@ -117,7 +120,7 @@ def ripemd160(message):
             CC = BB
             BB = T
         
-        # Final additions
+        # Combine results
         T = (h[1] + C + DD) & 0xffffffff
         h[1] = (h[2] + D + EE) & 0xffffffff
         h[2] = (h[3] + E + AA) & 0xffffffff
@@ -125,11 +128,8 @@ def ripemd160(message):
         h[4] = (h[0] + B + CC) & 0xffffffff
         h[0] = T
     
-    # Produce final hash value
-    result = b''
-    for x in h:
-        result += x.to_bytes(4, byteorder='little')
-    return result
+    # Produce final hash value (big-endian)
+    return b''.join(x.to_bytes(4, byteorder='big') for x in h)
 
 def hexdigest(message):
     """Return the RIPEMD160 hash as a hexadecimal string."""
