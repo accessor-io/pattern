@@ -86,8 +86,6 @@ def get_address(private_key_hex):
     elif private_key_hex == key70:
         # Position 70: k + 1 (confirmed match)
         private_key_int += 1
-        # Additional pattern: k << 1 | 1
-        private_key_int = (private_key_int << 1) | 1
     
     # Get public key point
     SPEC256k1 = Point()
