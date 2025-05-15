@@ -19,7 +19,6 @@ def analyze_modified_string():
     print(f"Original: {original}")
     print(f"Modified: {modified}")
     print(f"Length: {len(modified)}")
-    
     # Position of the change
     change_pos = original.index('l')
     print(f"\nChange position: {change_pos}")

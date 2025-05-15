@@ -61,7 +61,7 @@ class CryptoBucketScannerUI:
             "download_files": questionary.confirm("Download suspicious files?", default=True).ask(),
             "analyze_content": questionary.confirm("Analyze file contents?", default=True).ask(),
             "keywords": questionary.checkbox(
-                "Select additional keywords to scan:",
+                "Select additional key to scan:",
                 choices=[
                     "NFT Collections",
                     "DeFi Protocols",

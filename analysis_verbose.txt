@@ -1,0 +1,13 @@
+Found 68 known keys
+
+Predicting 92 additional keys...
+Using known prefix '349' for 70th key and known 75th key
+
+Saving predicted keys...
+
+Analyzing all keys with high verbosity...
+
+--- Key 1/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000001
+Private Key (int): 1
+Key Size (bits): 1

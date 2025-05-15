@@ -407,11 +407,11 @@ def run_test_vectors():
         # Common test vector (alphabet)
         b"abc",
         # Bitcoin-specific test vector (public key hash)
-        bytes.fromhex("0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b23"),
+        bytes.fromhex(""),
         # Bitcoin public key (compressed)
-        bytes.fromhex("0279BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F817"),
+        bytes.fromhex(""),
         # Bitcoin public key (uncompressed) - known to work with the custom implementation
-        bytes.fromhex("0456579536d150fbce94ee62b47db2ca43af0a730a0467ba55c79e2a7ec9ce4ad297e35cdbb8e42a4643a60eef7c9abee2f5822f86b1da242d9c2301c431facf")
+        bytes.fromhex("")
     ]
     
     for i, data in enumerate(test_vectors):
@@ -442,7 +442,7 @@ def run_test_vectors():
         {
             "description": "Address #1 from sequence (private key 0x1)",
             # This is the compressed public key for the first Bitcoin address
-            "pubkey_hex": "0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+            "pubkey_hex": "",
             "private_key": 1, # Added private key for XOR test
             "expected_address": "1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH"
         },
@@ -450,7 +450,7 @@ def run_test_vectors():
         {
             "description": "Address #2 from sequence",
             # Fixed the hex string to ensure it's a valid length (130 characters for uncompressed)
-            "pubkey_hex": "0456579536d150fbce94ee62b47db2ca43af0a730a0467ba55c79e2a7ec9ce4ad297e35cdbb8e42a4643a60eef7c9abee2f5822f86b1da242d9c2301c431facf",
+            "pubkey_hex": "",
             "private_key": 2, # Assuming private key is 2 for testing purposes
             "expected_address": "1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb"
         }

@@ -1,0 +1,3002 @@
+Found 68 known keys
+
+Pattern Discovery Analysis:
+Key 1: 3 (hex: 0x3)
+  Previous: 1 (hex: 0x1)
+  Difference: 2
+  Ratio: 3.000
+  Close to power of two: 4
+  Bitwise OR with prev: 0x3
+  Bitwise AND with prev: 0x1
+  Bitwise XOR with prev: 0x2
+Key 2: 7 (hex: 0x7)
+  Previous: 3 (hex: 0x3)
+  Difference: 4
+  Ratio: 2.333
+  Close to power of two: 8
+  Bitwise OR with prev: 0x7
+  Bitwise AND with prev: 0x3
+  Bitwise XOR with prev: 0x4
+Key 3: 8 (hex: 0x8)
+  Previous: 7 (hex: 0x7)
+  Difference: 1
+  Ratio: 1.143
+  Power of two: 2^3
+  Close to power of two: 8
+  Bitwise OR with prev: 0xf
+  Bitwise AND with prev: 0x0
+  Bitwise XOR with prev: 0xf
+Key 4: 21 (hex: 0x15)
+  Previous: 8 (hex: 0x8)
+  Difference: 13
+  Ratio: 2.625
+  Close to power of two: 16
+  Bitwise OR with prev: 0x1d
+  Bitwise AND with prev: 0x0
+  Bitwise XOR with prev: 0x1d
+Key 5: 49 (hex: 0x31)
+  Previous: 21 (hex: 0x15)
+  Difference: 28
+  Ratio: 2.333
+  Bitwise OR with prev: 0x35
+  Bitwise AND with prev: 0x11
+  Bitwise XOR with prev: 0x24
+Key 6: 76 (hex: 0x4c)
+  Previous: 49 (hex: 0x31)
+  Difference: 27
+  Ratio: 1.551
+  Bitwise OR with prev: 0x7d
+  Bitwise AND with prev: 0x0
+  Bitwise XOR with prev: 0x7d
+Key 7: 224 (hex: 0xe0)
+  Previous: 76 (hex: 0x4c)
+  Difference: 148
+  Ratio: 2.947
+  Bitwise OR with prev: 0xec
+  Bitwise AND with prev: 0x40
+  Bitwise XOR with prev: 0xac
+Key 8: 467 (hex: 0x1d3)
+  Previous: 224 (hex: 0xe0)
+  Difference: 243
+  Ratio: 2.085
+  Bitwise OR with prev: 0x1f3
+  Bitwise AND with prev: 0xc0
+  Bitwise XOR with prev: 0x133
+Key 9: 514 (hex: 0x202)
+  Previous: 467 (hex: 0x1d3)
+  Difference: 47
+  Ratio: 1.101
+  Close to power of two: 512
+  Bitwise OR with prev: 0x3d3
+  Bitwise AND with prev: 0x2
+  Bitwise XOR with prev: 0x3d1
+Key 10: 1155 (hex: 0x483)
+  Previous: 514 (hex: 0x202)
+  Difference: 641
+  Ratio: 2.247
+  Bitwise OR with prev: 0x683
+  Bitwise AND with prev: 0x2
+  Bitwise XOR with prev: 0x681
+Key 11: 2683 (hex: 0xa7b)
+  Previous: 1155 (hex: 0x483)
+  Difference: 1528
+  Ratio: 2.323
+  Bitwise OR with prev: 0xefb
+  Bitwise AND with prev: 0x3
+  Bitwise XOR with prev: 0xef8
+Key 12: 5216 (hex: 0x1460)
+  Previous: 2683 (hex: 0xa7b)
+  Difference: 2533
+  Ratio: 1.944
+  Bitwise OR with prev: 0x1e7b
+  Bitwise AND with prev: 0x60
+  Bitwise XOR with prev: 0x1e1b
+Key 13: 10544 (hex: 0x2930)
+  Previous: 5216 (hex: 0x1460)
+  Difference: 5328
+  Ratio: 2.021
+  Bitwise OR with prev: 0x3d70
+  Bitwise AND with prev: 0x20
+  Bitwise XOR with prev: 0x3d50
+Key 14: 26867 (hex: 0x68f3)
+  Previous: 10544 (hex: 0x2930)
+  Difference: 16323
+  Ratio: 2.548
+  Bitwise OR with prev: 0x69f3
+  Bitwise AND with prev: 0x2830
+  Bitwise XOR with prev: 0x41c3
+Key 15: 51510 (hex: 0xc936)
+  Previous: 26867 (hex: 0x68f3)
+  Difference: 24643
+  Ratio: 1.917
+  Bitwise OR with prev: 0xe9f7
+  Bitwise AND with prev: 0x4832
+  Bitwise XOR with prev: 0xa1c5
+Key 16: 95823 (hex: 0x1764f)
+  Previous: 51510 (hex: 0xc936)
+  Difference: 44313
+  Ratio: 1.860
+  Bitwise OR with prev: 0x1ff7f
+  Bitwise AND with prev: 0x4006
+  Bitwise XOR with prev: 0x1bf79
+Key 17: 198669 (hex: 0x3080d)
+  Previous: 95823 (hex: 0x1764f)
+  Difference: 102846
+  Ratio: 2.073
+  Bitwise OR with prev: 0x37e4f
+  Bitwise AND with prev: 0x1000d
+  Bitwise XOR with prev: 0x27e42
+Key 18: 357535 (hex: 0x5749f)
+  Previous: 198669 (hex: 0x3080d)
+  Difference: 158866
+  Ratio: 1.800
+  Bitwise OR with prev: 0x77c9f
+  Bitwise AND with prev: 0x1000d
+  Bitwise XOR with prev: 0x67c92
+Key 19: 863317 (hex: 0xd2c55)
+  Previous: 357535 (hex: 0x5749f)
+  Difference: 505782
+  Ratio: 2.415
+  Bitwise OR with prev: 0xd7cdf
+  Bitwise AND with prev: 0x52415
+  Bitwise XOR with prev: 0x858ca
+Key 20: 1811764 (hex: 0x1ba534)
+  Previous: 863317 (hex: 0xd2c55)
+  Difference: 948447
+  Ratio: 2.099
+  Bitwise OR with prev: 0x1fad75
+  Bitwise AND with prev: 0x92414
+  Bitwise XOR with prev: 0x168961
+Key 21: 3007503 (hex: 0x2de40f)
+  Previous: 1811764 (hex: 0x1ba534)
+  Difference: 1195739
+  Ratio: 1.660
+  Bitwise OR with prev: 0x3fe53f
+  Bitwise AND with prev: 0x9a404
+  Bitwise XOR with prev: 0x36413b
+Key 22: 5598802 (hex: 0x556e52)
+  Previous: 3007503 (hex: 0x2de40f)
+  Difference: 2591299
+  Ratio: 1.862
+  Bitwise OR with prev: 0x7dee5f
+  Bitwise AND with prev: 0x56402
+  Bitwise XOR with prev: 0x788a5d
+Key 23: 14428676 (hex: 0xdc2a04)
+  Previous: 5598802 (hex: 0x556e52)
+  Difference: 8829874
+  Ratio: 2.577
+  Bitwise OR with prev: 0xdd6e56
+  Bitwise AND with prev: 0x542a00
+  Bitwise XOR with prev: 0x894456
+Key 24: 33185509 (hex: 0x1fa5ee5)
+  Previous: 14428676 (hex: 0xdc2a04)
+  Difference: 18756833
+  Ratio: 2.300
+  Bitwise OR with prev: 0x1fe7ee5
+  Bitwise AND with prev: 0xd80a04
+  Bitwise XOR with prev: 0x12674e1
+Key 25: 54538862 (hex: 0x340326e)
+  Previous: 33185509 (hex: 0x1fa5ee5)
+  Difference: 21353353
+  Ratio: 1.643
+  Bitwise OR with prev: 0x3fa7eef
+  Bitwise AND with prev: 0x1401264
+  Bitwise XOR with prev: 0x2ba6c8b
+Key 26: 111949941 (hex: 0x6ac3875)
+  Previous: 54538862 (hex: 0x340326e)
+  Difference: 57411079
+  Ratio: 2.053
+  Bitwise OR with prev: 0x7ec3a7f
+  Bitwise AND with prev: 0x2003064
+  Bitwise XOR with prev: 0x5ec0a1b
+Key 27: 227634408 (hex: 0xd916ce8)
+  Previous: 111949941 (hex: 0x6ac3875)
+  Difference: 115684467
+  Ratio: 2.033
+  Bitwise OR with prev: 0xfbd7cfd
+  Bitwise AND with prev: 0x4802860
+  Bitwise XOR with prev: 0xb3d549d
+Key 28: 400708894 (hex: 0x17e2551e)
+  Previous: 227634408 (hex: 0xd916ce8)
+  Difference: 173074486
+  Ratio: 1.760
+  Bitwise OR with prev: 0x1ff37dfe
+  Bitwise AND with prev: 0x5804408
+  Bitwise XOR with prev: 0x1a7339f6
+Key 29: 1033162084 (hex: 0x3d94cd64)
+  Previous: 400708894 (hex: 0x17e2551e)
+  Difference: 632453190
+  Ratio: 2.578
+  Bitwise OR with prev: 0x3ff6dd7e
+  Bitwise AND with prev: 0x15804504
+  Bitwise XOR with prev: 0x2a76987a
+Key 30: 2102388551 (hex: 0x7d4fe747)
+  Previous: 1033162084 (hex: 0x3d94cd64)
+  Difference: 1069226467
+  Ratio: 2.035
+  Bitwise OR with prev: 0x7ddfef67
+  Bitwise AND with prev: 0x3d04c544
+  Bitwise XOR with prev: 0x40db2a23
+Key 31: 3093472814 (hex: 0xb862a62e)
+  Previous: 2102388551 (hex: 0x7d4fe747)
+  Difference: 991084263
+  Ratio: 1.471
+  Bitwise OR with prev: 0xfd6fe76f
+  Bitwise AND with prev: 0x3842a606
+  Bitwise XOR with prev: 0xc52d4169
+Key 32: 7137437912 (hex: 0x1a96ca8d8)
+  Previous: 3093472814 (hex: 0xb862a62e)
+  Difference: 4043965098
+  Ratio: 2.307
+  Bitwise OR with prev: 0x1b96eaefe
+  Bitwise AND with prev: 0xa860a008
+  Bitwise XOR with prev: 0x1110e0ef6
+Key 33: 14133072157 (hex: 0x34a65911d)
+  Previous: 7137437912 (hex: 0x1a96ca8d8)
+  Difference: 6995634245
+  Ratio: 1.980
+  Bitwise OR with prev: 0x3eb6db9dd
+  Bitwise AND with prev: 0x108648018
+  Bitwise XOR with prev: 0x2e30939c5
+Key 34: 20112871792 (hex: 0x4aed21170)
+  Previous: 14133072157 (hex: 0x34a65911d)
+  Difference: 5979799635
+  Ratio: 1.423
+  Bitwise OR with prev: 0x7eef7917d
+  Bitwise AND with prev: 0xa401110
+  Bitwise XOR with prev: 0x7e4b7806d
+Key 35: 42387769980 (hex: 0x9de820a7c)
+  Previous: 20112871792 (hex: 0x4aed21170)
+  Difference: 22274898188
+  Ratio: 2.107
+  Bitwise OR with prev: 0xdfed21b7c
+  Bitwise AND with prev: 0x8e820070
+  Bitwise XOR with prev: 0xd70501b0c
+Key 36: 100251560595 (hex: 0x1757756a93)
+  Previous: 42387769980 (hex: 0x9de820a7c)
+  Difference: 57863790615
+  Ratio: 2.365
+  Bitwise OR with prev: 0x1fdff76aff
+  Bitwise AND with prev: 0x156000a10
+  Bitwise XOR with prev: 0x1e89f760ef
+Key 37: 146971536592 (hex: 0x22382facd0)
+  Previous: 100251560595 (hex: 0x1757756a93)
+  Difference: 46719975997
+  Ratio: 1.466
+  Bitwise OR with prev: 0x377f7feed3
+  Bitwise AND with prev: 0x210252890
+  Bitwise XOR with prev: 0x356f5ac643
+Key 38: 323724968937 (hex: 0x4b5f8303e9)
+  Previous: 146971536592 (hex: 0x22382facd0)
+  Difference: 176753432345
+  Ratio: 2.203
+  Bitwise OR with prev: 0x6b7fafaff9
+  Bitwise AND with prev: 0x2180300c0
+  Bitwise XOR with prev: 0x6967acaf39
+Key 39: 1003651412950 (hex: 0xe9ae4933d6)
+  Previous: 323724968937 (hex: 0x4b5f8303e9)
+  Difference: 679926444013
+  Ratio: 3.100
+  Bitwise OR with prev: 0xebffcb33ff
+  Bitwise AND with prev: 0x490e0103c0
+  Bitwise XOR with prev: 0xa2f1ca303f
+Key 40: 1458252205147 (hex: 0x153869acc5b)
+  Previous: 1003651412950 (hex: 0xe9ae4933d6)
+  Difference: 454600792197
+  Ratio: 1.453
+  Bitwise OR with prev: 0x1fbaedbffdf
+  Bitwise AND with prev: 0x4186080052
+  Bitwise XOR with prev: 0x1ba28d3ff8d
+Key 41: 2895374552463 (hex: 0x2a221c58d8f)
+  Previous: 1458252205147 (hex: 0x153869acc5b)
+  Difference: 1437122347316
+  Ratio: 1.986
+  Bitwise OR with prev: 0x3f3a7dfcddf
+  Bitwise AND with prev: 0x200808c0b
+  Bitwise XOR with prev: 0x3f1a75f41d4
+Key 42: 7409811047825 (hex: 0x6bd3b27c591)
+  Previous: 2895374552463 (hex: 0x2a221c58d8f)
+  Difference: 4514436495362
+  Ratio: 2.559
+  Bitwise OR with prev: 0x6bf3be7cd9f
+  Bitwise AND with prev: 0x2a021058581
+  Bitwise XOR with prev: 0x41f1ae2481e
+Key 43: 15404761757071 (hex: 0xe02b35a358f)
+  Previous: 7409811047825 (hex: 0x6bd3b27c591)
+  Difference: 7994950709246
+  Ratio: 2.079
+  Bitwise OR with prev: 0xebfbb7ff59f
+  Bitwise AND with prev: 0x60033020581
+  Bitwise XOR with prev: 0x8bf887df01e
+Key 44: 19996463086597 (hex: 0x122fca143c05)
+  Previous: 15404761757071 (hex: 0xe02b35a358f)
+  Difference: 4591701329526
+  Ratio: 1.298
+  Bitwise OR with prev: 0x1e2ffb5e3d8f
+  Bitwise AND with prev: 0x20282103405
+  Bitwise XOR with prev: 0x1c2d794e098a
+Key 45: 51408670348612 (hex: 0x2ec18388d544)
+  Previous: 19996463086597 (hex: 0x122fca143c05)
+  Difference: 31412207262015
+  Ratio: 2.571
+  Bitwise OR with prev: 0x3eefcb9cfd45
+  Bitwise AND with prev: 0x20182001404
+  Bitwise XOR with prev: 0x3cee499ce941
+Key 46: 119666659114170 (hex: 0x6cd610b53cba)
+  Previous: 51408670348612 (hex: 0x2ec18388d544)
+  Difference: 68257988765558
+  Ratio: 2.328
+  Bitwise OR with prev: 0x6ed793bdfdfe
+  Bitwise AND with prev: 0x2cc000801400
+  Bitwise XOR with prev: 0x4217933de9fe
+Key 47: 191206974700443 (hex: 0xade6d7ce3b9b)
+  Previous: 119666659114170 (hex: 0x6cd610b53cba)
+  Difference: 71540315586273
+  Ratio: 1.598
+  Bitwise OR with prev: 0xedf6d7ff3fbb
+  Bitwise AND with prev: 0x2cc61084389a
+  Bitwise XOR with prev: 0xc130c77b0721
+Key 48: 409118905032525 (hex: 0x174176b015f4d)
+  Previous: 191206974700443 (hex: 0xade6d7ce3b9b)
+  Difference: 217911930332082
+  Ratio: 2.140
+  Bitwise OR with prev: 0x1fdf7ffcf7fdf
+  Bitwise AND with prev: 0x240643001b09
+  Bitwise XOR with prev: 0x1d9f1bccf64d6
+Key 49: 611140496167764 (hex: 0x22bd43c2e9354)
+  Previous: 409118905032525 (hex: 0x174176b015f4d)
+  Difference: 202021591135239
+  Ratio: 1.494
+  Bitwise OR with prev: 0x37fd77f2fdf5d
+  Bitwise AND with prev: 0x201428001344
+  Bitwise XOR with prev: 0x35fc3572fcc19
+Key 50: 2058769515153876 (hex: 0x75070a1a009d4)
+  Previous: 611140496167764 (hex: 0x22bd43c2e9354)
+  Difference: 1447629018986112
+  Ratio: 3.369
+  Bitwise OR with prev: 0x77bf4bdae9bd4
+  Bitwise AND with prev: 0x2005020200154
+  Bitwise XOR with prev: 0x57ba49d8e9a80
+Key 51: 4216495639600700 (hex: 0xefae164cb9e3c)
+  Previous: 2058769515153876 (hex: 0x75070a1a009d4)
+  Difference: 2157726124446824
+  Ratio: 2.048
+  Bitwise OR with prev: 0xffaf1e5eb9ffc
+  Bitwise AND with prev: 0x6506020800814
+  Bitwise XOR with prev: 0x9aa91c56b97e8
+Key 52: 6763683971478124 (hex: 0x180788e47e326c)
+  Previous: 4216495639600700 (hex: 0xefae164cb9e3c)
+  Difference: 2547188331877424
+  Ratio: 1.604
+  Bitwise OR with prev: 0x1effe9e4ffbe7c
+  Bitwise AND with prev: 0x80280644a122c
+  Bitwise XOR with prev: 0x16fd6980b5ac50
+Key 53: 9974455244496707 (hex: 0x236fb6d5ad1f43)
+  Previous: 6763683971478124 (hex: 0x180788e47e326c)
+  Difference: 3210771273018583
+  Ratio: 1.475
+  Bitwise OR with prev: 0x3b6fbef5ff3f6f
+  Bitwise AND with prev: 0x780c42c1240
+  Bitwise XOR with prev: 0x3b683e31d32d2f
+Key 54: 30045390491869460 (hex: 0x6abe1f9b67e114)
+  Previous: 9974455244496707 (hex: 0x236fb6d5ad1f43)
+  Difference: 20070935247372753
+  Ratio: 3.012
+  Bitwise OR with prev: 0x6bffbfdfefff57
+  Bitwise AND with prev: 0x222e1691250100
+  Bitwise XOR with prev: 0x49d1a94ecafe57
+Key 55: 44218742292676575 (hex: 0x9d18b63ac4ffdf)
+  Previous: 30045390491869460 (hex: 0x6abe1f9b67e114)
+  Difference: 14173351800807115
+  Ratio: 1.472
+  Bitwise OR with prev: 0xffbebfbbe7ffdf
+  Bitwise AND with prev: 0x818161a44e114
+  Bitwise XOR with prev: 0xf7a6a9a1a31ecb
+Key 56: 138245758910846492 (hex: 0x1eb25c90795d61c)
+  Previous: 44218742292676575 (hex: 0x9d18b63ac4ffdf)
+  Difference: 94027016618169917
+  Ratio: 3.126
+  Bitwise OR with prev: 0x1ff3dff3fd5ffdf
+  Bitwise AND with prev: 0x8900800284d61c
+  Bitwise XOR with prev: 0x1763d7f3d5129c3
+Key 57: 199976667976342049 (hex: 0x2c675b852189a21)
+  Previous: 138245758910846492 (hex: 0x1eb25c90795d61c)
+  Difference: 61730909065495557
+  Ratio: 1.447
+  Bitwise OR with prev: 0x3ef75f9579dde3d
+  Bitwise AND with prev: 0xc2258802109200
+  Bitwise XOR with prev: 0x32d5071558d4c3d
+Key 58: 525070384258266191 (hex: 0x7496cbb87cab44f)
+  Previous: 199976667976342049 (hex: 0x2c675b852189a21)
+  Difference: 325093716281924142
+  Ratio: 2.626
+  Bitwise OR with prev: 0x7cf7dbbd7dabe6f
+  Bitwise AND with prev: 0x24064b802089001
+  Bitwise XOR with prev: 0x58f1903d5d22e6e
+Key 59: 1135041350219496382 (hex: 0xfc07a1825367bbe)
+  Previous: 525070384258266191 (hex: 0x7496cbb87cab44f)
+  Difference: 609970965961230191
+  Ratio: 2.162
+  Bitwise OR with prev: 0xfc97ebba7feffff
+  Bitwise AND with prev: 0x74068180502300e
+  Bitwise XOR with prev: 0x88916a3a2fccff1
+Key 60: 1425787542618654982 (hex: 0x13c96a3742f64906)
+  Previous: 1135041350219496382 (hex: 0xfc07a1825367bbe)
+  Difference: 290746192399158600
+  Ratio: 1.256
+  Bitwise OR with prev: 0x1fc97a3f67f67bbe
+  Bitwise AND with prev: 0x3c06a1000364906
+  Bitwise XOR with prev: 0x1c09102f67c032b8
+Key 61: 3908372542507822062 (hex: 0x363d541eb611abee)
+  Previous: 1425787542618654982 (hex: 0x13c96a3742f64906)
+  Difference: 2482584999889167080
+  Ratio: 2.741
+  Bitwise OR with prev: 0x37fd7e3ff6f7ebee
+  Bitwise AND with prev: 0x1209401602100906
+  Bitwise XOR with prev: 0x25f43e29f4e7e2e8
+Key 62: 8993229949524469768 (hex: 0x7cce5efdaccf6808)
+  Previous: 3908372542507822062 (hex: 0x363d541eb611abee)
+  Difference: 5084857407016647706
+  Ratio: 2.301
+  Bitwise OR with prev: 0x7eff5effbedfebee
+  Bitwise AND with prev: 0x340c541ca4012808
+  Bitwise XOR with prev: 0x4af30ae31adec3e6
+Key 63: 17799667357578236628 (hex: 0xf7051f27b09112d4)
+  Previous: 8993229949524469768 (hex: 0x7cce5efdaccf6808)
+  Difference: 8806437408053766860
+  Ratio: 1.979
+  Bitwise OR with prev: 0xffcf5fffbcdf7adc
+  Bitwise AND with prev: 0x74041e25a0810000
+  Bitwise XOR with prev: 0x8bcb41da1c5e7adc
+Key 64: 30568377312064202855 (hex: 0x1a838b13505b26867)
+  Previous: 17799667357578236628 (hex: 0xf7051f27b09112d4)
+  Difference: 12768709954485966227
+  Ratio: 1.717
+  Bitwise OR with prev: 0x1ff3dbf37b5b37af7
+  Bitwise AND with prev: 0xa000112500900044
+  Bitwise XOR with prev: 0x15f3dae12b5237ab3
+Key 65: 46346217550346335726 (hex: 0x2832ed74f2b5e35ee)
+  Previous: 30568377312064202855 (hex: 0x1a838b13505b26867)
+  Difference: 15777840238282132871
+  Ratio: 1.516
+  Bitwise OR with prev: 0x3ab3ef77f2ffe7def
+  Bitwise AND with prev: 0x8028910501122066
+  Bitwise XOR with prev: 0x32b16667a2eec5d89
+Key 66: 132656943602386256302 (hex: 0x730fc235c1942c1ae)
+  Previous: 46346217550346335726 (hex: 0x2832ed74f2b5e35ee)
+  Difference: 86310726052039920576
+  Ratio: 2.862
+  Bitwise OR with prev: 0x7b3fef75f3b5ef5ee
+  Bitwise AND with prev: 0x2002c034c094201ae
+  Bitwise XOR with prev: 0x5b3d2f413321cf440
+Key 67: 970436974005023690481 (hex: 0x349b84b6431a6c4ef1)
+  Previous: 132656943602386256302 (hex: 0x730fc235c1942c1ae)
+  Difference: 837780030402637434179
+  Ratio: 7.315
+  Bitwise OR with prev: 0x37bbfcb75f1b6ecfff
+  Bitwise AND with prev: 0x410842240184040a0
+  Bitwise XOR with prev: 0x33ab78951f032e8f5f
+
+Candidate next key by average difference: 0x356486b1573590501e
+Candidate next key by next power of two: 0x400000000000000000
+Candidate next key by sum of last two: 0x3bcc80d99f33af109f
+
+--- End of Pattern Discovery ---
+
+
+Predicting 92 additional keys...
+Using known prefix '349' for 70th key and known 75th key
+
+Saving predicted keys...
+
+Analyzing all keys with high verbosity...
+
+--- Key 1/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000001
+Private Key (int): 1
+Key Size (bits): 1
+Automorphism-related keys:
+  λ^1 * k mod n = 0x5363ad4cc05c30e0a5261c028812645a122e22ea20816640dfbcc59c69de9a1
+  λ^2 * k mod n = 0x243d044ae183f736733ce4442512dbba822d245ebd2052df3b90add984137c32
+  λ^3 * k mod n = 0x8c735d2cd8c831bb6d7014b7fb84716503132223fe6c58d656116f041ed9aaf0
+  λ^4 * k mod n = 0x7ca5388b695e97f465934f5c7ae1f180be9c0bd65ad3da74891991ae11406045
+  λ^5 * k mod n = 0xb824214eb4f9033e7c061df6f9a8a01edd57ccf9d1d83ee43f06b5dbf8092e91
+GLV decomposition: k1 = 0x1, k2 = 0x0
+Timing attack simulation: 0.014686 seconds
+Growth ratio from previous key: N/A (first key)
+
+--- Key 2/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000003
+Private Key (int): 3
+Key Size (bits): 2
+Automorphism-related keys:
+  λ^1 * k mod n = 0xfa2b07e6411492a1ef72540798372d0e368a68be618432c29f3650d53d9bce3
+  λ^2 * k mod n = 0x6cb70ce0a48be5a359b6accc6f38932f86876d1c3760f89db2b2098c8c3a7496
+  λ^3 * k mod n = 0xa55a17868a58953248503e27f28d54304e8a89854bfc6a474261ee7f8c56bf8f
+  λ^4 * k mod n = 0x75efa9a23c1bc7dd30b9ee1570a5d4838125469c6132ef21db7a567d638adf8e
+  λ^5 * k mod n = 0x286c63ec1eeb09bb741259e4ecf9e05f22a9ad2016f77c353d6f647a47af0931
+GLV decomposition: k1 = 0x3, k2 = 0x0
+Timing attack simulation: 0.001320 seconds
+Growth ratio from previous key: 3.00x
+Difference from previous key: 0x2
+
+--- Key 3/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000007
+Private Key (int): 7
+Key Size (bits): 3
+Automorphism-related keys:
+  λ^1 * k mod n = 0x247b9bd1942855624840ac411b880be767f42f466e389cbc61e296746e516367
+  λ^2 * k mod n = 0xfdab1e0c2a9bc27d26aa3ddd038402198f3bfe972be2441aa0f4c0f29c88655e
+  λ^3 * k mod n = 0xd7278c39ed795c1ffe109107e09f19c6e5795847e71c8d291b02ed766750e8cd
+  λ^4 * k mod n = 0x68848bcfe19627aec7072b875c2d9a890637bc286df1187c803be01c081fde20
+  λ^5 * k mod n = 0x8fce926f2cf16b5642ad1c0d39c60de67fc4a53507e9712fa132043b730ffb2
+GLV decomposition: k1 = 0x7, k2 = 0x0
+Timing attack simulation: 0.001178 seconds
+Growth ratio from previous key: 2.33x
+Difference from previous key: 0x4
+
+--- Key 4/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000008
+Private Key (int): 8
+Key Size (bits): 4
+Automorphism-related keys:
+  λ^1 * k mod n = 0x29b1d6a6602e187052930e014409322d091711751040b3206fde62ce34ef4d08
+  λ^2 * k mod n = 0x21e822570c1fb9b399e722212896ddd556ba460f39b9f6be1cb3103f5065a04f
+  λ^3 * k mod n = 0x639ae966c6418ddb6b80a5bfdc238b2d2ddd9d85364045c3b141fdedb5f4527c
+  λ^4 * k mod n = 0xe529c45b4af4bfa32c9a7ae3d70f8c09c4d3c7fec8c4f2f1095571ca19603e65
+  λ^5 * k mod n = 0xc1210a75a7c819f3e030efb7cd4500fd4554174d2256d5f73919d61faf3a2e43
+GLV decomposition: k1 = 0x8, k2 = 0x0
+Timing attack simulation: 0.001097 seconds
+Growth ratio from previous key: 1.14x
+Difference from previous key: 0x1
+
+--- Key 5/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000015
+Private Key (int): 21
+Key Size (bits): 5
+Automorphism-related keys:
+  λ^1 * k mod n = 0x6d72d374bc790026d8c204c3529823b637dc8dd34aa9d63525a7c35d4af42a35
+  λ^2 * k mod n = 0xf9015a247fd3477773feb9970a8c064f385641f825158bd8633985be352cad98
+  λ^3 * k mod n = 0x8576a4adc86c145ffa31b317a1dd4d573b0e4f0a56c46703d1640b49958637e5
+  λ^4 * k mod n = 0x398da36fa4c2770c551582961488cf9c57f857929a8aa939c0e141c74829591f
+  λ^5 * k mod n = 0x1af6bb74d86d44202c8075427ad5229b37f4def9f17bc538ee3960cb2592ff16
+GLV decomposition: k1 = 0x15, k2 = 0x0
+Timing attack simulation: 0.001060 seconds
+Growth ratio from previous key: 2.62x
+Difference from previous key: 0xd
+
+--- Key 6/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000031
+Private Key (int): 49
+Key Size (bits): 6
+Automorphism-related keys:
+  λ^1 * k mod n = 0xff6142bb0d1a55aff9c4b5c7c0b85353d7ad4aed038c4926ad321d2f0439b7d1
+  λ^2 * k mod n = 0xefadd2552a42516c0ea7b10b189c0eba8a8ac8ba177c1b53e7c30f5566753e0c
+  λ^3 * k mod n = 0xe214d5957e5184dff273f7372459b476a0e71975e55cbaf4fdf8a57cc2271756
+  λ^4 * k mod n = 0xdb9fd2af2b1b15c7713230b3853f39c1b6286b4da3066af001fe63aa9872905e
+  λ^5 * k mod n = 0x3eea6010a3a99ef5bd2bbc45c946a614d7e6084733762184d685e1da0256fdde
+GLV decomposition: k1 = 0x31, k2 = 0x0
+Timing attack simulation: 0.001073 seconds
+Growth ratio from previous key: 2.33x
+Difference from previous key: 0x1c
+
+--- Key 7/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000000000004c
+Private Key (int): 76
+Key Size (bits): 7
+Automorphism-related keys:
+  λ^1 * k mod n = 0x8c19772c91b5e82b1075050c06575cad1bac48f16b1e057866ee4c1a26ab1a8b
+  λ^2 * k mod n = 0xc21d463af32d642a3613c43b01993b6b5a922b1d4cc257f030bbeb1313aa524e
+  λ^3 * k mod n = 0xb23fa9505b6ec3a47d46269eab51aa3103acc1bd7588b60fd47bd0abcfee4bd7
+  λ^4 * k mod n = 0x10cc96348151c8e27bb8f747b13b2679b0d964ba165b1f5fa2f955307452617
+  λ^5 * k mod n = 0xaab9e35db9ecf68cd1d0e5521e0f896e552e418152e0df283f9e0b99b7480f56
+GLV decomposition: k1 = 0x4c, k2 = 0x0
+Timing attack simulation: 0.001041 seconds
+Growth ratio from previous key: 1.55x
+Difference from previous key: 0x1b
+
+--- Key 8/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000000000000e0
+Private Key (int): 224
+Key Size (bits): 8
+Automorphism-related keys:
+  λ^1 * k mod n = 0x8f737a32850aac490815882371017cf213ca753309f1169d3d09545a895367dc
+  λ^2 * k mod n = 0xb563c18553784fa4d547bba0708043594c5312f6427d1c17e41eab465a7ac4e1
+  λ^3 * k mod n = 0xe4f1873daf2b83ffc21220fc13e338fdb968998f16315f11e500147fc49a7906
+  λ^4 * k mod n = 0x109179fc32c4f5d8e0e570eb85b351314c164d56d772ec8749cd365a713a73b3
+  λ^5 * k mod n = 0x1f9d24de59e2d6ac855a381a738c1bce44da6d83608a42238291a9ea15e9b4ff
+GLV decomposition: k1 = 0xe0, k2 = 0x0
+Timing attack simulation: 0.001127 seconds
+Growth ratio from previous key: 2.95x
+Difference from previous key: 0x94
+
+--- Key 9/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000000000001d3
+Private Key (int): 467
+Key Size (bits): 9
+Automorphism-related keys:
+  λ^1 * k mod n = 0x81ed52302e82d29cd4485189e398d110627cd6f56b33366bc3f074d20028e56a
+  λ^2 * k mod n = 0x1b4ed49963bbf8543814684fa166d58f57446559d13dddd234b0c37e418ebc74
+  λ^3 * k mod n = 0x3672f8cf7532b8e8a375cb9fd29adc89ed0a60f9d705d33f2f6ef7b410d192d0
+  λ^4 * k mod n = 0x61662651378f32d54bb9c5b42a2b8efc2d9bb77a43116d9b021ae9acd853c13c
+  λ^5 * k mod n = 0xe9e8c2942240eafc3f28a9896e9c19f77c57d9da6d710c2ef4f4060101c08e74
+GLV decomposition: k1 = 0x1d3, k2 = 0x0
+Timing attack simulation: 0.001239 seconds
+Growth ratio from previous key: 2.08x
+Difference from previous key: 0xf3
+
+--- Key 10/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000202
+Private Key (int): 514
+Key Size (bits): 10
+Automorphism-related keys:
+  λ^1 * k mod n = 0x76e21f41a391a230b96843d1534ed7da3d35809e7b66b28e95589ac0a6f088b8
+  λ^2 * k mod n = 0xc2829e58caf65b53604250d26fdd2cd4dd74e5566e795367a55277209fdd021c
+  λ^3 * k mod n = 0xffa1140b41f3da51bb099966ffebae35427a130e6ed27cc341171db5657b9587
+  λ^4 * k mod n = 0x43bb87e98fed18b3f1c557aeb9a6e5bc668c0b1b307023a1f1e629fb4e459110
+  λ^5 * k mod n = 0xb88ae0075bf88375044829e144917fcd543d2514ac7f50270d3edaafe43b7071
+GLV decomposition: k1 = 0x202, k2 = 0x0
+Timing attack simulation: 0.001189 seconds
+Growth ratio from previous key: 1.10x
+Difference from previous key: 0x2f
+
+--- Key 11/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000483
+Private Key (int): 1155
+Key Size (bits): 11
+Automorphism-related keys:
+  λ^1 * k mod n = 0x83ab6e147dff085891af05f6beafac433aac9fab4af6a00cdb247a646595348c
+  λ^2 * k mod n = 0x7f4a5dd776645aa9ebb9df7344155b487454708dad97df1e9ace28b6515dc933
+  λ^3 * k mod n = 0xac7d61560f38609ec0ad7a13c68b9de144f2d1fd78409b49017c156859e6df17
+  λ^4 * k mod n = 0x5d6e1cfc65c793a6479f0e3e69649aa6262875aefc62d89b7288b336be57169d
+  λ^5 * k mod n = 0xcb02461a7f79a2e98f99314863ca6f5f60319731752c3e106f37f2e501858775
+GLV decomposition: k1 = 0x483, k2 = 0x0
+Timing attack simulation: 0.001157 seconds
+Growth ratio from previous key: 2.25x
+Difference from previous key: 0x281
+
+--- Key 12/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000000a7b
+Private Key (int): 2683
+Key Size (bits): 12
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9f5a9436406344262d6678e8818c1c0467b5e6133170de041796bf30ad8dc6a5
+  λ^2 * k mod n = 0xcb7bfcc9820fe7a9bf2c56308ca4dd93ee3b2362a13f512048dc0c32f7e404cb
+  λ^3 * k mod n = 0xfd118503fa213753f5a92439051074f486bf7db247365704cee9350eeb818cd1
+  λ^4 * k mod n = 0x57979d1952628e648ee0be3bddfe16c94d5d1eafb1d1128847c370f098e80d8d
+  λ^5 * k mod n = 0xe2a913e2adc4ffddd41c0b6a8a462d0d1792b7fb7b1bbfe8232985539f6956e2
+GLV decomposition: k1 = 0xa7b, k2 = 0x0
+Timing attack simulation: 0.001134 seconds
+Growth ratio from previous key: 2.32x
+Difference from previous key: 0x5f8
+
+--- Key 13/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000001460
+Private Key (int): 5216
+Key Size (bits): 13
+Automorphism-related keys:
+  λ^1 * k mod n = 0x30eeafbcf5663e124e87ab39476bcb39da58fea0d0b5dddf7d487ee09b012b76
+  λ^2 * k mod n = 0x5b3775b2e0ccf56bf8aaec73603cfbc62bac3948233a981ea7619df2d09a5d5e
+  λ^3 * k mod n = 0xae8a71c0eef54ad5cba624a4aa867852519cdf4af0eb535ae12b4841a4a39693
+  λ^4 * k mod n = 0xa6601882e75813959970fc47bb98abc627284b8e2735d5d1ed887c0a75904e35
+  λ^5 * k mod n = 0xe026a3a751a2191efca2881ecbbe877c84c9aa0144dd9f0c8552009ef01eaaf9
+GLV decomposition: k1 = 0x1460, k2 = 0x0
+Timing attack simulation: 0.001040 seconds
+Growth ratio from previous key: 1.94x
+Difference from previous key: 0x9e5
+
+--- Key 14/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000002930
+Private Key (int): 10544
+Key Size (bits): 14
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa9971c932d51d249211a1a84475854ecbe9737db2664470d9915a7ee7aac0ada
+  λ^2 * k mod n = 0x9120cc286b5612aa5bf9b6b6f8ba1939a02a8d98100f6e2b60e962426656fc8c
+  λ^3 * k mod n = 0xcf8da720b58057ab785559c75efe8d24c53f2e76bda6b602f5043c365b5e2868
+  λ^4 * k mod n = 0xd508ee03e812a217a354b1053a0b002597044f546280d1c9a00e63fbbba2b5a3
+  λ^5 * k mod n = 0x501bd9bdd0359d943bf22c4ad1431ce213fa3f6a33136ed12c31485fb2e0ce90
+GLV decomposition: k1 = 0x2930, k2 = 0x0
+Timing attack simulation: 0.001203 seconds
+Growth ratio from previous key: 2.02x
+Difference from previous key: 0x14d0
+
+--- Key 15/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000000000068f3
+Private Key (int): 26867
+Key Size (bits): 15
+Automorphism-related keys:
+  λ^1 * k mod n = 0xfa604ae000b5da8543e8d9daea23a043f70c80153de027387259c9939b16ff31
+  λ^2 * k mod n = 0x2fa97eb1acb1c7801f885bbeda2a69cca3f46bd4bb75027db6d2cd4732f7d2db
+  λ^3 * k mod n = 0x2f5ba9a31a3b595e69ce68d18cc8f54cd4c0f5220345762a0afa09ad42298f3c
+  λ^4 * k mod n = 0x6fcd4f23728586404311e6b46e94cb9341d8c9ebb1d42743e212b60162eb1726
+  λ^5 * k mod n = 0x77d3973af1af76b235fac6db7c1ce72563839c642c68ade341d490ce9c0633e6
+GLV decomposition: k1 = 0x68f3, k2 = 0x0
+Timing attack simulation: 0.001125 seconds
+Growth ratio from previous key: 2.55x
+Difference from previous key: 0x3fc3
+
+--- Key 16/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000000000c936
+Private Key (int): 51510
+Key Size (bits): 16
+Automorphism-related keys:
+  λ^1 * k mod n = 0xada17d138f5d2b10dc207e55f24ac368251a02b0f5f9537c615c876d83a38ede
+  λ^2 * k mod n = 0x8d3db2dc2eefe5f71e11a77ba07fedbe14e6b0781c773b2afc99a0272f6afe51
+  λ^3 * k mod n = 0x347dddaae946a67615e8d34a0af8c7009c9e0ced0f62c306850a369ec3e5133c
+  λ^4 * k mod n = 0x43f63237f42f14e166259fd5247834f9f1c64a32c23b6a9752772f4ebe1a396
+  λ^5 * k mod n = 0x35c5d2b1b012be8ef6d13c1e0f4aba37e678435a28cfd2161c59cc2aeb29711b
+GLV decomposition: k1 = 0xc936, k2 = 0x0
+Timing attack simulation: 0.001107 seconds
+Growth ratio from previous key: 1.92x
+Difference from previous key: 0x6043
+
+--- Key 17/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000000001764f
+Private Key (int): 95823
+Key Size (bits): 17
+Automorphism-related keys:
+  λ^1 * k mod n = 0xd5af09bb60bdb4698a3ae5792dc49293b03d47f0a6008e2f08d3034500c74191
+  λ^2 * k mod n = 0x5319b89262e2d6288545ff30fdd48c10d61052da4a01d6213157c02c3ecaef72
+  λ^3 * k mod n = 0xe1b9458b5e6f2ab883db2e3a1b89959f83bade705617be096212e88e0f5c20f5
+  λ^4 * k mod n = 0xd7981ef5b62ff0d08e669910028c84ca895e7274c3bcc12de5bae13d8fc43e4c
+  λ^5 * k mod n = 0x9bcf43ada395497935aa0ff364f7d70859c4308298efe5b67e46fce8555e5b42
+GLV decomposition: k1 = 0x1764f, k2 = 0x0
+Timing attack simulation: 0.001018 seconds
+Growth ratio from previous key: 1.86x
+Difference from previous key: 0xad19
+
+--- Key 18/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000000003080d
+Private Key (int): 198669
+Key Size (bits): 18
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa616073fd38d77003e7d71898a92160dea194b6dcf053d9dca0bea34a9261661
+  λ^2 * k mod n = 0xcc1c336579109b146e0627d70c030eaa0593b10665c6fe56a9edb3d65d78a030
+  λ^3 * k mod n = 0xd44bac65d8eaaa404d7ebfc13d76107fecd9bd6e932c58941b5ef73fe3564f6c
+  λ^4 * k mod n = 0x27ca767b166a8b4fb10b5c2f2189657d7ae7abbae3da46e691afc90bff937fe6
+  λ^5 * k mod n = 0xdecc4592027a921ed7242a51d2f075dedc69420de00b07ec8a23247d3ff173a7
+GLV decomposition: k1 = 0x3080d, k2 = 0x0
+Timing attack simulation: 0.001178 seconds
+Growth ratio from previous key: 2.07x
+Difference from previous key: 0x191be
+
+--- Key 19/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000000005749f
+Private Key (int): 357535
+Key Size (bits): 19
+Automorphism-related keys:
+  λ^1 * k mod n = 0xf57ef2ba233cb601a63693396cea9c11f6c4a03f7a6421be5701739013a2e911
+  λ^2 * k mod n = 0x3d4e0045b10b77399f95607ddcec81efec1c3bfc47e6c512f007a5a3f334259b
+  λ^3 * k mod n = 0x53bf6cfe5388f430299825d371a11036451875357543a47e19feebc6fd5e21d4
+  λ^4 * k mod n = 0x62f6592e46611ab2634298886b4a6e836355c60764a834024a7feb060632e459
+  λ^5 * k mod n = 0x6411e2c04c59c020633365d098e8bec85bcd97f65402dfe88cf8728d87b736b8
+GLV decomposition: k1 = 0x5749f, k2 = 0x0
+Timing attack simulation: 0.001470 seconds
+Growth ratio from previous key: 1.80x
+Difference from previous key: 0x26c92
+
+--- Key 20/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000000000d2c55
+Private Key (int): 863317
+Key Size (bits): 20
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9ec7803a326b39e8ce98a5296ff32d5066519cc0164513f891dea3fe6d327cd
+  λ^2 * k mod n = 0xbcccbf531d124afa51e962f4b581fe38bb8f286530cd1e1d4fb95ab326a2807b
+  λ^3 * k mod n = 0x3198a750e98948bba71e460b08a15a30d745b108472421e57f018cc3d8878e02
+  λ^4 * k mod n = 0xa7a81633f5ef9e16133f7c4ce61925003ba3cc91a10babd53cab9065615db1b0
+  λ^5 * k mod n = 0xab7c6e20d691d5fc0b9137a021fc048ab2ed1e367e188b7effd950de514812c
+GLV decomposition: k1 = 0xd2c55, k2 = 0x0
+Timing attack simulation: 0.001211 seconds
+Growth ratio from previous key: 2.41x
+Difference from previous key: 0x7b7b6
+
+--- Key 21/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000000001ba534
+Private Key (int): 1811764
+Key Size (bits): 21
+Automorphism-related keys:
+  λ^1 * k mod n = 0x37609f54ba5ec2318100fac2813f5cc6652f353d4189c2179de25b3c2a7b4f5f
+  λ^2 * k mod n = 0x240eeb7aefe276c1baae32b9dc248ba17e672cee3968ecedc11b46b68a9ec3d6
+  λ^3 * k mod n = 0xb637b1f24f7c726da786517369b7bca96ee6f4fb36ecea34c44e719421bd7db3
+  λ^4 * k mod n = 0xc5b5743565ee19a5f2d3afd10f323e5af9fcf96212723208e64c6b571ba73e28
+  λ^5 * k mod n = 0x341b94e4994303464b9a99dd48cf0838cf239be3561de675b0168a7815fbbad0
+GLV decomposition: k1 = 0x1ba534, k2 = 0x0
+Timing attack simulation: 0.001212 seconds
+Growth ratio from previous key: 2.10x
+Difference from previous key: 0xe78df
+
+--- Key 22/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000000002de40f
+Private Key (int): 3007503
+Key Size (bits): 22
+Automorphism-related keys:
+  λ^1 * k mod n = 0xf1fad5305f86bf7f28a9fd091fe5c4a7ee65ef2bb3ed8f39a11b2152e8622e43
+  λ^2 * k mod n = 0x388f956f337a3c871bd89553979e1f19d7547a36487bc100d3b2a722da390d6c
+  λ^3 * k mod n = 0x5aa081e3bdf81426e05c4911a0a224a287d318eec4352635716dd6f9d8bf572a
+  λ^4 * k mod n = 0x648bffa421d66cae19919d93e211b6a3d24316464a4985823cfb8b17ee2c65b6
+  λ^5 * k mod n = 0xd29ddc8ff376a431fb759a76f513b9df6ed8b4b3407b42badff64ac8ba6adf1b
+GLV decomposition: k1 = 0x2de40f, k2 = 0x0
+Timing attack simulation: 0.001058 seconds
+Growth ratio from previous key: 1.66x
+Difference from previous key: 0x123edb
+
+--- Key 23/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000556e52
+Private Key (int): 5598802
+Key Size (bits): 23
+Automorphism-related keys:
+  λ^1 * k mod n = 0x814e05bd9751f049293153d62cf0e3ef122410e1bebee348e3529165ae6eb652
+  λ^2 * k mod n = 0x40406db40592d82cde36b504ef711ccec1e0ec579356adc2cb18dc6ecbd35424
+  λ^3 * k mod n = 0x7ee117fbf8b9cd4617e433fb1feb4ec59ced66bc9e3627cca625bfedf7a9790c
+  λ^4 * k mod n = 0xb1820056d9bd69d72efdf571a218d2d45d6907c2e84afd10d2ea4eebbdccad08
+  λ^5 * k mod n = 0x910493a70ae711564dd69d5f975e220f98277bbe459be459bc2a62ab8c6e55d9
+GLV decomposition: k1 = 0x556e52, k2 = 0x0
+Timing attack simulation: 0.001045 seconds
+Growth ratio from previous key: 1.86x
+Difference from previous key: 0x278a43
+
+--- Key 24/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000000dc2a04
+Private Key (int): 14428676
+Key Size (bits): 24
+Automorphism-related keys:
+  λ^1 * k mod n = 0x895f29bfc22838b5ae75dca2b62831a7d411e57a97abd87cebd67c7389fe02cf
+  λ^2 * k mod n = 0x440227939f69d415f4f69b5a80c781bfcaf9016d0e9dbcc6ac9d652d7b4d7fe6
+  λ^3 * k mod n = 0x31a11c4ef85b9333e742a7f51c147b7f44ec9ce8211ec90b94261d81d75a444f
+  λ^4 * k mod n = 0xa5aa4ec1c06fc313f4cc03c68852ec65ddd794e561f8c78540b5655fc93c5363
+  λ^5 * k mod n = 0x6daaf4ea781ee294b14189bb2c3706d9d5eeff7d482f4f0be404f0f14bf250bf
+GLV decomposition: k1 = 0xdc2a04, k2 = 0x0
+Timing attack simulation: 0.001080 seconds
+Growth ratio from previous key: 2.58x
+Difference from previous key: 0x86bbb2
+
+--- Key 25/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000001fa5ee5
+Private Key (int): 33185509
+Key Size (bits): 25
+Automorphism-related keys:
+  λ^1 * k mod n = 0xdbb806a828870a2eb1660f094d42661c8bc1cb3bf4edb2eac964ac7cbe3c6667
+  λ^2 * k mod n = 0x4e2a14a0d171e8609ffa7dd8658d6d863ab8f7b0e28b63b41479a9117c92fb71
+  λ^3 * k mod n = 0x2a0d4c69b9cd9e6100853ab6c225a3871dad8ff2841b6a2d1b3cf844ced69d1a
+  λ^4 * k mod n = 0xee1d0a5e567a7015d0b4d5703c7c5d71a4943dac4021e21775837becc06bb0b4
+  λ^5 * k mod n = 0xd21e660bbb71fc866aa2f4e5bd72eb9e4adee831c54718573f080bcdec36544a
+GLV decomposition: k1 = 0x1fa5ee5, k2 = 0x0
+Timing attack simulation: 0.001019 seconds
+Growth ratio from previous key: 2.30x
+Difference from previous key: 0x11e34e1
+
+--- Key 26/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000000340326e
+Private Key (int): 54538862
+Key Size (bits): 26
+Automorphism-related keys:
+  λ^1 * k mod n = 0x861ea02b83419ca37012c370359446fac885f56a8968effec8b6aad6467cc68
+  λ^2 * k mod n = 0x706b651c1df361cd4637e1cfbbc19d6d90e4725126e78da2851ec6e7043846cb
+  λ^3 * k mod n = 0xb385563de0dfa62c4026449e7b9ca5013c78c4159c483bbd271713abb37e4147
+  λ^4 * k mod n = 0x991ff9e99a9d259c575b880dd2af4dfcebefeb12ec830d61dbff308b12347fe1
+  λ^5 * k mod n = 0x6dd3d874f0b4acf3df2680ea9d02e0b01b33f252392b3b987796f3b815bb1c1c
+GLV decomposition: k1 = 0x340326e, k2 = 0x0
+Timing attack simulation: 0.001229 seconds
+Growth ratio from previous key: 1.64x
+Difference from previous key: 0x145d389
+
+--- Key 27/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000006ac3875
+Private Key (int): 111949941
+Key Size (bits): 27
+Automorphism-related keys:
+  λ^1 * k mod n = 0xc268a653e2fa1550eb16f35a1c20ff6b5c06a7d3527dc10947c5c27e5a36041f
+  λ^2 * k mod n = 0x8c6bf4034eacbf5af36a9513133f0670a1dba566c93a740d2d4c3bc50c0c8844
+  λ^3 * k mod n = 0x1451bc96acdde263c443cebf7eed63505acb953482ba643d3118d23418bcd945
+  λ^4 * k mod n = 0x5e0459e1ac0e9bc022b35b9ce130312ba82763a3f4ccc154e9eb8fbe702e9737
+  λ^5 * k mod n = 0x48ebddf0d3679f7ff1236989511e2175f8692c9b4fc97275a9f6c8d290d2b21b
+GLV decomposition: k1 = 0x6ac3875, k2 = 0x0
+Timing attack simulation: 0.001126 seconds
+Growth ratio from previous key: 2.05x
+Difference from previous key: 0x36c0607
+
+--- Key 28/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000000d916ce8
+Private Key (int): 227634408
+Key Size (bits): 28
+Automorphism-related keys:
+  λ^1 * k mod n = 0xbadaf11684fcb8b43bcb27536828f5f523082019aa3c30d3b480bf5592e4893d
+  λ^2 * k mod n = 0xd0f8ea4cd5945f0adff6923c7d7aa79a7a9886e3c9aff129aa6469d7b3b6b8df
+  λ^3 * k mod n = 0x14450039a1fd18f8a4b949e34b1b9a351ca85f81f4fcc7cfcb95889d819bced
+  λ^4 * k mod n = 0xc4e68b16e06ad3cdd89a02e40aa42f2ae32d33c4348afccd563d9939f8148f8e
+  λ^5 * k mod n = 0xfb9089e211b9dbef7dc051c9b37de6284031d19bb9662fa1d2e0194b41cc12ab
+GLV decomposition: k1 = 0xd916ce8, k2 = 0x0
+Timing attack simulation: 0.001249 seconds
+Growth ratio from previous key: 2.03x
+Difference from previous key: 0x6e53473
+
+--- Key 29/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000000017e2551e
+Private Key (int): 400708894
+Key Size (bits): 29
+Automorphism-related keys:
+  λ^1 * k mod n = 0xac142e4a47c308951f639e6bac682d3ebc2a2e4017fbb77dd1d51df2854ebdfa
+  λ^2 * k mod n = 0x5f14f5d60f840e85c6accaf5bcf87bf762c07083ec007d59260d1dac7cfc24f
+  λ^3 * k mod n = 0xc862c6f9e44be1bdc08752eb2461b18b7d46f261433859f948c7c48130649b6
+  λ^4 * k mod n = 0xe8ad6f7bdc6bdc8b2f4bc9cd3f397a31c540ce6e6f55aa97914eba61872eac75
+  λ^5 * k mod n = 0xd092c6f5d902a983521111675e43557227d7e77662c0218fe40d0a114a929a1
+GLV decomposition: k1 = 0x17e2551e, k2 = 0x0
+Timing attack simulation: 0.001070 seconds
+Growth ratio from previous key: 1.76x
+Difference from previous key: 0xa50e836
+
+--- Key 30/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000003d94cd64
+Private Key (int): 1033162084
+Key Size (bits): 30
+Automorphism-related keys:
+  λ^1 * k mod n = 0x2deeb54f6c0608ab4d334047f7570836d1f78dc1c87b34981a982a10b8c68c17
+  λ^2 * k mod n = 0x574c7609a9734d24facea991193e0d21036fcbeab830f110bcd7c342541e3c69
+  λ^3 * k mod n = 0xcc4256b367757d9551ab63de199a90bedfd288a6a73a6b4c299aa170991a1c2c
+  λ^4 * k mod n = 0xe7862ebafe20e3e18ed6efb2609a0257a21faba71c8b56f200d28bae2a4b0c76
+  λ^5 * k mod n = 0xdf68ff65dc8b766684a7fe09b2f737d321f6f3a93b1d3db2b9666bcc5c8d3655
+GLV decomposition: k1 = 0x3d94cd64, k2 = 0x0
+Timing attack simulation: 0.001084 seconds
+Growth ratio from previous key: 2.58x
+Difference from previous key: 0x25b27846
+
+--- Key 31/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000007d4fe747
+Private Key (int): 2102388551
+Key Size (bits): 31
+Automorphism-related keys:
+  λ^1 * k mod n = 0x706a1b22d4fa2d5c3121106297c32667772e37152da53efa666c3eec247f41bc
+  λ^2 * k mod n = 0xff04c9b17fbdfd559efe7276432924fdea193b05d6a601adc658b8aa7f77e1f5
+  λ^3 * k mod n = 0xb3c2f51ca1ac6a6fb75e0c38ec17a4288d302d67941e76bff7a7ef5ea70653d5
+  λ^4 * k mod n = 0x2d512f21ce5df2a5be01b42da6eb0c486bc29539f6fd1206cd073f8e5c8220ef
+  λ^5 * k mod n = 0x61bab18e65d48ac2c1da8bff546595bb151dff712849de552fe7b3161a482d32
+GLV decomposition: k1 = 0x7d4fe747, k2 = 0x0
+Timing attack simulation: 0.001321 seconds
+Growth ratio from previous key: 2.03x
+Difference from previous key: 0x3fbb19e3
+
+--- Key 32/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000000b862a62e
+Private Key (int): 3093472814
+Key Size (bits): 32
+Automorphism-related keys:
+  λ^1 * k mod n = 0x91feccef284f5102cedc7fbdbd43f9f5ae464585d89cdd2a392eccec7a6a9c41
+  λ^2 * k mod n = 0x8a8081e3ddaf9be28db0f36f2fffc0a6cc81a38dfc9bf4ad0cdcd1adb034b645
+  λ^3 * k mod n = 0xf220b30284a0ec7082c8805b96c1f7f086e590b13da22d549e343002c88d2c93
+  λ^4 * k mod n = 0x6174e2ce1a188b369fa7aa600591d21ae11739fb46a2310d0d784c3a1ab50159
+  λ^5 * k mod n = 0xd64b472623e8f9873c844de85792f65faf7d934624e0625f3e6ff4ad69ff9681
+GLV decomposition: k1 = 0xb862a62e, k2 = 0x0
+Timing attack simulation: 0.001202 seconds
+Growth ratio from previous key: 1.47x
+Difference from previous key: 0x3b12bee7
+
+--- Key 33/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000001a96ca8d8
+Private Key (int): 7137437912
+Key Size (bits): 33
+Automorphism-related keys:
+  λ^1 * k mod n = 0x14d8ecb085ece9a805f813bcb6fa7b233800d37713d54db98617837d109d0edc
+  λ^2 * k mod n = 0xbe47fc4291dd06369f794491496eb2029932ecc103ce6a8af1a1afee0b2eb76c
+  λ^3 * k mod n = 0xf94bdb1f6d4e33a41257346cd37bf00b7b4bec1c0aa08dffc4b7d2d8d8dbdc84
+  λ^4 * k mod n = 0xe541b0f3d34501c4636497ed9b1b11345b9f5c8ff292e79428d298503995d570
+  λ^5 * k mod n = 0xcbfd809c367e3870517da1319eb533f273b640fe4780b9fcd898e10d17a4535c
+GLV decomposition: k1 = 0x1a96ca8d8, k2 = 0x0
+Timing attack simulation: 0.001275 seconds
+Growth ratio from previous key: 2.31x
+Difference from previous key: 0xf10a02aa
+
+--- Key 34/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000034a65911d
+Private Key (int): 14133072157
+Key Size (bits): 34
+Automorphism-related keys:
+  λ^1 * k mod n = 0x6b76a37c829f14726abbac8af08f4f15235e599d510bf724ba46952cd90f6a24
+  λ^2 * k mod n = 0xa59eea60ea7a963ebc031bdc99de38d6605a095bdea6698db710c410b192a92f
+  λ^3 * k mod n = 0x848bef6c07bd9c952f466686c6817ad73b9a1a831fce6f58e2222a4fa501a81a
+  λ^4 * k mod n = 0x8b5010954d4b3a5c6d4afe8ba9529d5af8bb63d4ab382febdb405c34ccc017c0
+  λ^5 * k mod n = 0x563dc555569ecf4ba73f66927cfd5359ee5877621f5076b08cffe00880dc887e
+GLV decomposition: k1 = 0x34a65911d, k2 = 0x0
+Timing attack simulation: 0.001163 seconds
+Growth ratio from previous key: 1.98x
+Difference from previous key: 0x1a0f8e845
+
+--- Key 35/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000004aed21170
+Private Key (int): 20112871792
+Key Size (bits): 35
+Automorphism-related keys:
+  λ^1 * k mod n = 0xf6f4322b5a4b41d969b621cda83ea178f09b643954bd8bde00b7ddddfba4a9ca
+  λ^2 * k mod n = 0xd8bf66de071841a39b310e025cabef198aa4472d0f50a3b97335e0e880a55f85
+  λ^3 * k mod n = 0x68eb6af808c57b2a4c5b6580d2874f5a9ad86e679d605706542b653c7dd71105
+  λ^4 * k mod n = 0x4a7f19afbb4c65e519a20222413da5ce08fb406fd9ef49279e0bd2ff454c720e
+  λ^5 * k mod n = 0x9b7a8de6c7ceeed103966c497d57a580edc53d645a313b371a3e1e771c794364
+GLV decomposition: k1 = 0x4aed21170, k2 = 0x0
+Timing attack simulation: 0.001159 seconds
+Growth ratio from previous key: 1.42x
+Difference from previous key: 0x1646c8053
+
+--- Key 36/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000009de820a7c
+Private Key (int): 42387769980
+Key Size (bits): 36
+Automorphism-related keys:
+  λ^1 * k mod n = 0x39c1449ca363258feaf7c3e166bc737437998dc85360e8e31406446f1131e5bc
+  λ^2 * k mod n = 0xfaf3a763324d382482d422245d6266adc6546407d487fbc827176d017bf21ce6
+  λ^3 * k mod n = 0x5d52529175eee8694c4bc91c2bab48c92871175fc665175297e09c9034f4df0a
+  λ^4 * k mod n = 0x24bbb70b68204439c5ebe14f7044227c6143069fd8d56967823e25497ac9513b
+  λ^5 * k mod n = 0x227629a7943d59e27afaccfc6508a6383516a1d571f750b24374fdcf48488132
+GLV decomposition: k1 = 0x9de820a7c, k2 = 0x0
+Timing attack simulation: 0.001125 seconds
+Growth ratio from previous key: 2.11x
+Difference from previous key: 0x52faff90c
+
+--- Key 37/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000001757756a93
+Private Key (int): 100251560595
+Key Size (bits): 37
+Automorphism-related keys:
+  λ^1 * k mod n = 0xfb9b9eda62665078a7f88966f851549c803a31257fefb9f2a086b6d3e651e263
+  λ^2 * k mod n = 0xbe889897faa85e8232eb628bcc3dd4ba065de541dd5c6b0432cabca53bb2948e
+  λ^3 * k mod n = 0xb7faa6bfa17821bbd76639fef7f4f11491ca9fcf7ea2fa7a290f0a9f56422d2d
+  λ^4 * k mod n = 0xac4f26834db011000fc681f1cf9632a22abfcf3fe108a1b772059212b70ec67b
+  λ^5 * k mod n = 0xed6257a6e2963066ceca4388124ed750ed0a299ac8f400979976704ed53419f4
+GLV decomposition: k1 = 0x1757756a93, k2 = 0x0
+Timing attack simulation: 0.001112 seconds
+Growth ratio from previous key: 2.37x
+Difference from previous key: 0xd78f36017
+
+--- Key 38/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000022382facd0
+Private Key (int): 146971536592
+Key Size (bits): 38
+Automorphism-related keys:
+  λ^1 * k mod n = 0x1e0d6590e482d05f18e74cad39f332a789f66966605277acee4c1663ec949775
+  λ^2 * k mod n = 0x8f10e6e57f9c3cd447f75d99607e16fff234a41914a53856ceb6008ad5e5a714
+  λ^3 * k mod n = 0x5594089d4e4eb25bad5fa81a860f800a7a9d427429ea251acd8b78cea19bf5ac
+  λ^4 * k mod n = 0x2770d422049b14819fe0ad31a31bdb83f8d2240d40be01bd1a101a77178703b4
+  λ^5 * k mod n = 0x41d8124414eab4939074459cf7b95c9566126179ee9924b1e0802b4825b80ae3
+GLV decomposition: k1 = 0x22382facd0, k2 = 0x0
+Timing attack simulation: 0.001091 seconds
+Growth ratio from previous key: 1.47x
+Difference from previous key: 0xae0ba423d
+
+--- Key 39/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000004b5f8303e9
+Private Key (int): 323724968937
+Key Size (bits): 39
+Automorphism-related keys:
+  λ^1 * k mod n = 0x3956b983ceae2fa08e531610f5d743dd0ab2a99fc5ad06ebf6163067ccc57e48
+  λ^2 * k mod n = 0xc0409504457914bd8e3fe6574fafad5459104ec6d7b5d2dea9ca8812c88acbb4
+  λ^3 * k mod n = 0x4231f2ab7261fd07b8a170d6eed0196f235cef5bce2b042ecd9595fe877094b
+  λ^4 * k mod n = 0xec31a38438ca0f8e1b1fcbc053913f99701c01fc2d6263276e9f0c3fd1b32b07
+  λ^5 * k mod n = 0x4aa933b0d07832ee145968bb56611cb0800e91a1ad69e3b726f5aa6371510741
+GLV decomposition: k1 = 0x4b5f8303e9, k2 = 0x0
+Timing attack simulation: 0.001113 seconds
+Growth ratio from previous key: 2.20x
+Difference from previous key: 0x2927535719
+
+--- Key 40/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000000e9ae4933d6
+Private Key (int): 1003651412950
+Key Size (bits): 40
+Automorphism-related keys:
+  λ^1 * k mod n = 0x43a6328741acc19e633628f08863c9bda3dd1c6f66f2bdf6c97031b3e5793fa7
+  λ^2 * k mod n = 0xd29a82bd31d682029d2bc4fdb06ca058e7409a95805fa9e687289e17c140487e
+  λ^3 * k mod n = 0xbf56f927471927f9b0c7ec51590c28f10a74105138bf9b67d7158f4e28cafa65
+  λ^4 * k mod n = 0xe4d8af39d22708a7967d2f1b2d470b72a46bafac70599a6af4fc2992ddf07b43
+  λ^5 * k mod n = 0xd5ed54ee2a7cf4d688accb08fc89169995850ef0d4ccca062c1482ec0785b65a
+GLV decomposition: k1 = 0xe9ae4933d6, k2 = 0x0
+Timing attack simulation: 0.001107 seconds
+Growth ratio from previous key: 3.10x
+Difference from previous key: 0x9e4ec62fed
+
+--- Key 41/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000153869acc5b
+Private Key (int): 1458252205147
+Key Size (bits): 41
+Automorphism-related keys:
+  λ^1 * k mod n = 0x3978761786c4c6656ff858bf2863593a5349475d9d6f632251d3b42c0a1b15d
+  λ^2 * k mod n = 0xe9f34c37239dbc8990ea96577845dfb7862012779eb71d0cab78d7eba0cae97d
+  λ^3 * k mod n = 0x72cee958883ef8bc0c10c48ad1d6f633b60ea169243b3a215bbc398d7746f9a4
+  λ^4 * k mod n = 0x7d125099adf912705dc1e66ee1fed6ed0e1df3fca5121f5971de706407115a2e
+  λ^5 * k mod n = 0x2135106da7b56f74dd99f3130d92c0a3a867682934b94c7d192690679dbf4068
+GLV decomposition: k1 = 0x153869acc5b, k2 = 0x0
+Timing attack simulation: 0.001162 seconds
+Growth ratio from previous key: 1.45x
+Difference from previous key: 0x69d8519885
+
+--- Key 42/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000002a221c58d8f
+Private Key (int): 2895374552463
+Key Size (bits): 42
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa2eb5ac839ae9c70c5fa055ade383c96cf8ee7badb87b6b055b3dd75eb9136bc
+  λ^2 * k mod n = 0x8b950ed04ff29794f59b81d638e0776fc673e6f66b069fce49e68db01d2a6afd
+  λ^3 * k mod n = 0x394a4f60eaa53948b8b8159ed13ff93b352c410bd1a1d80fe5a0f0d1b54eb30a
+  λ^4 * k mod n = 0x8758b7bdd389968964decaee793339085c8c4a4a358cee1cd4a65a2c4bd4aca5
+  λ^5 * k mod n = 0x106dc31530f5905d91e33897c4e995098c149c4e11da0bbe5844dbdcf807fdb
+GLV decomposition: k1 = 0x2a221c58d8f, k2 = 0x0
+Timing attack simulation: 0.001127 seconds
+Growth ratio from previous key: 1.99x
+Difference from previous key: 0x14e9b2ac134
+
+--- Key 43/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000006bd3b27c591
+Private Key (int): 7409811047825
+Key Size (bits): 43
+Automorphism-related keys:
+  λ^1 * k mod n = 0x7340d1f87efe83ca59bd0fdc9ead422e35ad6e5537e93080c14dbc97dece95f7
+  λ^2 * k mod n = 0xfa779cef0024a2956c2552997a40f7d2306bf87de16228d43544c1881f24af41
+  λ^3 * k mod n = 0x98cd8f1f09ab82f396dc426a772b1b25b3ff1a6ecf3c2d487aa7f20d7fa7790f
+  λ^4 * k mod n = 0x7f04134b64c5527b50633db5c5c151cb7b88adc36dc232dbef86b5d59cd2aecb
+  λ^5 * k mod n = 0xc2b64090badc22dbb5eee2bc1fb14db61770f87eafc6fdb5023407c5db5d8abe
+GLV decomposition: k1 = 0x6bd3b27c591, k2 = 0x0
+Timing attack simulation: 0.001092 seconds
+Growth ratio from previous key: 2.56x
+Difference from previous key: 0x41b19623802
+
+--- Key 44/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000000e02b35a358f
+Private Key (int): 15404761757071
+Key Size (bits): 44
+Automorphism-related keys:
+  λ^1 * k mod n = 0x85a6f73122be5e01ed3c099b76b7dd6b653ce1fbb1d9c8102aa480333de358d3
+  λ^2 * k mod n = 0xb8885d7e8192f6d93250c31af39875baef5aade97f3334212437f00765e07a3b
+  λ^3 * k mod n = 0x185c29890f8ba66f78ae246b16c26ebc9c8a6fd298f0bd48e4daa78821adf6c4
+  λ^4 * k mod n = 0x2fbc2fa899bbde451e1f9f7e92febf8df15d65dc4bda7091483cc1d1e0eadbbe
+  λ^5 * k mod n = 0x1d691483c7245e43f116890a4105de6526b028a703aafb33f954d5cbed81c838
+GLV decomposition: k1 = 0xe02b35a358f, k2 = 0x0
+Timing attack simulation: 0.001215 seconds
+Growth ratio from previous key: 2.08x
+Difference from previous key: 0x74578326ffe
+
+--- Key 45/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000122fca143c05
+Private Key (int): 19996463086597
+Key Size (bits): 45
+Automorphism-related keys:
+  λ^1 * k mod n = 0x2e3b4ea357115e6349e4f11e7adde2dd57bbc755b5fc0c57451af3478b5c771a
+  λ^2 * k mod n = 0x1c9a98cb0cee5710422dac8a0ecb95af63d2fb395e43ab330750dc4f5a6e8379
+  λ^3 * k mod n = 0x52e68aabe798a0e0b02ba6ce645ebd30dbc7612bf322d77685773569d71e46c0
+  λ^4 * k mod n = 0x9390bbb8f3547e5421208b1c773b7319eb928cc906677a8e2a1ca9d364d0f599
+  λ^5 * k mod n = 0x8167b628a799174ec4a6a9b5c551f954dda77cf89ad391d646d194b41e545ea2
+GLV decomposition: k1 = 0x122fca143c05, k2 = 0x0
+Timing attack simulation: 0.001145 seconds
+Growth ratio from previous key: 1.30x
+Difference from previous key: 0x42d16ba0676
+
+--- Key 46/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000002ec18388d544
+Private Key (int): 51408670348612
+Key Size (bits): 46
+Automorphism-related keys:
+  λ^1 * k mod n = 0x80329797613c5b404a44d298981b9a03032529cc1ce5162b249a93fb316c756c
+  λ^2 * k mod n = 0xb8deefe4b78faf89bff8e0d11921c804963fc6af251b7aa9a4e4c34af75dd702
+  λ^3 * k mod n = 0x25c9d80d205953e2e5aebdd4b47d0cfa2e01691030843b581e52da9b7b0fc404
+  λ^4 * k mod n = 0x6488df3787b0801a45e83ea97b45250006f127f60fbe3907dea928a5cf73e77f
+  λ^5 * k mod n = 0x200b92d28e7fd66dda6acca00cb41c176250c9ac2d2118193bb763f84941fa45
+GLV decomposition: k1 = 0x2ec18388d544, k2 = 0x0
+Timing attack simulation: 0.001196 seconds
+Growth ratio from previous key: 2.57x
+Difference from previous key: 0x1c91b974993f
+
+--- Key 47/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000006cd610b53cba
+Private Key (int): 119666659114170
+Key Size (bits): 47
+Automorphism-related keys:
+  λ^1 * k mod n = 0x5f8034c8c1943cb2464425d05a43e529156544bda7cf3e6f2fb1f77198d8af44
+  λ^2 * k mod n = 0x88fbfd25fdb9397e98b3a6ac338318e8eec1d63287dfcdd8503a2e3641d2e257
+  λ^3 * k mod n = 0x703ea2e411e661460ea4fbf809537b7240fd8cc83e1640ce1d2acedc673eef3a
+  λ^4 * k mod n = 0xf7a14c847f1c10a34274cc365f089e2cae387ca6b4b0b88481982cb01209d53a
+  λ^5 * k mod n = 0xf8b3c6b4e5e50720133f8d9e3e94cc8cdb8e01516fc844a0755cbccc5a01627
+GLV decomposition: k1 = 0x6cd610b53cba, k2 = 0x0
+Timing attack simulation: 0.001329 seconds
+Growth ratio from previous key: 2.33x
+Difference from previous key: 0x3e148d2c6776
+
+--- Key 48/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000000ade6d7ce3b9b
+Private Key (int): 191206974700443
+Key Size (bits): 48
+Automorphism-related keys:
+  λ^1 * k mod n = 0xe7f768e78d7b8247f1f2fcb2aaa6e85853d129eb12b0d6bd84820900f7f7c2ea
+  λ^2 * k mod n = 0x23360eeb4c703b82c5e12855fb15af5b0b18457d09d560cff86e742a60b94d35
+  λ^3 * k mod n = 0x51f1aa52e31a728fc18b2f3ea0b17409605c36a3ff8975d2450efcb5451509fd
+  λ^4 * k mod n = 0xb96b47a5f03e94b4124d6707e58b1d564eac72b491196ada9f1ac06025ad5b1c
+  λ^5 * k mod n = 0x97ca346a9cb4201c4abaea82267239c9c4850d1f7a692e421b16cd0707d6265d
+GLV decomposition: k1 = 0xade6d7ce3b9b, k2 = 0x0
+Timing attack simulation: 0.001118 seconds
+Growth ratio from previous key: 1.60x
+Difference from previous key: 0x4110c718fee1
+
+--- Key 49/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000174176b015f4d
+Private Key (int): 409118905032525
+Key Size (bits): 49
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9134cb86c5ee5d5aaef3815ce7ef9d7f4f290a18f7009b5d5d28e41636fba819
+  λ^2 * k mod n = 0xe19573665cfafec85dc5ff05486069afdab7a0ec7e971017b405cdd5926a1457
+  λ^3 * k mod n = 0x8c50035eba51ff198aecd48c9079408594d69fabd411c36a36259fa3037e9178
+  λ^4 * k mod n = 0x37927b79b9cee1d28bb7c90312676acde0dc377d14eca243eb0d611bbea285ef
+  λ^5 * k mod n = 0xed4319ff0046c857621aaf0b68079d1ce7553be9eb0ee5742a0a86316cd3caf5
+GLV decomposition: k1 = 0x174176b015f4d, k2 = 0x0
+Timing attack simulation: 0.001249 seconds
+Growth ratio from previous key: 2.14x
+Difference from previous key: 0xc630933323b2
+
+--- Key 50/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000022bd43c2e9354
+Private Key (int): 611140496167764
+Key Size (bits): 50
+Automorphism-related keys:
+  λ^1 * k mod n = 0xbe4679bbbdfac530d41baaddfe10d485107f6585f3ad11e57dd0e1f037b94f83
+  λ^2 * k mod n = 0x1a07a0a46659214959f8cf311b61ec22c67543a3d5fe40b639c471479a20bde9
+  λ^3 * k mod n = 0x1ed3b84b914ee6fa883417013a06459bfeef81ca8184d4ba39e950d8506a087d
+  λ^4 * k mod n = 0xf1326476f50f30947402a1dea003f21bed612b226152ac21e911c0fce6f38b55
+  λ^5 * k mod n = 0x51c927df90e4e99ecce487b6e5d20e5f53f663d9fa796c038eae54e36ea2dd09
+GLV decomposition: k1 = 0x22bd43c2e9354, k2 = 0x0
+Timing attack simulation: 0.001215 seconds
+Growth ratio from previous key: 1.49x
+Difference from previous key: 0xb7bcd12d3407
+
+--- Key 51/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000075070a1a009d4
+Private Key (int): 2058769515153876
+Key Size (bits): 51
+Automorphism-related keys:
+  λ^1 * k mod n = 0x37255849d4bd35368399578e9f20c9ac17af7277d67b258fb6b5405438f19279
+  λ^2 * k mod n = 0x97c97363d55121ac3760c00bfd246fb0e483cbd74de7e5d9f51fd452d3d88d17
+  λ^3 * k mod n = 0x916d736bfd0b18dac0e07a6a5d65bd01ad6ea91f870f63c03211a869f8438552
+  λ^4 * k mod n = 0xdcc3b488e71589fb07b87fb33bcec1f6e1b15db7ea1bdad20d4e100e95b1bdc7
+  λ^5 * k mod n = 0x28c36679f02c5c74462c0500ae1247443304c6e17637c9522b914185abe4f66f
+GLV decomposition: k1 = 0x75070a1a009d4, k2 = 0x0
+Timing attack simulation: 0.001143 seconds
+Growth ratio from previous key: 3.37x
+Difference from previous key: 0x5249c65717680
+
+--- Key 52/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000000efae164cb9e3c
+Private Key (int): 4216495639600700
+Key Size (bits): 52
+Automorphism-related keys:
+  λ^1 * k mod n = 0x13c5de7b664687ada787e913605c4ed92b70724ad33200497a0f2d90d9c1a272
+  λ^2 * k mod n = 0x67cd59abd5dbe9773c0964fe5ed62e98aa67c6bec2f2a638e9a8bd5048546e00
+  λ^3 * k mod n = 0x468e5936c9ca8802b8e782232cada8b8291ce5506851e774dbc1fe24e5646d3f
+  λ^4 * k mod n = 0xc73a94208376536ca3580e9d921288ef16a30db4964dabc14f7f5bbfdcc12ead
+  λ^5 * k mod n = 0x692d03cb3813cd7ef9bf6a694b05ebb5fd84c428385619a3f8c0b3ce74f8abb
+GLV decomposition: k1 = 0xefae164cb9e3c, k2 = 0x0
+Timing attack simulation: 0.001266 seconds
+Growth ratio from previous key: 2.05x
+Difference from previous key: 0x7aa70c32b9468
+
+--- Key 53/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000180788e47e326c
+Private Key (int): 6763683971478124
+Key Size (bits): 53
+Automorphism-related keys:
+  λ^1 * k mod n = 0x1985e7a49b1576d855afb171c96f7adef333ccf8b2f0e53ebb5705098aa156a4
+  λ^2 * k mod n = 0x9941968c5e5e7bbb5c5c02691d75a1e1975d5fa3f4b18b568442a689f31a1909
+  λ^3 * k mod n = 0xe34bde281b3ee418fce3783e428615454f7c4dc3fab8b27d08e5ac069c5e86ce
+  λ^4 * k mod n = 0xa8871fb5d0703dcd265ecfb3ce8cfe5676a287150460a2b7f7008060b1017792
+  λ^5 * k mod n = 0x7ce65529181f241f7b4890256d1e58d2a04111f68d325fa01314d4077ec9ecda
+GLV decomposition: k1 = 0x180788e47e326c, k2 = 0x0
+Timing attack simulation: 0.001233 seconds
+Growth ratio from previous key: 1.60x
+Difference from previous key: 0x90ca77fb29430
+
+--- Key 54/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000000236fb6d5ad1f43
+Private Key (int): 9974455244496707
+Key Size (bits): 54
+Automorphism-related keys:
+  λ^1 * k mod n = 0xf477014e036d9ec2a4e40726f8af199ee83980b38db2d1868db75f3a8016cd5f
+  λ^2 * k mod n = 0x6c2e81c6e7bbbb6110adfdf76fef6b803964cd29b5756e83fd2d80de487d124c
+  λ^3 * k mod n = 0xbaaa77adc3f3d04009ad68eb8793923eda1dd602e0b679fef6c8b2b11991676e
+  λ^4 * k mod n = 0x89857a89009ce4c358ef812fb58931e06897976cf4af64867898d206a2e62ba8
+  λ^5 * k mod n = 0xa33c16869f16d7537082a31d62c1986adc54a8921b0cafba4a74f91fed92819e
+GLV decomposition: k1 = 0x236fb6d5ad1f43, k2 = 0x0
+Timing attack simulation: 0.001141 seconds
+Growth ratio from previous key: 1.47x
+Difference from previous key: 0xb682df12eecd7
+
+--- Key 55/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000006abe1f9b67e114
+Private Key (int): 30045390491869460
+Key Size (bits): 55
+Automorphism-related keys:
+  λ^1 * k mod n = 0x545e83d4d9dfd64e7e12d02d4d376cce8f498b34d6b9f1ae3bfca653efaa45bb
+  λ^2 * k mod n = 0x2336d92ab345f8d216e931fced8e249e10de5d8e28e075f18155f10a163aa8d0
+  λ^3 * k mod n = 0x6ef692056526b6427f971a48f926cf69fb697645b58dfdd840525614d911b538
+  λ^4 * k mod n = 0xfeec768af9cedca4e7097d973321c9032b6585a32df2a050bf7bbc381274ea97
+  λ^5 * k mod n = 0x44c57b8219c8148357c378c4237ebf3d6a39269b349f2c8e46b5cb5513f36846
+GLV decomposition: k1 = 0x6abe1f9b67e114, k2 = 0x0
+Timing attack simulation: 0.001163 seconds
+Growth ratio from previous key: 3.01x
+Difference from previous key: 0x474e68c5bac1d1
+
+--- Key 56/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000009d18b63ac4ffdf
+Private Key (int): 44218742292676575
+Key Size (bits): 56
+Automorphism-related keys:
+  λ^1 * k mod n = 0x5fb0aaafdfad058cd8d73be720b4511d13dd3571a28ac7face3f645698feefe
+  λ^2 * k mod n = 0xe83d6ac4217b040b1f7d2b618064ac19bb40cc75750bf2e8699b23de4d2d6297
+  λ^3 * k mod n = 0x24b035c9cead6d634b48625ff4633c0c6c6523e62c6e25f17cc69a97e7625b44
+  λ^4 * k mod n = 0x3c76dd6ac667ab95a0622762fc23c2c52af98a83ffa63e78dd6bb252d7baf6
+  λ^5 * k mod n = 0xb8919d0372b4f9d88736887914a92121586595b83a2461458ce3f7f441d0736b
+GLV decomposition: k1 = 0x9d18b63ac4ffdf, k2 = 0x0
+Timing attack simulation: 0.000962 seconds
+Growth ratio from previous key: 1.47x
+Difference from previous key: 0x325a969f5d1ecb
+
+--- Key 57/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000001eb25c90795d61c
+Private Key (int): 138245758910846492
+Key Size (bits): 57
+Automorphism-related keys:
+  λ^1 * k mod n = 0x1830330889808a3804344dd8da0a6abd86b7d44b0bbb3763b7a299be699d29f6
+  λ^2 * k mod n = 0xccc9ec78716e79007ec786e4de5d3b300974bb933adeafe714af100e00443d8a
+  λ^3 * k mod n = 0xc8635cf1fe6b239cddfe07373d25044893b6ce616eeea84c593453ed2f3434d5
+  λ^4 * k mod n = 0x515716a5fae66e464f0f627635422f3950a9c6444c5e4b672523c6abd6c800b9
+  λ^5 * k mod n = 0x2f6107a14888004e60c84dd6cca4c76e2604cea473cb2f93dddcba4f201d495c
+GLV decomposition: k1 = 0x1eb25c90795d61c, k2 = 0x0
+Timing attack simulation: 0.001049 seconds
+Growth ratio from previous key: 3.13x
+Difference from previous key: 0x14e0d12ccd0d63d
+
+--- Key 58/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000002c675b852189a21
+Private Key (int): 199976667976342049
+Key Size (bits): 58
+Automorphism-related keys:
+  λ^1 * k mod n = 0x37e8ce78b9875cdde2e9f9585030067b2527961a42fc980c67fa08c89607ea44
+  λ^2 * k mod n = 0xcb8d2f8dcfd3f664622cf111c8aba0d25a3b928c69d898171144eef51d140da6
+  λ^3 * k mod n = 0xd7005c776aa3dda636d3def625dd168daa611d2d425495e23aee375cd621d1ef
+  λ^4 * k mod n = 0xd163f58973b06e1c2850677c93fee19f8bf4d7ad527575d6623a95ff1385fc0b
+  λ^5 * k mod n = 0xaecc3af47cb26b1f30745537579b50207b7c5f8a421ef481080e82fd49a29b5f
+GLV decomposition: k1 = 0x2c675b852189a21, k2 = 0x0
+Timing attack simulation: 0.001204 seconds
+Growth ratio from previous key: 1.45x
+Difference from previous key: 0xdb4fef4a82c405
+
+--- Key 59/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000007496cbb87cab44f
+Private Key (int): 525070384258266191
+Key Size (bits): 59
+Automorphism-related keys:
+  λ^1 * k mod n = 0xd862674dbfc434787712d69fdcffea6613737876acf5f37d7b815f470a4e8676
+  λ^2 * k mod n = 0x59399729fb81310e3a23a8c30234b73dc223055a960d2663d4993b5b80d6c505
+  λ^3 * k mod n = 0xbe79950fe74daf85aa8476157e13cd5fe564b2f0a06f3c1dd1ff862d28113f91
+  λ^4 * k mod n = 0xa8fc986f5042c55acc652bd137bb3ea2e566aa63e3af8b258a68a045131527a6
+  λ^5 * k mod n = 0xe594ff42eb31e84f7ebb71e24e08731a6293f38a2321f5c1ae350a7e3b53230b
+GLV decomposition: k1 = 0x7496cbb87cab44f, k2 = 0x0
+Timing attack simulation: 0.001206 seconds
+Growth ratio from previous key: 2.63x
+Difference from previous key: 0x482f70335b21a2e
+
+--- Key 60/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000000fc07a1825367bbe
+Private Key (int): 1135041350219496382
+Key Size (bits): 60
+Automorphism-related keys:
+  λ^1 * k mod n = 0x1385521e2a3f484ec3ea13d813acd934e7821a96ab661c7d262a4539fe81891a
+  λ^2 * k mod n = 0x9282ed8fcfa288b0fb6cd887d83ae6331fd4f70b2d60a29ac68d341027be43e7
+  λ^3 * k mod n = 0xd0a1fddba6ef4469bdad90f3e0de9b2aeb5d0dc7228602c395496e6f6aa5dd1d
+  λ^4 * k mod n = 0x36f66076b1a3d5932d7a083e10d3ac903ebe6bcff82fc0e9d22c9b69775da0ce
+  λ^5 * k mod n = 0x289928ab29311b91b9bfc26f5d62095e92791ba261ae025284ebbff1d04f989a
+GLV decomposition: k1 = 0xfc07a1825367bbe, k2 = 0x0
+Timing attack simulation: 0.001062 seconds
+Growth ratio from previous key: 2.16x
+Difference from previous key: 0x8770d5c9d6bc76f
+
+--- Key 61/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000013c96a3742f64906
+Private Key (int): 1425787542618654982
+Key Size (bits): 61
+Automorphism-related keys:
+  λ^1 * k mod n = 0x63ec8937d1f6afef9aa28353e90ee92012caa527efdb21aecfd53464cfda5250
+  λ^2 * k mod n = 0xe9c4d6c5c379859b224074575b85aeb38e06a7c4c10d7c363bb14aa316ebe9ac
+  λ^3 * k mod n = 0xb6246f2f1ef99cb853ea5c289cdbe0e2aa4ef8fd4d512554103559d1b53a29ea
+  λ^4 * k mod n = 0x90cc3f8176d36ec8aaa522b446982d816085c9d49e71535d41187af4655142d7
+  λ^5 * k mod n = 0x16bdba6082f1e326a8a81e605aa791e761c6a71fff0a1b1752c0f07a5cd65d78
+GLV decomposition: k1 = 0x13c96a3742f64906, k2 = 0x0
+Timing attack simulation: 0.001126 seconds
+Growth ratio from previous key: 1.26x
+Difference from previous key: 0x408f01f1dbfcd48
+
+--- Key 62/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000363d541eb611abee
+Private Key (int): 3908372542507822062
+Key Size (bits): 62
+Automorphism-related keys:
+  λ^1 * k mod n = 0x8017c87386fa5f91aa1e0ea1dd85bea52d1d9614f2da795e65590248a308a09b
+  λ^2 * k mod n = 0x16c1f19f2f7410eaaeeedaffacc5af68f49bc03761811b95c2797a7f4a56542e
+  λ^3 * k mod n = 0x2f1c5919296a0c173154ea8da98dd5e896a63cb28315698e60c17b5b0b2ebd91
+  λ^4 * k mod n = 0x4226371da525943438a188327b237877a1a4a2f059faeb1a2bc92c6b7ee01c03
+  λ^5 * k mod n = 0x5d0550b1ff0df27668848d31d1e56bcde1cf9f43fafdb0e89c0e4717e15da8af
+GLV decomposition: k1 = 0x363d541eb611abee, k2 = 0x0
+Timing attack simulation: 0.000903 seconds
+Growth ratio from previous key: 2.74x
+Difference from previous key: 0x2273e9e7731b62e8
+
+--- Key 63/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000007cce5efdaccf6808
+Private Key (int): 8993229949524469768
+Key Size (bits): 63
+Automorphism-related keys:
+  λ^1 * k mod n = 0x3e5a438d0e43cf29ece030cd7da16ac4280750d09368690439e93ba851744534
+  λ^2 * k mod n = 0x558b1a7312cb84af808d1d35aa2ec43c65ffa00d4f658878ec04dfd1b5ccd89f
+  λ^3 * k mod n = 0x484f3f6657cb118c08fd17e9764f46e666922a632810322ec4d4304141b6c070
+  λ^4 * k mod n = 0xedcd298ded36daa5ba4ddd97983d142d4e044fc8019fe7b4db80c3a2d290957b
+  λ^5 * k mod n = 0x6888913cfaaac16b6b61675c4f70f6827c64bc085ba1acc50ec8f91b5ab8152d
+GLV decomposition: k1 = 0x7cce5efdaccf6808, k2 = 0x0
+Timing attack simulation: 0.001064 seconds
+Growth ratio from previous key: 2.30x
+Difference from previous key: 0x46910adef6bdbc1a
+
+--- Key 64/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000000f7051f27b09112d4
+Private Key (int): 17799667357578236628
+Key Size (bits): 64
+Automorphism-related keys:
+  λ^1 * k mod n = 0xe2924e3e5ac18fd894504878d4fd181c69ee24eee517cd1598844b3f25490fda
+  λ^2 * k mod n = 0xe9938940a0c0a1dc33b85bfb6764cca278fa1877c80cf2da28b72b54620b312b
+  λ^3 * k mod n = 0x1b4c48f2c9888a1e6f77db82886fdde95645591921671ebc097e2ce5de70a0cb
+  λ^4 * k mod n = 0xfdcb33e317b384ed9e5cb17a796edb3e4a6eedb9ad2a93da5448fc080d7d6e10
+  λ^5 * k mod n = 0x157933beaf5d942d25bc97094ecdd088dbe2d6a6959ae332201e6aa7a76d29c6
+GLV decomposition: k1 = 0xf7051f27b09112d4, k2 = 0x0
+Timing attack simulation: 0.001397 seconds
+Growth ratio from previous key: 1.98x
+Difference from previous key: 0x7a36c02a03c1aacc
+
+--- Key 65/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000001a838b13505b26867
+Private Key (int): 30568377312064202855
+Key Size (bits): 65
+Automorphism-related keys:
+  λ^1 * k mod n = 0x55e2e2481148d475c28bce227a64ed68b08c07fdcda82adca01896065044f59c
+  λ^2 * k mod n = 0x1c86aaa0e609e5021e1005598f31a50175bd47a7d51fc049c7a694e7ec4fd57
+  λ^3 * k mod n = 0xa3c5ce95318f4efb781f6d353d5ac7a740fbd7cf11747d2e97585c203d130cec
+  λ^4 * k mod n = 0x8cc82321a9d46619724e4d7d2c14829903e5a97e95f76fec2f324b60b7853b5d
+  λ^5 * k mod n = 0x4c35350bf6e1e833faf8cdfafdc8e239c8b3d68dc637bffc2e67f0b269365cb5
+GLV decomposition: k1 = 0x1a838b13505b26867, k2 = 0x0
+Timing attack simulation: 0.001239 seconds
+Growth ratio from previous key: 1.72x
+Difference from previous key: 0xb133920d55215593
+
+--- Key 66/160 ---
+Private Key (hex): 0x000000000000000000000000000000000000000000000002832ed74f2b5e35ee
+Private Key (int): 46346217550346335726
+Key Size (bits): 66
+Automorphism-related keys:
+  λ^1 * k mod n = 0x880b64476f6916829e10e9b3c8e72dc3e80e2cb43773a05ae54c9bc1d7766c91
+  λ^2 * k mod n = 0x15902226c71458a1aca745eb3a4e39ddbb014dd90989b05669fdf4a695962694
+  λ^3 * k mod n = 0xef86125d7767d02c25b0eb7bf944d13988e443f10f5984bb677d8360bfd35c3e
+  λ^4 * k mod n = 0x630d6935ff93a7989a61291912b239e27bfac217068ddde279aec8d5ecd45a0c
+  λ^5 * k mod n = 0xa117aa6c9d74966c4f6f0417e97e061476591c98e3d3c8b647b6c300ec6d1a7c
+GLV decomposition: k1 = 0x2832ed74f2b5e35ee, k2 = 0x0
+Timing attack simulation: 0.001088 seconds
+Growth ratio from previous key: 1.52x
+Difference from previous key: 0xdaf6261a25abcd87
+
+--- Key 67/160 ---
+Private Key (hex): 0x00000000000000000000000000000000000000000000000730fc235c1942c1ae
+Private Key (int): 132656943602386256302
+Key Size (bits): 67
+Automorphism-related keys:
+  λ^1 * k mod n = 0x67bee01e01d966eaa02ae605a3de6c93df746932d50391796b110deeba97f444
+  λ^2 * k mod n = 0xd921c8010d001f4dc1e368f16c53181175d534c966ccdf7ed894c91c06765caf
+  λ^3 * k mod n = 0x343762f2d19262bd58f1548feac1e4c0aaf94bdc532c9463326ae8b711bd1c01
+  λ^4 * k mod n = 0x7494bd8e70d333b02bd4d05ea19f1eefa753800d19872a5504c5223fa9714cef
+  λ^5 * k mod n = 0xd7eb640b6c02c3f8f5c3c96c56c0ad9e5bd1e36c93717520105b52024b154f5
+GLV decomposition: k1 = 0x730fc235c1942c1ae, k2 = 0x0
+Timing attack simulation: 0.001227 seconds
+Growth ratio from previous key: 2.86x
+Difference from previous key: 0x4adcd4c0cede48bc0
+
+--- Key 68/160 ---
+Private Key (hex): 0x0000000000000000000000000000000000000000000000349b84b6431a6c4ef1
+Private Key (int): 970436974005023690481
+Key Size (bits): 70
+Automorphism-related keys:
+  λ^1 * k mod n = 0x86dff770c8b8ad0bf9805c2d92d33f4b91704d4e18fc0f84a2a335a522d663b2
+  λ^2 * k mod n = 0xcec0769c45dd791e7f4c2bb1b46cf1a6229f0f6a2485a1a066c0ef72f0c5cb43
+  λ^3 * k mod n = 0xa659ee5795eb9cc08481496ba6bdd1b8b4ddac64fd939a27c0eae0214280eb3c
+  λ^4 * k mod n = 0x7b82f9a821ba10ccea7670a3ff031ca6d6395c9ae5e236a6f2f26f3bc1c9e182
+  λ^5 * k mod n = 0x7fc6fc9b7607d0b7dd5f1c0be180f2792298ed9a2270f03e516c903143a4e0c9
+GLV decomposition: k1 = 0x349b84b6431a6c4ef1, k2 = 0x0
+Timing attack simulation: 0.001226 seconds
+Growth ratio from previous key: 7.32x
+Difference from previous key: 0x2d6a8892e701298d43
+
+--- Key 69/160 ---
+Private Key (hex): 00000000000000000000000000000000000000000000000088c78c404811800000
+Private Key (int): 2523136132413061595136
+Key Size (bits): 72
+Automorphism-related keys:
+  λ^1 * k mod n = 0x6fcc607c4e7f0a3c836cc70ac254b5ca5d47f0faad89691570e395422e2efbe4
+  λ^2 * k mod n = 0x470a48775b2c9055b4b70f196faa1752fa71803e5df8f4dbc4d38684085689c1
+  λ^3 * k mod n = 0x9dab829d142cbaa6f48a1221e6705df353b2fe99feede0e0eff73449542a9edd
+  λ^4 * k mod n = 0xdb2b05e62c5825ace90f0477617c9462d8f80bbccec6d675348a938eb42c50e6
+  λ^5 * k mod n = 0x440c0e252f68447eeda0abc2ba9f95026cd97e7b8bd6090e34ca1e3441d0c933
+GLV decomposition: k1 = 0x88c78c404811800000, k2 = 0x0
+Timing attack simulation: 0.001195 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x542c078a04f713b10f
+
+--- Key 70/160 ---
+Private Key (hex): 00000000000000000000000000000000000000000000000163a06ca721c7200000
+Private Key (int): 6560153944273960566784
+Key Size (bits): 73
+Automorphism-related keys:
+  λ^1 * k mod n = 0x34cbae34dfa4297960e8a25687cd3d84f8c793402af1218366c426934a315428
+  λ^2 * k mod n = 0x7605fb61b36bf3157901487a0983e19337f732bceb7beb47c3873a82fb12ed5
+  λ^3 * k mod n = 0xee435899a5f0a1b29a0078daf9af17d3c82f120ed31b5d43c8cfb75b2fd35802
+  λ^4 * k mod n = 0x7085b1b3d967b8d6c043b7a93a4ca1d86c63b0606285045e91736862f8355566
+  λ^5 * k mod n = 0x86171167299eff0ac334c9317f9d7f39eaa64ea37928c8ec98448080db22dc2a
+GLV decomposition: k1 = 0x163a06ca721c7200000, k2 = 0x0
+Timing attack simulation: 0.001216 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xdad8e066d9b5a00000
+
+--- Key 71/160 ---
+Private Key (hex): 0000000000000000000000000000000000000000000000039ca11a7f57d2800000
+Private Key (int): 17056400255112297054208
+Key Size (bits): 74
+Automorphism-related keys:
+  λ^1 * k mod n = 0x10bfab31651dc35f8a5bd60cd28b07e4ae6bf5af78e7cce98a2fd705cb49ed69
+  λ^2 * k mod n = 0xf7b4ef267efea92dc85c14e7f0143999694931e32eef0101b9aa5ce6f20757be
+  λ^3 * k mod n = 0x4a5ce15b0ac21b363f0156e9b36f80cf0f33152230fe1d4131b53e2cad290cbf
+  λ^4 * k mod n = 0x2112920fcf24bce5f7f9cb11f4581e5ed6d467cbffa80d8725071ded80fd7110
+  λ^5 * k mod n = 0x877773d28aa716f4d55c9a164b014efdd7c3e9c67e251f3089dbf0c93986c3ba
+GLV decomposition: k1 = 0x39ca11a7f57d2800000, k2 = 0x0
+Timing attack simulation: 0.001135 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x23900add8360b600000
+
+--- Key 72/160 ---
+Private Key (hex): 000000000000000000000000000000000000000000000009640944e4b123800000
+Private Key (int): 44346640663291975696384
+Key Size (bits): 76
+Automorphism-related keys:
+  λ^1 * k mod n = 0xefb4be4109b5d93f27c3acc297be3b65257d3168af4052a663101731e669aa46
+  λ^2 * k mod n = 0x9303882f21e05da4b02a06ed6257d495f4903140c429ba7112aa8eda9957e138
+  λ^3 * k mod n = 0x63e9a529db0e905dfbcf62dcb3ac9e86a7dc9b6767ba11df078e28e54804a584
+  λ^4 * k mod n = 0x3eabc1e11840a232973ba3922ec4826cb204aa56cc22efeb4ae36bebc6d976ab
+  λ^5 * k mod n = 0x98df88a74fe701c28ef7f26c95e789747b727afb4a9428844f3ce9fe27e8542
+GLV decomposition: k1 = 0x9640944e4b123800000, k2 = 0x0
+Timing attack simulation: 0.001204 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x5c7682a655951000000
+
+--- Key 73/160 ---
+Private Key (hex): 0000000000000000000000000000000000000000000000186a7e7fec32f6000000
+Private Key (int): 115301265724559138488320
+Key Size (bits): 77
+Automorphism-related keys:
+  λ^1 * k mod n = 0x5150bc09677370479434014a917f611371f5cb1fb24ae53ed318f7331fdfd1ae
+  λ^2 * k mod n = 0x85b955acdd8613296a70fa4bf8c2c82306dfd7d4a31773dc48800edfd3ed481d
+  λ^3 * k mod n = 0xbb7527d832b0cf5cd44df4af90862a612ebe636370559af2439e714b69539d34
+  λ^4 * k mod n = 0x4a7c4e5871189ad845a7597aa021d33c722c46d844af3fb164df0b48b57b961d
+  λ^5 * k mod n = 0xd3e99f1b833b8a7f6987a841a8565bef97fab394ce421fa162493248ca0b6069
+GLV decomposition: k1 = 0x186a7e7fec32f6000000, k2 = 0x0
+Timing attack simulation: 0.001169 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xf06753b0781d2800000
+
+--- Key 74/160 ---
+Private Key (hex): 00000000000000000000000000000000000000000000003f7b48e632eae6000000
+Private Key (int): 299783290883853760069632
+Key Size (bits): 78
+Automorphism-related keys:
+  λ^1 * k mod n = 0x39d1e8e5402c23ed4e20d0284717fc668516252e6663f3e5e4f5e396d5f22d37
+  λ^2 * k mod n = 0xf5484527d98fcb6bae58f12bed2da1f52d99a59961ecb9f1a2f8cda73a2007cb
+  λ^3 * k mod n = 0x1a9701321d654e57c1977c2ede29a1655cb441968228a5a3f021492d0177bcdf
+  λ^4 * k mod n = 0x5b433219260cc5cbe84cb57206be586a77c6c63c6c7765821fefc451849205cb
+  λ^5 * k mod n = 0x5a2c374788679b4b4593e8aab5ad55713b1ddee3a98f98380caa0bbfc9bbeb9c
+GLV decomposition: k1 = 0x3f7b48e632eae6000000, k2 = 0x0
+Timing attack simulation: 0.001114 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x2710ca6646b7f0000000
+
+--- Key 75/160 ---
+Private Key (hex): 0000000000000000000000000000000000000000000000a50d5723512f88000000
+Private Key (int): 779436556298019756048384
+Key Size (bits): 80
+Automorphism-related keys:
+  λ^1 * k mod n = 0x63c689d062ccc75a17be4f0798750d624f799679b67b2e4b1f0d1889239edb6f
+  λ^2 * k mod n = 0x5713af0bc11ec7d2d9edf604223cc5cae2370f3f9bacf149ca921adb85636e06
+  λ^3 * k mod n = 0x428479469eb74531b428d724fac592b3baab9d0191e9ab4c0ad7c2cbb08adada
+  λ^4 * k mod n = 0x45fd10be3da7517fb9cd956d0fe5b11e75d54f87797e7b2986c0a51d5ec6a953
+  λ^5 * k mod n = 0xbf3364e94adef2d2f2ee92954bd374837cf2b419c2a08e04f813b88d606ae817
+GLV decomposition: k1 = 0xa50d5723512f88000000, k2 = 0x0
+Timing attack simulation: 0.001183 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x65920e3d1e44a2000000
+
+--- Key 76/160 ---
+Private Key (hex): 0000000000000000000000000000000000000000000001ad22af5bd31530000000
+Private Key (int): 2026535046374851392569344
+Key Size (bits): 81
+Automorphism-related keys:
+  λ^1 * k mod n = 0xbe4aa2bc4a8b56ed0ac935b7623cc035f09a967bb96965e4c9b08a293d5a3a8f
+  λ^2 * k mod n = 0xc09c00aa1a0868f7d6d9376a5084c59b0409877d0acf6f23183a13913505f3af
+  λ^3 * k mod n = 0x5b19aed3fbbecda2612fd01595242d98cd76609cb914260d4171c3d57d2bd27b
+  λ^4 * k mod n = 0x2ea0f614f4225931770e546ac51d34ffd9ca784b2d942ca40cd97de10f104af0
+  λ^5 * k mod n = 0x6f0d94ca26a3b454692ef1512b318897b0279d1d78e9f21cc44f2a57dda3c385
+GLV decomposition: k1 = 0x1ad22af5bd31530000000, k2 = 0x0
+Timing attack simulation: 0.001151 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x10815583881e5a8000000
+
+--- Key 77/160 ---
+Private Key (hex): 00000000000000000000000000000000000000000000045bc094bb8b3740000000
+Private Key (int): 5268991120574614318612480
+Key Size (bits): 83
+Automorphism-related keys:
+  λ^1 * k mod n = 0x4fe9639bd6b14517890688481de0bd3d3b408959399456c8944d59c3a3e05fd6
+  λ^2 * k mod n = 0x863b0d1983362935db07d3c92795d8bbf97dd5f9ab46271a1d26a1f487087b13
+  λ^3 * k mod n = 0x69b01b6f36b8b39daf283c3f0adec15f596faa1f7cc2b338b1585227827b8328
+  λ^4 * k mod n = 0xed8eabb4980e0b32d6505f876c68f344f8977dd221fbc0ad17b24e993492144d
+  λ^5 * k mod n = 0xeaf22cfaf2376ced33a573d833e57e08202d0c3bd1675b67724900560554b2b0
+GLV decomposition: k1 = 0x45bc094bb8b3740000000, k2 = 0x0
+Timing attack simulation: 0.001206 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x2ae9de55fb82210000000
+
+--- Key 78/160 ---
+Private Key (hex): 000000000000000000000000000000000000000000000b54f4b5e79d2980000000
+Private Key (int): 13699376913493998302134272
+Key Size (bits): 84
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9c60408be3fb18e06e6478b35138eadbd6daec8b47bd6e2425f5d8bf99e347b7
+  λ^2 * k mod n = 0xaefa86432528d769dc5910c67960ec7c6b575160bc2bd171d57de3ec023299de
+  λ^3 * k mod n = 0x48fbed5cd0090b61931685ca23404a5e871bfe955333aff49d14bacf85d5c51c
+  λ^4 * k mod n = 0x10ca979f7189575b4befdb26d784659bfe8efcc8fb75aa1bcac7eebb134eb823
+  λ^5 * k mod n = 0xa9b3e8f5ae5e6f80117ebba078c449ad0613792713672434297449cd2d3c9d81
+GLV decomposition: k1 = 0xb54f4b5e79d2980000000, k2 = 0x0
+Timing attack simulation: 0.001173 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x6f934212c11f240000000
+
+--- Key 79/160 ---
+Private Key (hex): 000000000000000000000000000000000000000000001d767c3f5a323900000000
+Private Key (int): 35618379975084396874039296
+Key Size (bits): 85
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa0959589870bf79ac4c5921a524e4cc2b3bb374a8cd6f771a8132d6c7620649b
+  λ^2 * k mod n = 0xa995a721cc9415ae1a06d88d6da3a99b8c62a9065559dd6345263bcadbb96e9
+  λ^3 * k mod n = 0xfecb11a98a85f09b49e24aac121e9650abac9efe7f03c75711c703d1a7008da2
+  λ^4 * k mod n = 0x9811849b1277ae22b719cf0bcc3f05fa977303bdefd6679e824c0ff8cd1326d8
+  λ^5 * k mod n = 0xbc51ab77ea90f7b0ab95b1778f658ebe7213e6b4467f6b5d977be3e948efb72a
+GLV decomposition: k1 = 0x1d767c3f5a323900000000, k2 = 0x0
+Timing attack simulation: 0.001238 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1221878972950f80000000
+
+--- Key 80/160 ---
+Private Key (hex): 000000000000000000000000000000000000000000004c9a763e50e8fc00000000
+Private Key (int): 92607787935219437885456384
+Key Size (bits): 87
+Automorphism-related keys:
+  λ^1 * k mod n = 0xbf2695dfa0c5a639051ce4a5f40eea05cf76bb39baada82733d9befa521c3db5
+  λ^2 * k mod n = 0x8a7aaba81f6083187e8850692555857da594fb34113db1cf5c5150438044b30f
+  λ^3 * k mod n = 0xc5f50d259af9282eed05c74dc6e3467dbf97310b1312b52d7a77d021c1d91d0b
+  λ^4 * k mod n = 0x1ee52d82f16bcd7554e5d2d3c8727cbc8df71fef6dad8cfd12c17b979b7df9ad
+  λ^5 * k mod n = 0xb3ca8f28dc4e478b820ae0c9bf1ce4a7b23b23edcf39ed2d8caa6d5e1773bbf1
+GLV decomposition: k1 = 0x4c9a763e50e8fc00000000, k2 = 0x0
+Timing attack simulation: 0.001197 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x2f23f9fef6b6c300000000
+
+--- Key 81/160 ---
+Private Key (hex): 00000000000000000000000000000000000000000000c72b336ed25dc800000000
+Private Key (int): 240780248631570562554003456
+Key Size (bits): 88
+Automorphism-related keys:
+  λ^1 * k mod n = 0x678496c74235a061f01e5c0259341d6e1b0581a975e955a901e0d125bea2d047
+  λ^2 * k mod n = 0xf08859e60a1cb98a1898d2c06f23a9348ee33fb19f1698549b2434770f48b990
+  λ^3 * k mod n = 0x27116be1c4950fb3825b1ad0976ab5f01a5faa366ddc5a4bae710152ce1e9246
+  λ^4 * k mod n = 0x4cbfc79dfb79f6a267a062e4530f90dd8632185c8189af20955ee924503a2a8
+  λ^5 * k mod n = 0x62811ffb59ba9504fb662f8b4d381891d709e3456814e190d1f46a9e682a7892
+GLV decomposition: k1 = 0xc72b336ed25dc800000000, k2 = 0x0
+Timing attack simulation: 0.001154 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x7a90bd308174cc00000000
+
+--- Key 82/160 ---
+Private Key (hex): 0000000000000000000000000000000000000000000205d6b8ecefc0a000000000
+Private Key (int): 626028646442083455768461312
+Key Size (bits): 90
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9382b65602079e3195e6b1fd0eb6e354c041698861b260331c660cd263b3f173
+  λ^2 * k mod n = 0xa228f7cbc84fa8606b08c4633a32f964699de2a9c958ad50284f3f2cc98f3006
+  λ^3 * k mod n = 0xab9c8ebe99d07ac5a18f6aecd987a57017100a3ed82633ced0349ee46e3ddd7
+  λ^4 * k mod n = 0x63e16a1c3cbe85e66c3a2742ebe3a45b53bb54f6e73a41ab0bb894eea7da58a1
+  λ^5 * k mod n = 0x44f481298941b9e831624837569e9995071be30f2193538bcaefb75cb572f1ac
+GLV decomposition: k1 = 0x205d6b8ecefc0a000000000, k2 = 0x0
+Timing attack simulation: 0.001268 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x13eab857e1d62d800000000
+
+--- Key 83/160 ---
+Private Key (hex): 0000000000000000000000000000000000000000000542617a6808f50000000000
+Private Key (int): 1627674480749417177412534272
+Key Size (bits): 91
+Automorphism-related keys:
+  λ^1 * k mod n = 0x66ef96216d4b50219c581af5b5130392e870937b93f89a0786c615f03531cd53
+  λ^2 * k mod n = 0x4fe8fa9933770e812cca0c1407e22ca43c0a27350f132cf85ae6d89c7474265a
+  λ^3 * k mod n = 0xd88557feec9be758ee3b265fdc3799b13f8233b92d50df8798d971721955d73d
+  λ^4 * k mod n = 0xdd7dea7fe1d3f863421765178bd846ee613ec7f0c74ee10bc63d7d8c43140fc
+  λ^5 * k mod n = 0xc542adf4e5f021c7644ec152c3d0f2fcf84f7fa74c887cc07c28646d6d598246
+GLV decomposition: k1 = 0x542617a6808f50000000000, k2 = 0x0
+Timing attack simulation: 0.001101 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x33c8ac17b19346000000000
+
+--- Key 84/160 ---
+Private Key (hex): 0000000000000000000000000000000000000000000dac970b0e7db08000000000
+Private Key (int): 4231953649948484991126077440
+Key Size (bits): 92
+Automorphism-related keys:
+  λ^1 * k mod n = 0x73c30a8d34e12396bd3d5afdf781f59805945435a4fdd705d37255ebbfc7625a
+  λ^2 * k mod n = 0xddc1824a7e7a06f493b5a435bf862e7e5dfe73471fc217adf501df7d0b63b8c0
+  λ^3 * k mod n = 0xa23669d13c01f7191322357c80cbead444aa88b7bfb80a4e9d98dd9e521bc21c
+  λ^4 * k mod n = 0x8d2ba5d340e3da81cb52a73c871dbdde607ab5c0d239c19cdae6f9cd074b04f0
+  λ^5 * k mod n = 0x4b94bd6ebe12eeb7b763335fcabb3fe7fc0ff6896cb3bb5ac9f9d31c23a99b7e
+GLV decomposition: k1 = 0xdac970b0e7db08000000000, k2 = 0x0
+Timing attack simulation: 0.000944 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x86a3590a674bb8000000000
+
+--- Key 85/160 ---
+Private Key (hex): 000000000000000000000000000000000000000000238d88b658e0640000000000
+Private Key (int): 11003079489866060427171987456
+Key Size (bits): 94
+Automorphism-related keys:
+  λ^1 * k mod n = 0xf6e66136c6b2160d450c635a08ba9f6158b18056e275b4ef6b734edd8e950fc3
+  λ^2 * k mod n = 0xe4fb8454dd97f002f69d9a66d4eaecd8d5d597485ece6357aece8c01ea761109
+  λ^3 * k mod n = 0xe749bcfb0c78cdd09203e9c216afdba766c6a9ea82e869a03c960881cbb149a
+  λ^4 * k mod n = 0xbfbf1b58df0f237a6c77beeedea6557ce9b7cc963e74de748532e5d114b50d24
+  λ^5 * k mod n = 0x48011a151e55712da218427bc97c7abe8edc3ffef15a7113f0b8d6a79a6d5288
+GLV decomposition: k1 = 0x238d88b658e0640000000000, k2 = 0x0
+Timing attack simulation: 0.001068 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x15e0f1ab4a62b38000000000
+
+--- Key 86/160 ---
+Private Key (hex): 0000000000000000000000000000000000000000005c6ffd0d4d7aa00000000000
+Private Key (int): 28608006673651759749475074048
+Key Size (bits): 95
+Automorphism-related keys:
+  λ^1 * k mod n = 0x295e51a730b9a01d4fe2764982cfcd9756ee3914ad35be8ff26bfd6babce900f
+  λ^2 * k mod n = 0x29ac0df138aee060ae75eb18b500a19ebc1eb5b42677448a7f76a5628f86f7b8
+  λ^3 * k mod n = 0x9fa68a22a56bc1672263fd49abf1070fab219205b7f0dd3ce2a34a35c5bf802f
+  λ^4 * k mod n = 0x6f2a5e74724c3a3205148d4c46053dd4cb676680e7bac3347d7a6e13fe5d2f2c
+  λ^5 * k mod n = 0x10d7736090bfaa343a25c5ed1256b35dd528000154bbcdd59c15d1a42be4a055
+GLV decomposition: k1 = 0x5c6ffd0d4d7aa00000000000, k2 = 0x0
+Timing attack simulation: 0.001247 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x38e27456f49a3c0000000000
+
+--- Key 87/160 ---
+Private Key (hex): 000000000000000000000000000000000000000000f0565ebc2fd8700000000000
+Private Key (int): 74380817351494578867072401408
+Key Size (bits): 96
+Automorphism-related keys:
+  λ^1 * k mod n = 0x7dff013a1fe83a676cfa78d7f5551130ef4f19b0fc56f2843364dfd071e66a67
+  λ^2 * k mod n = 0xdf7005b0bca1217201f1b8a75d4b8ae2d352afa885d9981e5b082496acb6f55a
+  λ^3 * k mod n = 0xec83588514c0dd31013ba4d1529678fd2fcdb7456f8f2456b2d1cea64c538cf7
+  λ^4 * k mod n = 0x82ee03a70090f271ad070d5653d3fe09a5db255745f3657d1b46901cd546d647
+  λ^5 * k mod n = 0x156dc0bb25856a737f95ceb3162e06ec861c9fb0619effaa567d57d380229dcd
+GLV decomposition: k1 = 0xf0565ebc2fd8700000000000, k2 = 0x0
+Timing attack simulation: 0.001170 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x93e661aee25dd00000000000
+
+--- Key 88/160 ---
+Private Key (hex): 00000000000000000000000000000000000000000270e08fe94932c00000000000
+Private Key (int): 193390125113885908572825452544
+Key Size (bits): 98
+Automorphism-related keys:
+  λ^1 * k mod n = 0xc06d9684f42e31f4ebd27f7d857c5a8dd84876bcfa81b30e9c6dc081f803e158
+  λ^2 * k mod n = 0x84d3f03c46e3ca9f0e339be712db1c96a825ed28629fddb4efe6d281fb55f93d
+  λ^3 * k mod n = 0x1ac1711e9c9e2571116c586537116e025e0f1d139ae9a9a09d2d5c8329e41297
+  λ^4 * k mod n = 0xe9844ac40c106b172e7d8d7077ba582c699174e5f7952b790f1cfb832db12f67
+  λ^5 * k mod n = 0xbaf489d9db87917e6752b24f8691135ec234c36852b2e15dae3bed6fd8178b2c
+GLV decomposition: k1 = 0x270e08fe94932c00000000000, k2 = 0x0
+Timing attack simulation: 0.001000 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1808a312d195a500000000000
+
+--- Key 89/160 ---
+Private Key (hex): 00000000000000000000000000000000000000000658ae42f824b7400000000000
+Private Key (int): 502814325296103390436843847680
+Key Size (bits): 99
+Automorphism-related keys:
+  λ^1 * k mod n = 0x87d18861eb0b52bce8f70f7364d65a488dafa52afcb3431dffd96b95e46ecc96
+  λ^2 * k mod n = 0x254615bc68bd78ec3ae5a6f83355b2f1ed31fe1d2c2bd5035403abc7c8cea5dd
+  λ^3 * k mod n = 0x17567ddacc7a60e66bd711955eb21fd615249e2b9c9ba9a76a965cbaef8327ce
+  λ^4 * k mod n = 0xa189ffbfa74d891faaa02c3e257dcf72764f6312a9dac16bcefb4bc4dd51f5e7
+  λ^5 * k mod n = 0x33353f9d70f92cd9830d638ac5113d55b718e95cb8a487490a87f40e6b55434b
+GLV decomposition: k1 = 0x658ae42f824b7400000000000, k2 = 0x0
+Timing attack simulation: 0.001116 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x3e7cdb30edb84800000000000
+
+--- Key 90/160 ---
+Private Key (hex): 000000000000000000000000000000000000000010802b7aeb92a9000000000000
+Private Key (int): 1307317245769868744767049826304
+Key Size (bits): 101
+Automorphism-related keys:
+  λ^1 * k mod n = 0x89f6e003977a33647a8a8b083a8a88da09cd952672509e5b1327e7a36868c7ad
+  λ^2 * k mod n = 0xc982354dd741fdee48999fa9ffb265552a81ad64d756af6379d35a0c5869a160
+  λ^3 * k mod n = 0xc9d86bdcdb436375fc08f3873c364e3e44f762e7a9b8d5f781e485a889dd0357
+  λ^4 * k mod n = 0x6469b2c0abf279003f401bc7a7949eb33e32f98004af2c9bde550c20978b45af
+  λ^5 * k mod n = 0xaabad3316b0a1c982cb4775f97fd840f500c83ca5d57cf0cdb1b027d7e76509b
+GLV decomposition: k1 = 0x10802b7aeb92a9000000000000, k2 = 0x0
+Timing attack simulation: 0.001186 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xa277d37f36df1c00000000000
+
+--- Key 91/160 ---
+Private Key (hex): 00000000000000000000000000000000000000002ae6d772cae3b8000000000000
+Private Key (int): 3399024839001658905279315574784
+Key Size (bits): 102
+Automorphism-related keys:
+  λ^1 * k mod n = 0xdbbd7fd45e176ab9225ece239fa73008130da74a7efc7a3473fcb2a7351ebaf1
+  λ^2 * k mod n = 0x6a66955523addaa0d65d5a9a6ab14ba89545a21f90a84ad1570a225b7c776c2
+  λ^3 * k mod n = 0x2aa326e7e01d998239bab2e81343a31c14b40ca8ce75b643709f990f690d07b5
+  λ^4 * k mod n = 0x937240e6eeadeabb688de66e48e719bf438b8fbc3040cbdde19adda6e00ebb41
+  λ^5 * k mod n = 0x5771a2b75b7b468a6de84793c32365f24981b199dc8b3f9672d7206ffd3af549
+GLV decomposition: k1 = 0x2ae6d772cae3b8000000000000, k2 = 0x0
+Timing attack simulation: 0.001116 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1a66abf7df510f000000000000
+
+--- Key 92/160 ---
+Private Key (hex): 00000000000000000000000000000000000000006f8b635da91ce0000000000000
+Private Key (int): 8837464581404313604086183231488
+Key Size (bits): 103
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa69cc3459109efe33032bdfa08499d76299f387017819bc808bde2cec1b3121b
+  λ^2 * k mod n = 0xd007ca3f4306153eb599df16097cf2d57ae11e0728578d3b454cc3260a9bf826
+  λ^3 * k mod n = 0xf1a0e10e34a687f34b8826d85d965ea9ed2f05eb0a1e6b0acfd75f6564fd030a
+  λ^4 * k mod n = 0x727ce4ddb85826ea5f0cb8ba6d877f8bde72c80ed2e4ab5fda646a06148f32f7
+  λ^5 * k mod n = 0xb5583a4cea987a0f51285f736e765215ebbe2222a0e3942bf154c583ecd2f6bc
+GLV decomposition: k1 = 0x6f8b635da91ce0000000000000, k2 = 0x0
+Timing attack simulation: 0.001467 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x44a48beade3928000000000000
+
+--- Key 93/160 ---
+Private Key (hex): 000000000000000000000000000000000000000122040259eae4b0000000000000
+Private Key (int): 22977407911651216271344001875968
+Key Size (bits): 105
+Automorphism-related keys:
+  λ^1 * k mod n = 0x54914fefb1e724859162d391b4ba0dc012d02b52ace93e59598ee94f10c6630c
+  λ^2 * k mod n = 0xcd8f4b6755837aac30e577f32f5ebe0f939e7e1d8c90b0b21c972dc6faf52208
+  λ^3 * k mod n = 0x136074253197532062744392e3ed967ff643ea54a8fdb16e4ca2597050c2d4d7
+  λ^4 * k mod n = 0x7652cb4b107388012f25704f498a5e6bd8957bb49163d08aca68b84a282bab46
+  λ^5 * k mod n = 0x4846f141f509291039cea945d2350114115cc53730853840e7913f3c55f05864
+GLV decomposition: k1 = 0x122040259eae4b0000000000000, k2 = 0x0
+Timing attack simulation: 0.001190 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xb2789efc41c7d0000000000000
+
+--- Key 94/160 ---
+Private Key (hex): 0000000000000000000000000000000000000002f20a6c8362b900000000000000
+Private Key (int): 59741260570293163206214330351616
+Key Size (bits): 106
+Automorphism-related keys:
+  λ^1 * k mod n = 0x4c0d24106dbfe09227aca54f41de64e5a00e86bebd973202f856ac4084f0d019
+  λ^2 * k mod n = 0xc722ce691f2fe8c8d7dd389891dd01a6a0be118af78ba680b2bf0fcfd2435bba
+  λ^3 * k mod n = 0x6b1f58fa900963626ada27de4136c142c00dadbf0dcbd5d91d6ea62e06523995
+  λ^4 * k mod n = 0xe6b222675bedead618ff4d9f1f2b6eb1ad9c0d8c93983e1253fb43337b3e97c7
+  λ^5 * k mod n = 0x5fe6ccf243615678fd189c68d58b2e741ffe431b11e7098be7915391944aa49a
+GLV decomposition: k1 = 0x2f20a6c8362b900000000000000, k2 = 0x0
+Timing attack simulation: 0.001041 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1d0066a2977d450000000000000
+
+--- Key 95/160 ---
+Private Key (hex): 0000000000000000000000000000000000000007a8818088cd7ac0000000000000
+Private Key (int): 155327277482762235144796364603392
+Key Size (bits): 107
+Automorphism-related keys:
+  λ^1 * k mod n = 0xd4a3b6ec93c5c1a824cd3e2987cee0da64e7128798534f4457e9e69577cbee17
+  λ^2 * k mod n = 0x4debc8338e8220118d40024358752155c9161c56f8e6ec7ffff9e4b3caeeda30
+  λ^3 * k mod n = 0x8c3b84f4f87e2310e512702c572aae070184637e99992b31574b652d1d775415
+  λ^4 * k mod n = 0x22de62bf09b037aa7acc239c9d69ce2eb9d6811274ea3341c51e16de458b56c6
+  λ^5 * k mod n = 0xa91de293faa286ec306ab0ab5c13eaf50686d7d272466466fb45efbfd6366f36
+GLV decomposition: k1 = 0x7a8818088cd7ac0000000000000, k2 = 0x0
+Timing attack simulation: 0.001040 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x4b67714056ac1c0000000000000
+
+--- Key 96/160 ---
+Private Key (hex): 0000000000000000000000000000000000000013e950b496e30c00000000000000
+Private Key (int): 403850921455181814979350249865216
+Key Size (bits): 109
+Automorphism-related keys:
+  λ^1 * k mod n = 0x4ff6f952636a9790aff79e8a776ae6cd0d971428c23f1a9aa273e72256758c3d
+  λ^2 * k mod n = 0x5a1dfec4a920fab89efc08c9da64d7d17508c7c792693acba0b9e207a7bcb0b0
+  λ^3 * k mod n = 0x4f936c178f47bb64cbdf6ac171d645ecf4087ad4574451f22274a6ea172865b3
+  λ^4 * k mod n = 0x26e0e1b4aa9d1c07528a9ca7e5ee9676ee3a28f31262d8263d995d6636a18cbb
+  λ^5 * k mod n = 0x7ad3e7023e6640d47f78f6245506117c9b4f66b2ce5e9bd7833ea54829ff5c8b
+GLV decomposition: k1 = 0x13e950b496e30c00000000000000, k2 = 0x0
+Timing attack simulation: 0.001202 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xc40cf340e159140000000000000
+
+--- Key 97/160 ---
+Private Key (hex): 0000000000000000000000000000000000000033c50508bb818600000000000000
+Private Key (int): 1050012395783472747769348264820736
+Key Size (bits): 110
+Automorphism-related keys:
+  λ^1 * k mod n = 0x6f1fdc63b5bef0ede560838f1c37afdfdd845ad8b9eddfcf92d3f432c226551d
+  λ^2 * k mod n = 0xcce27b8dd2fe2d04b4d5c7afa7dbd3e2c97d4da92ac258d33463086105ba0e0d
+  λ^3 * k mod n = 0x4d11791257b8b5cd078d819b6e678e334e88401348f78a93d401cb0c325b853d
+  λ^4 * k mod n = 0x93a485c246fcd673a3f3fe3a217b7a51ad68c2fcb1c64fdc1562795ce0263c50
+  λ^5 * k mod n = 0x25255b11d1d41f355823d661a3a2089b848ae908e2b1cd9c3657d071176a7067
+GLV decomposition: k1 = 0x33c50508bb818600000000000000, k2 = 0x0
+Timing attack simulation: 0.001071 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1fdbb454249e7a00000000000000
+
+--- Key 98/160 ---
+Private Key (hex): 000000000000000000000000000000000000008699d9e3811d9000000000000000
+Private Key (int): 2730032229037029173023343103705088
+Key Size (bits): 112
+Automorphism-related keys:
+  λ^1 * k mod n = 0xf356f790bf00a613703e0a34c8b28776ec437203942933cb90915c466a30060a
+  λ^2 * k mod n = 0x90e15998d9707c97540beb3857aac9ab39510e1727ddf9c6748de7b770340bd7
+  λ^3 * k mod n = 0x468c679e60de740f3c52236bcbe14a1d6d07a7508a2fea9ea1a3f5cb45e070d7
+  λ^4 * k mod n = 0xae6dfd18dd8f54c0779f958322b6978bb09976956db38079203496b7c8af5d2c
+  λ^5 * k mod n = 0xacc5ef3a5124fafdf1e01d67700457ea1b80d7920cefc8ef47bfc5070a9998fe
+GLV decomposition: k1 = 0x8699d9e3811d9000000000000000, k2 = 0x0
+Timing attack simulation: 0.001027 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x52d4d4dac59c0a00000000000000
+
+--- Key 99/160 ---
+Private Key (hex): 000000000000000000000000000000000000015df669b5e94ce000000000000000
+Private Key (int): 7098083795496276080444992991002624
+Key Size (bits): 113
+Automorphism-related keys:
+  λ^1 * k mod n = 0x3f3658178ab680469c53bbc20477b82399e47304ae26dbfa0e8a48c05f1abb0e
+  λ^2 * k mod n = 0xf3baabce429b19e22fec83dc6435ef34a94c7baab81762c3a95c9917d0b24e31
+  λ^3 * k mod n = 0xdbfe7411489a6f2c1580efa278b6ea3a98b7255a44dce2566a183b22d158ead0
+  λ^4 * k mod n = 0x39fc9ca501977c2c6e9555b4eaba561f780ec82952568f80247c3a03906a0831
+  λ^5 * k mod n = 0x55f5e7f782e574fb0dc499598b03bdad32da5019ea343c541baed19cd881a22f
+GLV decomposition: k1 = 0x15df669b5e94ce000000000000000, k2 = 0x0
+Timing attack simulation: 0.001146 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xd75c8fd2682f5000000000000000
+
+--- Key 100/160 ---
+Private Key (hex): 000000000000000000000000000000000000038de712d8f82e4000000000000000
+Private Key (int): 18455017868290317347988379933868032
+Key Size (bits): 114
+Automorphism-related keys:
+  λ^1 * k mod n = 0x4a7e6f653470dfc2a574d8ed4981c885dc06d7f554c429ccf9551270e038899e
+  λ^2 * k mod n = 0x1d3705c9c5d9310104ff1642d0cba837e1b40ace83662d4bd11b028300c12838
+  λ^3 * k mod n = 0xbfa5fa0ebce16b03469214c53967a78a7f5d735dbf268b8b6ecd168cef1cefc0
+  λ^4 * k mod n = 0xadd3821781110336b0643ce341587aed14b3e3a0f7991175e44b4a175ff98c0c
+  λ^5 * k mod n = 0x82cc00c3c149f8f25869c1b6004c07c6f1be348b387c384f864682f351f21275
+GLV decomposition: k1 = 0x38de712d8f82e4000000000000000, k2 = 0x0
+Timing attack simulation: 0.001243 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x22ff0a9230ee16000000000000000
+
+--- Key 101/160 ---
+Private Key (hex): 000000000000000000000000000000000000093dbf3100ebab8000000000000000
+Private Key (int): 47983046457554826027106991513534464
+Key Size (bits): 116
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa899a683f0c587b0c35fec18dcef9c3da8828d59636c10c5e159d35501b4b7da
+  λ^2 * k mod n = 0x4ebb410044270cbfc33bb08865f7406858f6c3f0618952f623c44d72c9d6875
+  λ^3 * k mod n = 0x1e2857fc5143e8b4008fb75cc95bc023800f7cba5c371ec304a0e198e8a81ba8
+  λ^4 * k mod n = 0xfc3a1634ef51213b0f44af01ebcad665d98314e03df26156d39b5498decfbddf
+  λ^5 * k mod n = 0xd791d161ca25c114970f80b9fdaabcb57506ca6852f4e3a60df6d0e5cfa071f
+GLV decomposition: k1 = 0x93dbf3100ebab8000000000000000, k2 = 0x0
+Timing attack simulation: 0.001095 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x5afd81e27f37d4000000000000000
+
+--- Key 102/160 ---
+Private Key (hex): 0000000000000000000000000000000000001806f1190264be0000000000000000
+Private Key (int): 124755920789642549515152585306144768
+Key Size (bits): 117
+Automorphism-related keys:
+  λ^1 * k mod n = 0x1dcaedea42db4b05bff33c6d46de88cbbcd9bec2e7f5c6aa55ef8176f0008d27
+  λ^2 * k mod n = 0xb1eaeafd41fb6e71d48c4efef92daaf9e3f08f9e764e82fdd11ed443f65bf745
+  λ^3 * k mod n = 0xa6274d3c060a9b91606a45dc73be3fce07e98ca61cf138ce3acfdf7c2d47d8bc
+  λ^4 * k mod n = 0x338c2812e0e988267dcc4ed182728e37e78e0fa3893817fa90cdeb6e9a7e9029
+  λ^5 * k mod n = 0xc9084e9efd03cc301fae85b6442f5432645e0bd9096f43c7cf9cae79cf0dc4cb
+GLV decomposition: k1 = 0x1806f1190264be0000000000000000, k2 = 0x0
+Timing attack simulation: 0.001186 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xec931e80179128000000000000000
+
+--- Key 103/160 ---
+Private Key (hex): 0000000000000000000000000000000000003e7872da9fd2bc0000000000000000
+Private Key (int): 324365394053070650875489610247438336
+Key Size (bits): 118
+Automorphism-related keys:
+  λ^1 * k mod n = 0x59d8dfe144d5242f55fb459a1d7d28cf3c059eb90ee4b4143916eb2f1879bcbb
+  λ^2 * k mod n = 0xf278a81771a45a07fc18e91a3bf89c4ca690c701b73de7e4b5bef0856b09c77e
+  λ^3 * k mod n = 0x6686481270ba82f407bed643a9116c0ce7f18f7eb6e84f888b35db46a2aa36ad
+  λ^4 * k mod n = 0x99839439a907ea32837b2a83b3cffb08ce8674305250e15626269b192784b85f
+  λ^5 * k mod n = 0x5e9bd2c23d439700e629860ce72dd5722de2d73cbcccc317da70a34b4d60eb6
+GLV decomposition: k1 = 0x3e7872da9fd2bc0000000000000000, k2 = 0x0
+Timing attack simulation: 0.001074 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x267181c19d6dfe0000000000000000
+
+--- Key 104/160 ---
+Private Key (hex): 000000000000000000000000000000000000a26c5dd205f0b80000000000000000
+Private Key (int): 843350024537983736548458763546263552
+Key Size (bits): 120
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9bf99716e0f9b9ef0bc639264a54279659ce0834ae9a8ccf616b0c690a176c11
+  λ^2 * k mod n = 0xbe323f46e6d893080332957e0423bc4d29b70f0316eae7f437ce029deb4ec310
+  λ^3 * k mod n = 0x1136ed1cb3ef97d4fb1207f0163fa53d2c7d4d5831ba7a09b4a8fdd3b456967f
+  λ^4 * k mod n = 0x4fb7a640ab32d7b9cea9c34f94cf6c07962c8fe288844921b1f5e33c3bb7a0b8
+  λ^5 * k mod n = 0x390800904defaf3c6a3a05a31fe7111f0cf36674f2361f02c9ab972edc0e899d
+GLV decomposition: k1 = 0xa26c5dd205f0b80000000000000000, k2 = 0x0
+Timing attack simulation: 0.001213 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x63f3eaf7661dfc0000000000000000
+
+--- Key 105/160 ---
+Private Key (hex): 000000000000000000000000000000000001a64cf3eedc3eb00000000000000000
+Private Key (int): 2192710063798757803570364339026132992
+Key Size (bits): 121
+Automorphism-related keys:
+  λ^1 * k mod n = 0x93e12ad5d82867ef10a869c1efc515181a509406f6049f38e421191c5bdd019b
+  λ^2 * k mod n = 0x7e0d52990a273694efcd8d21a7fe02383983c0d2a8bb1c0268dde66d7b0a5cd6
+  λ^3 * k mod n = 0x3a0f325757eaab11f43f63f090ca2ca08be93369bf663aaaeac93ede901f4dad
+  λ^4 * k mod n = 0x83a093973e271e833e260bc138b3d78be85f52df165bb6c4df0abec80f451a89
+  λ^5 * k mod n = 0x1acbc47f129895026aa3ce5d613802fdf0ea070743c91bdbac0869ee6e24c51f
+GLV decomposition: k1 = 0x1a64cf3eedc3eb00000000000000000, k2 = 0x0
+Timing attack simulation: 0.001054 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x103e0961cd64df80000000000000000
+
+--- Key 106/160 ---
+Private Key (hex): 00000000000000000000000000000000000449fb4706a309800000000000000000
+Private Key (int): 5701046165876770820549176604303032320
+Key Size (bits): 123
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa9c13b63c08a2943a460dec82017b238cdb428e8c90339166c7635364ce631b1
+  λ^2 * k mod n = 0xb62b805461eac83dc6c3b406427ccbffc868c5b56aba3537794ea2003511e4b
+  λ^3 * k mod n = 0xb3903dfc30487e9fe7d4ac73821d07aaa4a970ff766a024dba7f9210e3bb966c
+  λ^4 * k mod n = 0x2a00d3bd749dade2e4eee4a43c9a0ed5b14bef07d7ca424ce5dec8948fdbd9be
+  λ^5 * k mod n = 0xd3285de01351ed664f2ac9ff1f337505955a2061a538f9673cd2006ca7deb3f0
+GLV decomposition: k1 = 0x449fb4706a309800000000000000000, k2 = 0x0
+Timing attack simulation: 0.001147 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x2a3ae5317c6cad00000000000000000
+
+--- Key 107/160 ---
+Private Key (hex): 00000000000000000000000000000000000b26c08577a7e5800000000000000000
+Private Key (int): 14822720031279604133427859171187884032
+Key Size (bits): 124
+Automorphism-related keys:
+  λ^1 * k mod n = 0x86299a69c167381644fbdcd5203d9c2ed068fae20517a0f29a36e5b10148994b
+  λ^2 * k mod n = 0xb733de741cb626f0704c9a0dd134478c00938b117db6a263439affdaebf375ea
+  λ^3 * k mod n = 0x3943d45c7d8949395ac28d2c524b7a574e3a5df3e839059db1fb17b102f751e4
+  λ^4 * k mod n = 0x6cef352fc005db45339ec116a5d59c5b57f7b84eaf0d2b008ef16e38925e8d4
+  λ^5 * k mod n = 0x25028dacff08360a0108d9fdb785c9dddbbfcd96e89c7b2e84e3aa67473ceaee
+GLV decomposition: k1 = 0xb26c08577a7e5800000000000000000, k2 = 0x0
+Timing attack simulation: 0.001199 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x6dcc53e7104dc000000000000000000
+
+--- Key 108/160 ---
+Private Key (hex): 00000000000000000000000000000000001cfe5af49d8155000000000000000000
+Private Key (int): 38539072081326972163622378705982062592
+Key Size (bits): 125
+Automorphism-related keys:
+  λ^1 * k mod n = 0xf2317ebea64a6b90745c4103c1178ad2921a31b3036915fe2315a0ac07b11a5
+  λ^2 * k mod n = 0x6e98239f69e85072cf014af759ffddb092bd76817ce7a083c1ea8d7c377fced6
+  λ^3 * k mod n = 0x69b69288baed5ce5303530abdea8fafc2e1f8940f4951112c671f427eb62c6a3
+  λ^4 * k mod n = 0xf1184796396300d7259464ebd7aea0e43f3c7c20a2452f1fb5584c81cc405570
+  λ^5 * k mod n = 0x2edc6da649abc93c36b2fee7c182dad794ad437381a9c8e0466f8468111f6e1f
+GLV decomposition: k1 = 0x1cfe5af49d8155000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001359 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x11d79a6f25d96f800000000000000000
+
+--- Key 109/160 ---
+Private Key (hex): 00000000000000000000000000000000004b621faf331d10000000000000000000
+Private Key (int): 100201587411450126680944888061624320000
+Key Size (bits): 127
+Automorphism-related keys:
+  λ^1 * k mod n = 0xe3ae17c3adfe09f2b8d50ae6237b808f06461503f9559222b819fc6805426763
+  λ^2 * k mod n = 0xacf78230a930123a74febe184bd1d349d312d419f81f3c4612bcaf0ce0c89a83
+  λ^3 * k mod n = 0x2fa3583131ec1062c751a821a38541d57b6abe3dab07352d1678e6d10d134430
+  λ^4 * k mod n = 0x5562746e019de84ffb0bd3c404047d563034b7a1a20d27f0ae5be6581737b28f
+  λ^5 * k mod n = 0xabd0b87e6a9e9e74afcfcd116ff5f3ee0f2fa027776d648ebf9260daeebb0a10
+GLV decomposition: k1 = 0x4b621faf331d10000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001018 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x2e63c4ba959bbb000000000000000000
+
+--- Key 110/160 ---
+Private Key (hex): 0000000000000000000000000000000000c3ff1f2deb4b90000000000000000000
+Private Key (int): 260524127269770329370456708960223232000
+Key Size (bits): 128
+Automorphism-related keys:
+  λ^1 * k mod n = 0x4ff7d7632ac7b37713c382bcc2a7817667bee33cf6806eaf92386cc1a0735719
+  λ^2 * k mod n = 0x8e8385b1b7e36297fcfcbb0bf854bef4ab2beb2eb2c6dc6e7dbaef454e95436d
+  λ^3 * k mod n = 0xaf0f187fe8329100d30781f10f8dab2acc9ee79b462143e793fe04a2187024bd
+  λ^4 * k mod n = 0x11332eb79dcdc2698cb859ca70d879144e63931ee5e81adb9246a4dac8ff0273
+  λ^5 * k mod n = 0xf1eb7948aecf9bfc2f82aec6efe5e09f2bbcbc7add7beba9bf077cfbc6214c5c
+GLV decomposition: k1 = 0xc3ff1f2deb4b90000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001141 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x789cff7eb82e80000000000000000000
+
+--- Key 111/160 ---
+Private Key (hex): 0000000000000000000000000000000001fd975110fd5e10000000000000000000
+Private Key (int): 677362730901402856363187443296580403200
+Key Size (bits): 129
+Automorphism-related keys:
+  λ^1 * k mod n = 0x6984633508d405cf3362ba512d4d1d678fdd900f07974616fc3e8e8be77c9527
+  λ^2 * k mod n = 0xc22c201448266be5e91198585a923b11e16fb0341d28ffed3f2b688a8d1ba5a
+  λ^3 * k mod n = 0x2d8da6195bb6ac3557e051d9287056a482ebc5890448b02db443db2a8bfff71d
+  λ^4 * k mod n = 0x931eacaa33e3c645a112830e58993acde348d6dfcf121f85fc3f05a45ddfed45
+  λ^5 * k mod n = 0xe976e89c6822f294853c66ba2ef48074b470b15ce60b0f6bde7620975d45d20
+GLV decomposition: k1 = 0x1fd975110fd5e10000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001014 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1399831e3121280000000000000000000
+
+--- Key 112/160 ---
+Private Key (hex): 00000000000000000000000000000000052cefd2c5c5f480000000000000000000
+Private Key (int): 1761143100343647350986423626656785629184
+Key Size (bits): 131
+Automorphism-related keys:
+  λ^1 * k mod n = 0x52a29901d15c816b5f7e658d57c8398cbd82ad99033b8ede0dae5a6887977ebd
+  λ^2 * k mod n = 0x1e161c7eeaca9351bad48dc686cc11068bd509663bdbe33046ac6c2d955ca611
+  λ^3 * k mod n = 0x7524c9bcda91646502c76d45ffe32055cc39cdaa616a9312046d9a2e00cfec7c
+  λ^4 * k mod n = 0xe326c60c67d1ba7e8de9e8c7504609898aa232988a5071293d29f2acfb572acc
+  λ^5 * k mod n = 0xf743e2fee083b15c3b8dfd0a6a2bc02e8484c92b5504bf0979ec6a9e0ceed82e
+GLV decomposition: k1 = 0x52cefd2c5c5f480000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001129 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x32f5881b4c89670000000000000000000
+
+--- Key 113/160 ---
+Private Key (hex): 000000000000000000000000000000000d74d5f0cf02af00000000000000000000
+Private Key (int): 4578972060893483233457283390770560106496
+Key Size (bits): 132
+Automorphism-related keys:
+  λ^1 * k mod n = 0x13d391de70f77addcedbaa123d31fb8ff8031679cb413af186164400efebbd3c
+  λ^2 * k mod n = 0x98404dcbded490a71b44a6067562b9fb7ab7846cb1f5c33c2149a6f3ea1bfd00
+  λ^3 * k mod n = 0xcc3ed8deaa0430c809f1b785b25a4b5497f1a0cfc6b958d6f785a7ee5a53ad6a
+  λ^4 * k mod n = 0x7021426a0c7b07c92bf97a9c97e23160861e09e9e1716aacee0ddee78eb289f5
+  λ^5 * k mod n = 0x1f7c67278af32ddf02093678432de195e9d0c107c9488bc12727ee41ce8e151b
+GLV decomposition: k1 = 0xd74d5f0cf02af00000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001032 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x847e61e093cba80000000000000000000
+
+--- Key 114/160 ---
+Private Key (hex): 0000000000000000000000000000000022fc92a54d6d6000000000000000000000
+Private Key (int): 11905327358323055681633445047225951453184
+Key Size (bits): 134
+Automorphism-related keys:
+  λ^1 * k mod n = 0x927f96280ec00dff4595bac556232a7c310da7ec05924b57e7e0a7a5a902bd41
+  λ^2 * k mod n = 0x694b1a6d25ebdb29390a6f364152f7a7edc121ba184e3a15506bff117b004ffd
+  λ^3 * k mod n = 0x69b69c042cddeb2d6579f17063dc5206b1b99a87bfc073749168a37abd39608
+  λ^4 * k mod n = 0x271efc8c2925760a438a5b441310535c2b8d396547ef3e2b3958b8c14c5addae
+  λ^5 * k mod n = 0x3fe276680931ffa89a214bd660a81d83de7bab5c72a3f8d9eb716a09553738fd
+GLV decomposition: k1 = 0x22fc92a54d6d6000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001104 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1587bcb47e6ab100000000000000000000
+
+--- Key 115/160 ---
+Private Key (hex): 000000000000000000000000000000005af716e0fc82c800000000000000000000
+Private Key (int): 30953851131639946706528268506194153308160
+Key Size (bits): 135
+Automorphism-related keys:
+  λ^1 * k mod n = 0x4c7f2d9d3062ca68514f6c936f5833bc0668fe0e91015178c12e1fce39798ee4
+  λ^2 * k mod n = 0xe5638006c22986fb52db447e7eda2c2edc88bff1f4a945026a89792cb4ae03fd
+  λ^3 * k mod n = 0xcbeda5616320658125972103d429a7d6e6f86e5171361bb3f01fd4a326dfeaef
+  λ^4 * k mod n = 0xe4b1553c53c9fae992c9904a3debfb77aa51d00d5c12233db3553372938f44a6
+  λ^5 * k mod n = 0xa2d7f682b1b4d7a99d70db0053dd918f6537e09b48dd8742d96bc05624864e48
+GLV decomposition: k1 = 0x5af716e0fc82c800000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001038 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x37fa843baf156800000000000000000000
+
+--- Key 116/160 ---
+Private Key (hex): 00000000000000000000000000000000ec826eaf5d540800000000000000000000
+Private Key (int): 80480012942263861436973498116104798601216
+Key Size (bits): 136
+Automorphism-related keys:
+  λ^1 * k mod n = 0x93b110324a9a74a8d3681a4c217eece91e879b9155f4e6facfe772fc05646677
+  λ^2 * k mod n = 0x879c4cde5f38c55a3dd3b215b0373faf53c2656f73cef96788845da9f895fb50
+  λ^3 * k mod n = 0xabd04796ce876e4fc8228909f46c4dfd532ab65d975a34803092a47ca7fa3aac
+  λ^4 * k mod n = 0x1f66aa69a6a6bf927da5aa5aa0ff276d2020d08da0f5c7e9c5db828db596bc87
+  λ^5 * k mod n = 0xa764b4209ad630b8ffbf06340d40140fb2e26b137490f2a54245c8b98ec08a47
+GLV decomposition: k1 = 0xec826eaf5d540800000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001063 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x918b57ce60d14000000000000000000000
+
+--- Key 117/160 ---
+Private Key (hex): 0000000000000000000000000000000266ecb9618c40e000000000000000000000
+Private Key (int): 209248033649886037801849783718465796833280
+Key Size (bits): 138
+Automorphism-related keys:
+  λ^1 * k mod n = 0xe398e94db7eeefb322de23cd2e1a091a7879f098217510f2c35f7b3f1530f21f
+  λ^2 * k mod n = 0xc0295957319c1a5a7bccabad5b8d3081d20e21f4b8355a4596725f7d37ad5864
+  λ^3 * k mod n = 0x3f727b43056fc5276734751eac3bd114d0f84d7ab6178ed592c130b493425a4
+  λ^4 * k mod n = 0x3910900f9548f6e1304ce4b8c96f76f998523bc67ac4c643fdb9f2f991943331
+  λ^5 * k mod n = 0x83477813c593a620f2a32d81304aef5834b7b70c7121b659b740ebc86589924e
+GLV decomposition: k1 = 0x266ecb9618c40e000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001095 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x17a6a4ab22eecd800000000000000000000
+
+--- Key 118/160 ---
+Private Key (hex): 000000000000000000000000000000063ecde1fd9fdc0000000000000000000000
+Private Key (int): 544044887489703736970435665336144662364160
+Key Size (bits): 139
+Automorphism-related keys:
+  λ^1 * k mod n = 0x87c5d5220d5567845f3f4eeb12031a9f674b5dc40004672da9380234117ffce9
+  λ^2 * k mod n = 0xe289bdd7c51f18948b4a1ad29239d6db6b3c8f8ce4283653838983223f99c600
+  λ^3 * k mod n = 0xa14ed7c910cc0e99cd2dfd0de44b97730fcc13506a40905eedd9f5a6e44717c2
+  λ^4 * k mod n = 0x7fed9f99e782eed9a39fdb7302da1f361d4f5facfb2eadff3ee7dd8590524e2f
+  λ^5 * k mod n = 0x7a9906e105ac0156a81c5dfe02529b84038047f0582c18875f8c0f8a16587913
+GLV decomposition: k1 = 0x63ecde1fd9fdc0000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001186 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x3d7e1289c139b2000000000000000000000
+
+--- Key 119/160 ---
+Private Key (hex): 000000000000000000000000000000103ce41860393c0000000000000000000000
+Private Key (int): 1414516707473229716123132729873976122146816
+Key Size (bits): 141
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9435908bbc44738b5e0b00632ed4ded2aa6b4311da37bf46eb4fba16ba215d5d
+  λ^2 * k mod n = 0x19cc873100840cb56a271289e29661d6e28328d935fbf988e33051bcdb4ba671
+  λ^3 * k mod n = 0x7033643df878f2c3157791f0eb2af02caf73f5ef751d83e251070d3c2477bc44
+  λ^4 * k mod n = 0x7fd0389026bad3690fd2d42b076a51275075ae6f9a727767d6e5c11dd0aa9713
+  λ^5 * k mod n = 0x3ec111e2a858d047b5168dfad2d6c78bb4d1de23cf906c576bccfd0d69e2f98a
+GLV decomposition: k1 = 0x103ce41860393c0000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001072 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x9fe16366299600000000000000000000000
+
+--- Key 120/160 ---
+Private Key (hex): 0000000000000000000000000000002a37eaa5c6fb360000000000000000000000
+Private Key (int): 3677743439430397385714149026210365407494144
+Key Size (bits): 142
+Automorphism-related keys:
+  λ^1 * k mod n = 0x67ceab7a9ef513c4a70b2598ec279472f0e3f697994814acc325922966d7c5f0
+  λ^2 * k mod n = 0xf7ef670a7f376b7a840806288dbddce2b2d80f90fe939e4b4f287cd2a4c51a58
+  λ^3 * k mod n = 0x3a1d6cce7b83166c7e3e20a35f4caaf197d4ecfc1c4dfb3ce14345a14993978e
+  λ^4 * k mod n = 0xd7b4ed70fed7bfc9f4cce78c9076b52a350ee46cc80ddbde69b43d643076659e
+  λ^5 * k mod n = 0xd2c03ec08f36a72403cce5e247e60825db32e2cb7e269695f61f4cc16dffb79b
+GLV decomposition: k1 = 0x2a37eaa5c6fb360000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001183 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x19fb068d66c1fa0000000000000000000000
+
+--- Key 121/160 ---
+Private Key (hex): 0000000000000000000000000000006dc495489ef38c0000000000000000000000
+Private Key (int): 9562132942519033079062783539608922569572352
+Key Size (bits): 143
+Automorphism-related keys:
+  λ^1 * k mod n = 0xc10923c91b06e5a4ffc809f68d359743d0c203aad0d1cbac5c4b4951cb64074a
+  λ^2 * k mod n = 0x362c6ac3667ccd021a726d40fcb6c6350d3088120b3a527ccda104f45b0fa5b1
+  λ^3 * k mod n = 0xb3e7e5eb7ed901759b6716116250b52af28fe37c9e5c357e0808dfc7612b4160
+  λ^4 * k mod n = 0xa5720ef862d88bbab0d266ea60d25b45e3ec12cfa6482293f1d101a0fed94279
+  λ^5 * k mod n = 0xc12992e7ce0b28f4101c14296404e0a954d4702779914a58557dce7c2fd96044
+GLV decomposition: k1 = 0x6dc495489ef38c0000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001230 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x438caaa2d7f8560000000000000000000000
+
+--- Key 122/160 ---
+Private Key (hex): 0000000000000000000000000000011d65842336dfa00000000000000000000000
+Private Key (int): 24861545650549486253151245060059253660712960
+Key Size (bits): 145
+Automorphism-related keys:
+  λ^1 * k mod n = 0x5c6b5df64acb56fb314b9648ba545eb460c851b27f21b86654ee8738f9f37a17
+  λ^2 * k mod n = 0x5cf78b12396b104b24d4c7f9df15c05a5d0617dcb5f9344d4b0e2c9c74d2b32f
+  λ^3 * k mod n = 0xcd5759589b2bdbe120e7508f2a8be59cab50db4acc5f872531ee0b1a78bad3e8
+  λ^4 * k mod n = 0x5e8adbad687d6c56fca7be9ac2e77e7167401654d733cb099def6cfe00c8192d
+  λ^5 * k mod n = 0x556704dacabc7db41d6d844b1848b1300aed12a93c137aa04d83d1665e2bd564
+GLV decomposition: k1 = 0x11d65842336dfa00000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001003 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xafa0eeda97ec140000000000000000000000
+
+--- Key 123/160 ---
+Private Key (hex): 000000000000000000000000000002e607f1285b78a00000000000000000000000
+Private Key (int): 64640018691428664258193237156154059517853696
+Key Size (bits): 146
+Automorphism-related keys:
+  λ^1 * k mod n = 0x89e3f44d28dd7bc04cf7b9f04adb5ca24a8faf409e076c255ce4d35bd0302355
+  λ^2 * k mod n = 0xf1b6cffc2ee32a5cf95c6e5677388db7bea9713dd92187fc298b40c9fc8a3847
+  λ^3 * k mod n = 0x49164eb32d0ba21622596b0dd505550006fddfbcd7dc0bc1f556a5e0f650e4b3
+  λ^4 * k mod n = 0x8f6907f60fac80155db422c59459e25a8e93e1b3830336344de728c27b8c275b
+  λ^5 * k mod n = 0xde0bd96c0f1d46d44c8324c33f236649b601fd519c32a53a632386d6f4d85e04
+GLV decomposition: k1 = 0x2e607f1285b78a00000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001091 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1c8a26d052499000000000000000000000000
+
+--- Key 124/160 ---
+Private Key (hex): 0000000000000000000000000000078947d968edd3400000000000000000000000
+Private Key (int): 168064048597714529052006479462608994585018368
+Key Size (bits): 147
+Automorphism-related keys:
+  λ^1 * k mod n = 0xcded828a5b3e50ff23d32ce182829c1d5116c3262a24f2d20a49522d85c17dde
+  λ^2 * k mod n = 0x2895624124b67b8588e417ce7300f22efd058cbd08299cd975eac10bf758e79b
+  λ^3 * k mod n = 0x5783b5daccdb661ac0293633b477eb2b01245f5bda5747500b3521671f9938a6
+  λ^4 * k mod n = 0xf7f05456317a222aae2d25ccbb0e3bef72c11736cad3bebec5aa61884e57ef3d
+  λ^5 * k mod n = 0x3ac30619bf7b1ec13012ab5ddfa285a31e7b55d284a38dfe2018ffbe16a3016f
+GLV decomposition: k1 = 0x78947d968edd3400000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001067 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x4a33fe840925aa00000000000000000000000
+
+--- Key 125/160 ---
+Private Key (hex): 0000000000000000000000000000139821354403f2000000000000000000000000
+Private Key (int): 436966526354057771573808720889566506243850240
+Key Size (bits): 149
+Automorphism-related keys:
+  λ^1 * k mod n = 0xaefcab1771a51a810c207b68d38fd8fa689892dbedb32371c348868aa0ae2663
+  λ^2 * k mod n = 0x3476a7acd6a45999fc697f3d7dc03f10f72d1692f16ab9b61fa2654a67cc7663
+  λ^3 * k mod n = 0x4a296cc09859bb4ff2b68066f3307a4eec7c5c3089ad54668f88bb0a89e7d245
+  λ^4 * k mod n = 0x4b4bf599a263e1bbe95d6517da0f236aa1abad7dbeda8b900c43dfe8e3f98b61
+  λ^5 * k mod n = 0xa5e5d4a7c17bb5f7111b8c62ce7ffdb30d327ebf2513c90c4ab17602f92117ed
+GLV decomposition: k1 = 0x139821354403f2000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001022 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xc0ed95bdb161ec00000000000000000000000
+
+--- Key 126/160 ---
+Private Key (hex): 000000000000000000000000000032f1eff0e40a42000000000000000000000000
+Private Key (int): 1136112968520550206091902674312872916234010624
+Key Size (bits): 150
+Automorphism-related keys:
+  λ^1 * k mod n = 0x93c4233cf446de82b92140dd5942cdbfc987a7f3cae102467bf352bf74b6e24d
+  λ^2 * k mod n = 0xbb9ae727c7ab4f5d29df179fe08d70c574cb66df638a694bdf0380aa6ab80da8
+  λ^3 * k mod n = 0xf4054df4bf4fb3cfdd741aa54517a4668c331bdf890461e3685a5f9df698c95a
+  λ^4 * k mod n = 0x2a2be4f5d96a17b55ebfa07136f428e2cdef0b5620a63dec466573d5d3cea9a2
+  λ^5 * k mod n = 0xe288c280f70e72b592e139cdb27ffa05c02a98d2075fbdbcf58b80ca47910a01
+GLV decomposition: k1 = 0x32f1eff0e40a42000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001050 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1f59cebba00650000000000000000000000000
+
+--- Key 127/160 ---
+Private Key (hex): 00000000000000000000000000008475097250e778000000000000000000000000
+Private Key (int): 2953893718153430504147681947507734544790847488
+Key Size (bits): 152
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa330b2b5d19db507bf9844cd1d2962bd4f999d04fc3b4fa1eb2068b2cc2eb8e1
+  λ^2 * k mod n = 0xd8f19ab65a3fc51bca6e14f8aa913d1d63d56ed7b3ee1abbb8ee0236b7f65f8f
+  λ^3 * k mod n = 0x7c3f36ed42632f093888ade509cfc8ccc35cd50c1229fd76eec6561852f0ba18
+  λ^4 * k mod n = 0xa2e48c4b7679b80be7325142c632407dbeffc85f57385bcd534cb279bff7a0e4
+  λ^5 * k mod n = 0xb5ececdc329bf3de52080cf3187e9c02a10603997cbc0563857ce0cd723d3917
+GLV decomposition: k1 = 0x8475097250e778000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001082 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x518319816cdd36000000000000000000000000
+
+--- Key 128/160 ---
+Private Key (hex): 000000000000000000000000000158637ef6058d10000000000000000000000000
+Private Key (int): 7680123667198920198139393223280690864148447232
+Key Size (bits): 153
+Automorphism-related keys:
+  λ^1 * k mod n = 0x6df1e3b1ab1b1d67d62604feb0b0e9e1e3c943bee04bd90ce31b5cbbdf96bc86
+  λ^2 * k mod n = 0xa0142f3839fd365605b83ccaef03019727f4559c177c29ab17be0bdf1eaed977
+  λ^3 * k mod n = 0x773c84dc046caacbf774b946131b6ded360ff2c4686c430ef94f582ca9919171
+  λ^4 * k mod n = 0x3b019739df4b14cbce19f691f6726d996b9af0990b21a7a54041a858f6eecc2a
+  λ^5 * k mod n = 0xf8623606d5d5d2fa07a65a60216e6bfff6b4b9c9a2b10176f6c5f3c44abfcee0
+GLV decomposition: k1 = 0x158637ef6058d10000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001026 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xd3ee7583b4a598000000000000000000000000
+
+--- Key 129/160 ---
+Private Key (hex): 00000000000000000000000000037f6916e60e6ec0000000000000000000000000
+Private Key (int): 19968321534717192261632302334883915947445321728
+Key Size (bits): 154
+Automorphism-related keys:
+  λ^1 * k mod n = 0x690ad588a40bad46853e2169740ff198bf751945ebe696b6076a61599c7215e9
+  λ^2 * k mod n = 0x5cc4eed662d8769294fc273de9ad5cf97c8afcdd1a7f9c1eb1fffeb0a53f1edb
+  λ^3 * k mod n = 0x1128bb5cf9ba31dee305f370e30d089a416b6df23aa7830bce05e21eb71fb48b
+  λ^4 * k mod n = 0xdcfdeac54e256fb49eaa9b92081834dde89693796d66105ee311f55d5be0296f
+  λ^5 * k mod n = 0x7d58df47abd7ef1b7106a9007adb905cbac8c555c9c05891f5cdca02a378e7
+GLV decomposition: k1 = 0x37f6916e60e6ec0000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001104 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x2270597f008e1b0000000000000000000000000
+
+--- Key 130/160 ---
+Private Key (hex): 000000000000000000000000000918113b8958b980000000000000000000000000
+Private Key (int): 51917635990264698866123505888114660265995272192
+Key Size (bits): 156
+Automorphism-related keys:
+  λ^1 * k mod n = 0x710d748147331299890ea8926a06208ce2f1ff6e46b00b7b9d09f47cf07bddec
+  λ^2 * k mod n = 0x16a83d3e314b3fe2689dbdf3b6f28845402043f19ad65c6bc587d5ccd46a0814
+  λ^3 * k mod n = 0x65fdd542422f8c0f66695976ad6bf4b764001d30f4e1dbd0fadf6b9e22ebc503
+  λ^4 * k mod n = 0xb3481bef8b1d6f60848b31a298c682b38769625ec9b9fbed187586c338ed4fb2
+  λ^5 * k mod n = 0xb8d77f142924cbce98c1800d4114df783e735907327975923af8642c9d82dd99
+GLV decomposition: k1 = 0x918113b8958b980000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001088 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x598a824a34a4ac0000000000000000000000000
+
+--- Key 131/160 ---
+Private Key (hex): 0000000000000000000000000017a4f99acb804900000000000000000000000000
+Private Key (int): 134985853574688223136643996404599243875763093504
+Key Size (bits): 157
+Automorphism-related keys:
+  λ^1 * k mod n = 0xe648109c0d08830ee630ff48107d7d74ef96e5644c2dba512b436866afa8c4a6
+  λ^2 * k mod n = 0xc090f0d6919760867d4544bc68f174b4c87fbcb8356c9b5d939d94e9e8436683
+  λ^3 * k mod n = 0x4a82c8fc56b6fa93dfc3724d885c46294bc13ad9eec73de245af2be6c8872362
+  λ^4 * k mod n = 0xaf83ef711d4a53ecb5590556dd3d15fd64128191aa99579b1e96522cfbe76a5c
+  λ^5 * k mod n = 0x932d20bd05620d3a0b1e1aec2a359c95cf1970d53621d65af58b84914f0f3068
+GLV decomposition: k1 = 0x17a4f99acb804900000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001017 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xe8ce85f42278f80000000000000000000000000
+
+--- Key 132/160 ---
+Private Key (hex): 000000000000000000000000003d79bc2c111a5800000000000000000000000000
+Private Key (int): 350963219294189392324720152842960288445334814720
+Key Size (bits): 158
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa9f21c7301d93bfc09529b88aee3172c85dc7bd8022968709ee0b846855c455
+  λ^2 * k mod n = 0xccc97bcad0976fd15370c6d5c503210d7eefe99eb55f89943110853b7830eaca
+  λ^3 * k mod n = 0xaacb47969d1f41f1bd926fc853dd7d68f36d12954663b925ce28eb813b8930db
+  λ^4 * k mod n = 0xe98188f780233ee490f8e342127723e644bf89c0ed2cbbb2b3aa0e69b56f3fcb
+  λ^5 * k mod n = 0x4a3bce9642d07f724c02aec63c8a130adfaba08be7f023ca769caa1328e95351
+GLV decomposition: k1 = 0x3d79bc2c111a5800000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001049 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x25d4c291459a0f00000000000000000000000000
+
+--- Key 133/160 ---
+Private Key (hex): 000000000000000000000000009fd61c7292de1800000000000000000000000000
+Private Key (int): 912504370164892420044272397391696749957870518272
+Key Size (bits): 160
+Automorphism-related keys:
+  λ^1 * k mod n = 0xe86a8b05e38019bf5b1d6c7969381a296b1951a53fc73ac219accffc1c3d9911
+  λ^2 * k mod n = 0xe13f0ea8eb2355ed0c25382bcd0822be36d123216ba13f06662e828b3ea47a8c
+  λ^3 * k mod n = 0xbc1086edfeeadea7b9afef6f407312def16cb9d0a15441268b64d28ffdc80a92
+  λ^4 * k mod n = 0x5f1d97504d28705245ba4edefccf5d593d6112c1d6e30df2b9e2352c6a8189c1
+  λ^5 * k mod n = 0x27684c537a847e8f926d60036a33cb1d08bbb67af1de6350f47f8176ed714b12
+GLV decomposition: k1 = 0x9fd61c7292de1800000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001046 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x625c604681c3c000000000000000000000000000
+
+--- Key 134/160 ---
+Private Key (hex): 000000000000000000000000019f9316c37ddb1000000000000000000000000000
+Private Key (int): 2372511362428720389470674330746429584837269520384
+Key Size (bits): 161
+Automorphism-related keys:
+  λ^1 * k mod n = 0xfb665167c1556e200a61105845379e05adf08091e70300c3981644b4b398a542
+  λ^2 * k mod n = 0xd75c3fd1e0978638c0ac996ab65cb406b8920df5f602ff836bfeabc2109370df
+  λ^3 * k mod n = 0xfe4b470574185cd7d4487017323168fd5bad1d18b353b1bdd8b4a83d61e5821d
+  λ^4 * k mod n = 0xa0f65c0212aff21aa311abf810e2159dc4252b3dbf3ea5835421332a0fae27
+  λ^5 * k mod n = 0xc30fc562b1e4fe505bf2d970f0e289035808881bc0d9c517bb78f3b36653c834
+GLV decomposition: k1 = 0x19f9316c37ddb1000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.000963 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xffbcfa50eafcf800000000000000000000000000
+
+--- Key 135/160 ---
+Private Key (hex): 00000000000000000000000004387e6e62ada00000000000000000000000000000
+Private Key (int): 6168529542314673207334885454996752990470513098752
+Key Size (bits): 163
+Automorphism-related keys:
+  λ^1 * k mod n = 0xcbdfd6bea7220e49ef8be3eb81a8e874ade3ea2a8a4a72348f82faad111a83e5
+  λ^2 * k mod n = 0xe4fa0c8a4267aa9ad0bed0d3e980210c91de8495213b833476bf0689ed3f58c5
+  λ^3 * k mod n = 0x596abc43821125457153f35b648ce739da07673edf143855c344ff8ee0f9d241
+  λ^4 * k mod n = 0xe1175a6c11ea147aa98bb7291f4a90f63add80c34304cb7f4837c028450b3eb1
+  λ^5 * k mod n = 0xe79098ad8205ffba47245b5c2bd189477de92f9451e298f640e77c048d390383
+GLV decomposition: k1 = 0x4387e6e62ada00000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001216 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x298eb579f2fc4f000000000000000000000000000
+
+--- Key 136/160 ---
+Private Key (hex): 0000000000000000000000000af948b89a29d38000000000000000000000000000
+Private Key (int): 16038176810018151896759759743439846334372232822784
+Key Size (bits): 164
+Automorphism-related keys:
+  λ^1 * k mod n = 0xd0c1471069780b42134e4f2df1dffc4e66d6e50a8545141260551fecba0218c5
+  λ^2 * k mod n = 0xfba888ac19fb2899637a2e810d2c575468181f19bff94e31e2d03d4b3259cc86
+  λ^3 * k mod n = 0x70e7398d5a54998a0b63f8197c383e52de2053469492c82fea7a237fe9c8c4f4
+  λ^4 * k mod n = 0x44e386ffc5f95a35418925ee23ea6ee2417cbedc9881b3ebf9e088f5b8af26e0
+  λ^5 * k mod n = 0xf0817bf7213e202f132c840a3e11f3a71c7aec930d21a0594012fe5f63adea07
+GLV decomposition: k1 = 0xaf948b89a29d38000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001071 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x6c0ca4a377c338000000000000000000000000000
+
+--- Key 137/160 ---
+Private Key (hex): 0000000000000000000000001c88237990d3260000000000000000000000000000
+Private Key (int): 41699259706047195450805061186426363322417438261248
+Key Size (bits): 165
+Automorphism-related keys:
+  λ^1 * k mod n = 0x8fd7cbe1bfe58e824c1cd655520c54fc6380f6873777782a2c32b1395a5cffe
+  λ^2 * k mod n = 0x7115a82bac429ef77ff439d3f5dfd27759a6bc6bf22eacdf25e732ad8d31d172
+  λ^3 * k mod n = 0x30e35afdba60c4369d0faf84153bee6c9faa618aaa8511ac06b56124554901f9
+  λ^4 * k mod n = 0xb1a94eb2bdbb3b20d7f714ca1b08a57d2bab0f447197a81862882a3ef53e5623
+  λ^5 * k mod n = 0x8153d63e8a6cc50ac76312015ce575e14c157bed8922ab0bf2e53845567d2999
+GLV decomposition: k1 = 0x1c88237990d3260000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001031 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x118edac0f6a9528000000000000000000000000000
+
+--- Key 138/160 ---
+Private Key (hex): 0000000000000000000000004a2ec2a2788b640000000000000000000000000000
+Private Key (int): 108418075235722714402849389326501698874880934543360
+Key Size (bits): 167
+Automorphism-related keys:
+  λ^1 * k mod n = 0x1219da712479b2c957e8a9fac6c54d7866e22300a91637a5464ccc9dff7fd0d3
+  λ^2 * k mod n = 0xc74b88b741fd516bc609a15c378f8f320ea553f221f8607b4059a748d96530eb
+  λ^3 * k mod n = 0x72f933e38687a4a5e82c5d3abf69a0a74b0e7d18c9ee52372b2ad221e39e9a8
+  λ^4 * k mod n = 0x89536f6be47cfa61edf9f680c3b8b95ea2552c89784d1b8d1103ac954d5aab31
+  λ^5 * k mod n = 0xdd334f72a4a1b713d59fef3abbb2d3c4e504825ed4f27bb9ba4b3a7853f97643
+GLV decomposition: k1 = 0x4a2ec2a2788b640000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.000941 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x2da69f28e7b83e0000000000000000000000000000
+
+--- Key 139/160 ---
+Private Key (hex): 000000000000000000000000c0dffa0cd304080000000000000000000000000000
+Private Key (int): 281886995612879078216595846388214931196675746693120
+Key Size (bits): 168
+Automorphism-related keys:
+  λ^1 * k mod n = 0x2e8d0a2fb29c2246316e73ea422150d2a7ec149b1f4a15e3e7070ac4d7d46a60
+  λ^2 * k mod n = 0xdb7bf12b3b262c0d6438c83a6e3775da494c9fd14cfed351532c1e953f0197f0
+  λ^3 * k mod n = 0x71df550d65cfeccedf910b08ccd1e605a473df4df186b8fb7adb2be40d69e87d
+  λ^4 * k mod n = 0x5e44c8ea8a0655b0f00757be05637e6815919c271129269741a36b16d389335d
+  λ^5 * k mod n = 0x5937b8bd65662c29559e9a0c67c6c8bcf94dd0766b4428f0a9635e7cf5a8e5bd
+GLV decomposition: k1 = 0xc0dffa0cd304080000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001105 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x76b1376a5a78a40000000000000000000000000000
+
+--- Key 140/160 ---
+Private Key (hex): 000000000000000000000001f5798a2157d7500000000000000000000000000000
+Private Key (int): 732906188593485644901524068887979849355327575162880
+Key Size (bits): 169
+Automorphism-related keys:
+  λ^1 * k mod n = 0x44cf255bde55625f1a423aea59ca7a8a61b64964ca6c567dc6009037b9c737fd
+  λ^2 * k mod n = 0xe54af4dab8f0bcd9fa6cb86073ae3580261a078b2d9e1030efcb1ef3bac8fdcb
+  λ^3 * k mod n = 0xb33f232d489d2bce7f59947563299ab1e8de77dcdca71e51941f6dbea6ac2021
+  λ^4 * k mod n = 0xb45758d2a39340fd7aa791cc856f818a00b74121b27bdc45c85748914b348122
+  λ^5 * k mod n = 0x4f5be7dfe0c04656ffcd1bd473bd4e2e294adbe297cea01941e3178fb60bbdd9
+GLV decomposition: k1 = 0x1f5798a2157d7500000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001264 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x13499901484d3480000000000000000000000000000
+
+--- Key 141/160 ---
+Private Key (hex): 00000000000000000000000517d59a56b12fc00000000000000000000000000000
+Private Key (int): 1905556090343062593667212842551505551835910427901952
+Key Size (bits): 171
+Automorphism-related keys:
+  λ^1 * k mod n = 0x4e8ce4fbf2f8ba0c7732e481f426ba9b74e04cddc321bf2328497616c4cfe357
+  λ^2 * k mod n = 0xcbb178fda28a232ed29bb3034f55b827b7260a316527b3961ab88ae48069cf7c
+  λ^3 * k mod n = 0x887c029409cab67c708e5f40fe293c247b5f5184b7810d2f981e22de7949d642
+  λ^4 * k mod n = 0xf0007d41fcac7e3029bdec8a05aeabd83807ea9c68876c825a92d408bc03639d
+  λ^5 * k mod n = 0x32bf4bc59620430b238098266114dc5b0c5398b6e6f547ba3f124f48f3e073e4
+GLV decomposition: k1 = 0x517d59a56b12fc00000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001044 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x3225c10355958700000000000000000000000000000
+
+--- Key 142/160 ---
+Private Key (hex): 00000000000000000000000d3df82ae16649000000000000000000000000000000
+Private Key (int): 4954445834891962809996153179879708079963720126562304
+Key Size (bits): 172
+Automorphism-related keys:
+  λ^1 * k mod n = 0xb61d1d13f4714eb34a9daf7534cc25d1c395c06af15d324178e99308686f82ed
+  λ^2 * k mod n = 0xe230a47ce350fd1fedbad3f37bcf8376f440ea376a4ed2307491248e7c5370f
+  λ^3 * k mod n = 0xe584dcf0f0ff5834420fef88344998dc22f8cf606f4a972583f77185e18f74b
+  λ^4 * k mod n = 0x8345ec22aa68c67a68fa1678e2558a74650575f460a64cde0be462ab77403c97
+  λ^5 * k mod n = 0x858823021f2629b4872bb227f1679fe5cac9c42272de06529e7fda043e54f47c
+GLV decomposition: k1 = 0xd3df82ae16649000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001131 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x82622908ab519400000000000000000000000000000
+
+--- Key 143/160 ---
+Private Key (hex): 0000000000000000000000226deba2b07058000000000000000000000000000000
+Private Key (int): 12881559170719104103526795738636764750189908497268736
+Key Size (bits): 174
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9ce38d0820f2d04e53fd8ea57485d06af6de087dd8bed89a3c6751cb682e4f10
+  λ^2 * k mod n = 0x6191a3fbc030d078445a4366e8ee1c999e1ca5b08b7d4f32d786ed549cec45bd
+  λ^3 * k mod n = 0xfbec1f9110cdf61ec487bb73b5e306f47d5eccfebc30f8d77b5a25b772c912b3
+  λ^4 * k mod n = 0xa2ed99ef52f3f0b619840dac3730c09344727675b5bbface0623423c4e329ff7
+  λ^5 * k mod n = 0xd4a65ca3e13e9b89c8383799bc5e103639b574bb97993e45e72abfd224f67755
+GLV decomposition: k1 = 0x226deba2b07058000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001072 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x152ff377cf0a0f000000000000000000000000000000
+
+--- Key 144/160 ---
+Private Key (hex): 000000000000000000000059843173cabdb4000000000000000000000000000000
+Private Key (int): 33492053843869673859316858804253683319630706765725696
+Key Size (bits): 175
+Automorphism-related keys:
+  λ^1 * k mod n = 0xd8af0dffb80e92bc5587f31aa8c1a303e1b5a048dbb9c57f3139e303425a970d
+  λ^2 * k mod n = 0x8a880292c71a54f83567197c240fda83ef6ade73048888293628dbd97dc86782
+  λ^3 * k mod n = 0x8319a720d242f8a9195bdfe32810f0f89b06194e78ca8d3ff2e88a2b5839a8cc
+  λ^4 * k mod n = 0x77af60296a6ebe1f3171d6edd3fb570f6d6c0af2dabe8b76dfbee3de7908ded7
+  λ^5 * k mod n = 0xec22a89f11050d1787965573fd0b8dcd97b3dd63dee593eebb549d86bb3f1c1
+GLV decomposition: k1 = 0x59843173cabdb4000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001110 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x371645d11a4d5c000000000000000000000000000000
+
+--- Key 145/160 ---
+Private Key (hex): 0000000000000000000000e8be1a2d0f2070000000000000000000000000000000
+Private Key (int): 87079339994061155224371022774857671600176782263713792
+Key Size (bits): 176
+Automorphism-related keys:
+  λ^1 * k mod n = 0xda8cf6e9da89f2a726562b7e96f6c6923ab07334ad81007b6ddf23d99646c4ab
+  λ^2 * k mod n = 0xc1d55ee83f797a44db554619bdcdfb7f03e012a4e8fd95d105d701e39cc6b242
+  λ^3 * k mod n = 0xe2900796960ccc10c2b6a504ea885167ac6a745baece0f7bf644f36d2d1b9775
+  λ^4 * k mod n = 0xa0da638d41146dca09427bcb9ed6de517b2aab290a8a63b82238273efef00fde
+  λ^5 * k mod n = 0xa5d741e01a318e8bdc560f772f2e08f12b10ed734fbba661b70d4023a760d9b6
+GLV decomposition: k1 = 0xe8be1a2d0f2070000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001078 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x8f39e8b94462bc000000000000000000000000000000
+
+--- Key 146/160 ---
+Private Key (hex): 00000000000000000000025d217741f42120000000000000000000000000000000
+Private Key (int): 226406283984558999329835072702899152868277040988553216
+Key Size (bits): 178
+Automorphism-related keys:
+  λ^1 * k mod n = 0xf2ef47273d8bebc703bbe841083e41b982b45c6acd046c8cfaa273c46a2080e9
+  λ^2 * k mod n = 0x6f5d3cdebe5b8e3c3559f5688f913417fa51089c5ef4bfe618e95de275dadf36
+  λ^3 * k mod n = 0xa131803085e74f7081bf72c45ea321f519760779482fa32679e4e7ae2ca30eb3
+  λ^4 * k mod n = 0x9ddafea8e588b7c161cdca2952bbbee33ec72cdea60563802f0ce1bbf8428105
+  λ^5 * k mod n = 0xafe4f7fa0f8866541f22ea5f07ebbf62b70eecb467a95b41fb2e0f97261caa7f
+GLV decomposition: k1 = 0x25d217741f42120000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001246 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x174635d14e500b0000000000000000000000000000000
+
+--- Key 147/160 ---
+Private Key (hex): 0000000000000000000006255702deadefc0000000000000000000000000000000
+Private Key (int): 588656338359853406764630362050999384041885492364443648
+Key Size (bits): 179
+Automorphism-related keys:
+  λ^1 * k mod n = 0x356c950ac887ae762ffda0b94928966dcc5403cb84ab42846c2b3a0a327f12cd
+  λ^2 * k mod n = 0x32c0aba3bc48378a2e24995e311fd4a7f2cf25b63763ca0d2e06fb27684d1fda
+  λ^3 * k mod n = 0xfad7745f5c9a219aa8c2388f62c0554cd84e878ac7f664acb0d99c39c47eb0fb
+  λ^4 * k mod n = 0x3cbfd1aa42890f8e9e08636ed20129cdf8360c4aacdbee3f41fa120ccb82f542
+  λ^5 * k mod n = 0x2e4f1e89c4b9ef702607a9d7fa166e25e0eb78b898fcbd7fcf38027f8fabe77b
+GLV decomposition: k1 = 0x6255702deadefc0000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001078 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x3c8358b9cb9cea0000000000000000000000000000000
+
+--- Key 148/160 ---
+Private Key (hex): 000000000000000000000ffaaf07762aa280000000000000000000000000000000
+Private Key (int): 1530506479735618840573920595285675225340171908559142912
+Key Size (bits): 180
+Automorphism-related keys:
+  λ^1 * k mod n = 0x4283cb6c1ec2991e969c7e8e238f49a63bc824ebc9edf4da8c41b6f92b8a7065
+  λ^2 * k mod n = 0x94bed6b54ed438259783582508062816f0e6e8fb39e50b7c10ad6e4d5fd8598d
+  λ^3 * k mod n = 0x431c46cf230f4ad907f1a9ecc0f6e3c6cc85c358451fb25897cd247e3d3efee9
+  λ^4 * k mod n = 0xbfb2aa079e4c5e765b6656e62c37601c8f98b25acc165a252982de049ae821ff
+  λ^5 * k mod n = 0x48094f00939b3d5f1f208f0958d75882c421f508894491d8a3df777fbedd56ce
+GLV decomposition: k1 = 0xffaaf07762aa280000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001181 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x9d55804977cb2c0000000000000000000000000000000
+
+--- Key 149/160 ---
+Private Key (hex): 00000000000000000000298bc713666eda00000000000000000000000000000000
+Private Key (int): 3979316847312609087576903624024294624896829191784235008
+Key Size (bits): 182
+Automorphism-related keys:
+  λ^1 * k mod n = 0x2c10fb05694898feec93b69a62c5304b40c23e167f0d3974148db1b3b5a37dfe
+  λ^2 * k mod n = 0x5134cec506c83d1effe2c672afdba05569cf503f0f030f2b2f108b556ea825cf
+  λ^3 * k mod n = 0xfe8dc04293ca0dbdfa6cfd64a7a42c4f17db1a35b1312dd1b8531612a9719566
+  λ^4 * k mod n = 0x8e50eb12f3bce4b80426e7b235bc455ffb0e43343655bed2383521304191f0e2
+  λ^5 * k mod n = 0x43e5cfc9a0ab2cf88108d9a30f4e89612267b8b19aa3025673baf96584cbf1f4
+GLV decomposition: k1 = 0x298bc713666eda00000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001153 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1991180bf0443780000000000000000000000000000000
+
+--- Key 150/160 ---
+Private Key (hex): 000000000000000000006c050598d7203800000000000000000000000000000000
+Private Key (int): 10346223803012784036038789727589322180781284816760864768
+Key Size (bits): 183
+Automorphism-related keys:
+  λ^1 * k mod n = 0xd57bcebf43c41fbac7d9c434b3a9a72cca842bf6b727a2dfd48e3c07ddb3180e
+  λ^2 * k mod n = 0xd0235505f574b78d782bc409b9cb4734218a7d2f94f0734eede30426997f4d3
+  λ^3 * k mod n = 0x6fb4ae19fc635047eefe0793aecd7d2e06e467ef3b6a686a099d3b151d72d44d
+  λ^4 * k mod n = 0xae6d8d9440c4758931a53e3e639aaf1723a4a0fb98aa0fd48f329be5b38ca716
+  λ^5 * k mod n = 0x3958bf5ff21b4424764e333962ad25628a403717f8039c8df9b14acc355cde47
+GLV decomposition: k1 = 0x6c050598d7203800000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001121 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x42793e8570b15e00000000000000000000000000000000
+
+--- Key 151/160 ---
+Private Key (hex): 0000000000000000000118d9db5a2f53c000000000000000000000000000000000
+Private Key (int): 26900181887833236860345492071227613045833224851090833408
+Key Size (bits): 185
+Automorphism-related keys:
+  λ^1 * k mod n = 0x6c367792e813a455b7cf58623ae20c3693d4e8c8d2a9eb0b85d06abf676b8931
+  λ^2 * k mod n = 0xa0bbb55d5aa84532d119084e4b10ba0d70e94c7710f4597541eba2e09a72ef32
+  λ^3 * k mod n = 0x215edbc33943eb531109da480df21d9bee4b699f4ce47b4ca46d3a5cb6f3a949
+  λ^4 * k mod n = 0x716935bf29972ece5ad45b2d69a42cbe766820515fddc751a8985dd2d8ad93e
+  λ^5 * k mod n = 0x3ea69844340141189854f61c483e606b098f4db39e940fd27cd18298e9e940c4
+GLV decomposition: k1 = 0x118d9db5a2f53c000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001151 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xacd4d5c158338800000000000000000000000000000000
+
+--- Key 152/160 ---
+Private Key (hex): 00000000000000000002da366d8414a6a000000000000000000000000000000000
+Private Key (int): 69940472908366422370319724267210292415958847302785826816
+Key Size (bits): 186
+Automorphism-related keys:
+  λ^1 * k mod n = 0xae54f1f77bdc30b81d1ce3342d41865b9f59ba419f2e7fe7288eb8cd6c1e8a6c
+  λ^2 * k mod n = 0xa6435fc12d6d166e695fcd6582dfe9cdcc02433885286df14af5a39ea88e7e27
+  λ^3 * k mod n = 0x8e38abc9bd7693116a775067d33952d6017890d2ca98639a0b447a42b486ee2a
+  λ^4 * k mod n = 0x7286f21eb4578be0c2c3f28e790a590ec504ef0bc33f81a786e15d177a27eae1
+  λ^5 * k mod n = 0x964b578659e69cbf2c4fef6069e4976cbe44ce213ff098e3cfe801e3c0001e75
+GLV decomposition: k1 = 0x2da366d8414a6a000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001133 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1c15c9229e552e000000000000000000000000000000000
+
+--- Key 153/160 ---
+Private Key (hex): 000000000000000000076a8d832435b14000000000000000000000000000000000
+Private Key (int): 181845229561752700340638431388752926447090490550559703040
+Key Size (bits): 187
+Automorphism-related keys:
+  λ^1 * k mod n = 0x9085b378c452bc382d8ff8882f95e5efe18317a4e9ebef7e7aa73a95f45c1dcd
+  λ^2 * k mod n = 0x1822f32a037af4c27fe1312a2dc6951e6e8115c51157e5bd273e1f4b4fc67239
+  λ^3 * k mod n = 0x2eed9fd9c6edc1517eddfb7aa3c53fbb1abfaf46480f9f64f92f93d9b2b48ca1
+  λ^4 * k mod n = 0x49cd9bd72daf0381b8867a06ed5464f3584b09376951614a2c4b82c52a6019d9
+  λ^5 * k mod n = 0x1c2a7cc6743cf9c620184f46919bace3fe58d2fa5edbc15efa32dcc9de94e7fd
+GLV decomposition: k1 = 0x76a8d832435b14000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001148 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x4905715a0210aa000000000000000000000000000000000
+
+--- Key 154/160 ---
+Private Key (hex): 00000000000000000013483cbb5e25330000000000000000000000000000000000
+Private Key (int): 472797596860556999107588438670695947106460399798289694720
+Key Size (bits): 189
+Automorphism-related keys:
+  λ^1 * k mod n = 0xba5cc971b45f1b79a3c5b0f66bb8cca287fafcf6a412416efb8af2b01b5388cb
+  λ^2 * k mod n = 0x303b7f01502000ca9b053d4a5e66a2b3752b6439de06b5e77d676755fff1d50d
+  λ^3 * k mod n = 0x167ca064e45ebf9cf219e59984b85efdb2396ca99789924acce58abb322135b6
+  λ^4 * k mod n = 0x7f8fe2b2cba1e7ad7269e845086953b5e4fc0baed2be85c5131c2688dc919d18
+  λ^5 * k mod n = 0xa66c7b822ba8b316c5d0d1f3beea94ec1bcb541ab3f7e692248d834e0ac87844
+GLV decomposition: k1 = 0x13483cbb5e25330000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001155 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xbddaf3839ef81c000000000000000000000000000000000
+
+--- Key 155/160 ---
+Private Key (hex): 00000000000000000032223780c193ec0000000000000000000000000000000000
+Private Key (int): 1229273751837448284792015872304056109100696542008215339008
+Key Size (bits): 190
+Automorphism-related keys:
+  λ^1 * k mod n = 0xa6ec96e263a4189df491542f581438e08e158d90ee17f159dc2eb39e5c98645a
+  λ^2 * k mod n = 0xeab1c8b31a6b89fe58eb764e8b1b2b0dcb57e8ab6d641043dbb8fae6342e86b2
+  λ^3 * k mod n = 0x622c044ba1f0ce40a146c2be209ade9ee41deb10f0af662a8dba21733f41a997
+  λ^4 * k mod n = 0x802a7dc38ad313524548afe76540a4b338d72845e4c0e4ea58a26fdf0d205507
+  λ^5 * k mod n = 0x8bb97f3488df7b96c0bac224571025f3c28f03ebb83de9cd0872d76d21c50db
+GLV decomposition: k1 = 0x32223780c193ec0000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001084 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x1ed9fac5636eb90000000000000000000000000000000000
+
+--- Key 156/160 ---
+Private Key (hex): 0000000000000000008258f6b52a80980000000000000000000000000000000000
+Private Key (int): 3196111754777365470769412522582348566362691407195230175232
+Key Size (bits): 192
+Automorphism-related keys:
+  λ^1 * k mod n = 0x167f566f86afc19e7344a1370df6b3df53ef53c29642523f29ebb6ea09d6d595
+  λ^2 * k mod n = 0x66eef68ccbf9e58df6fa68eaa006627bb4b0c151548867e52ccb09bc3b8b614d
+  λ^3 * k mod n = 0x5a5cb182f44353bac7f2acbe81f26ac7f3ebf78c6852d24e3b4e7349077618a6
+  λ^4 * k mod n = 0xb2967c77b5eb6b11563629fce67865f1b746116f3b5000145e8d481e46a0ad9c
+  λ^5 * k mod n = 0x37afded9ff80972e30f0942eb616d3c25dd15a2f12f299031b5b59e9617594c
+GLV decomposition: k1 = 0x8258f6b52a80980000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001047 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x5036bf3468ecac0000000000000000000000000000000000
+
+--- Key 157/160 ---
+Private Key (hex): 00000000000000000152e74e3d6e81900000000000000000000000000000000000
+Private Key (int): 8309890562421150642139445031163290176337715270864376692736
+Key Size (bits): 193
+Automorphism-related keys:
+  λ^1 * k mod n = 0xac5372507baa541ef8f1c9f42e8e46f6a273602836c4a816f78e1e48077bbbc5
+  λ^2 * k mod n = 0xef428e3e803bf5d0569f6a7859f8840ea403418d86e1b34a671d53ed6dd741c7
+  λ^3 * k mod n = 0xc8404dde9fc7a80ec5b05f74a937bf7258282f5cf140edd20d36a140b3c8fcc8
+  λ^4 * k mod n = 0x7030cf86a4bc5afbad4f5c8ab58a4855fbc3e879edac6b3e32e9d00a31fa0049
+  λ^5 * k mod n = 0x15ff7cab4bf4f85f9182f7664e314b34df15ceb2bfe55cf28c18691d48ee3d3c
+GLV decomposition: k1 = 0x152e74e3d6e81900000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001143 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xd08e57884400f80000000000000000000000000000000000
+
+--- Key 158/160 ---
+Private Key (hex): 000000000000000003712631d2ec1dc00000000000000000000000000000000000
+Private Key (int): 21605715462294993620877761952454079342853408560979011174400
+Key Size (bits): 194
+Automorphism-related keys:
+  λ^1 * k mod n = 0xc23336ffa8f8ad80ab7a288597d005c3bae76149eee6f42479bdfdaa518bf56b
+  λ^2 * k mod n = 0x5018c0914e4207eb2730a64bc4f39d3a1ff4959664b007be458fa9cdfe90a5cb
+  λ^3 * k mod n = 0x77d4ff3ef557cd4ccd2bdb03fa4af92c64eb56f143b832e743cc807641d7e70a
+  λ^4 * k mod n = 0x40eb75480dc9e874a226f859d46b38b0b1f3f28230ce3cb10b1676d4d69641c0
+  λ^5 * k mod n = 0x204a1a8881ee55ef2b347343ff2e7da6d3fac10cfcd8ed2c3cce84ee7c407cd1
+GLV decomposition: k1 = 0x3712631d2ec1dc00000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001069 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x21e3ee3957d9c300000000000000000000000000000000000
+
+--- Key 159/160 ---
+Private Key (hex): 000000000000000008f2fce7f132b4000000000000000000000000000000000000
+Private Key (int): 56174860201966988989468480709036391675348430420635805548544
+Key Size (bits): 196
+Automorphism-related keys:
+  λ^1 * k mod n = 0xc48e57492f5475213b4608382472dd17db9c6e88a5a66e8c5ff33743d131ff7e
+  λ^2 * k mod n = 0xef9ffa32b7f4107b43c106dd9dc0ce205d7a44dc3ab9aeae24bd6f61be8b8a9b
+  λ^3 * k mod n = 0xbe5c35c4894e7fec3cb3dec906700ab9063d71e109f2dbf08b760d03d70494b6
+  λ^4 * k mod n = 0xfc49e0cce294cd02ffba52b09a632350839c1e18f500f10936d03cba22361080
+  λ^5 * k mod n = 0x55eff9ff1475322eab8489060e724481a0059ef9d881bcccd103b7b497e4ba63
+GLV decomposition: k1 = 0x8f2fce7f132b4000000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001126 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0x581d6b61e4696400000000000000000000000000000000000
+
+--- Key 160/160 ---
+Private Key (hex): 00000000000000001744918e3fea3b000000000000000000000000000000000000
+Private Key (int): 146054636525114184753065168961868503277336882682669998014464
+Key Size (bits): 197
+Automorphism-related keys:
+  λ^1 * k mod n = 0x6ce448c1f73a60e9a86e22000d2c41f7efa31622e03c507b0e3e76bd36346cab
+  λ^2 * k mod n = 0x7ce197c4ce2849f4a5e77b0aa3f297f24b18a556476b9ef5e7513fc69d5d6a3b
+  λ^3 * k mod n = 0xff3fc9dd2e791824583440b595b8892bb0148ebc14a15711575346dccc1bf6c3
+  λ^4 * k mod n = 0x2524c59af8250edb0acf2956f529ab00611dfed49ac377285ccf5901dffec8b0
+  λ^5 * k mod n = 0xe433655fe9997c482307b4e69f4231fc3d09a3aee7ce6d297aeb3012fa601e33
+GLV decomposition: k1 = 0x1744918e3fea3b000000000000000000000000000000000000, k2 = 0x0
+Timing attack simulation: 0.001026 seconds
+Growth ratio from previous key: 2.60x
+Difference from previous key: 0xe5194a64eb787000000000000000000000000000000000000
+
+Analyzing patterns...
+
+Key Pattern Analysis:
+==================================================
+Exponential Growth Pattern: No
+Automorphism Related: No
+GLV Optimized: Yes
+
+Key Differences Analysis:
+------------------------------
+Average difference between consecutive keys: 0x2576733588b7ec0000000000000000000000000000000000
+Minimum difference between consecutive keys: 0x1
+Maximum difference between consecutive keys: 0xe5194a64eb787000000000000000000000000000000000000
+
+Average growth ratio: 2.42x
+
+GLV Pattern Analysis:
+------------------------------
+k1 values range: 0x3 to 0x1744918e3fea3b000000000000000000000000000000000000
+All k2 values are 0: Yes
+
+Timing Analysis:
+------------------------------
+Average timing: 0.001095 seconds
+Minimum timing: 0.000894 seconds
+Maximum timing: 0.001344 seconds
+Timing variance: 0.000000
+
+Summary by decades:
+==================================================
+
+Keys 1-10:
+Average growth ratio: 2.12x
+Key size range: 1-10 bits
+------------------------------
+
+Keys 11-20:
+Average growth ratio: 2.10x
+Key size range: 11-20 bits
+------------------------------
+
+Keys 21-30:
+Average growth ratio: 2.05x
+Key size range: 21-30 bits
+------------------------------
+
+Keys 31-40:
+Average growth ratio: 2.05x
+Key size range: 31-40 bits
+------------------------------
+
+Keys 41-50:
+Average growth ratio: 2.01x
+Key size range: 41-50 bits
+------------------------------
+
+Keys 51-60:
+Average growth ratio: 2.11x
+Key size range: 51-60 bits
+------------------------------
+
+Keys 61-70:
+Average growth ratio: 2.85x
+Key size range: 61-73 bits
+------------------------------
+
+Keys 71-80:
+Average growth ratio: 2.60x
+Key size range: 74-87 bits
+------------------------------
+
+Keys 81-90:
+Average growth ratio: 2.60x
+Key size range: 88-101 bits
+------------------------------
+
+Keys 91-100:
+Average growth ratio: 2.60x
+Key size range: 102-114 bits
+------------------------------
+
+Keys 101-110:
+Average growth ratio: 2.60x
+Key size range: 116-128 bits
+------------------------------
+
+Keys 111-120:
+Average growth ratio: 2.60x
+Key size range: 129-142 bits
+------------------------------
+
+Keys 121-130:
+Average growth ratio: 2.60x
+Key size range: 143-156 bits
+------------------------------
+
+Keys 131-140:
+Average growth ratio: 2.60x
+Key size range: 157-169 bits
+------------------------------
+
+Keys 141-150:
+Average growth ratio: 2.60x
+Key size range: 171-183 bits
+------------------------------
+
+Keys 151-160:
+Average growth ratio: 2.60x
+Key size range: 185-197 bits
+------------------------------

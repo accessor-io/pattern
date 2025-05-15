@@ -22,7 +22,7 @@ class P2SHAnalyzer:
         """
         Parse a script into its components
         """
-        script = bytes.fromhex(script_hex)
+        script = bytes.fromhex('56579536d150fbce94ee62b47db2ca43af0a730a0467ba55c79e2a7ec9ce4ad297e35cdbb8e42a4643a60eef7c9abee2f5822f86b1da242d9c2301c431facfd8')
         components = []
         i = 0
         
@@ -160,7 +160,7 @@ def main():
     analyzer = P2SHAnalyzer()
     
     # Example redeem script (2-of-3 multisig)
-    redeem_script = "522102a5613bd857b7048924264d1e70e08fb2a7e6527d32b7ab1bb993ac59964ff397210397dae58c4f31e7120f5e5bfda9471c3a356a767a35b58f5d4b5c8a068291aff221024d4b6cd1361032ca9bd2aeb9d900aa4d45d9ead80ac9423374c451a7254d0766753ae"
+    redeem_script = "056579536d150fbce94ee62b47db2ca43af0a730a0467ba55c79e2a7ec9ce4ad297e35cdbb8e42a4643a60eef7c9abee2f5822f86b1da242d9c2301c431facfd8"
     
     print("\nP2SH Script Analysis:")
     print("-" * 50)

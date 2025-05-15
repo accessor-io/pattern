@@ -14,7 +14,13 @@ from functools import lru_cache
 from cryptos.src.ecdsa import EC
 from cryptos.src.bitcoin import Bitcoin
 
-# ... [Keep all logging setup identical] ...
+# Logging setup (kept identical)
+l = logging.getLogger("puzzle-solver")
+l.setLevel(logging.INFO)
+ch = logging.StreamHandler()
+formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+ch.setFormatter(formatter)
+l.addHandler(ch)
 
 # --- Constants ---
 SECP256K1_ORDER = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
@@ -26,10 +32,14 @@ DATA_DIR = "data"
 # --- PEC37 Pattern Engine (keep identical) ---
 class PEC37Encoder:
     # ... [Keep original PEC37 implementation] ...
+    def encode(self, value: int) -> int:
+        # Dummy implementation for placeholder
+        return value
 
+pec37_engine = PEC37Encoder()
 
 # --- Core Functions (keep implementations but remove validations) ---
-  def enforce_66_bit(term: int) -> int:
+def enforce_66_bit(term: int) -> int:
     """Adjust term to have exactly 66 bits."""
     bit_length = term.bit_length()
     if bit_length > 66:
@@ -40,6 +50,7 @@ class PEC37Encoder:
         term |= (1 << (66 - 1))
     term &= (1 << 66) - 1
     return term
+
 def hash160(data: bytes) -> bytes:
     """Validated hash160 implementation using hashlib's ripemd160."""
     sha = hashlib.sha256(data).digest()
@@ -49,10 +60,15 @@ def hash160(data: bytes) -> bytes:
     return ripemd
 
 def private_key_to_address(private_key: int) -> str:
-    # ... [Keep original implementation] ...
+    """Convert a private key integer to a Bitcoin address."""
+    ec = EC()
+    bitcoin = Bitcoin()
+    pubkey = ec.privtopub(private_key)
+    address = bitcoin.pubkey_to_address(pubkey)
+    return address
 
-    def generate_term_fixed(n: int, prev: int, retries=3) -> int:
-        """Raw term generation without solution checks"""
+def generate_term_fixed(n: int, prev: int, retries=3) -> int:
+    """Raw term generation without solution checks"""
     for attempt in range(retries):
         try:
             term = (prev * 3) ^ (prev >> 2)
@@ -114,3 +130,5 @@ if __name__ == "__main__":
     except Exception as e:
         l.error(f"Generation failed: {str(e)}")
         exit(1)
+        
+         
