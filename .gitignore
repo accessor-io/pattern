@@ -46,7 +46,7 @@ Thumbs.db
 # Data files
 *.wav
 *.raw
-*.json
+
 *.csv
 
 # Environment
@@ -59,13 +59,6 @@ tests/*/actual_outputs/
 !tests/*/expected_outputs/
 tests/*/actual_outputs/
 
-# Nested Git repositories
-audio_search/
-bitcoin_research/
-hex_sequence_analysis/crypto_tools/wordwallet/
-libraries/
-optimized_68_search/
-shors_algorithm/
 
 # Backups
 *.tar.gz
@@ -73,3 +66,163 @@ shors_algorithm/
 
 solvers/cryptos/
 wizards-wallet/
+# Python package directories
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+ENV/
+env/
+.env
+.venv
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Logs
+*.log
+logs/
+log/
+
+# Local development settings
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+# Bitcoin-specific files
+*.rawtx
+*.txid
+*.pubkey
+*.privkey
+*.wallet
+*.seed
+*.mnemonic
+*.bip39
+*.bip32
+*.bip44
+
+# Blockchain data
+blocks/
+chainstate/
+indexes/
+*.dat
+*.ldb
+
+# Node data
+bitcoin.conf
+debug.log
+fee_estimates.dat
+mempool.dat
+peers.dat
+
+# Mining data
+mining/
+*.mining
+*.work
+
+# Testing and development
+testnet/
+regtest/
+*.test
+*.regtest
+
+# Security
+*.pem
+*.key
+*.crt
+*.csr
+*.srl
+*.p12
+*.pfx
+*.keystore
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Build artifacts
+build/
+dist/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# Test directories
+tests/
+test/
+__tests__/

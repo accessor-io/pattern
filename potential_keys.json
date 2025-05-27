@@ -1,0 +1,170 @@
+[
+  {
+    "type": "HMAC",
+    "key": "bitcoin",
+    "hmac_result": "8af8cf507b26d13614d045f6d3b01e2c9e6572e78738d4fcc6a91f07499a30d4",
+    "wif": "5JsVS3EkN1RDkuRwS3S5ecPLGKPdRU7cndxe228EJjAJ5MiVi3L",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "satoshi",
+    "hmac_result": "57677e226c9d91f2a064e8abe4d7778327f909453aeee7579eda2618503118b3",
+    "wif": "5JUnCv2wEQcBa3c7dVRiGF2q2GgzEdNqK36UU1JNhviwKGVtK9N",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "nakamoto",
+    "hmac_result": "3af8aa99dbdad5afce75f74e88e140f6aa76776d059774707f6d241c58f9d009",
+    "wif": "5JGFvdu1nwA5ea5aMpvVQnQCbcqUYWjDxEaY11GmFoqRmc5svVA",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "wallet",
+    "hmac_result": "18ad3958a7f2489145d22fd83526fb09cda6fe19ce053312afa53d4ddce855d0",
+    "wif": "5J19uwWzwxcLfurY3Zzij7qC1EvvdDKFkHH1KmWiSsF3LzTTUvZ",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "key",
+    "hmac_result": "7c917c8930a2d6a57b45b9af5b422adb5f8056ea531d4eb871b217635571378c",
+    "wif": "5Jm9Wdeb4w47KsgCU2eWT7nUtzHSVti1K5qYSbqPLLfhf3LLL2B",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "address",
+    "hmac_result": "763308e5e2d669d9b940518c2efce6d286a3918c62f135fdd23ce209861324a1",
+    "wif": "5JiLppqEuQ25mCSTPGjbTk6ypRW553jfM1EgTZ35rHhDz2xxLE2",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "transaction",
+    "hmac_result": "5d2e55447d3a3af838c5b88c219a8bb76f30c3e5c3585d221cd7b6bae79be283",
+    "wif": "5JXKmK3PbMV15D3k3uUMGjYDrx7uwz5fAbaxx9L1ESeViaHXwt8",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "block",
+    "hmac_result": "1947090d89ea58372b7a103fed69576a485e6e892b5e306adb66390711956576",
+    "wif": "5J1RG5nCBKPR9b6gCGGzeo3T1VZawFKiCoEBo9Xf1o7AQoZB2Gd",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "hash",
+    "hmac_result": "c55f63b0346dc386ac56ea38ac9fb644474eb2bc1b0ea09c5b96c0831eb45ba9",
+    "wif": "5KKDCZEcVEcwcVc2y5hae5nK6nz34E9CyRvKeoCtCRjW6qqLs5y",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "private",
+    "hmac_result": "34c71582a8a5578e7056bb285b0c0c05f502005ae35162ec7dd75c9931896384",
+    "wif": "5JDXiVuHn3JV4M9YqMSy6FLc6ct24RX9igp8RA6679GXtUKhVav",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "public",
+    "hmac_result": "efc47e3cf5469f9bcefc996defe18be75fdec327a07cdcd2a223e8751964185a",
+    "wif": "5Kdt82111kALoKTz38GnTNkP2NPuEjrEFg44XazSsF15ZQAzpvJ",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "signature",
+    "hmac_result": "534478a88783908c2d8d81bbaeba7e06377660205ff4ce7adc2772eae65df8c8",
+    "wif": "5JSxY7JkWy2n2dG7Y83BwJvgM4mvPtjYUa9Sk61fBZZ5KazzU73",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "term68",
+    "hmac_result": "7d0b23cd6db2ef507fe6807aceb4c7aa7b80aefea44d20efd7f7cc5e6147a246",
+    "wif": "5JmMefn8eQBp2zdeBNQ1V7QhqWQqe55W26b47y6tcyDr33Ap8Bz",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "puzzle",
+    "hmac_result": "853a049b213f6df25134c370556aa0b9e9eff79ccf180f847b1f7c35351ee538",
+    "wif": "5JpxgDoEMpt1y1Chki5fD1sZLWdXqJhapE8A5kJRHwgFVkiNQmA",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "1",
+    "hmac_result": "179bc7ca3c7517adbdbf1ce43a167ad316323255732a2ecb45c6bf2232df90f5",
+    "wif": "5HzgdTYiS55MfyPTdTTALSBM41E9uVQpDizg2A4ufZ7Wh1UBDqP",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "2",
+    "hmac_result": "0ae75eaa20369686875a24fb231365a958d87932f9ffddfe38df26f006c9a29e",
+    "wif": "5Hu66zbZH6wDJBagtZMrNZcV5sBcizKT5nGHPgfmuMSfrhvvG2A",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "3",
+    "hmac_result": "45595d1a988d45003e86695d86097cb669e90c3348c5444edb5099c7b606b05e",
+    "wif": "5JLq1ZvKF6cusxywdd3J5patiixCHPDxzL3sYCUDW7XJEqqRvG6",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "4",
+    "hmac_result": "ec4dede71d66cc7f5b12bef51e508c328e558824871446fe3521ffef82d18e85",
+    "wif": "5KcMfGKb3K3fxCUyWesieVBy23cLSCTn9gZ3t15QM7GUYwg3j4f",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "5",
+    "hmac_result": "a96978d8409e2ecf70c58222728924168b76520a72cd5bef716db125feb4a4ff",
+    "wif": "5K6tz1MHQfhejcjzonStFSQdPqvpvJ9wbwHNjcfmrN6tU9WdKVs",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "6",
+    "hmac_result": "83fec80e5ebc4767df8b6454000596185d99be0407e7b9cb7758a59e590dc2ba",
+    "wif": "5JpRDsd7yb5YQwjUVmEzwWVfmTt2YGUSUczbMFX6V6euqNaGSQj",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "7",
+    "hmac_result": "8b469c33e54d95452ade441e5c06d84cde03ca257c9a870afe710c03e2a83534",
+    "wif": "5JsdCHfyb8iNzpDbzn7dGcCSwcjDAgfDqdUHtPf5E1bYXhiH7UC",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "8",
+    "hmac_result": "bdbfe9ac56145fcca706cc6cffea0e0c9c2553c3f64a5addde9aeeb46fe061b6",
+    "wif": "5KFrUuKKRivYq4cYdDEEAN3wEkAX88YyMVHHZvqpCvNnuUXfmWH",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "9",
+    "hmac_result": "5cc489d3133cd853f4a03342083758cb7b5cffe7bf141c794c4ab5084622d03c",
+    "wif": "5JX9D42qYtdNPFAMwi3GgXrM33FeYPSj882jtrojS2mGSvDukR8",
+    "address": null
+  },
+  {
+    "type": "HMAC",
+    "key": "0",
+    "hmac_result": "7abbccf70cd4b4fc837e4846a8daffeed0179c8b7fd6234d610dfd32b46a5016",
+    "wif": "5JkLeT5ZpGCGN3MtArWucg58HVV92VQPPqVUtWmf5H8XtnAjtht",
+    "address": null
+  }
+]

@@ -1,0 +1,5002 @@
+[
+  {
+    "candidate": 381084454650189465450,
+    "address": "1Fnzi23LqQiSSSiRRRdf2mC6b3T6ZqiFjg",
+    "similarity": 0.14901960784313723
+  },
+  {
+    "candidate": 416828067929149554439,
+    "address": "1PkYb5R23Ai88bgkouP33kwWuZZDB4VZeG",
+    "similarity": 0.14129901960784313
+  },
+  {
+    "candidate": 395360141606088338094,
+    "address": "196RjEaJS3swi4kS5dTqzGAzxJhcHYgHQG",
+    "similarity": 0.1268382352941176
+  },
+  {
+    "candidate": 343113678781059002967,
+    "address": "1Ltwi7ZWrd9UMZVvZoqaeSLGHbXoLnsxKG",
+    "similarity": 0.12512254901960781
+  },
+  {
+    "candidate": 385699998289093020172,
+    "address": "12vWd6bMuA2Cq37hLqhvETNfLVwBWqwHhb",
+    "similarity": 0.12512254901960781
+  },
+  {
+    "candidate": 396512997238703170421,
+    "address": "1BpvbEF9MZuobssM8J5YP5S8B1MjkshAbJ",
+    "similarity": 0.12401960784313723
+  },
+  {
+    "candidate": 438941817996446496639,
+    "address": "16v6ukDLh3qZ96NmZ23Dxqe3AqHxVc1tLe",
+    "similarity": 0.1227941176470588
+  },
+  {
+    "candidate": 402950329998602352328,
+    "address": "19YkfVRSubsctUMSPe2agvTecY9wvQFLkx",
+    "similarity": 0.12071078431372546
+  },
+  {
+    "candidate": 402950329998602353277,
+    "address": "1NiAj2mBcw4kEWyQUH2sgmAo2LG4xrhb1L",
+    "similarity": 0.11703431372549017
+  },
+  {
+    "candidate": 402950329998535244412,
+    "address": "1M1JiPainDuC5MdqQjByHXjeFV6kwBhdbc",
+    "similarity": 0.11629901960784311
+  },
+  {
+    "candidate": 381084454650189464517,
+    "address": "1JH6iYBUPw3fCrsR3TLWbcMbidnbXkf5iG",
+    "similarity": 0.11556372549019606
+  },
+  {
+    "candidate": 484743677864025741188,
+    "address": "1CS7izqj7TYaV4stvRUdyi4y6yzqWDEnvr",
+    "similarity": 0.11519607843137253
+  },
+  {
+    "candidate": 393051347490338506722,
+    "address": "17nJinNzantRc2R3EMprzRSSoK9XWDFChD",
+    "similarity": 0.114828431372549
+  },
+  {
+    "candidate": 565554940884346249905,
+    "address": "19vaHHiesdvHDducqwtXTAUUpFfuPADZhn",
+    "similarity": 0.11433823529411763
+  },
+  {
+    "candidate": 376911459455214162764,
+    "address": "1NCENk7i2866EubmoTbA5n3YYCWtwnhxhC",
+    "similarity": 0.11299019607843136
+  },
+  {
+    "candidate": 304244682922936679802,
+    "address": "1NxhGtvbfCu8TztCJ9jUymoq4TzhuZFhT3",
+    "similarity": 0.10980392156862742
+  },
+  {
+    "candidate": 438941817996446495773,
+    "address": "19akbS4CK66yy7fKgwxsHaF3bzU2LUWZ1G",
+    "similarity": 0.10563725490196076
+  },
+  {
+    "candidate": 343041912540473517193,
+    "address": "1922DCchfKN5nwSHrbAnhynjhiUxf2bkbG",
+    "similarity": 0.10502450980392153
+  },
+  {
+    "candidate": 416828067929149553539,
+    "address": "1cS6nTd2fhFBgQFn16xYpEYVRDyyax8oh",
+    "similarity": 0.10501696466013494
+  },
+  {
+    "candidate": 395360112015732011096,
+    "address": "1AjrREaA3Z3PfHYQtL8bZQJdQEmMhuyuhJ",
+    "similarity": 0.10453431372549016
+  },
+  {
+    "candidate": 448192513117728380259,
+    "address": "19iDCTrJU7LgCvhLg6V61TRGNeXkWEdVmG",
+    "similarity": 0.10453431372549016
+  },
+  {
+    "candidate": 402950329998602352296,
+    "address": "19rCbZ24eZKbTh8F3kdzqZ2LeX45WYmXdG",
+    "similarity": 0.10453431372549016
+  },
+  {
+    "candidate": 420495074060075026282,
+    "address": "19ph7M6Lf7uY7xetmmSRMtwkM8iJGmdCkU",
+    "similarity": 0.10404411764705879
+  },
+  {
+    "candidate": 328261455908648067560,
+    "address": "19iALrKCfwtu8EBadKWBe2sQ5icYZRA2ic",
+    "similarity": 0.1037990196078431
+  },
+  {
+    "candidate": 270407042453682281100,
+    "address": "19AUhgmjsut7abwhSGjAWNMq2GPBRBTHiU",
+    "similarity": 0.1037990196078431
+  },
+  {
+    "candidate": 343113678781059002119,
+    "address": "19HeqNNJkhMGRfwnDmvgYho9YvQGWY1nas",
+    "similarity": 0.10367647058823526
+  },
+  {
+    "candidate": 491767903499400607327,
+    "address": "19YCvFLrhBWp1xKf7LCETuKzKrCbmShPYX",
+    "similarity": 0.10355392156862742
+  },
+  {
+    "candidate": 402950329998535243442,
+    "address": "19CrihxrbgUiaoCWa1Q9ykcDPq8k2GVns2",
+    "similarity": 0.10355392156862742
+  },
+  {
+    "candidate": 376912585355121005388,
+    "address": "19dx2GoFhmFT8cfUM2pReefxAWC9WGi1Sk",
+    "similarity": 0.10330882352941173
+  },
+  {
+    "candidate": 381085580550096308072,
+    "address": "1NQFfEaK6iSFxrsQLw3EhkeEuNJSJwfNMg",
+    "similarity": 0.10330882352941173
+  },
+  {
+    "candidate": 395361267505995180716,
+    "address": "19FKYWxNrMXZSbxSRKJFjWEvLXVzs1AeC6",
+    "similarity": 0.10330882352941173
+  },
+  {
+    "candidate": 381084454650189463699,
+    "address": "19fFAvaW8jZwyM9eEMW3NMYmUqRuXFcBX6",
+    "similarity": 0.10330882352941173
+  },
+  {
+    "candidate": 396512997238703169591,
+    "address": "1BinYvLi2hufT7QZeGEn6HrSMyZFKV1Sf",
+    "similarity": 0.10320231786817124
+  },
+  {
+    "candidate": 495225532608272998888,
+    "address": "1F69FEqSthwx9vsUNxBuL4NuwBwkFU6wkh",
+    "similarity": 0.1029411764705882
+  },
+  {
+    "candidate": 386379766422973536941,
+    "address": "1M2UxaFSmutZWem4nXoqYhYRL3WuAqhYzi",
+    "similarity": 0.10281862745098036
+  },
+  {
+    "candidate": 417192858097761209835,
+    "address": "1DgadiHVFG2j8H28cb7i8Cq85r9xhz2doG",
+    "similarity": 0.10281862745098036
+  },
+  {
+    "candidate": 343113678781357253192,
+    "address": "1Lc7ir4df9b8i3YfYkeMWmrbmX99vgSQ5",
+    "similarity": 0.10281346498417901
+  },
+  {
+    "candidate": 343113678781327451188,
+    "address": "19binEiU8y22dNVrndED6ZCfqA2hZpGA6C",
+    "similarity": 0.10269607843137252
+  },
+  {
+    "candidate": 395360141606088337146,
+    "address": "19RBrEMQtq26mt1trGWLLECnjvR8RQKYWy",
+    "similarity": 0.10269607843137252
+  },
+  {
+    "candidate": 396512997238703169503,
+    "address": "1F5HfEMXLVu5ztpc16hxFjk1f7ZHkxqNCz",
+    "similarity": 0.10257352941176467
+  },
+  {
+    "candidate": 484743677864059295621,
+    "address": "19uENMcBCBuDkCfEy6fkAUsQorFNg9obfY",
+    "similarity": 0.10257352941176467
+  },
+  {
+    "candidate": 343113678781059002100,
+    "address": "1DwVFTXj8PSj2iZxvzQrkpG6PY3huXkLJG",
+    "similarity": 0.10257352941176467
+  },
+  {
+    "candidate": 402950329998602352427,
+    "address": "1By6NzBEtzCTkLg1vKToZ9CAJKTGmDpxhz",
+    "similarity": 0.10220588235294115
+  },
+  {
+    "candidate": 484846466476443261612,
+    "address": "1Nhu6Bq7Bhu4XKg2cFXozbooKxZtYuPhoF",
+    "similarity": 0.1020833333333333
+  },
+  {
+    "candidate": 306220190633639899734,
+    "address": "19rCEzZc1JvLhHGR2z2Lp9WqC7uNkAr9fG",
+    "similarity": 0.1020833333333333
+  },
+  {
+    "candidate": 343113678781059001980,
+    "address": "1EiDQEKTx1pzCssmPdL2jnLNoQyjD4pSBy",
+    "similarity": 0.10159313725490193
+  },
+  {
+    "candidate": 416828067929149587206,
+    "address": "19qmUKhe3LgtksK7D4ntjTFNoqgrLJoF2W",
+    "similarity": 0.10159313725490193
+  },
+  {
+    "candidate": 405843673911761871733,
+    "address": "1BvQMsa3EqZ9FGAvN52AHDN5zcBvSSFEXC",
+    "similarity": 0.10147058823529409
+  },
+  {
+    "candidate": 336017929680459740739,
+    "address": "1MNVrhr3TwCv8FDWSxQW9bWQonwH69h8ng",
+    "similarity": 0.10147058823529409
+  },
+  {
+    "candidate": 402950329998602353268,
+    "address": "1H5svzPLWAEDajb9v5iJJwWBuqdbzthpmF",
+    "similarity": 0.10147058823529409
+  },
+  {
+    "candidate": 416828067929149553589,
+    "address": "186EipUzNh1uurv7hm2HfLa8s2a8iP8bLQ",
+    "similarity": 0.10085784313725486
+  },
+  {
+    "candidate": 486003355398757575183,
+    "address": "1CEAXaWjUbH1KR1WpuN4C9u2ft2DQJHxbC",
+    "similarity": 0.10061274509803919
+  },
+  {
+    "candidate": 385699998289093019357,
+    "address": "12r536jjXijK6i8pZ8KJgceeBJ87zYxi7R",
+    "similarity": 0.10012254901960782
+  },
+  {
+    "candidate": 438941817996446496633,
+    "address": "18ipsiMnF78Zpv85ju8vGqnikcSRXphQyZ",
+    "similarity": 0.09987745098039214
+  },
+  {
+    "candidate": 343113678781059002075,
+    "address": "13KQuTPJfvsgp1aYddccAbC6RsLX6sXoFk",
+    "similarity": 0.09975490196078429
+  },
+  {
+    "candidate": 381084455199945278407,
+    "address": "1HFTnyxicAny8WqAttG2gDuLH4VbjbayiF",
+    "similarity": 0.09975490196078429
+  },
+  {
+    "candidate": 385732937680896733971,
+    "address": "1LYUHWdKhfh8Nh3heuptoMrU1qguNy86hW",
+    "similarity": 0.09950980392156861
+  },
+  {
+    "candidate": 381084454650189464464,
+    "address": "1CmaKWguf6HTCWsC6u9t6F5LTCE74cMPRo",
+    "similarity": 0.09950980392156861
+  },
+  {
+    "candidate": 341961056385052143765,
+    "address": "1AaxDspgC6uzHGj88r2txToenAVGKCm1rC",
+    "similarity": 0.09938725490196076
+  },
+  {
+    "candidate": 395360141606088337158,
+    "address": "19BT4bBFvb8BaYEqQuk32w16WWzYsrkiXV",
+    "similarity": 0.09938725490196076
+  },
+  {
+    "candidate": 258365585261713780828,
+    "address": "1AP43i92WJdmdfsLqbhjaWb2joEbdtrUxW",
+    "similarity": 0.09926470588235292
+  },
+  {
+    "candidate": 533707587845633008777,
+    "address": "1EsjfDU8h3PT8PVENL34gRuujqjcuUNBeq",
+    "similarity": 0.09926470588235291
+  },
+  {
+    "candidate": 381084454650256573381,
+    "address": "18MxEm7TbH5n7ZKcDXhjTVHyRwZbMW9B8X",
+    "similarity": 0.09901960784313724
+  },
+  {
+    "candidate": 385699998289093024269,
+    "address": "1DYG9WuDsLFux5nj8uPcLp31oqFawEtq8",
+    "similarity": 0.09892493614425679
+  },
+  {
+    "candidate": 416828067929157943045,
+    "address": "1Jukz88UD3rxzuCsPK2joZ511jR3QvtXqL",
+    "similarity": 0.09840686274509801
+  },
+  {
+    "candidate": 402950329998602352387,
+    "address": "1J1wF9euMhtBFBYara2jJLLnDWpKnagHmF",
+    "similarity": 0.09767156862745095
+  },
+  {
+    "candidate": 416828067929149553628,
+    "address": "1MvxsBQqo5uCaueQM6whR822NMehyMGQhX",
+    "similarity": 0.09558823529411761
+  },
+  {
+    "candidate": 278554578157331129396,
+    "address": "17MkvYpQkgZsiCaWuLa1jn2MvfDc1qAxde",
+    "similarity": 0.09522058823529408
+  },
+  {
+    "candidate": 395360076829312754120,
+    "address": "1HvNkhsRjX5NhbXbGgsi124iurozAzYxfi",
+    "similarity": 0.0949754901960784
+  },
+  {
+    "candidate": 438941817996446495752,
+    "address": "16viGKrGna99V8H8h2JGwNyXdmWZF92Mhs",
+    "similarity": 0.0949754901960784
+  },
+  {
+    "candidate": 259026937057298514110,
+    "address": "1MUAi8cWntvjmPRc2xa31RWzPMYvWxcxJQ",
+    "similarity": 0.09485294117647056
+  },
+  {
+    "candidate": 332759908829454487035,
+    "address": "1Gukoc7jr8HXdb9KXbVSVXjK5kojeZ6ZaV",
+    "similarity": 0.09473039215686271
+  },
+  {
+    "candidate": 484743677864025740305,
+    "address": "1QJjaEAcFWRU8KM4YqdksUDMtVL1o8VxMk",
+    "similarity": 0.09473039215686271
+  },
+  {
+    "candidate": 484599562675949885318,
+    "address": "1EEwibn3iRCom8p8gytnpU4ph69zoDzohq",
+    "similarity": 0.09473039215686271
+  },
+  {
+    "candidate": 533711712028614607256,
+    "address": "1NLPwZ58smuwx3nc3n7kXo6TEbJHW6tNpG",
+    "similarity": 0.09460784313725487
+  },
+  {
+    "candidate": 395360141606088337190,
+    "address": "1M9kWrbjknKErze8qBDv4FnppKKvwMidcy",
+    "similarity": 0.09448529411764703
+  },
+  {
+    "candidate": 381084454650189464558,
+    "address": "142Yic4m9hQE8DTko6auYueWyLhpjJRvaN",
+    "similarity": 0.09448529411764703
+  },
+  {
+    "candidate": 343118182380686373463,
+    "address": "184kLVfCwhWvAb5UKgsHU7khr7zRMeCbYS",
+    "similarity": 0.09448529411764703
+  },
+  {
+    "candidate": 448104664146170378411,
+    "address": "1GfytQadwCWrjRCXZ7LhKvLEBY4x1racho",
+    "similarity": 0.09436274509803919
+  },
+  {
+    "candidate": 395360141606088337130,
+    "address": "1Ee6Y2aAWhPZp3K2hDna2xomqcaXxB5qST",
+    "similarity": 0.09436274509803919
+  },
+  {
+    "candidate": 393726957961747578440,
+    "address": "1G9NiY4Mv3co7bwiNRhBSoTmu9CX5qeyQY",
+    "similarity": 0.09424019607843134
+  },
+  {
+    "candidate": 381084454650189464623,
+    "address": "1L3NMS8vPHDV8TvFLFr68BocgPBzWNiahY",
+    "similarity": 0.0941176470588235
+  },
+  {
+    "candidate": 343113678781058994775,
+    "address": "1B4m2CP7ffgPXBsNhDKBPjrUPoApVBhSAi",
+    "similarity": 0.09387254901960781
+  },
+  {
+    "candidate": 343113678780924785238,
+    "address": "1BvwXC2nhsPd8wGAjMoGCCwaTwZ4mPYty8",
+    "similarity": 0.09387254901960781
+  },
+  {
+    "candidate": 343113678781061100119,
+    "address": "1Jauy5UowhQibYsqxR5q2PRckrjAAmhsjH",
+    "similarity": 0.09374999999999997
+  },
+  {
+    "candidate": 395359941876288149677,
+    "address": "15jkAs9VMekFU1H8uCWdmoKQxBGbAiLPHs",
+    "similarity": 0.09362745098039213
+  },
+  {
+    "candidate": 259026972062855046728,
+    "address": "1JoK1ENPfz2qjpNpaDXJ4aG8oVBq29BYP8",
+    "similarity": 0.09350490196078429
+  },
+  {
+    "candidate": 416828067929183108869,
+    "address": "18Ht2bkQGE5zmbb8TAZdbKXSgZz6HzMxgF",
+    "similarity": 0.09338235294117644
+  },
+  {
+    "candidate": 385699998289093020238,
+    "address": "16vuptLALK1bNRuLV9i5hAzUVqbbrxCopq",
+    "similarity": 0.09338235294117644
+  },
+  {
+    "candidate": 395360141606088338108,
+    "address": "1CVQ74HfkXon8oGrWtMNuTPM7rZDpzhak6",
+    "similarity": 0.09313725490196076
+  },
+  {
+    "candidate": 381084454650189464573,
+    "address": "14eZJWZ9BhaitpZRZLc6DuaUL5prW7Tput",
+    "similarity": 0.09301470588235292
+  },
+  {
+    "candidate": 386136775161345250599,
+    "address": "1PZT2XF7fZBNGQsrYxqW1q3sMMZhQownty",
+    "similarity": 0.09289215686274507
+  },
+  {
+    "candidate": 416828067929149550342,
+    "address": "13SWCUxbidtZWe88DFsuyAFgTvGmWiac9A",
+    "similarity": 0.09289215686274507
+  },
+  {
+    "candidate": 385699998289093019351,
+    "address": "1CkQjojeP9Mp27T6Z9KBF5eKwqkp3Usch6",
+    "similarity": 0.09289215686274507
+  },
+  {
+    "candidate": 396368882050627314549,
+    "address": "163vFEwohDDZSNqVVRbhr9Y6T2Jx8cWMdf",
+    "similarity": 0.09289215686274507
+  },
+  {
+    "candidate": 385663973890120566297,
+    "address": "13iZoEDGpUDdqPtAD7ojZPBtWGAwY5Lyhc",
+    "similarity": 0.09276960784313723
+  },
+  {
+    "candidate": 442987484320939828361,
+    "address": "19vpCZpx1N44kViH4TcvGyadv4geDuVt7v",
+    "similarity": 0.09264705882352939
+  },
+  {
+    "candidate": 385699998289093019188,
+    "address": "1DFLXRaZPDuztf9fJcWuN2CWprFaeGALRs",
+    "similarity": 0.09264705882352939
+  },
+  {
+    "candidate": 438941817996446495682,
+    "address": "13qLixawhQLMWHDE3rojCEQB2C11UG73ah",
+    "similarity": 0.09264705882352939
+  },
+  {
+    "candidate": 396512997238703169528,
+    "address": "1HkkPzAm4hm94wmGwNWngPH97L31Hdy7pA",
+    "similarity": 0.09264705882352939
+  },
+  {
+    "candidate": 381084454650189463679,
+    "address": "19v4vSKLj8aWm4JhgChkBqV1WSioNhifZY",
+    "similarity": 0.09264705882352939
+  },
+  {
+    "candidate": 447956941019914479219,
+    "address": "1LPySJasih8WhionRheucmaYnmkSxcXbP5",
+    "similarity": 0.09252450980392155
+  },
+  {
+    "candidate": 386136775162419000083,
+    "address": "1Npk1MKte3u4QahWSizygMGR7a59hPTDW1",
+    "similarity": 0.09252450980392155
+  },
+  {
+    "candidate": 385699998289093019248,
+    "address": "1LtEXwVB7hHGYbGWcxadCYGUoCDgVvSRNb",
+    "similarity": 0.0924019607843137
+  },
+  {
+    "candidate": 395360141606088337126,
+    "address": "1Mq8aVDgKwTZKbSawBj468DY7q8g4YYnsY",
+    "similarity": 0.0924019607843137
+  },
+  {
+    "candidate": 395360141606088337098,
+    "address": "1M49ZobLWN2qXcB8p1C4mEM6A2xbUBeftC",
+    "similarity": 0.09129901960784312
+  },
+  {
+    "candidate": 416828067929149553525,
+    "address": "1NDkDi9VbMQTAuoLZ92zY2iF54AwjdLFsB",
+    "similarity": 0.09129901960784312
+  },
+  {
+    "candidate": 381083531053585770100,
+    "address": "12abS3SK22WZMLw87oPFgbawfAadk7D2Pp",
+    "similarity": 0.09093137254901959
+  },
+  {
+    "candidate": 381084455199945278404,
+    "address": "15g5EQCPQG5ZdacsLK8ZuU9ELcJyG8KxEs",
+    "similarity": 0.09093137254901959
+  },
+  {
+    "candidate": 416828067929149554179,
+    "address": "1MDMG3WCyhp95nsAdm2f6gfpJ6YNsTxXby",
+    "similarity": 0.09080882352941175
+  },
+  {
+    "candidate": 381084173175212753861,
+    "address": "127RgkwjWEBDsHR8fuzUa9aeSveDL7ji4k",
+    "similarity": 0.0906862745098039
+  },
+  {
+    "candidate": 396512997238703169439,
+    "address": "18i96ukDHoupRKc8uuuxFJBXh861C5BUSe",
+    "similarity": 0.09031862745098038
+  },
+  {
+    "candidate": 381084454650189464643,
+    "address": "14y3NVBPWh4GnLQog72ubRreVqLnjURGR5",
+    "similarity": 0.09031862745098036
+  },
+  {
+    "candidate": 393051347490338505901,
+    "address": "1M32XbpkHh1KXwtVY72xAW5yVqPazgYaFg",
+    "similarity": 0.09031862745098036
+  },
+  {
+    "candidate": 402950329998535113336,
+    "address": "1HQQMne5Fr7dhQE8QQ2LNkxr84ZWXicM7F",
+    "similarity": 0.08982843137254899
+  },
+  {
+    "candidate": 395360076820731837946,
+    "address": "1HNm9u1Htuwz8e2N982DoG6UouVEpR1MSY",
+    "similarity": 0.08970588235294115
+  },
+  {
+    "candidate": 305571672282987092624,
+    "address": "1EebYuPv4WqhjApZRETD1XCX2Vv1AwSxLK",
+    "similarity": 0.08933823529411763
+  },
+  {
+    "candidate": 416828067929149553520,
+    "address": "1NyCcNQhP6BQ24yVke2rfm8xuXNGBqzPGw",
+    "similarity": 0.08921568627450978
+  },
+  {
+    "candidate": 419134191310232582381,
+    "address": "19uQeo1CbD1rY4RuesAn4Qt85czeDQa2mG",
+    "similarity": 0.08382352941176469
+  },
+  {
+    "candidate": 395360076835686713186,
+    "address": "19BPLzdvAFwz24JxESDmaFQxGBrx4UienG",
+    "similarity": 0.08382352941176469
+  },
+  {
+    "candidate": 485896599368632588166,
+    "address": "19tJrf24sXUBYhnzK51Gpw9GcwwEQVsk4G",
+    "similarity": 0.08382352941176469
+  },
+  {
+    "candidate": 381084454650189464465,
+    "address": "19tBQSjPmWTpav66ykkvQbJNaRScgW1fgG",
+    "similarity": 0.08382352941176469
+  },
+  {
+    "candidate": 396512997238703169618,
+    "address": "19QWswNVsLANwQDpLjDtPTsatRjeJg2cWG",
+    "similarity": 0.08382352941176469
+  },
+  {
+    "candidate": 402950329998602222207,
+    "address": "19h8GnEHZ9L4CVmchNjaHHid1AgWX4k8UG",
+    "similarity": 0.08382352941176469
+  },
+  {
+    "candidate": 396508881328206878696,
+    "address": "1i5ry8P2fdmfhJR3KPMeicR9eJygnkRTh",
+    "similarity": 0.08372536311997256
+  },
+  {
+    "candidate": 416828067929149584921,
+    "address": "1kSrSuouK7cxGwEnarv4kijeanG6Enhxc",
+    "similarity": 0.08372536311997256
+  },
+  {
+    "candidate": 448178973665585231455,
+    "address": "19kk6wGLDb6xsVZDQtqNHtXwcJg2decQ5o",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 300611508989966428388,
+    "address": "19RkWFF1MY9khhdcE7rG8jxSwjPKKedVoD",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 448426580103776747765,
+    "address": "19AkM7C5NrscuiPV32jJaxqR5hDHuGNfva",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 417225814554937951682,
+    "address": "19YkfTg55kX6U8LN9mgZzKENp2YZuYDfQg",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 416828067929149553558,
+    "address": "19dkcFNgadtzj1xrusXh1XP4vuFhaT9KeX",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 393051347490338505763,
+    "address": "198kXHBHdgAj1EV78qb2Y6m1EBhFe9wcJM",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 396514123138610013045,
+    "address": "19Rk8CfPMK9aW86uTzkqrzQkD7QAsNHkvf",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 416828067929149570819,
+    "address": "19kkYkUTddRC7fTC3zCmTt444Jh4nu61jJ",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 484743677864025740252,
+    "address": "19hkzarrk1SLqs6EG3DHVKHdFD5fiDmSyK",
+    "similarity": 0.08370098039215684
+  },
+  {
+    "candidate": 524267359670034465110,
+    "address": "19rqUXXih1Cgw1yVtYxam38ohVdGauorhX",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 498317377838124441856,
+    "address": "19faijY6GxTJijgY59tLBT7udeTymHUrcL",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 564799767144614364610,
+    "address": "19DAiosmR3SkgBZjNCtY4YDh2rNMtJXS3s",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 395360076829312753949,
+    "address": "19Mxi7opvBMkdPSiteErPSNxFF4P1PDJFg",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 304244682922936694955,
+    "address": "19AYzfWwwj9V7aGuwNuWn26fgiJeB9bbhC",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 402950329998602352351,
+    "address": "19dzxTuBwRhRBgKQ87E7jWiAEkPGQNuBh8",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 402950294814163155582,
+    "address": "19spi4ekD5Q2KScyiAHV26ngXSGJUyXXEd",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 402950329998535243595,
+    "address": "19Lai6mmKeMuU5xaBqEFLfcEZi379FmhoA",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 438941817996446495645,
+    "address": "19XwCepTEkjfTvzzFcSVDDxzJpziuMYFh8",
+    "similarity": 0.083578431372549
+  },
+  {
+    "candidate": 533712091385063599128,
+    "address": "19djEELEX3dYGJPkuWba6oDsRucyvc22Hn",
+    "similarity": 0.08345588235294116
+  },
+  {
+    "candidate": 376876556626821518148,
+    "address": "1GRZiMbT1nWBbmc56SwQQWbWZs8uH4GvfG",
+    "similarity": 0.08345588235294116
+  },
+  {
+    "candidate": 396512997238703169486,
+    "address": "1DmWGSpiaTweXh4oYEk8T7H8yEu1KKuzhG",
+    "similarity": 0.08345588235294116
+  },
+  {
+    "candidate": 402950329998535244405,
+    "address": "196N3Et6r36m62Cu31H7C7W5E7rB2Vyaru",
+    "similarity": 0.08345588235294116
+  },
+  {
+    "candidate": 395360141606088337165,
+    "address": "19J8YcagcQgAsXz9AxtHzUUgKPTqLz2kQP",
+    "similarity": 0.08333333333333331
+  },
+  {
+    "candidate": 385700068657837197837,
+    "address": "19Ex4nJKnPgaEjjB3RCVyP7xHaPD8QUxKR",
+    "similarity": 0.08333333333333331
+  },
+  {
+    "candidate": 415675145148009325365,
+    "address": "19jyUmAjEjtpCPwkUMa4fiox5BBSysLuS1",
+    "similarity": 0.08321078431372547
+  },
+  {
+    "candidate": 420495074060142334629,
+    "address": "191TU6Jjq9yggkBpTTggYt7uabpvftxadK",
+    "similarity": 0.08321078431372547
+  },
+  {
+    "candidate": 395360141606088337157,
+    "address": "19Hq14kE54iLtPBxm5Le8XPnZuEpprhyMC",
+    "similarity": 0.08308823529411763
+  },
+  {
+    "candidate": 396512997238703170422,
+    "address": "12ekEPaPWXQ6PCfrwsWy6SgmrS5TfcSGki",
+    "similarity": 0.08308823529411763
+  },
+  {
+    "candidate": 395360141606088337181,
+    "address": "1964drdEX9PuPRKBA4JnWWn5RRjtRght1Y",
+    "similarity": 0.08308823529411763
+  },
+  {
+    "candidate": 343113678781059002047,
+    "address": "19eTXfviPc9C1L1P21LBNCQ8kX84Z3hhZC",
+    "similarity": 0.08308823529411763
+  },
+  {
+    "candidate": 405260677125340481531,
+    "address": "1LNk2McjRffXVr4RJkihu224QeGYuwb2vq",
+    "similarity": 0.08296568627450979
+  },
+  {
+    "candidate": 443842079792220131504,
+    "address": "1AS4HFQMkGtyMZ1JKdTuQFSsGiCPuGdxhh",
+    "similarity": 0.08296568627450979
+  },
+  {
+    "candidate": 416003960572695655964,
+    "address": "1CvYSehxLQ5ra8LRRPSDxhNkGXZBSCX7N",
+    "similarity": 0.08294765735198811
+  },
+  {
+    "candidate": 449466826069070864264,
+    "address": "18PAmEkSGGnJeLTkiipnb9N3QA8yMbSxoy",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 381084454650189727595,
+    "address": "19jPpdiD4815yJudhguM6rW4nmpzRq52f7",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 396512997238703169594,
+    "address": "1EG5tEaFwN7tFaZyxXSMeBf5uUazByxqih",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 402950329998602352454,
+    "address": "18w94Eu297Wjaph5d1XgGETKfhjjpUwx1t",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 381084454650189464601,
+    "address": "1BMxuEarygcjpFzAmCFmsXDr9cutEB68wC",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 381084454650191561665,
+    "address": "19ffDCcBA1SNcwbhV47nMSXHX54HYqwoGa",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 385699998289093019179,
+    "address": "19qQ3jh1xpCGGLZjs9GtpKwLUcWzxqCo5b",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 395360141606088337192,
+    "address": "19A8qUQLm64nzWjZD9Rpp7Ms2KeoZqu4E7",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 381084454650189465451,
+    "address": "19TiWZeXPruE2ew5SysXjJKnUp6o5yKubM",
+    "similarity": 0.08284313725490194
+  },
+  {
+    "candidate": 396821429563604776733,
+    "address": "1Hvu2GRXUzWczSctxhivY5pdYpaoVqoJNC",
+    "similarity": 0.0827205882352941
+  },
+  {
+    "candidate": 381083531061827033773,
+    "address": "1AvGbjb4jbuRPmR5upoqJv6qZDYsqxBzDb",
+    "similarity": 0.0827205882352941
+  },
+  {
+    "candidate": 457400093902626322015,
+    "address": "1HtRgxA6vN7kE6KNPotWFj7g966tEahDhd",
+    "similarity": 0.0827205882352941
+  },
+  {
+    "candidate": 588256203089410424590,
+    "address": "16tkbXfBshkkcGoM9fk2TncJ8De5utoqyR",
+    "similarity": 0.0827205882352941
+  },
+  {
+    "candidate": 528621454846243350083,
+    "address": "19daECFL7dXZUMGXFnfnQaibdofGZ83Tr3",
+    "similarity": 0.0827205882352941
+  },
+  {
+    "candidate": 381084454650256574315,
+    "address": "1Bv5HiA3eJaBEvzb8gADnZB8dpoWqq3m2o",
+    "similarity": 0.0827205882352941
+  },
+  {
+    "candidate": 386822940096265799507,
+    "address": "197J9ZZQs1UTWTUQifCRmPsury2WWN1EDi",
+    "similarity": 0.08259803921568626
+  },
+  {
+    "candidate": 369559634970577432668,
+    "address": "19Z2ENpKmqNfriQWhzhEpSK2i75FWN8tys",
+    "similarity": 0.08259803921568626
+  },
+  {
+    "candidate": 395360075734096445198,
+    "address": "1JVxivHKxhmacA1i7a8gzKredWaxzYz3Xp",
+    "similarity": 0.08259803921568626
+  },
+  {
+    "candidate": 385699998289093019367,
+    "address": "194LXRz4ziSM8tdX6HJ95gBGi6XzkcpSpp",
+    "similarity": 0.08259803921568626
+  },
+  {
+    "candidate": 395360150402181360302,
+    "address": "19xnpARgE2CB1Euqqhqi6bTinS2SWb62jX",
+    "similarity": 0.08259803921568626
+  },
+  {
+    "candidate": 381084454650189530986,
+    "address": "19tSph2HZ84W8De3PiAAdxyPx1bqgpBwbP",
+    "similarity": 0.08259803921568626
+  },
+  {
+    "candidate": 343113678781327470012,
+    "address": "1AQzGn9huWsq8S1b7PbDh2JrjZNviERZrG",
+    "similarity": 0.08247549019607842
+  },
+  {
+    "candidate": 416828066864562266568,
+    "address": "19HgrFqM73CWRbiwRgddWbX9PA7xpAP7r2",
+    "similarity": 0.08247549019607842
+  },
+  {
+    "candidate": 402950329998602352300,
+    "address": "1Gp9yuYmufCzNQ66hbyNepoXo8rBUs8yh",
+    "similarity": 0.08242918683999848
+  },
+  {
+    "candidate": 386244659533791664008,
+    "address": "1958cCHtRqYAW9urEJZbfRfeWTVb2zysKf",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 258366908816882224619,
+    "address": "17LQi5YUGXDZJie1PboskDTXvkyB3MY3UQ",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 404214021591612157726,
+    "address": "193hefsPFZQFG9XP7BBK8D6QVBYb2MfmRr",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 485320138616329164678,
+    "address": "19UUva2UcdLkyks6Fd741KmCBRG3evskdH",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 385699998289093019190,
+    "address": "19FM6pQ1356uQmynDfKNW1rWQ1ybx7mJ9D",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 385699998289093019211,
+    "address": "19JNU2ckWuhXucPkutG5eXyNVjsbAhkJUX",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 416828067860430077702,
+    "address": "1LrkC63ViVG8du9FfZphQaM5QmygWUet8g",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 484743677864025724804,
+    "address": "1HdPiA9sxt2ZgabHzatGwfjgqu6Zbiju14",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 564402020518825967365,
+    "address": "19hAfc4ZGdZoa2sjQHV4LYGcufT7VZAGHq",
+    "similarity": 0.08235294117647057
+  },
+  {
+    "candidate": 385803305670670113453,
+    "address": "1C6n2RaxmbuRowiMVaJXYT44AV9H8eYEBt",
+    "similarity": 0.08223039215686273
+  },
+  {
+    "candidate": 402950329998602353241,
+    "address": "1FRQk4cCtfEwgLsQBpXLdqdzGJjfLwSfnG",
+    "similarity": 0.08223039215686273
+  },
+  {
+    "candidate": 343113678781059002007,
+    "address": "19yaEccuQP9qk4Q8TBVdoZxTuHtV2FMV1g",
+    "similarity": 0.08223039215686273
+  },
+  {
+    "candidate": 393051347490338505863,
+    "address": "1CvsmsUHSinGg53xKEotGu2zHhAbcaR8LZ",
+    "similarity": 0.08223039215686273
+  },
+  {
+    "candidate": 438941800404260452223,
+    "address": "19jynwUpi3EzWS48Ptgk8jDUNN8VdZ8Znp",
+    "similarity": 0.08223039215686273
+  },
+  {
+    "candidate": 402950329998602352411,
+    "address": "19WgTqnGyco2SDf8Qoxcvv5xXvrKsyorkb",
+    "similarity": 0.08223039215686273
+  },
+  {
+    "candidate": 402950329998535243421,
+    "address": "1NGF7FRmCnUcVNe9SWBppavmKYr1VqrxtD",
+    "similarity": 0.08223039215686273
+  },
+  {
+    "candidate": 486075945352576476243,
+    "address": "1bKN56JWhnza9ss2jS4ZTvnAZ54YHqXsf",
+    "similarity": 0.08216995158400367
+  },
+  {
+    "candidate": 420495074060075233957,
+    "address": "19aRv68rYvp1R1KaK7eY6XjXfvZzBmBMpX",
+    "similarity": 0.08210784313725489
+  },
+  {
+    "candidate": 449178881566021858883,
+    "address": "19pDvc5JAmfYSJc3fExqWtcvmFZjwjpGuR",
+    "similarity": 0.08210784313725489
+  },
+  {
+    "candidate": 343113678781059002125,
+    "address": "1KhfGn2sMqfkPbeuyUFZbnoY3AE9884ahC",
+    "similarity": 0.08210784313725489
+  },
+  {
+    "candidate": 484743677864025740225,
+    "address": "19tym4pFQYUH4dowWSSBmwrkkGZevV1sJS",
+    "similarity": 0.08210784313725489
+  },
+  {
+    "candidate": 395360141606088337272,
+    "address": "196dkpG435jN1xocZndNrpe1JA4EQwiWKc",
+    "similarity": 0.08210784313725489
+  },
+  {
+    "candidate": 438941817996446495672,
+    "address": "19T6jNsKsTtAnEHVZ1CW73ewthbC42JgNm",
+    "similarity": 0.08210784313725489
+  },
+  {
+    "candidate": 396512997238703169458,
+    "address": "19hhp8MXDYmswx6gZrVxm1bMySTjPbjgNs",
+    "similarity": 0.08210784313725489
+  },
+  {
+    "candidate": 396512997238703169497,
+    "address": "19ZRquRgGvv6wWWAZ2TmxsMfNi2DxeaZA2",
+    "similarity": 0.08210784313725489
+  },
+  {
+    "candidate": 305571672282993716284,
+    "address": "1KU8tmaUyXWb91jj51TWQEJoqEYfWMVmM6",
+    "similarity": 0.08198529411764705
+  },
+  {
+    "candidate": 417120800628395254581,
+    "address": "1CMhtHQj5yqZrzUZkMFmx8bPzC3dAjncxw",
+    "similarity": 0.08198529411764705
+  },
+  {
+    "candidate": 396821429563315844637,
+    "address": "1EdJudsVj9ZLLpiVXGuxnaTAJpFbxo6Ahu",
+    "similarity": 0.08198529411764705
+  },
+  {
+    "candidate": 258365588699711884795,
+    "address": "136kCFR6bNKgM4P8kRvBoqqegFrQDJPk96",
+    "similarity": 0.08198529411764705
+  },
+  {
+    "candidate": 385699998289093019285,
+    "address": "1CWBiLjwgjBbkocjeqRRXU2rWdpb7sp2jS",
+    "similarity": 0.08198529411764705
+  },
+  {
+    "candidate": 416828067929149554455,
+    "address": "1KS2QJRjgCsZM9E1Ex5ZBjPmBRxej1daLk",
+    "similarity": 0.08198529411764705
+  },
+  {
+    "candidate": 386136633539031351768,
+    "address": "1G3VfpwCdhuoeJ2hq11oYX1RtWtpRfJCrW",
+    "similarity": 0.0818627450980392
+  },
+  {
+    "candidate": 588220213302668956484,
+    "address": "19KvNAz8LfKa1jamYY7WpVap6qFoXVEDod",
+    "similarity": 0.0818627450980392
+  },
+  {
+    "candidate": 524267359738788544844,
+    "address": "15AmjkJfEhuNrjRdJQHZYEBcFN3rVeGcNz",
+    "similarity": 0.0818627450980392
+  },
+  {
+    "candidate": 416900655075897209429,
+    "address": "191o6kRHMLyuTNEGDNKkARbNgqgAcMf3wP",
+    "similarity": 0.0818627450980392
+  },
+  {
+    "candidate": 395360075734096323444,
+    "address": "198i4fLUDSh7SHuerXXuzLAgjqtXLWmu6x",
+    "similarity": 0.0818627450980392
+  },
+  {
+    "candidate": 438941817995909625726,
+    "address": "1LNNn5FjM1m1QbP4yeNGZ8GRnEEnxYPj6N",
+    "similarity": 0.08174019607843136
+  },
+  {
+    "candidate": 403238560374754065023,
+    "address": "1FbWmVnM9gEsYas6VfjyAoi25QfR3jSx6J",
+    "similarity": 0.08174019607843136
+  },
+  {
+    "candidate": 393051347490338505889,
+    "address": "13bD6WS8GCuGLuLNCR1V7uA9yjauPqJ19H",
+    "similarity": 0.08174019607843136
+  },
+  {
+    "candidate": 276956448953609869968,
+    "address": "16tj8EzBCA4UbWoVZ5oinD8bSicHFmB8ya",
+    "similarity": 0.08161764705882352
+  },
+  {
+    "candidate": 440166908245609620736,
+    "address": "19txxMu4FajNTgjuQk5uTt6FoBHgq1cC6q",
+    "similarity": 0.08161764705882352
+  },
+  {
+    "candidate": 393123405080091868666,
+    "address": "17zSZDBiyuCZLvrvtf32ZkifCUC1bqq1e1",
+    "similarity": 0.08161764705882352
+  },
+  {
+    "candidate": 386135034443067440902,
+    "address": "19VMnpuLeZ2FBi3wk5Heqv2foez4DRDsMK",
+    "similarity": 0.08161764705882352
+  },
+  {
+    "candidate": 343104671581804261973,
+    "address": "1MzmGyNWL4uZBWLNmbp7LfcYLDGzv1vqS2",
+    "similarity": 0.08161764705882352
+  },
+  {
+    "candidate": 395360141605551467183,
+    "address": "19DHQ5kFR7CztYDmgZenqFZEoVovLtFKrr",
+    "similarity": 0.08161764705882352
+  },
+  {
+    "candidate": 484743677864025741222,
+    "address": "15EEdKUjV3ULKtjoS1pKHHrDnNbbihGDti",
+    "similarity": 0.08161764705882352
+  },
+  {
+    "candidate": 588220200680670559831,
+    "address": "13drFY8o7v3iukX4BxEaoZARJuZ2tTExVT",
+    "similarity": 0.08149509803921567
+  },
+  {
+    "candidate": 258509704879400628730,
+    "address": "15Dd8UWVEtjQFYYDQcLn8cQDbpWsWq7Tv8",
+    "similarity": 0.08149509803921567
+  },
+  {
+    "candidate": 390748390776659845576,
+    "address": "17gNCJaNVcDCzcc5eMs4diujg8ZRFebAY5",
+    "similarity": 0.08149509803921567
+  },
+  {
+    "candidate": 570374869625678295128,
+    "address": "18x2FoaJ9vXQdHzeZbgazdTD8A7XeKgA93",
+    "similarity": 0.08149509803921567
+  },
+  {
+    "candidate": 449105902677241261982,
+    "address": "14c79G9NvwtVgmN2YVaPnFDsWqowEQGfh8",
+    "similarity": 0.08149509803921567
+  },
+  {
+    "candidate": 381084454650189464574,
+    "address": "1JaEiho8oqxMQfxTpnrSrgkcwqkrACskma",
+    "similarity": 0.08149509803921567
+  },
+  {
+    "candidate": 402950329998602352352,
+    "address": "1eTVVnQ4M9BpFJgmcaT4gBaKaTDq4Qibh",
+    "similarity": 0.08139224581601923
+  },
+  {
+    "candidate": 416828103113521643269,
+    "address": "17iX67fif9VrzTc8s4XnB4koku2uCBiD7o",
+    "similarity": 0.08137254901960783
+  },
+  {
+    "candidate": 438941817996446495708,
+    "address": "1919Cy4u2KMjZ2FLyQMEWiV6NucehTuHGP",
+    "similarity": 0.08137254901960783
+  },
+  {
+    "candidate": 396513137976191525748,
+    "address": "12Ko3mYHdhQAemTSQP3eiuZPte4bDz18eB",
+    "similarity": 0.08137254901960783
+  },
+  {
+    "candidate": 484743677864025740672,
+    "address": "1MquhvmgxhS1dNsowr5EAouVneeDtDnPxv",
+    "similarity": 0.08137254901960783
+  },
+  {
+    "candidate": 395360141606088337174,
+    "address": "194oBehL2TP74n7bVim5Fad6J1h41sxoeD",
+    "similarity": 0.08137254901960783
+  },
+  {
+    "candidate": 484743677864025741192,
+    "address": "1JMQq5WcwsDZ8aXdsQu6ZqW45xjJ1x9dTR",
+    "similarity": 0.08137254901960783
+  },
+  {
+    "candidate": 416828067654271647495,
+    "address": "1K5e45vskDYZ8A17EFuG8Tir4LwmiKmB9W",
+    "similarity": 0.08137254901960783
+  },
+  {
+    "candidate": 438941817996446495796,
+    "address": "19G5BAmVPWaa6rze965h1vs64dBkP3BySR",
+    "similarity": 0.08137254901960783
+  },
+  {
+    "candidate": 402950329998604450425,
+    "address": "1JWduY7sfQQVz6o9TUsZbhNSjFZ1QQUXxz",
+    "similarity": 0.08124999999999999
+  },
+  {
+    "candidate": 484743677864025740217,
+    "address": "1CMa2QR36GuWv7snYXZW9Jr7ki8nUrfQEY",
+    "similarity": 0.08124999999999999
+  },
+  {
+    "candidate": 343113678781063197267,
+    "address": "1NFwAVscVg9Z9b1LqSxs6fjUiEg9sBbg7h",
+    "similarity": 0.08124999999999999
+  },
+  {
+    "candidate": 396512997238703169484,
+    "address": "12kAoepATWBgoqyrieup68N3dvGbNqS7qf",
+    "similarity": 0.08124999999999999
+  },
+  {
+    "candidate": 416900655076165657670,
+    "address": "19E5LcWzJom9F81Ri6sFnyCKkstvGAUECB",
+    "similarity": 0.08112745098039215
+  },
+  {
+    "candidate": 442884246535170339997,
+    "address": "1JRqtzYQseyZ5HswwzhYChLXhu2313skLE",
+    "similarity": 0.08112745098039215
+  },
+  {
+    "candidate": 449178881565824927586,
+    "address": "13kuSZNzFiYc8bh3vqcEbMhirT9WirEjMx",
+    "similarity": 0.08112745098039215
+  },
+  {
+    "candidate": 386137210014971949144,
+    "address": "1AHpseCV3YTm8bLCAA945zKGBJ2up9HoRR",
+    "similarity": 0.08112745098039215
+  },
+  {
+    "candidate": 417156829300744369689,
+    "address": "19xcSU1r2zQntauLBoBvPPCB2x7magVi4y",
+    "similarity": 0.08112745098039215
+  },
+  {
+    "candidate": 416828067929149553575,
+    "address": "1JEE6w5yjhxK7QRgZCDH3YvxpR7N8mVXeP",
+    "similarity": 0.08112745098039215
+  },
+  {
+    "candidate": 259026972337716176459,
+    "address": "1Fks23D8nwgi7osCwZZKvT6yru2yWujUyU",
+    "similarity": 0.0810049019607843
+  },
+  {
+    "candidate": 564799204194661098956,
+    "address": "1KkG9k1YKNVEdp5CPoTTRYCCCcqZ8DAQsG",
+    "similarity": 0.0810049019607843
+  },
+  {
+    "candidate": 258365585261712679797,
+    "address": "1E7wweFW8wFZDqz8ch9S8KPumzDCbXZ8Bk",
+    "similarity": 0.0810049019607843
+  },
+  {
+    "candidate": 385699998289227237900,
+    "address": "18ZwV6Lkfc6d7Ra1YsW5ZggV1qUzb3yPe7",
+    "similarity": 0.0810049019607843
+  },
+  {
+    "candidate": 322726020943864963956,
+    "address": "1HgmQBEwbv1RJFeabz6RJKG6DyRR3bKshx",
+    "similarity": 0.0810049019607843
+  },
+  {
+    "candidate": 343113678781059002012,
+    "address": "17fhHMzwwps68dsGqvxVMtaJsMPtjRCBFD",
+    "similarity": 0.0810049019607843
+  },
+  {
+    "candidate": 381084454650189463662,
+    "address": "1NeqE8sXv1uedE3YzFkiiT2L7mZLks4BXK",
+    "similarity": 0.0810049019607843
+  },
+  {
+    "candidate": 343113678789648937559,
+    "address": "1B25ascrmpkg7NNHWQmQbZpmWq4mwAhCDm",
+    "similarity": 0.0810049019607843
+  },
+  {
+    "candidate": 341960757233091430957,
+    "address": "1M1KdwWFWhGNYp3EiXiDh8Xn9q5A4bSFJi",
+    "similarity": 0.08088235294117646
+  },
+  {
+    "candidate": 387289696661656924252,
+    "address": "1EnPkZwQnKAZs6wuZQZnyTs8xteuGJXgYL",
+    "similarity": 0.08088235294117646
+  },
+  {
+    "candidate": 411063452872497473139,
+    "address": "19R8zw5zv9tdJfUpob87emNRTY7eD6tqHo",
+    "similarity": 0.08088235294117646
+  },
+  {
+    "candidate": 385699998289109797390,
+    "address": "19P2vYzUPYZy6XPvKoP8Emii5iAQcJ67Ai",
+    "similarity": 0.08088235294117646
+  },
+  {
+    "candidate": 396512997238703170405,
+    "address": "19WD6ooqg579ikDXQpGsSmQnNiBePZBsyf",
+    "similarity": 0.08088235294117646
+  },
+  {
+    "candidate": 385699998289059465740,
+    "address": "19hZVf8Y179sUrGTm8J8NmDPAT4s65DR4h",
+    "similarity": 0.08088235294117646
+  },
+  {
+    "candidate": 393051347490340603872,
+    "address": "16JmC1XjN2qeMCRHyitVxPa1o9gmSndrn4",
+    "similarity": 0.08088235294117646
+  },
+  {
+    "candidate": 338322646789762396945,
+    "address": "1LJT7GVwoGJ6vhcQhbWVikCkd6kyDYbDhe",
+    "similarity": 0.08075980392156862
+  },
+  {
+    "candidate": 484743677864025740928,
+    "address": "1G7fihuY2RTRo5KvbdYJ53CGH1RhSvvh6j",
+    "similarity": 0.08075980392156862
+  },
+  {
+    "candidate": 386814073789116140205,
+    "address": "199pS8S7vrjuzebCe4iYg7eraa2fiHi2Y5",
+    "similarity": 0.08063725490196078
+  },
+  {
+    "candidate": 448174487658159632476,
+    "address": "19SKgBQBudtvq5GeH4KGgbeQhx2Gbxf982",
+    "similarity": 0.08063725490196078
+  },
+  {
+    "candidate": 344799992865393561067,
+    "address": "1C9V1wtR1hycgXByP77sDZ8JoBcwzNZG3o",
+    "similarity": 0.08063725490196078
+  },
+  {
+    "candidate": 402950329998602352458,
+    "address": "1JB6kE7tFpFLZcQ5usZkycCZ873CsAEha1",
+    "similarity": 0.08063725490196078
+  },
+  {
+    "candidate": 480131991845598353286,
+    "address": "19rZAHjE5RKScS2vJipGg6RJtoeChSi7Cq",
+    "similarity": 0.08063725490196078
+  },
+  {
+    "candidate": 385699998289093019292,
+    "address": "1c1cRQ6PtewiuWY2N9cGkWnwoqzqm2pjH",
+    "similarity": 0.08061454004803477
+  },
+  {
+    "candidate": 563718449085206548660,
+    "address": "1DeMi5qoqedKxj3AbQ1onmjjQ4oM6uen79",
+    "similarity": 0.08051470588235293
+  },
+  {
+    "candidate": 343113678781059002136,
+    "address": "1C7t9su2q5nzx6QTT8Pi2eoMeqVWWVojEM",
+    "similarity": 0.08051470588235293
+  },
+  {
+    "candidate": 381084454650189464538,
+    "address": "15G41wjPEjw5AuZsX3rcK8yEAq1PW52iGV",
+    "similarity": 0.08051470588235293
+  },
+  {
+    "candidate": 378783011405478573725,
+    "address": "19KZySvagcGmDFz1UUwjYAbmfpXW9kKUid",
+    "similarity": 0.08039215686274509
+  },
+  {
+    "candidate": 421439753947576942343,
+    "address": "19zeMB1YZR83WZ6h5EXjKQpawGLeR1Z9gZ",
+    "similarity": 0.08039215686274509
+  },
+  {
+    "candidate": 449182903361961817695,
+    "address": "1w7tNzW2LiWyPTewiDNV14w6tqmC3jdNB",
+    "similarity": 0.08035530479203995
+  },
+  {
+    "candidate": 307296555513174257756,
+    "address": "1JnQjwa9PmBQCnQtT1kK8mXxhuwkN7WYdJ",
+    "similarity": 0.08026960784313725
+  },
+  {
+    "candidate": 438941817996446495694,
+    "address": "1EQbDvFhfi2Xmxo2WiFff1CgDSLiu2J22j",
+    "similarity": 0.08026960784313725
+  },
+  {
+    "candidate": 384503585924892801663,
+    "address": "1JJiq4ZbGNdePvKn4FUkiWCKLYwGuUhgp3",
+    "similarity": 0.08026960784313725
+  },
+  {
+    "candidate": 402950329998602353224,
+    "address": "1CfKZhQcKhzpVAX6eFCwqZCRGFnuTHemdZ",
+    "similarity": 0.0801470588235294
+  },
+  {
+    "candidate": 386137267207618512891,
+    "address": "1BtRSx2jz1fYDe6BxzkRJmcukZ9TajxXoo",
+    "similarity": 0.0801470588235294
+  },
+  {
+    "candidate": 395360075734094710621,
+    "address": "1EC64EvBuYSCUuy2RbXNgp6chsDaHQng8S",
+    "similarity": 0.0801470588235294
+  },
+  {
+    "candidate": 395360141606088337249,
+    "address": "1Hpkm7gnjszPkHCzvEQjPtjgZMsCF629S2",
+    "similarity": 0.0801470588235294
+  },
+  {
+    "candidate": 406345015518392184924,
+    "address": "1HKSvS4dGg6QHrYvkVFjMfGrroWuHC8chi",
+    "similarity": 0.08002450980392156
+  },
+  {
+    "candidate": 408145154058836550216,
+    "address": "13ua8D9dSf168QjN1dZnSLK6HGx7Z8tMrp",
+    "similarity": 0.08002450980392156
+  },
+  {
+    "candidate": 371861082613334689640,
+    "address": "1NqJtpaEUZP3xTiZbmQsgsV43s72dRUUtv",
+    "similarity": 0.08002450980392156
+  },
+  {
+    "candidate": 381084454650189464424,
+    "address": "16s2YxbMZ9uoMjuVsBwVqhCKCHk29dTngd",
+    "similarity": 0.08002450980392156
+  },
+  {
+    "candidate": 385699998289093019318,
+    "address": "15GHMCaM7GMz42YuKPBVgk1KWQvLtEvjf8",
+    "similarity": 0.08002450980392156
+  },
+  {
+    "candidate": 549333565271084593244,
+    "address": "178HhjPGLzfktFbJSHs3yareJqZ4eN7EUn",
+    "similarity": 0.08002450980392155
+  },
+  {
+    "candidate": 484743677864025740293,
+    "address": "12qdm3whuV8J9TSVppskQW7kNqZvzaPLYp",
+    "similarity": 0.08002450980392155
+  },
+  {
+    "candidate": 577157000375257737800,
+    "address": "19EYfUTww9iaGo5XruWPT4iTameAxxAyVx",
+    "similarity": 0.07990196078431372
+  },
+  {
+    "candidate": 385700002687139531278,
+    "address": "198EZBoLdbQP9FE7PuQ54S7Bgi4wR5GPBk",
+    "similarity": 0.07990196078431372
+  },
+  {
+    "candidate": 395360139407065082540,
+    "address": "19qhWo9WHm2cMQZBoujykH5KGrctvwf521",
+    "similarity": 0.07990196078431372
+  },
+  {
+    "candidate": 381156512244227393387,
+    "address": "1LTrYuSaktz39bWFHbqvRD66vAawN7rb3J",
+    "similarity": 0.07990196078431372
+  },
+  {
+    "candidate": 396512997238703169483,
+    "address": "19Mgd5vZ1qa52ZksFuwW1RLcc1zFrjHJQk",
+    "similarity": 0.07990196078431372
+  },
+  {
+    "candidate": 343041621143662447116,
+    "address": "1D7Z9uiEZxKcrQ72m726EFjRqhfqa3Xhht",
+    "similarity": 0.07977941176470588
+  },
+  {
+    "candidate": 381084313912701110120,
+    "address": "1MvRmY13E8bCtKfV3uaewLYwhFS6DbQ8Gw",
+    "similarity": 0.07977941176470588
+  },
+  {
+    "candidate": 342106057917165432924,
+    "address": "1Hdufm97fJE877joskKfguBdxhWihxmt48",
+    "similarity": 0.07977941176470586
+  },
+  {
+    "candidate": 259026937057298589556,
+    "address": "1Nb7i869LYXyjgv1zo2ssa55eC67Sde6ED",
+    "similarity": 0.07977941176470586
+  },
+  {
+    "candidate": 381084454650189530984,
+    "address": "141Zt1vbQbkxBQWqHAvtmKpso6ZrJu7qui",
+    "similarity": 0.07977941176470586
+  },
+  {
+    "candidate": 393051347490338505817,
+    "address": "1DTsZadDMgr8Z3g8D7G2Cnv6pCSSBP1geY",
+    "similarity": 0.07965686274509802
+  },
+  {
+    "candidate": 402950329998604450428,
+    "address": "1MZTzEvHgnZ1u2uRdP2o7LUkhNYak4ojPu",
+    "similarity": 0.07965686274509802
+  },
+  {
+    "candidate": 588256203089417843032,
+    "address": "18ERb1kk58znNzzKbK7DoLC6ysxAUarpB",
+    "similarity": 0.07957759902405552
+  },
+  {
+    "candidate": 447921449309525535432,
+    "address": "1GUafDDzMxsivTu2cutTEWGKDBDAA7oYh5",
+    "similarity": 0.07953431372549019
+  },
+  {
+    "candidate": 435274812002859106055,
+    "address": "1FfvsfmxvHrvkte4wuhLQ2AtAMgFjBCahT",
+    "similarity": 0.07953431372549019
+  },
+  {
+    "candidate": 395360141606088337217,
+    "address": "1JGnjCoGiE9JVH8abd5Cbx666QZQtPwQEv",
+    "similarity": 0.07953431372549018
+  },
+  {
+    "candidate": 402968344397111835260,
+    "address": "1DoP9o62EDAGmPjCkSCLuBoyoqYR1VQg4Z",
+    "similarity": 0.07953431372549018
+  },
+  {
+    "candidate": 396531011637212652407,
+    "address": "1LqUZCu76sVUt14z6GjAHvEhoqHCPjHcox",
+    "similarity": 0.07953431372549018
+  },
+  {
+    "candidate": 417265514163416219896,
+    "address": "16TQf5LAxhfXWYSkbV2ix6BLZRgmGCeMVP",
+    "similarity": 0.07916666666666665
+  },
+  {
+    "candidate": 416828066830873936107,
+    "address": "12Dvs69f28vA8npHqwnj1eQo2tCVYEXVC6",
+    "similarity": 0.0790441176470588
+  },
+  {
+    "candidate": 495225532848791181997,
+    "address": "1LPBkdyMo6gX8paezJajzVDgycoS9P4BnY",
+    "similarity": 0.0790441176470588
+  },
+  {
+    "candidate": 360552801990695040540,
+    "address": "15NjeDhgPNqhJpscxNW5ghUNf4RSxymiRM",
+    "similarity": 0.0790441176470588
+  },
+  {
+    "candidate": 484743677864025768128,
+    "address": "1DmMAw6LJM6DqadZ8HQjzKDdGdsbEQDjJY",
+    "similarity": 0.07879901960784312
+  },
+  {
+    "candidate": 381092538259161706588,
+    "address": "1Foq9LRmidcAMuHfRYmxYmUXEqFLzYFwMN",
+    "similarity": 0.07879901960784312
+  },
+  {
+    "candidate": 395360141606088337123,
+    "address": "1PnJZzjfisgp8J6EmR2TLcTtEwczEda53N",
+    "similarity": 0.07879901960784312
+  },
+  {
+    "candidate": 393051347490338505861,
+    "address": "169hDVYE3RqhiSDmPd2vaniTWWGEWsMVN3",
+    "similarity": 0.07879901960784312
+  },
+  {
+    "candidate": 416828067929149553500,
+    "address": "14sXgSv7WUZsE5Z8vr7j5cMvK2J4LojB2A",
+    "similarity": 0.07867647058823528
+  },
+  {
+    "candidate": 416828067929850343198,
+    "address": "1CYE7hzhZjipuDCZRwfKDyC6fQY5PxkXJk",
+    "similarity": 0.07855392156862744
+  },
+  {
+    "candidate": 416828067929149554435,
+    "address": "176QnRtWvgni6XFznwKj321wy8ZDCjoJMv",
+    "similarity": 0.07855392156862744
+  },
+  {
+    "candidate": 385699998289093019339,
+    "address": "1M9a19ggXq3U1bESLuikpV8cxeq7tf2a9k",
+    "similarity": 0.07843137254901959
+  },
+  {
+    "candidate": 343113678781059527255,
+    "address": "12C6mpqbo2BwCKLxx27MgFU4oLqXYiaj8b",
+    "similarity": 0.07830882352941175
+  },
+  {
+    "candidate": 342537218028755579478,
+    "address": "1324EvrbpZWPmwxfZucnqvvBEUoTCFc4vT",
+    "similarity": 0.07806372549019606
+  },
+  {
+    "candidate": 416828000488482045710,
+    "address": "1HM2qQEC155WrEWHdnUugiCayFszbkJyxh",
+    "similarity": 0.07781862745098038
+  },
+  {
+    "candidate": 449181926537781711692,
+    "address": "17LexSnccUBsUP9mPb8jhGCVGAaPNSsWiU",
+    "similarity": 0.0775735294117647
+  },
+  {
+    "candidate": 386123703920571003386,
+    "address": "1EuuZZhADJrNKHRQa9qJgmcWRdQUVbEpsk",
+    "similarity": 0.0775735294117647
+  },
+  {
+    "candidate": 416828067929149554499,
+    "address": "1AFtdvVxPfBErH1xqGGqgmj99VTgy6M7jV",
+    "similarity": 0.0775735294117647
+  },
+  {
+    "candidate": 396512997238703169445,
+    "address": "1FVb96Bhrk29YjuzetfbgmVP5G218n2yN6",
+    "similarity": 0.0775735294117647
+  },
+  {
+    "candidate": 449182903361920094388,
+    "address": "12TbmmKiEUPkpN264u3kAax6Eos7N2Qhzr",
+    "similarity": 0.07732843137254901
+  },
+  {
+    "candidate": 271560238720556169453,
+    "address": "18DAr79pbNdt7ekExN2jCAFqiyjmzgia18",
+    "similarity": 0.07659313725490195
+  },
+  {
+    "candidate": 395360141606088337141,
+    "address": "1CWymy56m9PrvsBk8A2jpX1CHESfY1UuCd",
+    "similarity": 0.07659313725490195
+  },
+  {
+    "candidate": 381085580550096308074,
+    "address": "1NvDiNCFSCAdKpeE2ejTQDePK8qBT83NjP",
+    "similarity": 0.07463235294117646
+  },
+  {
+    "candidate": 396512997238703235957,
+    "address": "17vTi6uSJLk8uYeLxkw6UJ9q79pyRgkosk",
+    "similarity": 0.07463235294117646
+  },
+  {
+    "candidate": 416828075530178856802,
+    "address": "1GTkaW5ehbTWVkSgkj9hngGaNsFewgqWhp",
+    "similarity": 0.07450980392156861
+  },
+  {
+    "candidate": 416828067929283772165,
+    "address": "168kg2MzjxbmSMZD5j9gr1z8Yn8uJnFGhg",
+    "similarity": 0.07450980392156861
+  },
+  {
+    "candidate": 402950329998601304697,
+    "address": "13vgNEmfogYpnna9Ji1qmHpHymrwwQe16j",
+    "similarity": 0.07450980392156861
+  },
+  {
+    "candidate": 415675145148009325241,
+    "address": "1CvmTcaJCGcQNSY7Dzw9DDdtp57kB5bp1z",
+    "similarity": 0.07438725490196077
+  },
+  {
+    "candidate": 435274811000733836157,
+    "address": "1EvYNXF2NaNLpS2Dsj1yMviC2ibftRNx9U",
+    "similarity": 0.07438725490196077
+  },
+  {
+    "candidate": 524267359670062107064,
+    "address": "1NvFF6aaSrZinkJda7iTh6ssZ9ApUty3qx",
+    "similarity": 0.07438725490196077
+  },
+  {
+    "candidate": 484761692262535223172,
+    "address": "14vMuqaNmuVpzp9R6XVbQwbJAEfdL4zGgo",
+    "similarity": 0.07438725490196077
+  },
+  {
+    "candidate": 385699998289093052936,
+    "address": "16CkVEbGKXK71jEWebiqTwASexy5R752Xw",
+    "similarity": 0.07438725490196077
+  },
+  {
+    "candidate": 395360089470617481304,
+    "address": "1N95nHWjNs3hfCBupcXJxngKByD9BNjCRG",
+    "similarity": 0.07426470588235293
+  },
+  {
+    "candidate": 416828063531103043335,
+    "address": "1HbBUEw5x58UMnaBwzMHo2u4YAT85vdRh7",
+    "similarity": 0.07426470588235293
+  },
+  {
+    "candidate": 343113678781059001986,
+    "address": "1GKHNEo9XPoeQQDjpPKaDrTvg7t2xJz4hb",
+    "similarity": 0.07426470588235293
+  },
+  {
+    "candidate": 438941816896934868862,
+    "address": "1Et1Bm5j7UUzf1kSFprBBcHv5nd6VpVTvG",
+    "similarity": 0.07426470588235293
+  },
+  {
+    "candidate": 386136775161345316131,
+    "address": "1AY6FLZm3bXzFQpVpDAoJeeeBZkC1XhgRG",
+    "similarity": 0.07414215686274508
+  },
+  {
+    "candidate": 381084454650189464575,
+    "address": "1AbPnaabSwrWsBKdP3JcqW91HRsLQhA6h7",
+    "similarity": 0.07414215686274508
+  },
+  {
+    "candidate": 402950329998535244542,
+    "address": "1EqkENYj8P6Nv8nGLhkLYFw9QA4KY7rYtX",
+    "similarity": 0.07414215686274508
+  },
+  {
+    "candidate": 395360147198199989827,
+    "address": "1GUkFNWJfNFeSqmSFb9CvBWBnreTfkJ5DJ",
+    "similarity": 0.07401960784313724
+  },
+  {
+    "candidate": 495226658776469122265,
+    "address": "1Bziio5jbnYCz7x913hLTVYwuFC9z2dFnX",
+    "similarity": 0.07401960784313724
+  },
+  {
+    "candidate": 509812530068640688696,
+    "address": "1Cy7xEN6ZcAVRaM6n8xeEUrRtmYhjttxtb",
+    "similarity": 0.07401960784313724
+  },
+  {
+    "candidate": 417108721131514024112,
+    "address": "1GEkhtB8f9CsVQ2XejuA9urdxithpoCXu9",
+    "similarity": 0.07401960784313724
+  },
+  {
+    "candidate": 419133910938363248391,
+    "address": "15JkTPcJq9oDUUPKpSpcKbSUfZRZyGhXEg",
+    "similarity": 0.07401960784313724
+  },
+  {
+    "candidate": 258509704879389574594,
+    "address": "1Qjvzyfjhmup7Se2C2MZjhivU61CLwBd4",
+    "similarity": 0.07399451031222601
+  },
+  {
+    "candidate": 381084454650189464554,
+    "address": "1jHFC4SjZEuf9ZLAtVjFmVd3ueYAtm81e",
+    "similarity": 0.07399451031222601
+  },
+  {
+    "candidate": 395360147199273748494,
+    "address": "1GCgRMe1GSu8h6ArD1AcxDDjAHK5bJvURG",
+    "similarity": 0.0738970588235294
+  },
+  {
+    "candidate": 384073923379992084988,
+    "address": "1AvrqHBecAuxf8DJeLBbdEHEscSK4XbpVr",
+    "similarity": 0.0738970588235294
+  },
+  {
+    "candidate": 524267359670062107309,
+    "address": "1FVxv4gPMWuSj5U2AbPLX7z4xVh7nzeRQG",
+    "similarity": 0.0738970588235294
+  },
+  {
+    "candidate": 484779706661044705156,
+    "address": "138MTrkB5pePTqWpwYtHhKk1D4M2fzhPhn",
+    "similarity": 0.0738970588235294
+  },
+  {
+    "candidate": 386135957398677417016,
+    "address": "14XksRYtAiKLjNcAT4Li8dAWxGwZSqvbrs",
+    "similarity": 0.07377450980392156
+  },
+  {
+    "candidate": 278554578157331260452,
+    "address": "1FgkwaMYABAi5Kx1CX7VyEEfWx5upqaJv7",
+    "similarity": 0.07377450980392156
+  },
+  {
+    "candidate": 393051347490338505794,
+    "address": "1AukDkEVac71iVeywKW96AMcQ6MyYqknT9",
+    "similarity": 0.07377450980392156
+  },
+  {
+    "candidate": 416828067929149553516,
+    "address": "173Lmsc8RBAZApyx3JpaNGi4NLjMr2R75G",
+    "similarity": 0.07377450980392156
+  },
+  {
+    "candidate": 381084454650189463630,
+    "address": "15tfThbwVhrczKCpbZhNDyN9wCzXegqAhT",
+    "similarity": 0.07377450980392156
+  },
+  {
+    "candidate": 385699998289093019213,
+    "address": "1ggQaxKqmhnPkPYEU5VpPLiDULmiWdx6j",
+    "similarity": 0.07373527505623118
+  },
+  {
+    "candidate": 449336280260611619453,
+    "address": "1KccisFutJU2kT4HDPeCHh1M4KDkxq2h5w",
+    "similarity": 0.07365196078431371
+  },
+  {
+    "candidate": 328261455903157534470,
+    "address": "1Bqf5E5TyhLmKuQfsRzD6dUR2uh87QZGjz",
+    "similarity": 0.07365196078431371
+  },
+  {
+    "candidate": 336017929680459457333,
+    "address": "1BvK8J9yxn6kZpfvhb3FZzDAmSYhWU82Ha",
+    "similarity": 0.07365196078431371
+  },
+  {
+    "candidate": 396512997238703186807,
+    "address": "1KveMPQ6wJy68ct9MLXkyV8d5vzYCpuTmN",
+    "similarity": 0.07365196078431371
+  },
+  {
+    "candidate": 388439661471911118816,
+    "address": "1FzKjW9sv5FQ8hUbjS6ZyNrB5dgF2KvRaG",
+    "similarity": 0.07365196078431371
+  },
+  {
+    "candidate": 402950329998602352356,
+    "address": "1QC32fXM4RuBj18gVHyy8hP4zFXewPNAhp",
+    "similarity": 0.07365196078431371
+  },
+  {
+    "candidate": 416828067929149554433,
+    "address": "1GTksTgbCL1ZpnUDHNe1dU1pJBszxPBim1",
+    "similarity": 0.07365196078431371
+  },
+  {
+    "candidate": 402950329998602352368,
+    "address": "1fbBdYTjhRDS7byym2sGfG51Uhq592PoX",
+    "similarity": 0.07360565742823377
+  },
+  {
+    "candidate": 443562784047530471516,
+    "address": "159Ubt3ja12QRv8SBaZKG7ZxiWPNtGhJUB",
+    "similarity": 0.07352941176470587
+  },
+  {
+    "candidate": 385696140668616855421,
+    "address": "1HF6jC2srdSZFKHsy5jK2XTx48PfwApUhW",
+    "similarity": 0.07352941176470587
+  },
+  {
+    "candidate": 271632545496256553855,
+    "address": "14v3AYEmNgKNhbDZLaNwDupTEstwHJaU41",
+    "similarity": 0.07352941176470587
+  },
+  {
+    "candidate": 395360141606088337106,
+    "address": "14wkyiuH1Wt5JTx1CwxFLXxnMk8UWJ1qst",
+    "similarity": 0.07352941176470587
+  },
+  {
+    "candidate": 343113678781059002070,
+    "address": "16bkJkg4Dba78enXN5XRz4JYtsTBtWy8gc",
+    "similarity": 0.07352941176470587
+  },
+  {
+    "candidate": 343113678781050614357,
+    "address": "1MwkDG2eoyBTExxMPdFg4w8JuDuKWjEmYD",
+    "similarity": 0.07352941176470587
+  },
+  {
+    "candidate": 395360076829455854841,
+    "address": "1CpG1XSoxP41dY6P8XTJAEs7xDkqtqpx97",
+    "similarity": 0.07340686274509803
+  },
+  {
+    "candidate": 343113678781881066365,
+    "address": "1PVC9Qfx66Cnc97dv3w6UB3E2TdkWDd2hk",
+    "similarity": 0.07340686274509803
+  },
+  {
+    "candidate": 395360076830516321100,
+    "address": "1Lxzxr1rByuEdMV37NpJyeBtJXBk8vexVZ",
+    "similarity": 0.07340686274509803
+  },
+  {
+    "candidate": 406744393836766208893,
+    "address": "1GPFWipvffvH7t2aTGLw9TfUzZQQg5hCFH",
+    "similarity": 0.07340686274509803
+  },
+  {
+    "candidate": 395360310632832820685,
+    "address": "1MeJi1B95MYGmiG7GdYFjYoXMQzpW9tvVV",
+    "similarity": 0.07340686274509803
+  },
+  {
+    "candidate": 395360141606090435242,
+    "address": "18YDgbcStQ26idgJNqY24SxqELdbF8igSG",
+    "similarity": 0.07340686274509803
+  },
+  {
+    "candidate": 438941817996446495797,
+    "address": "1J96u9Q9xmqbCmoR5XrSRDPbcuvjkq7xxs",
+    "similarity": 0.07340686274509803
+  },
+  {
+    "candidate": 395360141606089386671,
+    "address": "1Psk2dXwT3bAwbmryZcCYUFgYAvq9zc5fK",
+    "similarity": 0.07340686274509803
+  },
+  {
+    "candidate": 384073923412019726186,
+    "address": "1M44U83KiGUDHTo6mamEs5UJeq6D2FhmS",
+    "similarity": 0.07334642217223897
+  },
+  {
+    "candidate": 416828066830873982862,
+    "address": "13wktimGvKJVAdZaYmftjwEeuHxbkyBHFp",
+    "similarity": 0.07328431372549019
+  },
+  {
+    "candidate": 549333565271081316108,
+    "address": "1PoJeJNz1YxZh6nMQPq1Btb93P4KuoGxVv",
+    "similarity": 0.07328431372549019
+  },
+  {
+    "candidate": 393049095707851965397,
+    "address": "16QaVAGG6hfcgHT5SBiXMGcAQ2D6r7hoXE",
+    "similarity": 0.07328431372549019
+  },
+  {
+    "candidate": 419133770201642782900,
+    "address": "12exEea9PdgZcjVgPeYhPrvbeusRb7o3HE",
+    "similarity": 0.07328431372549019
+  },
+  {
+    "candidate": 385699998289093019197,
+    "address": "15ik87KSDXXgUpfeNdmyNRpiPePbB1rDbT",
+    "similarity": 0.07328431372549019
+  },
+  {
+    "candidate": 399531198723899016135,
+    "address": "1xSFVckjeR7Tk5bGZr3DNQhPgbhJ2PJmp",
+    "similarity": 0.07321680454424155
+  },
+  {
+    "candidate": 484455447487874269204,
+    "address": "1JSaihiHGyEcKBswJqS2U7sQLD8538ELa8",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 343041621169892157057,
+    "address": "1HecarCKvU2ivKgCgL5mPkGJpXSFW2oxFV",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 306148658408941262824,
+    "address": "1Kvr2Vrc72xGjxG6Z3KxwJHwVJ5aY5i7ij",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 449318178891707805452,
+    "address": "1BvCgnxCkectsRXp27K4eCxYg4ZenmSMAh",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 343118189502058241928,
+    "address": "1H5hLnaHyCZ95QM6CAR3zJeTfBvPWFfsCZ",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 384073923379601431212,
+    "address": "1EvfpxuHGuCmzZyStJYL99BXyKZ1hdzugc",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 388438724608522940764,
+    "address": "1KtriKWcPK1MrnsW5hqbqGAXUV77uYZdGZ",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 452214198931709195871,
+    "address": "1CVDmXY3KyaH8MzcyKkWLUUgBBsVcCZxYZ",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 386137210014776014364,
+    "address": "1HFSKEeJUHF6vbXA9K7WNdyY5Ymuknozyy",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 402950329998535244415,
+    "address": "144wVZaGKP5h8iRMHRAy92pqqDcMJXcESZ",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 381084454650189464499,
+    "address": "1LL1ivqwmBAuBRcD3bMn8L1ZqJobd6GBYQ",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 385699998289093028365,
+    "address": "1N7CiC3N385EHBfQ3zeH3jt5kGhbTgTWsb",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 416828076725242576647,
+    "address": "1A31imYtkBomJRD4kBphYTZe432brhUHXh",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 484743677864025740313,
+    "address": "112u16a3byP98FPaEiX7C8RJv77kLT4VbD",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 550524282588278766204,
+    "address": "1P9ERXejpNCZyWXTJAS5vd3reUimJGm7T8",
+    "similarity": 0.07316176470588234
+  },
+  {
+    "candidate": 276956448953609822464,
+    "address": "12kB17vjBJkw8znJ1atvTTe2NNyvtEmnL8",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 271196624292142925666,
+    "address": "1L5nYVh2fXzZj9qmpTuUniN5bUFhLVmyiP",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 416828349542801232312,
+    "address": "1C3SxcVTfmiZ9dE9kcawLUbzExBoLQ9sEp",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 345419521790570997320,
+    "address": "1BzmZYw11wzZ2fnNtNRWYwsp8yBaPFh1iK",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 448174487658255437307,
+    "address": "1AaSKvrjct3yNmFwzwtvRLEQQNfsW7y5Q5",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 438941677258958141311,
+    "address": "17h3NjeJ869X9bG6jxtU7fD5uYgvn1zxLA",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 381088312270665632269,
+    "address": "1LzMxbeNMeifkbzy9fpe1R7UzeDZLWQx3B",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 393051347490338505882,
+    "address": "14i4Waijysnvbj3FexKnDhnfBbqEWb4r7r",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 416828067929149553621,
+    "address": "1PFDfxoj3beWpWHnfFCyGPqUQkMiWk9Ymg",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 381084454650190514026,
+    "address": "12k6ifpHLCKrakX815sHTyBup2kdjezdiU",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 343113678783206486614,
+    "address": "1Jx4gYrS5h2PgfiDtqWG7AeRhprVBqfozP",
+    "similarity": 0.0730392156862745
+  },
+  {
+    "candidate": 406734824237047522173,
+    "address": "147hhdjtXpAhtyKTSzoMdZsvqqiCwkE5MG",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 386136772824816035651,
+    "address": "1LYEW1adWeiCjwwVidfpqJ6nFD5bThgSnY",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 451853300919640354908,
+    "address": "1EvuDtnkhsFiWHGewSY2mAzUvq9muMKvRW",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 451818631114566580901,
+    "address": "1AUeNk2D1Vdzuns3kHts7C2tRtk8CCPxjQ",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 386379766421467182659,
+    "address": "1PeXkvLpkaFaNF649yLW9z6JLqaYYCyA8G",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 438941817996446495724,
+    "address": "1AQ4G97sYouEpgkF1NnK4bEGgxBHBqTQuY",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 402950329998602352470,
+    "address": "1FMQ88Pj7ZXFFbTAKDKzLieBQDx54czzeY",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 438941809200353474430,
+    "address": "1LkmrE3UmBCva1h8mEb9zXxV9xgXPATR72",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 416828067937739489029,
+    "address": "1HBTiP7uv1yyxP25ZWEBYHGTgdpGUCTVmM",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 438941817996446495830,
+    "address": "13dhM7zVzdtFFVqj6YJkQzNqTTC1W1hUGJ",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 381084454650189464468,
+    "address": "15ULJEGbRaz5DVP8Cd5UUA2drErX4XZXv5",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 528658407239865877445,
+    "address": "13rfA3a1D3BtdZshmD1h7w8L14qRrNxRaw",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 381084450252142954344,
+    "address": "1CPvqEmNkg7H95687hZzrHyY49VZR2kmdq",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 402950329998535243573,
+    "address": "1JwAGepuxr5oS1YNmQtEzH2vZCmJW6hZLQ",
+    "similarity": 0.07291666666666666
+  },
+  {
+    "candidate": 448426580260062255275,
+    "address": "1vWSe3ipDyfm8JVhSEdxc7NYhTZ7dTU5S",
+    "similarity": 0.07282795166024933
+  },
+  {
+    "candidate": 331482544546116235421,
+    "address": "1JEYwz69ficzibu79CbZRCSHdyHCo4xLHR",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 271578271388442374650,
+    "address": "1NgaVgkTxn7k6bb62vS233eYh71g8khgEz",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 408757555167703430751,
+    "address": "1EgWcEChvaomPjdFZNR3UxBqyUCeJ4eNR8",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 393051347490338505830,
+    "address": "1HYfZECQ6ay7esMcZZCS2ZtzMr5yLBY425",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 416828067929149553448,
+    "address": "1PK3wPc89oRZesA6yrKp128K1E9yuq627i",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 343113678231303189077,
+    "address": "1PWSsRvjRLYHxusLyey551vEZkpfJ6Ys4v",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 484761692262535223173,
+    "address": "1KR3TE5kFgYmjCTiaHUK6JPhcBZSSGYW6V",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 381084454650189463586,
+    "address": "1CTWc3N3Lh7z8WDsqTeM2Dm7v6scGLjHUA",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 396512997238703169602,
+    "address": "1PoGtNWFygBZgJennAUkDuSkjRDehqMYye",
+    "similarity": 0.07279411764705881
+  },
+  {
+    "candidate": 448174470065957859420,
+    "address": "1CEjVsBjGGPtYe18CCqYiP7rx14Msy6zZ3",
+    "similarity": 0.07267156862745097
+  },
+  {
+    "candidate": 563686651757118287960,
+    "address": "1NmeYfGMgtug8ad6UJRFLejdmjBXaBPPvv",
+    "similarity": 0.07267156862745097
+  },
+  {
+    "candidate": 395360147199273775891,
+    "address": "1JLe3BaFt5JgKy9MjP3T7aQBU6ZyowuXEn",
+    "similarity": 0.07267156862745097
+  },
+  {
+    "candidate": 416828067929149552391,
+    "address": "1HZ5541bEv3W8ppJSF9fD54sHyi9VqS1SD",
+    "similarity": 0.07267156862745097
+  },
+  {
+    "candidate": 484743677864025740269,
+    "address": "1QLBs4fgSmRsFMjGjUV2ckfBhZZkTZyxbT",
+    "similarity": 0.07267156862745097
+  },
+  {
+    "candidate": 393051347490338505865,
+    "address": "1F9innaX9oyyA8eaZrDGCZ45Shzo7exsmR",
+    "similarity": 0.07267156862745097
+  },
+  {
+    "candidate": 396512715763726459764,
+    "address": "17P1SHmjArzspcB8KCdBSwMhAz6SbgLX5q",
+    "similarity": 0.07267156862745097
+  },
+  {
+    "candidate": 402950329998535243507,
+    "address": "12WaRPaeb2Qj3GBrZLo6SQmuqf1Jt4W3iQ",
+    "similarity": 0.07267156862745097
+  },
+  {
+    "candidate": 396512997238703169429,
+    "address": "14mDmcLxQh4zRJSpteZvyyNPPv1bLybJg6",
+    "similarity": 0.07254901960784313
+  },
+  {
+    "candidate": 392907232302262650851,
+    "address": "16jypzMTJh5hr6srz3KeDXt4VRJCZSmnbj",
+    "similarity": 0.07254901960784313
+  },
+  {
+    "candidate": 385699998289093019215,
+    "address": "17XPCssj2Cn3HK3RoAwBkPZ4PkZzetZDUJ",
+    "similarity": 0.07254901960784313
+  },
+  {
+    "candidate": 416828066830873936376,
+    "address": "15LqHNzqt8TfzrWDNPCdfFRxX2ZFB6h33y",
+    "similarity": 0.07242647058823529
+  },
+  {
+    "candidate": 448174961571105808718,
+    "address": "1Mfaqb1zfLY8RJbbZH32z9Byk2PgrTYDii",
+    "similarity": 0.07242647058823529
+  },
+  {
+    "candidate": 416832570252243542837,
+    "address": "1MBZxg5kfTxFGiofcsdn4NNsumZqwLHZcU",
+    "similarity": 0.07242647058823529
+  },
+  {
+    "candidate": 447956941019914483267,
+    "address": "1Ayww7jz3tuKGHswcyruBKPNBpSrps9P7C",
+    "similarity": 0.07242647058823529
+  },
+  {
+    "candidate": 402950329998602352404,
+    "address": "1ChoXcryhsRwHBuaZkrWdex1UZtBFPhrp6",
+    "similarity": 0.07242647058823529
+  },
+  {
+    "candidate": 381084454650189464557,
+    "address": "1FmLFksrrMDMJ98PV1QS7tTAoPLKZzG3h5",
+    "similarity": 0.07242647058823529
+  },
+  {
+    "candidate": 381084437058003420101,
+    "address": "1FRDnaoCLas9G46pGNWMJ8f6pCcy6an4mG",
+    "similarity": 0.07242647058823529
+  },
+  {
+    "candidate": 385699998289093019175,
+    "address": "18p82eNYrhUt6DR83VStDu69UPyKijzYeW",
+    "similarity": 0.07242647058823529
+  },
+  {
+    "candidate": 333817716790653774350,
+    "address": "1DaEohjqYKWZ7ZsqQKJbSPkGurtSfpE4xC",
+    "similarity": 0.07230392156862744
+  },
+  {
+    "candidate": 417072692334480379964,
+    "address": "1Cpy14gdqbui3KW8DP8QWXJ2xB3kJTaXiR",
+    "similarity": 0.07230392156862744
+  },
+  {
+    "candidate": 416828349404126265093,
+    "address": "15CNeWX6EhSG6f7VZwpuxCibEvqMz2RFai",
+    "similarity": 0.07230392156862744
+  },
+  {
+    "candidate": 381084454650189469544,
+    "address": "14fXWC8JB8U4ZH78nXDqnMcP5SWf5qe748",
+    "similarity": 0.07230392156862744
+  },
+  {
+    "candidate": 416828067929183108870,
+    "address": "14bExaGDrBQGMbxg8hMuPkqn4XxTW6Q3F6",
+    "similarity": 0.07230392156862744
+  },
+  {
+    "candidate": 381084454650189465537,
+    "address": "1JSsDXtjycMDUMozyX9r1LUWwqe3iNLfYF",
+    "similarity": 0.07230392156862744
+  },
+  {
+    "candidate": 416828066830873936853,
+    "address": "1Jnq7Fty5EUrx8YVje6cHKCaMDNPzi8eLG",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 343113678781328462570,
+    "address": "1BSQbZysvpuu6qDXZaHPKkp9CQnWjHJivh",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 342034301475232620878,
+    "address": "16NTds9BeteV44pSgEc6GyY8og8k9LHx7K",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 376693407080385694136,
+    "address": "1N8CQHoaM71T8wTRHRaTwJ4ZRGHbwuWGCU",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 275457225178733760985,
+    "address": "1E1i4vxaUMAGjAxZmGqaPTZzokA6MwqxtQ",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 381371761429770773574,
+    "address": "17d6ZPHE8QuusYMsvoKVYouv74ZsvfWoAr",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 393051347490338505751,
+    "address": "1LCSitT6WLFj4SgZ5ff3oHR6qypqrDxD7T",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 395360141606088337153,
+    "address": "14bQmQvyN5mV2wF2rxcZRtm69pfUZBJshA",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 438941817996412942206,
+    "address": "1KxxqLX4e4BR8csu1q7YbbZZUAiRQzRrkc",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 381084454650189727598,
+    "address": "15sP68uDg6DRgdiettACP4K6MDPrfeisha",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 484743677865099483012,
+    "address": "1Cvyp3gssLaHYQ8NgJvE2iC7HpCNiLEkn9",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 438941817996446495757,
+    "address": "1JdPvhdnpreZGUz885hqtQgR562CvhWYJ3",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 484743677863891523460,
+    "address": "13yoL1AkN1FQcmYbShCJepno5FZ1zqYoBw",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 385699998289093019224,
+    "address": "1LHjZpWwErJRTKjjCnQgFutFDcZFHqcAkq",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 402949204098695510653,
+    "address": "12vRpf7aJTJ6c94LoW3F6UCJNGDefVN1ts",
+    "similarity": 0.0721813725490196
+  },
+  {
+    "candidate": 564402023446902636302,
+    "address": "1K4SUEM8oKE7otU5g39dngi6FbqQ4jDJLD",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 564402019418265939193,
+    "address": "1PbhJA53NhybS2ptMBqVZc94JqujqY9SHX",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 343113678781694046300,
+    "address": "1PAaqHc4Uh2dPzGySBB3ZxXynqCdzeH382",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 588148127899137979924,
+    "address": "13d3fZgikZnZtXovAMT4GK38chZwafxKHw",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 393123405080091810448,
+    "address": "1Kxk26db24GjEyppCq7MPeCygWX7T7dYuQ",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 495225532848791186492,
+    "address": "13PzfpZzbRTt3buheckRRNgMWrTbRN2Mzz",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 521951704756539987484,
+    "address": "1GCKqW24kxQxqDT8wi4reLAT6H99WwjCLS",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 438941817962086758270,
+    "address": "1AFX2YG9GevZTcMGecfaMFgrbQZnMsHzdo",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 381084454650189463684,
+    "address": "13HYJbzT58tZ41Gudp4cTn2uX3ZEkgNyQC",
+    "similarity": 0.07205882352941176
+  },
+  {
+    "candidate": 426051439356890683336,
+    "address": "1AP5Fnh7m49GqxuPcrGZZ79xdqE9VqyyKF",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 386136775161345316141,
+    "address": "17S2R3jxACdQ4asAdYhMR72LwisbZBFZ7L",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 448462773009876349615,
+    "address": "1A3jrKEmfkc3yZLowDSYAuogo8uar8WiQQ",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 343113683180448033883,
+    "address": "1JrBEFCwDCZR8djMwPsx1jrzCRZJgSUyFV",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 386379766077866246326,
+    "address": "1NU5P9Jkx5A7wtX5oGTQRQChS6ya24adhK",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 381083531070480606217,
+    "address": "1Hs4279ZCmmp7eh7bAzhM2Y6z5cWtjdxwg",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 395360147199273909754,
+    "address": "1Kvus1QcCQTPTaQsqUHEsmcFeavDc1Ta5b",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 393051347490338505847,
+    "address": "1Mkvx8eWok4F46sgsZEyDW3dMopbihpffC",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 484671620269987813252,
+    "address": "1KXSVMaokHSAU922haNACy26SMse4FryFX",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 438941817996446488443,
+    "address": "1JwNNpQgFAkgWtHrARxSP7g2eqU2YqdpgY",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 343104671581804261975,
+    "address": "17f79BtUh3b3HjsnqEzfQEYyy4SbTDQ3aP",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 402950329998602353405,
+    "address": "1GEvhaZpSNL98PzktptwTFMP4aZ55kKDgR",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 402950329998535243559,
+    "address": "12Rz7oiJFSU3zBY5wA7vN6CzfnsESMJKhn",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 343113678781059002044,
+    "address": "1MLwfzaG6n1iL8SCfWTSyDH6FWjpiysteS",
+    "similarity": 0.07193627450980392
+  },
+  {
+    "candidate": 381102469048698947432,
+    "address": "1Pjr4mZzF4mQo3m8amS2e4yA8V9bjXCdQk",
+    "similarity": 0.07181372549019607
+  },
+  {
+    "candidate": 393054298596874644140,
+    "address": "1La29MtYhNsYKba3ZtmQKb3mibuLXpJLaZ",
+    "similarity": 0.07181372549019607
+  },
+  {
+    "candidate": 416828062432827425234,
+    "address": "16pJ5RFgf1CYVvKvi6CWKv96ybTNkDoM4o",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 342537808745984391752,
+    "address": "14vxZhNoo5bofXcZhFLwg5Jy2mHomHPuAQ",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 448192493260559777546,
+    "address": "18c72VcYwtut2xqWNsWmyVLYouknnZBrcN",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 550486768250666254526,
+    "address": "16aCQmo1F25xqRXUM1ANEzSndqQhWaN71W",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 449179930706268992342,
+    "address": "1QCUdJ4Hs33QgrfNeCgoLgC9yZUsg8PxcC",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 286610987292643860861,
+    "address": "17pBWV971p9xHJ7SZCvgqFSjAambQ4s5yJ",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 396508881328207110632,
+    "address": "182bqkE1Du3xEQv1ZDqzTxkezWNbZGbg8F",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 396512997238703169438,
+    "address": "1EbKebyE1xzfENfnbP8NmZhoo2gUrqzhfM",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 416828067929149553487,
+    "address": "12qnQ5abUW9NCFWmBKnWETCBxigWCjGQr8",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 484743677864025741060,
+    "address": "1EEmR6mUA7Y3mGq18vAK7HD6WMcN9MhAF3",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 396512997238703169596,
+    "address": "16JYXRaUa2qYxGXAQBiH2gCk72TsmPiYxT",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 433406485386122273652,
+    "address": "1NBxyVxMffWpFk9WhgdEwuM6h9dhgWi491",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 402950329998602352316,
+    "address": "1PCGJCxHD5G285LYTDoiATxbgqd4itzRZH",
+    "similarity": 0.07169117647058823
+  },
+  {
+    "candidate": 544341338957752743453,
+    "address": "1G7gqEeZhTfeBzKiXfeh7mFhhm1XG9ZSLY",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 448174542633725292302,
+    "address": "1LXPb6RwdoQFYbo678HRivmLuqfgkfMDND",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 406023853078267751484,
+    "address": "12CkUv4hmTev7y61e7VwgZENPxFXyUx7nH",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 448453800936428201089,
+    "address": "1C3xbEVPkmk1qM3RXmryrmvCy9C46Y5Edo",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 393051347490338505812,
+    "address": "1EQ48R1aPU5ZcSAYa8i6vYEvocSYVESGVz",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 484743677864025740319,
+    "address": "1BcNLN9c9F1ZW7yA5Gz6TULvoCW2HKuD8X",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 381084454650189464537,
+    "address": "1FCctRwjLCEiY27AnxjGvtCLLx1QMR3cXr",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 395360141605954120364,
+    "address": "16FFyBKecaMX5mg8Sd9tmZgzExZocj1jc2",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 402950329998535243533,
+    "address": "1Cs2v4BjNjFg6nb7uUesrfCmN8TKifZc2b",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 385699998289093019322,
+    "address": "14kHq9Eoehh3GyJWLxAxVRv6R6DB2NSeRL",
+    "similarity": 0.07156862745098039
+  },
+  {
+    "candidate": 448192530984791358671,
+    "address": "18zDroEtfR9w9MEcD7LMeZCCrZsfTjtpb7",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 271578288303438233082,
+    "address": "1PsVq8ribmAD8TX53pWJMoeFo4msPcwCi2",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 588220200680670559808,
+    "address": "1D24qxKRLsakNVwdPHG75Kn6r4HkTqQwcS",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 341960757233091441821,
+    "address": "1FU1VPuJJwKv3AqJshtjuf3Ag1K4cYJnVG",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 416828456675919897648,
+    "address": "1Hxi9nNboDg8d8isttnLgNZKWbgXAgD4hS",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 343041621142586608297,
+    "address": "1FgzEghRfDhVQGvCpjUrVTCMGTRfqJAgMb",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 385732937680896762677,
+    "address": "1KpxijNexDJW1E7XB1tCgJEk9ypGg1UDLF",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 381084454650189465576,
+    "address": "1Lfnv73o55xkxDTrQUwj6HQeJwnRrNYVnG",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 438941817996446495817,
+    "address": "1BGYzZosPzursCu1f3Khmv16UQ3H9Ax5mE",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 385699998289093019208,
+    "address": "1A2Rx6aWnytFEB3XbB1iSmv3RRFxMxrVeQ",
+    "similarity": 0.07144607843137254
+  },
+  {
+    "candidate": 343082160705039277960,
+    "address": "1HiDe8wpZmsw9m98G89PLa1HfqMAXXauU9",
+    "similarity": 0.0713235294117647
+  },
+  {
+    "candidate": 396512997238703169442,
+    "address": "18HkB61QgoXEvz22g4yjVqQW9mcxFPau8e",
+    "similarity": 0.0713235294117647
+  },
+  {
+    "candidate": 438941817996446495665,
+    "address": "1GtePENFyukc9UScVdgTg1Qy5P42aiz3o1",
+    "similarity": 0.0713235294117647
+  },
+  {
+    "candidate": 395360141606088338060,
+    "address": "1cFsYDjkV6udhYwuGAyjsuvfcabTk4bbR",
+    "similarity": 0.07127254012428044
+  },
+  {
+    "candidate": 484743677864025734350,
+    "address": "162WsDNYi1PMm1BNfBBwXX7CoCjbkvaZMV",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 448185461578569099492,
+    "address": "1QKbwGDRbMbvxWsh34yPJjPVowQ8oKMbLJ",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 394783686445762526714,
+    "address": "1Ev3CV8pooUePrgy7P2Uwf2TifWMFGzskr",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 419134189248715199843,
+    "address": "1DxWLFycMrD33Qq9AYBkWmFSgSvFduhqcD",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 416828066829637926662,
+    "address": "1JHnHYaqHmX85rfHQr1xgf1SX2xHmXB1sT",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 343113678781059002093,
+    "address": "1KdYtHnDork5rL2U2Vvj5hEoTao7y1R8h7",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 402950329998635907708,
+    "address": "1H7hw35oFvLmGydArGL74T16DBPqW94CtJ",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 484743677864025740201,
+    "address": "1GKs5ZYo2XKQfdfaFr9Bgf41ys1xcSdxBu",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 416828067929149553612,
+    "address": "18sfmtaDcbgwyWdNWTbFgSDsHEMQ4PdXAL",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 381084454650189464569,
+    "address": "1GzGFTteRSf12pDkj3nFgWzdXcBg2kpx2X",
+    "similarity": 0.07120098039215686
+  },
+  {
+    "candidate": 449380084827979031193,
+    "address": "17SKMEjdvs6zmqijW61j4Yy4Leyu3gstJv",
+    "similarity": 0.07107843137254902
+  },
+  {
+    "candidate": 343113678781089016520,
+    "address": "1KVjNJ1Q8WZZLmKkBkQ2wcCm5niGRKpRFj",
+    "similarity": 0.07107843137254902
+  },
+  {
+    "candidate": 322726020943864963957,
+    "address": "1LexUEbD6LVExNDQeKmjjQVTu3zT6au62b",
+    "similarity": 0.07107843137254902
+  },
+  {
+    "candidate": 402950329998602353272,
+    "address": "14T5Me2M4YXZRQ7thvqf1rCc2ym5M2LdDW",
+    "similarity": 0.07107843137254902
+  },
+  {
+    "candidate": 343113678781059001981,
+    "address": "1KRFcvsfKMemGRj8kKjcNLBzoBxDonyyiV",
+    "similarity": 0.071078431372549
+  },
+  {
+    "candidate": 438941817996446496623,
+    "address": "1J6hmMFHNhX7QTmHTGwYompZEoDMVfZtmQ",
+    "similarity": 0.071078431372549
+  },
+  {
+    "candidate": 395360141606088290396,
+    "address": "16tNRHdgi8n7J8YUEPSoh1t66hebCRfXTQ",
+    "similarity": 0.07095588235294117
+  },
+  {
+    "candidate": 406889362239973500483,
+    "address": "1Pp18NunM99oL83bhP2f5JqghUiYVa7ZhQ",
+    "similarity": 0.07095588235294117
+  },
+  {
+    "candidate": 549194803948490345853,
+    "address": "13aLJ8skAaHUh7ZUzhh5QFC34BgxWFrGCX",
+    "similarity": 0.07095588235294117
+  },
+  {
+    "candidate": 402950329998602352321,
+    "address": "14pzVHZxMTLD3CUKpSeHgkqkgJSJ2Ahhvd",
+    "similarity": 0.07095588235294117
+  },
+  {
+    "candidate": 416828067929149553546,
+    "address": "18LFXmsmw9eQfZ9nfkdVSmFK9i4PsqJ1ze",
+    "similarity": 0.07095588235294117
+  },
+  {
+    "candidate": 328261455908648250030,
+    "address": "1M4UuD93j8uFFBMeCAUbbmunzjq6szDc7h",
+    "similarity": 0.07095588235294116
+  },
+  {
+    "candidate": 381084450252142954347,
+    "address": "1J4Nik6SPjZjcroi2E25yTxZx72emAXjqN",
+    "similarity": 0.07095588235294116
+  },
+  {
+    "candidate": 416828060985072492878,
+    "address": "1LskVaohDYepzdgC9uotsnUU91GSitffkt",
+    "similarity": 0.07083333333333333
+  },
+  {
+    "candidate": 336593194095191607138,
+    "address": "15ZE2Xm7KDdH58L8aVrm64G67LneM4Nwtj",
+    "similarity": 0.07083333333333332
+  },
+  {
+    "candidate": 343113678781059002124,
+    "address": "13NZDdVrhwchKVY8QLWFSop6J61utDAWLi",
+    "similarity": 0.07083333333333332
+  },
+  {
+    "candidate": 484743677864025740304,
+    "address": "14zS2A7L632mBDV8wtXaevT63gUXRKxXgq",
+    "similarity": 0.07083333333333332
+  },
+  {
+    "candidate": 396512997788458984311,
+    "address": "16tCaESSn5z7Scb1An2bScUjD53dGKt5Mc",
+    "similarity": 0.07083333333333332
+  },
+  {
+    "candidate": 396512997238703170357,
+    "address": "1BXurnP5omzZSy926p8KQmKUFK3kLyvGpn",
+    "similarity": 0.07083333333333332
+  },
+  {
+    "candidate": 313031578347755892925,
+    "address": "19k5TL1wktZbvwiEa3nHDtKWWobdTzcUuy",
+    "similarity": 0.07071078431372549
+  },
+  {
+    "candidate": 395360141606088337234,
+    "address": "1BCgYMUEhBXmfXXRssSYgFp3eMiJLqvKxK",
+    "similarity": 0.07071078431372549
+  },
+  {
+    "candidate": 395360141606088337113,
+    "address": "197YH7zu5pNCMMbFbnZqt6EmaWqh89t8Vm",
+    "similarity": 0.07071078431372549
+  },
+  {
+    "candidate": 395360141606088337260,
+    "address": "1Nj4PSH6KJKNbca1ManKwbCHmXXbHkgjkb",
+    "similarity": 0.07071078431372549
+  },
+  {
+    "candidate": 393054313002259150940,
+    "address": "1NzKiPbi79rvpXKyvuPizxym8xXLmwi3bH",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 448138466557721907946,
+    "address": "16KjnpZ4RKJu3QPyhs2JZxWQjL1odV2x3L",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 276956448953609854856,
+    "address": "1DnXiaRRUXKGhkP7tuoTsg1N3FdRHhBmZ2",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 343041085925371716153,
+    "address": "1LH1hQ6vdChYdRSKZxGFY326zPXcuP5FWP",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 565559980767490166267,
+    "address": "1LVs6B3sijov8TX4YWrY2m57MCQjLGqo7m",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 338429332440327128925,
+    "address": "1H9dy3UBWpfGou1VZA9wux26HRASBuJ1yB",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 393051347490338505753,
+    "address": "1AP5VfNBfBDejVqqnUijr3V1FhmrSDVUqf",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 416828067929149553551,
+    "address": "1CP9idi6SE1PSygGxuAVBLucPbEMVuMKxb",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 381084454650189464531,
+    "address": "1GWwstqwrRjJ8xPNPgZipmpTe1N2pfHvnm",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 402950329998535243475,
+    "address": "13zgLhLen7kuVnJCzUa52MV6ZFZKHoWn9z",
+    "similarity": 0.07071078431372547
+  },
+  {
+    "candidate": 416828616145737839028,
+    "address": "1649U6mdWwAargqiQ8bs3YbtnANC6QXQyG",
+    "similarity": 0.07058823529411765
+  },
+  {
+    "candidate": 381084454650189464535,
+    "address": "1KvtUQDM9NPAyTQSSnHqvYd1gBmC6Xv1gB",
+    "similarity": 0.07058823529411765
+  },
+  {
+    "candidate": 488381257689582671240,
+    "address": "1KPf1LLBK93yVbTn9XiHAmMgxZMGdyRJ5S",
+    "similarity": 0.07058823529411763
+  },
+  {
+    "candidate": 395360155457206439487,
+    "address": "1DfK9zinxcayfch8Xam4P7CXycaHFzyNq5",
+    "similarity": 0.07058823529411763
+  },
+  {
+    "candidate": 343041090536035730289,
+    "address": "1HsWUEDumX813BEiMuJMdNLjLcfRGNGB41",
+    "similarity": 0.07058823529411763
+  },
+  {
+    "candidate": 276956448939592994283,
+    "address": "1GtUGV5rzhcLRMFnYoujD65san4zPrV42z",
+    "similarity": 0.07058823529411763
+  },
+  {
+    "candidate": 381084454650189464455,
+    "address": "13b4yE16CwTxFeBWLuKdutsYfypTv2iinU",
+    "similarity": 0.07058823529411763
+  },
+  {
+    "candidate": 402950329998535243446,
+    "address": "138dCU7RDYccebbZ9n5EAmPhFTWw13L3Sc",
+    "similarity": 0.07058823529411763
+  },
+  {
+    "candidate": 492921167605070788845,
+    "address": "1LPfXVWS1pc5XE9MLJ5xgGzGkgHSWd5sc7",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 384073923379970607294,
+    "address": "1MymmvdYJEums1WASUkjZiMuRkB95gvRBf",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 407676753624471889358,
+    "address": "16GiT3MJfS1W75yBLC2uPypoE31dkCENpg",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 385699998342724938287,
+    "address": "1BiLAhsPae398DNYxLwwgdhwmDgpL6kZkm",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 457400093902626324822,
+    "address": "1F9BCaubZAt7RTrcuFawBa16rq3P3e7Ju8",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 403355583433477635448,
+    "address": "128uBAbnfJaAC2FSB12sDswu6c1jKTGjCT",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 404583519235050607884,
+    "address": "1PfdxN1MEqRa49mwF8CTGmAsRu1bdhmw64",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 385699998280503085580,
+    "address": "1FYcLXrB8MwDW15WR32UMdPR7jAWaPhKtC",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 385699999388604647948,
+    "address": "1GRP7sXkjpZafC4hZFYs2zCRysGUDz6K8p",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 396512997238703169562,
+    "address": "1489WhLfvMndhh8iuuqeAhokppiAcW2xYX",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 343113678781060051539,
+    "address": "12ag4nLs1HzpjHonZhZvrdCy74VW2AjhvZ",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 395357889806274652844,
+    "address": "1CuDYWtcFVfm8AUJcWrxgUJt96UErS4Adb",
+    "similarity": 0.07046568627450979
+  },
+  {
+    "candidate": 416828067929848739712,
+    "address": "1MF2bDmodhZFUGeaE32ZF364VydpXsDsXF",
+    "similarity": 0.07034313725490195
+  },
+  {
+    "candidate": 416832570251683988271,
+    "address": "1MDpy5Nh4taZ3hvNLcLjNL29BSwmtNji7b",
+    "similarity": 0.07034313725490195
+  },
+  {
+    "candidate": 335605603994542156004,
+    "address": "1NdVm62xY9bZ2p43QagjFzpSSzW7LiVW7f",
+    "similarity": 0.07034313725490195
+  },
+  {
+    "candidate": 484743677864092850053,
+    "address": "1LziVTNK7hSxHYimqP2uB9b7Fcni4gnH4v",
+    "similarity": 0.07034313725490195
+  },
+  {
+    "candidate": 335749719181544270052,
+    "address": "1C5nyMWxxW5yJnVwS21LRnCRQq6MAyA1zV",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 385661161561835516758,
+    "address": "13DH4ELc1VcjMVHJvrosTvkiVx4JJ9zd3o",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 415675144982084153118,
+    "address": "126LTEvCX5v1aQrZPvnkSXa8ZurZR6fEDC",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 443842114918000813248,
+    "address": "1Ez9NNh5f3incZnMyu6K7i8D9NvGQp72m6",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 448191669641553725209,
+    "address": "1FBvHFqwVRqMVLsb18BrgZKW1vnXcLupXh",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 438941817994299012990,
+    "address": "1BaRkfChp5WYpQs1mBnCgBqRZFTDTAmu6f",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 381084454650189464634,
+    "address": "13rqmDjvb4Duk3zHt2T2NACsiqqdanggML",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 416828067929149553572,
+    "address": "1D3L5KWGfmL1ytHdYu86nLRQR6MQMuezFc",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 402950329998602352448,
+    "address": "1BzvHpvDLEkenDzMZBhfWm6ZWvWKP8fnZF",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 381084454650189465422,
+    "address": "1NLDYzNKce67YLeiCzVzgCw5LzHbr9ziJh",
+    "similarity": 0.0702205882352941
+  },
+  {
+    "candidate": 448192492846095433480,
+    "address": "12xwURfiwh8P4V4S6u8FoxiSAsMr7R5HE7",
+    "similarity": 0.07009803921568626
+  },
+  {
+    "candidate": 415676495154853441624,
+    "address": "125gJD8TTbUXLSg8P27ggbS1fDTCnVEEEz",
+    "similarity": 0.07009803921568626
+  },
+  {
+    "candidate": 448178973390707322956,
+    "address": "1FAaMaHV6xmcTS7aGuCqar9Hpe5FkqBiNJ",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 416828066854317290149,
+    "address": "1AK21QvcrBufpXmjSu5gzRAZp1aXut2uXW",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 448165292387726598400,
+    "address": "15KawJYCvwHUK4bYArojMWmyBGCbnJRrTH",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 386814073789117067038,
+    "address": "1JoabrSvKx7TxAswjRxjY5a1wNLhpii1fd",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 395360147200102530830,
+    "address": "1JBVYDsdpFzBauJAHF29EEna7NzJWV4HdL",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 343185736331738236739,
+    "address": "1NdsJBqYPYTybBa2YE6a2mZS6qpuUYfGW1",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 341961056385052145247,
+    "address": "1HZiQfY654eegUrV6RnivKCSocuWKS4fxk",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 293108324062746568148,
+    "address": "1LCjTJ2ivW9d8SNt1M2dpW71WmyxJAt1AU",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 484743677864025740282,
+    "address": "1PDqFHVB8ejj8fge552thysGj7sdQT65Ps",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 402950329998602352389,
+    "address": "1BPvo9fDQ1uuNv5DRuxTvqBRxFpENVmDGr",
+    "similarity": 0.06997549019607842
+  },
+  {
+    "candidate": 328261455834588929816,
+    "address": "1E1NLsgWfqiH77bGiBpQYiDKmC6yVyX4aM",
+    "similarity": 0.06985294117647058
+  },
+  {
+    "candidate": 449181926537781711694,
+    "address": "1H5jrvAfcHbSzTt7ZwKjAZkPh4D2GtbmVf",
+    "similarity": 0.06973039215686273
+  },
+  {
+    "candidate": 542930241368818902153,
+    "address": "1LH6GVtGYQ5HvYzCn12mmcgp7U4bZdbuxR",
+    "similarity": 0.06973039215686273
+  },
+  {
+    "candidate": 395360141606089386668,
+    "address": "14YqSkP87pJfAysDne2v1zWtKX5qtdAKPF",
+    "similarity": 0.06973039215686273
+  },
+  {
+    "candidate": 381084454650189463652,
+    "address": "1Hmv8tBup8p386e36u34L3QWKabEDpEJX5",
+    "similarity": 0.06973039215686273
+  },
+  {
+    "candidate": 425191419385452471125,
+    "address": "1G9RmY1P7vyGCUE8qv2tbgyyPfe6tYD2SA",
+    "similarity": 0.06960784313725489
+  },
+  {
+    "candidate": 343105233666952556632,
+    "address": "13QqSyyurmWji22iWYALgwZZo2FAm2REnz",
+    "similarity": 0.06948529411764705
+  },
+  {
+    "candidate": 374405536822890173795,
+    "address": "1C7o4x6KcR5ESaxGD72RuTJCUsZk3pujnN",
+    "similarity": 0.06948529411764705
+  },
+  {
+    "candidate": 381084454650189465464,
+    "address": "1JEiCb9ReRjujX5Evu5ivS9DAoCb4Q5XTE",
+    "similarity": 0.06948529411764705
+  },
+  {
+    "candidate": 396512997238703162229,
+    "address": "14aue4vteDpooKvoTv2XsDUqbzZLVKstnK",
+    "similarity": 0.06948529411764705
+  },
+  {
+    "candidate": 393051347490338505782,
+    "address": "18Jj5QPnrZaE2UUNqjXqgW52o9KJngo4Yb",
+    "similarity": 0.06948529411764705
+  },
+  {
+    "candidate": 416826942029242711813,
+    "address": "13hWrKh4ivS4uPvfZA2ZN3vUmPSHVKr9iM",
+    "similarity": 0.06948529411764705
+  },
+  {
+    "candidate": 402950329998535243508,
+    "address": "145JKmmRikbs83tvF3jiie3g4psM5VZWPD",
+    "similarity": 0.0693627450980392
+  },
+  {
+    "candidate": 381084454650189463710,
+    "address": "1Gj9wAGwk4ZWmXcXaG2dtZwoCqyTPhRYPn",
+    "similarity": 0.06924019607843136
+  },
+  {
+    "candidate": 419241094237432084651,
+    "address": "1FjqRP1tdP1XRsSs422u6mvfFMaRV5Lyu",
+    "similarity": 0.06919865807632192
+  },
+  {
+    "candidate": 343113678781059001983,
+    "address": "1K47mkbXuUC6o2zS4KvWrt9wvxpbYv5a88",
+    "similarity": 0.06911764705882352
+  },
+  {
+    "candidate": 386137144351208579328,
+    "address": "1LU7aT27ZM4s76hVruriYJ1RBq8KdPUZJw",
+    "similarity": 0.06899509803921568
+  },
+  {
+    "candidate": 381084454650189464486,
+    "address": "1PWzudozmtaGNzQBNu8vbxvhEqAi47PKJu",
+    "similarity": 0.06899509803921568
+  },
+  {
+    "candidate": 381084454650193658820,
+    "address": "1NSW9uFnnSdw7FpD6b2RDX9FoADSP5Csf3",
+    "similarity": 0.06899509803921568
+  },
+  {
+    "candidate": 448165516431064516612,
+    "address": "13WPssy9hxhULSczZcmdszhyxKhhUUupR6",
+    "similarity": 0.06887254901960783
+  },
+  {
+    "candidate": 484743677864025740300,
+    "address": "1MfgvBW7HAWwdq3HVk2eZxCub2b9eXzbEh",
+    "similarity": 0.0685049019607843
+  },
+  {
+    "candidate": 395359860131111627438,
+    "address": "1E6AJdm2JvC5tFpo1uAjvgFrgyas15fKFk",
+    "similarity": 0.06752450980392156
+  },
+  {
+    "candidate": 395360141606088075950,
+    "address": "1AoEUhpFFMvT2Ui9pujjSXmMLLxPrpJTN3",
+    "similarity": 0.06752450980392156
+  },
+  {
+    "candidate": 438941817996446495777,
+    "address": "1NHy5tQwzkWmJCd6huZntTtN7RFFBeNRZD",
+    "similarity": 0.06666666666666665
+  },
+  {
+    "candidate": 494282050346323751597,
+    "address": "19Y3aRA3XZVA7HX7sUzLF97gY8kn1iXjx",
+    "similarity": 0.06243376157981015
+  },
+  {
+    "candidate": 396512997238703170417,
+    "address": "19oWR2X9iPdvhGrvVav6qzLceiJ9JdZHY",
+    "similarity": 0.06243376157981015
+  },
+  {
+    "candidate": 438941817996446495802,
+    "address": "1hX52J8PLqxiUih4jM1h19ieU8pFXCFrh",
+    "similarity": 0.062304143951812746
+  },
+  {
+    "candidate": 380507993897886041962,
+    "address": "1hxkxsJXdQGLCnwBvyCsSws7UVhAaDrAm",
+    "similarity": 0.06217452632381533
+  },
+  {
+    "candidate": 402950329998602352323,
+    "address": "1M4kRb9F2xjVZ9d5GpaPMYLE8CHCVBkqZ",
+    "similarity": 0.06217452632381533
+  },
+  {
+    "candidate": 275807746477572145344,
+    "address": "19JPSp7hgKvDaCQS2N3tJ9PZw4W2rC7dcS",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 448174470065957859508,
+    "address": "19qyt1m6vporLPQhiTuhaVswZr1qqkEh24",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395360076829321637113,
+    "address": "198fKG3cbD8624QsJCjGZfY1WDi2yjxunN",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 517529985455733638594,
+    "address": "19kFzysHnGfS7WXY2oh7NNGi1ZUqe7DoiN",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 448174540365982560014,
+    "address": "19RRvdeUtSTMFpEYYYmvPPV5ErQPfoG9is",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 336592635025390239764,
+    "address": "19AL1PuvTadpAuxwySRhx1YUE7NGfYvgez",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 565689140635513044474,
+    "address": "19D3AYJ1zHKGPmmXQQCoS9FHSzNQMsu9aW",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 448169511416295752495,
+    "address": "19uxgLci5gNWcn1CwiqiQ3nMBgxk7niHo5",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 258509704879400629078,
+    "address": "19wefed5haxq2WPtJZjn22tJEQzLQSUDCC",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 540371598687533232220,
+    "address": "19hehRC5p6gVBUnSuoxL4t1X42JwK7LQmi",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402950330516647298402,
+    "address": "19dwA5CkbFG8kipu7MtgN4789eJi54cRHR",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 416828066830881989501,
+    "address": "19BZtV3xCmWhkXZYrKmoeJ2tNU1maT7Xqi",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 451651271999340235239,
+    "address": "19Z2b44h8pYy7u44uwJGfonZ96j6id4aa9",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 450475354442689316655,
+    "address": "19yvmULRVTMhtLxGuf3Jw84T2bodoYxWuH",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 409911699802420778275,
+    "address": "198NtXj2xxenTxdvTBu2sGcgG7mLES7B6w",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 300600517476281459155,
+    "address": "19WPeZBZA5yeufDkQ3irYoiEDAJFLRUgjE",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 384546264684702365578,
+    "address": "19tPqJ8E6Jr9fBJxbjWhMtm8JaicA1MWjq",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 498317377837856031814,
+    "address": "19YKNCvDHGKBXHfKY3gFMJXu2VMcrxoEKa",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 416828102930087384355,
+    "address": "19HcYXVFj5hN94At68Jbz3aLQyvMzNNCXR",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 386136775161273953907,
+    "address": "19cutiGr1urWcg4uDsz8Gw5utgcadwveqq",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 448187989111177182474,
+    "address": "19seTCFcyMdP2va6LqmN3phXwTRYUTSffN",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 269254402216455898978,
+    "address": "19uhrNSkBsf61tYGNzznZ64DvX3oHu9jJq",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 393054321782144835918,
+    "address": "19yaaYNL2UswkV1tGpaCv6TCJLiU4wMD5H",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 343113678781059003005,
+    "address": "19DMutswpH6KBTyDs4PHALNe34v1amMGNL",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395360156011472875612,
+    "address": "198xhKofcjj3NFVFARR8RsjHm86QXsa2Tg",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 426051451681584674655,
+    "address": "19VSjBC9r91KZSfxrMtXkcrKbTBDp2EMth",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 406023853162895323990,
+    "address": "195EXH9LYbQ6pAXtR9Be6QmU3vvczdskN4",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 447956941024208265929,
+    "address": "19zKCWUSvLvsGgresWNhBRAkVdUnN5X7A2",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 486003887754210288762,
+    "address": "19RivN8Rm7ZXxZ3LJmNUkyuoxP9wkWKHxv",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 343077649982552766621,
+    "address": "19srgKMZhLGYmW4xYqRufUwNjeWQ6M2BCM",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 416721309094280654972,
+    "address": "19sm3JYUwdSUt5JN2XDum71qZDWgQXWAq4",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 550486768250666230016,
+    "address": "193TQNkoEiF4acXoG6TckWJMiGPfkZED7n",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 308443842952347296565,
+    "address": "19LfKL2JZwp33WZ3tfbeR6JJuu4auYT7dP",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 271848188117024959118,
+    "address": "19c5gCvw25k5pkAC31Qz4kc59EL9JvQEDb",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 448192513109974538188,
+    "address": "199H6hStXV1HZG5ZQihtrTR1ar3afGqJT4",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 332585154597661495472,
+    "address": "19qbDHMPCY5zgKfMc6So37sSyx91tNB1zo",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 278554584706535728384,
+    "address": "19sWoNs3sFoxzRbChG9b3rNotuE2pEbPy1",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 386379766422973537054,
+    "address": "19Pv9rXAV5cmpNbFJzEaMYTdr5QPHioKFN",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 416828599681150984777,
+    "address": "19Mpw2zLwCN35Nq4nQzDSu8CsXoSSGB4iu",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 341956259698590964269,
+    "address": "19DpD7s8ebodJibZoQCuvgrTBWXcXZN8uK",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 432285679039279841525,
+    "address": "19XspCHiu2pcMwUk17DT7LcMSr3gkoWPTS",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 420495074060074780098,
+    "address": "193u6STcq4VTXyQwMs8wcrLNmzTrymHhLt",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 376912585355120943360,
+    "address": "19FReC1ZnowCXDKf4VD2numzZfV7hmBjHM",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 376912567758644363445,
+    "address": "19fCSysnQCfVGYVW51odc1AG2TbvuMm2eZ",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 271560238724851138100,
+    "address": "195WQKDvmR6qmpd6x5sc8cFcLvsva9qmJw",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 386136708958109410891,
+    "address": "19wPKnPKb3CXsAQZVfVwMSNU2fke9fy6rJ",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 533711525248496019019,
+    "address": "19oheNRJugESe8XCvFxZu8NuwDb4tMZ8yB",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 448192513117728835010,
+    "address": "19qon2FZVBik4azFdPwGEHQHw1TScbCkPW",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395357823936500966483,
+    "address": "19ViEkumRdpuvquhqZqWRVkbL5VxpRwq7d",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 312671269216461861653,
+    "address": "19zr8e637DhdYUVr2UzB5o7jMZLQRN9uGm",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 448120420339587377671,
+    "address": "199ZG33V1WJw5zut32uUKHNewR6PB8YJzF",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 420495074060077322913,
+    "address": "19EYQVi5HDr4k9naTrdQVqn9FcqjCinumh",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 371860159024972242579,
+    "address": "19PKbFRHbYD66N615wtorLmLT3GYfPmQtX",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 416828067929149553636,
+    "address": "19i514CcLaowLXwJp1jdAAJj69Kw9bAtRQ",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 347725364799486390870,
+    "address": "19fYyJUQA2FAsadVVry3aYcsaCvLVrqouc",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650189464645,
+    "address": "19a6JAPxhvQzGfd2z7qyt9RX72GqHkizBZ",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 484743677864025740362,
+    "address": "19JdVZPcVoNbS17ygBRXX2tNk74r7nHE8d",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 396512997238703174517,
+    "address": "19FvM8PSLxSWxyGmCnomtJZegWLDSPja3n",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998289093020232,
+    "address": "19UvAJ7G8VhfyzX3zA9btz9WqHSn9eVKJV",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402950329998602352429,
+    "address": "19iVMNNmTf9tPSh3D2pth6H3cMGA8eE56Y",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 343113678781059001967,
+    "address": "19jJcFprCBKJegecTKNZvWVmnDeAhEoJEE",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 393051347490338514914,
+    "address": "19sHzTv9JFxmdRHb4S7CvTM4N2RMiaqwyC",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 401797408493995506301,
+    "address": "194K8FHdiNHGHwq3Hq6oQQjKZ54KANk3Tf",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402950329998602352415,
+    "address": "19mc51QL6KwXwn2VsqRRfcuEUYXepRqHGv",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650189464539,
+    "address": "19omfJQxyrr8wJH2N2pAfJi9hgX9gfDRjF",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402949204098695510652,
+    "address": "19QLn3cnNLqvhMYfgmhrApFGfH7gyQg1CK",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699857551604664845,
+    "address": "197EjQU3ywQ5NnmU9V8KAHitdtmyGrtEXv",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998289093019242,
+    "address": "19yY3V9Ra3KhsPKJb6C6ZjLv4Wg5gkP5iB",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 394204268994945353699,
+    "address": "19JK3ZWoqrHGuUGJS63YxtAGkD9Bq4YCtc",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395360141606088207020,
+    "address": "19Fva466Kzrkyw8RdjRH48j7CZHEPkchuR",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650189989736,
+    "address": "19VJPtZ2msQw2ayjmMTu7XkQWMzkEPiyzT",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395360141606088337964,
+    "address": "19C4r7DWmbFtrQGGLsqG1kRHjjrx8WDv45",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 438941817996446496126,
+    "address": "19WSzX5fgm29dLrAp5j9WJiMNneJtKM7U7",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402950329998602354303,
+    "address": "194jC9EbAPTiKVXk2hrbMuxG4g5woLSucf",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 438941817996446495704,
+    "address": "19QtYxCnxYyQfPeEPdXdixYgMYdX96eUfp",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 396512997238702121847,
+    "address": "19MnjsTD6CbzSpcYUHYPrRyYGGAwZWiQLs",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 438941817995909625727,
+    "address": "19NCJhG7ZjA1hXv1MTRgbTbwd7o7fBiWry",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 438941817996446495792,
+    "address": "19azwFiM5yQPsFNCG5SMQjbySz3R3xFmkS",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 343113678781059003222,
+    "address": "19pJUfcDUMyMtrPZUTobSL4RYoBsXipAb6",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 420495073922736945022,
+    "address": "19ZYvMNo3FBxawBdG8HJ3Pkky384EcZPEi",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402968344397111835261,
+    "address": "19qbRb1FeGjhJuAaUJ1f1ZwXSkKHjDercH",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 484743677864025741204,
+    "address": "19CQ7QKA347PPXWnpauJjJqXtSWGyxHrAn",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998289093019302,
+    "address": "19KMgBkRM9Z547wfF2GvzXuA1c7nZWokid",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 343113678781059002134,
+    "address": "19oAUmvR5qCvRveZgET9a3RE8mRxojgX6F",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 343113678781126111830,
+    "address": "191vRwu531bKhEGqwQNpnvVxPMbUbUdnyq",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402950329998602352462,
+    "address": "19jhCTroBj3ETqbCJniycAD4t1yM1mgP3n",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 396512997238703169617,
+    "address": "19XtFMUTXDUjcup76hEyqWbz4GwfMvBLyb",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 396512997238703169533,
+    "address": "19jv4jm6C1WAPf3kgwaYesPmbrNaRgDRx7",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650189464586,
+    "address": "19s1F2F3N6kzeDW2AZTcoaFnhBjYKvT5TN",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385696140668616853354,
+    "address": "19bnCniTr1bfJtmTug6p8LQtNeqWPQeww1",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 416828067933444521735,
+    "address": "19itKaHcPxgWopejps9LQWrAkPKcRngX8C",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998286945536526,
+    "address": "19Uv9Dv9N6JnNt3mVVZxVbSQL2xjgCvNyx",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 396513137976191525751,
+    "address": "19gRFA2N4KjARZSLkGe95ksC1XQRmjSRKx",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998289093019345,
+    "address": "19JfAX9QTWBg4ucX7w3LwNiSxLN9Daaoor",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 343113678781059002038,
+    "address": "19nZNGZor7gs5PrehaaPWThNvGbWg43VUe",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699963104720931342,
+    "address": "19JTQ9MpQXRYoKKvQzD6WhynBxgJqxy7pn",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402950329998602353245,
+    "address": "19siNPpqhMZSUHLe9GuKyqN4Ln6dKpzsVK",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395360141606088338350,
+    "address": "19TdwCqGY4otEzGNFkPuLFTj43nhg7MpC1",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395360141605954120367,
+    "address": "19RA2HAZEK5Lg6QX3Ez459RwEoaWwgQtaA",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998289094068744,
+    "address": "19FXL1ve7zHdEcqrnea6W2hgbRrTyTnmfJ",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998289093019337,
+    "address": "19G1HJuVNjv5sr4StBdwQnNo1PpaoJvqrH",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084455199945279336,
+    "address": "194vcgM83Ef9F8DzePkVtQrKgGexAyXWVu",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650190513093,
+    "address": "19QmL4tAZyKCKff7okM7ww2qqaiJ3iQgsF",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 484743818601514096516,
+    "address": "19gGjeSJ5X6afofwK9qpksH2SKeUCAYt3S",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 378778611640975771498,
+    "address": "19ra2NTWEYLpKF62S4QuX2dTQFTJvNYtH2",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 376913397532378786476,
+    "address": "19kN7ruW2qBmXDCcGZq4qtGCgtcQynUoNg",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395360141607162079918,
+    "address": "19j36a5PdMpnWRyuuJp5MTb81MfdikNbNh",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 484743677864025741205,
+    "address": "197BcRcSofMQ2UHGkfMxnKwzmAhTKhHmPv",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 484743677864025724800,
+    "address": "19Tgdn3W3zWiyQEZ8dPYWdp34ibrcYvBaD",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998289093019311,
+    "address": "19CwxJ1VQ3CkMQNU8fyDGqyCh8GTobPP6v",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 484743114914072319876,
+    "address": "19iocajMQTZ7sdAw81nYojwvHYnfPyNy53",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 396510745438889485172,
+    "address": "19PxD7d3E9ENiTQptHPbmkzexBusghNEcb",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650189463625,
+    "address": "19Nx5T6vQRwKgEmG9XT5ZxjKdLEufjLwpz",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 385699998289093019250,
+    "address": "19SzT4dSevNrkiXxse5PaEdoTuWuBPg3c8",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402950325600488733310,
+    "address": "19R2AftuWwwwhHT4AkYpXKFVyHgdDh4NJ5",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 395360141608235821740,
+    "address": "19q23sJRB7E3weUGNZVVT7DncQqu27Z6Ej",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 438941817996446495662,
+    "address": "19Wa7tf1oJZ3zsTCBCcXZ7zzWnf83V8gUa",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 402950329998518467197,
+    "address": "19ThZkLE1kvK5KxaEcqfnGcepDB6SVBfq2",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650189464552,
+    "address": "191S8fvhMWbPjuBtLXXaXDSoY8TT57a5jE",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650189463666,
+    "address": "19tuzDBamY5DfnAHcgaV71ZUb1sPVPCRRo",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 381084454650189463702,
+    "address": "19iNnYC7u5agTxRwd796SMEEUxzWmBDZW6",
+    "similarity": 0.06188725490196077
+  },
+  {
+    "candidate": 343113678231303189079,
+    "address": "1ZXiQW9M2VLAqcypeiKVX3TMyTDvUHhGW",
+    "similarity": 0.06178567343982311
+  },
+  {
+    "candidate": 416828067929149553476,
+    "address": "1gmyx43w3wJTrFQnc59SYPUfW2out9h63",
+    "similarity": 0.06178567343982311
+  },
+  {
+    "candidate": 343041639850899632564,
+    "address": "15vnuBUWH47TUUymjgokRyJKRp9fPh7wDX",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 369117522582208999452,
+    "address": "1LvBuLi9Ca76xFXW1FACuxogKhgmRi8nFb",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 341888184915087751710,
+    "address": "1EnzKzsk1nVYoENh9nrKJW9Q4V7kfXjgWG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 394639499969352399021,
+    "address": "1AvJ976K7G6J2ZpSFiMCTfwMhZbB8dzhPq",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 484743677864025768139,
+    "address": "1Bvr93pGyboDKGKNdxCsiiYBVk1fhCqWno",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 398746114024039075307,
+    "address": "1Mvrh1cQSjmvJVDV1y4omWkZ8Ve4TtdTcx",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 343113678781059002101,
+    "address": "1AvECThrx1H2intLvr1F47wkhu558P7XG2",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 396512997238703169515,
+    "address": "12w3GtgKsbjgYv4fcYHdYYWmxRFuMvMv6G",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 395360141606088337270,
+    "address": "1PGTzCKSwHLNDYgjvmF5pXSWqQLZM6xUHG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 402950329998602352401,
+    "address": "1MkKkUgR7raMDd9uXZzYn1pRE3QJnhGfyG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 395360141606155446956,
+    "address": "1FGisj7RrB9vVtekeZXy14UNZQXPRZUJ5G",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 319264371195500300259,
+    "address": "14vC9vXoqaxNW85ozctMe48nY8E2rZV5Gu",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 484743677829666002820,
+    "address": "1L8DjbQ5Q43jjaLateNY9MzjfDz1rktgDG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 484743677846845872005,
+    "address": "1FnZ84xCwT64ohvVFxieSXNxh81kTawvFG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 381084454650189464642,
+    "address": "1NvXN1vGJm38y8qdkbVFypKoqySzigBFkU",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 395360159198274382511,
+    "address": "1N7f72NZhxTBDPE4uq3ZwZjKWaEctkgnYG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 416828067929149553557,
+    "address": "1KvBA9NZpKiEAD1KHnJKNdaAvoVomtZVcA",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 381084454650189464630,
+    "address": "13vDHdZEuZUodYHyU5nu3K5kPgNSkuieJx",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 393051347490338505899,
+    "address": "1JvCdMTi8ki9tSdReADtQ9grbrpYL5J5MJ",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 385701124188999862797,
+    "address": "1JEUZk14HieMV7r3xBTxQC6JVwhMwmrziG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 343113678781059002001,
+    "address": "1CL8AsxevWqJNMwm4UiPdbNsemCwFJgiMG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 438941817996446758783,
+    "address": "15ts8hMWLkXTN2FNmZo86yWj1YrK4pp5WG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 395360141606088337580,
+    "address": "15vn84tJUrybWnZJnXyZ8rxnaKv8tStF3L",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 396512997238703169909,
+    "address": "1MTqfFyKmCwDEErzmGmoRQuSqtSKXKNF1G",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 396512962054331081591,
+    "address": "1CZHjU4NDyEEx2Z76m89yCPRFEuVhC6pSG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 343113678781059001975,
+    "address": "176SM6FQWEWHBF8ZmKTcmM84yigQfxbUyG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 381084454650189463682,
+    "address": "16mmYaoDiyb1upNzHXfUkHPBgma4ZofPrG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 381084454650189463545,
+    "address": "1FmfD9YQbWR13rZ3cvy8CD9BJYDJhJbWmG",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 385699998289092954638,
+    "address": "1Hv7dtLVUcm3drn1XbYgh9pS5zCoMmqhA6",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 385699998289093020302,
+    "address": "1LvxVQdr256wCppYLkiBoDv5RdpE65bqPF",
+    "similarity": 0.06176470588235293
+  },
+  {
+    "candidate": 385661152284509294059,
+    "address": "1FVkCgmMorcHoSP6WmMTtDaJcgGGvapYuw",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 343113678781327451715,
+    "address": "17Ck4DHTF5AjxWqziWKRhqDUk9nAXVMvqv",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 448178956311447157320,
+    "address": "1HNkqiJwpAGhyinMDfCoqrAZ3BYrS1a2db",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 306147885100543922616,
+    "address": "1PrkHdQw55ijgf3Hki1EreSBKGsVNdpAso",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 396512992028522035080,
+    "address": "1EQkozEatwv3xTHQeFwLjoPcpvMAASuwiU",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 258529874070742771940,
+    "address": "12ekw3dtjgQ7G1EHMjKKXuhPvAeccZWvgV",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 523969292169730682636,
+    "address": "16ykTCoWyTeGVvWqVRDSiD7Kwj3LZKWzmN",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 395360141606088338093,
+    "address": "1E3k7PP7JfJXfzfXhFa9iXAch1hxdkBfk7",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 393051347490338505801,
+    "address": "1Kkk91vXF1srXEPXaazK2wZdQxxBQ98bM8",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 381084454650189464626,
+    "address": "1L8kyTJVvxtca1FD6huw6UrYstnnbhZygD",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 381084454650189464540,
+    "address": "12CksdRXHyfpdNfwLiEDiGjd1p8W1XyXCx",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 416828067929149553496,
+    "address": "1C2kY9zE9M62gQHfhjodTLf1ccbYMXoYoW",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 395360141605819902636,
+    "address": "1ApkacoVh56ddLHVm96oDpvXQoPMjxJYDF",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 381084454650189464492,
+    "address": "18AkfAGJ2jTMABX9EcoragrLEQsp1MjwsH",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 402950329998535244350,
+    "address": "18fkcLRPe6x7whWLtS619C8dhskGRJBgju",
+    "similarity": 0.06164215686274509
+  },
+  {
+    "candidate": 395360077343567343692,
+    "address": "1qxsox2pbnd8RFpMjHhq7RXaa1dfhqxqP",
+    "similarity": 0.06152643818382829
+  },
+  {
+    "candidate": 393051347490339555299,
+    "address": "1XSbwQYp8T7PGVuqEa3RZuj2y2segqeE4",
+    "similarity": 0.06152643818382829
+  },
+  {
+    "candidate": 336592635025390271066,
+    "address": "1CwPimzv3Fmew399pDuZnAzacfaBrUsVcq",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 448104664271733609494,
+    "address": "1BR8iAnkEoqzz7XxA7JAbc9Ebiy6KejsNs",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 448178973665585229981,
+    "address": "1CKjT2kSVdXmhKX7dnEQb3hLxgaBxhteha",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 394783401481015206344,
+    "address": "1NWSCLeWYfE2RM3nVJwkxjK5pVmKSHEqhB",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 521972437873406841578,
+    "address": "15YAn2hTXTk8omdmSMiPmqJ7eb7EARZqhT",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 466801302187331383176,
+    "address": "1C6KibTAcCi1oSR35k4UUbWhG6zck8WeHx",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 486075945352576476240,
+    "address": "18UXpHoUSYktnLxhMngNrHrvv93ugsT2hA",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 587668759260816548328,
+    "address": "13k8iK7Fcg1Qw8nHMXnkeY9XDoveHki38y",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 521961463952997838876,
+    "address": "1LJWtmQt6Q4skECdcKB2uMmbZPHCoAL1hu",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 386831965042344339231,
+    "address": "13KB2AGyS3eKNF7tCmCnqARpiStDAzT4ho",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 307296555659171804739,
+    "address": "1LcziXMPjfXVkncSjLAprX6DnLhyN2x4YJ",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 258869988419981345378,
+    "address": "14sXQj2poBPRRTQfwiQwCudF9veR46iXhN",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 405260677125340481523,
+    "address": "1N9FiLDkdL7PnGXApYQpXC6TcbVDAF1GG1",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 395360112024321946285,
+    "address": "1Gn8i2JKDJm6H3NopcKNBysAVd3hGhq2C4",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 386379766422705102732,
+    "address": "1K8bihH1Jd6fTnvUMjgdshHrn5qG7k98n3",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 393051347490338505832,
+    "address": "1Ps2xz7vbRScfLpUtzusVqEHxVo1pAZuhS",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 393051347490338505800,
+    "address": "1G8Xiym2iUieE1fv4AsbWHp16MEU6ZSAv4",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 393051347490338505871,
+    "address": "1Au8idKKQ4fFenapt9JaozdULUgZ89ELr6",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 416828067929149553464,
+    "address": "14fSdvXgi2Bmsra3WoAoZnaLpi2xhTfuhB",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 564402020518825967366,
+    "address": "12HNmVgfHb5gQ3uMmcaV8rk2EYjfteukhY",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 385699998289093019219,
+    "address": "131Pidk6L19fUE4QvakZFRmxX1FR2y7jLT",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 438941818133885450110,
+    "address": "1H9riKt4o1nSmhb4LwkehGavyu3fBCFpLH",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 385699998289093052942,
+    "address": "1Ao6iwHGVuAC91HhxsZk1M4N3BkcGbi13J",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 407604695892294778629,
+    "address": "1CSNiyivEak7XmdNVe43skoaRbtVmHM7TD",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 381084454650189463706,
+    "address": "127rikzSAHcqwjGetFwFiAsTZz6ov8cRCt",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 381084454650189530990,
+    "address": "1KNwjyPhu7JmfhHqh5P4zp7n46iCwvsohE",
+    "similarity": 0.061519607843137245
+  },
+  {
+    "candidate": 448178973538486510019,
+    "address": "15SQyELBg6oUgREPQJqDyupgmttKxvTw4m",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 588221326580576493896,
+    "address": "15E7bEofXp18jajP2SyTkiMTmELs1TRZbb",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 450480383443924121183,
+    "address": "15knFEqMWjbWaiLHtyquQDucDrTQhFBWV7",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 259045048308860644476,
+    "address": "1KNjUEdJX52759Zy179LvqggmfsMQxPvnc",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 527428338158304980746,
+    "address": "17Ts2EPfGLCGMeAJ2i4MeiPhmhGzX1kkiq",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 484455447487874056384,
+    "address": "1BkfzEHep2PgtAFEgasWWN9eDLajqtQN3k",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 448453672879504364356,
+    "address": "1Dr4QEiWX9QhHmBWPdgZ83EiSePjFayu7g",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 381084454650189464462,
+    "address": "1BsdNEkARc6q2sokAZbV2TM2uuFEERNZEz",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 438941817996446496125,
+    "address": "1LuZHEDXmdXS7uAZuqVbc5xywuGU8NcasD",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 395360141606088337288,
+    "address": "1EFZFEEicmdTvs3wsv5SAJonbXtmC4cL8Y",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 438941817996446495680,
+    "address": "1NisfEMxdiZetmFeKXxguHRvSztxQgmc9K",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 395360141606088338095,
+    "address": "1MGdYEXFTyf3mNbpKzDZ4UFKyXb5X9vWTR",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 343113678781059002086,
+    "address": "1CNGHEVt8L4fhhJzgdo6vNsrar2yNGWE4i",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 405736369275557946229,
+    "address": "1BQLPEgiZjeQY8gm6dCNejzV2GgU5owaoC",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 402950329998602352414,
+    "address": "12HtRE7WpkoNownWqAjV9d4YLy8pKVWuNT",
+    "similarity": 0.0613970588235294
+  },
+  {
+    "candidate": 564402019420550395790,
+    "address": "1um4QPTFthrFWWabPgbWMCMTrAMeZDdKS",
+    "similarity": 0.061396820555830886
+  },
+  {
+    "candidate": 365154841701608290173,
+    "address": "1ft6TsDfghjzGpfJr435mUhh8Z8hCwH1H",
+    "similarity": 0.061396820555830886
+  },
+  {
+    "candidate": 438941817996446495837,
+    "address": "1veREZCwZhwypMdhGPj2nAVWwpN6fMzhm",
+    "similarity": 0.061396820555830886
+  },
+  {
+    "candidate": 484455447487874022628,
+    "address": "182U2gawoyMfbvokfZjoYR5qtXPhGQD2Um",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 439886492531227848796,
+    "address": "1C3c27nQDKm2Fep7jVa3t5vFiHwyMAtx6o",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 421439375553668544604,
+    "address": "1K8g41kTH1Ja6LTmtssNhG3uiuYELS3xpx",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 271562491087305537682,
+    "address": "1KV53naxtdaWq3d3YJqdmZRq2K14Q8KXXA",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 448890365316752371800,
+    "address": "17qj5Maixq9jihyZVFUBiN63wtE7Z8Qjp2",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 491767903465726882577,
+    "address": "1KNRHX6kEBsKVDDUobsrbhmKqGHQm39xaL",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 402950329998602352364,
+    "address": "1NV5pQJaychNxq9itBnMmCeihF9Vb3KxPu",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 395360141606088337120,
+    "address": "145SaXaGoY6T2pUt4FmJTu2pT9UReD68gK",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 381084454650189464451,
+    "address": "1NWsqPaN9vz4uFTpYZ7ALtzKdt6J97eTyz",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 484743677864025740242,
+    "address": "18UNhzagkLnGYjgidQpQqV1zFRaqdZbVVg",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 393051347492485990371,
+    "address": "1EVZSfnmyDzBgzRxRCcS8h3WqHf1sffxn8",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 416828067929149546245,
+    "address": "1H2prxd9vmd1eCe9H7V69XTYUvQ86KQxok",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 402950329998602352380,
+    "address": "17HNEyMtFW76q3yGpQvZ8KqHqj9uHdaxNi",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 419133910938363248390,
+    "address": "1MUtRs1AFe6HxYvnQ7aoHXHrGzdzTajxSU",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 393051347490338505827,
+    "address": "134pVyyLHVLkdM6oEn3hjBM7dc9N5yyxy5",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 438941817996379387775,
+    "address": "1HPxjzWk4asbspwfDD5eNuFwQ5iqT6SxRz",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 385699998289093019194,
+    "address": "17p1nAakiFGXXHDZBgVm1zBWjCou4Ukfoy",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 484743677864025740314,
+    "address": "1Ayc6Bm2AJ95us8aLAg36SrNShiaw6fx1V",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 402950329998602352340,
+    "address": "1C65fiKT3xBqdZZ2zLsAms55fUmSKdDxCN",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 402950329998602352362,
+    "address": "1M7XNid8W3ihuPDeyLCbmK7Z7pMnwSLxU9",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 381084454650189463551,
+    "address": "1PhVbja6muL7yLfj95jgdnfQaFzPj2U4AA",
+    "similarity": 0.06127450980392156
+  },
+  {
+    "candidate": 434443949384423658149,
+    "address": "11Zz5hS358KYJgdk197SbUP5ChN2WjzWs",
+    "similarity": 0.06126720292783348
+  },
+  {
+    "candidate": 343113678781327423725,
+    "address": "1KqZ566je63eYEygKbXq1K6vi8FtwC2731",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 449318178891696786093,
+    "address": "1FVJRZQjgcF5uuhiQ8LD4ub2Z1y5vSoNbg",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 416791827847736066892,
+    "address": "1Bf5b58jxgjbC6NvUB1MRAUM4ThnNfLWvC",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 498317377838125855901,
+    "address": "1BX8FQ9jvJosGkdrmMjcdLpm2kUdumMgmF",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 386820683915549755240,
+    "address": "1A6fgWsjoajDZLyHxADGsCWJm6irtYV2Up",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 395360159198275515971,
+    "address": "1MLfVUvj5TTHyje9y4k9mhuy7DvjJoX3b5",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 457400094308008288712,
+    "address": "1HpPP9ojqJxmbwgqAE535Fh588m288bry6",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 343113678781059002054,
+    "address": "1PHxL8Cjg8cBNspX3AJwDffNnsE3KrZwRy",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 319264371195500300258,
+    "address": "17G1Ye2j1m1tqBm9VGtpvodQ5jby1CinEV",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 343113678781059002149,
+    "address": "16HW6J9j8wqnGM6HkrNTFnzXQhhr7ds8uo",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 396512997238703169506,
+    "address": "15oNzPzjgeRJfWwtMceFfqHdZ2BnUHyiSA",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 438941817996446495738,
+    "address": "16cDE7Tjh62v3XKdU84hrz6ahJA7AYTjiE",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 385699998289093020188,
+    "address": "1BFywgsjC8Q3c4ik5NXckALE6aDFzzjfMc",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 396512997238703169546,
+    "address": "1KFVzxsjNxnRVK1TM7apsEaXqKNHonerVK",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 396513063110695185068,
+    "address": "1HrgXNejFwGHF6huWJWpBeGdrJtJke1V4o",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 396513560188656591735,
+    "address": "1NH6Sfpj2baMQSabWHf6qWzzeeP6kEVuUo",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 381084454650189463638,
+    "address": "13NBQhQjPXtXmNGbWLAKZaE3mUyPpy6XU2",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 402950329998535243583,
+    "address": "1KX2ZaejuF1tm8tAdKbs2SxkfCGQ5fxHWa",
+    "similarity": 0.061151960784313716
+  },
+  {
+    "candidate": 343113678781059002133,
+    "address": "1D8xDS4N3CEZRDDR1Ea6hPbfshpE5GYrk",
+    "similarity": 0.06113758529983607
+  },
+  {
+    "candidate": 395360147198200026407,
+    "address": "1EDNrhcbHqwhRoDJRMju339qajvhSThdkE",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 395360147747955836483,
+    "address": "1QCsWYxDmX9vg1F11tRL68tSPze6PDhiH1",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 385660035661794396647,
+    "address": "1BfMAAo1fY9a33RnQG4bjrFAkizZN1eMeA",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 381084403946138007434,
+    "address": "1N6BztJCi8mEHWJ1Kbs7cAiTHvxXTShkVp",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 589408869507366535672,
+    "address": "15mTbupL3vsMTkoRvWtgDtRV3asv5ohjfS",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 498317377767010693208,
+    "address": "1JLWqPExfDhQKCjp1NkMwJpm4M9kG4iKTE",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 307584786162056393124,
+    "address": "1HajTkF5fjnTgWfhKpJbKkdixxmSvSau2h",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 300605091444647026560,
+    "address": "1HMbpdn7fuUaDCSfhJq4iYQzJgt8SM75CV",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 404214021591612167463,
+    "address": "1N7LPgKEfQWkiudZADoqCav2b7wgGftW3i",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 341960757233091430964,
+    "address": "1Lmr45mgpaDje2PPCG7KqseVTEuQmfhFHf",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 381191610852413162456,
+    "address": "15BGh9ERfg36oTt687bKRPL2FoNQzEqZD9",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 484743677864025740251,
+    "address": "1JM2fFTdrdX2CJ62xqb8aaQcZu8ChLhnkf",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 393051347490338505811,
+    "address": "1ChDYMpgfSRXsdMaEsBGaRHuHjsjfYB8WH",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 382237376154796312426,
+    "address": "17kGdS6TvkShxud16QHby9s3Vuy4j7hFTT",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 438941817997520238463,
+    "address": "1CrjqkyhGf86MBZ9QFvQDPMYR5BxswhJjE",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 395360141606088337246,
+    "address": "1E9o6DNPf1DXmwhGKLpx91fpkA9svDzvCy",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 393051347490338506731,
+    "address": "1C142DXvL9QxT1gkHhbwZC68YN7Uhhhejx",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 393051347490338505850,
+    "address": "1GxCEfuQf94TVX3uEbsPcTboQ5dkSQCFLS",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 395360141743527291567,
+    "address": "13AoajCJfYqgNaiHaknFVpJ5zg8ujjqSBg",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 416828067929183108871,
+    "address": "1PtWZD7ifR4nWNqZyjfZeYta3VBFFUeHLh",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 395360141606088337116,
+    "address": "1NZQDAjwf19njGWzQqWsAn6oYXAH7iR6um",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 381079951050562094952,
+    "address": "14izhRF5fXC568Q9gKvYhSc8zhGK4mRL2N",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 343113678781059002090,
+    "address": "15FNzcdofMLEqRp4yFxmXjogPgpxhoPRZK",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 484743677864025610118,
+    "address": "1KLGPp4sfadAgtn413iEFuoM9Aztio9bjC",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 395360141606088336047,
+    "address": "1DK87KA5r2EbrNNmDD9qiRkmgNvYDchGQf",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 343113678781059001998,
+    "address": "1KciMKLJ9dmv2HR58vvJmVos8C52PJhsY1",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 438941817996446495723,
+    "address": "1LEwpd5kt4y7UKKBWqruKLV9aM4Ufsh6AN",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 385699998289093019209,
+    "address": "1JusW9KYfS12X3UeT7o19JFB1vH3S5WERC",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 381084454650189466561,
+    "address": "1NcNgMWNfmGnFTALNRDeMuoZuHUVPUBLnk",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 385699998289093020206,
+    "address": "127b7VFfbmjw1w2ZMSw7Fggzts4vBQhGaX",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 396512997238703137653,
+    "address": "1JajjStZgtP4HrfHawQqNgEmAVwxtihdRW",
+    "similarity": 0.061029411764705874
+  },
+  {
+    "candidate": 386136775161345312610,
+    "address": "1DYABBwyhjg98HpvXMiqVedrdpbAtdUZz",
+    "similarity": 0.061007967671838664
+  },
+  {
+    "candidate": 486003355398757571228,
+    "address": "1JgGAMiBrS7T8kXv5jmyEaSXGNPU6cWJa",
+    "similarity": 0.061007967671838664
+  },
+  {
+    "candidate": 386244659533791646372,
+    "address": "1NphjcbKghxCGwFRYNuoT56NzWJUMKP3bo",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 385661152284509294143,
+    "address": "17PyWvWmChn75GpeuJcCqSqWK3zQ6XGMPm",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 484743771058259946745,
+    "address": "13WCTt6hAhNXDSVfGf9bsj9as5CRe9gFYS",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 395360146278979029677,
+    "address": "1M6WtDMtDhGjTQCZde835CxB4ggsQz6PR1",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 449109902860055846179,
+    "address": "1EgSSUMz1h54fVow9Sgmy41FxzYFdXzUAJ",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 416828075535330978020,
+    "address": "14jTJ33nqhPwJE5irb9nqB7CbsjczbNUrT",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 420863815047090395794,
+    "address": "15agRKdc3hRhXMKvkeJZvMRdn2sBQUJhVc",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 385699998289093019350,
+    "address": "1Ad6Mi2sxhvyha4mhvWwi2JoVNzHVsFGqu",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 381084454650189465470,
+    "address": "1MWcKLEwuhUvwJgMcRKb2gvu9BoUvxs832",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 438941888365190674302,
+    "address": "1Nc14mCgShwoeTGRG3871Gqd58X2SdTFnV",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 393051312305966417891,
+    "address": "1LXEDn8YXhExrcivzbXytfNUa6DQx6D6oa",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 381084454650189464572,
+    "address": "1PTLBVqTyhAEaYZhvsmkxyTyQQhN4rFbU4",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 416828067929149587205,
+    "address": "16RszjvG1h3aE3kwsZe7DcgmxcuMRtWzbn",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 343113678781059002028,
+    "address": "12hiGHbsthqKefdaksTECAiehPj9eusC9d",
+    "similarity": 0.06090686274509803
+  },
+  {
+    "candidate": 384998448451464285539,
+    "address": "1JSMCKWE93ssJexy68kihVNgBQNPtqYHyx",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 407604694721004724461,
+    "address": "1PV2vQh6ZVn2evfdwFUV3jgKtiomxqFrf2",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 447956940882475155508,
+    "address": "1QFmZ7zahGbyvzXuXMTeafrAWJKRRqv5Ja",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 484167146742830908657,
+    "address": "1A8xdXRMFTuEHjCACX4c3LZbFmFU2Ac78m",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 448480714838471507738,
+    "address": "16J8sBw6N11gny1cDgmFa1ZDNP8vSqPRH5",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 549333553038791241486,
+    "address": "1K7Vqh3vUA5hjBorzqk3vJSeXPcZVqPqvZ",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 328261455908648067554,
+    "address": "17EJNrvitmVotWfPSqmYSubPiEKuoqsjXy",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 566662830459976868435,
+    "address": "1ETSQd8AA6uABkwkfhQszLR3vb498JFn4j",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 561440072712431159283,
+    "address": "1DX4S4LPB2uokViUGAx19NoYkRJ1Cyyjup",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 420495074060075219581,
+    "address": "1KffcZtfhvuJwvryotHNinHHHxmqD7bRja",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 480234774478024534584,
+    "address": "1JgURRQfz331G6vmcZq9vXcTEFf1LqsBmT",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 395360076835825230900,
+    "address": "1Ep2d4iWwM5wynFic5fCAghcNZsK9qZVi9",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 386822940096265837200,
+    "address": "1P5iURKp62uUxUeqSW5tDkiStzb1wSGQ1p",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 366379923154678392064,
+    "address": "1B7PPrHijZuDpP9noQccd6nRzwnnyfbW2W",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 376900331810040017244,
+    "address": "1B9X6FmKhBui72eWsE5phGzo6iWBpiMo4e",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 369559634966278905928,
+    "address": "1Hh2kuWWvDuCNC6KMkB11QkNqZsq7QmhBa",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 438941817996446495811,
+    "address": "1J9TpC649CuPPiynuBGqsUgRgnzoQx7n1M",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 396512997242998137716,
+    "address": "1E4LndSQnduXKAJCwdPxVwxi8KeNhGo6cg",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 438941817996446495789,
+    "address": "1EG1T33yvqcEvZrYg88W2YfEqhXm7qxBxb",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 395360141606088862383,
+    "address": "1BhdUH5mmdEKdfwQmPJeEaxHkmPcRqcMYe",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 343113678781059265110,
+    "address": "1MPVTuBQFMcTVik7oPLs8yhk8RzjRqpHsA",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 385699998289093020205,
+    "address": "18AhwgrTJeuAqfdLYRtdJQ8Bye9WtrwYki",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 381084454650189463538,
+    "address": "1M6CAVUog3ui41YAPPrASrGZSEhE8r6oKp",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 378778611640975771496,
+    "address": "16MJXsgXDCukVGMgU9SgLX23iEx86tirkE",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 484743677864025740386,
+    "address": "147dEAWJmHuLe1bUqU9eMSoWcZqZ3tG8YL",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 438941817996446495838,
+    "address": "1EPeYUwq7ZuwpPkd2Mm1Vswf7Cg1HRvJWv",
+    "similarity": 0.06078431372549019
+  },
+  {
+    "candidate": 381084454650189464605,
+    "address": "1pd5YiCMs468b2sKjT8gPnh1QgMd5YgET",
+    "similarity": 0.060748732415843845
+  },
+  {
+    "candidate": 448174452473942057853,
+    "address": "1MXfVruRRYZZtaLdnzVa2toz9vBJBnrMru",
+    "similarity": 0.060661764705882346
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "failed_at": 1,
+  "partial_sequence": [],
+  "error_details": "Address mismatch at 1: Generated None vs expected 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH",
+  "timestamp": 1739571016.707216,
+  "environment": {
+    "python_version": "3.9.18 (main, Jan  4 2025, 07:37:23) \n[GCC 10.5.0]",
+    "platform": "linux"
+  }
+}

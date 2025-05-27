@@ -1,0 +1,12 @@
+[
+  {
+    "node": "/dns4/bootnode-0.testnet.iotex.one/tcp/4689/ipfs/12D3KooWFnaTYuLo8Mkbm3wzaWHtUuaxBRe24Uiopu15Wr5EhD3o",
+    "timestamp": "2024-11-01T00:29:09.748652",
+    "network_id": 4690
+  },
+  {
+    "node": "/dns4/bootnode-1.testnet.iotex.one/tcp/4689/ipfs/12D3KooWS7hkdFozeUqriUxv7zw8Y6NCeV8E5HUbgmVkGJUv4jHS",
+    "timestamp": "2024-11-01T00:29:09.749084",
+    "network_id": 4690
+  }
+]

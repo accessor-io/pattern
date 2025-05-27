@@ -1,0 +1,4 @@
+{
+    "wake.compiler.solc.remappings": [],
+    "python.analysis.autoImportCompletions": true
+}

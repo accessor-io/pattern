@@ -1,0 +1,3168 @@
+[
+  {
+    "pattern": "a(n) = a(n-1) ^ a(n-2)",
+    "matches": 0,
+    "total": 65,
+    "match_percentage": 0.0,
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "predicted": "0x2",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "predicted": "0x4",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "predicted": "0xf",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "predicted": "0x1d",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "predicted": "0x24",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "predicted": "0x7d",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "predicted": "0xac",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "predicted": "0x133",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "predicted": "0x3d1",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "predicted": "0x681",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "predicted": "0xef8",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "predicted": "0x1e1b",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "predicted": "0x3d50",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "predicted": "0x41c3",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "predicted": "0xa1c5",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "predicted": "0x1bf79",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "predicted": "0x27e42",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "predicted": "0x67c92",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "predicted": "0x858ca",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "predicted": "0x168961",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "predicted": "0x36413b",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "predicted": "0x788a5d",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "predicted": "0x894456",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "predicted": "0x12674e1",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "predicted": "0x2ba6c8b",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "predicted": "0x5ec0a1b",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "predicted": "0xb3d549d",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "predicted": "0x1a7339f6",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "predicted": "0x2a76987a",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "predicted": "0x40db2a23",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "predicted": "0xc52d4169",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "predicted": "0x1110e0ef6",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "predicted": "0x2e30939c5",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "predicted": "0x7e4b7806d",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "predicted": "0xd70501b0c",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "predicted": "0x1e89f760ef",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "predicted": "0x356f5ac643",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "predicted": "0x6967acaf39",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "predicted": "0xa2f1ca303f",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "predicted": "0x1ba28d3ff8d",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "predicted": "0x3f1a75f41d4",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "predicted": "0x41f1ae2481e",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "predicted": "0x8bf887df01e",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "predicted": "0x1c2d794e098a",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "predicted": "0x3cee499ce941",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "predicted": "0x4217933de9fe",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "predicted": "0xc130c77b0721",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "predicted": "0x1d9f1bccf64d6",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "predicted": "0x35fc3572fcc19",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "predicted": "0x57ba49d8e9a80",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "predicted": "0x9aa91c56b97e8",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "predicted": "0x16fd6980b5ac50",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "predicted": "0x3b683e31d32d2f",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "predicted": "0x49d1a94ecafe57",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "predicted": "0xf7a6a9a1a31ecb",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "predicted": "0x1763d7f3d5129c3",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "predicted": "0x32d5071558d4c3d",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "predicted": "0x58f1903d5d22e6e",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "predicted": "0x88916a3a2fccff1",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "predicted": "0x1c09102f67c032b8",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "predicted": "0x25f43e29f4e7e2e8",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "predicted": "0x4af30ae31adec3e6",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "predicted": "0x8bcb41da1c5e7adc",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "predicted": "0x15f3dae12b5237ab3",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "predicted": "0x32b16667a2eec5d89",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "a(n) = a(n-1) ^ (a(n-2) + a(n-3))",
+    "matches": 0,
+    "total": 64,
+    "match_percentage": 0.0,
+    "predictions": [
+      {
+        "position": 4,
+        "actual": "0x8",
+        "predicted": "0x3",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "predicted": "0x2",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "predicted": "0x1a",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "predicted": "0x2c",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "predicted": "0xa",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "predicted": "0x9d",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "predicted": "0xff",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "predicted": "0xb1",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "predicted": "0x756",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "predicted": "0xcfe",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "predicted": "0x1a9e",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "predicted": "0x37eb",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "predicted": "0x5563",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "predicted": "0x5b15",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "predicted": "0x4466",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "predicted": "0x13788",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "predicted": "0x10ac3",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "predicted": "0x550f9",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "predicted": "0x905c0",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "predicted": "0x53586",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "predicted": "0x1ce711",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "predicted": "0x5f7865",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "predicted": "0xcbc6b3",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "predicted": "0x196ba87",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "predicted": "0x396a926",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "predicted": "0x47d060b",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "predicted": "0x3dff043",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "predicted": "0x18e70f62",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "predicted": "0x2838c5c5",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "predicted": "0x2861285",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "predicted": "0x9cde25ad",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "predicted": "0x12baade1b",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "predicted": "0x5d002885",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "predicted": "0xe27b5a8f1",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "predicted": "0x19da21717f",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "predicted": "0x30dd8d9df",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "predicted": "0x72d026148a",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "predicted": "0x8439fb836f",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "predicted": "0x668b56fbe4",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "predicted": "0x9f15218dbe",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "predicted": "0x54893479c7b",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "predicted": "0x75defb766af",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "predicted": "0x6902495c725",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "predicted": "0xef3fee6a4d0",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "predicted": "0x2c275d282df3",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "predicted": "0x367143f02a65",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "predicted": "0x6eab83822718",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "predicted": "0xa2a7ee109bc",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "predicted": "0x4cf9b068ffb75",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "predicted": "0x786a5b9050314",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "predicted": "0xe4cdae2159a7c",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "predicted": "0x46ddc9ce4cfeb",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "predicted": "0x51c920214cb0bb",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "predicted": "0x1335604bd1ff88",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "predicted": "0xecf31cd1b936ef",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "predicted": "0x4e4bc710424fda",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "predicted": "0x3f8f73ade64c472",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "predicted": "0x5cf986bfcd535ce",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "predicted": "0x4c08ce4eff7790b",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "predicted": "0x15b4b051de3d6f2a",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "predicted": "0x36c8e0a855c89cfc",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "predicted": "0x440eac3bd2700122",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "predicted": "0xdbebcf1058d212bb",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "predicted": "0x1c1307139d1d4ed5",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "a(n) = (a(n-1) << 1) ^ a(n-2)",
+    "matches": 1,
+    "total": 65,
+    "match_percentage": 1.5384615384615385,
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "predicted": "0x7",
+        "match": true
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "predicted": "0xd",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "predicted": "0x17",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "predicted": "0x22",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "predicted": "0x77",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "predicted": "0xa9",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "predicted": "0x18c",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "predicted": "0x346",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "predicted": "0x5d7",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "predicted": "0xb04",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "predicted": "0x1075",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "predicted": "0x22bb",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "predicted": "0x4600",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "predicted": "0xf8d6",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "predicted": "0x1fa9f",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "predicted": "0x225a8",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "predicted": "0x76655",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "predicted": "0x9e133",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "predicted": "0x1f2c35",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "predicted": "0x3a663d",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "predicted": "0x406d2a",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "predicted": "0x8738ab",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "predicted": "0x1ed3a5a",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "predicted": "0x32897ce",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "predicted": "0x77a3a39",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "predicted": "0xe184284",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "predicted": "0x1d8ee1a5",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "predicted": "0x2255c6d4",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "predicted": "0x6ccbcfd6",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "predicted": "0xc70b03ea",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "predicted": "0x10d8aab1b",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "predicted": "0x3eabbf79e",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "predicted": "0x73da78ae2",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "predicted": "0xa17c1b3fd",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "predicted": "0x1713d60588",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "predicted": "0x277068df5a",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "predicted": "0x53272a3333",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "predicted": "0xb48729ab02",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "predicted": "0x19803116445",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "predicted": "0x24ea37cab60",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "predicted": "0x417c511d745",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "predicted": "0xfd8578a06ad",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "predicted": "0x1ab85d93ae8f",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "predicted": "0x2a5d27724d85",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "predicted": "0x4faccd05968d",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "predicted": "0xf76da2e2ac30",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "predicted": "0x1371bbf294b8c",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "predicted": "0x245c801cc8501",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "predicted": "0x523bf135c79e5",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "predicted": "0xc8b357f6e80fc",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "predicted": "0x1aa5b2683735ac",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "predicted": "0x3ef5f0ac37fae4",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "predicted": "0x5ed8e54f240cea",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "predicted": "0xf61389e362dd6b",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "predicted": "0x1508f73eeee1eaa",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "predicted": "0x34b532435ef53e7",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "predicted": "0x467ceb9a3a4e25e",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "predicted": "0xc54accf5d8df2bf",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "predicted": "0x18c9988bcda64333",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "predicted": "0x2852ae76a0dae9b2",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "predicted": "0x7fb3c20a2ed51eda",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "predicted": "0xcfa1e9e5ef8f7bfe",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "predicted": "0x192c460b2cded4da0",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "predicted": "0x3a7747d4dbbf5c21a",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "predicted": "0x4ae651fab530e03bb",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "a(n) = (a(n-1) ^ a(n-2)) + a(n-3)",
+    "matches": 0,
+    "total": 64,
+    "match_percentage": 0.0,
+    "predictions": [
+      {
+        "position": 4,
+        "actual": "0x8",
+        "predicted": "0x5",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "predicted": "0x12",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "predicted": "0x24",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "predicted": "0x2c",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "predicted": "0x92",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "predicted": "0xdd",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "predicted": "0x17f",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "predicted": "0x4b1",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "predicted": "0x854",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "predicted": "0x10fa",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "predicted": "0x229e",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "predicted": "0x47cb",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "predicted": "0x5623",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "predicted": "0xcaf5",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "predicted": "0x2286c",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "predicted": "0x34778",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "predicted": "0x7f2e1",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "predicted": "0xb60d7",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "predicted": "0x1bfe00",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "predicted": "0x436d90",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "predicted": "0x942f91",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "predicted": "0xb72865",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "predicted": "0x17be333",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "predicted": "0x396968f",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "predicted": "0x7e66900",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "predicted": "0xe7d870b",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "predicted": "0x211f726b",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "predicted": "0x38080562",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "predicted": "0x58bd7f41",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "predicted": "0x102c20ecd",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "predicted": "0x18e5df63d",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "predicted": "0x39b6bdff3",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "predicted": "0x98e242945",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "predicted": "0x10bab5ac29",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "predicted": "0x2338c9725f",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "predicted": "0x3f4ddcd0bf",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "predicted": "0x80bf2219cc",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "predicted": "0xc529f9dd0f",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "predicted": "0x20588570376",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "predicted": "0x4db55a875aa",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "predicted": "0x572a17d1479",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "predicted": "0xb61aa437dad",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "predicted": "0x22eab475cf1b",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "predicted": "0x4af0fcf71ed0",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "predicted": "0x54475d522603",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "predicted": "0xeff24b03dc65",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "predicted": "0x246c7cd84a190",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "predicted": "0x40daa2efe07b4",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "predicted": "0x6efbc088ff9cd",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "predicted": "0xbd666019a2b3c",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "predicted": "0x1e4dda2255b624",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "predicted": "0x4a631f969ecb6b",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "predicted": "0x61d932334930c3",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "predicted": "0x11b166077503e0e",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "predicted": "0x1e0fb9ed8b90ad7",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "predicted": "0x3ca692790524c1c",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "predicted": "0x77a3eccdd68048a",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "predicted": "0xb4f8c5bf5156a12",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "predicted": "0x23527ceaef8ae707",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "predicted": "0x35b4b8421a1e5ea6",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "predicted": "0x5ebc751a5dd50cec",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "predicted": "0xc20895f8d27026ca",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "predicted": "0x1dc0c0d1061f2e2bb",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "predicted": "0x4221b85a1df7d705d",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "a(n) = a(n-1) + a(n-2) - a(n-3)",
+    "matches": 0,
+    "total": 64,
+    "match_percentage": 0.0,
+    "predictions": [
+      {
+        "position": 4,
+        "actual": "0x8",
+        "predicted": "0x9",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "predicted": "0xc",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "predicted": "0x16",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "predicted": "0x3e",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "predicted": "0x68",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "predicted": "0xfb",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "predicted": "0x267",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "predicted": "0x2f5",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "predicted": "0x4b2",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "predicted": "0xcfc",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "predicted": "0x1a58",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "predicted": "0x3315",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "predicted": "0x7dc3",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "predicted": "0x108f9",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "predicted": "0x1d692",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "predicted": "0x3b526",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "predicted": "0x7065d",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "predicted": "0xf98e7",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "predicted": "0x235cea",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "predicted": "0x3c5cee",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "predicted": "0x67ad2d",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "predicted": "0x103b447",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "predicted": "0x2811a97",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "predicted": "0x45e674f",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "predicted": "0x7f20bfe",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "predicted": "0x10fd72ef",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "predicted": "0x1ec78991",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "predicted": "0x47e5b59a",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "predicted": "0xa3025f8d",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "predicted": "0xf81dc011",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "predicted": "0x1e47f67bf",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "predicted": "0x43b6f93c7",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "predicted": "0x64fcaf9b5",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "predicted": "0xb42ee8acf",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "predicted": "0x1c8725639f",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "predicted": "0x2fb1230ce7",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "predicted": "0x56403d4626",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "predicted": "0x112d59c8aef",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "predicted": "0x1f1d560fc48",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "predicted": "0x30bfa172614",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "predicted": "0x80bd65286c5",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "predicted": "0x121dccbc6d91",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "predicted": "0x19754246ac03",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "predicted": "0x32ee9a42dbba",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "predicted": "0x8967ca29d5f9",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "predicted": "0xebfb64faa311",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "predicted": "0x1b528321a5e2e",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "predicted": "0x2f204cf61b706",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "predicted": "0x8082d72cd3ddb",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "predicted": "0x141f7dca3d14bc",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "predicted": "0x1fb1f9a7a9c6d4",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "predicted": "0x2c7c5e555fb373",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "predicted": "0x76264d8c96cdeb",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "predicted": "0xe4671f007fc1b0",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "predicted": "0x21d805fa6f2f4e7",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "predicted": "0x41482cb1ee9705e",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "predicted": "0x824bcaad24d7854",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "predicted": "0x1443711b5ae895ec",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "predicted": "0x1c407793e0621075",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "predicted": "0x3a46443dd3d17936",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "predicted": "0x9f4248e51feacaf0",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "predicted": "0x13d962a06a74eceee",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "predicted": "0x2226f715f09741333",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "predicted": "0x33462695c807f8b81",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "a(n) = a(n-1) * a(n-2) % 2^64",
+    "matches": 0,
+    "total": 65,
+    "match_percentage": 0.0,
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "predicted": "0x3",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "predicted": "0x15",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "predicted": "0x38",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "predicted": "0xa8",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "predicted": "0x405",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "predicted": "0xe8c",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "predicted": "0x4280",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "predicted": "0x198a0",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "predicted": "0x3a9a6",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "predicted": "0x90f06",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "predicted": "0x2f48f1",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "predicted": "0xd58a20",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "predicted": "0x3473200",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "predicted": "0x10e29890",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "predicted": "0x527cee42",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "predicted": "0x12632fbaa",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "predicted": "0x46eb27a03",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "predicted": "0x1089c8e413",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "predicted": "0x47ddee0ccb",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "predicted": "0x16c2d36ca44",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "predicted": "0x4f4aae4fe0c",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "predicted": "0xf507fac7ece",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "predicted": "0x4978d3e72d48",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "predicted": "0x1b37ca8470d94",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "predicted": "0x66e18285d8066",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "predicted": "0x15b107fd471c46",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "predicted": "0x5a89409f298608",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "predicted": "0x1440faddd03cb30",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "predicted": "0x5bed04aedea45b8",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "predicted": "0x1e24e0d78f7632bc",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "predicted": "0x5a41b829e58198c2",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "predicted": "0x326a091cc9b266d0",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "predicted": "0x77e82c5bca297878",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "predicted": "0x68da8dc80adc69b0",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "predicted": "0x375dbfd4dd4ed240",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "predicted": "0x5cd3efef8baf5d34",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "predicted": "0xbd12a71eabfe5b70",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "predicted": "0x3a54984450dab950",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "predicted": "0x3eb71b1e6cbdafc6",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "predicted": "0xa97757807c0ff512",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "predicted": "0x2dea4fd8700d45d5",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "predicted": "0x56aecb1dac9d38ff",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "predicted": "0x536a05351f1860ff",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "predicted": "0x8257fca6aa7c8fcb",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "predicted": "0x28fc730ff4f81a54",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "predicted": "0xe07cd758ac7ae368",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "predicted": "0xf27f2468f666a29e",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "predicted": "0x7cfb9a2975c1729f",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "predicted": "0xc62bf17a12027c44",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "predicted": "0xdd8c5e63623ff590",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "predicted": "0x2ea8b73942af25b0",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "predicted": "0x1f2685cb9c567950",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "predicted": "0xfb2ba283041e4644",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "predicted": "0x1cccb9c7fef5543c",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "predicted": "0xabfd8213b3fffc6c",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "predicted": "0x1fdfc1ce213b6664",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "predicted": "0x6386323b27bd719c",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "predicted": "0xb0273066a700c42f",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "predicted": "0xeb1a4ba6a0bdc7a2",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "predicted": "0x9e3ecf414d241474",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "predicted": "0x99baba13e124e594",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "predicted": "0x515c80f0cbd80f70",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "predicted": "0x436bca711d9ab6a0",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "predicted": "0x230bcd4356cb34c",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "predicted": "0x2a10814dde4c62c2",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "a(n) = ((a(n-1) << 3) | (a(n-1) >> 61)) ^ a(n-2)",
+    "matches": 0,
+    "total": 65,
+    "match_percentage": 0.0,
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "predicted": "0x19",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "predicted": "0x3b",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "predicted": "0x47",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "predicted": "0xa0",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "predicted": "0x19d",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "predicted": "0x251",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "predicted": "0x74c",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "predicted": "0xe78",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "predicted": "0x11c3",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "predicted": "0x261a",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "predicted": "0x575b",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "predicted": "0xa97b",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "predicted": "0x15de0",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "predicted": "0x36ea8",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "predicted": "0x62143",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "predicted": "0xb7b4e",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "predicted": "0x193627",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "predicted": "0x28acf5",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "predicted": "0x6c1637",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "predicted": "0xd005f5",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "predicted": "0x174854c",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "predicted": "0x286969f",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "predicted": "0x6b43e72",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "predicted": "0xf0edd2c",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "predicted": "0x1bfbcd95",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "predicted": "0x3621f1c6",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "predicted": "0x6a275f35",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "predicted": "0xb283c418",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "predicted": "0x1fb443e3e",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "predicted": "0x3d7ebf75c",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "predicted": "0x5be5ad637",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "predicted": "0xdf307e0ee",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "predicted": "0x1bfa402030",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "predicted": "0x263cf51a9d",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "predicted": "0x4a5ac24290",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "predicted": "0xb365295ee4",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "predicted": "0x10696080c13",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "predicted": "0x278c437b398",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "predicted": "0x7062dca9d59",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "predicted": "0xa759a9f510e",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "predicted": "0x144288b6a023",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "predicted": "0x374bf8fba107",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "predicted": "0x76a8a1f669e9",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "predicted": "0x9f7ce3fbd5a7",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "predicted": "0x16423d6529625",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "predicted": "0x3487106213094",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "predicted": "0x503e0aec4e062",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "predicted": "0xb0d5d8fc4c1f3",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "predicted": "0x102ab68a75c5ed",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "predicted": "0x38a851312eddf4",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "predicted": "0x70877b87fcf834",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "predicted": "0xcec6a6473a0d5c",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "predicted": "0x1037a3e4916c874",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "predicted": "0x3769f4a0e9217e3",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "predicted": "0x4827bae4d401fec",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "predicted": "0xfc436fe066a4f3f",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "predicted": "0x17d8880b97510714",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "predicted": "0x388d10646c4d3859",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "predicted": "0x794abc7aae7969bf",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "predicted": "0x918b2ba23284338e",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "predicted": "0x1a223cac2f27b1677",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "predicted": "0x3d04fa3f3d06aebad",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "predicted": "0x7c4e6a7c02847feaf",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "predicted": "0xdb6c0968f9d0251e9",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "predicted": "0x15b14e0b4c5f43c713",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "a(n) = SHX(a(n-1))",
+    "matches": 0,
+    "total": 65,
+    "match_percentage": 0.0,
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "predicted": "0xdaa66d2c7ddf7433",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "predicted": "0x538454127b09648f",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "predicted": "0xf1bbcdcbfa53e088",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "predicted": "0xfa8cfc37711c2ded",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "predicted": "0x489e4c815d41c0c1",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "predicted": "0xf8782311ca1cd70c",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "predicted": "0x708a824f612c91e0",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "predicted": "0x9f330d6334e05d03",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "predicted": "0xab626671938d2a22",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "predicted": "0xd44a2fe94d0dc0b3",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "predicted": "0x2f68bb1911a259fb",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "predicted": "0xaa5023818da07a60",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "predicted": "0x8ce5882acbd60430",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "predicted": "0xb81be6ca161dec23",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "predicted": "0xee46521255218db6",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "predicted": "0xdef3903519472147",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "predicted": "0x31cb78453eebd525",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "predicted": "0xc83c24583bf04777",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "predicted": "0x3fc2c3405e2b7fad",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "predicted": "0xbb49b593f33f2994",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "predicted": "0x1344b7549b276907",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "predicted": "0xeea9f5d7fb707df2",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "predicted": "0x2e3fb9cad4e1ca44",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "predicted": "0x7ef798e57f5bcf5d",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "predicted": "0x6c7a3aa48f7da2be",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "predicted": "0x93987a934efbac4d",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "predicted": "0x2728734c16fbfca8",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "predicted": "0x161cebe84cfed70e",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "predicted": "0xccb76e05edca7ca4",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "predicted": "0x139ecae0fa25c1cf",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "predicted": "0x53666b93226b717e",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "predicted": "0x3544cb71db90dad8",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "predicted": "0x7b150f918b96b715",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "predicted": "0xd3338e4d0945ebf0",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "predicted": "0xf3d3ccdbb39ec5dc",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "predicted": "0xedfc570c9a6b5843",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "predicted": "0xa7a6ac5037035e50",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "predicted": "0x11e6168e7df221b9",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "predicted": "0xf4d492ba5fdc27d6",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "predicted": "0x5491f0be2697e61b",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "predicted": "0xa64a6ddcd50dd687",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "predicted": "0x5296438cc44066a1",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "predicted": "0x6dc6611e19c57e87",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "predicted": "0x93f19cb51d7da87d",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "predicted": "0x1f2500127d0d3b84",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "predicted": "0x718f94ccbed8e1aa",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "predicted": "0x494ac32e7af19db",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "predicted": "0xdacd6e4f9c8d6065",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "predicted": "0x2fcbe8031cc88b4",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "predicted": "0x1238d31f4cab5934",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "predicted": "0xb4807682f59f721c",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "predicted": "0xfea70e519406bb6c",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "predicted": "0x7bab1cacfe027973",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "predicted": "0x7b7e807c61cca2f4",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "predicted": "0xe29230aa3e9cfe37",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "predicted": "0x4d5962c9e54f783c",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "predicted": "0x481f0cafdb54c831",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "predicted": "0x12d787a4bde7df47",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "predicted": "0x750d5112ec8dc06e",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "predicted": "0x32d73765d497c166",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "predicted": "0xaed1b9609bc0cd3e",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "predicted": "0x47fc032d1e8ac889",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "predicted": "0xa2c8e5dc9c097037",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "predicted": "0x9be8443c3e33d5ed",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "predicted": "0x4387e24674dd633c",
+        "match": false
+      }
+    ]
+  }
+]

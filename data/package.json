@@ -1,0 +1,38 @@
+{
+  "name": "ethereum-p2p-protocol",
+  "version": "1.0.0",
+  "description": "A secure P2P protocol implementation on Ethereum using life.ini configuration",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "lint": "solhint \"contracts/**/*.sol\"",
+    "coverage": "truffle run coverage"
+  },
+  "keywords": [
+    "ethereum",
+    "p2p",
+    "blockchain",
+    "smart-contracts",
+    "solidity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "@truffle/hdwallet-provider": "^2.1.0",
+    "playwright": "^1.49.1"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "chai": "^4.3.7",
+    "eth-gas-reporter": "^0.2.25",
+    "solhint": "^3.4.1",
+    "solidity-coverage": "^0.8.2",
+    "truffle": "^5.8.1"
+  }
+}

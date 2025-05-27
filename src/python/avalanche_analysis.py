@@ -33,7 +33,7 @@ def chain_next_value(prev_value, n):
     h_bytes = hashlib.sha256(input_bytes).digest()
     X = int.from_bytes(h_bytes, byteorder='big')
     S = X % m
-    print(f"chain_next_value: prev_value={prev_value}, n={n}, input_bytes={input_bytes.hex()}, h_bytes={h_bytes.hex()}, X={X}, S={S}, L={L}")
+    vprint(f"chain_next_value: prev_value={prev_value}, n={n}, input_bytes={input_bytes.hex()}, h_bytes={h_bytes.hex()}, X={X}, S={S}, L={L}")
     return X, S, L
 
 def format_256bit(X):
@@ -221,15 +221,17 @@ def process_batch(args):
             expected = expected_significant.get(n)
             
             if S_hex.lower() != expected.lower():
-                print(f"process_batch: Seed {seed} rejected at index {n} with S={S_hex} (expected: {expected})")
+                vprint(f"process_batch: Seed {seed} rejected at index {n} with S={S_hex} (expected: {expected})")
                 break
             valid_length = n
             current_value = _
         
+        if valid_length > 5:
+            print(f"Seed {seed} passed {valid_length} steps")
         if valid_length > local_best_length:
             local_best_length = valid_length
             local_best_seed = seed
-            print(f"process_batch: New local best seed {seed} with valid length {valid_length}")
+            print(f"New local best: Seed {seed} (length {valid_length})")
     
     return local_best_seed, local_best_length
 
@@ -361,19 +363,19 @@ def analyze_bit_count(value):
     
     # Check bit count (scaled from 67/256 for 28-bit space)
     if not (6 <= ones <= 9):
-        print(f"analyze_bit_count: Value {value} rejected due to bit count {ones}")
+        vprint(f"analyze_bit_count: Value {value} rejected due to bit count {ones}")
         return False
     
     # Check for required patterns
     required_patterns = ['110', '011', '101']
     if not any(pattern in binary for pattern in required_patterns):
-        print(f"analyze_bit_count: Value {value} rejected due to missing required patterns")
+        vprint(f"analyze_bit_count: Value {value} rejected due to missing required patterns")
         return False
     
     # Check leading zeros
     leading_zeros = len(binary) - len(binary.lstrip('0'))
     if leading_zeros < 2 or leading_zeros > 20:
-        print(f"analyze_bit_count: Value {value} rejected due to leading zeros {leading_zeros}")
+        vprint(f"analyze_bit_count: Value {value} rejected due to leading zeros {leading_zeros}")
         return False
     
     return True
@@ -424,7 +426,7 @@ def analyze_avalanche_effect(value):
         # Count differing bits
         diff_bits = bin(X1 ^ X2).count('1')
         scores.append(diff_bits / 256)  # Normalize to [0,1]
-        print(f"analyze_avalanche_effect: Value {value} at index {n} has avalanche score {diff_bits / 256}")
+        vprint(f"analyze_avalanche_effect: Value {value} at index {n} has avalanche score {diff_bits / 256}")
         current = X1
     return sum(scores) / len(scores)  # Average avalanche effect
 
@@ -445,7 +447,7 @@ def analyze_entropy(value):
             p = count / 32
             entropy -= p * math.log2(p)
         entropies.append(entropy)
-        print(f"analyze_entropy: Value {value} at index {n} has entropy {entropy}")
+        vprint(f"analyze_entropy: Value {value} at index {n} has entropy {entropy}")
         current = X
     return sum(entropies) / len(entropies)
 
@@ -482,13 +484,13 @@ def enhanced_pattern_based_quick_check(seed):
     # Check avalanche effect (should be close to 0.5 for good diffusion)
     avalanche = analyze_avalanche_effect(seed)
     if not (0.45 <= avalanche <= 0.55):
-        print(f"enhanced_pattern_based_quick_check: Seed {seed} rejected due to avalanche effect {avalanche}")
+        vprint(f"enhanced_pattern_based_quick_check: Seed {seed} rejected due to avalanche effect {avalanche}")
         return False
     
     # Check entropy (should be high for good randomness)
     entropy = analyze_entropy(seed)
     if entropy < 4.5:  # Typical good entropy for SHA-256
-        print(f"enhanced_pattern_based_quick_check: Seed {seed} rejected due to entropy {entropy}")
+        vprint(f"enhanced_pattern_based_quick_check: Seed {seed} rejected due to entropy {entropy}")
         return False
     
     # Basic pattern checks
@@ -497,7 +499,7 @@ def enhanced_pattern_based_quick_check(seed):
     for n, expected in enumerate(expected_pattern, 1):
         _, S, L = chain_next_value_cached(current, n)
         if S != expected:
-            print(f"enhanced_pattern_based_quick_check: Seed {seed} rejected at index {n} with S={S} (expected: {expected})")
+            vprint(f"enhanced_pattern_based_quick_check: Seed {seed} rejected at index {n} with S={S} (expected: {expected})")
             return False
         current = _
     
@@ -509,11 +511,11 @@ def enhanced_pattern_based_quick_check(seed):
     seed_binary = format(seed, '028b')
     for pos in strong_ones:
         if seed_binary[pos] != '1':
-            print(f"enhanced_pattern_based_quick_check: Seed {seed} rejected due to strong one position {pos}")
+            vprint(f"enhanced_pattern_based_quick_check: Seed {seed} rejected due to strong one position {pos}")
             return False
     for pos in strong_zeros:
         if seed_binary[pos] != '0':
-            print(f"enhanced_pattern_based_quick_check: Seed {seed} rejected due to strong zero position {pos}")
+            vprint(f"enhanced_pattern_based_quick_check: Seed {seed} rejected due to strong zero position {pos}")
             return False
     
     return True
@@ -566,77 +568,57 @@ def generate_candidate_seeds():
     return sorted(list(candidates))
 
 def optimized_parallel_search(max_index=65, batch_size=1000):
-    """Pattern-optimized parallel search with advanced analysis"""
     num_processes = mp.cpu_count()
     print(f"Using {num_processes} CPU cores for optimized search")
-    
-    # Generate candidates using enhanced pattern analysis
     candidates = set()
-    
-    # Add candidates based on known patterns
     base_patterns = [
         0b0000111110111000,  # 1976
         0b0000000001000011,  # 67
         0b0000000000001100,  # 12
         0b0000000011110111   # 247
     ]
-    
-    # Add candidates from bit pattern analysis
     for pattern in base_patterns:
         for shift in range(24):
             candidate = pattern << shift
             if candidate < 2**28:
-                # Apply advanced filtering
                 if enhanced_pattern_based_quick_check(candidate):
                     candidates.add(candidate)
-                    print(f"optimized_parallel_search: Added candidate {candidate} from pattern {pattern} with shift {shift}")
-                    # Generate related candidates
+                    vprint(f"optimized_parallel_search: Added candidate {candidate} from pattern {pattern} with shift {shift}")
                     for related in apply_transformations(candidate):
                         if enhanced_pattern_based_quick_check(related):
                             candidates.add(related)
-                            print(f"optimized_parallel_search: Added related candidate {related} from candidate {candidate}")
-    
+                            vprint(f"optimized_parallel_search: Added related candidate {related} from candidate {candidate}")
     candidates = sorted(list(candidates))
     print(f"Generated {len(candidates):,} pattern-based candidates")
-    
-    # Create batches of candidates
     batches = []
     for i in range(0, len(candidates), batch_size):
         batch = candidates[i:i + batch_size]
         batches.append((batch, max_index))
-    
     def process_pattern_batch(args):
         batch, max_index = args
         local_best_seed = None
         local_best_length = 0
-        
         for seed in batch:
-            # Use pattern-based quick check
             if not enhanced_pattern_based_quick_check(seed):
                 continue
-                
             current_value = seed
             valid_length = 0
-            
             for n in range(1, max_index + 1):
                 _, S, L = chain_next_value_cached(current_value, n)
                 S_hex = format(S, 'x').zfill(L)
                 expected = expected_significant.get(n)
-                
                 if S_hex.lower() != expected.lower():
-                    print(f"process_pattern_batch: Seed {seed} rejected at index {n} with S={S_hex} (expected: {expected})")
+                    vprint(f"process_pattern_batch: Seed {seed} rejected at index {n} with S={S_hex} (expected: {expected})")
                     break
                 valid_length = n
                 current_value = _
-            
+            if valid_length > 5:
+                print(f"Seed {seed} passed {valid_length} steps")
             if valid_length > local_best_length:
                 local_best_length = valid_length
                 local_best_seed = seed
-                print(f"process_pattern_batch: New local best seed {seed} with valid length {valid_length}")
-        
+                print(f"New local best: Seed {seed} (length {valid_length})")
         return local_best_seed, local_best_length
-    
-    # Run parallel search
     with mp.Pool(processes=num_processes) as pool:
         results = []
         for i, result in enumerate(pool.imap_unordered(process_pattern_batch, batches)):
@@ -648,7 +630,6 @@ def optimized_parallel_search(max_index=65, batch_size=1000):
                 if results:
                     best_so_far = max(results, key=lambda x: x[1])
                     print(f"Current best: Seed {best_so_far[0]:,} (length {best_so_far[1]})")
-    
     if results:
         best_seed, best_length = max(results, key=lambda x: x[1])
         return best_seed, best_length
@@ -657,13 +638,13 @@ def optimized_parallel_search(max_index=65, batch_size=1000):
 if __name__ == '__main__':
     print("Starting pattern-optimized search...")
     
-    # Run optimized search
-    best_seed, best_length = optimized_parallel_search(max_index=65)
+# Run optimized search
+best_seed, best_length = optimized_parallel_search(max_index=65)
     
-    if best_seed is not None:
-        print(f"\n🎉 Best seed found: {best_seed:,}")
-        print(f"Valid length: {best_length}")
-        print("\nGenerating chain for verification:")
-        generate_chain(best_seed, best_length + 1)
-    else:
-        print("\n❌ No valid seed found")
+if best_seed is not None:
+    print(f"\n🎉 Best seed found: {best_seed:,}")
+    print(f"Valid length: {best_length}")
+    print("\nGenerating chain for verification:")
+    generate_chain(best_seed, best_length + 1)
+else:
+    print("\n❌ No valid seed found")

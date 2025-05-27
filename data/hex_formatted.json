@@ -1,0 +1,7 @@
+{
+  "original_file": "organized/data/hex_formatted.txt",
+  "size_bytes": 6370,
+  "suggested_width": 79,
+  "suggested_height": 81,
+  "import_notes": "In ImageJ: File > Import > Raw... then use these dimensions"
+}

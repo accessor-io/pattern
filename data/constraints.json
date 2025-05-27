@@ -1,0 +1,12 @@
+{
+  "min_bit_changes": 64.0,
+  "max_bit_changes": 192.0,
+  "min_hamming_weight": 64,
+  "max_hamming_weight": 192,
+  "min_byte_changes": 8,
+  "max_byte_changes": 24,
+  "growth_rate": {
+    "min": 1.2,
+    "max": 2.0
+  }
+}

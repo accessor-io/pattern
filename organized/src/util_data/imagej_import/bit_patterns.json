@@ -1,0 +1,7 @@
+{
+  "original_file": "organized/data/bit_patterns.json",
+  "size_bytes": 4276,
+  "suggested_width": 65,
+  "suggested_height": 66,
+  "import_notes": "In ImageJ: File > Import > Raw... then use these dimensions"
+}

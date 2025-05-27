@@ -1,0 +1,7 @@
+{
+  "original_file": "organized/data/hex_values.json",
+  "size_bytes": 84,
+  "suggested_width": 9,
+  "suggested_height": 10,
+  "import_notes": "In ImageJ: File > Import > Raw... then use these dimensions"
+}

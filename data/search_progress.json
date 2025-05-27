@@ -1,0 +1,10 @@
+{
+  "timestamp": 1741493562.839944,
+  "total_candidates": 497814,
+  "promising_candidates": 0,
+  "total_batches": 3266,
+  "elapsed_hours": 1.6761382406949996,
+  "remaining_hours": 22.323861759305,
+  "candidates_per_second": 85.85786644203773,
+  "best_similarity": 0.0
+}

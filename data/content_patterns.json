@@ -1,0 +1,71 @@
+{
+    "streaming": {
+        "patterns": [
+            "netflix\\.com", "youtube\\.com", "spotify\\.com", "twitch\\.tv",
+            "hulu\\.com", "disney\\+", "amazon\\.com/video", "vimeo\\.com",
+            "soundcloud\\.com", "apple\\.com/music", "pandora\\.com"
+        ],
+        "ports": [1935, 443, 80],
+        "protocols": ["RTMP", "HLS", "DASH"]
+    },
+    "social_media": {
+        "patterns": [
+            "facebook\\.com", "instagram\\.com", "twitter\\.com", "tiktok\\.com",
+            "snapchat\\.com", "linkedin\\.com", "pinterest\\.com", "reddit\\.com",
+            "whatsapp\\.com", "telegram\\.org", "discord\\.com"
+        ],
+        "ports": [443, 80, 5222],
+        "protocols": ["HTTPS", "WSS"]
+    },
+    "gaming": {
+        "patterns": [
+            "steam", "xbox", "playstation", "nintendo", "epic",
+            "ea\\.com", "battle\\.net", "roblox", "minecraft",
+            "ubisoft\\.com", "rockstargames\\.com"
+        ],
+        "ports": [3074, 3075, 27015, 27036],
+        "protocols": ["UDP", "TCP"]
+    },
+    "work": {
+        "patterns": [
+            "zoom\\.us", "teams", "slack\\.com", "office\\.com",
+            "google\\.com/mail", "dropbox\\.com", "github\\.com",
+            "atlassian\\.com", "asana\\.com", "trello\\.com"
+        ],
+        "ports": [443, 80, 5938],
+        "protocols": ["HTTPS", "WSS"]
+    },
+    "shopping": {
+        "patterns": [
+            "amazon\\.com", "ebay\\.com", "walmart\\.com", "shopify",
+            "aliexpress\\.com", "etsy\\.com", "bestbuy\\.com",
+            "target\\.com", "newegg\\.com"
+        ],
+        "ports": [443, 80],
+        "protocols": ["HTTPS"]
+    },
+    "file_sharing": {
+        "patterns": [
+            "dropbox\\.com", "drive\\.google\\.com", "onedrive",
+            "mega\\.nz", "wetransfer\\.com", "box\\.com"
+        ],
+        "ports": [443, 80],
+        "protocols": ["HTTPS"]
+    },
+    "messaging": {
+        "patterns": [
+            "whatsapp", "telegram", "signal", "discord",
+            "skype", "messenger\\.com", "slack\\.com"
+        ],
+        "ports": [443, 5222, 5228],
+        "protocols": ["HTTPS", "XMPP"]
+    },
+    "suspicious": {
+        "patterns": [
+            "torrent", "proxy", "vpn", "darknet",
+            "anonymous", "hack", "crack"
+        ],
+        "ports": [6881, 6882, 1080, 8080],
+        "protocols": ["BitTorrent", "SOCKS"]
+    }
+} 

@@ -1,0 +1,22 @@
+[
+  {
+    "position": 68,
+    "predicted_value": "0xce2d691f719dbb6b2",
+    "method": "Bit Manipulation",
+    "match_rate": 1.5384615384615385
+  },
+  {
+    "position": 69,
+    "predicted_value": "0x1ef55100b22af5acca",
+    "method": "Bit Manipulation",
+    "match_rate": 1.5384615384615385
+  },
+  {
+    "position": 70,
+    "predicted_value": "0x31087490934c30ef26",
+    "method": "Bit Manipulation",
+    "match_rate": 1.5384615384615385,
+    "actual_value": "0x349b84b6431a6c4ef1",
+    "correct": false
+  }
+]

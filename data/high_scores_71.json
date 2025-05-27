@@ -1,0 +1,155 @@
+{
+  "high_score": 0.1323529411764706,
+  "best_candidates": [
+    {
+      "private_key": "0x5bd3d8c3aaef5ad420",
+      "address": "16a5pTtLSppwMGor1m8GK54ZdgTnnVk8DM",
+      "similarity": 0.1323529411764706,
+      "timestamp": "2025-05-03 12:16:16"
+    },
+    {
+      "private_key": "0x5769d5755f8e434b9c",
+      "address": "1Lfm1JeBgFebkHMaSSdNTLqKGUskdczWq3",
+      "similarity": 0.1323529411764706,
+      "timestamp": "2025-05-03 12:16:23"
+    },
+    {
+      "private_key": "0x6937096e1ccd2c33d9",
+      "address": "1PWEtBV5vKCYwdGesNDFW6PCyxEMNR3yZ1",
+      "similarity": 0.11764705882352941,
+      "timestamp": "2025-05-03 12:15:53"
+    },
+    {
+      "private_key": "0x4a9b2e00ed91ccb0b6",
+      "address": "16ozvVeSWwZEdaHDNQUMYbthHtVZAEEsn7",
+      "similarity": 0.11764705882352941,
+      "timestamp": "2025-05-03 12:16:11"
+    },
+    {
+      "private_key": "0x7f35eff222a10fb891",
+      "address": "18YE1Ee6BAJWwNvWN7tmoHphJadX4wF3Gw",
+      "similarity": 0.10294117647058823,
+      "timestamp": "2025-05-03 12:14:32"
+    },
+    {
+      "private_key": "0x7e70d85ad1c94c0d91",
+      "address": "1EH4qYoioVDRQJHohjd4WnWpdMjjBYVnbU",
+      "similarity": 0.10294117647058823,
+      "timestamp": "2025-05-03 12:14:51"
+    },
+    {
+      "private_key": "0x66a31288350ca4b17b",
+      "address": "1PRYnxhRdUDpBAmU1svG5JdXGe2L8svMXx",
+      "similarity": 0.10294117647058823,
+      "timestamp": "2025-05-03 12:14:52"
+    },
+    {
+      "private_key": "0x7def796bb98f1305da",
+      "address": "1FWBaTiBgTZjrGknbSfSRsC4JS5ump6sXZ",
+      "similarity": 0.10294117647058823,
+      "timestamp": "2025-05-03 12:15:02"
+    },
+    {
+      "private_key": "0x63887f03a37b2d7a84",
+      "address": "189uuVctrBxpYkfxwY2oicu9c4ceaaVzXR",
+      "similarity": 0.10294117647058823,
+      "timestamp": "2025-05-03 12:15:34"
+    },
+    {
+      "private_key": "0x48e68f98e68b478ee3",
+      "address": "1PWj3MqyFxNKXC3onxPSoaZcwDCqmgvLNq",
+      "similarity": 0.10294117647058823,
+      "timestamp": "2025-05-03 12:15:36"
+    },
+    {
+      "private_key": "0x6160b6beecbfcdedd9",
+      "address": "14axHpeZ5e4v3iKxXpdFVmiARvzT2w3Chi",
+      "similarity": 0.10294117647058823,
+      "timestamp": "2025-05-03 12:15:44"
+    },
+    {
+      "private_key": "0x59064f04dad24905bb",
+      "address": "1GnckJ5LWv98NcCJNp5noUt8zbKK7J7z6L",
+      "similarity": 0.10294117647058823,
+      "timestamp": "2025-05-03 12:15:52"
+    },
+    {
+      "private_key": "0x62a511826975fcec6a",
+      "address": "1NQEb8K1yQAXzmrYpLgFKmoZUgN14YVzn2",
+      "similarity": 0.08823529411764705,
+      "timestamp": "2025-05-03 12:13:56"
+    },
+    {
+      "private_key": "0x7b98c5cbc00a4f31b6",
+      "address": "1DyoykrwqGmUpMbDNLJbMuzF83UPD2yebW",
+      "similarity": 0.08823529411764705,
+      "timestamp": "2025-05-03 12:13:58"
+    },
+    {
+      "private_key": "0x64330c6ed7c202499f",
+      "address": "1BwUhafA9j23K6mmZSaa4fy8MxHVfX4AuS",
+      "similarity": 0.08823529411764705,
+      "timestamp": "2025-05-03 12:14:30"
+    },
+    {
+      "private_key": "0x4f81c3f4ed6b78ae4f",
+      "address": "17Eg3HWEdPJRacHVkBVggoBLkDDtcDHzsH",
+      "similarity": 0.08823529411764705,
+      "timestamp": "2025-05-03 12:14:31"
+    },
+    {
+      "private_key": "0x6a7e342a32405a6a56",
+      "address": "19zUaXu9gAdnhfei9CrGs9spwUA3UQWBXD",
+      "similarity": 0.08823529411764705,
+      "timestamp": "2025-05-03 12:14:31"
+    },
+    {
+      "private_key": "0x62778b49b84b6431a6",
+      "address": "1GWThmA2bCJYfqg4qZVzXVsA4XbSnNabYe",
+      "similarity": 0.07352941176470588,
+      "timestamp": "2025-05-03 12:13:56"
+    },
+    {
+      "private_key": "0x6cda383208abac0000",
+      "address": "1PkdDSvt9ziYUhTb4aC7fag25ZZcWgUALy",
+      "similarity": 0.07352941176470588,
+      "timestamp": "2025-05-03 12:13:56"
+    },
+    {
+      "private_key": "0x670cb9bca9a8441ce1",
+      "address": "1PE79Rh64g1EqHqFpH1J8taXDscVf7qSAX",
+      "similarity": 0.07352941176470588,
+      "timestamp": "2025-05-03 12:13:56"
+    },
+    {
+      "private_key": "0x68eb4f745f945e3055",
+      "address": "1PenLJSZ56UX1TsmUY28XNyq8SKjGGsCby",
+      "similarity": 0.07352941176470588,
+      "timestamp": "2025-05-03 12:13:56"
+    },
+    {
+      "private_key": "0x4dc25b218d362778b4",
+      "address": "1PkqHgBJiYri9ysT2XGt8bipGpGEQXqjFx",
+      "similarity": 0.07352941176470588,
+      "timestamp": "2025-05-03 12:13:56"
+    },
+    {
+      "private_key": "0x4d89de2d26e12d90c6",
+      "address": "1fjbXFoBH13KisUrwr5Q7jTkUU2VVjDHo",
+      "similarity": 0.044117647058823525,
+      "timestamp": "2025-05-03 12:13:56"
+    },
+    {
+      "private_key": "0x63751213b6caaf5872",
+      "address": "19SQYnpKq8TBZeF9ricxQQV7GmfJGfTDcc",
+      "similarity": 0.029411764705882353,
+      "timestamp": "2025-05-03 12:13:56"
+    },
+    {
+      "private_key": "0x6d9e75e30ff0480000",
+      "address": "1EdCAcnxhJCY9beTAWNnwiTFTVcuYY2bre",
+      "similarity": 0.029411764705882353,
+      "timestamp": "2025-05-03 12:13:56"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "bindings": [
+    {
+      "role": "roles/bigquery.admin",
+      "members": [
+        "user:clthorbe@gmail.com",
+        "serviceAccount:service-1016259915105@gcp-gae-service.iam.gserviceaccount.com"
+      ],
+    },
+    {
+      "members": [
+        "serviceAccount:service-1016259915105@gcp-gae-service.iam.gserviceaccount.com"
+      ],
+      "role": "roles/appengine.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1016259915105@gcf-admin-robot.iam.gserviceaccount.com"
+      ],
+      "role": "roles/cloudfunctions.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:1016259915105@cloudservices.gserviceaccount.com",
+        "serviceAccount:not-robots@appspot.gserviceaccount.com"
+      ],
+      "role": "roles/editor"
+    },
+    {
+      "members": [
+        "serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com",
+        "serviceAccount:service-1016259915105@gcp-sa-firebase.iam.gserviceaccount.com"
+      ],
+      "role": "roles/firebase.managementServiceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:firebase-adminsdk-vc6gj@not-robots.iam.gserviceaccount.com"
+      ],
+      "role": "roles/firebase.sdkAdminServiceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1016259915105@firebase-rules.iam.gserviceaccount.com"
+      ],
+      "role": "roles/firebaserules.system"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1016259915105@gcp-sa-firestore.iam.gserviceaccount.com"
+      ],
+      "role": "roles/firestore.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:firebase-adminsdk-vc6gj@not-robots.iam.gserviceaccount.com"
+      ],
+      "role": "roles/iam.serviceAccountTokenCreator"
+    },
+    {
+      "members": [
+        "user:clthorbe@gmail.com"
+      ],
+      "role": "roles/owner"
+    }
+  ],
+  "etag": "BwXpK2Bvl34=",
+  "version": 1
+}

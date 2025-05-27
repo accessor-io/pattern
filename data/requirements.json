@@ -1,0 +1,7 @@
+{
+  "original_file": "organized/data/requirements.txt",
+  "size_bytes": 266,
+  "suggested_width": 16,
+  "suggested_height": 17,
+  "import_notes": "In ImageJ: File > Import > Raw... then use these dimensions"
+}

@@ -1,74 +1,81 @@
-# Bitcoin Key Pattern Puzzle Solution
+# Pattern Analysis Project
 
-This repository contains the solution to the Bitcoin key pattern puzzle encoded in the file `5HpHagT65TZzG1PH3CSu63k8DbpvD8s5ip4nEB3k.vb`.
+## Project Structure
 
-## Overview
+### Source Code (`src/`)
+- `bitcoin_math/` - Bitcoin-related mathematical computations
+- `elliptic_curves/` - Elliptic curve implementations
+- `hash_chains/` - Hash chain analysis
+- `number_theory/` - Number theory algorithms
+- `visualization/` - Visualization tools
+- `sequence/` - Sequence generation and analysis
+- `patterns/` - Pattern detection and analysis
+- `utils/` - Utility functions
 
-The puzzle consists of 160 Bitcoin private/public key pairs with a hidden mathematical pattern. When analyzed correctly, these keys reveal a steganographic message that contains a Bitcoin address. This address is the solution to the puzzle.
+### Data and Resources (`data/`)
+- Input data files
+- Generated data files
+- Configuration files
 
-## Repository Structure
+### Analysis (`analysis/`)
+- `bit_patterns/` - Bit pattern analysis
+- `sequence_analysis/` - Sequence analysis
+- `mathematical/` - Mathematical analysis
+- `statistical/` - Statistical analysis
+- `visual/` - Visual analysis
 
-- `workflow_solution.md` - A comprehensive step-by-step workflow explaining the solution approach
-- `python_solution.py` - Python implementation of the solution algorithm
-- `5HpHagT65TZzG1PH3CSu63k8DbpvD8s5ip4nEB3k.vb` - The original puzzle file containing key pairs
-- `analysis_results.txt` - Detailed analysis of the key patterns and mathematical relationships
-- `hex_sequence_analysis/` - Directory containing in-depth analyses of the hex sequences
-- `solvers/` - Various solver implementations and utilities
+### Output (`output/`)
+- `reports/` - Analysis reports
+- `visualizations/` - Generated visualizations
+- `data_exports/` - Exported data
+- `analysis_results/` - Analysis results
 
-## Solution Methodology
+### Version Control (`versions/`)
+- `sequence_generators/` - Sequence generator versions
+- `sequences/` - Generated sequences
+- `archives/` - Archived versions
 
-The solution follows these key steps:
+### Logs (`logs/`)
+- `analysis/` - Analysis logs
+- `execution/` - Execution logs
+- `errors/` - Error logs
+- `debug/` - Debug logs
 
-1. **Extract Keys**: Parse the private/public key pairs from the puzzle file
-2. **Pattern Analysis**: Identify mathematical relationships between consecutive keys
-   - Early keys follow a Fibonacci-influenced sequence
-   - Later keys follow more complex patterns
-3. **Key Generation**: Generate all 160 keys using the discovered pattern
-4. **Message Extraction**: Convert keys to ASCII to extract a hidden message
-5. **Address Extraction**: Find Bitcoin address patterns within the message
-6. **Character Substitution**: Apply 'l' to '1' substitution to fix the address
-7. **Verification**: Verify the corrected address on the Bitcoin blockchain
+### Other Directories
+- `tests/` - Test files and test suites
+- `docs/` - Documentation and specifications
+- `scripts/` - Utility scripts
+- `config/` - Configuration files
 
-## The Final Solution
+## Setup
 
-The solution to the puzzle is the Bitcoin address:
-```
-1CZqucvN1wZ4Gwq95dsNgj1xVjUcK3pcMQ
-```
+1. Install dependencies:
+   ```bash
+   pip install -r config/requirements.txt
+   ```
 
-This address is derived from the steganographic message embedded in the sequence of 160 Bitcoin private keys.
+## Usage
 
-## Running the Solution Script
+1. Sequence Generation:
+   - Use scripts in `src/sequence/` to generate new sequences
+   - Generated sequences are stored in `versions/sequences/`
 
-To run the Python solution script:
+2. Analysis:
+   - Run analysis tools from `src/analysis/`
+   - View results in `output/reports/`
+   - Check visualizations in `output/visualizations/`
 
-```bash
-python python_solution.py
-```
+3. Pattern Detection:
+   - Use pattern detection tools in `src/patterns/`
+   - Results are stored in `output/analysis_results/`
 
-The script will:
-1. Parse the puzzle file
-2. Analyze the key patterns
-3. Generate the complete key sequence
-4. Extract the hidden message
-5. Find and validate the Bitcoin address
-6. Output the final solution
+## Contributing
 
-## Mathematical Pattern
-
-The first few keys follow this pattern:
-- Key 1 = 0x1 = 1 (Fibonacci 1)
-- Key 2 = 0x3 = 3 (Fibonacci 4)
-- Key 3 = 0x7 = 7 (Key 2 << 1 | 1)
-- Key 4 = 0x8 = 8 (Key 3 + 1)
-- Key 5 = 0x15 = 21 (Fibonacci 8)
-
-The subsequent keys follow more complex patterns, with relationships between consecutive keys showing specific bit transformations and mathematical operations.
-
-## Steganographic Message
-
-When converted to ASCII, the keys reveal a text message containing various patterns, including what appears to be a Bitcoin address with a single character substitution ('l' to '1') needed to make it valid.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ## License
 
-This solution is provided for educational purposes only. 
+[Add license information here]

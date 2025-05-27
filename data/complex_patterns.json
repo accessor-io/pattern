@@ -1,0 +1,3196 @@
+[
+  {
+    "pattern": "Rotate left 1 and XOR with previous",
+    "success_rate": 1.5384615384615385,
+    "matches": 1,
+    "total": 65,
+    "match_positions": [
+      3
+    ],
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "prediction": "0x7",
+        "match": true
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "prediction": "0xd",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "prediction": "0x17",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "prediction": "0x22",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "prediction": "0x77",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "prediction": "0xa9",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "prediction": "0x18c",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "prediction": "0x346",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "prediction": "0x5d7",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "prediction": "0xb04",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "prediction": "0x1075",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "prediction": "0x22bb",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "prediction": "0x4600",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "prediction": "0xf8d6",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "prediction": "0x1fa9f",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "prediction": "0x225a8",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "prediction": "0x76655",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "prediction": "0x9e133",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "prediction": "0x1f2c35",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "prediction": "0x3a663d",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "prediction": "0x406d2a",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "prediction": "0x8738ab",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "prediction": "0x1ed3a5a",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "prediction": "0x32897ce",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "prediction": "0x77a3a39",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "prediction": "0xe184284",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "prediction": "0x1d8ee1a5",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "prediction": "0x2255c6d4",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "prediction": "0x6ccbcfd6",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "prediction": "0xc70b03ea",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "prediction": "0x10d8aab1b",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "prediction": "0x3eabbf79e",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "prediction": "0x73da78ae2",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "prediction": "0xa17c1b3fd",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "prediction": "0x1713d60588",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "prediction": "0x277068df5a",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "prediction": "0x53272a3333",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "prediction": "0xb48729ab02",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "prediction": "0x19803116445",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "prediction": "0x24ea37cab60",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "prediction": "0x417c511d745",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "prediction": "0xfd8578a06ad",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "prediction": "0x1ab85d93ae8f",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "prediction": "0x2a5d27724d85",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "prediction": "0x4faccd05968d",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "prediction": "0xf76da2e2ac30",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "prediction": "0x1371bbf294b8c",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "prediction": "0x245c801cc8501",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "prediction": "0x523bf135c79e5",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "prediction": "0xc8b357f6e80fc",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "prediction": "0x1aa5b2683735ac",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "prediction": "0x3ef5f0ac37fae4",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "prediction": "0x5ed8e54f240cea",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "prediction": "0xf61389e362dd6b",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "prediction": "0x1508f73eeee1eaa",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "prediction": "0x34b532435ef53e7",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "prediction": "0x467ceb9a3a4e25e",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "prediction": "0xc54accf5d8df2bf",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "prediction": "0x18c9988bcda64333",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "prediction": "0x2852ae76a0dae9b2",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "prediction": "0x7fb3c20a2ed51eda",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "prediction": "0xcfa1e9e5ef8f7bfe",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "prediction": "0x192c460b2cded4da1",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "prediction": "0x3a7747d4dbbf5c21b",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "prediction": "0x4ae651fab530e03ba",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "Double rotation with XOR",
+    "success_rate": 0.0,
+    "matches": 0,
+    "total": 65,
+    "match_positions": [],
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "prediction": "0xe",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "prediction": "0x1a",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "prediction": "0x2e",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "prediction": "0x44",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "prediction": "0xee",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "prediction": "0x152",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "prediction": "0x318",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "prediction": "0x68c",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "prediction": "0xbae",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "prediction": "0x1608",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "prediction": "0x20ea",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "prediction": "0x4576",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "prediction": "0x8c00",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "prediction": "0x1f1ac",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "prediction": "0x3f53e",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "prediction": "0x44b50",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "prediction": "0xeccaa",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "prediction": "0x13c266",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "prediction": "0x3e586a",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "prediction": "0x74cc7a",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "prediction": "0x80da54",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "prediction": "0x10e7156",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "prediction": "0x3da74b4",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "prediction": "0x6512f9c",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "prediction": "0xef47472",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "prediction": "0x1c308508",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "prediction": "0x3b1dc34a",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "prediction": "0x44ab8da8",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "prediction": "0xd9979fac",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "prediction": "0x18e1607d4",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "prediction": "0x21b155636",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "prediction": "0x7d577ef3c",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "prediction": "0xe7b4f15c4",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "prediction": "0x142f8367fa",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "prediction": "0x2e27ac0b10",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "prediction": "0x4ee0d1beb4",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "prediction": "0xa64e546666",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "prediction": "0x1690e535604",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "prediction": "0x3300622c88a",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "prediction": "0x49d46f956c0",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "prediction": "0x82f8a23ae8a",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "prediction": "0x1fb0af140d5a",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "prediction": "0x3570bb275d1e",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "prediction": "0x54ba4ee49b0a",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "prediction": "0x9f599a0b2d1a",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "prediction": "0x1eedb45c55860",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "prediction": "0x26e377e529718",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "prediction": "0x48b9003990a02",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "prediction": "0xa477e26b8f3ca",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "prediction": "0x19166afedd01f8",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "prediction": "0x354b64d06e6b58",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "prediction": "0x7debe1586ff5c8",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "prediction": "0xbdb1ca9e4819d4",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "prediction": "0x1ec2713c6c5bad6",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "prediction": "0x2a11ee7dddc3d54",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "prediction": "0x696a6486bdea7ce",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "prediction": "0x8cf9d734749c4bc",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "prediction": "0x18a9599ebb1be57e",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "prediction": "0x319331179b4c8666",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "prediction": "0x50a55ced41b5d364",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "prediction": "0xff6784145daa3db4",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "prediction": "0x19f43d3cbdf1ef7fd",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "prediction": "0x32588c1659bda9b43",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "prediction": "0x74ee8fa9b77eb8437",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "prediction": "0x95cca3f56a61c0775",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "Triple term XOR",
+    "success_rate": 0.0,
+    "matches": 0,
+    "total": 65,
+    "match_positions": [],
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "prediction": "0x0",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "prediction": "0x5",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "prediction": "0xc",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "prediction": "0x1a",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "prediction": "0x2c",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "prediction": "0x68",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "prediction": "0x9d",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "prediction": "0x17f",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "prediction": "0x331",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "prediction": "0x752",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "prediction": "0xcfa",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "prediction": "0x1a98",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "prediction": "0x372b",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "prediction": "0x55a3",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "prediction": "0x88f5",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "prediction": "0x1d78a",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "prediction": "0x2b774",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "prediction": "0x70add",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "prediction": "0xb50c7",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "prediction": "0x13fdfe",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "prediction": "0x3b6d6e",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "prediction": "0x632f69",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "prediction": "0xa4a059",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "prediction": "0x1731ab3",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "prediction": "0x266468f",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "prediction": "0x41654fe",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "prediction": "0x87d66f3",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "prediction": "0x1cdf0183",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "prediction": "0x27e7f492",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "prediction": "0x57397f3d",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "prediction": "0xf8b98c0d",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "prediction": "0x16c41e9b1",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "prediction": "0x25b6b9feb",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "prediction": "0x64ddb28b5",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "prediction": "0xe3a358a11",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "prediction": "0x1a2725719f",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "prediction": "0x3cb1d8cc3f",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "prediction": "0x7e30d9c5aa",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "prediction": "0x80c9e59cef",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "prediction": "0x1f17750fc64",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "prediction": "0x31809167202",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "prediction": "0x54c9c788445",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "prediction": "0xa1da9b87d91",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "prediction": "0x1a904269cc1b",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "prediction": "0x32ecfac6dcce",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "prediction": "0x50385929d5fb",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "prediction": "0xeff144f3d265",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "prediction": "0x1b527ac7a586c",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "prediction": "0x3f22580e1f782",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "prediction": "0x40fb3f68fc5cd",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "prediction": "0xb8145f94504bc",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "prediction": "0x11ad192115a584",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "prediction": "0x3592df5518b313",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "prediction": "0x51d621aab4cc3b",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "prediction": "0xd4c91f740e0188",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "prediction": "0x11c8360a636c8d7",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "prediction": "0x3b048c76f49b3e2",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "prediction": "0x4643ccad247f872",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "prediction": "0xa4f631bf0e455d0",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "prediction": "0x1b407c94e00a86f7",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "prediction": "0x2a344431d1d19956",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "prediction": "0x593a60d458288ae0",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "prediction": "0xbdf615c4aa4fd132",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "prediction": "0x123f3f0ef19ec12bb",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "prediction": "0x3dc13795d9e7d4f5d",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "Addition and XOR mix",
+    "success_rate": 0.0,
+    "matches": 0,
+    "total": 65,
+    "match_positions": [],
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "prediction": "0x0",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "prediction": "0xb",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "prediction": "0xc",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "prediction": "0x1a",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "prediction": "0x4e",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "prediction": "0x68",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "prediction": "0x11d",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "prediction": "0x2ff",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "prediction": "0x335",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "prediction": "0x756",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "prediction": "0xcfc",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "prediction": "0x1a58",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "prediction": "0x37eb",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "prediction": "0x8643",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "prediction": "0x11b19",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "prediction": "0x25776",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "prediction": "0x4b76a",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "prediction": "0x90ae3",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "prediction": "0x11a8f9",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "prediction": "0x2da516",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "prediction": "0x44a516",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "prediction": "0x98f755",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "prediction": "0x11c7c59",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "prediction": "0x283e6bb",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "prediction": "0x5e6bb57",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "prediction": "0x8163406",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "prediction": "0x177d9733",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "prediction": "0x23dffa73",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "prediction": "0x58e64e6a",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "prediction": "0xad06e1b5",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "prediction": "0x108264011",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "prediction": "0x21c80a841",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "prediction": "0x44bb09fdb",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "prediction": "0x6505b0a55",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "prediction": "0xdc7318af1",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "prediction": "0x259b25647f",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "prediction": "0x3051271d1f",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "prediction": "0x7ac0c7da2a",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "prediction": "0x11735e39b6f",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "prediction": "0x2766b6703d8",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "prediction": "0x31c06296a3c",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "prediction": "0x80cda779f7b",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "prediction": "0x161dcf4476af",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "prediction": "0x268f4649b405",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "prediction": "0x4ef3fec724c6",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "prediction": "0x89b85e2a2dfb",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "prediction": "0x1347d6b0bad11",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "prediction": "0x24d28527aa652",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "prediction": "0x3320d70e1c93a",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "prediction": "0x80853b6cfc265",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "prediction": "0x1460863a453b44",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "prediction": "0x20521ae8e9d97c",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "prediction": "0x358ddedee0cf93",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "prediction": "0x962a5e956b323b",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "prediction": "0x124b9630381ffb0",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "prediction": "0x2e28060d93d34ef",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "prediction": "0x42c8337636a8fe2",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "prediction": "0xbe4c7bade76986c",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "prediction": "0x15cf936bff19aa2c",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "prediction": "0x24c088f4efe6708b",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "prediction": "0x45c6c44ddc318f4a",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "prediction": "0xa0c2d92b20175af0",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "prediction": "0x145ee2a3beb71d132",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "prediction": "0x2e3f38ea11a8c1333",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "prediction": "0x4dc6297a381818c81",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "BlockMix-inspired",
+    "success_rate": 0.0,
+    "matches": 0,
+    "total": 65,
+    "match_positions": [],
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "prediction": "0x8",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "prediction": "0x10",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "prediction": "0x3c",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "prediction": "0x74",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "prediction": "0x90",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "prediction": "0x1f4",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "prediction": "0x2b0",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "prediction": "0x4cc",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "prediction": "0xf44",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "prediction": "0x1a04",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "prediction": "0x3be0",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "prediction": "0x786c",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "prediction": "0xf540",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "prediction": "0x1070c",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "prediction": "0x28714",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "prediction": "0x6fde4",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "prediction": "0x9f908",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "prediction": "0x19f248",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "prediction": "0x216328",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "prediction": "0x5a2584",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "prediction": "0xd904ec",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "prediction": "0x1e22974",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "prediction": "0x2251158",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "prediction": "0x499d384",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "prediction": "0xae9b22c",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "prediction": "0x17b0286c",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "prediction": "0x2cf55274",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "prediction": "0x69cce7d8",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "prediction": "0xa9da61e8",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "prediction": "0x1036ca88c",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "prediction": "0x314b505a4",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "prediction": "0x444383bd8",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "prediction": "0xb8c24e714",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "prediction": "0x1f92de01b4",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "prediction": "0x35c1406c30",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "prediction": "0x7a27dd83bc",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "prediction": "0xd5bd6b190c",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "prediction": "0x1a59eb2bce4",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "prediction": "0x28bc728c0fc",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "prediction": "0x6e8a34ffe34",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "prediction": "0xfc69d7d0750",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "prediction": "0x107c6b892078",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "prediction": "0x22fe21f7c078",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "prediction": "0x70b5e5382628",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "prediction": "0xf3b92673a504",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "prediction": "0x1085e4cf7a7f8",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "prediction": "0x304c31dec1c84",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "prediction": "0x767c6f33d9358",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "prediction": "0xd7f0d5cbf3064",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "prediction": "0x15ee92763a6a00",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "prediction": "0x26aa4715ae5fa0",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "prediction": "0x5bf5a602d6b140",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "prediction": "0xeda0f8c74cb4bc",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "prediction": "0x12746a53b2bf95c",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "prediction": "0x3de9aa6868c7b2c",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "prediction": "0x5d8f5fcf544a70c",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "prediction": "0xcb541c5563530f4",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "prediction": "0x163c640f5748b9b8",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "prediction": "0x22245a8e8bf33fc4",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "prediction": "0x702440bd9f00cae0",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "prediction": "0x97d0f8a7d39f8ba0",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "prediction": "0x12bcc2b8c6b7b0f99",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "prediction": "0x22f2d07687179eb72",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "prediction": "0x57cf6b84ad48deacd",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "prediction": "0xcac5999e8bbb1762c",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "Rotate-XOR-Multiply",
+    "success_rate": 0.0,
+    "matches": 0,
+    "total": 65,
+    "match_positions": [],
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "prediction": "0x736ae31d6e461e0d",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "prediction": "0x76c90dc0562a98d7",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "prediction": "0xe162c2724da869d3",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "prediction": "0xe2ac13ef8e8d8d20",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "prediction": "0x3f7f60425b2a2de1",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "prediction": "0x7e80f6afdb896ca5",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "prediction": "0x7ccc358cd381693c",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "prediction": "0x32a933e9bdb34fd8",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "prediction": "0x335709bfe7f9e8ff",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "prediction": "0x4db3e5bbfbfbb822",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "prediction": "0x18164f328fa53e77",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "prediction": "0xa402f12854b37b17",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "prediction": "0x117c64d7ec553360",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "prediction": "0x17e2144cfe7173c8",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "prediction": "0x698ec0b3d2fb2e7f",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "prediction": "0x175baee0e736e566",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "prediction": "0xb13e1a6238925533",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "prediction": "0xb5dc03b040eedc19",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "prediction": "0x1ca2cb3718867683",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "prediction": "0x672f8a8817c52919",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "prediction": "0xac427a6fcb17bf3c",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "prediction": "0xefde80c0d0f55f0b",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "prediction": "0xd39860b675fc575a",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "prediction": "0x9c38621d3211749c",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "prediction": "0x6c100d039b4e0939",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "prediction": "0x6a42e513ff20bd3e",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "prediction": "0xb19f455d97aa7b59",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "prediction": "0x92d35c3d0ebab5f8",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "prediction": "0x7548bb476aab2316",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "prediction": "0x6770944f26c3da8c",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "prediction": "0x51d0abf2d21c3683",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "prediction": "0x80c3f5b7d764bb86",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "prediction": "0x9b27a8b3b4b9e3f0",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "prediction": "0x87cd302c4d613ae1",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "prediction": "0x8d70cf4c37cd35d0",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "prediction": "0xf71d0e83e04338b4",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "prediction": "0x1c6f57421f00318f",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "prediction": "0x273eadfd657f5b78",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "prediction": "0xb3d218a18890044d",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "prediction": "0x7b38beec3a606e26",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "prediction": "0x60f463453aa16df",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "prediction": "0x8ebcd08353a99993",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "prediction": "0x40cc246ed8dd8c1d",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "prediction": "0x1e5bbe254a6b6ab3",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "prediction": "0x68e67cd957323d09",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "prediction": "0x7fcffbe30b08ac24",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "prediction": "0xf52cf212d29e00a",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "prediction": "0x2cd09902b6539cef",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "prediction": "0x430c6c8b310a0871",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "prediction": "0x5e3e5377f0e26504",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "prediction": "0x3f52b2d63b018c44",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "prediction": "0xb29d5d0876d3a88c",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "prediction": "0x3fe4505e857ea184",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "prediction": "0x57282e417a2be99f",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "prediction": "0x717354a2b3f0ee5c",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "prediction": "0xb2931842e51042b",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "prediction": "0x6d4647a1a0db44a4",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "prediction": "0x52d36349ba5abb4d",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "prediction": "0x91333f28716430ab",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "prediction": "0x22e8b42e86dd02a6",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "prediction": "0x5b638708b15ffae",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "prediction": "0x2fdd648555399d46",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "prediction": "0x3b30a1d321d143c8",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "prediction": "0xdc3b32b0c317085c",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "prediction": "0x593bd3639aa478e3",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "Fibonacci-XOR hybrid",
+    "success_rate": 0.0,
+    "matches": 0,
+    "total": 65,
+    "match_positions": [],
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "prediction": "0x0",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "prediction": "0x9",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "prediction": "0xc",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "prediction": "0x24",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "prediction": "0x4e",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "prediction": "0x70",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "prediction": "0x15d",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "prediction": "0x27f",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "prediction": "0x335",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "prediction": "0x854",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "prediction": "0x10fc",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "prediction": "0x2358",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "prediction": "0x474b",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "prediction": "0xa643",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "prediction": "0x10af9",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "prediction": "0x21814",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "prediction": "0x4c786",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "prediction": "0x7f2e1",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "prediction": "0x13a8e7",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "prediction": "0x23fdfe",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "prediction": "0x446d70",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "prediction": "0x8baf8d",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "prediction": "0x154b461",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "prediction": "0x283a33b",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "prediction": "0x466a74f",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "prediction": "0x966a500",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "prediction": "0x137d7703",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "prediction": "0x231fa9bb",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "prediction": "0x5808075a",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "prediction": "0xa7c67fc1",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "prediction": "0xf93dd051",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "prediction": "0x26e99ea41",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "prediction": "0x45b73a013",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "prediction": "0x791db4b35",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "prediction": "0x11c3398ae9",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "prediction": "0x24c7c5859f",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "prediction": "0x40c2270dbf",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "prediction": "0x80ceddca2c",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "prediction": "0x15315f5e30f",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "prediction": "0x1f67864fc9a",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "prediction": "0x45c4a998d1c",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "prediction": "0xaaee2870765",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "prediction": "0x1221ce3c7dad",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "prediction": "0x1aef52922c23",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "prediction": "0x4aeefcd6dece",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "prediction": "0xa9c45a5225fb",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "prediction": "0xeffe6b0c2599",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "prediction": "0x23548327c666e",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "prediction": "0x405c5f8fdf82a",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "prediction": "0xab033f8cfd5ed",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "prediction": "0x147686025a38bc",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "prediction": "0x21b21aa9e9ca54",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "prediction": "0x3a6d205662cb93",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "prediction": "0xa6265dcd3b0e43",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "prediction": "0xe6ea5f898ffe36",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "prediction": "0x2e2cc72a938f4e7",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "prediction": "0x43cb3378f69c3e4",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "prediction": "0xa76bd2cdd58008c",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "prediction": "0x154f931bfb08aa2c",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "prediction": "0x1c5280dae5f318f7",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "prediction": "0x5246644e1dd1dea6",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "prediction": "0xa2c29d27a1b74af0",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "prediction": "0x141f82a0acb6fd6ba",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "prediction": "0x23403f30f2210e343",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "prediction": "0x3e26c8561e081b0a1",
+        "match": false
+      }
+    ]
+  },
+  {
+    "pattern": "SMix-inspired",
+    "success_rate": 0.0,
+    "matches": 0,
+    "total": 65,
+    "match_positions": [],
+    "predictions": [
+      {
+        "position": 3,
+        "actual": "0x7",
+        "prediction": "0x5851f42d4c957f2e",
+        "match": false
+      },
+      {
+        "position": 4,
+        "actual": "0x8",
+        "prediction": "0x8f5dc87e5c07d80",
+        "match": false
+      },
+      {
+        "position": 5,
+        "actual": "0x15",
+        "prediction": "0x6a3dad3d18167a33",
+        "match": false
+      },
+      {
+        "position": 6,
+        "actual": "0x31",
+        "prediction": "0xc28fa16a64abf97d",
+        "match": false
+      },
+      {
+        "position": 7,
+        "actual": "0x4c",
+        "prediction": "0x3eb907b748436e80",
+        "match": false
+      },
+      {
+        "position": 8,
+        "actual": "0xe0",
+        "prediction": "0xe7afbcaba89d57d1",
+        "match": false
+      },
+      {
+        "position": 9,
+        "actual": "0x1d3",
+        "prediction": "0x38547d72bc61c1bc",
+        "match": false
+      },
+      {
+        "position": 10,
+        "actual": "0x202",
+        "prediction": "0x47b5a7a302cf46b3",
+        "match": false
+      },
+      {
+        "position": 11,
+        "actual": "0x483",
+        "prediction": "0x1d806ea2b4b6fd15",
+        "match": false
+      },
+      {
+        "position": 12,
+        "actual": "0xa7b",
+        "prediction": "0x548c42f3c4295cd9",
+        "match": false
+      },
+      {
+        "position": 13,
+        "actual": "0x1460",
+        "prediction": "0x79c0a860867cc27c",
+        "match": false
+      },
+      {
+        "position": 14,
+        "actual": "0x2930",
+        "prediction": "0xa2ea16c1a2cbc8ff",
+        "match": false
+      },
+      {
+        "position": 15,
+        "actual": "0x68f3",
+        "prediction": "0x85cf1af865ff1dd0",
+        "match": false
+      },
+      {
+        "position": 16,
+        "actual": "0xc936",
+        "prediction": "0xaf7909c24d666583",
+        "match": false
+      },
+      {
+        "position": 17,
+        "actual": "0x1764f",
+        "prediction": "0x20fd2e1c6d913681",
+        "match": false
+      },
+      {
+        "position": 18,
+        "actual": "0x3080d",
+        "prediction": "0xfa0112af88625e31",
+        "match": false
+      },
+      {
+        "position": 19,
+        "actual": "0x5749f",
+        "prediction": "0xfc0487dd09eef4ee",
+        "match": false
+      },
+      {
+        "position": 20,
+        "actual": "0xd2c55",
+        "prediction": "0xe852b6720d12a9d6",
+        "match": false
+      },
+      {
+        "position": 21,
+        "actual": "0x1ba534",
+        "prediction": "0xc26dadc1ca564ca6",
+        "match": false
+      },
+      {
+        "position": 22,
+        "actual": "0x2de40f",
+        "prediction": "0xcf7abfcb94dc50c5",
+        "match": false
+      },
+      {
+        "position": 23,
+        "actual": "0x556e52",
+        "prediction": "0x83cddf545339322b",
+        "match": false
+      },
+      {
+        "position": 24,
+        "actual": "0xdc2a04",
+        "prediction": "0x163c1d23fcbae9f1",
+        "match": false
+      },
+      {
+        "position": 25,
+        "actual": "0x1fa5ee5",
+        "prediction": "0x94361b0dfea5386e",
+        "match": false
+      },
+      {
+        "position": 26,
+        "actual": "0x340326e",
+        "prediction": "0xaa450fbf02250051",
+        "match": false
+      },
+      {
+        "position": 27,
+        "actual": "0x6ac3875",
+        "prediction": "0xba816e21c61f7b2f",
+        "match": false
+      },
+      {
+        "position": 28,
+        "actual": "0xd916ce8",
+        "prediction": "0x8820aa496bff5723",
+        "match": false
+      },
+      {
+        "position": 29,
+        "actual": "0x17e2551e",
+        "prediction": "0x691976e139f19b79",
+        "match": false
+      },
+      {
+        "position": 30,
+        "actual": "0x3d94cd64",
+        "prediction": "0x37d45d7edd7d69d6",
+        "match": false
+      },
+      {
+        "position": 31,
+        "actual": "0x7d4fe747",
+        "prediction": "0x318cb223d0ec1522",
+        "match": false
+      },
+      {
+        "position": 32,
+        "actual": "0xb862a62e",
+        "prediction": "0x15fb8dc09d0f51d3",
+        "match": false
+      },
+      {
+        "position": 33,
+        "actual": "0x1a96ca8d8",
+        "prediction": "0xea6f39e6e3784655",
+        "match": false
+      },
+      {
+        "position": 34,
+        "actual": "0x34a65911d",
+        "prediction": "0xb72046e13e2a0ce",
+        "match": false
+      },
+      {
+        "position": 35,
+        "actual": "0x4aed21170",
+        "prediction": "0x84a43fad5ff144e5",
+        "match": false
+      },
+      {
+        "position": 36,
+        "actual": "0x9de820a7c",
+        "prediction": "0xc0593cc3266af469",
+        "match": false
+      },
+      {
+        "position": 37,
+        "actual": "0x1757756a93",
+        "prediction": "0x5e9e41a78941aacc",
+        "match": false
+      },
+      {
+        "position": 38,
+        "actual": "0x22382facd0",
+        "prediction": "0xf3e80ba0dd4e315f",
+        "match": false
+      },
+      {
+        "position": 39,
+        "actual": "0x4b5f8303e9",
+        "prediction": "0x8553336d733e0407",
+        "match": false
+      },
+      {
+        "position": 40,
+        "actual": "0xe9ae4933d6",
+        "prediction": "0xbb917bcb83af9379",
+        "match": false
+      },
+      {
+        "position": 41,
+        "actual": "0x153869acc5b",
+        "prediction": "0x8ad9b2e895dc7523",
+        "match": false
+      },
+      {
+        "position": 42,
+        "actual": "0x2a221c58d8f",
+        "prediction": "0x4730567521b98ac5",
+        "match": false
+      },
+      {
+        "position": 43,
+        "actual": "0x6bd3b27c591",
+        "prediction": "0xb703a29a484b9d70",
+        "match": false
+      },
+      {
+        "position": 44,
+        "actual": "0xe02b35a358f",
+        "prediction": "0xd89867d8f20916b2",
+        "match": false
+      },
+      {
+        "position": 45,
+        "actual": "0x122fca143c05",
+        "prediction": "0xc63934e4993f9cf2",
+        "match": false
+      },
+      {
+        "position": 46,
+        "actual": "0x2ec18388d544",
+        "prediction": "0x97edbcd22dbc6726",
+        "match": false
+      },
+      {
+        "position": 47,
+        "actual": "0x6cd610b53cba",
+        "prediction": "0x532ff6de79b6d2a5",
+        "match": false
+      },
+      {
+        "position": 48,
+        "actual": "0xade6d7ce3b9b",
+        "prediction": "0x25bedffb41db044e",
+        "match": false
+      },
+      {
+        "position": 49,
+        "actual": "0x174176b015f4d",
+        "prediction": "0xf0357dc6bef3c929",
+        "match": false
+      },
+      {
+        "position": 50,
+        "actual": "0x22bd43c2e9354",
+        "prediction": "0xb9ed558b9f080072",
+        "match": false
+      },
+      {
+        "position": 51,
+        "actual": "0x75070a1a009d4",
+        "prediction": "0xfbacf107ed7b60dd",
+        "match": false
+      },
+      {
+        "position": 52,
+        "actual": "0xefae164cb9e3c",
+        "prediction": "0xeb39eb6fe8a9810",
+        "match": false
+      },
+      {
+        "position": 53,
+        "actual": "0x180788e47e326c",
+        "prediction": "0xd24099ae12ae7878",
+        "match": false
+      },
+      {
+        "position": 54,
+        "actual": "0x236fb6d5ad1f43",
+        "prediction": "0xdbd40f204048a6e0",
+        "match": false
+      },
+      {
+        "position": 55,
+        "actual": "0x6abe1f9b67e114",
+        "prediction": "0x7cc11264fba36fbf",
+        "match": false
+      },
+      {
+        "position": 56,
+        "actual": "0x9d18b63ac4ffdf",
+        "prediction": "0x6487cae91c885ad3",
+        "match": false
+      },
+      {
+        "position": 57,
+        "actual": "0x1eb25c90795d61c",
+        "prediction": "0x7c261cc4f04b835b",
+        "match": false
+      },
+      {
+        "position": 58,
+        "actual": "0x2c675b852189a21",
+        "prediction": "0x3d99d3cb37ce4d2f",
+        "match": false
+      },
+      {
+        "position": 59,
+        "actual": "0x7496cbb87cab44f",
+        "prediction": "0x2c5de273cac21ccd",
+        "match": false
+      },
+      {
+        "position": 60,
+        "actual": "0xfc07a1825367bbe",
+        "prediction": "0x2cd2a8baa434c282",
+        "match": false
+      },
+      {
+        "position": 61,
+        "actual": "0x13c96a3742f64906",
+        "prediction": "0xfe0b23a1f139995d",
+        "match": false
+      },
+      {
+        "position": 62,
+        "actual": "0x363d541eb611abee",
+        "prediction": "0x7fed74bbbd7b4b60",
+        "match": false
+      },
+      {
+        "position": 63,
+        "actual": "0x7cce5efdaccf6808",
+        "prediction": "0x7bd3ef1d8a137be0",
+        "match": false
+      },
+      {
+        "position": 64,
+        "actual": "0xf7051f27b09112d4",
+        "prediction": "0x6476131fd22322de",
+        "match": false
+      },
+      {
+        "position": 65,
+        "actual": "0x1a838b13505b26867",
+        "prediction": "0x537b8373812853bc",
+        "match": false
+      },
+      {
+        "position": 66,
+        "actual": "0x2832ed74f2b5e35ee",
+        "prediction": "0x1ad5eeee9e2891323",
+        "match": false
+      },
+      {
+        "position": 67,
+        "actual": "0x730fc235c1942c1ae",
+        "prediction": "0x28ccd955af14446f5",
+        "match": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-02-24T06:10:01.764932",
+    "seed": "a47cc2ea074e48f33f2503c1871ec5b7d932b8a52bf2b00aef1459858ed06a43",
+    "matching_elements": 1,
+    "total_attempts": 6
+  },
+  {
+    "timestamp": "2025-02-24T06:10:01.765851",
+    "seed": "2a490bf1299d5d55bf641cae04a4a2e8a8b1a7355618a1a9e128e7c38404b001",
+    "matching_elements": 2,
+    "total_attempts": 47
+  },
+  {
+    "timestamp": "2025-02-24T06:10:01.791592",
+    "seed": "dac4a1347f7321bbcf6394360c90e193253fdb8d8e191cc728d7fe1575c67900",
+    "matching_elements": 3,
+    "total_attempts": 2418
+  },
+  {
+    "timestamp": "2025-02-24T06:10:01.893548",
+    "seed": "d6c97e5b0503d4fe1e9a7496c18024f7361fe5e047e2d813a8a4c53dbe5fdcc3",
+    "matching_elements": 4,
+    "total_attempts": 12549
+  }
+]
