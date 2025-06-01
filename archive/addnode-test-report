@@ -1,0 +1,227 @@
+
+TEST REPORT  TheBlueMatt/addrpcnode
+
+============
+
+Andrew Poelstra (andytoshi on #bitcoin)
+Jan 27 2013
+
+1Andrew5Jgks6cziRiqgWShg1nr1igky1r
+
+============
+
+
+0. Network setup:
+     Test node   @ 192.168.0.118
+     Remote node @ 192.168.0.201
+     Remote node @ 192.168.0.202
+   All are running Fedora 18 x64; the remote nodes have latest
+   git HEAD (0d3d6094) and the test node is running addrpcnode
+   (f2bd6c28e).
+
+   DNS testing was done with DNSMasq on the local 192.168.0 router.
+
+
+1. IP TESTING
+
+  Started bitcoind on 192.168.0.201 (remote).
+
+  On the test node:
+    $ ./bitcoind -connect=0.0.0.0 &
+    $ ./bitcoind addnode 192.168.0.201 add
+    $ ./bitcoind getaddednodeinfo true
+    [
+        {
+            "addednode" : "192.168.0.201",
+            "connected" : true,
+            "addresses" : [
+                {
+                    "address" : "192.168.0.201:8333",
+                    "connected" : "outbound"
+                }
+            ]
+        }
+    ]
+
+
+  Cool. Killed bitcoind on 0.201. Then on the test node,
+
+    $ ./bitcoind getaddednodeinfo true0000000
+    [
+        {
+            "addednode" : "192.168.0.201",
+            "connected" : false,
+            "addresses" : [
+                {
+                    "address" : "192.168.0.201:8333",
+                    "connected" : "false"
+                }
+            ]
+        }
+    ]
+    
+
+  Cool. Restarted bitcoind on 0.201. Waited 2 minutes. Then on the test node,
+
+    $ ./bitcoind getaddednodeinfo true
+    [
+        {
+            "addednode" : "192.168.0.201",
+            "connected" : true,
+            "addresses" : [
+                {
+                    "address" : "192.168.0.201:8333",
+                    "connected" : "outbound"
+                }
+            ]
+        }
+    ]
+
+
+  Cool. On the test node,
+
+    $ ./bitcoind addnode 192.168.0.201 remove
+    $ ./bitcoind getaddednodeinfo true
+    [
+    ]
+
+    $ ./bitcoind getpeerinfo
+    [
+        {
+            "addr" : "192.168.0.201:8333",
+            "services" : "00000001",
+            "lastsend" : 1359317227,
+            "lastrecv" : 1359317227,
+            "conntime" : 1359317199,
+            "version" : 70001,
+            "subver" : "/Satoshi:0.7.99/",
+            "inbound" : false,
+            "releasetime" : 0,
+            "startingheight" : 218324,
+            "banscore" : 0
+        }
+    ]
+
+  Cool. Killed 0.201, then
+
+    $ ./bitcoind getpeerinfo
+    [
+    ]
+
+  Restarted 0.201 and waited 10 minutes. Same result.
+
+  TEST PASSED.
+
+
+
+2. DNS TESTING
+
+  On router, pointed my-first-node.com to 192.168.0.201. Restart
+  bitcoind on 192.168.0.201. Then on the test node,
+
+    $./bitcoind addnode my-first-node.com add
+    $ ./bitcoind getaddednodeinfo true
+    [
+        {
+            "addednode" : "my-first-node.com",
+            "connected" : true,
+            "addresses" : [
+                {
+                    "address" : "192.168.0.201:8333",
+                    "connected" : "outbound"
+                }
+            ]
+        }
+    ]
+
+  Awesome. And debug.log even shows the test node receiving blocks
+  from the remote one. We start a node on 192.168.0.202, then change
+  the DNS to point there instead. We wait 2 minutes.
+
+    $ ./bitcoind getaddednodeinfo true
+    [
+        {
+            "addednode" : "my-first-node.com",
+            "connected" : true,
+            "addresses" : [
+                {
+                    "address" : "192.168.0.202:8333",
+                    "connected" : "outbound"
+                }
+            ]
+        }
+    ]
+
+  Good. It has changed IP and connected to the right one. The old IP
+  does not appear in getaddednodeinfo, but it does in getpeerinfo:
+
+    $ ./bitcoind getpeerinfo
+    [
+        {
+            "addr" : "192.168.0.201:8333",
+            "services" : "00000001",
+            "lastsend" : 1359318562,
+            "lastrecv" : 1359318562,
+            "conntime" : 1359318281,
+            "version" : 70001,
+            "subver" : "/Satoshi:0.7.99/",
+            "inbound" : false,
+            "releasetime" : 0,
+            "startingheight" : 218325,
+            "banscore" : 0
+        },
+        {
+            "addr" : "192.168.0.202:8333",
+            "services" : "00000001",
+            "lastsend" : 1359318562,
+            "lastrecv" : 1359318559,
+            "conntime" : 1359318522,
+            "version" : 70001,
+            "subver" : "/Satoshi:0.7.99/",
+            "inbound" : false,
+            "releasetime" : 0,
+            "startingheight" : 218331,
+            "banscore" : 0
+        }
+    ]
+
+  We restart both remote nodes and make sure only 0.202 is connected
+  to again. After two minutes,
+
+    $ ./bitcoind getaddednodeinfo true
+    [
+        {
+            "addednode" : "my-first-node.com",
+            "connected" : true,
+            "addresses" : [
+                {
+                    "address" : "192.168.0.202:8333",
+                    "connected" : "outbound"
+                }
+            ]
+        }
+    ]
+    $ ./bitcoind getpeerinfo
+    [
+        {
+            "addr" : "192.168.0.202:8333",
+            "services" : "00000001",
+            "lastsend" : 1359318765,
+            "lastrecv" : 1359318765,
+            "conntime" : 1359318762,
+            "version" : 70001,
+            "subver" : "/Satoshi:0.7.99/",
+            "inbound" : false,
+            "releasetime" : 0,
+            "startingheight" : 218332,
+            "banscore" : 0
+        }
+    ]
+    
+  Excellent! All passed. :)
+  
+
+
+-asp
+
+

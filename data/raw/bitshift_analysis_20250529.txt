@@ -1,0 +1,17 @@
+
+===== Bitcoin Puzzle Sequence Generation Script =====
+
+===== ANALYZING SEQUENCE TRANSFORMATIONS =====
+Successfully loaded 160 verified keys from file
+Generating comprehensive test formulas (massive combinations)...
+Generated 13800 comprehensive test formulas.
+Traceback (most recent call last):
+  File "/Users/acc/pattern/key_sequence_generator.py", line 3407, in <module>
+    analyze_sequence_transformations(max_positions=66, verbose=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/acc/pattern/key_sequence_generator.py", line 3268, in analyze_sequence_transformations
+    formulas = get_prioritized_test_formulas(N, Gx, Gy, P, FULL_STRING, verified_keys)
+  File "/Users/acc/pattern/key_sequence_generator.py", line 3187, in get_prioritized_test_formulas
+    f"(k << {base_shift}) + (pos << {bs % 4})"),
+                                     ^^
+NameError: name 'bs' is not defined. Did you mean: 'b'?

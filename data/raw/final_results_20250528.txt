@@ -1,0 +1,3 @@
+Best similarity: 0.0
+Total candidates tested: 0
+Top 20 candidates:

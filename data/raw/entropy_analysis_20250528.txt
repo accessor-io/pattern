@@ -1,0 +1,11 @@
+Entropy Analysis for All Strings
+================================================================================
+
+
+Entropy Analysis for String 1:
+================================================================================
+Shannon Entropy: 0.9947
+Bit Distribution: {'0': 139, '1': 117}
+Randomness Score: 0.8994
+Compression Ratio: 0.2266
+

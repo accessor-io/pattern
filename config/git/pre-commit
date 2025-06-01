@@ -1,0 +1,23 @@
+# Modify the CI/CD pipeline configuration
+cd /home/dot/pattern/.github/workflows
+cat <<EOF > ci.yml
+name: Continuous Integration
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+    - name: Install dependencies
+      run: pip install -r /home/dot/pattern/config/requirements/requirements.txt
+    - name: Run Tests
+      run: /home/dot/pattern/scripts/test_runner.sh
+EOF
+
+git add .github/workflows/ci.yml
+git commit -m "Update CI pipeline to include automated tests" 

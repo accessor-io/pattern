@@ -1,0 +1,34 @@
+diff --git a/keyhunt/secp256k1/Int.h b/keyhunt/secp256k1/Int.h
+--- a/keyhunt/secp256k1/Int.h
++++ b/keyhunt/secp256k1/Int.h
+@@ -25,6 +25,13 @@
+ #include <stdlib.h>
+ #include <inttypes.h>
+ 
++// Add macOS/clang compatibility
++#ifdef __clang__
++#define _addcarry_u64(c, a, b, r) __builtin_ia32_addcarryx_u64(c, a, b, (unsigned long long*)r)
++#define _subborrow_u64(c, a, b, r) __builtin_ia32_subborrow_u64(c, a, b, (unsigned long long*)r)
++#endif
++
++
+ // We need 1 extra block for Knuth div algorithm , Montgomery multiplication and ModInv
+ #define BISIZE 256
+ 
+diff --git a/keyhunt/keyhunt.cpp b/keyhunt/keyhunt.cpp
+--- a/keyhunt/keyhunt.cpp
++++ b/keyhunt/keyhunt.cpp
+@@ -35,6 +35,13 @@
+ #endif
+ #endif
+ 
++// Add macOS compatibility
++#ifdef __APPLE__
++#include <sys/random.h>
++#define getrandom(buf, size, flags) getentropy(buf, size)
++#define GRND_NONBLOCK 0
++#endif
++
+ #define CRYPTO_NONE 0
+ #define CRYPTO_BTC 1
+ #define CRYPTO_ETH 2 

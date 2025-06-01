@@ -1,0 +1,226 @@
+// ==UserScript==
+// @name         BC Game Crash Predictor v6 Elite
+// @namespace    http://tampermonkey.net/
+// @version      1.1
+// @description  Elite crash prediction with game-specific optimizations
+// @match        https://bc.game/game/crash
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    const GAME_CONSTANTS = {
+        CRASH_INDICATORS: {
+            MEMORY_PATTERN: {
+                SPIKE_THRESHOLD: 38000,
+                SEQUENCE_LENGTH: 5,
+                WEIGHT: 0.4
+            },
+            FRAME_PATTERN: {
+                DELAY_THRESHOLD: 16.7,
+                SEQUENCE_LENGTH: 8,
+                WEIGHT: 0.3
+            },
+            WEBSOCKET: {
+                MESSAGE_BUFFER: 10,
+                PATTERN_LENGTH: 4,
+                WEIGHT: 0.3
+            }
+        },
+        ESCAPE_TRIGGERS: {
+            MIN_CONFIDENCE: 0.85,
+            MAX_RISK: 0.75,
+            PATTERN_MATCH: 0.82
+        }
+    };
+
+    class GameStateAnalyzer {
+        constructor() {
+            this.state = {
+                lastHash: null,
+                multiplier: 1,
+                gamePhase: 'waiting',
+                riskLevel: 0,
+                patternConfidence: 0
+            };
+            
+            this.patterns = {
+                hashes: new CircularBuffer(8),
+                multipliers: new CircularBuffer(12),
+                timings: new CircularBuffer(16)
+            };
+        }
+
+        analyzeGameState(currentState) {
+            // Update pattern analysis
+            this.patterns.hashes.push(currentState.hash);
+            this.patterns.multipliers.push(currentState.multiplier);
+            this.patterns.timings.push(performance.now());
+
+            // Calculate risk based on known crash patterns
+            const riskFactors = {
+                hashPattern: this.analyzeHashPattern(),
+                multiplierAcceleration: this.analyzeMultiplierPattern(),
+                timingAnomalies: this.analyzeTimingPattern()
+            };
+
+            return this.calculateRiskScore(riskFactors);
+        }
+
+        analyzeHashPattern() {
+            const recentHashes = this.patterns.hashes.getAll();
+            if (recentHashes.length < 3) return 0;
+
+            // Analyze hash entropy and patterns
+            const entropy = this.calculateHashEntropy(recentHashes);
+            const patternStrength = this.detectHashPatterns(recentHashes);
+
+            return (entropy * 0.6 + patternStrength * 0.4);
+        }
+
+        calculateHashEntropy(hashes) {
+            // Implementation of hash entropy calculation
+            let entropy = 0;
+            const hashChars = hashes.join('').split('');
+            const charFreq = {};
+            
+            hashChars.forEach(char => {
+                charFreq[char] = (charFreq[char] || 0) + 1;
+            });
+
+            Object.values(charFreq).forEach(freq => {
+                const p = freq / hashChars.length;
+                entropy -= p * Math.log2(p);
+            });
+
+            return entropy / Math.log2(16); // Normalize to [0,1]
+        }
+
+        analyzeMultiplierPattern() {
+            const multipliers = this.patterns.multipliers.getAll();
+            if (multipliers.length < 4) return 0;
+
+            // Calculate acceleration and volatility
+            const accelerations = [];
+            for (let i = 2; i < multipliers.length; i++) {
+                const a1 = multipliers[i] - multipliers[i-1];
+                const a2 = multipliers[i-1] - multipliers[i-2];
+                accelerations.push(a1 - a2);
+            }
+
+            const avgAcceleration = accelerations.reduce((a,b) => a + b, 0) / accelerations.length;
+            const volatility = Math.sqrt(accelerations.reduce((a,b) => a + Math.pow(b - avgAcceleration, 2), 0) / accelerations.length);
+
+            return Math.min(1, (volatility + Math.abs(avgAcceleration)) / 2);
+        }
+
+        detectCrashPatterns() {
+            const recentStates = this.getRecentStates();
+            let patternStrength = 0;
+
+            // Known crash patterns
+            const patterns = {
+                rapidAcceleration: this.checkRapidAcceleration(recentStates),
+                volatilitySpike: this.checkVolatilitySpike(recentStates),
+                timingAnomaly: this.checkTimingAnomaly(recentStates)
+            };
+
+            return Object.values(patterns).reduce((a, b) => a + b, 0) / 3;
+        }
+
+        checkRapidAcceleration(states) {
+            const accelerations = states.map((s, i, arr) => {
+                if (i === 0) return 0;
+                return s.multiplier - arr[i-1].multiplier;
+            }).slice(1);
+
+            const avgAcceleration = accelerations.reduce((a,b) => a + b, 0) / accelerations.length;
+            return avgAcceleration > GAME_CONSTANTS.CRASH_INDICATORS.ACCELERATION_THRESHOLD ? 1 : 0;
+        }
+
+        shouldTriggerEscape() {
+            const currentRisk = this.calculateCurrentRisk();
+            const patternConfidence = this.getPatternConfidence();
+            
+            return (
+                currentRisk > GAME_CONSTANTS.ESCAPE_TRIGGERS.MAX_RISK &&
+                patternConfidence > GAME_CONSTANTS.ESCAPE_TRIGGERS.MIN_CONFIDENCE &&
+                this.state.gamePhase === 'running'
+            );
+        }
+
+        calculateCurrentRisk() {
+            const riskFactors = {
+                patternMatch: this.detectCrashPatterns(),
+                stateAnalysis: this.analyzeGameState(this.state),
+                historicalCorrelation: this.analyzeHistoricalPatterns()
+            };
+
+            return Object.values(riskFactors).reduce((a, b) => a + b, 0) / 3;
+        }
+    }
+
+    class CrashPredictor {
+        constructor() {
+            this.analyzer = new GameStateAnalyzer();
+            this.isActive = false;
+            this.lastPrediction = null;
+        }
+
+        start() {
+            this.isActive = true;
+            this.initializeMonitoring();
+            console.log('Enhanced crash predictor initialized');
+        }
+
+        initializeMonitoring() {
+            // Monitor game state changes
+            const gameStateObserver = new MutationObserver(() => {
+                if (this.isActive) {
+                    this.checkGameState();
+                }
+            });
+
+            // Monitor WebSocket messages
+            this.interceptWebSocket();
+
+            // Start monitoring DOM changes
+            const gameContainer = document.querySelector('.game-container');
+            if (gameContainer) {
+                gameStateObserver.observe(gameContainer, {
+                    childList: true,
+                    subtree: true,
+                    attributes: true
+                });
+            }
+        }
+
+        checkGameState() {
+            const currentState = this.getCurrentGameState();
+            if (!currentState) return;
+
+            const shouldEscape = this.analyzer.shouldTriggerEscape();
+            if (shouldEscape) {
+                this.executeEscape();
+            }
+        }
+
+        executeEscape() {
+            const cashoutButton = document.querySelector('[data-btn="cashout"]');
+            if (cashoutButton && !cashoutButton.disabled) {
+                cashoutButton.click();
+                console.log('Escape triggered:', {
+                    risk: this.analyzer.calculateCurrentRisk(),
+                    confidence: this.analyzer.getPatternConfidence(),
+                    gamePhase: this.analyzer.state.gamePhase
+                });
+            }
+        }
+    }
+
+    // Initialize predictor
+    const predictor = new CrashPredictor();
+    predictor.start();
+
+})();

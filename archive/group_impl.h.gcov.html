@@ -1,0 +1,800 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - full.lcov - src/group_impl.h</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - group_impl.h<span style="font-size: 80%;"> (source / <a href="group_impl.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">full.lcov</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">317</td>
+            <td class="headerCovTableEntry">379</td>
+            <td class="headerCovTableEntryMed">83.6 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-11-22 23:46:48</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">25</td>
+            <td class="headerCovTableEntry">32</td>
+            <td class="headerCovTableEntryMed">78.1 %</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntry">54</td>
+            <td class="headerCovTableEntry">76</td>
+            <td class="headerCovTableEntryLo">71.1 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">           Branch data     Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>                :            : /**********************************************************************</a>
+<span class="lineNum">       2 </span>                :            :  * Copyright (c) 2013, 2014 Pieter Wuille                             *
+<span class="lineNum">       3 </span>                :            :  * Distributed under the MIT software license, see the accompanying   *
+<span class="lineNum">       4 </span>                :            :  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
+<span class="lineNum">       5 </span>                :            :  **********************************************************************/
+<span class="lineNum">       6 </span>                :            : 
+<span class="lineNum">       7 </span>                :            : #ifndef _SECP256K1_GROUP_IMPL_H_
+<span class="lineNum">       8 </span>                :            : #define _SECP256K1_GROUP_IMPL_H_
+<span class="lineNum">       9 </span>                :            : 
+<span class="lineNum">      10 </span>                :            : #include &quot;num.h&quot;
+<span class="lineNum">      11 </span>                :            : #include &quot;field.h&quot;
+<span class="lineNum">      12 </span>                :            : #include &quot;group.h&quot;
+<span class="lineNum">      13 </span>                :            : 
+<span class="lineNum">      14 </span>                :            : /* These points can be generated in sage as follows:
+<span class="lineNum">      15 </span>                :            :  *
+<span class="lineNum">      16 </span>                :            :  * 0. Setup a worksheet with the following parameters.
+<span class="lineNum">      17 </span>                :            :  *   b = 4  # whatever CURVE_B will be set to
+<span class="lineNum">      18 </span>                :            :  *   F = FiniteField (0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F)
+<span class="lineNum">      19 </span>                :            :  *   C = EllipticCurve ([F (0), F (b)])
+<span class="lineNum">      20 </span>                :            :  *
+<span class="lineNum">      21 </span>                :            :  * 1. Determine all the small orders available to you. (If there are
+<span class="lineNum">      22 </span>                :            :  *    no satisfactory ones, go back and change b.)
+<span class="lineNum">      23 </span>                :            :  *   print C.order().factor(limit=1000)
+<span class="lineNum">      24 </span>                :            :  *
+<span class="lineNum">      25 </span>                :            :  * 2. Choose an order as one of the prime factors listed in the above step.
+<span class="lineNum">      26 </span>                :            :  *    (You can also multiply some to get a composite order, though the
+<span class="lineNum">      27 </span>                :            :  *    tests will crash trying to invert scalars during signing.) We take a
+<span class="lineNum">      28 </span>                :            :  *    random point and scale it to drop its order to the desired value.
+<span class="lineNum">      29 </span>                :            :  *    There is some probability this won't work; just try again.
+<span class="lineNum">      30 </span>                :            :  *   order = 199
+<span class="lineNum">      31 </span>                :            :  *   P = C.random_point()
+<span class="lineNum">      32 </span>                :            :  *   P = (int(P.order()) / int(order)) * P
+<span class="lineNum">      33 </span>                :            :  *   assert(P.order() == order)
+<span class="lineNum">      34 </span>                :            :  *
+<span class="lineNum">      35 </span>                :            :  * 3. Print the values. You'll need to use a vim macro or something to
+<span class="lineNum">      36 </span>                :            :  *    split the hex output into 4-byte chunks.
+<span class="lineNum">      37 </span>                :            :  *   print &quot;%x %x&quot; % P.xy()
+<span class="lineNum">      38 </span>                :            :  */
+<span class="lineNum">      39 </span>                :            : #if defined(EXHAUSTIVE_TEST_ORDER)
+<span class="lineNum">      40 </span>                :            : #  if EXHAUSTIVE_TEST_ORDER == 199
+<span class="lineNum">      41 </span>                :            : const secp256k1_ge secp256k1_ge_const_g = SECP256K1_GE_CONST(
+<span class="lineNum">      42 </span>                :            :     0xFA7CC9A7, 0x0737F2DB, 0xA749DD39, 0x2B4FB069,
+<span class="lineNum">      43 </span>                :            :     0x3B017A7D, 0xA808C2F1, 0xFB12940C, 0x9EA66C18,
+<span class="lineNum">      44 </span>                :            :     0x78AC123A, 0x5ED8AEF3, 0x8732BC91, 0x1F3A2868,
+<span class="lineNum">      45 </span>                :            :     0x48DF246C, 0x808DAE72, 0xCFE52572, 0x7F0501ED
+<span class="lineNum">      46 </span>                :            : );
+<span class="lineNum">      47 </span>                :            : 
+<span class="lineNum">      48 </span>                :            : const int CURVE_B = 4;
+<span class="lineNum">      49 </span>                :            : #  elif EXHAUSTIVE_TEST_ORDER == 13
+<span class="lineNum">      50 </span>                :            : const secp256k1_ge secp256k1_ge_const_g = SECP256K1_GE_CONST(
+<span class="lineNum">      51 </span>                :            :     0xedc60018, 0xa51a786b, 0x2ea91f4d, 0x4c9416c0,
+<span class="lineNum">      52 </span>                :            :     0x9de54c3b, 0xa1316554, 0x6cf4345c, 0x7277ef15,
+<span class="lineNum">      53 </span>                :            :     0x54cb1b6b, 0xdc8c1273, 0x087844ea, 0x43f4603e,
+<span class="lineNum">      54 </span>                :            :     0x0eaf9a43, 0xf6effe55, 0x939f806d, 0x37adf8ac
+<span class="lineNum">      55 </span>                :            : );
+<span class="lineNum">      56 </span>                :            : const int CURVE_B = 2;
+<span class="lineNum">      57 </span>                :            : #  elif EXHAUSTIVE_TEST_ORDER == 14
+<span class="lineNum">      58 </span>                :            : /* This will cause the tests to fail, but is here for experimenting */
+<span class="lineNum">      59 </span>                :            : const secp256k1_ge secp256k1_ge_const_g = SECP256K1_GE_CONST(
+<span class="lineNum">      60 </span>                :            :     0xbcd09a5a, 0x4e3ca7d2, 0xdd48f356, 0x55efd913,
+<span class="lineNum">      61 </span>                :            :     0x0e2e6b23, 0xf14e837f, 0x3f020121, 0x28023423,
+<span class="lineNum">      62 </span>                :            :     0xd81b9287, 0xe596bd27, 0x803395f1, 0xc781fa00,
+<span class="lineNum">      63 </span>                :            :     0xa813c99e, 0x81f6a89f, 0x863f4894, 0x0316b485
+<span class="lineNum">      64 </span>                :            : );
+<span class="lineNum">      65 </span>                :            : const int CURVE_B = 6;
+<span class="lineNum">      66 </span>                :            : #  else
+<span class="lineNum">      67 </span>                :            : #    error No known generator for the specified exhaustive test group order.
+<span class="lineNum">      68 </span>                :            : #  endif
+<span class="lineNum">      69 </span>                :            : #else
+<span class="lineNum">      70 </span>                :            : /** Generator for secp256k1, value 'g' defined in
+<span class="lineNum">      71 </span>                :            :  *  &quot;Standards for Efficient Cryptography&quot; (SEC2) 2.7.1.
+<span class="lineNum">      72 </span>                :            :  */
+<span class="lineNum">      73 </span>                :            : static const secp256k1_ge secp256k1_ge_const_g = SECP256K1_GE_CONST(
+<span class="lineNum">      74 </span>                :            :     0x79BE667EUL, 0xF9DCBBACUL, 0x55A06295UL, 0xCE870B07UL,
+<span class="lineNum">      75 </span>                :            :     0x029BFCDBUL, 0x2DCE28D9UL, 0x59F2815BUL, 0x16F81798UL,
+<span class="lineNum">      76 </span>                :            :     0x483ADA77UL, 0x26A3C465UL, 0x5DA4FBFCUL, 0x0E1108A8UL,
+<span class="lineNum">      77 </span>                :            :     0xFD17B448UL, 0xA6855419UL, 0x9C47D08FUL, 0xFB10D4B8UL
+<span class="lineNum">      78 </span>                :            : );
+<span class="lineNum">      79 </span>                :            : 
+<span class="lineNum">      80 </span>                :            : const int CURVE_B = 7;
+<a name="81"><span class="lineNum">      81 </span>                :            : #endif</a>
+<span class="lineNum">      82 </span>                :            : 
+<span class="lineNum">      83 </span>                :<span class="lineCov">      58101 : static void secp256k1_ge_set_gej_zinv(secp256k1_ge *r, const secp256k1_gej *a, const secp256k1_fe *zi) {</span>
+<span class="lineNum">      84 </span>                :            :     secp256k1_fe zi2;
+<span class="lineNum">      85 </span>                :            :     secp256k1_fe zi3;
+<span class="lineNum">      86 </span>                :<span class="lineCov">      58101 :     secp256k1_fe_sqr(&amp;zi2, zi);</span>
+<span class="lineNum">      87 </span>                :<span class="lineCov">      58101 :     secp256k1_fe_mul(&amp;zi3, &amp;zi2, zi);</span>
+<span class="lineNum">      88 </span>                :<span class="lineCov">      58101 :     secp256k1_fe_mul(&amp;r-&gt;x, &amp;a-&gt;x, &amp;zi2);</span>
+<span class="lineNum">      89 </span>                :<span class="lineCov">      58101 :     secp256k1_fe_mul(&amp;r-&gt;y, &amp;a-&gt;y, &amp;zi3);</span>
+<span class="lineNum">      90 </span>                :<span class="lineCov">      58101 :     r-&gt;infinity = a-&gt;infinity;</span>
+<a name="91"><span class="lineNum">      91 </span>                :<span class="lineCov">      58101 : }</span></a>
+<span class="lineNum">      92 </span>                :            : 
+<span class="lineNum">      93 </span>                :<span class="lineNoCov">          0 : static void secp256k1_ge_set_xy(secp256k1_ge *r, const secp256k1_fe *x, const secp256k1_fe *y) {</span>
+<span class="lineNum">      94 </span>                :<span class="lineNoCov">          0 :     r-&gt;infinity = 0;</span>
+<span class="lineNum">      95 </span>                :<span class="lineNoCov">          0 :     r-&gt;x = *x;</span>
+<span class="lineNum">      96 </span>                :<span class="lineNoCov">          0 :     r-&gt;y = *y;</span>
+<a name="97"><span class="lineNum">      97 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">      98 </span>                :            : 
+<span class="lineNum">      99 </span>                :<span class="lineCov">         13 : static int secp256k1_ge_is_infinity(const secp256k1_ge *a) {</span>
+<span class="lineNum">     100 </span>                :<span class="lineCov">         13 :     return a-&gt;infinity;</span>
+<a name="101"><span class="lineNum">     101 </span>                :            : }</a>
+<span class="lineNum">     102 </span>                :            : 
+<span class="lineNum">     103 </span>                :<span class="lineCov">       5964 : static void secp256k1_ge_neg(secp256k1_ge *r, const secp256k1_ge *a) {</span>
+<span class="lineNum">     104 </span>                :<span class="lineCov">       5964 :     *r = *a;</span>
+<span class="lineNum">     105 </span>                :<span class="lineCov">       5964 :     secp256k1_fe_normalize_weak(&amp;r-&gt;y);</span>
+<span class="lineNum">     106 </span>                :<span class="lineCov">       5964 :     secp256k1_fe_negate(&amp;r-&gt;y, &amp;r-&gt;y, 1);</span>
+<a name="107"><span class="lineNum">     107 </span>                :<span class="lineCov">       5964 : }</span></a>
+<span class="lineNum">     108 </span>                :            : 
+<span class="lineNum">     109 </span>                :<span class="lineCov">      13165 : static void secp256k1_ge_set_gej(secp256k1_ge *r, secp256k1_gej *a) {</span>
+<span class="lineNum">     110 </span>                :            :     secp256k1_fe z2, z3;
+<span class="lineNum">     111 </span>                :<span class="lineCov">      13165 :     r-&gt;infinity = a-&gt;infinity;</span>
+<span class="lineNum">     112 </span>                :<span class="lineCov">      13165 :     secp256k1_fe_inv(&amp;a-&gt;z, &amp;a-&gt;z);</span>
+<span class="lineNum">     113 </span>                :<span class="lineCov">      13165 :     secp256k1_fe_sqr(&amp;z2, &amp;a-&gt;z);</span>
+<span class="lineNum">     114 </span>                :<span class="lineCov">      13165 :     secp256k1_fe_mul(&amp;z3, &amp;a-&gt;z, &amp;z2);</span>
+<span class="lineNum">     115 </span>                :<span class="lineCov">      13165 :     secp256k1_fe_mul(&amp;a-&gt;x, &amp;a-&gt;x, &amp;z2);</span>
+<span class="lineNum">     116 </span>                :<span class="lineCov">      13165 :     secp256k1_fe_mul(&amp;a-&gt;y, &amp;a-&gt;y, &amp;z3);</span>
+<span class="lineNum">     117 </span>                :<span class="lineCov">      13165 :     secp256k1_fe_set_int(&amp;a-&gt;z, 1);</span>
+<span class="lineNum">     118 </span>                :<span class="lineCov">      13165 :     r-&gt;x = a-&gt;x;</span>
+<span class="lineNum">     119 </span>                :<span class="lineCov">      13165 :     r-&gt;y = a-&gt;y;</span>
+<a name="120"><span class="lineNum">     120 </span>                :<span class="lineCov">      13165 : }</span></a>
+<span class="lineNum">     121 </span>                :            : 
+<span class="lineNum">     122 </span>                :<span class="lineNoCov">          0 : static void secp256k1_ge_set_gej_var(secp256k1_ge *r, secp256k1_gej *a) {</span>
+<span class="lineNum">     123 </span>                :            :     secp256k1_fe z2, z3;
+<span class="lineNum">     124 </span>                :<span class="lineNoCov">          0 :     r-&gt;infinity = a-&gt;infinity;</span>
+<span class="lineNum">     125 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">     126 </span>                :<span class="lineNoCov">          0 :         return;</span>
+<span class="lineNum">     127 </span>                :            :     }
+<span class="lineNum">     128 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_inv_var(&amp;a-&gt;z, &amp;a-&gt;z);</span>
+<span class="lineNum">     129 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_sqr(&amp;z2, &amp;a-&gt;z);</span>
+<span class="lineNum">     130 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_mul(&amp;z3, &amp;a-&gt;z, &amp;z2);</span>
+<span class="lineNum">     131 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_mul(&amp;a-&gt;x, &amp;a-&gt;x, &amp;z2);</span>
+<span class="lineNum">     132 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_mul(&amp;a-&gt;y, &amp;a-&gt;y, &amp;z3);</span>
+<span class="lineNum">     133 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_set_int(&amp;a-&gt;z, 1);</span>
+<span class="lineNum">     134 </span>                :<span class="lineNoCov">          0 :     r-&gt;x = a-&gt;x;</span>
+<span class="lineNum">     135 </span>                :<span class="lineNoCov">          0 :     r-&gt;y = a-&gt;y;</span>
+<a name="136"><span class="lineNum">     136 </span>                :            : }</a>
+<span class="lineNum">     137 </span>                :            : 
+<span class="lineNum">     138 </span>                :<span class="lineCov">          1 : static void secp256k1_ge_set_all_gej_var(secp256k1_ge *r, const secp256k1_gej *a, size_t len, const secp256k1_callback *cb) {</span>
+<span class="lineNum">     139 </span>                :            :     secp256k1_fe *az;
+<span class="lineNum">     140 </span>                :            :     secp256k1_fe *azi;
+<span class="lineNum">     141 </span>                :            :     size_t i;
+<span class="lineNum">     142 </span>                :<span class="lineCov">          1 :     size_t count = 0;</span>
+<span class="lineNum">     143 </span>                :<span class="lineCov">          1 :     az = (secp256k1_fe *)checked_malloc(cb, sizeof(secp256k1_fe) * len);</span>
+<span class="lineNum">     144 </span>        [<span class="branchCov" title="Branch 0 was taken 1024 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">       1025 :     for (i = 0; i &lt; len; i++) {</span>
+<span class="lineNum">     145 </span>        [<span class="branchCov" title="Branch 0 was taken 1024 times"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>]:<span class="lineCov">       1024 :         if (!a[i].infinity) {</span>
+<span class="lineNum">     146 </span>                :<span class="lineCov">       1024 :             az[count++] = a[i].z;</span>
+<span class="lineNum">     147 </span>                :            :         }
+<span class="lineNum">     148 </span>                :            :     }
+<span class="lineNum">     149 </span>                :            : 
+<span class="lineNum">     150 </span>                :<span class="lineCov">          1 :     azi = (secp256k1_fe *)checked_malloc(cb, sizeof(secp256k1_fe) * count);</span>
+<span class="lineNum">     151 </span>                :<span class="lineCov">          1 :     secp256k1_fe_inv_all_var(azi, az, count);</span>
+<span class="lineNum">     152 </span>                :<span class="lineCov">          1 :     free(az);</span>
+<span class="lineNum">     153 </span>                :            : 
+<span class="lineNum">     154 </span>                :<span class="lineCov">          1 :     count = 0;</span>
+<span class="lineNum">     155 </span>        [<span class="branchCov" title="Branch 0 was taken 1024 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">       1025 :     for (i = 0; i &lt; len; i++) {</span>
+<span class="lineNum">     156 </span>                :<span class="lineCov">       1024 :         r[i].infinity = a[i].infinity;</span>
+<span class="lineNum">     157 </span>        [<span class="branchCov" title="Branch 0 was taken 1024 times"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>]:<span class="lineCov">       1024 :         if (!a[i].infinity) {</span>
+<span class="lineNum">     158 </span>                :<span class="lineCov">       1024 :             secp256k1_ge_set_gej_zinv(&amp;r[i], &amp;a[i], &amp;azi[count++]);</span>
+<span class="lineNum">     159 </span>                :            :         }
+<span class="lineNum">     160 </span>                :            :     }
+<span class="lineNum">     161 </span>                :<span class="lineCov">          1 :     free(azi);</span>
+<a name="162"><span class="lineNum">     162 </span>                :<span class="lineCov">          1 : }</span></a>
+<span class="lineNum">     163 </span>                :            : 
+<span class="lineNum">     164 </span>                :<span class="lineCov">          1 : static void secp256k1_ge_set_table_gej_var(secp256k1_ge *r, const secp256k1_gej *a, const secp256k1_fe *zr, size_t len) {</span>
+<span class="lineNum">     165 </span>                :<span class="lineCov">          1 :     size_t i = len - 1;</span>
+<span class="lineNum">     166 </span>                :            :     secp256k1_fe zi;
+<span class="lineNum">     167 </span>                :            : 
+<span class="lineNum">     168 </span>        [<span class="branchCov" title="Branch 0 was taken 1 time"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>]:<span class="lineCov">          1 :     if (len &gt; 0) {</span>
+<span class="lineNum">     169 </span>                :            :         /* Compute the inverse of the last z coordinate, and use it to compute the last affine output. */
+<span class="lineNum">     170 </span>                :<span class="lineCov">          1 :         secp256k1_fe_inv(&amp;zi, &amp;a[i].z);</span>
+<span class="lineNum">     171 </span>                :<span class="lineCov">          1 :         secp256k1_ge_set_gej_zinv(&amp;r[i], &amp;a[i], &amp;zi);</span>
+<span class="lineNum">     172 </span>                :            : 
+<span class="lineNum">     173 </span>                :            :         /* Work out way backwards, using the z-ratios to scale the x/y values. */
+<span class="lineNum">     174 </span>        [<span class="branchCov" title="Branch 0 was taken 3 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">          4 :         while (i &gt; 0) {</span>
+<span class="lineNum">     175 </span>                :<span class="lineCov">          3 :             secp256k1_fe_mul(&amp;zi, &amp;zi, &amp;zr[i]);</span>
+<span class="lineNum">     176 </span>                :<span class="lineCov">          3 :             i--;</span>
+<span class="lineNum">     177 </span>                :<span class="lineCov">          3 :             secp256k1_ge_set_gej_zinv(&amp;r[i], &amp;a[i], &amp;zi);</span>
+<span class="lineNum">     178 </span>                :            :         }
+<span class="lineNum">     179 </span>                :            :     }
+<a name="180"><span class="lineNum">     180 </span>                :<span class="lineCov">          1 : }</span></a>
+<span class="lineNum">     181 </span>                :            : 
+<span class="lineNum">     182 </span>                :<span class="lineCov">      14268 : static void secp256k1_ge_globalz_set_table_gej(size_t len, secp256k1_ge *r, secp256k1_fe *globalz, const secp256k1_gej *a, const secp256k1_fe *zr) {</span>
+<span class="lineNum">     183 </span>                :<span class="lineCov">      14268 :     size_t i = len - 1;</span>
+<span class="lineNum">     184 </span>                :            :     secp256k1_fe zs;
+<span class="lineNum">     185 </span>                :            : 
+<span class="lineNum">     186 </span>        [<span class="branchCov" title="Branch 0 was taken 14268 times"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>]:<span class="lineCov">      14268 :     if (len &gt; 0) {</span>
+<span class="lineNum">     187 </span>                :            :         /* The z of the final point gives us the &quot;global Z&quot; for the table. */
+<span class="lineNum">     188 </span>                :<span class="lineCov">      14268 :         r[i].x = a[i].x;</span>
+<span class="lineNum">     189 </span>                :<span class="lineCov">      14268 :         r[i].y = a[i].y;</span>
+<span class="lineNum">     190 </span>                :<span class="lineCov">      14268 :         *globalz = a[i].z;</span>
+<span class="lineNum">     191 </span>                :<span class="lineCov">      14268 :         r[i].infinity = 0;</span>
+<span class="lineNum">     192 </span>                :<span class="lineCov">      14268 :         zs = zr[i];</span>
+<span class="lineNum">     193 </span>                :            : 
+<span class="lineNum">     194 </span>                :            :         /* Work our way backwards, using the z-ratios to scale the x/y values. */
+<span class="lineNum">     195 </span>        [<span class="branchCov" title="Branch 0 was taken 42804 times"> + </span><span class="branchCov" title="Branch 1 was taken 14268 times"> + </span>]:<span class="lineCov">      57072 :         while (i &gt; 0) {</span>
+<span class="lineNum">     196 </span>        [<span class="branchCov" title="Branch 0 was taken 28536 times"> + </span><span class="branchCov" title="Branch 1 was taken 14268 times"> + </span>]:<span class="lineCov">      42804 :             if (i != len - 1) {</span>
+<span class="lineNum">     197 </span>                :<span class="lineCov">      28536 :                 secp256k1_fe_mul(&amp;zs, &amp;zs, &amp;zr[i]);</span>
+<span class="lineNum">     198 </span>                :            :             }
+<span class="lineNum">     199 </span>                :<span class="lineCov">      42804 :             i--;</span>
+<span class="lineNum">     200 </span>                :<span class="lineCov">      42804 :             secp256k1_ge_set_gej_zinv(&amp;r[i], &amp;a[i], &amp;zs);</span>
+<span class="lineNum">     201 </span>                :            :         }
+<span class="lineNum">     202 </span>                :            :     }
+<a name="203"><span class="lineNum">     203 </span>                :<span class="lineCov">      14268 : }</span></a>
+<span class="lineNum">     204 </span>                :            : 
+<span class="lineNum">     205 </span>                :<span class="lineCov">      12397 : static void secp256k1_gej_set_infinity(secp256k1_gej *r) {</span>
+<span class="lineNum">     206 </span>                :<span class="lineCov">      12397 :     r-&gt;infinity = 1;</span>
+<span class="lineNum">     207 </span>                :<span class="lineCov">      12397 :     secp256k1_fe_clear(&amp;r-&gt;x);</span>
+<span class="lineNum">     208 </span>                :<span class="lineCov">      12397 :     secp256k1_fe_clear(&amp;r-&gt;y);</span>
+<span class="lineNum">     209 </span>                :<span class="lineCov">      12397 :     secp256k1_fe_clear(&amp;r-&gt;z);</span>
+<a name="210"><span class="lineNum">     210 </span>                :<span class="lineCov">      12397 : }</span></a>
+<span class="lineNum">     211 </span>                :            : 
+<span class="lineNum">     212 </span>                :<span class="lineNoCov">          0 : static void secp256k1_ge_set_infinity(secp256k1_ge *r) {</span>
+<span class="lineNum">     213 </span>                :<span class="lineNoCov">          0 :     r-&gt;infinity = 1;</span>
+<span class="lineNum">     214 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_clear(&amp;r-&gt;x);</span>
+<span class="lineNum">     215 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_clear(&amp;r-&gt;y);</span>
+<a name="216"><span class="lineNum">     216 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     217 </span>                :            : 
+<span class="lineNum">     218 </span>                :<span class="lineCov">       1765 : static void secp256k1_gej_clear(secp256k1_gej *r) {</span>
+<span class="lineNum">     219 </span>                :<span class="lineCov">       1765 :     r-&gt;infinity = 0;</span>
+<span class="lineNum">     220 </span>                :<span class="lineCov">       1765 :     secp256k1_fe_clear(&amp;r-&gt;x);</span>
+<span class="lineNum">     221 </span>                :<span class="lineCov">       1765 :     secp256k1_fe_clear(&amp;r-&gt;y);</span>
+<span class="lineNum">     222 </span>                :<span class="lineCov">       1765 :     secp256k1_fe_clear(&amp;r-&gt;z);</span>
+<a name="223"><span class="lineNum">     223 </span>                :<span class="lineCov">       1765 : }</span></a>
+<span class="lineNum">     224 </span>                :            : 
+<span class="lineNum">     225 </span>                :<span class="lineCov">       3541 : static void secp256k1_ge_clear(secp256k1_ge *r) {</span>
+<span class="lineNum">     226 </span>                :<span class="lineCov">       3541 :     r-&gt;infinity = 0;</span>
+<span class="lineNum">     227 </span>                :<span class="lineCov">       3541 :     secp256k1_fe_clear(&amp;r-&gt;x);</span>
+<span class="lineNum">     228 </span>                :<span class="lineCov">       3541 :     secp256k1_fe_clear(&amp;r-&gt;y);</span>
+<a name="229"><span class="lineNum">     229 </span>                :<span class="lineCov">       3541 : }</span></a>
+<span class="lineNum">     230 </span>                :            : 
+<span class="lineNum">     231 </span>                :<span class="lineCov">          1 : static int secp256k1_ge_set_xquad(secp256k1_ge *r, const secp256k1_fe *x) {</span>
+<span class="lineNum">     232 </span>                :            :     secp256k1_fe x2, x3, c;
+<span class="lineNum">     233 </span>                :<span class="lineCov">          1 :     r-&gt;x = *x;</span>
+<span class="lineNum">     234 </span>                :<span class="lineCov">          1 :     secp256k1_fe_sqr(&amp;x2, x);</span>
+<span class="lineNum">     235 </span>                :<span class="lineCov">          1 :     secp256k1_fe_mul(&amp;x3, x, &amp;x2);</span>
+<span class="lineNum">     236 </span>                :<span class="lineCov">          1 :     r-&gt;infinity = 0;</span>
+<span class="lineNum">     237 </span>                :<span class="lineCov">          1 :     secp256k1_fe_set_int(&amp;c, CURVE_B);</span>
+<span class="lineNum">     238 </span>                :<span class="lineCov">          1 :     secp256k1_fe_add(&amp;c, &amp;x3);</span>
+<span class="lineNum">     239 </span>                :<span class="lineCov">          1 :     return secp256k1_fe_sqrt(&amp;r-&gt;y, &amp;c);</span>
+<a name="240"><span class="lineNum">     240 </span>                :            : }</a>
+<span class="lineNum">     241 </span>                :            : 
+<span class="lineNum">     242 </span>                :<span class="lineCov">          1 : static int secp256k1_ge_set_xo_var(secp256k1_ge *r, const secp256k1_fe *x, int odd) {</span>
+<span class="lineNum">     243 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 1 time"> + </span>]:<span class="lineCov">          1 :     if (!secp256k1_ge_set_xquad(r, x)) {</span>
+<span class="lineNum">     244 </span>                :<span class="lineNoCov">          0 :         return 0;</span>
+<span class="lineNum">     245 </span>                :            :     }
+<span class="lineNum">     246 </span>                :<span class="lineCov">          1 :     secp256k1_fe_normalize_var(&amp;r-&gt;y);</span>
+<span class="lineNum">     247 </span>        [<span class="branchCov" title="Branch 1 was taken 1 time"> + </span><span class="branchNoCov" title="Branch 2 was not taken"> - </span>]:<span class="lineCov">          1 :     if (secp256k1_fe_is_odd(&amp;r-&gt;y) != odd) {</span>
+<span class="lineNum">     248 </span>                :<span class="lineCov">          1 :         secp256k1_fe_negate(&amp;r-&gt;y, &amp;r-&gt;y, 1);</span>
+<span class="lineNum">     249 </span>                :            :     }
+<span class="lineNum">     250 </span>                :<span class="lineCov">          1 :     return 1;</span>
+<span class="lineNum">     251 </span>                :            : 
+<a name="252"><span class="lineNum">     252 </span>                :            : }</a>
+<span class="lineNum">     253 </span>                :            : 
+<span class="lineNum">     254 </span>                :<span class="lineCov">      23733 : static void secp256k1_gej_set_ge(secp256k1_gej *r, const secp256k1_ge *a) {</span>
+<span class="lineNum">     255 </span>                :<span class="lineCov">      23733 :    r-&gt;infinity = a-&gt;infinity;</span>
+<span class="lineNum">     256 </span>                :<span class="lineCov">      23733 :    r-&gt;x = a-&gt;x;</span>
+<span class="lineNum">     257 </span>                :<span class="lineCov">      23733 :    r-&gt;y = a-&gt;y;</span>
+<span class="lineNum">     258 </span>                :<span class="lineCov">      23733 :    secp256k1_fe_set_int(&amp;r-&gt;z, 1);</span>
+<a name="259"><span class="lineNum">     259 </span>                :<span class="lineCov">      23733 : }</span></a>
+<span class="lineNum">     260 </span>                :            : 
+<span class="lineNum">     261 </span>                :<span class="lineNoCov">          0 : static int secp256k1_gej_eq_x_var(const secp256k1_fe *x, const secp256k1_gej *a) {</span>
+<span class="lineNum">     262 </span>                :            :     secp256k1_fe r, r2;
+<span class="lineNum">     263 </span>                :<span class="lineNoCov">          0 :     VERIFY_CHECK(!a-&gt;infinity);</span>
+<span class="lineNum">     264 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_sqr(&amp;r, &amp;a-&gt;z); secp256k1_fe_mul(&amp;r, &amp;r, x);</span>
+<span class="lineNum">     265 </span>                :<span class="lineNoCov">          0 :     r2 = a-&gt;x; secp256k1_fe_normalize_weak(&amp;r2);</span>
+<span class="lineNum">     266 </span>                :<span class="lineNoCov">          0 :     return secp256k1_fe_equal_var(&amp;r, &amp;r2);</span>
+<a name="267"><span class="lineNum">     267 </span>                :            : }</a>
+<span class="lineNum">     268 </span>                :            : 
+<span class="lineNum">     269 </span>                :<span class="lineCov">         14 : static void secp256k1_gej_neg(secp256k1_gej *r, const secp256k1_gej *a) {</span>
+<span class="lineNum">     270 </span>                :<span class="lineCov">         14 :     r-&gt;infinity = a-&gt;infinity;</span>
+<span class="lineNum">     271 </span>                :<span class="lineCov">         14 :     r-&gt;x = a-&gt;x;</span>
+<span class="lineNum">     272 </span>                :<span class="lineCov">         14 :     r-&gt;y = a-&gt;y;</span>
+<span class="lineNum">     273 </span>                :<span class="lineCov">         14 :     r-&gt;z = a-&gt;z;</span>
+<span class="lineNum">     274 </span>                :<span class="lineCov">         14 :     secp256k1_fe_normalize_weak(&amp;r-&gt;y);</span>
+<span class="lineNum">     275 </span>                :<span class="lineCov">         14 :     secp256k1_fe_negate(&amp;r-&gt;y, &amp;r-&gt;y, 1);</span>
+<a name="276"><span class="lineNum">     276 </span>                :<span class="lineCov">         14 : }</span></a>
+<span class="lineNum">     277 </span>                :            : 
+<span class="lineNum">     278 </span>                :<span class="lineCov">     493369 : static int secp256k1_gej_is_infinity(const secp256k1_gej *a) {</span>
+<span class="lineNum">     279 </span>                :<span class="lineCov">     493369 :     return a-&gt;infinity;</span>
+<a name="280"><span class="lineNum">     280 </span>                :            : }</a>
+<span class="lineNum">     281 </span>                :            : 
+<span class="lineNum">     282 </span>                :<span class="lineNoCov">          0 : static int secp256k1_gej_is_valid_var(const secp256k1_gej *a) {</span>
+<span class="lineNum">     283 </span>                :            :     secp256k1_fe y2, x3, z2, z6;
+<span class="lineNum">     284 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">     285 </span>                :<span class="lineNoCov">          0 :         return 0;</span>
+<span class="lineNum">     286 </span>                :            :     }
+<span class="lineNum">     287 </span>                :            :     /** y^2 = x^3 + 7
+<span class="lineNum">     288 </span>                :            :      *  (Y/Z^3)^2 = (X/Z^2)^3 + 7
+<span class="lineNum">     289 </span>                :            :      *  Y^2 / Z^6 = X^3 / Z^6 + 7
+<span class="lineNum">     290 </span>                :            :      *  Y^2 = X^3 + 7*Z^6
+<span class="lineNum">     291 </span>                :            :      */
+<span class="lineNum">     292 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_sqr(&amp;y2, &amp;a-&gt;y);</span>
+<span class="lineNum">     293 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_sqr(&amp;x3, &amp;a-&gt;x); secp256k1_fe_mul(&amp;x3, &amp;x3, &amp;a-&gt;x);</span>
+<span class="lineNum">     294 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_sqr(&amp;z2, &amp;a-&gt;z);</span>
+<span class="lineNum">     295 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_sqr(&amp;z6, &amp;z2); secp256k1_fe_mul(&amp;z6, &amp;z6, &amp;z2);</span>
+<span class="lineNum">     296 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_mul_int(&amp;z6, CURVE_B);</span>
+<span class="lineNum">     297 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_add(&amp;x3, &amp;z6);</span>
+<span class="lineNum">     298 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_normalize_weak(&amp;x3);</span>
+<span class="lineNum">     299 </span>                :<span class="lineNoCov">          0 :     return secp256k1_fe_equal_var(&amp;y2, &amp;x3);</span>
+<a name="300"><span class="lineNum">     300 </span>                :            : }</a>
+<span class="lineNum">     301 </span>                :            : 
+<span class="lineNum">     302 </span>                :<span class="lineNoCov">          0 : static int secp256k1_ge_is_valid_var(const secp256k1_ge *a) {</span>
+<span class="lineNum">     303 </span>                :            :     secp256k1_fe y2, x3, c;
+<span class="lineNum">     304 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">     305 </span>                :<span class="lineNoCov">          0 :         return 0;</span>
+<span class="lineNum">     306 </span>                :            :     }
+<span class="lineNum">     307 </span>                :            :     /* y^2 = x^3 + 7 */
+<span class="lineNum">     308 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_sqr(&amp;y2, &amp;a-&gt;y);</span>
+<span class="lineNum">     309 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_sqr(&amp;x3, &amp;a-&gt;x); secp256k1_fe_mul(&amp;x3, &amp;x3, &amp;a-&gt;x);</span>
+<span class="lineNum">     310 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_set_int(&amp;c, CURVE_B);</span>
+<span class="lineNum">     311 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_add(&amp;x3, &amp;c);</span>
+<span class="lineNum">     312 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_normalize_weak(&amp;x3);</span>
+<span class="lineNum">     313 </span>                :<span class="lineNoCov">          0 :     return secp256k1_fe_equal_var(&amp;y2, &amp;x3);</span>
+<a name="314"><span class="lineNum">     314 </span>                :            : }</a>
+<span class="lineNum">     315 </span>                :            : 
+<span class="lineNum">     316 </span>                :<span class="lineCov">     541322 : static void secp256k1_gej_double_var(secp256k1_gej *r, const secp256k1_gej *a, secp256k1_fe *rzr) {</span>
+<span class="lineNum">     317 </span>                :            :     /* Operations: 3 mul, 4 sqr, 0 normalize, 12 mul_int/add/negate.
+<span class="lineNum">     318 </span>                :            :      *
+<span class="lineNum">     319 </span>                :            :      * Note that there is an implementation described at
+<span class="lineNum">     320 </span>                :            :      *     https://hyperelliptic.org/EFD/g1p/auto-shortw-jacobian-0.html#doubling-dbl-2009-l
+<span class="lineNum">     321 </span>                :            :      * which trades a multiply for a square, but in practice this is actually slower,
+<span class="lineNum">     322 </span>                :            :      * mainly because it requires more normalizations.
+<span class="lineNum">     323 </span>                :            :      */
+<span class="lineNum">     324 </span>                :            :     secp256k1_fe t1,t2,t3,t4;
+<span class="lineNum">     325 </span>                :            :     /** For secp256k1, 2Q is infinity if and only if Q is infinity. This is because if 2Q = infinity,
+<span class="lineNum">     326 </span>                :            :      *  Q must equal -Q, or that Q.y == -(Q.y), or Q.y is 0. For a point on y^2 = x^3 + 7 to have
+<span class="lineNum">     327 </span>                :            :      *  y=0, x^3 must be -7 mod p. However, -7 has no cube root mod p.
+<span class="lineNum">     328 </span>                :            :      *
+<span class="lineNum">     329 </span>                :            :      *  Having said this, if this function receives a point on a sextic twist, e.g. by
+<span class="lineNum">     330 </span>                :            :      *  a fault attack, it is possible for y to be 0. This happens for y^2 = x^3 + 6,
+<span class="lineNum">     331 </span>                :            :      *  since -6 does have a cube root mod p. For this point, this function will not set
+<span class="lineNum">     332 </span>                :            :      *  the infinity flag even though the point doubles to infinity, and the result
+<span class="lineNum">     333 </span>                :            :      *  point will be gibberish (z = 0 but infinity = 0).
+<span class="lineNum">     334 </span>                :            :      */
+<span class="lineNum">     335 </span>                :<span class="lineCov">     541322 :     r-&gt;infinity = a-&gt;infinity;</span>
+<span class="lineNum">     336 </span>        [<span class="branchCov" title="Branch 0 was taken 13099 times"> + </span><span class="branchCov" title="Branch 1 was taken 528223 times"> + </span>]:<span class="lineCov">     541322 :     if (r-&gt;infinity) {</span>
+<span class="lineNum">     337 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 13099 times"> + </span>]:<span class="lineCov">      13099 :         if (rzr != NULL) {</span>
+<span class="lineNum">     338 </span>                :<span class="lineNoCov">          0 :             secp256k1_fe_set_int(rzr, 1);</span>
+<span class="lineNum">     339 </span>                :            :         }
+<span class="lineNum">     340 </span>                :<span class="lineCov">      13099 :         return;</span>
+<span class="lineNum">     341 </span>                :            :     }
+<span class="lineNum">     342 </span>                :            : 
+<span class="lineNum">     343 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 528223 times"> + </span>]:<span class="lineCov">     528223 :     if (rzr != NULL) {</span>
+<span class="lineNum">     344 </span>                :<span class="lineNoCov">          0 :         *rzr = a-&gt;y;</span>
+<span class="lineNum">     345 </span>                :<span class="lineNoCov">          0 :         secp256k1_fe_normalize_weak(rzr);</span>
+<span class="lineNum">     346 </span>                :<span class="lineNoCov">          0 :         secp256k1_fe_mul_int(rzr, 2);</span>
+<span class="lineNum">     347 </span>                :            :     }
+<span class="lineNum">     348 </span>                :            : 
+<span class="lineNum">     349 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul(&amp;r-&gt;z, &amp;a-&gt;z, &amp;a-&gt;y);</span>
+<span class="lineNum">     350 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul_int(&amp;r-&gt;z, 2);       /* Z' = 2*Y*Z (2) */</span>
+<span class="lineNum">     351 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_sqr(&amp;t1, &amp;a-&gt;x);</span>
+<span class="lineNum">     352 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul_int(&amp;t1, 3);         /* T1 = 3*X^2 (3) */</span>
+<span class="lineNum">     353 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_sqr(&amp;t2, &amp;t1);           /* T2 = 9*X^4 (1) */</span>
+<span class="lineNum">     354 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_sqr(&amp;t3, &amp;a-&gt;y);</span>
+<span class="lineNum">     355 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul_int(&amp;t3, 2);         /* T3 = 2*Y^2 (2) */</span>
+<span class="lineNum">     356 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_sqr(&amp;t4, &amp;t3);</span>
+<span class="lineNum">     357 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul_int(&amp;t4, 2);         /* T4 = 8*Y^4 (2) */</span>
+<span class="lineNum">     358 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul(&amp;t3, &amp;t3, &amp;a-&gt;x);    /* T3 = 2*X*Y^2 (1) */</span>
+<span class="lineNum">     359 </span>                :<span class="lineCov">     528223 :     r-&gt;x = t3;</span>
+<span class="lineNum">     360 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul_int(&amp;r-&gt;x, 4);       /* X' = 8*X*Y^2 (4) */</span>
+<span class="lineNum">     361 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_negate(&amp;r-&gt;x, &amp;r-&gt;x, 4); /* X' = -8*X*Y^2 (5) */</span>
+<span class="lineNum">     362 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_add(&amp;r-&gt;x, &amp;t2);         /* X' = 9*X^4 - 8*X*Y^2 (6) */</span>
+<span class="lineNum">     363 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_negate(&amp;t2, &amp;t2, 1);     /* T2 = -9*X^4 (2) */</span>
+<span class="lineNum">     364 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul_int(&amp;t3, 6);         /* T3 = 12*X*Y^2 (6) */</span>
+<span class="lineNum">     365 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_add(&amp;t3, &amp;t2);           /* T3 = 12*X*Y^2 - 9*X^4 (8) */</span>
+<span class="lineNum">     366 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_mul(&amp;r-&gt;y, &amp;t1, &amp;t3);    /* Y' = 36*X^3*Y^2 - 27*X^6 (1) */</span>
+<span class="lineNum">     367 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_negate(&amp;t2, &amp;t4, 2);     /* T2 = -8*Y^4 (3) */</span>
+<span class="lineNum">     368 </span>                :<span class="lineCov">     528223 :     secp256k1_fe_add(&amp;r-&gt;y, &amp;t2);         /* Y' = 36*X^3*Y^2 - 27*X^6 - 8*Y^4 (4) */</span>
+<a name="369"><span class="lineNum">     369 </span>                :            : }</a>
+<span class="lineNum">     370 </span>                :            : 
+<span class="lineNum">     371 </span>                :<span class="lineCov">     482988 : static SECP256K1_INLINE void secp256k1_gej_double_nonzero(secp256k1_gej *r, const secp256k1_gej *a, secp256k1_fe *rzr) {</span>
+<span class="lineNum">     372 </span>                :<span class="lineCov">     482988 :     VERIFY_CHECK(!secp256k1_gej_is_infinity(a));</span>
+<span class="lineNum">     373 </span>                :<span class="lineCov">     482988 :     secp256k1_gej_double_var(r, a, rzr);</span>
+<a name="374"><span class="lineNum">     374 </span>                :<span class="lineCov">     482988 : }</span></a>
+<span class="lineNum">     375 </span>                :            : 
+<span class="lineNum">     376 </span>                :<span class="lineCov">       1130 : static void secp256k1_gej_add_var(secp256k1_gej *r, const secp256k1_gej *a, const secp256k1_gej *b, secp256k1_fe *rzr) {</span>
+<span class="lineNum">     377 </span>                :            :     /* Operations: 12 mul, 4 sqr, 2 normalize, 12 mul_int/add/negate */
+<span class="lineNum">     378 </span>                :            :     secp256k1_fe z22, z12, u1, u2, s1, s2, h, i, i2, h2, h3, t;
+<span class="lineNum">     379 </span>                :            : 
+<span class="lineNum">     380 </span>        [<span class="branchCov" title="Branch 0 was taken 13 times"> + </span><span class="branchCov" title="Branch 1 was taken 1117 times"> + </span>]:<span class="lineCov">       1130 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">     381 </span>                :            :         VERIFY_CHECK(rzr == NULL);
+<span class="lineNum">     382 </span>                :<span class="lineCov">         13 :         *r = *b;</span>
+<span class="lineNum">     383 </span>                :<span class="lineCov">         49 :         return;</span>
+<span class="lineNum">     384 </span>                :            :     }
+<span class="lineNum">     385 </span>                :            : 
+<span class="lineNum">     386 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 1105 times"> + </span>]:<span class="lineCov">       1117 :     if (b-&gt;infinity) {</span>
+<span class="lineNum">     387 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">         12 :         if (rzr != NULL) {</span>
+<span class="lineNum">     388 </span>                :<span class="lineNoCov">          0 :             secp256k1_fe_set_int(rzr, 1);</span>
+<span class="lineNum">     389 </span>                :            :         }
+<span class="lineNum">     390 </span>                :<span class="lineCov">         12 :         *r = *a;</span>
+<span class="lineNum">     391 </span>                :<span class="lineCov">         12 :         return;</span>
+<span class="lineNum">     392 </span>                :            :     }
+<span class="lineNum">     393 </span>                :            : 
+<span class="lineNum">     394 </span>                :<span class="lineCov">       1105 :     r-&gt;infinity = 0;</span>
+<span class="lineNum">     395 </span>                :<span class="lineCov">       1105 :     secp256k1_fe_sqr(&amp;z22, &amp;b-&gt;z);</span>
+<span class="lineNum">     396 </span>                :<span class="lineCov">       1105 :     secp256k1_fe_sqr(&amp;z12, &amp;a-&gt;z);</span>
+<span class="lineNum">     397 </span>                :<span class="lineCov">       1105 :     secp256k1_fe_mul(&amp;u1, &amp;a-&gt;x, &amp;z22);</span>
+<span class="lineNum">     398 </span>                :<span class="lineCov">       1105 :     secp256k1_fe_mul(&amp;u2, &amp;b-&gt;x, &amp;z12);</span>
+<span class="lineNum">     399 </span>                :<span class="lineCov">       1105 :     secp256k1_fe_mul(&amp;s1, &amp;a-&gt;y, &amp;z22); secp256k1_fe_mul(&amp;s1, &amp;s1, &amp;b-&gt;z);</span>
+<span class="lineNum">     400 </span>                :<span class="lineCov">       1105 :     secp256k1_fe_mul(&amp;s2, &amp;b-&gt;y, &amp;z12); secp256k1_fe_mul(&amp;s2, &amp;s2, &amp;a-&gt;z);</span>
+<span class="lineNum">     401 </span>                :<span class="lineCov">       1105 :     secp256k1_fe_negate(&amp;h, &amp;u1, 1); secp256k1_fe_add(&amp;h, &amp;u2);</span>
+<span class="lineNum">     402 </span>                :<span class="lineCov">       1105 :     secp256k1_fe_negate(&amp;i, &amp;s1, 1); secp256k1_fe_add(&amp;i, &amp;s2);</span>
+<span class="lineNum">     403 </span>        [<span class="branchCov" title="Branch 1 was taken 24 times"> + </span><span class="branchCov" title="Branch 2 was taken 1081 times"> + </span>]:<span class="lineCov">       1105 :     if (secp256k1_fe_normalizes_to_zero_var(&amp;h)) {</span>
+<span class="lineNum">     404 </span>        [<span class="branchCov" title="Branch 1 was taken 12 times"> + </span><span class="branchCov" title="Branch 2 was taken 12 times"> + </span>]:<span class="lineCov">         24 :         if (secp256k1_fe_normalizes_to_zero_var(&amp;i)) {</span>
+<span class="lineNum">     405 </span>                :<span class="lineCov">         12 :             secp256k1_gej_double_var(r, a, rzr);</span>
+<span class="lineNum">     406 </span>                :            :         } else {
+<span class="lineNum">     407 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">         12 :             if (rzr != NULL) {</span>
+<span class="lineNum">     408 </span>                :<span class="lineNoCov">          0 :                 secp256k1_fe_set_int(rzr, 0);</span>
+<span class="lineNum">     409 </span>                :            :             }
+<span class="lineNum">     410 </span>                :<span class="lineCov">         12 :             r-&gt;infinity = 1;</span>
+<span class="lineNum">     411 </span>                :            :         }
+<span class="lineNum">     412 </span>                :<span class="lineCov">         24 :         return;</span>
+<span class="lineNum">     413 </span>                :            :     }
+<span class="lineNum">     414 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_sqr(&amp;i2, &amp;i);</span>
+<span class="lineNum">     415 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_sqr(&amp;h2, &amp;h);</span>
+<span class="lineNum">     416 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_mul(&amp;h3, &amp;h, &amp;h2);</span>
+<span class="lineNum">     417 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_mul(&amp;h, &amp;h, &amp;b-&gt;z);</span>
+<span class="lineNum">     418 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 1081 times"> + </span>]:<span class="lineCov">       1081 :     if (rzr != NULL) {</span>
+<span class="lineNum">     419 </span>                :<span class="lineNoCov">          0 :         *rzr = h;</span>
+<span class="lineNum">     420 </span>                :            :     }
+<span class="lineNum">     421 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_mul(&amp;r-&gt;z, &amp;a-&gt;z, &amp;h);</span>
+<span class="lineNum">     422 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_mul(&amp;t, &amp;u1, &amp;h2);</span>
+<span class="lineNum">     423 </span>                :<span class="lineCov">       1081 :     r-&gt;x = t; secp256k1_fe_mul_int(&amp;r-&gt;x, 2); secp256k1_fe_add(&amp;r-&gt;x, &amp;h3); secp256k1_fe_negate(&amp;r-&gt;x, &amp;r-&gt;x, 3); secp256k1_fe_add(&amp;r-&gt;x, &amp;i2);</span>
+<span class="lineNum">     424 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_negate(&amp;r-&gt;y, &amp;r-&gt;x, 5); secp256k1_fe_add(&amp;r-&gt;y, &amp;t); secp256k1_fe_mul(&amp;r-&gt;y, &amp;r-&gt;y, &amp;i);</span>
+<span class="lineNum">     425 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_mul(&amp;h3, &amp;h3, &amp;s1); secp256k1_fe_negate(&amp;h3, &amp;h3, 1);</span>
+<span class="lineNum">     426 </span>                :<span class="lineCov">       1081 :     secp256k1_fe_add(&amp;r-&gt;y, &amp;h3);</span>
+<a name="427"><span class="lineNum">     427 </span>                :            : }</a>
+<span class="lineNum">     428 </span>                :            : 
+<span class="lineNum">     429 </span>                :<span class="lineCov">      57257 : static void secp256k1_gej_add_ge_var(secp256k1_gej *r, const secp256k1_gej *a, const secp256k1_ge *b, secp256k1_fe *rzr) {</span>
+<span class="lineNum">     430 </span>                :            :     /* 8 mul, 3 sqr, 4 normalize, 12 mul_int/add/negate */
+<span class="lineNum">     431 </span>                :            :     secp256k1_fe z12, u1, u2, s1, s2, h, i, i2, h2, h3, t;
+<span class="lineNum">     432 </span>        [<span class="branchCov" title="Branch 0 was taken 7745 times"> + </span><span class="branchCov" title="Branch 1 was taken 49512 times"> + </span>]:<span class="lineCov">      57257 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">     433 </span>                :            :         VERIFY_CHECK(rzr == NULL);
+<span class="lineNum">     434 </span>                :<span class="lineCov">       7745 :         secp256k1_gej_set_ge(r, b);</span>
+<span class="lineNum">     435 </span>                :<span class="lineCov">       8775 :         return;</span>
+<span class="lineNum">     436 </span>                :            :     }
+<span class="lineNum">     437 </span>        [<span class="branchCov" title="Branch 0 was taken 12 times"> + </span><span class="branchCov" title="Branch 1 was taken 49500 times"> + </span>]:<span class="lineCov">      49512 :     if (b-&gt;infinity) {</span>
+<span class="lineNum">     438 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 12 times"> + </span>]:<span class="lineCov">         12 :         if (rzr != NULL) {</span>
+<span class="lineNum">     439 </span>                :<span class="lineNoCov">          0 :             secp256k1_fe_set_int(rzr, 1);</span>
+<span class="lineNum">     440 </span>                :            :         }
+<span class="lineNum">     441 </span>                :<span class="lineCov">         12 :         *r = *a;</span>
+<span class="lineNum">     442 </span>                :<span class="lineCov">         12 :         return;</span>
+<span class="lineNum">     443 </span>                :            :     }
+<span class="lineNum">     444 </span>                :<span class="lineCov">      49500 :     r-&gt;infinity = 0;</span>
+<span class="lineNum">     445 </span>                :            : 
+<span class="lineNum">     446 </span>                :<span class="lineCov">      49500 :     secp256k1_fe_sqr(&amp;z12, &amp;a-&gt;z);</span>
+<span class="lineNum">     447 </span>                :<span class="lineCov">      49500 :     u1 = a-&gt;x; secp256k1_fe_normalize_weak(&amp;u1);</span>
+<span class="lineNum">     448 </span>                :<span class="lineCov">      49500 :     secp256k1_fe_mul(&amp;u2, &amp;b-&gt;x, &amp;z12);</span>
+<span class="lineNum">     449 </span>                :<span class="lineCov">      49500 :     s1 = a-&gt;y; secp256k1_fe_normalize_weak(&amp;s1);</span>
+<span class="lineNum">     450 </span>                :<span class="lineCov">      49500 :     secp256k1_fe_mul(&amp;s2, &amp;b-&gt;y, &amp;z12); secp256k1_fe_mul(&amp;s2, &amp;s2, &amp;a-&gt;z);</span>
+<span class="lineNum">     451 </span>                :<span class="lineCov">      49500 :     secp256k1_fe_negate(&amp;h, &amp;u1, 1); secp256k1_fe_add(&amp;h, &amp;u2);</span>
+<span class="lineNum">     452 </span>                :<span class="lineCov">      49500 :     secp256k1_fe_negate(&amp;i, &amp;s1, 1); secp256k1_fe_add(&amp;i, &amp;s2);</span>
+<span class="lineNum">     453 </span>        [<span class="branchCov" title="Branch 1 was taken 1018 times"> + </span><span class="branchCov" title="Branch 2 was taken 48482 times"> + </span>]:<span class="lineCov">      49500 :     if (secp256k1_fe_normalizes_to_zero_var(&amp;h)) {</span>
+<span class="lineNum">     454 </span>        [<span class="branchCov" title="Branch 1 was taken 509 times"> + </span><span class="branchCov" title="Branch 2 was taken 509 times"> + </span>]:<span class="lineCov">       1018 :         if (secp256k1_fe_normalizes_to_zero_var(&amp;i)) {</span>
+<span class="lineNum">     455 </span>                :<span class="lineCov">        509 :             secp256k1_gej_double_var(r, a, rzr);</span>
+<span class="lineNum">     456 </span>                :            :         } else {
+<span class="lineNum">     457 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 509 times"> + </span>]:<span class="lineCov">        509 :             if (rzr != NULL) {</span>
+<span class="lineNum">     458 </span>                :<span class="lineNoCov">          0 :                 secp256k1_fe_set_int(rzr, 0);</span>
+<span class="lineNum">     459 </span>                :            :             }
+<span class="lineNum">     460 </span>                :<span class="lineCov">        509 :             r-&gt;infinity = 1;</span>
+<span class="lineNum">     461 </span>                :            :         }
+<span class="lineNum">     462 </span>                :<span class="lineCov">       1018 :         return;</span>
+<span class="lineNum">     463 </span>                :            :     }
+<span class="lineNum">     464 </span>                :<span class="lineCov">      48482 :     secp256k1_fe_sqr(&amp;i2, &amp;i);</span>
+<span class="lineNum">     465 </span>                :<span class="lineCov">      48482 :     secp256k1_fe_sqr(&amp;h2, &amp;h);</span>
+<span class="lineNum">     466 </span>                :<span class="lineCov">      48482 :     secp256k1_fe_mul(&amp;h3, &amp;h, &amp;h2);</span>
+<span class="lineNum">     467 </span>        [<span class="branchCov" title="Branch 0 was taken 42807 times"> + </span><span class="branchCov" title="Branch 1 was taken 5675 times"> + </span>]:<span class="lineCov">      48482 :     if (rzr != NULL) {</span>
+<span class="lineNum">     468 </span>                :<span class="lineCov">      42807 :         *rzr = h;</span>
+<span class="lineNum">     469 </span>                :            :     }
+<span class="lineNum">     470 </span>                :<span class="lineCov">      48482 :     secp256k1_fe_mul(&amp;r-&gt;z, &amp;a-&gt;z, &amp;h);</span>
+<span class="lineNum">     471 </span>                :<span class="lineCov">      48482 :     secp256k1_fe_mul(&amp;t, &amp;u1, &amp;h2);</span>
+<span class="lineNum">     472 </span>                :<span class="lineCov">      48482 :     r-&gt;x = t; secp256k1_fe_mul_int(&amp;r-&gt;x, 2); secp256k1_fe_add(&amp;r-&gt;x, &amp;h3); secp256k1_fe_negate(&amp;r-&gt;x, &amp;r-&gt;x, 3); secp256k1_fe_add(&amp;r-&gt;x, &amp;i2);</span>
+<span class="lineNum">     473 </span>                :<span class="lineCov">      48482 :     secp256k1_fe_negate(&amp;r-&gt;y, &amp;r-&gt;x, 5); secp256k1_fe_add(&amp;r-&gt;y, &amp;t); secp256k1_fe_mul(&amp;r-&gt;y, &amp;r-&gt;y, &amp;i);</span>
+<span class="lineNum">     474 </span>                :<span class="lineCov">      48482 :     secp256k1_fe_mul(&amp;h3, &amp;h3, &amp;s1); secp256k1_fe_negate(&amp;h3, &amp;h3, 1);</span>
+<span class="lineNum">     475 </span>                :<span class="lineCov">      48482 :     secp256k1_fe_add(&amp;r-&gt;y, &amp;h3);</span>
+<a name="476"><span class="lineNum">     476 </span>                :            : }</a>
+<span class="lineNum">     477 </span>                :            : 
+<span class="lineNum">     478 </span>                :<span class="lineCov">      14449 : static void secp256k1_gej_add_zinv_var(secp256k1_gej *r, const secp256k1_gej *a, const secp256k1_ge *b, const secp256k1_fe *bzinv) {</span>
+<span class="lineNum">     479 </span>                :            :     /* 9 mul, 3 sqr, 4 normalize, 12 mul_int/add/negate */
+<span class="lineNum">     480 </span>                :            :     secp256k1_fe az, z12, u1, u2, s1, s2, h, i, i2, h2, h3, t;
+<span class="lineNum">     481 </span>                :            : 
+<span class="lineNum">     482 </span>        [<span class="branchCov" title="Branch 0 was taken 13 times"> + </span><span class="branchCov" title="Branch 1 was taken 14436 times"> + </span>]:<span class="lineCov">      14449 :     if (b-&gt;infinity) {</span>
+<span class="lineNum">     483 </span>                :<span class="lineCov">         13 :         *r = *a;</span>
+<span class="lineNum">     484 </span>                :<span class="lineCov">       6563 :         return;</span>
+<span class="lineNum">     485 </span>                :            :     }
+<span class="lineNum">     486 </span>        [<span class="branchCov" title="Branch 0 was taken 4944 times"> + </span><span class="branchCov" title="Branch 1 was taken 9492 times"> + </span>]:<span class="lineCov">      14436 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">     487 </span>                :            :         secp256k1_fe bzinv2, bzinv3;
+<span class="lineNum">     488 </span>                :<span class="lineCov">       4944 :         r-&gt;infinity = b-&gt;infinity;</span>
+<span class="lineNum">     489 </span>                :<span class="lineCov">       4944 :         secp256k1_fe_sqr(&amp;bzinv2, bzinv);</span>
+<span class="lineNum">     490 </span>                :<span class="lineCov">       4944 :         secp256k1_fe_mul(&amp;bzinv3, &amp;bzinv2, bzinv);</span>
+<span class="lineNum">     491 </span>                :<span class="lineCov">       4944 :         secp256k1_fe_mul(&amp;r-&gt;x, &amp;b-&gt;x, &amp;bzinv2);</span>
+<span class="lineNum">     492 </span>                :<span class="lineCov">       4944 :         secp256k1_fe_mul(&amp;r-&gt;y, &amp;b-&gt;y, &amp;bzinv3);</span>
+<span class="lineNum">     493 </span>                :<span class="lineCov">       4944 :         secp256k1_fe_set_int(&amp;r-&gt;z, 1);</span>
+<span class="lineNum">     494 </span>                :<span class="lineCov">       4944 :         return;</span>
+<span class="lineNum">     495 </span>                :            :     }
+<span class="lineNum">     496 </span>                :<span class="lineCov">       9492 :     r-&gt;infinity = 0;</span>
+<span class="lineNum">     497 </span>                :            : 
+<span class="lineNum">     498 </span>                :            :     /** We need to calculate (rx,ry,rz) = (ax,ay,az) + (bx,by,1/bzinv). Due to
+<span class="lineNum">     499 </span>                :            :      *  secp256k1's isomorphism we can multiply the Z coordinates on both sides
+<span class="lineNum">     500 </span>                :            :      *  by bzinv, and get: (rx,ry,rz*bzinv) = (ax,ay,az*bzinv) + (bx,by,1).
+<span class="lineNum">     501 </span>                :            :      *  This means that (rx,ry,rz) can be calculated as
+<span class="lineNum">     502 </span>                :            :      *  (ax,ay,az*bzinv) + (bx,by,1), when not applying the bzinv factor to rz.
+<span class="lineNum">     503 </span>                :            :      *  The variable az below holds the modified Z coordinate for a, which is used
+<span class="lineNum">     504 </span>                :            :      *  for the computation of rx and ry, but not for rz.
+<span class="lineNum">     505 </span>                :            :      */
+<span class="lineNum">     506 </span>                :<span class="lineCov">       9492 :     secp256k1_fe_mul(&amp;az, &amp;a-&gt;z, bzinv);</span>
+<span class="lineNum">     507 </span>                :            : 
+<span class="lineNum">     508 </span>                :<span class="lineCov">       9492 :     secp256k1_fe_sqr(&amp;z12, &amp;az);</span>
+<span class="lineNum">     509 </span>                :<span class="lineCov">       9492 :     u1 = a-&gt;x; secp256k1_fe_normalize_weak(&amp;u1);</span>
+<span class="lineNum">     510 </span>                :<span class="lineCov">       9492 :     secp256k1_fe_mul(&amp;u2, &amp;b-&gt;x, &amp;z12);</span>
+<span class="lineNum">     511 </span>                :<span class="lineCov">       9492 :     s1 = a-&gt;y; secp256k1_fe_normalize_weak(&amp;s1);</span>
+<span class="lineNum">     512 </span>                :<span class="lineCov">       9492 :     secp256k1_fe_mul(&amp;s2, &amp;b-&gt;y, &amp;z12); secp256k1_fe_mul(&amp;s2, &amp;s2, &amp;az);</span>
+<span class="lineNum">     513 </span>                :<span class="lineCov">       9492 :     secp256k1_fe_negate(&amp;h, &amp;u1, 1); secp256k1_fe_add(&amp;h, &amp;u2);</span>
+<span class="lineNum">     514 </span>                :<span class="lineCov">       9492 :     secp256k1_fe_negate(&amp;i, &amp;s1, 1); secp256k1_fe_add(&amp;i, &amp;s2);</span>
+<span class="lineNum">     515 </span>        [<span class="branchCov" title="Branch 1 was taken 1606 times"> + </span><span class="branchCov" title="Branch 2 was taken 7886 times"> + </span>]:<span class="lineCov">       9492 :     if (secp256k1_fe_normalizes_to_zero_var(&amp;h)) {</span>
+<span class="lineNum">     516 </span>        [<span class="branchCov" title="Branch 1 was taken 803 times"> + </span><span class="branchCov" title="Branch 2 was taken 803 times"> + </span>]:<span class="lineCov">       1606 :         if (secp256k1_fe_normalizes_to_zero_var(&amp;i)) {</span>
+<span class="lineNum">     517 </span>                :<span class="lineCov">        803 :             secp256k1_gej_double_var(r, a, NULL);</span>
+<span class="lineNum">     518 </span>                :            :         } else {
+<span class="lineNum">     519 </span>                :<span class="lineCov">        803 :             r-&gt;infinity = 1;</span>
+<span class="lineNum">     520 </span>                :            :         }
+<span class="lineNum">     521 </span>                :<span class="lineCov">       1606 :         return;</span>
+<span class="lineNum">     522 </span>                :            :     }
+<span class="lineNum">     523 </span>                :<span class="lineCov">       7886 :     secp256k1_fe_sqr(&amp;i2, &amp;i);</span>
+<span class="lineNum">     524 </span>                :<span class="lineCov">       7886 :     secp256k1_fe_sqr(&amp;h2, &amp;h);</span>
+<span class="lineNum">     525 </span>                :<span class="lineCov">       7886 :     secp256k1_fe_mul(&amp;h3, &amp;h, &amp;h2);</span>
+<span class="lineNum">     526 </span>                :<span class="lineCov">       7886 :     r-&gt;z = a-&gt;z; secp256k1_fe_mul(&amp;r-&gt;z, &amp;r-&gt;z, &amp;h);</span>
+<span class="lineNum">     527 </span>                :<span class="lineCov">       7886 :     secp256k1_fe_mul(&amp;t, &amp;u1, &amp;h2);</span>
+<span class="lineNum">     528 </span>                :<span class="lineCov">       7886 :     r-&gt;x = t; secp256k1_fe_mul_int(&amp;r-&gt;x, 2); secp256k1_fe_add(&amp;r-&gt;x, &amp;h3); secp256k1_fe_negate(&amp;r-&gt;x, &amp;r-&gt;x, 3); secp256k1_fe_add(&amp;r-&gt;x, &amp;i2);</span>
+<span class="lineNum">     529 </span>                :<span class="lineCov">       7886 :     secp256k1_fe_negate(&amp;r-&gt;y, &amp;r-&gt;x, 5); secp256k1_fe_add(&amp;r-&gt;y, &amp;t); secp256k1_fe_mul(&amp;r-&gt;y, &amp;r-&gt;y, &amp;i);</span>
+<span class="lineNum">     530 </span>                :<span class="lineCov">       7886 :     secp256k1_fe_mul(&amp;h3, &amp;h3, &amp;s1); secp256k1_fe_negate(&amp;h3, &amp;h3, 1);</span>
+<span class="lineNum">     531 </span>                :<span class="lineCov">       7886 :     secp256k1_fe_add(&amp;r-&gt;y, &amp;h3);</span>
+<span class="lineNum">     532 </span>                :            : }
+<a name="533"><span class="lineNum">     533 </span>                :            : </a>
+<span class="lineNum">     534 </span>                :            : 
+<span class="lineNum">     535 </span>                :<span class="lineCov">     276760 : static void secp256k1_gej_add_ge(secp256k1_gej *r, const secp256k1_gej *a, const secp256k1_ge *b) {</span>
+<span class="lineNum">     536 </span>                :            :     /* Operations: 7 mul, 5 sqr, 4 normalize, 21 mul_int/add/negate/cmov */
+<span class="lineNum">     537 </span>                :            :     static const secp256k1_fe fe_1 = SECP256K1_FE_CONST(0, 0, 0, 0, 0, 0, 0, 1);
+<span class="lineNum">     538 </span>                :            :     secp256k1_fe zz, u1, u2, s1, s2, t, tt, m, n, q, rr;
+<span class="lineNum">     539 </span>                :            :     secp256k1_fe m_alt, rr_alt;
+<span class="lineNum">     540 </span>                :            :     int infinity, degenerate;
+<span class="lineNum">     541 </span>                :<span class="lineCov">     276760 :     VERIFY_CHECK(!b-&gt;infinity);</span>
+<span class="lineNum">     542 </span>[<span class="branchCov" title="Branch 0 was taken 13 times"> + </span><span class="branchCov" title="Branch 1 was taken 276747 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 13 times"> + </span><span class="branchNoCov" title="Branch 3 was not taken"> - </span>]:<span class="lineCov">     276760 :     VERIFY_CHECK(a-&gt;infinity == 0 || a-&gt;infinity == 1);</span>
+<span class="lineNum">     543 </span>                :            : 
+<span class="lineNum">     544 </span>                :            :     /** In:
+<span class="lineNum">     545 </span>                :            :      *    Eric Brier and Marc Joye, Weierstrass Elliptic Curves and Side-Channel Attacks.
+<span class="lineNum">     546 </span>                :            :      *    In D. Naccache and P. Paillier, Eds., Public Key Cryptography, vol. 2274 of Lecture Notes in Computer Science, pages 335-345. Springer-Verlag, 2002.
+<span class="lineNum">     547 </span>                :            :      *  we find as solution for a unified addition/doubling formula:
+<span class="lineNum">     548 </span>                :            :      *    lambda = ((x1 + x2)^2 - x1 * x2 + a) / (y1 + y2), with a = 0 for secp256k1's curve equation.
+<span class="lineNum">     549 </span>                :            :      *    x3 = lambda^2 - (x1 + x2)
+<span class="lineNum">     550 </span>                :            :      *    2*y3 = lambda * (x1 + x2 - 2 * x3) - (y1 + y2).
+<span class="lineNum">     551 </span>                :            :      *
+<span class="lineNum">     552 </span>                :            :      *  Substituting x_i = Xi / Zi^2 and yi = Yi / Zi^3, for i=1,2,3, gives:
+<span class="lineNum">     553 </span>                :            :      *    U1 = X1*Z2^2, U2 = X2*Z1^2
+<span class="lineNum">     554 </span>                :            :      *    S1 = Y1*Z2^3, S2 = Y2*Z1^3
+<span class="lineNum">     555 </span>                :            :      *    Z = Z1*Z2
+<span class="lineNum">     556 </span>                :            :      *    T = U1+U2
+<span class="lineNum">     557 </span>                :            :      *    M = S1+S2
+<span class="lineNum">     558 </span>                :            :      *    Q = T*M^2
+<span class="lineNum">     559 </span>                :            :      *    R = T^2-U1*U2
+<span class="lineNum">     560 </span>                :            :      *    X3 = 4*(R^2-Q)
+<span class="lineNum">     561 </span>                :            :      *    Y3 = 4*(R*(3*Q-2*R^2)-M^4)
+<span class="lineNum">     562 </span>                :            :      *    Z3 = 2*M*Z
+<span class="lineNum">     563 </span>                :            :      *  (Note that the paper uses xi = Xi / Zi and yi = Yi / Zi instead.)
+<span class="lineNum">     564 </span>                :            :      *
+<span class="lineNum">     565 </span>                :            :      *  This formula has the benefit of being the same for both addition
+<span class="lineNum">     566 </span>                :            :      *  of distinct points and doubling. However, it breaks down in the
+<span class="lineNum">     567 </span>                :            :      *  case that either point is infinity, or that y1 = -y2. We handle
+<span class="lineNum">     568 </span>                :            :      *  these cases in the following ways:
+<span class="lineNum">     569 </span>                :            :      *
+<span class="lineNum">     570 </span>                :            :      *    - If b is infinity we simply bail by means of a VERIFY_CHECK.
+<span class="lineNum">     571 </span>                :            :      *
+<span class="lineNum">     572 </span>                :            :      *    - If a is infinity, we detect this, and at the end of the
+<span class="lineNum">     573 </span>                :            :      *      computation replace the result (which will be meaningless,
+<span class="lineNum">     574 </span>                :            :      *      but we compute to be constant-time) with b.x : b.y : 1.
+<span class="lineNum">     575 </span>                :            :      *
+<span class="lineNum">     576 </span>                :            :      *    - If a = -b, we have y1 = -y2, which is a degenerate case.
+<span class="lineNum">     577 </span>                :            :      *      But here the answer is infinity, so we simply set the
+<span class="lineNum">     578 </span>                :            :      *      infinity flag of the result, overriding the computed values
+<span class="lineNum">     579 </span>                :            :      *      without even needing to cmov.
+<span class="lineNum">     580 </span>                :            :      *
+<span class="lineNum">     581 </span>                :            :      *    - If y1 = -y2 but x1 != x2, which does occur thanks to certain
+<span class="lineNum">     582 </span>                :            :      *      properties of our curve (specifically, 1 has nontrivial cube
+<span class="lineNum">     583 </span>                :            :      *      roots in our field, and the curve equation has no x coefficient)
+<span class="lineNum">     584 </span>                :            :      *      then the answer is not infinity but also not given by the above
+<span class="lineNum">     585 </span>                :            :      *      equation. In this case, we cmov in place an alternate expression
+<span class="lineNum">     586 </span>                :            :      *      for lambda. Specifically (y1 - y2)/(x1 - x2). Where both these
+<span class="lineNum">     587 </span>                :            :      *      expressions for lambda are defined, they are equal, and can be
+<span class="lineNum">     588 </span>                :            :      *      obtained from each other by multiplication by (y1 + y2)/(y1 + y2)
+<span class="lineNum">     589 </span>                :            :      *      then substitution of x^3 + 7 for y^2 (using the curve equation).
+<span class="lineNum">     590 </span>                :            :      *      For all pairs of nonzero points (a, b) at least one is defined,
+<span class="lineNum">     591 </span>                :            :      *      so this covers everything.
+<span class="lineNum">     592 </span>                :            :      */
+<span class="lineNum">     593 </span>                :            : 
+<span class="lineNum">     594 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_sqr(&amp;zz, &amp;a-&gt;z);                       /* z = Z1^2 */</span>
+<span class="lineNum">     595 </span>                :<span class="lineCov">     276760 :     u1 = a-&gt;x; secp256k1_fe_normalize_weak(&amp;u1);        /* u1 = U1 = X1*Z2^2 (1) */</span>
+<span class="lineNum">     596 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul(&amp;u2, &amp;b-&gt;x, &amp;zz);                  /* u2 = U2 = X2*Z1^2 (1) */</span>
+<span class="lineNum">     597 </span>                :<span class="lineCov">     276760 :     s1 = a-&gt;y; secp256k1_fe_normalize_weak(&amp;s1);        /* s1 = S1 = Y1*Z2^3 (1) */</span>
+<span class="lineNum">     598 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul(&amp;s2, &amp;b-&gt;y, &amp;zz);                  /* s2 = Y2*Z1^2 (1) */</span>
+<span class="lineNum">     599 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul(&amp;s2, &amp;s2, &amp;a-&gt;z);                  /* s2 = S2 = Y2*Z1^3 (1) */</span>
+<span class="lineNum">     600 </span>                :<span class="lineCov">     276760 :     t = u1; secp256k1_fe_add(&amp;t, &amp;u2);                  /* t = T = U1+U2 (2) */</span>
+<span class="lineNum">     601 </span>                :<span class="lineCov">     276760 :     m = s1; secp256k1_fe_add(&amp;m, &amp;s2);                  /* m = M = S1+S2 (2) */</span>
+<span class="lineNum">     602 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_sqr(&amp;rr, &amp;t);                          /* rr = T^2 (1) */</span>
+<span class="lineNum">     603 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_negate(&amp;m_alt, &amp;u2, 1);                /* Malt = -X2*Z1^2 */</span>
+<span class="lineNum">     604 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul(&amp;tt, &amp;u1, &amp;m_alt);                 /* tt = -U1*U2 (2) */</span>
+<span class="lineNum">     605 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_add(&amp;rr, &amp;tt);                         /* rr = R = T^2-U1*U2 (3) */</span>
+<span class="lineNum">     606 </span>                :            :     /** If lambda = R/M = 0/0 we have a problem (except in the &quot;trivial&quot;
+<span class="lineNum">     607 </span>                :            :      *  case that Z = z1z2 = 0, and this is special-cased later on). */
+<span class="lineNum">     608 </span>                :<span class="lineCov">     276760 :     degenerate = secp256k1_fe_normalizes_to_zero(&amp;m) &amp;</span>
+<span class="lineNum">     609 </span>                :<span class="lineCov">     276760 :                  secp256k1_fe_normalizes_to_zero(&amp;rr);</span>
+<span class="lineNum">     610 </span>                :            :     /* This only occurs when y1 == -y2 and x1^3 == x2^3, but x1 != x2.
+<span class="lineNum">     611 </span>                :            :      * This means either x1 == beta*x2 or beta*x1 == x2, where beta is
+<span class="lineNum">     612 </span>                :            :      * a nontrivial cube root of one. In either case, an alternate
+<span class="lineNum">     613 </span>                :            :      * non-indeterminate expression for lambda is (y1 - y2)/(x1 - x2),
+<span class="lineNum">     614 </span>                :            :      * so we set R/M equal to this. */
+<span class="lineNum">     615 </span>                :<span class="lineCov">     276760 :     rr_alt = s1;</span>
+<span class="lineNum">     616 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul_int(&amp;rr_alt, 2);       /* rr = Y1*Z2^3 - Y2*Z1^3 (2) */</span>
+<span class="lineNum">     617 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_add(&amp;m_alt, &amp;u1);          /* Malt = X1*Z2^2 - X2*Z1^2 */</span>
+<span class="lineNum">     618 </span>                :            : 
+<span class="lineNum">     619 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_cmov(&amp;rr_alt, &amp;rr, !degenerate);</span>
+<span class="lineNum">     620 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_cmov(&amp;m_alt, &amp;m, !degenerate);</span>
+<span class="lineNum">     621 </span>                :            :     /* Now Ralt / Malt = lambda and is guaranteed not to be 0/0.
+<span class="lineNum">     622 </span>                :            :      * From here on out Ralt and Malt represent the numerator
+<span class="lineNum">     623 </span>                :            :      * and denominator of lambda; R and M represent the explicit
+<span class="lineNum">     624 </span>                :            :      * expressions x1^2 + x2^2 + x1x2 and y1 + y2. */
+<span class="lineNum">     625 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_sqr(&amp;n, &amp;m_alt);                       /* n = Malt^2 (1) */</span>
+<span class="lineNum">     626 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul(&amp;q, &amp;n, &amp;t);                       /* q = Q = T*Malt^2 (1) */</span>
+<span class="lineNum">     627 </span>                :            :     /* These two lines use the observation that either M == Malt or M == 0,
+<span class="lineNum">     628 </span>                :            :      * so M^3 * Malt is either Malt^4 (which is computed by squaring), or
+<span class="lineNum">     629 </span>                :            :      * zero (which is &quot;computed&quot; by cmov). So the cost is one squaring
+<span class="lineNum">     630 </span>                :            :      * versus two multiplications. */
+<span class="lineNum">     631 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_sqr(&amp;n, &amp;n);</span>
+<span class="lineNum">     632 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_cmov(&amp;n, &amp;m, degenerate);              /* n = M^3 * Malt (2) */</span>
+<span class="lineNum">     633 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_sqr(&amp;t, &amp;rr_alt);                      /* t = Ralt^2 (1) */</span>
+<span class="lineNum">     634 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul(&amp;r-&gt;z, &amp;a-&gt;z, &amp;m_alt);             /* r-&gt;z = Malt*Z (1) */</span>
+<span class="lineNum">     635 </span>                :<span class="lineCov">     276760 :     infinity = secp256k1_fe_normalizes_to_zero(&amp;r-&gt;z) * (1 - a-&gt;infinity);</span>
+<span class="lineNum">     636 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul_int(&amp;r-&gt;z, 2);                     /* r-&gt;z = Z3 = 2*Malt*Z (2) */</span>
+<span class="lineNum">     637 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_negate(&amp;q, &amp;q, 1);                     /* q = -Q (2) */</span>
+<span class="lineNum">     638 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_add(&amp;t, &amp;q);                           /* t = Ralt^2-Q (3) */</span>
+<span class="lineNum">     639 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_normalize_weak(&amp;t);</span>
+<span class="lineNum">     640 </span>                :<span class="lineCov">     276760 :     r-&gt;x = t;                                           /* r-&gt;x = Ralt^2-Q (1) */</span>
+<span class="lineNum">     641 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul_int(&amp;t, 2);                        /* t = 2*x3 (2) */</span>
+<span class="lineNum">     642 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_add(&amp;t, &amp;q);                           /* t = 2*x3 - Q: (4) */</span>
+<span class="lineNum">     643 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul(&amp;t, &amp;t, &amp;rr_alt);                  /* t = Ralt*(2*x3 - Q) (1) */</span>
+<span class="lineNum">     644 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_add(&amp;t, &amp;n);                           /* t = Ralt*(2*x3 - Q) + M^3*Malt (3) */</span>
+<span class="lineNum">     645 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_negate(&amp;r-&gt;y, &amp;t, 3);                  /* r-&gt;y = Ralt*(Q - 2x3) - M^3*Malt (4) */</span>
+<span class="lineNum">     646 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_normalize_weak(&amp;r-&gt;y);</span>
+<span class="lineNum">     647 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul_int(&amp;r-&gt;x, 4);                     /* r-&gt;x = X3 = 4*(Ralt^2-Q) */</span>
+<span class="lineNum">     648 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_mul_int(&amp;r-&gt;y, 4);                     /* r-&gt;y = Y3 = 4*Ralt*(Q - 2x3) - 4*M^3*Malt (4) */</span>
+<span class="lineNum">     649 </span>                :            : 
+<span class="lineNum">     650 </span>                :            :     /** In case a-&gt;infinity == 1, replace r with (b-&gt;x, b-&gt;y, 1). */
+<span class="lineNum">     651 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_cmov(&amp;r-&gt;x, &amp;b-&gt;x, a-&gt;infinity);</span>
+<span class="lineNum">     652 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_cmov(&amp;r-&gt;y, &amp;b-&gt;y, a-&gt;infinity);</span>
+<span class="lineNum">     653 </span>                :<span class="lineCov">     276760 :     secp256k1_fe_cmov(&amp;r-&gt;z, &amp;fe_1, a-&gt;infinity);</span>
+<span class="lineNum">     654 </span>                :<span class="lineCov">     276760 :     r-&gt;infinity = infinity;</span>
+<a name="655"><span class="lineNum">     655 </span>                :<span class="lineCov">     276760 : }</span></a>
+<span class="lineNum">     656 </span>                :            : 
+<span class="lineNum">     657 </span>                :<span class="lineCov">         13 : static void secp256k1_gej_rescale(secp256k1_gej *r, const secp256k1_fe *s) {</span>
+<span class="lineNum">     658 </span>                :            :     /* Operations: 4 mul, 1 sqr */
+<span class="lineNum">     659 </span>                :            :     secp256k1_fe zz;
+<span class="lineNum">     660 </span>                :<span class="lineCov">         13 :     VERIFY_CHECK(!secp256k1_fe_is_zero(s));</span>
+<span class="lineNum">     661 </span>                :<span class="lineCov">         13 :     secp256k1_fe_sqr(&amp;zz, s);</span>
+<span class="lineNum">     662 </span>                :<span class="lineCov">         13 :     secp256k1_fe_mul(&amp;r-&gt;x, &amp;r-&gt;x, &amp;zz);                /* r-&gt;x *= s^2 */</span>
+<span class="lineNum">     663 </span>                :<span class="lineCov">         13 :     secp256k1_fe_mul(&amp;r-&gt;y, &amp;r-&gt;y, &amp;zz);</span>
+<span class="lineNum">     664 </span>                :<span class="lineCov">         13 :     secp256k1_fe_mul(&amp;r-&gt;y, &amp;r-&gt;y, s);                  /* r-&gt;y *= s^3 */</span>
+<span class="lineNum">     665 </span>                :<span class="lineCov">         13 :     secp256k1_fe_mul(&amp;r-&gt;z, &amp;r-&gt;z, s);                  /* r-&gt;z *= s   */</span>
+<a name="666"><span class="lineNum">     666 </span>                :<span class="lineCov">         13 : }</span></a>
+<span class="lineNum">     667 </span>                :            : 
+<span class="lineNum">     668 </span>                :<span class="lineCov">      25508 : static void secp256k1_ge_to_storage(secp256k1_ge_storage *r, const secp256k1_ge *a) {</span>
+<span class="lineNum">     669 </span>                :            :     secp256k1_fe x, y;
+<span class="lineNum">     670 </span>                :<span class="lineCov">      25508 :     VERIFY_CHECK(!a-&gt;infinity);</span>
+<span class="lineNum">     671 </span>                :<span class="lineCov">      25508 :     x = a-&gt;x;</span>
+<span class="lineNum">     672 </span>                :<span class="lineCov">      25508 :     secp256k1_fe_normalize(&amp;x);</span>
+<span class="lineNum">     673 </span>                :<span class="lineCov">      25508 :     y = a-&gt;y;</span>
+<span class="lineNum">     674 </span>                :<span class="lineCov">      25508 :     secp256k1_fe_normalize(&amp;y);</span>
+<span class="lineNum">     675 </span>                :<span class="lineCov">      25508 :     secp256k1_fe_to_storage(&amp;r-&gt;x, &amp;x);</span>
+<span class="lineNum">     676 </span>                :<span class="lineCov">      25508 :     secp256k1_fe_to_storage(&amp;r-&gt;y, &amp;y);</span>
+<a name="677"><span class="lineNum">     677 </span>                :<span class="lineCov">      25508 : }</span></a>
+<span class="lineNum">     678 </span>                :            : 
+<span class="lineNum">     679 </span>                :<span class="lineCov">     140248 : static void secp256k1_ge_from_storage(secp256k1_ge *r, const secp256k1_ge_storage *a) {</span>
+<span class="lineNum">     680 </span>                :<span class="lineCov">     140248 :     secp256k1_fe_from_storage(&amp;r-&gt;x, &amp;a-&gt;x);</span>
+<span class="lineNum">     681 </span>                :<span class="lineCov">     140248 :     secp256k1_fe_from_storage(&amp;r-&gt;y, &amp;a-&gt;y);</span>
+<span class="lineNum">     682 </span>                :<span class="lineCov">     140248 :     r-&gt;infinity = 0;</span>
+<a name="683"><span class="lineNum">     683 </span>                :<span class="lineCov">     140248 : }</span></a>
+<span class="lineNum">     684 </span>                :            : 
+<span class="lineNum">     685 </span>                :<span class="lineCov">    1821520 : static SECP256K1_INLINE void secp256k1_ge_storage_cmov(secp256k1_ge_storage *r, const secp256k1_ge_storage *a, int flag) {</span>
+<span class="lineNum">     686 </span>                :<span class="lineCov">    1821520 :     secp256k1_fe_storage_cmov(&amp;r-&gt;x, &amp;a-&gt;x, flag);</span>
+<span class="lineNum">     687 </span>                :<span class="lineCov">    1821520 :     secp256k1_fe_storage_cmov(&amp;r-&gt;y, &amp;a-&gt;y, flag);</span>
+<span class="lineNum">     688 </span>                :<span class="lineCov">    1821520 : }</span>
+<span class="lineNum">     689 </span>                :            : 
+<span class="lineNum">     690 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     691 </span>                :            : static void secp256k1_ge_mul_lambda(secp256k1_ge *r, const secp256k1_ge *a) {
+<span class="lineNum">     692 </span>                :            :     static const secp256k1_fe beta = SECP256K1_FE_CONST(
+<span class="lineNum">     693 </span>                :            :         0x7ae96a2bul, 0x657c0710ul, 0x6e64479eul, 0xac3434e9ul,
+<span class="lineNum">     694 </span>                :            :         0x9cf04975ul, 0x12f58995ul, 0xc1396c28ul, 0x719501eeul
+<span class="lineNum">     695 </span>                :            :     );
+<span class="lineNum">     696 </span>                :            :     *r = *a;
+<span class="lineNum">     697 </span>                :            :     secp256k1_fe_mul(&amp;r-&gt;x, &amp;r-&gt;x, &amp;beta);
+<span class="lineNum">     698 </span>                :            : }
+<a name="699"><span class="lineNum">     699 </span>                :            : #endif</a>
+<span class="lineNum">     700 </span>                :            : 
+<span class="lineNum">     701 </span>                :<span class="lineNoCov">          0 : static int secp256k1_gej_has_quad_y_var(const secp256k1_gej *a) {</span>
+<span class="lineNum">     702 </span>                :            :     secp256k1_fe yz;
+<span class="lineNum">     703 </span>                :            : 
+<span class="lineNum">     704 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if (a-&gt;infinity) {</span>
+<span class="lineNum">     705 </span>                :<span class="lineNoCov">          0 :         return 0;</span>
+<span class="lineNum">     706 </span>                :            :     }
+<span class="lineNum">     707 </span>                :            : 
+<span class="lineNum">     708 </span>                :            :     /* We rely on the fact that the Jacobi symbol of 1 / a-&gt;z^3 is the same as
+<span class="lineNum">     709 </span>                :            :      * that of a-&gt;z. Thus a-&gt;y / a-&gt;z^3 is a quadratic residue iff a-&gt;y * a-&gt;z
+<span class="lineNum">     710 </span>                :            :        is */
+<span class="lineNum">     711 </span>                :<span class="lineNoCov">          0 :     secp256k1_fe_mul(&amp;yz, &amp;a-&gt;y, &amp;a-&gt;z);</span>
+<span class="lineNum">     712 </span>                :<span class="lineNoCov">          0 :     return secp256k1_fe_is_quad_var(&amp;yz);</span>
+<span class="lineNum">     713 </span>                :            : }
+<span class="lineNum">     714 </span>                :            : 
+<span class="lineNum">     715 </span>                :            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

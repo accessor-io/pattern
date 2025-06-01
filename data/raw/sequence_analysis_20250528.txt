@@ -1,0 +1,324 @@
+Byte Position Sequential Analysis
+================================================================================
+
+Sequence Pattern Analysis:
+----------------------------------------
+* Positions [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31] show deterministic behavior
+* Positions [] show high randomness
+
+Position  0:
+----------------------------------------
+Most common values:
+  0xb8: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  b8->e9: 100.00%
+
+Position  1:
+----------------------------------------
+Most common values:
+  0xe9: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  e9->f0: 100.00%
+
+Position  2:
+----------------------------------------
+Most common values:
+  0xf0: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  f0->a1: 100.00%
+
+Position  3:
+----------------------------------------
+Most common values:
+  0xa1: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  a1->d2: 100.00%
+
+Position  4:
+----------------------------------------
+Most common values:
+  0xd2: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  d2->c3: 100.00%
+
+Position  5:
+----------------------------------------
+Most common values:
+  0xc3: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  c3->45: 100.00%
+
+Position  6:
+----------------------------------------
+Most common values:
+  0x45: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  45->67: 100.00%
+
+Position  7:
+----------------------------------------
+Most common values:
+  0x67: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  67->89: 100.00%
+
+Position  8:
+----------------------------------------
+Most common values:
+  0x89: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  89->01: 100.00%
+
+Position  9:
+----------------------------------------
+Most common values:
+  0x01: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  01->23: 100.00%
+
+Position 10:
+----------------------------------------
+Most common values:
+  0x23: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  23->45: 100.00%
+
+Position 11:
+----------------------------------------
+Most common values:
+  0x45: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  45->67: 100.00%
+
+Position 12:
+----------------------------------------
+Most common values:
+  0x67: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  67->89: 100.00%
+
+Position 13:
+----------------------------------------
+Most common values:
+  0x89: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  89->01: 100.00%
+
+Position 14:
+----------------------------------------
+Most common values:
+  0x01: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  01->bc: 100.00%
+
+Position 15:
+----------------------------------------
+Most common values:
+  0xbc: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  bc->de: 100.00%
+
+Position 16:
+----------------------------------------
+Most common values:
+  0xde: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  de->f1: 100.00%
+
+Position 17:
+----------------------------------------
+Most common values:
+  0xf1: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  f1->23: 100.00%
+
+Position 18:
+----------------------------------------
+Most common values:
+  0x23: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  23->45: 100.00%
+
+Position 19:
+----------------------------------------
+Most common values:
+  0x45: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  45->67: 100.00%
+
+Position 20:
+----------------------------------------
+Most common values:
+  0x67: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  67->89: 100.00%
+
+Position 21:
+----------------------------------------
+Most common values:
+  0x89: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  89->0a: 100.00%
+
+Position 22:
+----------------------------------------
+Most common values:
+  0x0a: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  0a->bc: 100.00%
+
+Position 23:
+----------------------------------------
+Most common values:
+  0xbc: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  bc->de: 100.00%
+
+Position 24:
+----------------------------------------
+Most common values:
+  0xde: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  de->f1: 100.00%
+
+Position 25:
+----------------------------------------
+Most common values:
+  0xf1: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  f1->23: 100.00%
+
+Position 26:
+----------------------------------------
+Most common values:
+  0x23: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  23->45: 100.00%
+
+Position 27:
+----------------------------------------
+Most common values:
+  0x45: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  45->67: 100.00%
+
+Position 28:
+----------------------------------------
+Most common values:
+  0x67: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  67->89: 100.00%
+
+Position 29:
+----------------------------------------
+Most common values:
+  0x89: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  89->01: 100.00%
+
+Position 30:
+----------------------------------------
+Most common values:
+  0x01: 1 times (100.00%)
+
+Position entropy: 0.00 bits
+
+Most common transitions to next byte:
+  01->23: 100.00%
+
+Position 31:
+----------------------------------------
+Most common values:
+  0x23: 1 times (100.00%)
+
+Position entropy: 0.00 bits

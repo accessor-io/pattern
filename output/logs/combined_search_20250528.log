@@ -1,0 +1,17 @@
+2025-05-28 21:29:00,634 - INFO - === Starting Combined Search ===
+2025-05-28 21:29:00,635 - INFO - Target Address: 1MVDYgVaSN6iKKEsbzRUAYFrYJadLYZvvZ
+2025-05-28 21:29:00,635 - INFO - Previous Term (67): 0x730fc235c1942c1ae
+2025-05-28 21:29:00,635 - INFO - Starting Focused Search (68_focused_search.py)
+2025-05-28 21:29:00,635 - INFO - Starting Mathematical Patterns (68_mathematical_patterns.py)
+2025-05-28 21:29:00,637 - INFO - Starting Bitwise Operations (68_bitwise_search.py)
+2025-05-28 21:29:00,638 - INFO - Starting Exact Candidate Testing (exact_candidate_test.py)
+2025-05-28 21:29:00,684 - INFO - [Mathematical Patterns] /usr/local/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/acc/pattern/68_mathematical_patterns.py': [Errno 2] No such file or directory
+2025-05-28 21:29:00,684 - INFO - [Focused Search] /usr/local/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/acc/pattern/68_focused_search.py': [Errno 2] No such file or directory
+2025-05-28 21:29:00,687 - INFO - [Bitwise Operations] /usr/local/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/acc/pattern/68_bitwise_search.py': [Errno 2] No such file or directory
+2025-05-28 21:29:00,689 - INFO - [Exact Candidate Testing] /usr/local/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/acc/pattern/exact_candidate_test.py': [Errno 2] No such file or directory
+2025-05-28 21:29:00,692 - INFO - Mathematical Patterns completed with code 2
+2025-05-28 21:29:00,692 - INFO - Focused Search completed with code 2
+2025-05-28 21:29:00,695 - INFO - Bitwise Operations completed with code 2
+2025-05-28 21:29:00,696 - INFO - Exact Candidate Testing completed with code 2
+2025-05-28 21:29:00,696 - INFO - No solution found by any strategy
+2025-05-28 21:29:00,696 - INFO - Total search duration: 0.06 seconds

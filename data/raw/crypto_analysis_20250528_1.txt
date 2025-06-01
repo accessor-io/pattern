@@ -1,0 +1,15 @@
+Cryptographic Analysis for All Strings
+================================================================================
+
+
+Cryptographic Analysis for String 1:
+================================================================================
+Avalanche Effect: 1.0000
+Hamming Distance to Complement: 256
+Linear Complexity: 128
+
+Hash Values:
+md5: 515cc4404acc290c21c11892fc57a2ae
+sha1: 193785533378ce6e6a9abec8801f808e9c55d977
+sha256: 4f5bc41236ded6f1cd325b3a5cb47f82a70ad36eb6a591debadf7bf5e800940b
+

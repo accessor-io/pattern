@@ -1,0 +1,1 @@
+from 69 import private_key_to_address; hex_val = '16fd5fe23a3b55c276'; int_val = int(hex_val, 16); address = private_key_to_address(int_val); print(f'Private key (hex): 0x{hex_val}'); print(f'Private key (padded): 0x' + hex_val.zfill(64)); print(f'Bitcoin address: {address}')

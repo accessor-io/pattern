@@ -1,0 +1,408 @@
+
+===== Analyzing Derivation for Index 1 =====
+  Target Address: 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH
+  Private Key:    0x1
+  An unexpected error occurred: name 'base58_decode_full' is not defined
+
+Verifying KNOWN_SOLUTIONS against EXPECTED_ADDRESSES (using COMPRESSED pubkeys - as per last test)...
+
+--- Processing Index 1 (Target: 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH) ---
+  Known Private Key (Int): 1
+  Derived Compressed Pubkey: 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
+  Derived Address: 1MDuihdxCuJHsLYjKC4jDCcxKBzfHpvhYd
+  MISMATCH: Derived address does not match expected address for Index 1.
+
+--- Processing Index 2 (Target: 1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb) ---
+  Known Private Key (Int): 3
+  Derived Compressed Pubkey: 02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9
+  Derived Address: 17EDBKbL7ysAZK9LMxvTViYL4HEKvX7Y5W
+  MISMATCH: Derived address does not match expected address for Index 2.
+
+--- Processing Index 3 (Target: 19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA) ---
+  Known Private Key (Int): 7
+  Derived Compressed Pubkey: 025cbdf0646e5db4eaa398f365f2ea7a0e3d419b7e0330e39ce92bddedcac4f9bc
+  Derived Address: 1DqVgUMyTQRJuCVHUgADgdUW8q7NxxzGbP
+  MISMATCH: Derived address does not match expected address for Index 3.
+
+--- Processing Index 4 (Target: 1EhqbyUMvvs7BfL8goY6qcPbD6YKfPqb7e) ---
+  Known Private Key (Int): 8
+  Derived Compressed Pubkey: 022f01e5e15cca351daff3843fb70f3c2f0a1bdd05e5af888a67784ef3e10a2a01
+  Derived Address: 1HR6YpSBUTLR4XD4AgVJQXzxX8Mhjx2oYh
+  MISMATCH: Derived address does not match expected address for Index 4.
+
+--- Processing Index 5 (Target: 1E6NuFjCi27W5zoXg8TRdcSRq84zJeBW3k) ---
+  Known Private Key (Int): 21
+  Derived Compressed Pubkey: 02352bbf4a4cdd12564f93fa332ce333301d9ad40271f8107181340aef25be59d5
+  Derived Address: 18jwXTh1CGcuhxfTpSQ7yx81QyX64nuChB
+  MISMATCH: Derived address does not match expected address for Index 5.
+
+--- Processing Index 6 (Target: 1PitScNLyp2HCygzadCh7FveTnfmpPbfp8) ---
+  Known Private Key (Int): 49
+  Derived Compressed Pubkey: 03f2dac991cc4ce4b9ea44887e5c7c0bce58c80074ab9d4dbaeb28531b7739f530
+  Derived Address: 18TVXGsKBVjQbWS6WrrZwH2BVmMDkApWPi
+  MISMATCH: Derived address does not match expected address for Index 6.
+
+--- Processing Index 7 (Target: 1McVt1vMtCC7yn5b9wgX1833yCcLXzueeC) ---
+  Known Private Key (Int): 76
+  Derived Compressed Pubkey: 0296516a8f65774275278d0d7420a88df0ac44bd64c7bae07c3fe397c5b3300b23
+  Derived Address: 19ykPbuQ1qYPL9R91k1ndSRdsVHpmgiReS
+  MISMATCH: Derived address does not match expected address for Index 7.
+
+--- Processing Index 8 (Target: 1M92tSqNmQLYw33fuBvjmeadirh1ysMBxK) ---
+  Known Private Key (Int): 224
+  Derived Compressed Pubkey: 0308bc89c2f919ed158885c35600844d49890905c79b357322609c45706ce6b514
+  Derived Address: 1NNJWp3iGeiDtzhAabsRZcHGkv9iG2oJRf
+  MISMATCH: Derived address does not match expected address for Index 8.
+
+--- Processing Index 9 (Target: 1CQFwcjw1dwhtkVWBttNLDtqL7ivBonGPV) ---
+  Known Private Key (Int): 467
+  Derived Compressed Pubkey: 0243601d61c836387485e9514ab5c8924dd2cfd466af34ac95002727e1659d60f7
+  Derived Address: 13G2Ar8Gr9q92GuLa46HPjg1qqiBqccEc3
+  MISMATCH: Derived address does not match expected address for Index 9.
+
+--- Processing Index 10 (Target: 1LeBZP5QCwwgXRtmVUvTVrraqPUokyLHqe) ---
+  Known Private Key (Int): 514
+  Derived Compressed Pubkey: 03a7a4c30291ac1db24b4ab00c442aa832f7794b5a0959bec6e8d7fee802289dcd
+  Derived Address: 12wh28hpe7c522HYkJsRz9XgTy41dxzXVX
+  MISMATCH: Derived address does not match expected address for Index 10.
+
+--- Processing Index 11 (Target: 1PgQVLmst3Z314JrQn5TNiys8Hc38TcXJu) ---
+  Known Private Key (Int): 1155
+  Derived Compressed Pubkey: 038b05b0603abd75b0c57489e451f811e1afe54a8715045cdf4888333f3ebc6e8b
+  Derived Address: 1G2Sxy8p6Wj8aR356xHhqoZvvAMEEmkucz
+  MISMATCH: Derived address does not match expected address for Index 11.
+
+--- Processing Index 12 (Target: 1DBaumZxUkM4qMQRt2LVWyFJq5kDtSZQot) ---
+  Known Private Key (Int): 2683
+  Derived Compressed Pubkey: 038b00fcbfc1a203f44bf123fc7f4c91c10a85c8eae9187f9d22242b4600ce781c
+  Derived Address: 1KV2p5HrG6wWUH6DkRWxUZfJfHVzrJvmYR
+  MISMATCH: Derived address does not match expected address for Index 12.
+
+--- Processing Index 13 (Target: 1Pie8JkxBT6MGPz9Nvi3fsPkr2D8q3GBc1) ---
+  Known Private Key (Int): 5216
+  Derived Compressed Pubkey: 03aadaaab1db8d5d450b511789c37e7cfeb0eb8b3e61a57a34166c5edc9a4b869d
+  Derived Address: 18MMQ75pnYmb2343VowWWMRLXfq4wbuFZ4
+  MISMATCH: Derived address does not match expected address for Index 13.
+
+--- Processing Index 14 (Target: 1ErZWg5cFCe4Vw5BzgfzB74VNLaXEiEkhk) ---
+  Known Private Key (Int): 10544
+  Derived Compressed Pubkey: 03b4f1de58b8b41afe9fd4e5ffbdafaeab86c5db4769c15d6e6011ae7351e54759
+  Derived Address: 12H1cyfACnShycrM9nMVGZHEk6cRjoUHr6
+  MISMATCH: Derived address does not match expected address for Index 14.
+
+--- Processing Index 15 (Target: 1QCbW9HWnwQWiQqVo5exhAnmfqKRrCRsvW) ---
+  Known Private Key (Int): 26867
+  Derived Compressed Pubkey: 02fea58ffcf49566f6e9e9350cf5bca2861312f422966e8db16094beb14dc3df2c
+  Derived Address: 1tvrMuevYYeWWxFmGYULSvzogAAazKypc
+  MISMATCH: Derived address does not match expected address for Index 15.
+
+--- Processing Index 16 (Target: 1BDyrQ6WoF8VN3g9SAS1iKZcPzFfnDVieY) ---
+  Known Private Key (Int): 51510
+  Derived Compressed Pubkey: 029d8c5d35231d75eb87fd2c5f05f65281ed9573dc41853288c62ee94eb2590b7a
+  Derived Address: 13j9fXZnMTP18TPCranX6Cw7k6TYPxAmNP
+  MISMATCH: Derived address does not match expected address for Index 16.
+
+--- Processing Index 17 (Target: 1HduPEXZRdG26SUT5Yk83mLkPyjnZuJ7Bm) ---
+  Known Private Key (Int): 95823
+  Derived Compressed Pubkey: 033f688bae8321b8e02b7e6c0a55c2515fb25ab97d85fda842449f7bfa04e128c3
+  Derived Address: 17n7sBPssUSi22Ua9WPy5ZEvPwkkU3eZo8
+  MISMATCH: Derived address does not match expected address for Index 17.
+
+--- Processing Index 18 (Target: 1GnNTmTVLZiqQfLbAdp9DVdicEnB5GoERE) ---
+  Known Private Key (Int): 198669
+  Derived Compressed Pubkey: 020ce4a3291b19d2e1a7bf73ee87d30a6bdbc72b20771e7dfff40d0db755cd4af1
+  Derived Address: 1BuG693tpeTjvZHS5LFBHzcpF6fjvYePux
+  MISMATCH: Derived address does not match expected address for Index 18.
+
+--- Processing Index 19 (Target: 1NWmZRpHH4XSPwsW6dsS3nrNWfL1yrJj4w) ---
+  Known Private Key (Int): 357535
+  Derived Compressed Pubkey: 0385663c8b2f90659e1ccab201694f4f8ec24b3749cfe5030c7c3646a709408e19
+  Derived Address: 15fyDfC2k4bxayLnkmAez97xZEKZECWs8c
+  MISMATCH: Derived address does not match expected address for Index 19.
+
+--- Processing Index 20 (Target: 1HsMJxNiV7TLxmoF6uJNkydxPFDog4NQum) ---
+  Known Private Key (Int): 863317
+  Derived Compressed Pubkey: 033c4a45cbd643ff97d77f41ea37e843648d50fd894b864b0d52febc62f6454f7c
+  Derived Address: 1Phj7V2h1bMw481ULTuY6n9ZPPoGKXwaUk
+  MISMATCH: Derived address does not match expected address for Index 20.
+
+--- Processing Index 21 (Target: 14oFNXucftsHiUMY8uctg6N487riuyXs4h) ---
+  Known Private Key (Int): 1811764
+  Derived Compressed Pubkey: 031a746c78f72754e0be046186df8a20cdce5c79b2eda76013c647af08d306e49e
+  Derived Address: 1CVi8KmH8E2sKK3NhPPcCNpufJxkzHTP1F
+  MISMATCH: Derived address does not match expected address for Index 21.
+
+--- Processing Index 22 (Target: 1CfZWK1QTQE3eS9qn61dQjV89KDjZzfNcv) ---
+  Known Private Key (Int): 3007503
+  Derived Compressed Pubkey: 023ed96b524db5ff4fe007ce730366052b7c511dc566227d929070b9ce917abb43
+  Derived Address: 1h5i1JK7UK74rq2wLuhUWz2FPTmt3Qev6
+  MISMATCH: Derived address does not match expected address for Index 22.
+
+--- Processing Index 23 (Target: 1L2GM8eE7mJWLdo3HZS6su1832NX2txaac) ---
+  Known Private Key (Int): 5598802
+  Derived Compressed Pubkey: 03f82710361b8b81bdedb16994f30c80db522450a93e8e87eeb07f7903cf28d04b
+  Derived Address: 1PuMxmLFPVWj7jjhNd5HyMC2dyQiwnkdHi
+  MISMATCH: Derived address does not match expected address for Index 23.
+
+--- Processing Index 24 (Target: 1rSnXMr63jdCuegJFuidJqWxUPV7AtUf7) ---
+  Known Private Key (Int): 14428676
+  Derived Compressed Pubkey: 036ea839d22847ee1dce3bfc5b11f6cf785b0682db58c35b63d1342eb221c3490c
+  Derived Address: 1C8rSXxuJDg3mmaedHqNbyKw8CuShjMYXY
+  MISMATCH: Derived address does not match expected address for Index 24.
+
+--- Processing Index 25 (Target: 15JhYXn6Mx3oF4Y7PcTAv2wVVAuCFFQNiP) ---
+  Known Private Key (Int): 33185509
+  Derived Compressed Pubkey: 03057fbea3a2623382628dde556b2a0698e32428d3cd225f3bd034dca82dd7455a
+  Derived Address: 1KT7obsuRVRqDFAv12hTmSVCEC1cqaA1QN
+  MISMATCH: Derived address does not match expected address for Index 25.
+
+--- Processing Index 26 (Target: 1JVnST957hGztonaWK6FougdtjxzHzRMMg) ---
+  Known Private Key (Int): 54538862
+  Derived Compressed Pubkey: 024e4f50a2a3eccdb368988ae37cd4b611697b26b29696e42e06d71368b4f3840f
+  Derived Address: 1B5N7kAB5qntZw3EjZARs5rVn6dsUyUrC1
+  MISMATCH: Derived address does not match expected address for Index 26.
+
+--- Processing Index 27 (Target: 128z5d7nN7PkCuX5qoA4Ys6pmxUYnEy86k) ---
+  Known Private Key (Int): 111949941
+  Derived Compressed Pubkey: 031a864bae3922f351f1b57cfdd827c25b7e093cb9c88a72c1cd893d9f90f44ece
+  Derived Address: 13dDfGQ5dPRPvzYxuboWXbz3YDwDcB8ZnS
+  MISMATCH: Derived address does not match expected address for Index 27.
+
+--- Processing Index 28 (Target: 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY) ---
+  Known Private Key (Int): 227634408
+  Derived Compressed Pubkey: 03e9e661838a96a65331637e2a3e948dc0756e5009e7cb5c36664d9b72dd18c0a7
+  Derived Address: 1CzstmvKkHKiVsGeFofD5HwfjmMQNUpsgu
+  MISMATCH: Derived address does not match expected address for Index 28.
+
+--- Processing Index 29 (Target: 19EEC52krRUK1RkUAEZmQdjTyHT7Gp1TYT) ---
+  Known Private Key (Int): 400708894
+  Derived Compressed Pubkey: 026caad634382d34691e3bef43ed4a124d8909a8a3362f91f1d20abaaf7e917b36
+  Derived Address: 1NbHycSrAwKHa5xQVtpdrGtQxVKEJqgnej
+  MISMATCH: Derived address does not match expected address for Index 29.
+
+--- Processing Index 30 (Target: 1LHtnpd8nU5VHEMkG2TMYYNUjjLc992bps) ---
+  Known Private Key (Int): 1033162084
+  Derived Compressed Pubkey: 030d282cf2ff536d2c42f105d0b8588821a915dc3f9a05bd98bb23af67a2e92a5b
+  Derived Address: 1HrpK1oXX3VoB5PfaY5ow6TFZkeHcVqqj6
+  MISMATCH: Derived address does not match expected address for Index 30.
+
+--- Processing Index 31 (Target: 1LhE6sCTuGae42Axu1L1ZB7L96yi9irEBE) ---
+  Known Private Key (Int): 2102388551
+  Derived Compressed Pubkey: 0387dc70db1806cd9a9a76637412ec11dd998be666584849b3185f7f9313c8fd28
+  Derived Address: 1NDEB6QdL21TMx4qgic2NUFuXBTppDFMFv
+  MISMATCH: Derived address does not match expected address for Index 31.
+
+--- Processing Index 32 (Target: 1FRoHA9xewq7DjrZ1psWJVeTer8gHRqEvR) ---
+  Known Private Key (Int): 3093472814
+  Derived Compressed Pubkey: 0209c58240e50e3ba3f833c82655e8725c037a2294e14cf5d73a5df8d56159de69
+  Derived Address: 1HZ83KjpSvUsXA9Hqw6DUiXDCzW6eidUxd
+  MISMATCH: Derived address does not match expected address for Index 32.
+
+--- Processing Index 33 (Target: 187swFMjz1G54ycVU56B7jZFHFTNVQFDiu) ---
+  Known Private Key (Int): 2842470616
+  Derived Compressed Pubkey: 0244b4afaa716cdf04a00c5baa3a9114664355a1b08f0bba8ec6299076a7cab651
+  Derived Address: 1KxaYSuEeKuVFqsDr1xvPtiR59Rw8AqQNz
+  MISMATCH: Derived address does not match expected address for Index 33.
+
+--- Processing Index 34 (Target: 1PWABE7oUahG2AFFQhhvViQovnCr4rEv7Q) ---
+  Known Private Key (Int): 1248170269
+  Derived Compressed Pubkey: 02240e15c67a0b392ff050ff5ab70e3c16498301088292cf600e0facd3e50ac836
+  Derived Address: 1LVoqDQSYmWsCY5HLxVoYojmFRd5zywcF6
+  MISMATCH: Derived address does not match expected address for Index 34.
+
+--- Processing Index 35 (Target: 1PWCx5fovoEaoBowAvF5k91m2Xat9bMgwb) ---
+  Known Private Key (Int): 2933002608
+  Derived Compressed Pubkey: 0269a55ab92a0e769273e756b1d64efe6f8948eb71467ddb1b4ad387fb840e0fc5
+  Derived Address: 1G4tLWqv4aDSUEmTxiJHjZk2EEw9Z1r2m
+  MISMATCH: Derived address does not match expected address for Index 35.
+
+--- Processing Index 36 (Target: 1Be2UF9NLfyLFbtm3TCbmuocc9N1Kduci1) ---
+  Known Private Key (Int): 42387769980
+  Derived Compressed Pubkey: 02b3e772216695845fa9dda419fb5daca28154d8aa59ea302f05e916635e47b9f6
+  Derived Address: 18GFo9beBruBRC5JbNrYoqfCP7TG6gxPUc
+  MISMATCH: Derived address does not match expected address for Index 36.
+
+--- Processing Index 37 (Target: 14iXhn8bGajVWegZHJ18vJLHhntcpL4dex) ---
+  Known Private Key (Int): 100251560595
+  Derived Compressed Pubkey: 027d2c03c3ef0aec70f2c7e1e75454a5dfdd0e1adea670c1b3a4643c48ad0f1255
+  Derived Address: 169ticoYrCPqLVgVTxbBWqJv4upMZmAAEw
+  MISMATCH: Derived address does not match expected address for Index 37.
+
+--- Processing Index 38 (Target: 1HBtApAFA9B2YZw3G2YKSMCtb3dVnjuNe2) ---
+  Known Private Key (Int): 146971536592
+  Derived Compressed Pubkey: 03c060e1e3771cbeccb38e119c2414702f3f5181a89652538851d2e3886bdd70c6
+  Derived Address: 1NNiCTjF2cyRwrr93XnB3vjZqksgLqEjbr
+  MISMATCH: Derived address does not match expected address for Index 38.
+
+--- Processing Index 39 (Target: 122AJhKLEfkFBaGAd84pLp1kfE7xK3GdT8) ---
+  Known Private Key (Int): 323724968937
+  Derived Compressed Pubkey: 022d77cd1467019a6bf28f7375d0949ce30e6b5815c2758b98a74c2700bc006543
+  Derived Address: 18p4KCbFRyA6kVMXHDkCezC7VjYt9pBehH
+  MISMATCH: Derived address does not match expected address for Index 39.
+
+--- Processing Index 40 (Target: 1EeAxcprB2PpCnr34VfZdFrkUWuxyiNEFv) ---
+  Known Private Key (Int): 1003651412950
+  Derived Compressed Pubkey: 03a2efa402fd5268400c77c20e574ba86409ededee7c4020e4b9f0edbee53de0d4
+  Derived Address: 1P3RNZtJFVBNkPRKBcJx6w2WwxL46ovj1W
+  MISMATCH: Derived address does not match expected address for Index 40.
+
+--- Processing Index 41 (Target: 1L5sU9qvJeuwQUdt4y1eiLmquFxKjtHr3E) ---
+  Known Private Key (Int): 1458252205147
+  Derived Compressed Pubkey: 03b357e68437da273dcf995a474a524439faad86fc9effc300183f714b0903468b
+  Derived Address: 1BT2vdxMi4GYpPtGbwbfVz1wRc6F4kR7Fh
+  MISMATCH: Derived address does not match expected address for Index 41.
+
+--- Processing Index 42 (Target: 1E32GPWgDyeyQac4aJxm9HVoLrrEYPnM4N) ---
+  Known Private Key (Int): 2895374552463
+  Derived Compressed Pubkey: 03eec88385be9da803a0d6579798d977a5d0c7f80917dab49cb73c9e3927142cb6
+  Derived Address: 1PFeSGrqbdabU5i1cSCfq87DL6X2LWouF7
+  MISMATCH: Derived address does not match expected address for Index 42.
+
+--- Processing Index 43 (Target: 1PiFuqGpG8yGM5v6rNHWS3TjsG6awgEGA1) ---
+  Known Private Key (Int): 7409811047825
+  Derived Compressed Pubkey: 02a631f9ba0f28511614904df80d7f97a4f43f02249c8909dac92276ccf0bcdaed
+  Derived Address: 1DG8P3v9Nse3ecmbizkuf3e6kSBvd8sUTz
+  MISMATCH: Derived address does not match expected address for Index 43.
+
+--- Processing Index 44 (Target: 1CkR2uS7LmFwc3T2jV8C1BhWb5mQaoxedF) ---
+  Known Private Key (Int): 15404761757071
+  Derived Compressed Pubkey: 025e466e97ed0e7910d3d90ceb0332df48ddf67d456b9e7303b50a3d89de357336
+  Derived Address: 12Qg3yVSFq5kHWBmRFgygPvo3nqvSQWsVs
+  MISMATCH: Derived address does not match expected address for Index 44.
+
+--- Processing Index 45 (Target: 1NtiLNGegHWE3Mp9g2JPkgx6wUg4TW7bbk) ---
+  Known Private Key (Int): 19996463086597
+  Derived Compressed Pubkey: 026ecabd2d22fdb737be21975ce9a694e108eb94f3649c586cc7461c8abf5da71a
+  Derived Address: 1DzbkUSR68rNGA6QevWyvmZTxq8vSv9BFP
+  MISMATCH: Derived address does not match expected address for Index 45.
+
+--- Processing Index 46 (Target: 1F3JRMWudBaj48EhwcHDdpeuy2jwACNxjP) ---
+  Known Private Key (Int): 51408670348612
+  Derived Compressed Pubkey: 03fd5487722d2576cb6d7081426b66a3e2986c1ce8358d479063fb5f2bb6dd5849
+  Derived Address: 1DDLZU3vjw38LXLkiBzq9zUih57LsBHFZB
+  MISMATCH: Derived address does not match expected address for Index 46.
+
+--- Processing Index 47 (Target: 1Pd8VvT49sHKsmqrQiP61RsVwmXCZ6ay7Z) ---
+  Known Private Key (Int): 119666659114170
+  Derived Compressed Pubkey: 023a12bd3caf0b0f77bf4eea8e7a40dbe27932bf80b19ac72f5f5a64925a594196
+  Derived Address: 1CWTKhdQyKSFvhuAiCaehL6DtSesNutt93
+  MISMATCH: Derived address does not match expected address for Index 47.
+
+--- Processing Index 48 (Target: 1DFYhaB2J9q1LLZJWKTnscPWos9VBqDHzv) ---
+  Known Private Key (Int): 191206974700443
+  Derived Compressed Pubkey: 0291bee5cf4b14c291c650732faa166040e4c18a14731f9a930c1e87d3ec12debb
+  Derived Address: 17WSggSFNfWkiBKkuqzvQWwqhYuGGqdNaw
+  MISMATCH: Derived address does not match expected address for Index 48.
+
+--- Processing Index 49 (Target: 12CiUhYVTTH33w3SPUBqcpMoqnApAV4WCF) ---
+  Known Private Key (Int): 409118905032525
+  Derived Compressed Pubkey: 02591d682c3da4a2a698633bf5751738b67c343285ebdc3492645cb44658911484
+  Derived Address: 155mahwNs2VXwnokF8Qsv4JxRX4JN9vpr1
+  MISMATCH: Derived address does not match expected address for Index 49.
+
+--- Processing Index 50 (Target: 1MEzite4ReNuWaL5Ds17ePKt2dCxWEofwk) ---
+  Known Private Key (Int): 611140496167764
+  Derived Compressed Pubkey: 03f46f41027bbf44fafd6b059091b900dad41e6845b2241dc3254c7cdd3c5a16c6
+  Derived Address: 15y8H49b2kUE8h47RTPGFDFPGvqeua5FwE
+  MISMATCH: Derived address does not match expected address for Index 50.
+
+--- Processing Index 51 (Target: 1NpnQyZ7x24ud82b7WiRNvPm6N8bqGQnaS) ---
+  Known Private Key (Int): 2058769515153876
+  Derived Compressed Pubkey: 028c6c67bef9e9eebe6a513272e50c230f0f91ed560c37bc9b033241ff6c3be78f
+  Derived Address: 16xya6AecrpMA3CyZrWCx5MBdk55aGuDYK
+  MISMATCH: Derived address does not match expected address for Index 51.
+
+--- Processing Index 52 (Target: 15z9c9sVpu6fwNiK7dMAFgMYSK4GqsGZim) ---
+  Known Private Key (Int): 4216495639600700
+  Derived Compressed Pubkey: 0374c33bd548ef02667d61341892134fcf216640bc2201ae61928cd0874f6314a7
+  Derived Address: 1JezHideJX9MDZaDfRbXsxHHQysX4XZyuN
+  MISMATCH: Derived address does not match expected address for Index 52.
+
+--- Processing Index 53 (Target: 15K1YKJMiJ4fpesTVUcByoz334rHmknxmT) ---
+  Known Private Key (Int): 6763683971478124
+  Derived Compressed Pubkey: 020faaf5f3afe58300a335874c80681cf66933e2a7aeb28387c0d28bb048bc6349
+  Derived Address: 15Jpx5ZKK5FootEeLyso7g1QCF2YBZvv2N
+  MISMATCH: Derived address does not match expected address for Index 53.
+
+--- Processing Index 54 (Target: 1KYUv7nSvXx4642TKeuC2SNdTk326uUpFy) ---
+  Known Private Key (Int): 9974455244496707
+  Derived Compressed Pubkey: 034af4b81f8c450c2c870ce1df184aff1297e5fcd54944d98d81e1a545ffb22596
+  Derived Address: 1JkXukcgoPxNfjgmaGWy699XnR2EX7r3Ss
+  MISMATCH: Derived address does not match expected address for Index 54.
+
+--- Processing Index 55 (Target: 1LzhS3k3e9Ub8i2W1V8xQFdB8n2MYCHPCa) ---
+  Known Private Key (Int): 30045390491869460
+  Derived Compressed Pubkey: 0385a30d8413af4f8f9e6312400f2d194fe14f02e719b24c3f83bf1fd233a8f963
+  Derived Address: 1Kun7jMAsxwcxxe9XMzoHzVDvtbPi6Nayb
+  MISMATCH: Derived address does not match expected address for Index 55.
+
+--- Processing Index 56 (Target: 17aPYR1m6pVAacXg1PTDDU7XafvK1dxvhi) ---
+  Known Private Key (Int): 44218742292676575
+  Derived Compressed Pubkey: 033f2db2074e3217b3e5ee305301eeebb1160c4fa1e993ee280112f6348637999a
+  Derived Address: 1Cqy8hzhA4WHGyTcTFittiHBKG44ZBj39Q
+  MISMATCH: Derived address does not match expected address for Index 56.
+
+--- Processing Index 57 (Target: 15c9mPGLku1HuW9LRtBf4jcHVpBUt8txKz) ---
+  Known Private Key (Int): 138245758910846492
+  Derived Compressed Pubkey: 02a521a07e98f78b03fc1e039bc3a51408cd73119b5eb116e583fe57dc8db07aea
+  Derived Address: 1KFtii6WpyWVk18uUuSyVUDo6e2VwdejAb
+  MISMATCH: Derived address does not match expected address for Index 57.
+
+--- Processing Index 58 (Target: 1Dn8NF8qDyyfHMktmuoQLGyjWmZXgvosXf) ---
+  Known Private Key (Int): 199976667976342049
+  Derived Compressed Pubkey: 0311569442e870326ceec0de24eb5478c19e146ecd9d15e4666440f2f638875f42
+  Derived Address: 15PKsEfrLiGYvGAiSL6xppKWFjAsrbRR46
+  MISMATCH: Derived address does not match expected address for Index 58.
+
+--- Processing Index 59 (Target: 1HAX2n9Uruu9YDt4cqRgYcvtGvZj1rbUyt) ---
+  Known Private Key (Int): 525070384258266191
+  Derived Compressed Pubkey: 0241267d2d7ee1a8e76f8d1546d0d30aefb2892d231cee0dde7776daf9f8021485
+  Derived Address: 1JwbWbwk6DRcHkKipqsCXVW7nWkdzX31Rf
+  MISMATCH: Derived address does not match expected address for Index 59.
+
+--- Processing Index 60 (Target: 1Kn5h2qpgw9mWE5jKpk8PP4qvvJ1QVy8su) ---
+  Known Private Key (Int): 1135041350219496382
+  Derived Compressed Pubkey: 0348e843dc5b1bd246e6309b4924b81543d02b16c8083df973a89ce2c7eb89a10d
+  Derived Address: 19SkmqT9nZAALH1t7wy6f14w6DdnL8nbnX
+  MISMATCH: Derived address does not match expected address for Index 60.
+
+--- Processing Index 61 (Target: 1AVJKwzs9AskraJLGHAZPiaZcrpDr1U6AB) ---
+  Known Private Key (Int): 1425787542618654982
+  Derived Compressed Pubkey: 0249a43860d115143c35c09454863d6f82a95e47c1162fb9b2ebe0186eb26f453f
+  Derived Address: 1tAqg6xCXYAB9L9AfoSyRfywGAABtba8a
+  MISMATCH: Derived address does not match expected address for Index 61.
+
+--- Processing Index 62 (Target: 1Me6EfpwZK5kQziBwBfvLiHjaPGxCKLoJi) ---
+  Known Private Key (Int): 3908372542507822062
+  Derived Compressed Pubkey: 03231a67e424caf7d01a00d5cd49b0464942255b8e48766f96602bdfa4ea14fea8
+  Derived Address: 1CJiAjrkov8KQ5d7z9updvJnF6rgoyX2CJ
+  MISMATCH: Derived address does not match expected address for Index 62.
+
+--- Processing Index 63 (Target: 1NpYjtLira16LfGbGwZJ5JbDPh3ai9bjf4) ---
+  Known Private Key (Int): 8993229949524469768
+  Derived Compressed Pubkey: 0365ec2994b8cc0a20d40dd69edfe55ca32a54bcbbaa6b0ddcff36049301a54579
+  Derived Address: 16ALdvrQe1wm6mqJrKJLosHwDMxVQiUbBb
+  MISMATCH: Derived address does not match expected address for Index 63.
+
+--- Processing Index 64 (Target: 16jY7qLJnxb7CHZyqBP8qca9d51gAjyXQN) ---
+  Known Private Key (Int): 17799667357578236628
+  Derived Compressed Pubkey: 03100611c54dfef604163b8358f7b7fac13ce478e02cb224ae16d45526b25d9d4d
+  Derived Address: 1C4ELZdyzNKfiuviFXDYokrX3wUJuAUUE6
+  MISMATCH: Derived address does not match expected address for Index 64.
+
+--- Processing Index 65 (Target: 18ZMbwUFLMHoZBbfpCjUJQTCMCbktshgpe) ---
+  Known Private Key (Int): 12121633238354651239
+  Derived Compressed Pubkey: 02e7daa14feea7f3e6b77aa3ff75989ac171d9b3f7a263e70eab001849f2f18544
+  Derived Address: 1EjBsK4MaoDTxEJBYvXw4AwJ17cRPvkcAY
+  MISMATCH: Derived address does not match expected address for Index 65.
+
+--- Processing Index 66 (Target: 13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so) ---
+  Known Private Key (Int): 2896638596896646126
+  Derived Compressed Pubkey: 03ced0a81193c71f04034a72645fc5c200fd3906755f115c8e0a4e74d11c40e17d
+  Derived Address: 1MMTGLwGuYk8nUccuNLELZqhyTvYzbzF1o
+  MISMATCH: Derived address does not match expected address for Index 66.
+
+Verification complete.
+Processed 66 keys from KNOWN_SOLUTIONS.
+Found 0 derived addresses matching the corresponding entry in EXPECTED_ADDRESSES.
+No positive balances found on any matching addresses.

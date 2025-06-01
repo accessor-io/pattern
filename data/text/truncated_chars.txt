@@ -1,0 +1,2 @@
+Index | Truncated Char | Original Hex
+------|----------------|-------------

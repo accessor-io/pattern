@@ -1,0 +1,13 @@
+Matching address found: 1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC
+
+==================================================
+FINAL RESULTS
+==================================================
+
+Total matching addresses found: 1
+Total rows checked: 1,609,443
+Processing time: 5.95 seconds
+
+Complete list of matching addresses:
+--------------------------------------------------
+1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC

@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+import re
+import hashlib
+from bitcoin import privkey_to_pubkey, pubkey_to_address
+from decode_ascii_keys import decode_hex_key
+from gpt_version import generate_fixed_sequence
+from aiohttp.http_parser import HttpRequestParser, RawRequestMessage
+from multidict import CIMultiDictProxy
+from yarl import URL
+
+# Generate mathematical sequence (160 terms)
+def generate_sequence(n_terms=160):
+    return generate_fixed_sequence(n_terms)
+
+# Validate Bitcoin address from hex key
+def hex_to_bitcoin_address(hex_key):
+    private_key = bytes.fromhex(hex_key.zfill(64))
+    public_key = privkey_to_pubkey(private_key)
+    address = pubkey_to_address(public_key)
+    return address
+
+# HTTP/WebSocket parsing simulation
+def parse_http_websocket(data):
+    try:
+        parser = HttpRequestParser()
+        lines = [data.encode('utf-8')]
+        message = parser.parse_message(lines)
+        return message
+    except Exception as e:
+        return f"[HTTP_PARSE_ERROR: {str(e)}]"
+
+# Main combinatory solver function
+def combinatory_solver(puzzle_strings):
+    sequence = generate_sequence(len(puzzle_strings))
+    results = []
+
+    for idx, puzzle_str in enumerate(puzzle_strings, 1):
+        hex_solution = hex(sequence[idx - 1])[2:]
+        decoded_ascii = decode_hex_key(hex_solution, validate_ws=True)
+        bitcoin_address = hex_to_bitcoin_address(hex_solution)
+        http_ws_parsed = parse_http_websocket(puzzle_str)
+
+        results.append({
+            'index': idx,
+            'puzzle_str': puzzle_str,
+            'hex_solution': hex_solution,
+            'decoded_ascii': decoded_ascii,
+            'bitcoin_address': bitcoin_address,
+            'http_ws_parsed': str(http_ws_parsed)
+        })
+
+    return results
+
+# Load puzzle strings from file
+def load_puzzle_strings(filename):
+    with open(filename, 'r') as f:
+        return [line.strip() for line in f if line.strip()]
+
+# Output results clearly
+def output_results(results):
+    for res in results:
+        print(f"Index: {res['index']}")
+        print(f"Puzzle String: {res['puzzle_str']}")
+        print(f"Hex Solution: {res['hex_solution']}")
+        print(f"Decoded ASCII: {res['decoded_ascii']}")
+        print(f"Bitcoin Address: {res['bitcoin_address']}")
+        print(f"HTTP/WebSocket Parsed: {res['http_ws_parsed']}")
+        print("-" * 60)
+
+if __name__ == "__main__":
+    puzzle_strings = load_puzzle_strings('ascii_keys.txt')
+    results = combinatory_solver(puzzle_strings)
+    output_results(results)

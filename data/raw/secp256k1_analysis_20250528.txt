@@ -1,0 +1,401 @@
+secp256k1 Curve Analysis
+================================================================================
+
+Potential Curve Points:
+----------------------------------------
+
+String 1:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x1
+Valid private key: True
+
+String 2:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x3
+Valid private key: True
+
+String 3:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x7
+Valid private key: True
+
+String 4:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x8
+Valid private key: True
+
+String 5:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x15
+Valid private key: True
+
+String 6:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x31
+Valid private key: True
+
+String 7:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x4c
+Valid private key: True
+
+String 8:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xe0
+Valid private key: True
+
+String 9:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x1d3
+Valid private key: True
+
+String 10:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x202
+Valid private key: True
+
+String 11:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x483
+Valid private key: True
+
+String 12:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xa7b
+Valid private key: True
+
+String 13:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x1460
+Valid private key: True
+
+String 14:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x2930
+Valid private key: True
+
+String 15:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x68f3
+Valid private key: True
+
+String 16:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xc936
+Valid private key: True
+
+String 17:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x1764f
+Valid private key: True
+
+String 18:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x3080d
+Valid private key: True
+
+String 19:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x5749f
+Valid private key: True
+
+String 20:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xd2c55
+Valid private key: True
+
+String 21:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x1ba534
+Valid private key: True
+
+String 22:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x2de40f
+Valid private key: True
+
+String 23:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x556e52
+Valid private key: True
+
+String 24:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xdc2a04
+Valid private key: True
+
+String 25:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x1fa5ee5
+Valid private key: True
+
+String 26:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x340326e
+Valid private key: True
+
+String 27:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x6ac3875
+Valid private key: True
+
+String 28:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xd916ce8
+Valid private key: True
+
+String 29:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x17e2551e
+Valid private key: True
+
+String 30:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x3d94cd64
+Valid private key: True
+
+String 31:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x7d4fe747
+Valid private key: True
+
+String 32:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xb862a62e
+Valid private key: True
+
+String 33:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x1a96ca8d8
+Valid private key: True
+
+String 34:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x34a65911d
+Valid private key: True
+
+String 35:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x4aed21170
+Valid private key: True
+
+String 36:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x9de820a7c
+Valid private key: True
+
+String 37:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x1757756a93
+Valid private key: True
+
+String 38:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x22382facd0
+Valid private key: True
+
+String 39:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x4b5f8303e9
+Valid private key: True
+
+String 40:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xe9ae4933d6
+Valid private key: True
+
+String 41:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x153869acc5b
+Valid private key: True
+
+String 42:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x2a221c58d8f
+Valid private key: True
+
+String 43:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x6bd3b27c591
+Valid private key: True
+
+String 44:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xe02b35a358f
+Valid private key: True
+
+String 45:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x122fca143c05
+Valid private key: True
+
+String 46:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x2ec18388d544
+Valid private key: True
+
+String 47:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x6cd610b53cba
+Valid private key: True
+
+String 48:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xade6d7ce3b9b
+Valid private key: True
+
+String 49:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x174176b015f4d
+Valid private key: True
+
+String 50:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x22bd43c2e9354
+Valid private key: True
+
+String 51:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x75070a1a009d4
+Valid private key: True
+
+String 52:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xefae164cb9e3c
+Valid private key: True
+
+String 53:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x180788e47e326c
+Valid private key: True
+
+String 54:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x236fb6d5ad1f43
+Valid private key: True
+
+String 55:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x6abe1f9b67e114
+Valid private key: True
+
+String 56:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x9d18b63ac4ffdf
+Valid private key: True
+
+String 57:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x1eb25c90795d61c
+Valid private key: True
+
+String 58:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x2c675b852189a21
+Valid private key: True
+
+String 59:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x7496cbb87cab44f
+Valid private key: True
+
+String 60:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xfc07a1825367bbe
+Valid private key: True
+
+String 61:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x13c96a3742f64906
+Valid private key: True
+
+String 62:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x363d541eb611abee
+Valid private key: True
+
+String 63:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x7cce5efdaccf6808
+Valid private key: True
+
+String 64:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xf7051f27b09112d4
+Valid private key: True
+
+String 65:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x1a838b13505b26867
+Valid private key: True
+
+Field Properties:
+----------------------------------------
+Potential x-coordinates: 40
+Valid field elements: 65
+Potential scalar multipliers: 65

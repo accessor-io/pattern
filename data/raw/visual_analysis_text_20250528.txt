@@ -1,0 +1,51 @@
+Visual Pattern Analysis - Text Summary
+================================================================================
+
+
+Visual Analysis for String 1:
+================================================================================
+
+Quadrant Densities:
+top_left: 0.4219
+top_right: 0.4531
+bottom_left: 0.4844
+bottom_right: 0.4688
+
+Row Patterns:
+Row 0: 10
+Row 1: 10
+Row 2: 10
+Row 3: 10
+Row 4: 10
+Row 5: 10
+Row 6: 10
+Row 7: 10
+Row 8: 10
+Row 9: 10
+Row 10: 10
+Row 11: 10
+Row 12: 10
+Row 13: 10
+Row 14: 10
+Row 15: 10
+
+Column Patterns:
+Column 0: 10
+Column 1: 10
+Column 2: 10
+Column 3: 10
+Column 4: 10
+Column 5: 10
+Column 6: 10
+Column 7: 10
+Column 8: 10
+Column 9: 10
+Column 10: 10
+Column 11: 10
+Column 12: 10
+Column 13: 10
+Column 14: 10
+Column 15: 10
+
+Diagonal Pattern: 1100101111010101
+

@@ -1,0 +1,17 @@
+from typing import Union
+from bitcoinutils.constants import DEFAULT_TX_SEQUENCE
+
+class TxInput:
+    def __init__(
+        self,
+        txid: str,
+        vout: int,
+        script_sig: Script = None,
+        sequence: Union[str, bytes] = DEFAULT_TX_SEQUENCE,
+        witness: Witness = None
+    ):
+        self.txid = txid
+        self.vout = vout
+        self.script_sig = script_sig
+        self.sequence = sequence
+        self.witness = witness 

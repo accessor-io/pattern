@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../bitcoin/Tesi"
+		}
+	],
+	"settings": {
+		"wake.compiler.solc.remappings": [],
+		"liveServer.settings.multiRootWorkspaceName": "pattern"
+	}
+}

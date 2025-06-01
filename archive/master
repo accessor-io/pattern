@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 37576c82d198c20fca65b14da74138ae6153a446 ENS Activity Tracker <ens.tracker@example.com> 1748531700 -0700	clone: from https://github.com/JeanLucPons/Kangaroo.git
+37576c82d198c20fca65b14da74138ae6153a446 061731c76acc28f419cf03ef0e2de17ca1000475 ENS Activity Tracker <ens.tracker@example.com> 1748574758 -0700	commit: Fix compilation on macOS

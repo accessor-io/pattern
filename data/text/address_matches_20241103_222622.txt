@@ -1,0 +1,1922 @@
+Search Results for address: 1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC
+================================================================================
+
+Total Matches Found: 239
+Total BTC: 3163.16172814
+Total Rows Checked: 1,609,443
+Processing Time: 5.61 seconds
+
+Detailed Matches:
+--------------------------------------------------------------------------------
+
+Match #1:
+Row Number: 545
+Amount: 2.43900984 BTC
+Transaction: dfcc8445e72a164d4646d0dbcf48e88edc97d1ec0e98293438f64f0886af2a87
+Time: 2024-10-31 00:08:49
+Status: N/A
+----------------------------------------
+
+Match #2:
+Row Number: 560
+Amount: 10.00913757 BTC
+Transaction: 847131a53c4775159bd80b98d4b0783ca93a8f3ba1eb5477b47107b3cced691a
+Time: 2024-10-31 00:08:49
+Status: N/A
+----------------------------------------
+
+Match #3:
+Row Number: 570
+Amount: 2.99564350 BTC
+Transaction: df4856a7a3c43bc6e0f1b0e95b1b49d43bfe2b289ca151489e8f9d9d55672a58
+Time: 2024-10-31 00:08:49
+Status: N/A
+----------------------------------------
+
+Match #4:
+Row Number: 13,917
+Amount: 1.88949989 BTC
+Transaction: b93066d4fbfefc36b28b7c20927208ead4f8c52cd67e352552569a1644748d81
+Time: 2024-10-31 00:15:27
+Status: N/A
+----------------------------------------
+
+Match #5:
+Row Number: 33,540
+Amount: 1.86452875 BTC
+Transaction: 0fabb3e1ae6811951c22f675f61e2f24c4589c2b2609fa04d7369b2605ad1919
+Time: 2024-10-31 00:16:32
+Status: N/A
+----------------------------------------
+
+Match #6:
+Row Number: 33,541
+Amount: 1.93979314 BTC
+Transaction: b4e62dd2ec855068832b0ef1be0368e58a03cc146b71592b320addde3928ebac
+Time: 2024-10-31 00:16:32
+Status: N/A
+----------------------------------------
+
+Match #7:
+Row Number: 33,542
+Amount: 1.75585516 BTC
+Transaction: ae2ef35295b31902d2b7e51d9f8b2be78f4f4f07fb5379232fa690769723fef2
+Time: 2024-10-31 00:16:32
+Status: N/A
+----------------------------------------
+
+Match #8:
+Row Number: 33,543
+Amount: 1.93113955 BTC
+Transaction: 4307fc072abaaf41429dbc68c7c59f42f9b2c953c7c321f92b830151e40ee52f
+Time: 2024-10-31 00:16:32
+Status: N/A
+----------------------------------------
+
+Match #9:
+Row Number: 33,544
+Amount: 1.63002492 BTC
+Transaction: c3a039a9480e5d4023c780ae4f9981329a9754cb1b27bb55b87ac6a30d2c893b
+Time: 2024-10-31 00:16:32
+Status: N/A
+----------------------------------------
+
+Match #10:
+Row Number: 33,545
+Amount: 1.92303041 BTC
+Transaction: 1579d2c4857b1feb9fb493dd0cb4dbb50b62773de94ffe563e52c2d20471ea3c
+Time: 2024-10-31 00:16:32
+Status: N/A
+----------------------------------------
+
+Match #11:
+Row Number: 41,292
+Amount: 1.93146852 BTC
+Transaction: dfeefff579c154c0685a316a53c2c7795f05d166282411755743084e6aa7e539
+Time: 2024-10-31 00:20:33
+Status: N/A
+----------------------------------------
+
+Match #12:
+Row Number: 44,018
+Amount: 32.88450681 BTC
+Transaction: 8491ade9f7f98b088f286a3b453c20aaf01ae98b62a94ec45081f4a7614f98ac
+Time: 2024-10-31 00:26:13
+Status: N/A
+----------------------------------------
+
+Match #13:
+Row Number: 93,217
+Amount: 1.46377253 BTC
+Transaction: 1f61d07565017ba047841389a3546e862510c96979dba9b68987f61feafe1cb6
+Time: 2024-10-31 00:34:24
+Status: N/A
+----------------------------------------
+
+Match #14:
+Row Number: 98,644
+Amount: 0.00000546 BTC
+Transaction: d6c534f19c5e872d6f215e5424a86cce5bd9d07f96d301ac33378bc3ea4ec015
+Time: 2024-10-31 00:38:52
+Status: N/A
+----------------------------------------
+
+Match #15:
+Row Number: 98,691
+Amount: 32.17847618 BTC
+Transaction: 0bf9895aaeabc8b72921279c258b0a8ae1e1683995dcdfd24ca53c302e2a1bed
+Time: 2024-10-31 00:38:52
+Status: N/A
+----------------------------------------
+
+Match #16:
+Row Number: 114,228
+Amount: 1.82499785 BTC
+Transaction: 35f0f816fee8996e22dbb48926adc3d95c957e0fe2ddf02d8fbdf84063f0098e
+Time: 2024-10-31 00:43:44
+Status: N/A
+----------------------------------------
+
+Match #17:
+Row Number: 122,864
+Amount: 20.45783112 BTC
+Transaction: 9770e70d10cf5e2bf88ef876015937b77a201433939871365800f6ae673fe3aa
+Time: 2024-10-31 00:51:17
+Status: N/A
+----------------------------------------
+
+Match #18:
+Row Number: 132,669
+Amount: 9.96856969 BTC
+Transaction: a2a3cd48e983c22ec4dd0ff11034a14db18e5de65d66377e2d2754834e9d645f
+Time: 2024-10-31 01:34:03
+Status: N/A
+----------------------------------------
+
+Match #19:
+Row Number: 132,737
+Amount: 4.44402607 BTC
+Transaction: 125ad239a8410e71c1e37f567befae05dfbfe8f3d6fef8ef5e86867871ce8954
+Time: 2024-10-31 01:34:03
+Status: N/A
+----------------------------------------
+
+Match #20:
+Row Number: 132,790
+Amount: 31.99393525 BTC
+Transaction: bbdc2520502fc43e8f19d3dbf0e87e9d4d729d34963776f92277eb8a2c349bce
+Time: 2024-10-31 01:34:03
+Status: N/A
+----------------------------------------
+
+Match #21:
+Row Number: 132,849
+Amount: 6.36524591 BTC
+Transaction: 745d28ed144d3528d8cc8363b3e72afaf4cea3556af4990c358cdca131e41336
+Time: 2024-10-31 01:34:03
+Status: N/A
+----------------------------------------
+
+Match #22:
+Row Number: 156,079
+Amount: 0.63556486 BTC
+Transaction: 9009c9213666debfa5011a8731751c0ea8f4d6010b6510eba73b8b1025e7e3f4
+Time: 2024-10-31 01:41:52
+Status: N/A
+----------------------------------------
+
+Match #23:
+Row Number: 166,993
+Amount: 28.44742262 BTC
+Transaction: e1620ef9ee5e56e265120c35490df5bc0ffe776a4309020ccdc14e66af4d5ae9
+Time: 2024-10-31 02:11:23
+Status: N/A
+----------------------------------------
+
+Match #24:
+Row Number: 167,153
+Amount: 30.26242330 BTC
+Transaction: 5ce9f8eb37ce6a6c616284f00035393a6984f3569eda2d24f75b120464f37e55
+Time: 2024-10-31 02:11:23
+Status: N/A
+----------------------------------------
+
+Match #25:
+Row Number: 178,919
+Amount: 19.64738023 BTC
+Transaction: 06320b71475e7dda602671d425715d06aedaee2298cd26b5a5544733742660da
+Time: 2024-10-31 02:14:31
+Status: N/A
+----------------------------------------
+
+Match #26:
+Row Number: 320,105
+Amount: 24.14201622 BTC
+Transaction: 5faceb253dcd115e97218ebd108fa607450f6f7ebaeac0659ae269ba2cef0297
+Time: 2024-10-31 03:16:13
+Status: N/A
+----------------------------------------
+
+Match #27:
+Row Number: 320,591
+Amount: 26.77246058 BTC
+Transaction: 8582b9060279aaa592ea3bb88bd8ce1b213ae88de184d76543d1ed258350a52b
+Time: 2024-10-31 03:16:13
+Status: N/A
+----------------------------------------
+
+Match #28:
+Row Number: 334,800
+Amount: 13.05241138 BTC
+Transaction: 7735b3df6758c8089851399e5130f81413064ea028a2ee876d9237267a8be640
+Time: 2024-10-31 03:18:25
+Status: N/A
+----------------------------------------
+
+Match #29:
+Row Number: 346,001
+Amount: 18.16910034 BTC
+Transaction: 835b384f247dcfd4bee08b2d55780777b5fdfe9b88bc49d5fc49a2dbdb728cc0
+Time: 2024-10-31 03:39:09
+Status: N/A
+----------------------------------------
+
+Match #30:
+Row Number: 346,182
+Amount: 9.50259592 BTC
+Transaction: 4c9ddd74ebf10a58515968f67ed0a67410a7db6d0d4798122992d0efb9711504
+Time: 2024-10-31 03:39:09
+Status: N/A
+----------------------------------------
+
+Match #31:
+Row Number: 353,058
+Amount: 29.35497535 BTC
+Transaction: 24af137d36540651ac47b9edca8ebc6daecb28d69e7492697fbaecaee7a42943
+Time: 2024-10-31 03:39:09
+Status: N/A
+----------------------------------------
+
+Match #32:
+Row Number: 353,198
+Amount: 27.80666177 BTC
+Transaction: 7647acf5ea954576992690a04418c8f64eab9421f465bcd96a964c0419a01cac
+Time: 2024-10-31 03:39:09
+Status: N/A
+----------------------------------------
+
+Match #33:
+Row Number: 359,786
+Amount: 28.23059205 BTC
+Transaction: 844cb76ee2ab83ac5a50f1404b04f866ad71a9152cf967e0431cd576304dcb45
+Time: 2024-10-31 03:42:58
+Status: N/A
+----------------------------------------
+
+Match #34:
+Row Number: 386,679
+Amount: 28.72295354 BTC
+Transaction: 40cc6e497bd2ee9d6363ce4079ac966025df74b16c54e0cacf89b25ef1e43d37
+Time: 2024-10-31 04:03:27
+Status: N/A
+----------------------------------------
+
+Match #35:
+Row Number: 391,979
+Amount: 1.82553903 BTC
+Transaction: 73356c2afb285a26668b6ac3fc124f2617d1c0db0244ed9b8953b0a482f6f80f
+Time: 2024-10-31 04:03:27
+Status: N/A
+----------------------------------------
+
+Match #36:
+Row Number: 395,719
+Amount: 25.57805266 BTC
+Transaction: 01e7c95f1ecda317ffc1c07e919c57f90d06796a615dd8ac76c6cc832c121990
+Time: 2024-10-31 04:12:52
+Status: N/A
+----------------------------------------
+
+Match #37:
+Row Number: 398,880
+Amount: 2.12854598 BTC
+Transaction: 24ac58fd22e147792b69021043decbd295b25825b46e58d8b30ddc05c2940170
+Time: 2024-10-31 04:12:52
+Status: N/A
+----------------------------------------
+
+Match #38:
+Row Number: 398,881
+Amount: 2.12123689 BTC
+Transaction: daf8b439eb5f2e9a6a7e6252514f6ff05e354042d97dc9508601cd8e1112b846
+Time: 2024-10-31 04:12:52
+Status: N/A
+----------------------------------------
+
+Match #39:
+Row Number: 420,427
+Amount: 19.23115061 BTC
+Transaction: bcffbc3ee104edda2cd27c07b33708f9ef45a879db861f2987bc12758971eb32
+Time: 2024-10-31 04:38:20
+Status: N/A
+----------------------------------------
+
+Match #40:
+Row Number: 420,934
+Amount: 27.08966817 BTC
+Transaction: e87b08da3a5e9834c78cc0e76699d8c5600005e4b50393e1a3b883b50116fc68
+Time: 2024-10-31 04:38:20
+Status: N/A
+----------------------------------------
+
+Match #41:
+Row Number: 423,870
+Amount: 2.14624793 BTC
+Transaction: 1761a91a2ffc3979005e5da595838238b359b9086b743d415f4206b70c79f969
+Time: 2024-10-31 04:38:20
+Status: N/A
+----------------------------------------
+
+Match #42:
+Row Number: 423,871
+Amount: 2.00861076 BTC
+Transaction: b520b236f9643c14f84b7364774ca65db024a2bb7077271e2f9f3ab7a5d88be1
+Time: 2024-10-31 04:38:20
+Status: N/A
+----------------------------------------
+
+Match #43:
+Row Number: 423,872
+Amount: 1.89944612 BTC
+Transaction: 2e058818ecd7591270c757c15c6eb52bc7d9472f74f7416d6d05a099c59197a9
+Time: 2024-10-31 04:38:20
+Status: N/A
+----------------------------------------
+
+Match #44:
+Row Number: 430,335
+Amount: 25.52237004 BTC
+Transaction: 974e5ffbbf06f46aa82748642b1c5429e1ba7a0f0de2ed1e53194e075c029512
+Time: 2024-10-31 05:07:48
+Status: N/A
+----------------------------------------
+
+Match #45:
+Row Number: 430,759
+Amount: 26.74747258 BTC
+Transaction: 5d80fbd455b362157f93b90b09491d948a1e501383143690e50b729ed7c6001e
+Time: 2024-10-31 05:07:48
+Status: N/A
+----------------------------------------
+
+Match #46:
+Row Number: 430,770
+Amount: 23.06979127 BTC
+Transaction: eb43f85503394099ed96ed5f48d01d1d1dbd33e3d32d6e328defd063c53a4163
+Time: 2024-10-31 05:07:48
+Status: N/A
+----------------------------------------
+
+Match #47:
+Row Number: 434,488
+Amount: 2.15882767 BTC
+Transaction: 44a68c64f73dc82bafe4de2e480d55ba6d6d0d266ce3fe223330755d8701ca41
+Time: 2024-10-31 05:07:48
+Status: N/A
+----------------------------------------
+
+Match #48:
+Row Number: 434,489
+Amount: 2.03739449 BTC
+Transaction: 08d800e317f9da115931dfd9d294d467aa8fd5232adbce4be9e6b78dd1cab8d3
+Time: 2024-10-31 05:07:48
+Status: N/A
+----------------------------------------
+
+Match #49:
+Row Number: 442,034
+Amount: 2.16710940 BTC
+Transaction: 9c9fc908ad18367e809abf6c68509dcd794717afb4c807b4880e9a86db1417b9
+Time: 2024-10-31 05:14:20
+Status: N/A
+----------------------------------------
+
+Match #50:
+Row Number: 450,702
+Amount: 0.00000546 BTC
+Transaction: cdc9fa63ab7152fe4b40fb9f7eef2badccd33c998152d9ce5b8be1253f6f5e56
+Time: 2024-10-31 05:19:29
+Status: N/A
+----------------------------------------
+
+Match #51:
+Row Number: 450,794
+Amount: 19.71346431 BTC
+Transaction: 53f214e20c989bbd232016279e8800dd6a73660b797b99094c6c81b882e78149
+Time: 2024-10-31 05:19:29
+Status: N/A
+----------------------------------------
+
+Match #52:
+Row Number: 454,030
+Amount: 1.97000929 BTC
+Transaction: 23ada01d3c119126a1c83389f351579c2044c8f9f1e37122349f8142e65fd2d5
+Time: 2024-10-31 05:19:29
+Status: N/A
+----------------------------------------
+
+Match #53:
+Row Number: 454,034
+Amount: 2.10995652 BTC
+Transaction: 6a14d09ecbf79748fe01a09f408d1bf47dad2bdc08d6094f7225ac067ffda8c1
+Time: 2024-10-31 05:19:29
+Status: N/A
+----------------------------------------
+
+Match #54:
+Row Number: 454,035
+Amount: 2.10259452 BTC
+Transaction: af771afc10802e7a9f8c09b2c00db915da67ad23a4c815cb421d8e290f097907
+Time: 2024-10-31 05:19:29
+Status: N/A
+----------------------------------------
+
+Match #55:
+Row Number: 460,748
+Amount: 2.01241918 BTC
+Transaction: 84dcfc486a9876ef0109a7d7ad9c39ab33e7f74329e473893f7c1af582f7260a
+Time: 2024-10-31 05:19:29
+Status: N/A
+----------------------------------------
+
+Match #56:
+Row Number: 461,406
+Amount: 1.46967562 BTC
+Transaction: 0a2a3ea1a45de1c96435d048c2c335b2c2268c12cc339865c3fc58f61875dc51
+Time: 2024-10-31 05:22:30
+Status: N/A
+----------------------------------------
+
+Match #57:
+Row Number: 463,020
+Amount: 2.02821412 BTC
+Transaction: 5c64a9f484d027dd286a4153a91dd01785927d8cce420b698366d44253a6c68f
+Time: 2024-10-31 05:22:30
+Status: N/A
+----------------------------------------
+
+Match #58:
+Row Number: 463,021
+Amount: 2.09073220 BTC
+Transaction: 7a267006350616812289f5e5ae8a1827a6e754b12ed2902e5035e51c9e0a5e94
+Time: 2024-10-31 05:22:30
+Status: N/A
+----------------------------------------
+
+Match #59:
+Row Number: 468,842
+Amount: 26.90951730 BTC
+Transaction: 2d0ad4fd5fbbdf313c2e67f135b7028b4d1bd9d711e2a79f49db63aa2c9db12b
+Time: 2024-10-31 05:30:23
+Status: N/A
+----------------------------------------
+
+Match #60:
+Row Number: 476,186
+Amount: 1.78497850 BTC
+Transaction: ff4a6f0c06a4121c8fec0093c55127e69db7647758d2b2a973eb6c1646d4f85b
+Time: 2024-10-31 05:30:23
+Status: N/A
+----------------------------------------
+
+Match #61:
+Row Number: 483,581
+Amount: 2.06346458 BTC
+Transaction: c8bbed2cecd821807efe2d95bc193901520e585e17341bea20258246a17ab31a
+Time: 2024-10-31 05:38:22
+Status: N/A
+----------------------------------------
+
+Match #62:
+Row Number: 485,195
+Amount: 0.00000546 BTC
+Transaction: f666e761387bc1710421ab609f99dd31b7fadeaecd202b606224fcfb9db55c20
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #63:
+Row Number: 485,341
+Amount: 26.57516206 BTC
+Transaction: 470bf35f61b06cadc485e1ff2271614575a37788332d3bf291e383dd3e669ab9
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #64:
+Row Number: 486,356
+Amount: 1.74347100 BTC
+Transaction: 86618e0ddf1de9df05108acf36008390904ced35dff85facc6eddf2a0d4ebe6c
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #65:
+Row Number: 491,121
+Amount: 1.89425188 BTC
+Transaction: 4d275728b778767ee6a8c2fa493f402f92225d7e5c24c62b7d3a78fba539db40
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #66:
+Row Number: 491,123
+Amount: 1.99141339 BTC
+Transaction: 542b19d47af3c937a7de4bfc5f792cf1e5be4e123e41f9361a1d1b517501f21d
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #67:
+Row Number: 491,124
+Amount: 2.03937820 BTC
+Transaction: eca2775c370fa45d08a5da7c497edbb9fb58a422327cb91b3d32f3659a1a7d52
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #68:
+Row Number: 491,140
+Amount: 1.98140734 BTC
+Transaction: 65a5ea78e9b48011b2f946463d633d900e0015eb9bcb9d40c1c3529e55caf167
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #69:
+Row Number: 491,141
+Amount: 2.04837844 BTC
+Transaction: e91bb488113c8a14c2b6b0f9a65973b56e390ddfbfe5e38d87176bd403681d64
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #70:
+Row Number: 491,142
+Amount: 1.65123091 BTC
+Transaction: 99d3848aa2cffa682816bffd7a4d743c518ddac136d3502d8bb9fd9646f0df4d
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #71:
+Row Number: 491,163
+Amount: 2.01263051 BTC
+Transaction: afde63967cae6183d1ad5afb3eb2e0784aecb5e2965a2056e538d7953b6c7909
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #72:
+Row Number: 491,164
+Amount: 1.93662557 BTC
+Transaction: 9920ed68bbcb18c593334f26cceb24346aabb7e1072b0e9fbabce2b12dbe98d9
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #73:
+Row Number: 491,165
+Amount: 2.02428517 BTC
+Transaction: 9b76c9f0a19cb8dcb4eb233264247695a51e22eadf89a5ae54e72d975979ec1e
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #74:
+Row Number: 491,166
+Amount: 1.87982351 BTC
+Transaction: f91f35c9e76638fa5d4a3522ce8cc5a398435c4546604eda8e4f013044187f40
+Time: 2024-10-31 05:47:33
+Status: N/A
+----------------------------------------
+
+Match #75:
+Row Number: 492,156
+Amount: 2.00159901 BTC
+Transaction: 2e06dc850fdee5f220cdf996718adee4728d1c83a09f159e8f31f68d1b8e14a2
+Time: 2024-10-31 05:49:37
+Status: N/A
+----------------------------------------
+
+Match #76:
+Row Number: 498,214
+Amount: 25.69730279 BTC
+Transaction: 35f075cb042467734d758bfae39ff0c1d017fd2e629f4b73ed1c0686c7c42789
+Time: 2024-10-31 05:52:04
+Status: N/A
+----------------------------------------
+
+Match #77:
+Row Number: 498,516
+Amount: 2.12077226 BTC
+Transaction: 0e18b3001dec26a73e06db2b8f8a8a1a8dddec214eb435fa39828ad1d9a41c30
+Time: 2024-10-31 05:52:04
+Status: N/A
+----------------------------------------
+
+Match #78:
+Row Number: 519,586
+Amount: 25.25972650 BTC
+Transaction: 5746eda152dfd8d31c8d4f9569a8aa75fe3178f677de7abf36cac6a12306224f
+Time: 2024-10-31 06:20:27
+Status: N/A
+----------------------------------------
+
+Match #79:
+Row Number: 519,616
+Amount: 25.14136545 BTC
+Transaction: 0fcbc07b92ba82044139efbfaeab2d07c0341c7a7455cc85cff7a6e114ab01a7
+Time: 2024-10-31 06:20:27
+Status: N/A
+----------------------------------------
+
+Match #80:
+Row Number: 522,873
+Amount: 1.95514590 BTC
+Transaction: eee0ec9a51b9a0485c1786eb9253d633e5305de54c0c77463e1baf73a09895c9
+Time: 2024-10-31 06:20:27
+Status: N/A
+----------------------------------------
+
+Match #81:
+Row Number: 522,874
+Amount: 2.19656424 BTC
+Transaction: c5feec3e069cbe198918cdcf75bc09c076e50bdab1279234afe6696079cdbb6a
+Time: 2024-10-31 06:20:27
+Status: N/A
+----------------------------------------
+
+Match #82:
+Row Number: 527,551
+Amount: 22.82864835 BTC
+Transaction: 8f6306d58f3ca2eb80cd7e2370f3f6fb46b3322f513a07f9b4550907efa8aab6
+Time: 2024-10-31 06:42:02
+Status: N/A
+----------------------------------------
+
+Match #83:
+Row Number: 528,197
+Amount: 25.60203625 BTC
+Transaction: dddca0c5854c1ecdcbd601c52c6e05b594223b33cd607ff5e74616d275b0bb3d
+Time: 2024-10-31 06:42:02
+Status: N/A
+----------------------------------------
+
+Match #84:
+Row Number: 530,173
+Amount: 2.20650549 BTC
+Transaction: 9bc0afd00036bf64bc8f4262af7866d64ffdebc641a6700260cd607b4210a888
+Time: 2024-10-31 06:42:02
+Status: N/A
+----------------------------------------
+
+Match #85:
+Row Number: 530,368
+Amount: 2.18505905 BTC
+Transaction: adbac036cb9ad9ec4232db88d5ce0f088a2eb8bb62cb2644eacaed5d778489de
+Time: 2024-10-31 06:42:02
+Status: N/A
+----------------------------------------
+
+Match #86:
+Row Number: 544,844
+Amount: 2.22640765 BTC
+Transaction: 5e273d3f76d1c56a1b15f13991680a54cac8ce9bce5889680fd0cc3db51b6970
+Time: 2024-10-31 06:48:52
+Status: N/A
+----------------------------------------
+
+Match #87:
+Row Number: 552,535
+Amount: 0.00000546 BTC
+Transaction: 707a58817a280534125d4706571394d0620ba549aa98209810eb45cee3ee6735
+Time: 2024-10-31 07:04:18
+Status: N/A
+----------------------------------------
+
+Match #88:
+Row Number: 552,827
+Amount: 25.23764728 BTC
+Transaction: b52cb771e44057fd2ff499478d865cf467feccac54f1b6b7f6f44cfb76a4c561
+Time: 2024-10-31 07:04:18
+Status: N/A
+----------------------------------------
+
+Match #89:
+Row Number: 553,290
+Amount: 14.44876144 BTC
+Transaction: 213e70d474a4001ab433061d4b543be710173ef45400633f3e14a7ffbac8653a
+Time: 2024-10-31 07:04:18
+Status: N/A
+----------------------------------------
+
+Match #90:
+Row Number: 555,756
+Amount: 1.99123763 BTC
+Transaction: a53717fc7eff87451b6c0ffc17ff8752d99e1b6c425fc2f9150603afe8202489
+Time: 2024-10-31 07:04:18
+Status: N/A
+----------------------------------------
+
+Match #91:
+Row Number: 563,762
+Amount: 2.00600627 BTC
+Transaction: 1695d0f6f2352970211ecaa807f5be3ffdce74ea6d86a87ac55eecdbce4e7888
+Time: 2024-10-31 07:07:10
+Status: N/A
+----------------------------------------
+
+Match #92:
+Row Number: 569,391
+Amount: 24.76763477 BTC
+Transaction: 0b2e293e57142f87d4806dbbcf0cc1b2f3d9975d2361e9a22462ea93e3a00688
+Time: 2024-10-31 07:23:06
+Status: N/A
+----------------------------------------
+
+Match #93:
+Row Number: 569,437
+Amount: 22.48452654 BTC
+Transaction: 47c441edcd358cbb9454b1512ec6e12068999d7f03a63cadd86bfcf156e67039
+Time: 2024-10-31 07:23:06
+Status: N/A
+----------------------------------------
+
+Match #94:
+Row Number: 572,654
+Amount: 2.14557837 BTC
+Transaction: e524bb7858c8041cc91329f0456dac38cdacc99aa31a721fff7a020fd4db00c7
+Time: 2024-10-31 07:23:06
+Status: N/A
+----------------------------------------
+
+Match #95:
+Row Number: 572,656
+Amount: 2.23335310 BTC
+Transaction: 43ae2ff5af59e1e74301a69a595076607dfa839d21d7266164a5770fe7c34236
+Time: 2024-10-31 07:23:06
+Status: N/A
+----------------------------------------
+
+Match #96:
+Row Number: 578,613
+Amount: 2.27026279 BTC
+Transaction: 123d45d1fa6d2ceb729f904f1c81b16d5ace50418670aebaf164cb487ad72480
+Time: 2024-10-31 07:32:02
+Status: N/A
+----------------------------------------
+
+Match #97:
+Row Number: 584,359
+Amount: 0.00000546 BTC
+Transaction: 1fb13cbf314172a2e5efd073b75ced7fc75c449f7e431d4a34a4efd5211ece04
+Time: 2024-10-31 07:40:30
+Status: N/A
+----------------------------------------
+
+Match #98:
+Row Number: 584,770
+Amount: 24.87210072 BTC
+Transaction: 84cc483c2c363404ed944b2813d0c0e9f674345614f51ee71929d81b063b575a
+Time: 2024-10-31 07:40:30
+Status: N/A
+----------------------------------------
+
+Match #99:
+Row Number: 585,957
+Amount: 2.08911248 BTC
+Transaction: 4ab476ee5f16dfa07e9c4ff992a4bc8c3ffd25cdae90eaf330e5357bc2d89ff8
+Time: 2024-10-31 07:40:30
+Status: N/A
+----------------------------------------
+
+Match #100:
+Row Number: 591,880
+Amount: 21.86218305 BTC
+Transaction: 9cb6d98b0951d609d3d6df3786cbf6e97491e91a4954ac3fc84e1c6db8364b6a
+Time: 2024-10-31 07:45:13
+Status: N/A
+----------------------------------------
+
+Match #101:
+Row Number: 592,444
+Amount: 2.22654476 BTC
+Transaction: cfa1c25253e7569a1807dc99f57af959a0131c1080cbb24f0c91a899b436afcd
+Time: 2024-10-31 07:45:13
+Status: N/A
+----------------------------------------
+
+Match #102:
+Row Number: 595,399
+Amount: 19.64186295 BTC
+Transaction: cf73f5272bf7c7d8145efe21815cc9b03d5eb18e149331a385f4e0873b55005e
+Time: 2024-10-31 08:06:41
+Status: N/A
+----------------------------------------
+
+Match #103:
+Row Number: 595,425
+Amount: 21.15986684 BTC
+Transaction: 60606b7a9428691f54140e7a0f667694d63567fd1bfe0eecc672a1abc5c5a7d9
+Time: 2024-10-31 08:06:41
+Status: N/A
+----------------------------------------
+
+Match #104:
+Row Number: 598,957
+Amount: 2.06836735 BTC
+Transaction: 0cd583864461301d358c130d66488aa93660acac672faf03a394e5bbd79b8fe9
+Time: 2024-10-31 08:06:41
+Status: N/A
+----------------------------------------
+
+Match #105:
+Row Number: 598,958
+Amount: 2.30088085 BTC
+Transaction: ba3c8fd827a3d2d89f68b2bd5d86cbfb57d1abe47b9a29db68eec8a44917530a
+Time: 2024-10-31 08:06:41
+Status: N/A
+----------------------------------------
+
+Match #106:
+Row Number: 607,970
+Amount: 24.70938059 BTC
+Transaction: f8b6c0620cb19f622e998dca9e60d6b11acaa19e1ec04ad11942a402c4ec1a31
+Time: 2024-10-31 08:17:38
+Status: N/A
+----------------------------------------
+
+Match #107:
+Row Number: 609,623
+Amount: 2.12090965 BTC
+Transaction: 0687d40386c24b726f7f5e756db8251d9aed4d2483b1132a1f9553767f1c0027
+Time: 2024-10-31 08:17:38
+Status: N/A
+----------------------------------------
+
+Match #108:
+Row Number: 621,072
+Amount: 21.77298772 BTC
+Transaction: a6dc8ff6c91f6027edef175cd764f1a404f4f37da0b06436c470d43b6634feb7
+Time: 2024-10-31 08:29:54
+Status: N/A
+----------------------------------------
+
+Match #109:
+Row Number: 622,005
+Amount: 1.91530868 BTC
+Transaction: 5e41858baab09bdffebc32faa67219da8d0fb7df3d418ec7057a78c9812150bf
+Time: 2024-10-31 08:29:54
+Status: N/A
+----------------------------------------
+
+Match #110:
+Row Number: 627,344
+Amount: 2.27783928 BTC
+Transaction: eabbf2ef69076a60026da84b167fe9689f3f4a71d1548227d502646c5f9d4e4f
+Time: 2024-10-31 08:36:13
+Status: N/A
+----------------------------------------
+
+Match #111:
+Row Number: 645,357
+Amount: 24.62152438 BTC
+Transaction: 8c5f1ba952a2b078fdeabd7cc44deb3f00973c4abcc62cc3bd035b598a029eaa
+Time: 2024-10-31 08:42:59
+Status: N/A
+----------------------------------------
+
+Match #112:
+Row Number: 646,251
+Amount: 2.12702863 BTC
+Transaction: 1b9275ed1f5247362e37cba3a9c94a7ca61ed3bbec806e5017dd72d2f4fb7d73
+Time: 2024-10-31 08:42:59
+Status: N/A
+----------------------------------------
+
+Match #113:
+Row Number: 658,165
+Amount: 6.00883458 BTC
+Transaction: a71ce726eecf57701dff66a37d8901ae8a15b6127400354734870530533dbd54
+Time: 2024-10-31 09:01:11
+Status: N/A
+----------------------------------------
+
+Match #114:
+Row Number: 658,521
+Amount: 20.38071546 BTC
+Transaction: df6688c007e6e58dd64abcb643547634efdd3e41fb9afa13a336334dbe649bfd
+Time: 2024-10-31 09:01:11
+Status: N/A
+----------------------------------------
+
+Match #115:
+Row Number: 663,875
+Amount: 2.25436625 BTC
+Transaction: 55045ca11adadfd11a8b8dee2ad2b7a7b9274f91039f4fb1737b1f071587ee00
+Time: 2024-10-31 09:01:11
+Status: N/A
+----------------------------------------
+
+Match #116:
+Row Number: 663,876
+Amount: 2.23418352 BTC
+Transaction: 8b42d385ab4664ef81f9350744fc02e3e199dc7b077eef39e15493bdff4ab5bf
+Time: 2024-10-31 09:01:11
+Status: N/A
+----------------------------------------
+
+Match #117:
+Row Number: 691,135
+Amount: 1.93191732 BTC
+Transaction: 7e0341e1a548df6799560da5d422f00166f4a864e5d9ac51e9b705c0446c5463
+Time: 2024-10-31 09:11:59
+Status: N/A
+----------------------------------------
+
+Match #118:
+Row Number: 699,073
+Amount: 18.54872302 BTC
+Transaction: ebf830e8d56fc761b09fea2ddef9f507cb0954e7ca8ca2c6b0edc48e1118ed4d
+Time: 2024-10-31 09:14:58
+Status: N/A
+----------------------------------------
+
+Match #119:
+Row Number: 714,752
+Amount: 0.00000546 BTC
+Transaction: 67a300188478054bfb28f6d827963c8e9259d6f151efc268e5da66c20338f710
+Time: 2024-10-31 09:44:10
+Status: N/A
+----------------------------------------
+
+Match #120:
+Row Number: 715,070
+Amount: 19.61740526 BTC
+Transaction: b08316959c7c1087ed79305cbe09219e47074ec8bca269cac4304476decbb46d
+Time: 2024-10-31 09:44:10
+Status: N/A
+----------------------------------------
+
+Match #121:
+Row Number: 715,121
+Amount: 14.25412442 BTC
+Transaction: 72c38847d3735cd74b993e746f852282ef93ba0b85edd8207a5f7cf1fe77de14
+Time: 2024-10-31 09:44:10
+Status: N/A
+----------------------------------------
+
+Match #122:
+Row Number: 725,775
+Amount: 17.46010767 BTC
+Transaction: fc52ae97822167c7c7fb29297549ddb812eb8d6bdb635fe9ec72a112359a336c
+Time: 2024-10-31 10:08:35
+Status: N/A
+----------------------------------------
+
+Match #123:
+Row Number: 725,816
+Amount: 17.33549733 BTC
+Transaction: 40fc6bffd3b0f101434cad048e30ebeb539cfd7dd22879407cc9bd15dc71d89a
+Time: 2024-10-31 10:08:35
+Status: N/A
+----------------------------------------
+
+Match #124:
+Row Number: 725,847
+Amount: 11.92118691 BTC
+Transaction: f14ef403c31d749441dc84f5e0d7f2871cad59f0ed151b9e93db5a998ee101f8
+Time: 2024-10-31 10:08:35
+Status: N/A
+----------------------------------------
+
+Match #125:
+Row Number: 737,377
+Amount: 17.66035309 BTC
+Transaction: ffc2df34bbcd2616a99d75a75be0b1c55dcce99323aed6fa78ab14d72b64d7d4
+Time: 2024-10-31 11:02:20
+Status: N/A
+----------------------------------------
+
+Match #126:
+Row Number: 737,414
+Amount: 17.39673982 BTC
+Transaction: 535ef10babf97de7b67d7ed363bbb694a4cd2e0152cefa0192cf0921f6e5feea
+Time: 2024-10-31 11:02:20
+Status: N/A
+----------------------------------------
+
+Match #127:
+Row Number: 737,428
+Amount: 13.55917454 BTC
+Transaction: bf17bf74f9d7ec34a511f809aad6c837d5755ffeae247eb8967c978bb7c56522
+Time: 2024-10-31 11:02:20
+Status: N/A
+----------------------------------------
+
+Match #128:
+Row Number: 737,453
+Amount: 10.04664039 BTC
+Transaction: 8f8f5d773e75b79df9edcf8e0702a8b61d35089813e15c906a20d5ca455a1017
+Time: 2024-10-31 11:02:20
+Status: N/A
+----------------------------------------
+
+Match #129:
+Row Number: 750,649
+Amount: 7.23360667 BTC
+Transaction: 7b62afdcb45127bc8a1e72653822f1732f024887459e3084fbb836d110eb6095
+Time: 2024-10-31 11:18:23
+Status: N/A
+----------------------------------------
+
+Match #130:
+Row Number: 762,159
+Amount: 11.17713888 BTC
+Transaction: 57cf4fd53f6458766c9d78de0177f5c375f2addef99b96282d201c038ae8654b
+Time: 2024-10-31 11:22:45
+Status: N/A
+----------------------------------------
+
+Match #131:
+Row Number: 779,530
+Amount: 2.23847982 BTC
+Transaction: 9011037809f7304b74e16b8b591897ecefeadad5ebee56bd8c868b90c96598ff
+Time: 2024-10-31 11:26:44
+Status: N/A
+----------------------------------------
+
+Match #132:
+Row Number: 779,531
+Amount: 1.86650185 BTC
+Transaction: 50219ff0ef6e89bdd5ef8af1d7ed87b93f9f3d91af8a94871690783fb60f1ca2
+Time: 2024-10-31 11:26:44
+Status: N/A
+----------------------------------------
+
+Match #133:
+Row Number: 779,536
+Amount: 2.32213644 BTC
+Transaction: 4ee7074551e67c3ebad1239ea49812b4ff29aa301ccb83d21b9c15422f68e0ad
+Time: 2024-10-31 11:26:44
+Status: N/A
+----------------------------------------
+
+Match #134:
+Row Number: 781,497
+Amount: 18.24821869 BTC
+Transaction: ed1ea3c286193abb9571c1fa5f006ad604e2a24da274afbc736aa8c6e6d42475
+Time: 2024-10-31 11:43:03
+Status: N/A
+----------------------------------------
+
+Match #135:
+Row Number: 790,271
+Amount: 2.09146442 BTC
+Transaction: 7e474ee65e56bb47818177f6b231f52eab69d6a8c94b11e8b5d391f21d0fdb75
+Time: 2024-10-31 11:43:03
+Status: N/A
+----------------------------------------
+
+Match #136:
+Row Number: 792,565
+Amount: 16.55092535 BTC
+Transaction: 730ba75f86eccf0f4e0acff358827bcee848d3eca03d9d29b181c3c784c40982
+Time: 2024-10-31 11:52:19
+Status: N/A
+----------------------------------------
+
+Match #137:
+Row Number: 801,729
+Amount: 1.39238645 BTC
+Transaction: de1dafd5ed84c4950060ba56e30da1c4bc869bcb079802cb524eb9fe4f595b24
+Time: 2024-10-31 11:52:19
+Status: N/A
+----------------------------------------
+
+Match #138:
+Row Number: 804,128
+Amount: 13.08094936 BTC
+Transaction: acb8a395708bded89b11276a0aeeb9fc7a2f05f7037abc38cd74b38459c3091f
+Time: 2024-10-31 12:08:51
+Status: N/A
+----------------------------------------
+
+Match #139:
+Row Number: 813,910
+Amount: 2.11672086 BTC
+Transaction: 6568bc7cf238fe8e4b9a2e27fda3bb47068807ce53b0584df7fc3a1ef42f552e
+Time: 2024-10-31 12:08:51
+Status: N/A
+----------------------------------------
+
+Match #140:
+Row Number: 815,513
+Amount: 17.78887434 BTC
+Transaction: fffc3a880c7fcda8e56225d53f5bc9a319ab7d14bce75602eaa90963140fcfbb
+Time: 2024-10-31 12:21:58
+Status: N/A
+----------------------------------------
+
+Match #141:
+Row Number: 824,209
+Amount: 2.21351314 BTC
+Transaction: 5de1e012314fa7806646cb4974bba8a45f8f00cb3c71ea2ae1a2f67c670e978a
+Time: 2024-10-31 12:21:58
+Status: N/A
+----------------------------------------
+
+Match #142:
+Row Number: 825,547
+Amount: 2.28477753 BTC
+Transaction: a417b1c02723697fb9319fc6d426c379a7654c77729b3a329a1364f3aabc2e75
+Time: 2024-10-31 12:27:23
+Status: N/A
+----------------------------------------
+
+Match #143:
+Row Number: 851,940
+Amount: 16.97774396 BTC
+Transaction: 4cc31fa814e9e9609619352e6d1062f10d5a5dc2908583717c731c8d54e9c5a7
+Time: 2024-10-31 12:49:47
+Status: N/A
+----------------------------------------
+
+Match #144:
+Row Number: 859,540
+Amount: 1.39202955 BTC
+Transaction: e94d8656ea7295bc764fd306a07c9d35f938206029ae8a3c5ff9fc964329ed3e
+Time: 2024-10-31 12:49:47
+Status: N/A
+----------------------------------------
+
+Match #145:
+Row Number: 862,389
+Amount: 0.00000546 BTC
+Transaction: 190dad1169fdc039cd3269b3efd22c86c4a21e7d5944350f337f9e2ed94613d5
+Time: 2024-10-31 13:29:47
+Status: N/A
+----------------------------------------
+
+Match #146:
+Row Number: 862,878
+Amount: 10.22290536 BTC
+Transaction: c76397ad051d373659e82863113e271de612e75a5b91b8ab22cb2866edf9fb1c
+Time: 2024-10-31 13:29:47
+Status: N/A
+----------------------------------------
+
+Match #147:
+Row Number: 862,926
+Amount: 11.77284217 BTC
+Transaction: f0778feb314e1b0ae85a92187a9a790da3d014f7a78950d540128d7ea4d562aa
+Time: 2024-10-31 13:29:47
+Status: N/A
+----------------------------------------
+
+Match #148:
+Row Number: 862,978
+Amount: 6.49492812 BTC
+Transaction: 3be1703f20b8ed5d2a567715f2fd10d04b33db42dac73768472f56ed8526a642
+Time: 2024-10-31 13:29:47
+Status: N/A
+----------------------------------------
+
+Match #149:
+Row Number: 863,025
+Amount: 12.86014524 BTC
+Transaction: 718adc3e4ab89df8f9ab07908838a60893e4b576335d82800cf09c5ccd577f04
+Time: 2024-10-31 13:29:47
+Status: N/A
+----------------------------------------
+
+Match #150:
+Row Number: 887,807
+Amount: 16.31255694 BTC
+Transaction: 0335fb7124bc834180833b5be64948fa117ca309380f4305aa44861a6c556f57
+Time: 2024-10-31 13:43:28
+Status: N/A
+----------------------------------------
+
+Match #151:
+Row Number: 899,039
+Amount: 10.51163598 BTC
+Transaction: 67e10e1d573bc5f0f0feb22c6f5089e17fe9f1d52567eb47000b825cf2dde63d
+Time: 2024-10-31 13:49:10
+Status: N/A
+----------------------------------------
+
+Match #152:
+Row Number: 912,683
+Amount: 1.94004653 BTC
+Transaction: 3c4d8a459b7e6c5f3cace1eecf0cc36421b48d4d7ea24c51b0b5ffe5cd20192b
+Time: 2024-10-31 13:54:29
+Status: N/A
+----------------------------------------
+
+Match #153:
+Row Number: 912,684
+Amount: 1.91654176 BTC
+Transaction: 6f14c41ccd7cb3e4ec9a31b34778c0fb339dcaa1fe3368ea37a8c707abd4aca5
+Time: 2024-10-31 13:54:29
+Status: N/A
+----------------------------------------
+
+Match #154:
+Row Number: 912,934
+Amount: 0.00000546 BTC
+Transaction: 03a261b4bf04cf53363511f5f4aa0eb663612fffbee9fc9fff56a80486386a40
+Time: 2024-10-31 14:03:24
+Status: N/A
+----------------------------------------
+
+Match #155:
+Row Number: 913,062
+Amount: 0.46830243 BTC
+Transaction: 5c1a67dc24b4265f05b5a9a85c0829612a5b4edf199e7e046aa8353f33c7e93c
+Time: 2024-10-31 14:03:24
+Status: N/A
+----------------------------------------
+
+Match #156:
+Row Number: 920,868
+Amount: 2.09210500 BTC
+Transaction: fa3c38760edb77eb955d3ef4a5ee33d54ceb70f469f7242e17cefa97fd98e684
+Time: 2024-10-31 14:03:24
+Status: N/A
+----------------------------------------
+
+Match #157:
+Row Number: 931,745
+Amount: 3.86992513 BTC
+Transaction: ed3fe69b779dccb3af4d2b357681896d5004480a5b6bf026454a340531057413
+Time: 2024-10-31 14:14:29
+Status: N/A
+----------------------------------------
+
+Match #158:
+Row Number: 942,376
+Amount: 0.00000546 BTC
+Transaction: 4cbf510adf8af0e5ac314c9887815d6a6e0289ec6e2f8c35c7d9b9e203d1be12
+Time: 2024-10-31 14:22:59
+Status: N/A
+----------------------------------------
+
+Match #159:
+Row Number: 950,734
+Amount: 3.67260561 BTC
+Transaction: 1e435e7c5ebd1a21181923344992beca78911f60741e3a42f0333ec47009f9a1
+Time: 2024-10-31 14:23:50
+Status: N/A
+----------------------------------------
+
+Match #160:
+Row Number: 960,893
+Amount: 0.00000546 BTC
+Transaction: 84c6ec5cccd529b6b093d3aacc58cbd198aa6f2a9c2ca8003d90937c240f95e5
+Time: 2024-10-31 14:38:23
+Status: N/A
+----------------------------------------
+
+Match #161:
+Row Number: 961,112
+Amount: 3.16505455 BTC
+Transaction: 55cd6d068263f3cf7c1955da1f390aae61004b886a0e2096424cf2cafa2cc635
+Time: 2024-10-31 14:38:23
+Status: N/A
+----------------------------------------
+
+Match #162:
+Row Number: 971,710
+Amount: 4.95609523 BTC
+Transaction: 35f778b5dc0d8b623196254cfddadbaf3abecc441c000d771c9e252ecd34167f
+Time: 2024-10-31 14:55:06
+Status: N/A
+----------------------------------------
+
+Match #163:
+Row Number: 986,538
+Amount: 5.89532919 BTC
+Transaction: 177be5a73509055e5281742a7c39353e6a430303e3199e51e71d31da69eac6c8
+Time: 2024-10-31 15:04:13
+Status: N/A
+----------------------------------------
+
+Match #164:
+Row Number: 997,112
+Amount: 28.78586299 BTC
+Transaction: 981d4126ad4c83a7c7424d369432de96ea3c0eeead8a7ab7eb31652db7a6ca5a
+Time: 2024-10-31 15:16:53
+Status: N/A
+----------------------------------------
+
+Match #165:
+Row Number: 1,009,460
+Amount: 24.99225582 BTC
+Transaction: 292d3b4984dd0761c37ea4e04445d2b5258ee99ba2eadc46ebdce061546b9699
+Time: 2024-10-31 15:26:26
+Status: N/A
+----------------------------------------
+
+Match #166:
+Row Number: 1,021,730
+Amount: 21.47238242 BTC
+Transaction: 916456de4f52dab1920ead66cd317c2376f22eca69dfb373181cb83ad5468ef3
+Time: 2024-10-31 16:00:47
+Status: N/A
+----------------------------------------
+
+Match #167:
+Row Number: 1,022,457
+Amount: 4.64594665 BTC
+Transaction: 9290d8e1fcbd9d85709831d2989129c77b8c4f8b182e6d5ba2b09662cb2b2bec
+Time: 2024-10-31 16:00:47
+Status: N/A
+----------------------------------------
+
+Match #168:
+Row Number: 1,022,483
+Amount: 27.59175106 BTC
+Transaction: 7ab16a40f7f094df76e6d19940f871f71f9fb25539d5f3505a9fe454a41d9ac8
+Time: 2024-10-31 16:00:47
+Status: N/A
+----------------------------------------
+
+Match #169:
+Row Number: 1,022,484
+Amount: 27.59175106 BTC
+Transaction: 7ab16a40f7f094df76e6d19940f871f71f9fb25539d5f3505a9fe454a41d9ac8
+Time: 2024-10-31 16:00:47
+Status: N/A
+----------------------------------------
+
+Match #170:
+Row Number: 1,022,485
+Amount: 27.59175106 BTC
+Transaction: 7ab16a40f7f094df76e6d19940f871f71f9fb25539d5f3505a9fe454a41d9ac8
+Time: 2024-10-31 16:00:47
+Status: N/A
+----------------------------------------
+
+Match #171:
+Row Number: 1,041,357
+Amount: 22.85891200 BTC
+Transaction: 6f4ab9be611df42efcbb7bab419f53775a548d675b2941345aedf40e30bf8d32
+Time: 2024-10-31 16:31:07
+Status: N/A
+----------------------------------------
+
+Match #172:
+Row Number: 1,041,358
+Amount: 22.85891200 BTC
+Transaction: 6f4ab9be611df42efcbb7bab419f53775a548d675b2941345aedf40e30bf8d32
+Time: 2024-10-31 16:31:07
+Status: N/A
+----------------------------------------
+
+Match #173:
+Row Number: 1,041,359
+Amount: 22.85891200 BTC
+Transaction: 6f4ab9be611df42efcbb7bab419f53775a548d675b2941345aedf40e30bf8d32
+Time: 2024-10-31 16:31:07
+Status: N/A
+----------------------------------------
+
+Match #174:
+Row Number: 1,041,431
+Amount: 7.16004171 BTC
+Transaction: 4c9c429d2b6e3480004f08b7123c0b7b3dd8d1e456c32f90d602bc19e5115837
+Time: 2024-10-31 16:31:07
+Status: N/A
+----------------------------------------
+
+Match #175:
+Row Number: 1,061,587
+Amount: 5.24923269 BTC
+Transaction: e45f94736a975b42bbde634c46e988e09c93a48e43e90cfcb1e9db06363bfc57
+Time: 2024-10-31 16:35:37
+Status: N/A
+----------------------------------------
+
+Match #176:
+Row Number: 1,092,383
+Amount: 25.35340090 BTC
+Transaction: e8a4d5147c9e655febb4536197900983737ca92cfe4ab6514f8050cbd382d584
+Time: 2024-10-31 17:14:31
+Status: N/A
+----------------------------------------
+
+Match #177:
+Row Number: 1,092,448
+Amount: 28.66645769 BTC
+Transaction: ca6d831da8808bdb123fa204ec40efcfb0eb77cd5abfc934b4fedb3a2fdc2f23
+Time: 2024-10-31 17:14:31
+Status: N/A
+----------------------------------------
+
+Match #178:
+Row Number: 1,092,495
+Amount: 78.39777403 BTC
+Transaction: 8c73dd8fd2fa3d61b7d60faa46d85079c74d046bbd5fdada0f8ac554f5834747
+Time: 2024-10-31 17:14:31
+Status: N/A
+----------------------------------------
+
+Match #179:
+Row Number: 1,120,614
+Amount: 21.55304277 BTC
+Transaction: a2737e98d573f5b2d47b470da36a41efc037004e4b91f7fa1817066b4e7b595c
+Time: 2024-10-31 17:25:51
+Status: N/A
+----------------------------------------
+
+Match #180:
+Row Number: 1,135,449
+Amount: 1.34785805 BTC
+Transaction: 9042d74a7457e6caba4e89a71df73e75ceec6b6624019f407639f19b9dd4e394
+Time: 2024-10-31 17:26:15
+Status: N/A
+----------------------------------------
+
+Match #181:
+Row Number: 1,135,450
+Amount: 1.41760203 BTC
+Transaction: 97c511ab52e311a77a32cb28d11511a07851f03150f2137df3889f2aada48313
+Time: 2024-10-31 17:26:15
+Status: N/A
+----------------------------------------
+
+Match #182:
+Row Number: 1,137,508
+Amount: 78.27129414 BTC
+Transaction: ea94ad084fe10924a8cad0cec7e56d6157820bf859edfd5ea9263be37be4c291
+Time: 2024-10-31 17:40:58
+Status: N/A
+----------------------------------------
+
+Match #183:
+Row Number: 1,153,602
+Amount: 28.69493925 BTC
+Transaction: b076ef1e6f31c0785c864fc822b06b97f59871d952022a1f682c02b67749efa4
+Time: 2024-10-31 17:45:39
+Status: N/A
+----------------------------------------
+
+Match #184:
+Row Number: 1,160,638
+Amount: 1.18845020 BTC
+Transaction: 6fa7172b8150be847a69195af5758b48d5ec9f3326d086fff3edf1017e06e2b6
+Time: 2024-10-31 17:45:39
+Status: N/A
+----------------------------------------
+
+Match #185:
+Row Number: 1,161,148
+Amount: 1.05598619 BTC
+Transaction: eb7d9ba53c8aaa1c35e360a4baf77c19b51b399d18401841dc6a1714a64cc4ba
+Time: 2024-10-31 17:45:39
+Status: N/A
+----------------------------------------
+
+Match #186:
+Row Number: 1,163,894
+Amount: 28.18081019 BTC
+Transaction: 968a9765199757eb5b3392e750aed77279070d0e875e2c83fc853416a0b2ace1
+Time: 2024-10-31 17:56:34
+Status: N/A
+----------------------------------------
+
+Match #187:
+Row Number: 1,181,584
+Amount: 42.83258766 BTC
+Transaction: 2fd592eccdfdfacdfc7f4ff2be7127fe63cea0f32c21b07dbd52c67a4f475533
+Time: 2024-10-31 18:22:31
+Status: N/A
+----------------------------------------
+
+Match #188:
+Row Number: 1,181,585
+Amount: 42.83258766 BTC
+Transaction: 2fd592eccdfdfacdfc7f4ff2be7127fe63cea0f32c21b07dbd52c67a4f475533
+Time: 2024-10-31 18:22:31
+Status: N/A
+----------------------------------------
+
+Match #189:
+Row Number: 1,181,586
+Amount: 42.83258766 BTC
+Transaction: 2fd592eccdfdfacdfc7f4ff2be7127fe63cea0f32c21b07dbd52c67a4f475533
+Time: 2024-10-31 18:22:31
+Status: N/A
+----------------------------------------
+
+Match #190:
+Row Number: 1,200,970
+Amount: 24.07776126 BTC
+Transaction: 9459e9f075d2f21330c22339839f5813f75784eab2c581f22fecc063355f53b6
+Time: 2024-10-31 18:27:41
+Status: N/A
+----------------------------------------
+
+Match #191:
+Row Number: 1,209,710
+Amount: 1.13907241 BTC
+Transaction: 9d3366321b911528362d7f561886bef6d09d8a61d4818ac65ee105ed11f37d91
+Time: 2024-10-31 18:27:41
+Status: N/A
+----------------------------------------
+
+Match #192:
+Row Number: 1,213,808
+Amount: 42.06526746 BTC
+Transaction: 6356863c5370759a8e3140bd8b39b9fa931c0a97bf9c7e8197ac942e23b9b523
+Time: 2024-10-31 18:44:04
+Status: N/A
+----------------------------------------
+
+Match #193:
+Row Number: 1,221,339
+Amount: 0.00000546 BTC
+Transaction: c0b33c7cc341c33a066003fd1a790d8e2cfee354579df70ed3877e8b7cf1c660
+Time: 2024-10-31 18:56:57
+Status: N/A
+----------------------------------------
+
+Match #194:
+Row Number: 1,221,442
+Amount: 23.23144887 BTC
+Transaction: edd91d9ad5113bb232353c7bf159b287ad7ca71e0840a0274d8c67f90d58da69
+Time: 2024-10-31 18:56:57
+Status: N/A
+----------------------------------------
+
+Match #195:
+Row Number: 1,230,491
+Amount: 1.31012378 BTC
+Transaction: 3b7e8c6290d17d86659ab739bd9fa6785d23a6271b68666fd0c6e527b3df472d
+Time: 2024-10-31 18:56:57
+Status: N/A
+----------------------------------------
+
+Match #196:
+Row Number: 1,230,492
+Amount: 1.43949785 BTC
+Transaction: 1fd18daf8ef7f249a16e36f132d33e78b063d4d39122759422fd0b1ae3b8eabd
+Time: 2024-10-31 18:56:57
+Status: N/A
+----------------------------------------
+
+Match #197:
+Row Number: 1,230,680
+Amount: 24.41006319 BTC
+Transaction: 4e6f1cd542af336e7bade39eb448a0a26ed973ec49a7e68953906e9c14c4ecff
+Time: 2024-10-31 19:06:55
+Status: N/A
+----------------------------------------
+
+Match #198:
+Row Number: 1,239,248
+Amount: 41.60167372 BTC
+Transaction: 75f1a06f34898112e53fb597f74811508210572189e27a93a40c7a5646206157
+Time: 2024-10-31 19:15:11
+Status: N/A
+----------------------------------------
+
+Match #199:
+Row Number: 1,274,493
+Amount: 41.36935034 BTC
+Transaction: ac1b52e39abba42c26a4ed671323c3b132b60229071460e7c8af39716f483946
+Time: 2024-10-31 19:28:08
+Status: N/A
+----------------------------------------
+
+Match #200:
+Row Number: 1,288,792
+Amount: 0.00000546 BTC
+Transaction: 29debbcd7f34565ca91f4075ae24dc9d6ee21873b01bd7e96f6678a8051aa2da
+Time: 2024-10-31 19:37:11
+Status: N/A
+----------------------------------------
+
+Match #201:
+Row Number: 1,288,839
+Amount: 22.19013215 BTC
+Transaction: 4f6c0094647a51c64c7ffca38651e91d5104d12908530efde6f77722f89c70ce
+Time: 2024-10-31 19:37:11
+Status: N/A
+----------------------------------------
+
+Match #202:
+Row Number: 1,303,191
+Amount: 1.13347454 BTC
+Transaction: edc1629816f75c1d7dd96b035ca4a1f84746630d0f4927a6138cc5855b4db2d8
+Time: 2024-10-31 19:47:26
+Status: N/A
+----------------------------------------
+
+Match #203:
+Row Number: 1,310,568
+Amount: 29.47638097 BTC
+Transaction: 79c1a5c326f528b07479aba4e32e3c161a74b05cf6b164b6bc8223dece50937a
+Time: 2024-10-31 20:05:23
+Status: N/A
+----------------------------------------
+
+Match #204:
+Row Number: 1,310,589
+Amount: 39.18282239 BTC
+Transaction: bf6f27bafb5de6f6ee85e4911e9610cbb508b983760c8f28bb0c80f76e02d2f9
+Time: 2024-10-31 20:05:23
+Status: N/A
+----------------------------------------
+
+Match #205:
+Row Number: 1,317,068
+Amount: 1.54603124 BTC
+Transaction: 6613ffed41288a02e2683c918d72f2388958acdb38c471812b7905fc289374f2
+Time: 2024-10-31 20:05:23
+Status: N/A
+----------------------------------------
+
+Match #206:
+Row Number: 1,319,868
+Amount: 29.22359795 BTC
+Transaction: 02864e087d449bc6b4e88df070255ae06cc543e2f52e6c693b15e6a4eecb5937
+Time: 2024-10-31 20:15:03
+Status: N/A
+----------------------------------------
+
+Match #207:
+Row Number: 1,323,485
+Amount: 1.68525894 BTC
+Transaction: 9bf0fe21dfae5c2d49ce7675ade5e973dfb4c4e99ffe2635af7cd01a63c67c4f
+Time: 2024-10-31 20:15:03
+Status: N/A
+----------------------------------------
+
+Match #208:
+Row Number: 1,339,639
+Amount: 38.75318763 BTC
+Transaction: 331cdff2b6c74a7eaad4f125922489c87adb38b8bef7256a0f40e6f7218718d2
+Time: 2024-10-31 20:25:04
+Status: N/A
+----------------------------------------
+
+Match #209:
+Row Number: 1,370,034
+Amount: 0.00000546 BTC
+Transaction: 9431a585546000480629c78ebe33c88c80cecafe9e725947c5ac6f27311f0348
+Time: 2024-10-31 20:30:24
+Status: N/A
+----------------------------------------
+
+Match #210:
+Row Number: 1,370,036
+Amount: 0.00000546 BTC
+Transaction: 055f5e6510f73e73c91cdbc7a91dfc1e494aea148bdc3ef2c1684b335be72996
+Time: 2024-10-31 20:30:24
+Status: N/A
+----------------------------------------
+
+Match #211:
+Row Number: 1,370,900
+Amount: 1.37933471 BTC
+Transaction: 7f47147d6bfe17a07bcc16e54249883fa7839325744f613b2f0f588668a8d80f
+Time: 2024-10-31 20:30:24
+Status: N/A
+----------------------------------------
+
+Match #212:
+Row Number: 1,379,489
+Amount: 29.40677190 BTC
+Transaction: ddcbd5760ae8b8ffbdc0fc09f238bbd994c1abfed0dfecd6a6fb0a2e47739ecf
+Time: 2024-10-31 21:06:21
+Status: N/A
+----------------------------------------
+
+Match #213:
+Row Number: 1,379,518
+Amount: 34.35383413 BTC
+Transaction: 6d29e8892e0368e9277aea52dcc37d14dec85884b8aa8ec7fa9ee8073c83fe73
+Time: 2024-10-31 21:06:21
+Status: N/A
+----------------------------------------
+
+Match #214:
+Row Number: 1,379,546
+Amount: 30.74748493 BTC
+Transaction: fc89ab18ad42cd6c3c8298fa63c80a849088146dd006c22dc65fc3daa7450f3a
+Time: 2024-10-31 21:06:21
+Status: N/A
+----------------------------------------
+
+Match #215:
+Row Number: 1,379,595
+Amount: 29.38261037 BTC
+Transaction: 7750b0cc8008d9fc28cfed1e9c8a3c19546e8a12ce1221fb7e4939a42fb34737
+Time: 2024-10-31 21:06:21
+Status: N/A
+----------------------------------------
+
+Match #216:
+Row Number: 1,391,391
+Amount: 0.00000546 BTC
+Transaction: 2400f651e7170145e67081cea2f3e9f26667746b2561616cdb611c94df111944
+Time: 2024-10-31 21:35:39
+Status: N/A
+----------------------------------------
+
+Match #217:
+Row Number: 1,391,393
+Amount: 0.00000546 BTC
+Transaction: c7cab9d238e03507d2ab668744e5c89ac2a598ea37690621a79a4e60527d489e
+Time: 2024-10-31 21:35:39
+Status: N/A
+----------------------------------------
+
+Match #218:
+Row Number: 1,391,658
+Amount: 29.06318153 BTC
+Transaction: 483df41f00246aa4eb0a2960f5c80cf3feee886ec168579899a046f56eb2376d
+Time: 2024-10-31 21:35:39
+Status: N/A
+----------------------------------------
+
+Match #219:
+Row Number: 1,391,696
+Amount: 29.14613551 BTC
+Transaction: 90c75777e7b1072f104592af033f99dafd8b5410f179fbad04bf9ec2de4a77de
+Time: 2024-10-31 21:35:39
+Status: N/A
+----------------------------------------
+
+Match #220:
+Row Number: 1,391,723
+Amount: 28.37425037 BTC
+Transaction: abe4aed692dc65d608171fa1388a69b97d799a5b6ba8f8832b058362cd907453
+Time: 2024-10-31 21:35:39
+Status: N/A
+----------------------------------------
+
+Match #221:
+Row Number: 1,446,525
+Amount: 0.00000546 BTC
+Transaction: 872ecf53c12b63fa5580328d4766742d059d98ab9a3e5f9e8306ea3277767977
+Time: 2024-10-31 21:50:04
+Status: N/A
+----------------------------------------
+
+Match #222:
+Row Number: 1,446,558
+Amount: 33.21877994 BTC
+Transaction: 1b200f4982bfb3f210ed6a27bca5a68f4f38e6d42df4b96a88ab0798d724ce91
+Time: 2024-10-31 21:50:04
+Status: N/A
+----------------------------------------
+
+Match #223:
+Row Number: 1,465,402
+Amount: 16.45692212 BTC
+Transaction: 5da836355c4551d8a17955f61a270bc6e1fb091c493d04a5bf2cb0ca08e8e674
+Time: 2024-10-31 21:57:42
+Status: N/A
+----------------------------------------
+
+Match #224:
+Row Number: 1,487,531
+Amount: 32.65412306 BTC
+Transaction: 452a962fa8beaca4c9c121c034650f11da03ff3e5650c43c40e7a3f1fa3005a1
+Time: 2024-10-31 22:10:08
+Status: N/A
+----------------------------------------
+
+Match #225:
+Row Number: 1,506,055
+Amount: 32.24201832 BTC
+Transaction: 2e0596f3f7e4f884400b355309b4541562b0b732d7f439c80d4789aa5610e178
+Time: 2024-10-31 22:39:14
+Status: N/A
+----------------------------------------
+
+Match #226:
+Row Number: 1,506,072
+Amount: 29.63079163 BTC
+Transaction: 6ac66acab58c43cc507d4e671f6245f14596400c3486b88e7c4366d802068e23
+Time: 2024-10-31 22:39:14
+Status: N/A
+----------------------------------------
+
+Match #227:
+Row Number: 1,522,058
+Amount: 1.05814088 BTC
+Transaction: ac0b74f8a0587c0f394a2e5b4b0ed833ecd56a5ebe55a31a4ea688e30eb261e5
+Time: 2024-10-31 22:44:27
+Status: N/A
+----------------------------------------
+
+Match #228:
+Row Number: 1,524,187
+Amount: 0.00000546 BTC
+Transaction: 7e2451e8053b29f85b0cc34d29a10b4902398404a14ff78587441ac961666644
+Time: 2024-10-31 23:06:26
+Status: N/A
+----------------------------------------
+
+Match #229:
+Row Number: 1,524,312
+Amount: 28.73211381 BTC
+Transaction: 9e14200041f2c4bfcc6e0b227cf29451797936b457ba2650ebe691e7b7bb8bde
+Time: 2024-10-31 23:06:26
+Status: N/A
+----------------------------------------
+
+Match #230:
+Row Number: 1,524,335
+Amount: 24.24633762 BTC
+Transaction: 1f791d381412aed7dccf788d7920d75842fba4a9ad07ca23275db036ff9812f0
+Time: 2024-10-31 23:06:26
+Status: N/A
+----------------------------------------
+
+Match #231:
+Row Number: 1,538,481
+Amount: 1.32085546 BTC
+Transaction: 5ff4cc01fbfe18a25859c231709ba5fd14ac1b4afc804d890842b525542bc8ea
+Time: 2024-10-31 23:09:41
+Status: N/A
+----------------------------------------
+
+Match #232:
+Row Number: 1,566,944
+Amount: 29.79340731 BTC
+Transaction: 758b09fa584b76f47c9de8490c3546375d9416ac83aa5ae44e76a72ff5b68d8e
+Time: 2024-10-31 23:16:41
+Status: N/A
+----------------------------------------
+
+Match #233:
+Row Number: 1,571,877
+Amount: 1.60834886 BTC
+Transaction: 7324640d21e08086176269a81c1165403373a25e4e6dc5bc23ac1b2dbf58e11c
+Time: 2024-10-31 23:16:41
+Status: N/A
+----------------------------------------
+
+Match #234:
+Row Number: 1,587,037
+Amount: 0.00000546 BTC
+Transaction: 29a929fd704cfcfd9d1bf85bd51a4b6e2641e5790219fbf86e6819912b548c7e
+Time: 2024-10-31 23:42:15
+Status: N/A
+----------------------------------------
+
+Match #235:
+Row Number: 1,587,133
+Amount: 23.18220153 BTC
+Transaction: 6ff2a9222c52694e74b17409c3f869e8cb42aab256d271ee8f172160529be00a
+Time: 2024-10-31 23:42:15
+Status: N/A
+----------------------------------------
+
+Match #236:
+Row Number: 1,587,162
+Amount: 29.41986824 BTC
+Transaction: 7b51686fd1c734d253c286158515627fe2e031bc5a4d9541d64621b499b84577
+Time: 2024-10-31 23:42:15
+Status: N/A
+----------------------------------------
+
+Match #237:
+Row Number: 1,587,163
+Amount: 29.41986824 BTC
+Transaction: 7b51686fd1c734d253c286158515627fe2e031bc5a4d9541d64621b499b84577
+Time: 2024-10-31 23:42:15
+Status: N/A
+----------------------------------------
+
+Match #238:
+Row Number: 1,587,164
+Amount: 29.41986824 BTC
+Transaction: 7b51686fd1c734d253c286158515627fe2e031bc5a4d9541d64621b499b84577
+Time: 2024-10-31 23:42:15
+Status: N/A
+----------------------------------------
+
+Match #239:
+Row Number: 1,598,812
+Amount: 25.87604739 BTC
+Transaction: 26eff25eb69c531072fb095e00ba4b327332b302165d2b976d6bd675d152b197
+Time: 2024-10-31 23:58:33
+Status: N/A
+----------------------------------------

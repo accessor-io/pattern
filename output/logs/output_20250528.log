@@ -1,0 +1,1220 @@
+
+===== Bitcoin Puzzle Sequence Generation Script =====
+
+===== ANALYZING SEQUENCE TRANSFORMATIONS =====
+Successfully loaded 160 verified keys from file
+Generating comprehensive test formulas (massive combinations)...
+Generated 13800 comprehensive test formulas.
+FINAL TOTAL: Generated 22591 comprehensive test formulas.
+Testing 22591 formulas against verified sequence...
+
+--- Analyzing position 1 → 2 ---
+Key[1] = 0x1
+Key[2] = 0x3
+Character: '6' (ASCII: 54, B58_idx: 5)
+  ✓ MATCH: k + 2
+  ✓ MATCH: k * 3
+  ✓ MATCH: k * 2 + 1
+  ✓ MATCH: k * pos + 1
+  ✓ MATCH: k² + 2
+  ✓ MATCH: k² + pos
+  ✓ MATCH: k * 1 - 2
+  ✓ MATCH: k * 1 + 2
+  ✓ MATCH: k * 2 - 1
+  ✓ MATCH: k * 2 + 1
+  ✓ MATCH: k * 4 + -1
+  ✓ MATCH: k * 4 - 1
+  ✓ MATCH: k * 5 + -2
+  ✓ MATCH: k * 5 - 2
+  ✓ MATCH: k * 6 + -3
+  ✓ MATCH: k * 6 - 3
+  ✓ MATCH: k * 7 + -4
+  ✓ MATCH: k * 7 - 4
+  ✓ MATCH: k * 8 + -5
+  ✓ MATCH: k * 8 - 5
+  ✓ MATCH: k * 9 + -6
+  ✓ MATCH: k * 9 - 6
+  ✓ MATCH: k * 10 + -7
+  ✓ MATCH: k * 10 - 7
+  ✓ MATCH: k * 11 + -8
+  ✓ MATCH: k * 11 - 8
+  ✓ MATCH: k * 12 + -9
+  ✓ MATCH: k * 12 - 9
+  ✓ MATCH: k * 13 + -10
+  ✓ MATCH: k * 13 - 10
+  ✓ MATCH: k * 14 + -11
+  ✓ MATCH: k * 14 - 11
+  ✓ MATCH: k * 15 + -12
+  ✓ MATCH: k * 15 - 12
+  ✓ MATCH: k * 1 + pos
+  ✓ MATCH: k + pos * 1
+  ✓ MATCH: k * 5 - pos
+  ✓ MATCH: k^2 - 2
+  ✓ MATCH: k^2 + 2
+  ✓ MATCH: k^3 - 2
+  ✓ MATCH: k^3 + 2
+  ✓ MATCH: k^4 - 2
+  ✓ MATCH: k^4 + 2
+  ✓ MATCH: k^5 - 2
+  ✓ MATCH: k^5 + 2
+  ✓ MATCH: k + pos
+  ✓ MATCH: k * 2 + 1
+  ✓ MATCH: k + (pos % 3)
+  ✓ MATCH: k * ((pos % 3) + 1)
+  ✓ MATCH: k + (pos % 4)
+  ✓ MATCH: k * ((pos % 4) + 1)
+  ✓ MATCH: k + (pos % 5)
+  ✓ MATCH: k * ((pos % 5) + 1)
+  ✓ MATCH: k + (pos % 6)
+  ✓ MATCH: k * ((pos % 6) + 1)
+  ✓ MATCH: k + (pos % 7)
+  ✓ MATCH: k * ((pos % 7) + 1)
+  ✓ MATCH: k + (pos % 8)
+  ✓ MATCH: k * ((pos % 8) + 1)
+  ✓ MATCH: k + (pos % 9)
+  ✓ MATCH: k * ((pos % 9) + 1)
+  ✓ MATCH: k + (pos % 10)
+  ✓ MATCH: k * ((pos % 10) + 1)
+  ✓ MATCH: k + (pos % 11)
+  ✓ MATCH: k * ((pos % 11) + 1)
+  ✓ MATCH: k + (pos % 12)
+  ✓ MATCH: k * ((pos % 12) + 1)
+  ✓ MATCH: k + (pos % 13)
+  ✓ MATCH: k * ((pos % 13) + 1)
+  ✓ MATCH: k + (pos % 14)
+  ✓ MATCH: k * ((pos % 14) + 1)
+  ✓ MATCH: k + (pos % 15)
+  ✓ MATCH: k * ((pos % 15) + 1)
+  ✓ MATCH: k << 1 | 1
+  ✓ MATCH: (k << 1) + 1
+  ✓ MATCH: 1k² + -3k + 5
+  ✓ MATCH: 1k² + -2k + 4
+  ✓ MATCH: 1k² + -1k + 3
+  ✓ MATCH: 1k + -1pos + 4
+  ✓ MATCH: 1k² + 0k + 2
+  ✓ MATCH: 1k + 0pos + 2
+  ✓ MATCH: 1k + 1pos + 0
+  ✓ MATCH: 1k² + 1k + 1
+  ✓ MATCH: 1k + 2pos + -2
+  ✓ MATCH: 1k² + 2k + 0
+  ✓ MATCH: 1k + 3pos + -4
+  ✓ MATCH: 1k² + 3k + -1
+  ✓ MATCH: 1k² + 4k + -2
+  ✓ MATCH: 1k² + 5k + -3
+  ✓ MATCH: 2k² + -4k + 5
+  ✓ MATCH: 2k² + -3k + 4
+  ✓ MATCH: 2k² + -2k + 3
+  ✓ MATCH: 2k + -2pos + 5
+  ✓ MATCH: 2k² + -1k + 2
+  ✓ MATCH: 2k + -1pos + 3
+  ✓ MATCH: 2k² + 0k + 1
+  ✓ MATCH: 2k + 0pos + 1
+  ✓ MATCH: 2k + 1pos + -1
+  ✓ MATCH: 2k² + 1k + 0
+  ✓ MATCH: 2k + 2pos + -3
+  ✓ MATCH: 2k² + 2k + -1
+  ✓ MATCH: 2k + 3pos + -5
+  ✓ MATCH: 2k² + 3k + -2
+  ✓ MATCH: 2k² + 4k + -3
+  ✓ MATCH: 2k² + 5k + -4
+  ✓ MATCH: 3k² + -5k + 5
+  ✓ MATCH: 3k² + -4k + 4
+  ✓ MATCH: 3k² + -3k + 3
+  ✓ MATCH: 3k² + -2k + 2
+  ✓ MATCH: 3k + -2pos + 4
+  ✓ MATCH: 3k² + -1k + 1
+  ✓ MATCH: 3k + -1pos + 2
+  ✓ MATCH: 3k² + 0k + 0
+  ✓ MATCH: 3k + 0pos + 0
+  ✓ MATCH: 3k + 1pos + -2
+  ✓ MATCH: 3k² + 1k + -1
+  ✓ MATCH: 3k + 2pos + -4
+  ✓ MATCH: 3k² + 2k + -2
+  ✓ MATCH: 3k² + 3k + -3
+  ✓ MATCH: 3k² + 4k + -4
+  ✓ MATCH: 3k² + 5k + -5
+  ✓ MATCH: 4k² + -5k + 4
+  ✓ MATCH: 4k² + -4k + 3
+  ✓ MATCH: 4k² + -3k + 2
+  ✓ MATCH: 4k + -3pos + 5
+  ✓ MATCH: 4k² + -2k + 1
+  ✓ MATCH: 4k + -2pos + 3
+  ✓ MATCH: 4k² + -1k + 0
+  ✓ MATCH: 4k + -1pos + 1
+  ✓ MATCH: 4k² + 0k + -1
+  ✓ MATCH: 4k + 0pos + -1
+  ✓ MATCH: 4k + 1pos + -3
+  ✓ MATCH: 4k² + 1k + -2
+  ✓ MATCH: 4k + 2pos + -5
+  ✓ MATCH: 4k² + 2k + -3
+  ✓ MATCH: 4k² + 3k + -4
+  ✓ MATCH: 4k² + 4k + -5
+  ✓ MATCH: 5k² + -5k + 3
+  ✓ MATCH: 5k² + -4k + 2
+  ✓ MATCH: 5k² + -3k + 1
+  ✓ MATCH: 5k + -3pos + 4
+  ✓ MATCH: 5k² + -2k + 0
+  ✓ MATCH: 5k + -2pos + 2
+  ✓ MATCH: 5k² + -1k + -1
+  ✓ MATCH: 5k + -1pos + 0
+  ✓ MATCH: 5k² + 0k + -2
+  ✓ MATCH: 5k + 0pos + -2
+  ✓ MATCH: 5k + 1pos + -4
+  ✓ MATCH: 5k² + 1k + -3
+  ✓ MATCH: 5k² + 2k + -4
+  ✓ MATCH: 5k² + 3k + -5
+  ✓ MATCH: k + 2
+  ✓ MATCH: k XOR 2
+  ✓ MATCH: k OR 2
+  ✓ MATCH: 2 + k
+  ✓ MATCH: k * 3
+  ✓ MATCH: k OR 3
+  ✓ MATCH: 3 * k
+  ✓ MATCH: 4 - k
+  ✓ MATCH: k + pos
+  ✓ MATCH: k XOR pos
+  ✓ MATCH: k OR pos
+  ✓ MATCH: pos + k
+  ✓ MATCH: pos XOR k
+  ✓ MATCH: k + 2^1
+  ✓ MATCH: k XOR 2^1
+  ✓ MATCH: k * 3^1
+  ✓ MATCH: 1k² + 1p + 0
+  ✓ MATCH: 1k² + 1k + 1
+  ✓ MATCH: 1k² + 2k + 0
+  ✓ MATCH: 2k² + 1k + 0
+  ✓ MATCH: k*1 + p*1
+  ✓ MATCH: k*1 XOR p*1
+  ✓ MATCH: k*5 - p*1
+  ✓ MATCH: k*5 XOR p*3
+  ✓ MATCH: k*7 - p*2
+  ✓ MATCH: k*7 XOR p*2
+  ✓ MATCH: k*9 - p*3
+  ✓ MATCH: k*9 XOR p*5
+  ✓ MATCH: k*11 - p*4
+  ✓ MATCH: k*11 XOR p*4
+  ✓ MATCH: k*13 - p*5
+  ✓ MATCH: k*13 XOR p*7
+  ✓ MATCH: k*15 - p*6
+  ✓ MATCH: k*15 XOR p*6
+  ✓ MATCH: k*17 - p*7
+  ✓ MATCH: k*17 XOR p*9
+  ✓ MATCH: k*19 - p*8
+  ✓ MATCH: k*19 XOR p*8
+  ✓ MATCH: k + P2
+  ✓ MATCH: k XOR P2
+  ✓ MATCH: k * P3
+  ✓ MATCH: k + F2
+  ✓ MATCH: k XOR F2
+  ✓ MATCH: k * F3
+  ✓ MATCH: k * T1
+  ✓ MATCH: k² + pos
+  ✓ MATCH: k + Cat2
+  ✓ MATCH: k + Bell2
+  ✓ MATCH: bit_pair_swap
+  ✓ MATCH: k + C(2,1)
+  ✓ MATCH: k * C(3,1)
+  ✓ MATCH: k * C(3,2)
+  ✓ MATCH: matrix_11_row1
+  ✓ MATCH: k + L0
+  ✓ MATCH: k * L2
+  ✓ MATCH: k + Pell2
+  ✓ MATCH: k + digit_sum(pos)
+  ✓ MATCH: k + reverse_digits(pos)
+  ✓ MATCH: k + !!3
+  ✓ MATCH: k + 2!!
+  ✓ MATCH: k * 3!!
+  ✓ MATCH: k*1 + p*1 [φ]
+  ✓ MATCH: tent_pos
+  ✓ MATCH: quat_110
+  ✓ MATCH: k + (2)_1
+  ✓ MATCH: k * (3)_1
+  ✓ MATCH: k + (1)_2
+  ✓ MATCH: k + q^(k%10), q=2
+  ✓ MATCH: nim_like_1
+  ✓ MATCH: nim_like_2
+  ✓ MATCH: CA_rule_30
+  ✓ MATCH: CA_rule_90
+  ✓ MATCH: CA_rule_110
+  ✓ MATCH: CA_rule_150
+  ✓ MATCH: mandel_c0
+  ✓ MATCH: julia_1_1
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k + det(1,1,1,3)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k + det(1,1,2,4)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k + det(1,1,3,5)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k + det(1,2,1,4)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k + det(1,3,1,5)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(1,2)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,1,2,2)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,1,4,3)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,2,1,2)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,2,2,3)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,2,3,4)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,2,4,5)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,3,2,4)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,4,1,3)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(2,4,2,5)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k * trace(2,1)
+  ✓ MATCH: k + det(3,1,1,1)
+  ✓ MATCH: k + det(3,1,4,2)
+  ✓ MATCH: k + det(3,2,2,2)
+  ✓ MATCH: k + det(3,2,5,4)
+  ✓ MATCH: k + det(3,4,1,2)
+  ✓ MATCH: k + det(3,5,2,4)
+  ✓ MATCH: k + det(4,1,2,1)
+  ✓ MATCH: k + det(4,2,1,1)
+  ✓ MATCH: k + det(4,2,3,2)
+  ✓ MATCH: k + det(4,2,5,3)
+  ✓ MATCH: k + det(4,3,2,2)
+  ✓ MATCH: k + det(4,5,2,3)
+  ✓ MATCH: k + det(5,1,3,1)
+  ✓ MATCH: k + det(5,2,4,2)
+  ✓ MATCH: k + det(5,3,1,1)
+  ✓ MATCH: k + det(5,4,2,2)
+  ✓ MATCH: k + φ(3)
+  ✓ MATCH: k * φ(4)
+  ✓ MATCH: hashXOR_1(k,p)
+  ✓ MATCH: k + 2*2^(pos%2)
+  ✓ MATCH: k * 3^((k+pos)%2)
+  ✓ MATCH: k + 2*3^(pos%2)
+  ✓ MATCH: k * 3^((k+pos)%2)
+  ✓ MATCH: k * 3^((k+pos)%2)
+  ✓ MATCH: k * 3^((k+pos)%2)
+  ✓ MATCH: k * 3^((k+pos)%2)
+  ✓ MATCH: k + 2*4^(pos%2)
+  ✓ MATCH: k + 2*5^(pos%2)
+  ✓ MATCH: k + 2*6^(pos%2)
+  ✓ MATCH: k + 2*7^(pos%2)
+  ✓ MATCH: k + 2*8^(pos%2)
+  ✓ MATCH: k + 2*9^(pos%2)
+  ✓ MATCH: k + 2*10^(pos%2)
+  ✓ MATCH: k + 2*11^(pos%2)
+  ✓ MATCH: k XOR rotL(1, k)
+  ✓ MATCH: k XOR (pos & 0x3)
+  ✓ MATCH: k + (pos & 0x3)
+  ✓ MATCH: k * ((pos & 0x3) + 1)
+  ✓ MATCH: k XOR (pos & 0x7)
+  ✓ MATCH: k + (pos & 0x7)
+  ✓ MATCH: k * ((pos & 0x7) + 1)
+  ✓ MATCH: k XOR (pos & 0xf)
+  ✓ MATCH: k + (pos & 0xf)
+  ✓ MATCH: k * ((pos & 0xf) + 1)
+  ✓ MATCH: k XOR (pos & 0x1f)
+  ✓ MATCH: k + (pos & 0x1f)
+  ✓ MATCH: k * ((pos & 0x1f) + 1)
+  ✓ MATCH: k XOR (pos & 0x3f)
+  ✓ MATCH: k + (pos & 0x3f)
+  ✓ MATCH: k * ((pos & 0x3f) + 1)
+  ✓ MATCH: k XOR (pos & 0x7f)
+  ✓ MATCH: k + (pos & 0x7f)
+  ✓ MATCH: k * ((pos & 0x7f) + 1)
+  ✓ MATCH: k XOR (pos & 0xff)
+  ✓ MATCH: k + (pos & 0xff)
+  ✓ MATCH: k * ((pos & 0xff) + 1)
+  ✓ MATCH: k XOR (pos & 0x1ff)
+  ✓ MATCH: k + (pos & 0x1ff)
+  ✓ MATCH: k * ((pos & 0x1ff) + 1)
+  ✓ MATCH: k XOR (pos & 0x3ff)
+  ✓ MATCH: k + (pos & 0x3ff)
+  ✓ MATCH: k * ((pos & 0x3ff) + 1)
+  ✓ MATCH: k XOR (pos & 0x7ff)
+  ✓ MATCH: k + (pos & 0x7ff)
+  ✓ MATCH: k * ((pos & 0x7ff) + 1)
+  ✓ MATCH: k XOR (pos & 0xfff)
+  ✓ MATCH: k + (pos & 0xfff)
+  ✓ MATCH: k * ((pos & 0xfff) + 1)
+  ✓ MATCH: k XOR (pos & 0x1fff)
+  ✓ MATCH: k + (pos & 0x1fff)
+  ✓ MATCH: k * ((pos & 0x1fff) + 1)
+  ✓ MATCH: k XOR (pos & 0x3fff)
+  ✓ MATCH: k + (pos & 0x3fff)
+  ✓ MATCH: k * ((pos & 0x3fff) + 1)
+  ✓ MATCH: k XOR (pos & 0x7fff)
+  ✓ MATCH: k + (pos & 0x7fff)
+  ✓ MATCH: k * ((pos & 0x7fff) + 1)
+  ✓ MATCH: k + 1*tri_wave(pos, 4)
+  ✓ MATCH: (k << 1) + 1
+  ✓ MATCH: (k << 2) - 1
+  ✓ MATCH: (k << 1) + 1
+  ✓ MATCH: (k >> 1) + 3
+  ✓ MATCH: (k << 2) - 1
+  ✓ MATCH: (k >> 2) + 3
+  ✓ MATCH: (k >> 3) + 3
+  ✓ MATCH: (k << 3) - 5
+  ✓ MATCH: (k >> 4) + 3
+  ✓ MATCH: (k << 4) - 13
+  ✓ MATCH: (k >> 5) + 3
+  ✓ MATCH: (k << 5) - 29
+  ✓ MATCH: (k >> 6) + 3
+  ✓ MATCH: (k >> 7) + 3
+  ✓ MATCH: (k >> 8) + 3
+  ✓ MATCH: (k >> 9) + 3
+  ✓ MATCH: (k >> 10) + 3
+  ✓ MATCH: (k >> 11) + 3
+  ✓ MATCH: (k >> 12) + 3
+  ✓ MATCH: (k >> 13) + 3
+  ✓ MATCH: (k >> 14) + 3
+  ✓ MATCH: (k >> 15) + 3
+  ✓ MATCH: k << 2 if pos%2==1 else k + 2
+  ✓ MATCH: k << 2 if pos%3==1 else k + 2
+  ✓ MATCH: k << 2 if pos%4==1 else k + 2
+  ✓ MATCH: k << 2 if pos%5==1 else k + 2
+  ✓ MATCH: k << 2 if pos%6==1 else k + 2
+  ✓ MATCH: k << 2 if pos%7==1 else k + 2
+  ✓ MATCH: k >> 3 if pos%3==0 else k * 3
+  ✓ MATCH: k >> 3 if pos%4==0 else k * 3
+  ✓ MATCH: k >> 3 if pos%5==0 else k * 3
+  ✓ MATCH: k >> 3 if pos%6==0 else k * 3
+  ✓ MATCH: k >> 3 if pos%7==0 else k * 3
+  ✓ MATCH: (k << 1) | 0x1
+  ✓ MATCH: (k << 1) XOR 0x1
+  ✓ MATCH: (k << 1) | 0x3
+  ✓ MATCH: (k >> 1) | 0x3
+  ✓ MATCH: (k >> 1) XOR 0x3
+  ✓ MATCH: (k >> 2) | 0x3
+  ✓ MATCH: (k >> 2) XOR 0x3
+  ✓ MATCH: (k << 2) XOR 0x7
+  ✓ MATCH: (k >> 3) | 0x3
+  ✓ MATCH: (k >> 3) XOR 0x3
+  ✓ MATCH: (k >> 4) | 0x3
+  ✓ MATCH: (k >> 4) XOR 0x3
+  ✓ MATCH: (k >> 5) | 0x3
+  ✓ MATCH: (k >> 5) XOR 0x3
+  ✓ MATCH: (k >> 6) | 0x3
+  ✓ MATCH: (k >> 6) XOR 0x3
+  ✓ MATCH: (k >> 7) | 0x3
+  ✓ MATCH: (k >> 7) XOR 0x3
+  ✓ MATCH: (k >> 8) | 0x3
+  ✓ MATCH: (k >> 8) XOR 0x3
+  ✓ MATCH: (k >> 9) | 0x3
+  ✓ MATCH: (k >> 9) XOR 0x3
+  ✓ MATCH: (k >> 10) | 0x3
+  ✓ MATCH: (k >> 10) XOR 0x3
+  ✓ MATCH: (k >> 11) | 0x3
+  ✓ MATCH: (k >> 11) XOR 0x3
+  Found 428 matching transformations
+
+--- Analyzing position 2 → 3 ---
+Key[2] = 0x3
+Key[3] = 0x7
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ✓ MATCH: k + 4
+  ✓ MATCH: k * 2 + 1
+  ✓ MATCH: k * 3 - 2
+  ✓ MATCH: k * 1 - 4
+  ✓ MATCH: k * 1 + 4
+  ✓ MATCH: k * 2 - 1
+  ✓ MATCH: k * 2 + 1
+  ✓ MATCH: k * 3 + -2
+  ✓ MATCH: k * 3 - 2
+  ✓ MATCH: k * 4 + -5
+  ✓ MATCH: k * 4 - 5
+  ✓ MATCH: k * 5 + -8
+  ✓ MATCH: k * 5 - 8
+  ✓ MATCH: k * 6 + -11
+  ✓ MATCH: k * 6 - 11
+  ✓ MATCH: k * 7 + -14
+  ✓ MATCH: k * 7 - 14
+  ✓ MATCH: k * 8 + -17
+  ✓ MATCH: k * 8 - 17
+  ✓ MATCH: k * 9 + -20
+  ✓ MATCH: k * 9 - 20
+  ✓ MATCH: k^2 + -2
+  ✓ MATCH: k^2 - 2
+  ✓ MATCH: k * 2 + 1
+  ✓ MATCH: k << 1 | 1
+  ✓ MATCH: (k << 1) + 1
+  ✓ MATCH: 1k² + -2k + 4
+  ✓ MATCH: 1k² + -1k + 1
+  ✓ MATCH: 1k² + 0k + -2
+  ✓ MATCH: 1k + 0pos + 4
+  ✓ MATCH: 1k² + 1k + -5
+  ✓ MATCH: 1k + 1pos + 1
+  ✓ MATCH: 1k + 2pos + -2
+  ✓ MATCH: 1k + 3pos + -5
+  ✓ MATCH: 2k² + -5k + 4
+  ✓ MATCH: 2k² + -4k + 1
+  ✓ MATCH: 2k² + -3k + -2
+  ✓ MATCH: 2k² + -2k + -5
+  ✓ MATCH: 2k + -1pos + 4
+  ✓ MATCH: 2k + 0pos + 1
+  ✓ MATCH: 2k + 1pos + -2
+  ✓ MATCH: 2k + 2pos + -5
+  ✓ MATCH: 3k² + -5k + -5
+  ✓ MATCH: 3k + -2pos + 4
+  ✓ MATCH: 3k + -1pos + 1
+  ✓ MATCH: 3k + 0pos + -2
+  ✓ MATCH: 3k + 1pos + -5
+  ✓ MATCH: 4k + -3pos + 4
+  ✓ MATCH: 4k + -2pos + 1
+  ✓ MATCH: 4k + -1pos + -2
+  ✓ MATCH: 4k + 0pos + -5
+  ✓ MATCH: 5k + -4pos + 4
+  ✓ MATCH: 5k + -3pos + 1
+  ✓ MATCH: 5k + -2pos + -2
+  ✓ MATCH: 5k + -1pos + -5
+  ✓ MATCH: k + 4
+  ✓ MATCH: k XOR 4
+  ✓ MATCH: k OR 4
+  ✓ MATCH: 4 + k
+  ✓ MATCH: k OR 5
+  ✓ MATCH: k OR 6
+  ✓ MATCH: k OR 7
+  ✓ MATCH: 10 - k
+  ✓ MATCH: k + 2^2
+  ✓ MATCH: k XOR 2^2
+  ✓ MATCH: (k<<1)^(k>>1)
+  ✓ MATCH: k + 1*p + 1
+  ✓ MATCH: k*6 XOR p*7
+  ✓ MATCH: k*7 XOR p*6
+  ✓ MATCH: k*14 XOR p*15
+  ✓ MATCH: k*15 XOR p*14
+  ✓ MATCH: k + C(4,1)
+  ✓ MATCH: k + C(4,3)
+  ✓ MATCH: k*2 + pos%2
+  ✓ MATCH: k + L3
+  ✓ MATCH: k + (4)_1
+  ✓ MATCH: mandel_c0
+  ✓ MATCH: julia_-1_-1
+  ✓ MATCH: k + det(1,1,1,5)
+  ✓ MATCH: k + det(2,1,2,3)
+  ✓ MATCH: k + det(2,1,4,4)
+  ✓ MATCH: k + det(2,2,1,3)
+  ✓ MATCH: k + det(2,2,2,4)
+  ✓ MATCH: k + det(2,2,3,5)
+  ✓ MATCH: k + det(2,3,2,5)
+  ✓ MATCH: k + det(2,4,1,4)
+  ✓ MATCH: k + det(3,1,2,2)
+  ✓ MATCH: k + det(3,1,5,3)
+  ✓ MATCH: k + det(3,2,1,2)
+  ✓ MATCH: k + det(3,2,4,4)
+  ✓ MATCH: k + det(3,4,2,4)
+  ✓ MATCH: k + det(3,5,1,3)
+  ✓ MATCH: k + det(4,1,4,2)
+  ✓ MATCH: k + det(4,2,2,2)
+  ✓ MATCH: k + det(4,2,4,3)
+  ✓ MATCH: k + det(4,3,4,4)
+  ✓ MATCH: k + det(4,4,1,2)
+  ✓ MATCH: k + det(4,4,2,3)
+  ✓ MATCH: k + det(4,4,3,4)
+  ✓ MATCH: k + det(4,4,4,5)
+  ✓ MATCH: k + det(5,1,1,1)
+  ✓ MATCH: k + det(5,2,3,2)
+  ✓ MATCH: k + det(5,3,2,2)
+  ✓ MATCH: k + det(5,4,4,4)
+  ✓ MATCH: k + φ(5)
+  ✓ MATCH: k + 2*2^(pos%2)
+  ✓ MATCH: k + 4*2^(pos%3)
+  ✓ MATCH: k + 4*3^(pos%3)
+  ✓ MATCH: k + 1*4^(pos%2)
+  ✓ MATCH: k + 4*4^(pos%3)
+  ✓ MATCH: k + 4*5^(pos%3)
+  ✓ MATCH: k + 4*6^(pos%3)
+  ✓ MATCH: k + 4*7^(pos%3)
+  ✓ MATCH: k + 4*8^(pos%3)
+  ✓ MATCH: k + 4*9^(pos%3)
+  ✓ MATCH: k + 4*10^(pos%3)
+  ✓ MATCH: k + 4*11^(pos%3)
+  ✓ MATCH: k + 1*tri_wave(pos, 7)
+  ✓ MATCH: k + 2*tri_wave(pos, 5)
+  ✓ MATCH: k + 4*sin_approx(pos, 4)
+  ✓ MATCH: k + 4*tri_wave(pos, 4)
+  ✓ MATCH: k + 4*sin_approx(pos, 5)
+  ✓ MATCH: (k << 1) + 1
+  ✓ MATCH: (k << 1) + 1
+  ✓ MATCH: (k >> 1) + 6
+  ✓ MATCH: (k >> 1) * 7
+  ✓ MATCH: (k << 2) - 5
+  ✓ MATCH: (k >> 2) + 7
+  ✓ MATCH: (k >> 3) + 7
+  ✓ MATCH: (k << 3) - 17
+  ✓ MATCH: (k >> 4) + 7
+  ✓ MATCH: (k >> 5) + 7
+  ✓ MATCH: (k >> 6) + 7
+  ✓ MATCH: (k >> 7) + 7
+  ✓ MATCH: (k >> 8) + 7
+  ✓ MATCH: (k >> 9) + 7
+  ✓ MATCH: (k >> 10) + 7
+  ✓ MATCH: (k >> 11) + 7
+  ✓ MATCH: (k >> 12) + 7
+  ✓ MATCH: (k >> 13) + 7
+  ✓ MATCH: (k >> 14) + 7
+  ✓ MATCH: (k >> 15) + 7
+  ✓ MATCH: (k << 1) OR pos
+  ✓ MATCH: k << 4 if pos%3==1 else k + 4
+  ✓ MATCH: k << 4 if pos%4==1 else k + 4
+  ✓ MATCH: k << 4 if pos%5==1 else k + 4
+  ✓ MATCH: k << 4 if pos%6==1 else k + 4
+  ✓ MATCH: k << 4 if pos%7==1 else k + 4
+  ✓ MATCH: (k << 1) | 0x1
+  ✓ MATCH: (k << 1) XOR 0x1
+  ✓ MATCH: (k << 1) | 0x3
+  ✓ MATCH: (k << 1) | 0x7
+  ✓ MATCH: (k >> 1) | 0x7
+  ✓ MATCH: (k >> 2) | 0x7
+  ✓ MATCH: (k >> 2) XOR 0x7
+  ✓ MATCH: (k >> 3) | 0x7
+  ✓ MATCH: (k >> 3) XOR 0x7
+  ✓ MATCH: (k << 3) XOR 0x1f
+  ✓ MATCH: (k >> 4) | 0x7
+  ✓ MATCH: (k >> 4) XOR 0x7
+  ✓ MATCH: (k >> 5) | 0x7
+  ✓ MATCH: (k >> 5) XOR 0x7
+  ✓ MATCH: (k >> 6) | 0x7
+  ✓ MATCH: (k >> 6) XOR 0x7
+  ✓ MATCH: (k >> 7) | 0x7
+  ✓ MATCH: (k >> 7) XOR 0x7
+  ✓ MATCH: (k >> 8) | 0x7
+  ✓ MATCH: (k >> 8) XOR 0x7
+  ✓ MATCH: (k >> 9) | 0x7
+  ✓ MATCH: (k >> 9) XOR 0x7
+  ✓ MATCH: (k >> 10) | 0x7
+  ✓ MATCH: (k >> 10) XOR 0x7
+  ✓ MATCH: (k >> 11) | 0x7
+  ✓ MATCH: (k >> 11) XOR 0x7
+  ✓ MATCH: k << 1 + k >> 1
+  Found 175 matching transformations
+
+--- Analyzing position 3 → 4 ---
+Key[3] = 0x7
+Key[4] = 0x8
+Character: '8' (ASCII: 56, B58_idx: 7)
+  ✓ MATCH: k + 1
+  ✓ MATCH: k * 1 - 1
+  ✓ MATCH: k * 1 + 1
+  ✓ MATCH: k * 2 + -6
+  ✓ MATCH: k * 2 - 6
+  ✓ MATCH: k * 3 + -13
+  ✓ MATCH: k * 3 - 13
+  ✓ MATCH: k * 4 + -20
+  ✓ MATCH: k * 4 - 20
+  ✓ MATCH: k + 2^(pos % 2)
+  ✓ MATCH: k + (pos % 3)
+  ✓ MATCH: k + 2^(pos % 4)
+  ✓ MATCH: 1k + -1pos + 5
+  ✓ MATCH: 1k + 0pos + 1
+  ✓ MATCH: 1k + 1pos + -3
+  ✓ MATCH: 2k + -2pos + 2
+  ✓ MATCH: 2k + -1pos + -2
+  ✓ MATCH: 3k + -4pos + 3
+  ✓ MATCH: 3k + -3pos + -1
+  ✓ MATCH: 3k + -2pos + -5
+  ✓ MATCH: 4k + -5pos + 0
+  ✓ MATCH: 4k + -4pos + -4
+  ✓ MATCH: k + 1
+  ✓ MATCH: 1 + k
+  ✓ MATCH: k XOR 15
+  ✓ MATCH: 15 - k
+  ✓ MATCH: k*4 - p*5
+  ✓ MATCH: k*4 XOR p*5
+  ✓ MATCH: k*8 - p*12
+  ✓ MATCH: k*8 XOR p*12
+  ✓ MATCH: k*12 - p*19
+  ✓ MATCH: k + F0
+  ✓ MATCH: k + F1
+  ✓ MATCH: k + T0
+  ✓ MATCH: k + key[pos-3]
+  ✓ MATCH: k + Cat0
+  ✓ MATCH: k + Cat1
+  ✓ MATCH: k + Bell0
+  ✓ MATCH: k + Bell1
+  ✓ MATCH: k + C(1,1)
+  ✓ MATCH: k + C(2,2)
+  ✓ MATCH: k + C(3,3)
+  ✓ MATCH: k + C(4,4)
+  ✓ MATCH: k + C(5,5)
+  ✓ MATCH: k + C(6,6)
+  ✓ MATCH: k + C(7,7)
+  ✓ MATCH: k + C(8,8)
+  ✓ MATCH: k + C(9,9)
+  ✓ MATCH: k + C(10,10)
+  ✓ MATCH: k + L1
+  ✓ MATCH: k + Pell1
+  ✓ MATCH: k + !!0
+  ✓ MATCH: k + !!2
+  ✓ MATCH: k + 0!!
+  ✓ MATCH: k + 1!!
+  ✓ MATCH: k + (1)_1
+  ✓ MATCH: k + q^(k%10), q=1
+  ✓ MATCH: CA_rule_150
+  ✓ MATCH: CA_rule_184
+  ✓ MATCH: k + popcount(pos)
+  ✓ MATCH: k + det(1,1,1,2)
+  ✓ MATCH: k + det(1,1,2,3)
+  ✓ MATCH: k + det(1,1,3,4)
+  ✓ MATCH: k + det(1,1,4,5)
+  ✓ MATCH: k + det(1,2,1,3)
+  ✓ MATCH: k + det(1,2,2,5)
+  ✓ MATCH: k + det(1,3,1,4)
+  ✓ MATCH: k + det(1,4,1,5)
+  ✓ MATCH: k + det(2,1,1,1)
+  ✓ MATCH: k + det(2,1,3,2)
+  ✓ MATCH: k + det(2,1,5,3)
+  ✓ MATCH: k + det(2,3,1,2)
+  ✓ MATCH: k + det(2,3,3,5)
+  ✓ MATCH: k + det(2,5,1,3)
+  ✓ MATCH: k + det(3,1,2,1)
+  ✓ MATCH: k + det(3,1,5,2)
+  ✓ MATCH: k + det(3,2,1,1)
+  ✓ MATCH: k + det(3,2,4,3)
+  ✓ MATCH: k + det(3,4,2,3)
+  ✓ MATCH: k + det(3,5,1,2)
+  ✓ MATCH: k + det(4,1,3,1)
+  ✓ MATCH: k + det(4,3,1,1)
+  ✓ MATCH: k + det(4,3,5,4)
+  ✓ MATCH: k + det(4,5,3,4)
+  ✓ MATCH: k + det(5,1,4,1)
+  ✓ MATCH: k + det(5,2,2,1)
+  ✓ MATCH: k + det(5,3,3,2)
+  ✓ MATCH: k + det(5,4,1,1)
+  ✓ MATCH: k + φ(2)
+  ✓ MATCH: k + μ(1)
+  ✓ MATCH: k + μ(6)
+  ✓ MATCH: k + μ(10)
+  ✓ MATCH: k + μ(14)
+  ✓ MATCH: k + μ(15)
+  ✓ MATCH: k + 1*2^(pos%2)
+  ✓ MATCH: k + 1*2^(pos%4)
+  ✓ MATCH: k + 1*3^(pos%2)
+  ✓ MATCH: k + 1*3^(pos%4)
+  ✓ MATCH: k + 1*4^(pos%2)
+  ✓ MATCH: k + 1*4^(pos%4)
+  ✓ MATCH: k + 1*5^(pos%2)
+  ✓ MATCH: k + 1*5^(pos%4)
+  ✓ MATCH: k + 1*6^(pos%2)
+  ✓ MATCH: k + 1*6^(pos%4)
+  ✓ MATCH: k + 1*7^(pos%2)
+  ✓ MATCH: k + 1*7^(pos%4)
+  ✓ MATCH: k + 1*8^(pos%2)
+  ✓ MATCH: k + 1*8^(pos%4)
+  ✓ MATCH: k + 1*9^(pos%2)
+  ✓ MATCH: k + 1*9^(pos%4)
+  ✓ MATCH: k + 1*10^(pos%2)
+  ✓ MATCH: k + 1*10^(pos%4)
+  ✓ MATCH: k + 1*11^(pos%2)
+  ✓ MATCH: k + 1*11^(pos%4)
+  ✓ MATCH: k + 1*tri_wave(pos, 5)
+  ✓ MATCH: k + 1*sin_approx(pos, 6)
+  ✓ MATCH: k + 1*sin_approx(pos, 7)
+  ✓ MATCH: (k >> 1) + 5
+  ✓ MATCH: (k << 1) - 6
+  ✓ MATCH: (k >> 2) + 7
+  ✓ MATCH: (k >> 2) * 8
+  ✓ MATCH: (k << 2) - 20
+  ✓ MATCH: (k >> 3) + 8
+  ✓ MATCH: (k >> 4) + 8
+  ✓ MATCH: (k >> 5) + 8
+  ✓ MATCH: (k >> 6) + 8
+  ✓ MATCH: (k >> 7) + 8
+  ✓ MATCH: (k >> 8) + 8
+  ✓ MATCH: (k >> 9) + 8
+  ✓ MATCH: (k >> 10) + 8
+  ✓ MATCH: (k >> 11) + 8
+  ✓ MATCH: (k >> 12) + 8
+  ✓ MATCH: (k >> 13) + 8
+  ✓ MATCH: (k >> 14) + 8
+  ✓ MATCH: (k >> 15) + 8
+  ✓ MATCH: k >> 2 << 3
+  ✓ MATCH: k << 1 if pos%2==1 else k + 1
+  ✓ MATCH: k << 1 if pos%4==1 else k + 1
+  ✓ MATCH: k << 1 if pos%5==1 else k + 1
+  ✓ MATCH: k << 1 if pos%6==1 else k + 1
+  ✓ MATCH: k << 1 if pos%7==1 else k + 1
+  ✓ MATCH: (k << 3) & 0xf
+  Found 142 matching transformations
+
+--- Analyzing position 4 → 5 ---
+Key[4] = 0x8
+Key[5] = 0x15
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ✓ MATCH: k + 13
+  ✓ MATCH: k * 2 + 5
+  ✓ MATCH: k * 2 + pos
+  ✓ MATCH: k * 1 - 13
+  ✓ MATCH: k * 1 + 13
+  ✓ MATCH: k * 2 - 5
+  ✓ MATCH: k * 2 + 5
+  ✓ MATCH: k * 3 + -3
+  ✓ MATCH: k * 3 - 3
+  ✓ MATCH: k * 4 + -11
+  ✓ MATCH: k * 4 - 11
+  ✓ MATCH: k * 5 + -19
+  ✓ MATCH: k * 5 - 19
+  ✓ MATCH: k * 2 + pos
+  ✓ MATCH: k * 2 + pos
+  ✓ MATCH: (k << 1) + pos
+  ✓ MATCH: 1k² + -5k + -3
+  ✓ MATCH: 1k + 2pos + 3
+  ✓ MATCH: 1k + 3pos + -2
+  ✓ MATCH: 2k + 0pos + 5
+  ✓ MATCH: 2k + 1pos + 0
+  ✓ MATCH: 2k + 2pos + -5
+  ✓ MATCH: 3k + -1pos + 2
+  ✓ MATCH: 3k + 0pos + -3
+  ✓ MATCH: 4k + -3pos + 4
+  ✓ MATCH: 4k + -2pos + -1
+  ✓ MATCH: 5k + -4pos + 1
+  ✓ MATCH: 5k + -3pos + -4
+  ✓ MATCH: k + 13
+  ✓ MATCH: 13 + k
+  ✓ MATCH: k XOR 29
+  ✓ MATCH: 29 - k
+  ✓ MATCH: k + 13^1
+  ✓ MATCH: k + 1*p + 8
+  ✓ MATCH: k*2 + p*1
+  ✓ MATCH: k*2 XOR p*1
+  ✓ MATCH: k + 2*p + 3
+  ✓ MATCH: k*7 - p*7
+  ✓ MATCH: k*7 XOR p*9
+  ✓ MATCH: k*8 XOR p*17
+  ✓ MATCH: k*12 - p*15
+  ✓ MATCH: k + P13
+  ✓ MATCH: k XOR P29
+  ✓ MATCH: k + F6
+  ✓ MATCH: k + C(13,1)
+  ✓ MATCH: matrix_21_row1
+  ✓ MATCH: k*2 + p*1 [φ]
+  ✓ MATCH: 1k + 1pos + 2(pos-1)
+  ✓ MATCH: k + det(3,1,2,5)
+  ✓ MATCH: k + det(3,2,1,5)
+  ✓ MATCH: k + det(4,1,3,4)
+  ✓ MATCH: k + det(4,3,1,4)
+  ✓ MATCH: k + det(5,1,2,3)
+  ✓ MATCH: k + det(5,2,1,3)
+  ✓ MATCH: k + det(5,3,4,5)
+  ✓ MATCH: k + det(5,4,3,5)
+  ✓ MATCH: k + φ(14)
+  ✓ MATCH: k + 1*tri_wave(pos, 18)
+  ✓ MATCH: k + 13*tri_wave(pos, 4)
+  ✓ MATCH: k + 13*tri_wave(pos, 6)
+  ✓ MATCH: k + 13*sin_approx(pos, 8)
+  ✓ MATCH: k + 13*sin_approx(pos, 9)
+  ✓ MATCH: (k << 1) + 5
+  ✓ MATCH: (k >> 1) + 17
+  ✓ MATCH: (k << 2) - 11
+  ✓ MATCH: (k >> 2) + 19
+  ✓ MATCH: (k >> 3) + 20
+  ✓ MATCH: (k >> 3) * 21
+  ✓ MATCH: (k >> 4) + 21
+  ✓ MATCH: (k >> 5) + 21
+  ✓ MATCH: (k >> 6) + 21
+  ✓ MATCH: (k >> 7) + 21
+  ✓ MATCH: (k >> 8) + 21
+  ✓ MATCH: (k >> 9) + 21
+  ✓ MATCH: (k >> 10) + 21
+  ✓ MATCH: (k >> 11) + 21
+  ✓ MATCH: (k >> 12) + 21
+  ✓ MATCH: (k >> 13) + 21
+  ✓ MATCH: (k >> 14) + 21
+  ✓ MATCH: (k >> 15) + 21
+  ✓ MATCH: (k << 1) + pos
+  ✓ MATCH: (k << 1) XOR pos
+  ✓ MATCH: (k << 1) OR pos
+  ✓ MATCH: k << 13 if pos%3==1 else k + 13
+  ✓ MATCH: k << 13 if pos%5==1 else k + 13
+  ✓ MATCH: k << 13 if pos%6==1 else k + 13
+  ✓ MATCH: k << 13 if pos%7==1 else k + 13
+  Found 87 matching transformations
+
+--- Analyzing position 5 → 6 ---
+Key[5] = 0x15
+Key[6] = 0x31
+Character: '6' (ASCII: 54, B58_idx: 5)
+  ✓ MATCH: k + 28
+  ✓ MATCH: k * 2 + 7
+  ✓ MATCH: k * 2 - 7
+  ✓ MATCH: k * 2 + 7
+  ✓ MATCH: k * 3 + -14
+  ✓ MATCH: k * 3 - 14
+  ✓ MATCH: 1k + 4pos + 4
+  ✓ MATCH: 1k + 5pos + -2
+  ✓ MATCH: 2k + 1pos + 1
+  ✓ MATCH: 2k + 2pos + -5
+  ✓ MATCH: 3k + -3pos + 4
+  ✓ MATCH: 3k + -2pos + -2
+  ✓ MATCH: 4k + -5pos + -5
+  ✓ MATCH: k + 28
+  ✓ MATCH: 28 + k
+  ✓ MATCH: k XOR 36
+  ✓ MATCH: 70 - k
+  ✓ MATCH: k*1 XOR p*6
+  ✓ MATCH: k + 2*p + 16
+  ✓ MATCH: k + 3*p + 10
+  ✓ MATCH: k + 4*p + 4
+  ✓ MATCH: k*1 + p*3 + B58*2
+  ✓ MATCH: k + T6
+  ✓ MATCH: k + perfect(28)
+  ✓ MATCH: k + C(8,2)
+  ✓ MATCH: k + C(8,6)
+  ✓ MATCH: 1k + 3pos + 2(pos-1)
+  ✓ MATCH: k + φ(29)
+  ✓ MATCH: k + 4*7^(pos%5)
+  ✓ MATCH: k + 2*tri_wave(pos, 20)
+  ✓ MATCH: k + 4*tri_wave(pos, 13)
+  ✓ MATCH: k + 7*tri_wave(pos, 10)
+  ✓ MATCH: k + 14*tri_wave(pos, 4)
+  ✓ MATCH: k + 14*sin_approx(pos, 8)
+  ✓ MATCH: k + 14*tri_wave(pos, 8)
+  ✓ MATCH: k + 14*sin_approx(pos, 9)
+  ✓ MATCH: (k << 1) + 7
+  Found 37 matching transformations
+
+--- Analyzing position 6 → 7 ---
+Key[6] = 0x31
+Key[7] = 0x4c
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ✓ MATCH: k + 27
+  ✓ MATCH: 1k + 4pos + -1
+  ✓ MATCH: 2k + -3pos + -1
+  ✓ MATCH: k + 27
+  ✓ MATCH: 27 + k
+  ✓ MATCH: k XOR 125
+  ✓ MATCH: 125 - k
+  ✓ MATCH: k + 3^3
+  ✓ MATCH: k XOR 5^3
+  ✓ MATCH: k + 1*p + 20
+  ✓ MATCH: k + 2*p + 13
+  ✓ MATCH: k + 3*p + 6
+  ✓ MATCH: 1k + 3pos + 1(pos-1)
+  ✓ MATCH: k + φ(28)
+  ✓ MATCH: k + 1*3^(pos%4)
+  ✓ MATCH: k + 3*3^(pos%5)
+  ✓ MATCH: k + 3*9^(pos%2)
+  ✓ MATCH: k + 3*9^(pos%3)
+  ✓ MATCH: k + 3*9^(pos%6)
+  ✓ MATCH: k + 3*tri_wave(pos, 16)
+  ✓ MATCH: k + 9*tri_wave(pos, 4)
+  ✓ MATCH: k + 9*sin_approx(pos, 8)
+  ✓ MATCH: k + 9*sin_approx(pos, 9)
+  ✓ MATCH: k + 9*tri_wave(pos, 10)
+  ✓ MATCH: (k << 1) - 22
+  Found 25 matching transformations
+
+--- Analyzing position 7 → 8 ---
+Key[7] = 0x4c
+Key[8] = 0xe0
+Character: '4' (ASCII: 52, B58_idx: 3)
+  ✓ MATCH: k * 3 - 4
+  ✓ MATCH: k * 3 + -4
+  ✓ MATCH: k * 3 - 4
+  ✓ MATCH: 3k + -1pos + 4
+  ✓ MATCH: 3k + 0pos + -4
+  ✓ MATCH: k + 148
+  ✓ MATCH: 148 + k
+  ✓ MATCH: k XOR 172
+  ✓ MATCH: 2k + 1p² + 8
+  ✓ MATCH: k*2 + p*9
+  ✓ MATCH: k*2 XOR p*15
+  ✓ MATCH: k*4 - p*10
+  ✓ MATCH: k + 16*p + 20
+  ✓ MATCH: k + 17*p + 12
+  ✓ MATCH: k + 18*p + 4
+  Found 15 matching transformations
+
+--- Analyzing position 8 → 9 ---
+Key[8] = 0xe0
+Key[9] = 0x1d3
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ✓ MATCH: k * 2 + 19
+  ✓ MATCH: k * 2 - 19
+  ✓ MATCH: k * 2 + 19
+  ✓ MATCH: 2k + 2pos + 1
+  ✓ MATCH: k + 3^5
+  ✓ MATCH: 1k + 3p² + 0
+  ✓ MATCH: k + 3*3^(pos%5)
+  ✓ MATCH: k + 3*9^(pos%7)
+  ✓ MATCH: (k << 1) + 19
+  Found 9 matching transformations
+
+--- Analyzing position 9 → 10 ---
+Key[9] = 0x1d3
+Key[10] = 0x202
+Character: '5' (ASCII: 53, B58_idx: 4)
+  ✓ MATCH: 1k + 5pos + -3
+  ✓ MATCH: k + 47
+  ✓ MATCH: 47 + k
+  ✓ MATCH: k + 3*p + 17
+  ✓ MATCH: k + 4*p + 7
+  ✓ MATCH: k + P47
+  ✓ MATCH: k + L8
+  ✓ MATCH: 1k + 2pos + 3(pos-1)
+  ✓ MATCH: k + φ(48)
+  Found 9 matching transformations
+
+--- Analyzing position 10 → 11 ---
+Key[10] = 0x202
+Key[11] = 0x483
+Character: '2' (ASCII: 50, B58_idx: 1)
+  ✓ MATCH: k * 2 + 127
+  ✓ MATCH: 2k + 1p² + 6
+  ✓ MATCH: k*2 + p*7 + ASCII*1
+  ✓ MATCH: 2k + 7pos + 5(pos-1)
+  Found 4 matching transformations
+
+--- Analyzing position 11 → 12 ---
+Key[11] = 0x483
+Key[12] = 0xa7b
+Character: '6' (ASCII: 54, B58_idx: 5)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 12 → 13 ---
+Key[12] = 0xa7b
+Key[13] = 0x1460
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 13 → 14 ---
+Key[13] = 0x1460
+Key[14] = 0x2930
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ✓ MATCH: k * 2 + 112
+  ✓ MATCH: k*2 + p*8
+  Found 2 matching transformations
+
+--- Analyzing position 14 → 15 ---
+Key[14] = 0x2930
+Key[15] = 0x68f3
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 15 → 16 ---
+Key[15] = 0x68f3
+Key[16] = 0xc936
+Character: '8' (ASCII: 56, B58_idx: 7)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 16 → 17 ---
+Key[16] = 0xc936
+Key[17] = 0x1764f
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 17 → 18 ---
+Key[17] = 0x1764f
+Key[18] = 0x3080d
+Character: '5' (ASCII: 53, B58_idx: 4)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 18 → 19 ---
+Key[18] = 0x3080d
+Key[19] = 0x5749f
+Character: '4' (ASCII: 52, B58_idx: 3)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 19 → 20 ---
+Key[19] = 0x5749f
+Key[20] = 0xd2c55
+Character: '6' (ASCII: 54, B58_idx: 5)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 20 → 21 ---
+Key[20] = 0xd2c55
+Key[21] = 0x1ba534
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 21 → 22 ---
+Key[21] = 0x1ba534
+Key[22] = 0x2de40f
+Character: 'f' (ASCII: 102, B58_idx: 38)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 22 → 23 ---
+Key[22] = 0x2de40f
+Key[23] = 0x556e52
+Character: 'f' (ASCII: 102, B58_idx: 38)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 23 → 24 ---
+Key[23] = 0x556e52
+Key[24] = 0xdc2a04
+Character: '6' (ASCII: 54, B58_idx: 5)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 24 → 25 ---
+Key[24] = 0xdc2a04
+Key[25] = 0x1fa5ee5
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 25 → 26 ---
+Key[25] = 0x1fa5ee5
+Key[26] = 0x340326e
+Character: 'A' (ASCII: 65, B58_idx: 9)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 26 → 27 ---
+Key[26] = 0x340326e
+Key[27] = 0x6ac3875
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 27 → 28 ---
+Key[27] = 0x6ac3875
+Key[28] = 0xd916ce8
+Character: '1' (ASCII: 49, B58_idx: 0)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 28 → 29 ---
+Key[28] = 0xd916ce8
+Key[29] = 0x17e2551e
+Character: 'B' (ASCII: 66, B58_idx: 10)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 29 → 30 ---
+Key[29] = 0x17e2551e
+Key[30] = 0x3d94cd64
+Character: '1' (ASCII: 49, B58_idx: 0)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 30 → 31 ---
+Key[30] = 0x3d94cd64
+Key[31] = 0x7d4fe747
+Character: '9' (ASCII: 57, B58_idx: 8)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 31 → 32 ---
+Key[31] = 0x7d4fe747
+Key[32] = 0xb862a62e
+Character: '1' (ASCII: 49, B58_idx: 0)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 32 → 33 ---
+Key[32] = 0xb862a62e
+Key[33] = 0x1a96ca8d8
+Character: '6' (ASCII: 54, B58_idx: 5)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 33 → 34 ---
+Key[33] = 0x1a96ca8d8
+Key[34] = 0x34a65911d
+Character: '9' (ASCII: 57, B58_idx: 8)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 34 → 35 ---
+Key[34] = 0x34a65911d
+Key[35] = 0x4aed21170
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 35 → 36 ---
+Key[35] = 0x4aed21170
+Key[36] = 0x9de820a7c
+Character: '5' (ASCII: 53, B58_idx: 4)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 36 → 37 ---
+Key[36] = 0x9de820a7c
+Key[37] = 0x1757756a93
+Character: '5' (ASCII: 53, B58_idx: 4)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 37 → 38 ---
+Key[37] = 0x1757756a93
+Key[38] = 0x22382facd0
+Character: '6' (ASCII: 54, B58_idx: 5)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 38 → 39 ---
+Key[38] = 0x22382facd0
+Key[39] = 0x4b5f8303e9
+Character: '0' (ASCII: 48, B58_idx: -1)
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 39 → 40 ---
+Key[39] = 0x4b5f8303e9
+Key[40] = 0xe9ae4933d6
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 40 → 41 ---
+Key[40] = 0xe9ae4933d6
+Key[41] = 0x153869acc5b
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 41 → 42 ---
+Key[41] = 0x153869acc5b
+Key[42] = 0x2a221c58d8f
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 42 → 43 ---
+Key[42] = 0x2a221c58d8f
+Key[43] = 0x6bd3b27c591
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 43 → 44 ---
+Key[43] = 0x6bd3b27c591
+Key[44] = 0xe02b35a358f
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 44 → 45 ---
+Key[44] = 0xe02b35a358f
+Key[45] = 0x122fca143c05
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 45 → 46 ---
+Key[45] = 0x122fca143c05
+Key[46] = 0x2ec18388d544
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 46 → 47 ---
+Key[46] = 0x2ec18388d544
+Key[47] = 0x6cd610b53cba
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 47 → 48 ---
+Key[47] = 0x6cd610b53cba
+Key[48] = 0xade6d7ce3b9b
+  ❌ NO TRANSFORMATIONS FOUND
+
+--- Analyzing position 48 → 49 ---
+Key[48] = 0xade6d7ce3b9b
+Key[49] = 0x174176b015f4d
+  ❌ NO TRANSFORMATIONS FOUND
