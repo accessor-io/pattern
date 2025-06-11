@@ -1,0 +1,1510 @@
+Modular Forms Analysis
+================================================================================
+
+Individual Form Properties:
+----------------------------------------
+
+Form 1:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 4, 6723102998762908507940659863496937563873281124428079405153821360170509098149: 1}
+  square_free_candidates: [6723102998762908507940659863496937563873281124428079405153821360170509098149]
+  conductor_like: True
+  min_possible_level: 6723102998762908507940659863496937563873281124428079405153821360170509098149
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 3.2797812119134795e+38
+
+Form 2:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 253
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 1, 5: 1, 7: 1, 168400127975858616479797661441186960129768991689164166786399544604830440833: 1}
+  square_free_candidates: [3, 5, 7, 168400127975858616479797661441186960129768991689164166786399544604830440833]
+  conductor_like: True
+  min_possible_level: 3
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.3297373213332457e+38
+
+Form 3:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {45764518674824767400334203195549800819548803977462247057278307422323430744001: 1}
+  square_free_candidates: [45764518674824767400334203195549800819548803977462247057278307422323430744001]
+  conductor_like: True
+  min_possible_level: 45764518674824767400334203195549800819548803977462247057278307422323430744001
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.1392643285677616e+38
+
+Form 4:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 253
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 1, 13: 1, 23: 1, 15250523180948544354605982551325420353888571397242906909261941627274550937: 1}
+  square_free_candidates: [2, 3, 13, 23, 15250523180948544354605982551325420353888571397242906909261941627274550937]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.65406887966075e+38
+
+Form 5:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {5: 1, 13: 1, 31: 1, 83: 1, 294881267293941257655577808297476908118572141479828743666477316077958369: 1}
+  square_free_candidates: [5, 13, 31, 83, 294881267293941257655577808297476908118572141479828743666477316077958369]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.220752519948479e+38
+
+Form 6:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {46098756639452268768648063912436602753121702704784810351397120418598756959959: 1}
+  square_free_candidates: [46098756639452268768648063912436602753121702704784810351397120418598756959959]
+  conductor_like: True
+  min_possible_level: 46098756639452268768648063912436602753121702704784810351397120418598756959959
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.1470621006261617e+38
+
+Form 7:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {5: 1, 12662901873121184379797323568374065305690061959844120864496198573372702158919: 1}
+  square_free_candidates: [5, 12662901873121184379797323568374065305690061959844120864496198573372702158919]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.5162374563146046e+38
+
+Form 8:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 252
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {5: 2, 449: 1, 1200252435958203658904609092149865810366221801713619725689090993173294407: 1}
+  square_free_candidates: [449, 1200252435958203658904609092149865810366221801713619725689090993173294407]
+  conductor_like: True
+  min_possible_level: 449
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.1607253591453422e+38
+
+Form 9:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 5, 487: 1, 2360936153555422244679999371995282669258117033368047185751559180558561391: 1}
+  square_free_candidates: [487, 2360936153555422244679999371995282669258117033368047185751559180558561391]
+  conductor_like: True
+  min_possible_level: 487
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 1.9181456935542643e+38
+
+Form 10:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 2, 19: 1, 147165109684553281208340788358970852832323602337340642218162364415891619961: 1}
+  square_free_candidates: [2, 19, 147165109684553281208340788358970852832323602337340642218162364415891619961]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.2434452859857586e+38
+
+Form 11:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {71: 1, 1008632675009223506848753910166880851171745615442478060928840940596406398823: 1}
+  square_free_candidates: [71, 1008632675009223506848753910166880851171745615442478060928840940596406398823]
+  conductor_like: True
+  min_possible_level: 71
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.6760590413078496e+38
+
+Form 12:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 249
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 1, 7: 1, 41526281273799324524851446327929226273509911502435590775384375146614225259: 1}
+  square_free_candidates: [2, 3, 7, 41526281273799324524851446327929226273509911502435590775384375146614225259]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 4.1762468958379025e+37
+
+Form 13:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 4, 3: 1, 11: 1, 123872738270549491763341335850286498822863811657298011036553188207917786283: 1}
+  square_free_candidates: [3, 11, 123872738270549491763341335850286498822863811657298011036553188207917786283]
+  conductor_like: True
+  min_possible_level: 3
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 2.557436329742153e+38
+
+Form 14:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 1, 12193597592186042333731056954493014855693920945756664600660907643241378379009: 1}
+  square_free_candidates: [3, 12193597592186042333731056954493014855693920945756664600660907643241378379009]
+  conductor_like: True
+  min_possible_level: 3
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.9126105922680164e+38
+
+Form 15:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 1, 7: 1, 2360450589371791376077469407153798533691791218709844106006166155342301314297: 1}
+  square_free_candidates: [2, 3, 7, 2360450589371791376077469407153798533691791218709844106006166155342301314297]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.148633429817057e+38
+
+Form 16:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 1, 19494092163111323038512692428310985845590691828439993741485042879277214848863: 1}
+  square_free_candidates: [3, 19494092163111323038512692428310985845590691828439993741485042879277214848863]
+  conductor_like: True
+  min_possible_level: 3
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.4183109082443053e+38
+
+Form 17:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 2, 4791866517919762003361536088179966731220133933532236879962114741767944961457: 1}
+  square_free_candidates: [4791866517919762003361536088179966731220133933532236879962114741767944961457]
+  conductor_like: True
+  min_possible_level: 4791866517919762003361536088179966731220133933532236879962114741767944961457
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.076699271952438e+38
+
+Form 18:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 252
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 1, 3781773697063935795662778122410386716468841296517219765761058909523303087093: 1}
+  square_free_candidates: [3, 3781773697063935795662778122410386716468841296517219765761058909523303087093]
+  conductor_like: True
+  min_possible_level: 3
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.0651441729264545e+38
+
+Form 19:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 252
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 7119202482867207344609312146371453263389103228008834161233380465410590151029: 1}
+  square_free_candidates: [2, 7119202482867207344609312146371453263389103228008834161233380465410590151029]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.1932478772549489e+38
+
+Form 20:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 1, 19159624259074170306299685843645199896408774282127102063632468974943608890541: 1}
+  square_free_candidates: [3, 19159624259074170306299685843645199896408774282127102063632468974943608890541]
+  conductor_like: True
+  min_possible_level: 3
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.3974751881348536e+38
+
+Form 21:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {5: 1, 23: 1, 926706314922402427379692518713026803217481968675991376331743441353457645953: 1}
+  square_free_candidates: [5, 23, 926706314922402427379692518713026803217481968675991376331743441353457645953]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.2645248691972968e+38
+
+Form 22:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 31091804278931741959445512170567878399111805106771671406595720017000510257671: 1}
+  square_free_candidates: [2, 31091804278931741959445512170567878399111805106771671406595720017000510257671]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.493664142539317e+38
+
+Form 23:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 157: 1, 443: 1, 315125592209785924105310680377488143608133904082073889941327753498771169: 1}
+  square_free_candidates: [2, 157, 443, 315125592209785924105310680377488143608133904082073889941327753498771169]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.093671419482189e+38
+
+Form 24:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 252
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {23: 1, 578443521947368236500846646580701956712662069047406564175969376589377214963: 1}
+  square_free_candidates: [23, 578443521947368236500846646580701956712662069047406564175969376589377214963]
+  conductor_like: True
+  min_possible_level: 23
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.1534383817434493e+38
+
+Form 25:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {19: 1, 23: 1, 152367574951065120346252844954598232274863329238353572119337516158514907977: 1}
+  square_free_candidates: [19, 23, 152367574951065120346252844954598232274863329238353572119337516158514907977]
+  conductor_like: True
+  min_possible_level: 19
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.5803997801429037e+38
+
+Form 26:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 29: 1, 1735902421439143436464339081806642517662664027580535631021372786458848322467: 1}
+  square_free_candidates: [2, 29, 1735902421439143436464339081806642517662664027580535631021372786458848322467]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.173048068395282e+38
+
+Form 27:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {13: 1, 23: 1, 743: 1, 168448950135123233423319605686388566873434085822956317176806106939304821: 1}
+  square_free_candidates: [13, 23, 743, 168448950135123233423319605686388566873434085822956317176806106939304821]
+  conductor_like: True
+  min_possible_level: 13
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.9344796048335215e+38
+
+Form 28:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {29: 1, 3225306968672679256640424011948725398103217702290560184257518188592415833587: 1}
+  square_free_candidates: [29, 3225306968672679256640424011948725398103217702290560184257518188592415833587]
+  conductor_like: True
+  min_possible_level: 29
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.0583312785162386e+38
+
+Form 29:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 2, 47: 1, 94114256604524396447087924249503657028788335139786567739213318683948377161: 1}
+  square_free_candidates: [47, 94114256604524396447087924249503657028788335139786567739213318683948377161]
+  conductor_like: True
+  min_possible_level: 47
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.9952526292104924e+38
+
+Form 30:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 253
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {919: 1, 23900731540408823885864747303579119890095824707037366258306980125016690997: 1}
+  square_free_candidates: [919, 23900731540408823885864747303579119890095824707037366258306980125016690997]
+  conductor_like: True
+  min_possible_level: 919
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.482051695644781e+38
+
+Form 31:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 29: 1, 1870717477428976515015186504189625974750030962795803501059690827089161837469: 1}
+  square_free_candidates: [2, 29, 1870717477428976515015186504189625974750030962795803501059690827089161837469]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.293958313198281e+38
+
+Form 32:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 7: 1, 13: 1, 79: 1, 6405703349580058316274391981709513664645424902908284516099399421071152637: 1}
+  square_free_candidates: [2, 7, 13, 79, 6405703349580058316274391981709513664645424902908284516099399421071152637]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.0348179971830612e+38
+
+Form 33:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {13: 1, 7836431377300028731229196895329011270459859917155047121162524038009663310941: 1}
+  square_free_candidates: [13, 7836431377300028731229196895329011270459859917155047121162524038009663310941]
+  conductor_like: True
+  min_possible_level: 13
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.191764526165744e+38
+
+Form 34:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 2, 5: 2, 464430036274565253620926631322212548761810282973094170833521233078769870641: 1}
+  square_free_candidates: [464430036274565253620926631322212548761810282973094170833521233078769870641]
+  conductor_like: True
+  min_possible_level: 464430036274565253620926631322212548761810282973094170833521233078769870641
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.1550638883210986e+38
+
+Form 35:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 253
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 3, 3: 3, 613: 1, 208284641710901627404454290596976479761254262183162353997193013667637223: 1}
+  square_free_candidates: [613, 208284641710901627404454290596976479761254262183162353997193013667637223]
+  conductor_like: True
+  min_possible_level: 613
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 1.660679163464667e+38
+
+Form 36:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 2, 5: 1, 31: 1, 64934721333673710686310251481614885052137073566924836376444939396641819919: 1}
+  square_free_candidates: [5, 31, 64934721333673710686310251481614885052137073566924836376444939396641819919]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.009716535829825e+38
+
+Form 37:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 1, 12407212585898363685651658080155759481262203228958288191021850908282393702073: 1}
+  square_free_candidates: [2, 3, 12407212585898363685651658080155759481262203228958288191021850908282393702073]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.728429502761436e+38
+
+Form 38:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 3, 13193720290393127670771499814686760943940683606244508088135652351608514450903: 1}
+  square_free_candidates: [13193720290393127670771499814686760943940683606244508088135652351608514450903]
+  conductor_like: True
+  min_possible_level: 13193720290393127670771499814686760943940683606244508088135652351608514450903
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 3.2488422910807016e+38
+
+Form 39:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 1, 13: 1, 43: 1, 677: 1, 14092194158705721252600068680875874361173169400430217790489510650670547: 1}
+  square_free_candidates: [2, 3, 13, 43, 677, 14092194158705721252600068680875874361173169400430217790489510650670547]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.788813947955975e+38
+
+Form 40:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 253
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {7: 1, 137: 1, 28354866808741214618471744705695989642503187710432547604044796251918058711: 1}
+  square_free_candidates: [7, 137, 28354866808741214618471744705695989642503187710432547604044796251918058711]
+  conductor_like: True
+  min_possible_level: 7
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.649009316819733e+38
+
+Form 41:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 1, 7: 1, 19: 1, 31: 1, 2158254378596794167461106994155578486907235161474262455452089305173497141: 1}
+  square_free_candidates: [2, 3, 7, 19, 31, 2158254378596794167461106994155578486907235161474262455452089305173497141]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.3106470266513555e+38
+
+Form 42:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 251
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 8, 3: 1, 13: 1, 83: 1, 4451900891052333933136452558425598352139469150563130066531549427597793: 1}
+  square_free_candidates: [3, 13, 83, 4451900891052333933136452558425598352139469150563130066531549427597793]
+  conductor_like: True
+  min_possible_level: 3
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 6.07385019175656e+37
+
+Form 43:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 8, 41: 1, 10014542890440847490982111233054158546438400645166213235095302301312175777: 1}
+  square_free_candidates: [41, 10014542890440847490982111233054158546438400645166213235095302301312175777]
+  conductor_like: True
+  min_possible_level: 41
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 3.2421079898434464e+38
+
+Form 44:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 253
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 5, 5: 1, 139825507677687220786221591565037603549028385246863003626187602896190375857: 1}
+  square_free_candidates: [5, 139825507677687220786221591565037603549028385246863003626187602896190375857]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 1.4957299632096014e+38
+
+Form 45:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 5: 1, 31: 1, 164242583113892372618306354020461062937381268918893626331529246111935382631: 1}
+  square_free_candidates: [2, 5, 31, 164242583113892372618306354020461062937381268918893626331529246111935382631]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.2564396904261953e+38
+
+Form 46:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 253
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {467: 1, 45188266815963397157767531658755548078780741504854624529633064330306544237: 1}
+  square_free_candidates: [467, 45188266815963397157767531658755548078780741504854624529633064330306544237]
+  conductor_like: True
+  min_possible_level: 467
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.452684432457886e+38
+
+Form 47:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 2, 4752489211898242918115913389714533389625917366244000905295519598478165708173: 1}
+  square_free_candidates: [2, 4752489211898242918115913389714533389625917366244000905295519598478165708173]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.924804366349455e+38
+
+Form 48:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 253
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {18856238116624614756290506209596242181786528275693107334792093637923098924991: 1}
+  square_free_candidates: [18856238116624614756290506209596242181786528275693107334792093637923098924991]
+  conductor_like: True
+  min_possible_level: 18856238116624614756290506209596242181786528275693107334792093637923098924991
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.3731801817905987e+38
+
+Form 49:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 7: 1, 19: 1, 214625061743320620664711388990377232386188490082741332855435055772362823907: 1}
+  square_free_candidates: [2, 7, 19, 214625061743320620664711388990377232386188490082741332855435055772362823907]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.38935695164459e+38
+
+Form 50:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 2, 17364583139554877246589813381863940294329801341464034565803278489415443341957: 1}
+  square_free_candidates: [17364583139554877246589813381863940294329801341464034565803278489415443341957]
+  conductor_like: True
+  min_possible_level: 17364583139554877246589813381863940294329801341464034565803278489415443341957
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.6354948787318772e+38
+
+Form 51:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 599: 1, 88641017972743003359724740510058414029612779651261665162094273860914176129: 1}
+  square_free_candidates: [2, 599, 88641017972743003359724740510058414029612779651261665162094273860914176129]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.2587104739658313e+38
+
+Form 52:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 253
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {13: 1, 1205332533029704282889031525832932025891898163899675087416314811533826439273: 1}
+  square_free_candidates: [13, 1205332533029704282889031525832932025891898163899675087416314811533826439273]
+  conductor_like: True
+  min_possible_level: 13
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.2517716616614292e+38
+
+Form 53:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 3, 5: 1, 29: 1, 15324136016617044474444551695410556642696634569073607695073500775669815629: 1}
+  square_free_candidates: [5, 29, 15324136016617044474444551695410556642696634569073607695073500775669815629]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: False
+  potential_newform: False
+  petersson_estimate: 2.4493671122364594e+38
+
+Form 54:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {7: 1, 12577149883177294346817872945687218348268278216467102894206997290168684131849: 1}
+  square_free_candidates: [7, 12577149883177294346817872945687218348268278216467102894206997290168684131849]
+  conductor_like: True
+  min_possible_level: 7
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.9671543468825656e+38
+
+Form 55:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 253
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 1, 79: 1, 311: 1, 117401329424676792967314524532709210126479667059511136532397448821915457: 1}
+  square_free_candidates: [2, 3, 79, 311, 117401329424676792967314524532709210126479667059511136532397448821915457]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.315545498103707e+38
+
+Form 56:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {5: 1, 7: 1, 487: 1, 6177241303774560402936068243462024708372169590536781261241331300784793637: 1}
+  square_free_candidates: [5, 7, 487, 6177241303774560402936068243462024708372169590536781261241331300784793637]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.2448586721587333e+38
+
+Form 57:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 1, 7: 1, 3299059210891141618510258182816782828522269784837474253672473546744765608411: 1}
+  square_free_candidates: [3, 7, 3299059210891141618510258182816782828522269784837474253672473546744765608411]
+  conductor_like: True
+  min_possible_level: 3
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.6321140444272922e+38
+
+Form 58:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 45577126417780410291039660061100644575514753210121362201745508608104468068319: 1}
+  square_free_candidates: [2, 45577126417780410291039660061100644575514753210121362201745508608104468068319]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.019176259107123e+38
+
+Form 59:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 254
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 2, 5: 1, 7: 1, 220542673371064609919733416585512914921640841537868007792321684197905162173: 1}
+  square_free_candidates: [5, 7, 220542673371064609919733416585512914921640841537868007792321684197905162173]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.7571560622764572e+38
+
+Form 60:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 2, 6733377923876598979313998977668706797700985122305624138701800729263413497379: 1}
+  square_free_candidates: [6733377923876598979313998977668706797700985122305624138701800729263413497379]
+  conductor_like: True
+  min_possible_level: 6733377923876598979313998977668706797700985122305624138701800729263413497379
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.4617148761562416e+38
+
+Form 61:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {3: 2, 7: 1, 668325231344416088374548882821970751609681123038990068695373825434578430757: 1}
+  square_free_candidates: [7, 668325231344416088374548882821970751609681123038990068695373825434578430757]
+  conductor_like: True
+  min_possible_level: 7
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.0519378541929143e+38
+
+Form 62:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 255
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 13: 1, 2577747342526160995970079007690910135507903526102888352361167108343925667117: 1}
+  square_free_candidates: [2, 13, 2577747342526160995970079007690910135507903526102888352361167108343925667117]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 2.5888497620696376e+38
+
+Form 63:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 254
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {223: 1, 653: 1, 240208692203612943250558210404733570493053555180447110265574875202678867: 1}
+  square_free_candidates: [223, 653, 240208692203612943250558210404733570493053555180447110265574875202678867]
+  conductor_like: True
+  min_possible_level: 223
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: True
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.870266011828208e+38
+
+Form 64:
+Weight Analysis:
+  holomorphic: False
+  half_integral: True
+  estimated_max_weight: 255
+  weight_parity: odd
+
+Level Analysis:
+  prime_factors: {5: 1, 19: 1, 1105507116614921811291994421489827055885006205137453909998170028691122967119: 1}
+  square_free_candidates: [5, 19, 1105507116614921811291994421489827055885006205137453909998170028691122967119]
+  conductor_like: True
+  min_possible_level: 5
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 3.2407279441264054e+38
+
+Form 65:
+Weight Analysis:
+  holomorphic: True
+  half_integral: False
+  estimated_max_weight: 252
+  weight_parity: even
+
+Level Analysis:
+  prime_factors: {2: 1, 3: 1, 11: 1, 263: 1, 772676447962292897581078370764537333209966011012248790248646831502108367: 1}
+  square_free_candidates: [2, 3, 11, 263, 772676447962292897581078370764537333209966011012248790248646831502108367]
+  conductor_like: True
+  min_possible_level: 2
+
+Fourier Properties:
+  satisfies_ramanujan: False
+  multiplicative: False
+  potential_cm: True
+
+Hecke Properties:
+  hecke_compatible: True
+  potential_newform: True
+  petersson_estimate: 1.1581069805389086e+38
+
+Sequence Properties:
+----------------------------------------
+
+Common Structure:
+Common level factors: [2, 3, 263, 11, 772676447962292897581078370764537333209966011012248790248646831502108367]
+Consistent weight parity: False
+Potential basis: True
+
+Hecke Relations:

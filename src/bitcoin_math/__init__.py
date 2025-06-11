@@ -1,0 +1,1 @@
+"""Bitcoin mathematics analysis package""" 

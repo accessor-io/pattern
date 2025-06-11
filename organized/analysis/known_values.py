@@ -1,0 +1,8 @@
+KNOWN_VALUES = {
+    125: 0x1c533b6bb7f0804e09960225e44877ac,
+    130: 0x33e7665705359f04f28b88cf897c603c9,
+    135: 0x8ca3ae53a8f21fa0ae0d60a5,
+    140: 0xa041ae16a0f05f94a4a10d98,
+    145: 0xb3dfadd996eebf88a934ba8b,
+    150: 0xc77dad9c8ced1f7c9dc8677e
+} 

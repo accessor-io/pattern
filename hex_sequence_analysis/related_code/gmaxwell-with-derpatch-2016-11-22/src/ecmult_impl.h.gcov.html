@@ -1,0 +1,493 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - full.lcov - src/ecmult_impl.h</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - ecmult_impl.h<span style="font-size: 80%;"> (source / <a href="ecmult_impl.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">full.lcov</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">86</td>
+            <td class="headerCovTableEntry">102</td>
+            <td class="headerCovTableEntryMed">84.3 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-11-22 23:46:48</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">8</td>
+            <td class="headerCovTableEntry">10</td>
+            <td class="headerCovTableEntryMed">80.0 %</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntry">35</td>
+            <td class="headerCovTableEntry">48</td>
+            <td class="headerCovTableEntryLo">72.9 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">           Branch data     Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>                :            : /**********************************************************************</a>
+<span class="lineNum">       2 </span>                :            :  * Copyright (c) 2013, 2014 Pieter Wuille                             *
+<span class="lineNum">       3 </span>                :            :  * Distributed under the MIT software license, see the accompanying   *
+<span class="lineNum">       4 </span>                :            :  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
+<span class="lineNum">       5 </span>                :            :  **********************************************************************/
+<span class="lineNum">       6 </span>                :            : 
+<span class="lineNum">       7 </span>                :            : #ifndef _SECP256K1_ECMULT_IMPL_H_
+<span class="lineNum">       8 </span>                :            : #define _SECP256K1_ECMULT_IMPL_H_
+<span class="lineNum">       9 </span>                :            : 
+<span class="lineNum">      10 </span>                :            : #include &lt;string.h&gt;
+<span class="lineNum">      11 </span>                :            : 
+<span class="lineNum">      12 </span>                :            : #include &quot;group.h&quot;
+<span class="lineNum">      13 </span>                :            : #include &quot;scalar.h&quot;
+<span class="lineNum">      14 </span>                :            : #include &quot;ecmult.h&quot;
+<span class="lineNum">      15 </span>                :            : 
+<span class="lineNum">      16 </span>                :            : #define WINDOW_A 5
+<span class="lineNum">      17 </span>                :            : 
+<span class="lineNum">      18 </span>                :            : #if defined(EXHAUSTIVE_TEST_ORDER)
+<span class="lineNum">      19 </span>                :            : /* We need to lower these values for exhaustive tests because
+<span class="lineNum">      20 </span>                :            :  * the tables cannot have infinities in them (this breaks the
+<span class="lineNum">      21 </span>                :            :  * affine-isomorphism stuff which tracks z-ratios) */
+<span class="lineNum">      22 </span>                :            : #  if EXHAUSTIVE_TEST_ORDER &gt; 128
+<span class="lineNum">      23 </span>                :            : #    define WINDOW_A 5
+<span class="lineNum">      24 </span>                :            : #    define WINDOW_G 8
+<span class="lineNum">      25 </span>                :            : #  elif EXHAUSTIVE_TEST_ORDER &gt; 8
+<span class="lineNum">      26 </span>                :            : #    define WINDOW_A 4
+<span class="lineNum">      27 </span>                :            : #    define WINDOW_G 4
+<span class="lineNum">      28 </span>                :            : #  else
+<span class="lineNum">      29 </span>                :            : #    define WINDOW_A 2
+<span class="lineNum">      30 </span>                :            : #    define WINDOW_G 2
+<span class="lineNum">      31 </span>                :            : #  endif
+<span class="lineNum">      32 </span>                :            : #else
+<span class="lineNum">      33 </span>                :            : /* optimal for 128-bit and 256-bit exponents. */
+<span class="lineNum">      34 </span>                :            : #define WINDOW_A 5
+<span class="lineNum">      35 </span>                :            : /** larger numbers may result in slightly better performance, at the cost of
+<span class="lineNum">      36 </span>                :            :     exponentially larger precomputed tables. */
+<span class="lineNum">      37 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">      38 </span>                :            : /** Two tables for window size 15: 1.375 MiB. */
+<span class="lineNum">      39 </span>                :            : #define WINDOW_G 15
+<span class="lineNum">      40 </span>                :            : #else
+<span class="lineNum">      41 </span>                :            : /** One table for window size 16: 1.375 MiB. */
+<span class="lineNum">      42 </span>                :            : #define WINDOW_G 16
+<span class="lineNum">      43 </span>                :            : #endif
+<span class="lineNum">      44 </span>                :            : #endif
+<span class="lineNum">      45 </span>                :            : 
+<span class="lineNum">      46 </span>                :            : /** The number of entries a table with precomputed multiples needs to have. */
+<span class="lineNum">      47 </span>                :            : #define ECMULT_TABLE_SIZE(w) (1 &lt;&lt; ((w)-2))
+<span class="lineNum">      48 </span>                :            : 
+<span class="lineNum">      49 </span>                :            : /** Fill a table 'prej' with precomputed odd multiples of a. Prej will contain
+<span class="lineNum">      50 </span>                :            :  *  the values [1*a,3*a,...,(2*n-1)*a], so it space for n values. zr[0] will
+<span class="lineNum">      51 </span>                :            :  *  contain prej[0].z / a.z. The other zr[i] values = prej[i].z / prej[i-1].z.
+<a name="52"><span class="lineNum">      52 </span>                :            :  *  Prej's Z values are undefined, except for the last value.</a>
+<span class="lineNum">      53 </span>                :            :  */
+<span class="lineNum">      54 </span>                :<span class="lineCov">      14269 : static void secp256k1_ecmult_odd_multiples_table(int n, secp256k1_gej *prej, secp256k1_fe *zr, const secp256k1_gej *a) {</span>
+<span class="lineNum">      55 </span>                :            :     secp256k1_gej d;
+<span class="lineNum">      56 </span>                :            :     secp256k1_ge a_ge, d_ge;
+<span class="lineNum">      57 </span>                :            :     int i;
+<span class="lineNum">      58 </span>                :            : 
+<span class="lineNum">      59 </span>                :<span class="lineCov">      14269 :     VERIFY_CHECK(!a-&gt;infinity);</span>
+<span class="lineNum">      60 </span>                :            : 
+<span class="lineNum">      61 </span>                :<span class="lineCov">      14269 :     secp256k1_gej_double_var(&amp;d, a, NULL);</span>
+<span class="lineNum">      62 </span>                :            : 
+<span class="lineNum">      63 </span>                :            :     /*
+<span class="lineNum">      64 </span>                :            :      * Perform the additions on an isomorphism where 'd' is affine: drop the z coordinate
+<span class="lineNum">      65 </span>                :            :      * of 'd', and scale the 1P starting value's x/y coordinates without changing its z.
+<span class="lineNum">      66 </span>                :            :      */
+<span class="lineNum">      67 </span>                :<span class="lineCov">      14269 :     d_ge.x = d.x;</span>
+<span class="lineNum">      68 </span>                :<span class="lineCov">      14269 :     d_ge.y = d.y;</span>
+<span class="lineNum">      69 </span>                :<span class="lineCov">      14269 :     d_ge.infinity = 0;</span>
+<span class="lineNum">      70 </span>                :            : 
+<span class="lineNum">      71 </span>                :<span class="lineCov">      14269 :     secp256k1_ge_set_gej_zinv(&amp;a_ge, a, &amp;d.z);</span>
+<span class="lineNum">      72 </span>                :<span class="lineCov">      14269 :     prej[0].x = a_ge.x;</span>
+<span class="lineNum">      73 </span>                :<span class="lineCov">      14269 :     prej[0].y = a_ge.y;</span>
+<span class="lineNum">      74 </span>                :<span class="lineCov">      14269 :     prej[0].z = a-&gt;z;</span>
+<span class="lineNum">      75 </span>                :<span class="lineCov">      14269 :     prej[0].infinity = 0;</span>
+<span class="lineNum">      76 </span>                :            : 
+<span class="lineNum">      77 </span>                :<span class="lineCov">      14269 :     zr[0] = d.z;</span>
+<span class="lineNum">      78 </span>        [<span class="branchCov" title="Branch 0 was taken 42807 times"> + </span><span class="branchCov" title="Branch 1 was taken 14269 times"> + </span>]:<span class="lineCov">      57076 :     for (i = 1; i &lt; n; i++) {</span>
+<span class="lineNum">      79 </span>                :<span class="lineCov">      42807 :         secp256k1_gej_add_ge_var(&amp;prej[i], &amp;prej[i-1], &amp;d_ge, &amp;zr[i]);</span>
+<span class="lineNum">      80 </span>                :            :     }
+<span class="lineNum">      81 </span>                :            : 
+<span class="lineNum">      82 </span>                :            :     /*
+<span class="lineNum">      83 </span>                :            :      * Each point in 'prej' has a z coordinate too small by a factor of 'd.z'. Only
+<span class="lineNum">      84 </span>                :            :      * the final point's z coordinate is actually used though, so just update that.
+<span class="lineNum">      85 </span>                :            :      */
+<span class="lineNum">      86 </span>                :<span class="lineCov">      14269 :     secp256k1_fe_mul(&amp;prej[n-1].z, &amp;prej[n-1].z, &amp;d.z);</span>
+<span class="lineNum">      87 </span>                :<span class="lineCov">      14269 : }</span>
+<span class="lineNum">      88 </span>                :            : 
+<span class="lineNum">      89 </span>                :            : /** Fill a table 'pre' with precomputed odd multiples of a.
+<span class="lineNum">      90 </span>                :            :  *
+<span class="lineNum">      91 </span>                :            :  *  There are two versions of this function:
+<span class="lineNum">      92 </span>                :            :  *  - secp256k1_ecmult_odd_multiples_table_globalz_windowa which brings its
+<span class="lineNum">      93 </span>                :            :  *    resulting point set to a single constant Z denominator, stores the X and Y
+<span class="lineNum">      94 </span>                :            :  *    coordinates as ge_storage points in pre, and stores the global Z in rz.
+<span class="lineNum">      95 </span>                :            :  *    It only operates on tables sized for WINDOW_A wnaf multiples.
+<span class="lineNum">      96 </span>                :            :  *  - secp256k1_ecmult_odd_multiples_table_storage_var, which converts its
+<span class="lineNum">      97 </span>                :            :  *    resulting point set to actually affine points, and stores those in pre.
+<span class="lineNum">      98 </span>                :            :  *    It operates on tables of any size, but uses heap-allocated temporaries.
+<span class="lineNum">      99 </span>                :            :  *
+<span class="lineNum">     100 </span>                :            :  *  To compute a*P + b*G, we compute a table for P using the first function,
+<span class="lineNum">     101 </span>                :            :  *  and for G using the second (which requires an inverse, but it only needs to
+<a name="102"><span class="lineNum">     102 </span>                :            :  *  happen once).</a>
+<span class="lineNum">     103 </span>                :            :  */
+<span class="lineNum">     104 </span>                :<span class="lineCov">      14268 : static void secp256k1_ecmult_odd_multiples_table_globalz_windowa(secp256k1_ge *pre, secp256k1_fe *globalz, const secp256k1_gej *a) {</span>
+<span class="lineNum">     105 </span>                :            :     secp256k1_gej prej[ECMULT_TABLE_SIZE(WINDOW_A)];
+<span class="lineNum">     106 </span>                :            :     secp256k1_fe zr[ECMULT_TABLE_SIZE(WINDOW_A)];
+<span class="lineNum">     107 </span>                :            : 
+<span class="lineNum">     108 </span>                :            :     /* Compute the odd multiples in Jacobian form. */
+<span class="lineNum">     109 </span>                :<span class="lineCov">      14268 :     secp256k1_ecmult_odd_multiples_table(ECMULT_TABLE_SIZE(WINDOW_A), prej, zr, a);</span>
+<span class="lineNum">     110 </span>                :            :     /* Bring them to the same Z denominator. */
+<span class="lineNum">     111 </span>                :<span class="lineCov">      14268 :     secp256k1_ge_globalz_set_table_gej(ECMULT_TABLE_SIZE(WINDOW_A), pre, globalz, prej, zr);</span>
+<a name="112"><span class="lineNum">     112 </span>                :<span class="lineCov">      14268 : }</span></a>
+<span class="lineNum">     113 </span>                :            : 
+<span class="lineNum">     114 </span>                :<span class="lineCov">          1 : static void secp256k1_ecmult_odd_multiples_table_storage_var(int n, secp256k1_ge_storage *pre, const secp256k1_gej *a, const secp256k1_callback *cb) {</span>
+<span class="lineNum">     115 </span>                :<span class="lineCov">          1 :     secp256k1_gej *prej = (secp256k1_gej*)checked_malloc(cb, sizeof(secp256k1_gej) * n);</span>
+<span class="lineNum">     116 </span>                :<span class="lineCov">          1 :     secp256k1_ge *prea = (secp256k1_ge*)checked_malloc(cb, sizeof(secp256k1_ge) * n);</span>
+<span class="lineNum">     117 </span>                :<span class="lineCov">          1 :     secp256k1_fe *zr = (secp256k1_fe*)checked_malloc(cb, sizeof(secp256k1_fe) * n);</span>
+<span class="lineNum">     118 </span>                :            :     int i;
+<span class="lineNum">     119 </span>                :            : 
+<span class="lineNum">     120 </span>                :            :     /* Compute the odd multiples in Jacobian form. */
+<span class="lineNum">     121 </span>                :<span class="lineCov">          1 :     secp256k1_ecmult_odd_multiples_table(n, prej, zr, a);</span>
+<span class="lineNum">     122 </span>                :            :     /* Convert them in batch to affine coordinates. */
+<span class="lineNum">     123 </span>                :<span class="lineCov">          1 :     secp256k1_ge_set_table_gej_var(prea, prej, zr, n);</span>
+<span class="lineNum">     124 </span>                :            :     /* Convert them to compact storage form. */
+<span class="lineNum">     125 </span>        [<span class="branchCov" title="Branch 0 was taken 4 times"> + </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">          5 :     for (i = 0; i &lt; n; i++) {</span>
+<span class="lineNum">     126 </span>                :<span class="lineCov">          4 :         secp256k1_ge_to_storage(&amp;pre[i], &amp;prea[i]);</span>
+<span class="lineNum">     127 </span>                :            :     }
+<span class="lineNum">     128 </span>                :            : 
+<span class="lineNum">     129 </span>                :<span class="lineCov">          1 :     free(prea);</span>
+<span class="lineNum">     130 </span>                :<span class="lineCov">          1 :     free(prej);</span>
+<span class="lineNum">     131 </span>                :<span class="lineCov">          1 :     free(zr);</span>
+<span class="lineNum">     132 </span>                :<span class="lineCov">          1 : }</span>
+<span class="lineNum">     133 </span>                :            : 
+<span class="lineNum">     134 </span>                :            : /** The following two macro retrieves a particular odd multiple from a table
+<span class="lineNum">     135 </span>                :            :  *  of precomputed multiples. */
+<span class="lineNum">     136 </span>                :            : #define ECMULT_TABLE_GET_GE(r,pre,n,w) do { \
+<span class="lineNum">     137 </span>                :            :     VERIFY_CHECK(((n) &amp; 1) == 1); \
+<span class="lineNum">     138 </span>                :            :     VERIFY_CHECK((n) &gt;= -((1 &lt;&lt; ((w)-1)) - 1)); \
+<span class="lineNum">     139 </span>                :            :     VERIFY_CHECK((n) &lt;=  ((1 &lt;&lt; ((w)-1)) - 1)); \
+<span class="lineNum">     140 </span>                :            :     if ((n) &gt; 0) { \
+<span class="lineNum">     141 </span>                :            :         *(r) = (pre)[((n)-1)/2]; \
+<span class="lineNum">     142 </span>                :            :     } else { \
+<span class="lineNum">     143 </span>                :            :         secp256k1_ge_neg((r), &amp;(pre)[(-(n)-1)/2]); \
+<span class="lineNum">     144 </span>                :            :     } \
+<span class="lineNum">     145 </span>                :            : } while(0)
+<span class="lineNum">     146 </span>                :            : 
+<span class="lineNum">     147 </span>                :            : #define ECMULT_TABLE_GET_GE_STORAGE(r,pre,n,w) do { \
+<span class="lineNum">     148 </span>                :            :     VERIFY_CHECK(((n) &amp; 1) == 1); \
+<span class="lineNum">     149 </span>                :            :     VERIFY_CHECK((n) &gt;= -((1 &lt;&lt; ((w)-1)) - 1)); \
+<span class="lineNum">     150 </span>                :            :     VERIFY_CHECK((n) &lt;=  ((1 &lt;&lt; ((w)-1)) - 1)); \
+<span class="lineNum">     151 </span>                :            :     if ((n) &gt; 0) { \
+<span class="lineNum">     152 </span>                :            :         secp256k1_ge_from_storage((r), &amp;(pre)[((n)-1)/2]); \
+<span class="lineNum">     153 </span>                :            :     } else { \
+<span class="lineNum">     154 </span>                :            :         secp256k1_ge_from_storage((r), &amp;(pre)[(-(n)-1)/2]); \
+<span class="lineNum">     155 </span>                :            :         secp256k1_ge_neg((r), (r)); \
+<span class="lineNum">     156 </span>                :            :     } \
+<a name="157"><span class="lineNum">     157 </span>                :            : } while(0)</a>
+<span class="lineNum">     158 </span>                :            : 
+<span class="lineNum">     159 </span>                :<span class="lineCov">          2 : static void secp256k1_ecmult_context_init(secp256k1_ecmult_context *ctx) {</span>
+<span class="lineNum">     160 </span>                :<span class="lineCov">          2 :     ctx-&gt;pre_g = NULL;</span>
+<span class="lineNum">     161 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     162 </span>                :            :     ctx-&gt;pre_g_128 = NULL;
+<span class="lineNum">     163 </span>                :            : #endif
+<a name="164"><span class="lineNum">     164 </span>                :<span class="lineCov">          2 : }</span></a>
+<span class="lineNum">     165 </span>                :            : 
+<span class="lineNum">     166 </span>                :<span class="lineCov">          1 : static void secp256k1_ecmult_context_build(secp256k1_ecmult_context *ctx, const secp256k1_callback *cb) {</span>
+<span class="lineNum">     167 </span>                :            :     secp256k1_gej gj;
+<span class="lineNum">     168 </span>                :            : 
+<span class="lineNum">     169 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 1 time"> + </span>]:<span class="lineCov">          1 :     if (ctx-&gt;pre_g != NULL) {</span>
+<span class="lineNum">     170 </span>                :<span class="lineNoCov">          0 :         return;</span>
+<span class="lineNum">     171 </span>                :            :     }
+<span class="lineNum">     172 </span>                :            : 
+<span class="lineNum">     173 </span>                :            :     /* get the generator */
+<span class="lineNum">     174 </span>                :<span class="lineCov">          1 :     secp256k1_gej_set_ge(&amp;gj, &amp;secp256k1_ge_const_g);</span>
+<span class="lineNum">     175 </span>                :            : 
+<span class="lineNum">     176 </span>                :<span class="lineCov">          1 :     ctx-&gt;pre_g = (secp256k1_ge_storage (*)[])checked_malloc(cb, sizeof((*ctx-&gt;pre_g)[0]) * ECMULT_TABLE_SIZE(WINDOW_G));</span>
+<span class="lineNum">     177 </span>                :            : 
+<span class="lineNum">     178 </span>                :            :     /* precompute the tables with odd multiples */
+<span class="lineNum">     179 </span>                :<span class="lineCov">          1 :     secp256k1_ecmult_odd_multiples_table_storage_var(ECMULT_TABLE_SIZE(WINDOW_G), *ctx-&gt;pre_g, &amp;gj, cb);</span>
+<span class="lineNum">     180 </span>                :            : 
+<span class="lineNum">     181 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     182 </span>                :            :     {
+<span class="lineNum">     183 </span>                :            :         secp256k1_gej g_128j;
+<span class="lineNum">     184 </span>                :            :         int i;
+<span class="lineNum">     185 </span>                :            : 
+<span class="lineNum">     186 </span>                :            :         ctx-&gt;pre_g_128 = (secp256k1_ge_storage (*)[])checked_malloc(cb, sizeof((*ctx-&gt;pre_g_128)[0]) * ECMULT_TABLE_SIZE(WINDOW_G));
+<span class="lineNum">     187 </span>                :            : 
+<span class="lineNum">     188 </span>                :            :         /* calculate 2^128*generator */
+<span class="lineNum">     189 </span>                :            :         g_128j = gj;
+<span class="lineNum">     190 </span>                :            :         for (i = 0; i &lt; 128; i++) {
+<span class="lineNum">     191 </span>                :            :             secp256k1_gej_double_var(&amp;g_128j, &amp;g_128j, NULL);
+<span class="lineNum">     192 </span>                :            :         }
+<span class="lineNum">     193 </span>                :            :         secp256k1_ecmult_odd_multiples_table_storage_var(ECMULT_TABLE_SIZE(WINDOW_G), *ctx-&gt;pre_g_128, &amp;g_128j, cb);
+<span class="lineNum">     194 </span>                :            :     }
+<span class="lineNum">     195 </span>                :            : #endif
+<a name="196"><span class="lineNum">     196 </span>                :            : }</a>
+<span class="lineNum">     197 </span>                :            : 
+<span class="lineNum">     198 </span>                :<span class="lineNoCov">          0 : static void secp256k1_ecmult_context_clone(secp256k1_ecmult_context *dst,</span>
+<span class="lineNum">     199 </span>                :            :                                            const secp256k1_ecmult_context *src, const secp256k1_callback *cb) {
+<span class="lineNum">     200 </span>        [<span class="branchNoExec" title="Branch 0 was not executed"> # </span><span class="branchNoExec" title="Branch 1 was not executed"> # </span>]:<span class="lineNoCov">          0 :     if (src-&gt;pre_g == NULL) {</span>
+<span class="lineNum">     201 </span>                :<span class="lineNoCov">          0 :         dst-&gt;pre_g = NULL;</span>
+<span class="lineNum">     202 </span>                :            :     } else {
+<span class="lineNum">     203 </span>                :<span class="lineNoCov">          0 :         size_t size = sizeof((*dst-&gt;pre_g)[0]) * ECMULT_TABLE_SIZE(WINDOW_G);</span>
+<span class="lineNum">     204 </span>                :<span class="lineNoCov">          0 :         dst-&gt;pre_g = (secp256k1_ge_storage (*)[])checked_malloc(cb, size);</span>
+<span class="lineNum">     205 </span>                :<span class="lineNoCov">          0 :         memcpy(dst-&gt;pre_g, src-&gt;pre_g, size);</span>
+<span class="lineNum">     206 </span>                :            :     }
+<span class="lineNum">     207 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     208 </span>                :            :     if (src-&gt;pre_g_128 == NULL) {
+<span class="lineNum">     209 </span>                :            :         dst-&gt;pre_g_128 = NULL;
+<span class="lineNum">     210 </span>                :            :     } else {
+<span class="lineNum">     211 </span>                :            :         size_t size = sizeof((*dst-&gt;pre_g_128)[0]) * ECMULT_TABLE_SIZE(WINDOW_G);
+<span class="lineNum">     212 </span>                :            :         dst-&gt;pre_g_128 = (secp256k1_ge_storage (*)[])checked_malloc(cb, size);
+<span class="lineNum">     213 </span>                :            :         memcpy(dst-&gt;pre_g_128, src-&gt;pre_g_128, size);
+<span class="lineNum">     214 </span>                :            :     }
+<span class="lineNum">     215 </span>                :            : #endif
+<a name="216"><span class="lineNum">     216 </span>                :<span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     217 </span>                :            : 
+<span class="lineNum">     218 </span>                :<span class="lineCov">      20736 : static int secp256k1_ecmult_context_is_built(const secp256k1_ecmult_context *ctx) {</span>
+<span class="lineNum">     219 </span>                :<span class="lineCov">      20736 :     return ctx-&gt;pre_g != NULL;</span>
+<a name="220"><span class="lineNum">     220 </span>                :            : }</a>
+<span class="lineNum">     221 </span>                :            : 
+<span class="lineNum">     222 </span>                :<span class="lineNoCov">          0 : static void secp256k1_ecmult_context_clear(secp256k1_ecmult_context *ctx) {</span>
+<span class="lineNum">     223 </span>                :<span class="lineNoCov">          0 :     free(ctx-&gt;pre_g);</span>
+<span class="lineNum">     224 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     225 </span>                :            :     free(ctx-&gt;pre_g_128);
+<span class="lineNum">     226 </span>                :            : #endif
+<span class="lineNum">     227 </span>                :<span class="lineNoCov">          0 :     secp256k1_ecmult_context_init(ctx);</span>
+<span class="lineNum">     228 </span>                :<span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     229 </span>                :            : 
+<span class="lineNum">     230 </span>                :            : /** Convert a number to WNAF notation. The number becomes represented by sum(2^i * wnaf[i], i=0..bits),
+<span class="lineNum">     231 </span>                :            :  *  with the following guarantees:
+<span class="lineNum">     232 </span>                :            :  *  - each wnaf[i] is either 0, or an odd integer between -(1&lt;&lt;(w-1) - 1) and (1&lt;&lt;(w-1) - 1)
+<span class="lineNum">     233 </span>                :            :  *  - two non-zero entries in wnaf are separated by at least w-1 zeroes.
+<span class="lineNum">     234 </span>                :            :  *  - the number of set values in wnaf is returned. This number is at most 256, and at most one more
+<a name="235"><span class="lineNum">     235 </span>                :            :  *    than the number of bits in the (absolute value) of the input.</a>
+<span class="lineNum">     236 </span>                :            :  */
+<span class="lineNum">     237 </span>                :<span class="lineCov">      24792 : static int secp256k1_ecmult_wnaf(int *wnaf, int len, const secp256k1_scalar *a, int w) {</span>
+<span class="lineNum">     238 </span>                :<span class="lineCov">      24792 :     secp256k1_scalar s = *a;</span>
+<span class="lineNum">     239 </span>                :<span class="lineCov">      24792 :     int last_set_bit = -1;</span>
+<span class="lineNum">     240 </span>                :<span class="lineCov">      24792 :     int bit = 0;</span>
+<span class="lineNum">     241 </span>                :<span class="lineCov">      24792 :     int sign = 1;</span>
+<span class="lineNum">     242 </span>                :<span class="lineCov">      24792 :     int carry = 0;</span>
+<span class="lineNum">     243 </span>                :            : 
+<span class="lineNum">     244 </span>                :            :     VERIFY_CHECK(wnaf != NULL);
+<span class="lineNum">     245 </span>[<span class="branchCov" title="Branch 0 was taken 24792 times"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>][<span class="branchCov" title="Branch 2 was taken 24792 times"> + </span><span class="branchNoCov" title="Branch 3 was not taken"> - </span>]:<span class="lineCov">      24792 :     VERIFY_CHECK(0 &lt;= len &amp;&amp; len &lt;= 256);</span>
+<span class="lineNum">     246 </span>                :            :     VERIFY_CHECK(a != NULL);
+<span class="lineNum">     247 </span>[<span class="branchCov" title="Branch 0 was taken 24792 times"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>][<span class="branchCov" title="Branch 2 was taken 24792 times"> + </span><span class="branchNoCov" title="Branch 3 was not taken"> - </span>]:<span class="lineCov">      24792 :     VERIFY_CHECK(2 &lt;= w &amp;&amp; w &lt;= 31);</span>
+<span class="lineNum">     248 </span>                :            : 
+<span class="lineNum">     249 </span>                :<span class="lineCov">      24792 :     memset(wnaf, 0, len * sizeof(wnaf[0]));</span>
+<span class="lineNum">     250 </span>                :            : 
+<span class="lineNum">     251 </span>        [<span class="branchNoCov" title="Branch 1 was not taken"> - </span><span class="branchCov" title="Branch 2 was taken 24792 times"> + </span>]:<span class="lineCov">      24792 :     if (secp256k1_scalar_get_bits(&amp;s, 255, 1)) {</span>
+<span class="lineNum">     252 </span>                :<span class="lineNoCov">          0 :         secp256k1_scalar_negate(&amp;s, &amp;s);</span>
+<span class="lineNum">     253 </span>                :<span class="lineNoCov">          0 :         sign = -1;</span>
+<span class="lineNum">     254 </span>                :            :     }
+<span class="lineNum">     255 </span>                :            : 
+<span class="lineNum">     256 </span>        [<span class="branchCov" title="Branch 0 was taken 6261072 times"> + </span><span class="branchCov" title="Branch 1 was taken 24792 times"> + </span>]:<span class="lineCov">    6285864 :     while (bit &lt; len) {</span>
+<span class="lineNum">     257 </span>                :            :         int now;
+<span class="lineNum">     258 </span>                :            :         int word;
+<span class="lineNum">     259 </span>        [<span class="branchCov" title="Branch 1 was taken 6232512 times"> + </span><span class="branchCov" title="Branch 2 was taken 28560 times"> + </span>]:<span class="lineCov">    6261072 :         if (secp256k1_scalar_get_bits(&amp;s, bit, 1) == (unsigned int)carry) {</span>
+<span class="lineNum">     260 </span>                :<span class="lineCov">    6232512 :             bit++;</span>
+<span class="lineNum">     261 </span>                :<span class="lineCov">    6232512 :             continue;</span>
+<span class="lineNum">     262 </span>                :            :         }
+<span class="lineNum">     263 </span>                :            : 
+<span class="lineNum">     264 </span>                :<span class="lineCov">      28560 :         now = w;</span>
+<span class="lineNum">     265 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 28560 times"> + </span>]:<span class="lineCov">      28560 :         if (now &gt; len - bit) {</span>
+<span class="lineNum">     266 </span>                :<span class="lineNoCov">          0 :             now = len - bit;</span>
+<span class="lineNum">     267 </span>                :            :         }
+<span class="lineNum">     268 </span>                :            : 
+<span class="lineNum">     269 </span>                :<span class="lineCov">      28560 :         word = secp256k1_scalar_get_bits_var(&amp;s, bit, now) + carry;</span>
+<span class="lineNum">     270 </span>                :            : 
+<span class="lineNum">     271 </span>                :<span class="lineCov">      28560 :         carry = (word &gt;&gt; (w-1)) &amp; 1;</span>
+<span class="lineNum">     272 </span>                :<span class="lineCov">      28560 :         word -= carry &lt;&lt; w;</span>
+<span class="lineNum">     273 </span>                :            : 
+<span class="lineNum">     274 </span>                :<span class="lineCov">      28560 :         wnaf[bit] = sign * word;</span>
+<span class="lineNum">     275 </span>                :<span class="lineCov">      28560 :         last_set_bit = bit;</span>
+<span class="lineNum">     276 </span>                :            : 
+<span class="lineNum">     277 </span>                :<span class="lineCov">      28560 :         bit += now;</span>
+<span class="lineNum">     278 </span>                :            :     }
+<span class="lineNum">     279 </span>                :            : #ifdef VERIFY
+<span class="lineNum">     280 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 24792 times"> + </span>]:<span class="lineCov">      24792 :     CHECK(carry == 0);</span>
+<span class="lineNum">     281 </span>        [<span class="branchNoCov" title="Branch 0 was not taken"> - </span><span class="branchCov" title="Branch 1 was taken 24792 times"> + </span>]:<span class="lineCov">      24792 :     while (bit &lt; 256) {</span>
+<span class="lineNum">     282 </span>        [<span class="branchNoExec" title="Branch 1 was not executed"> # </span><span class="branchNoExec" title="Branch 2 was not executed"> # </span>]:<span class="lineNoCov">          0 :         CHECK(secp256k1_scalar_get_bits(&amp;s, bit++, 1) == 0);</span>
+<span class="lineNum">     283 </span>                :            :     } 
+<span class="lineNum">     284 </span>                :            : #endif
+<span class="lineNum">     285 </span>                :<span class="lineCov">      24792 :     return last_set_bit + 1;</span>
+<a name="286"><span class="lineNum">     286 </span>                :            : }</a>
+<span class="lineNum">     287 </span>                :            : 
+<span class="lineNum">     288 </span>                :<span class="lineCov">      12396 : static void secp256k1_ecmult(const secp256k1_ecmult_context *ctx, secp256k1_gej *r, const secp256k1_gej *a, const secp256k1_scalar *na, const secp256k1_scalar *ng) {</span>
+<span class="lineNum">     289 </span>                :            :     secp256k1_ge pre_a[ECMULT_TABLE_SIZE(WINDOW_A)];
+<span class="lineNum">     290 </span>                :            :     secp256k1_ge tmpa;
+<span class="lineNum">     291 </span>                :            :     secp256k1_fe Z;
+<span class="lineNum">     292 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     293 </span>                :            :     secp256k1_ge pre_a_lam[ECMULT_TABLE_SIZE(WINDOW_A)];
+<span class="lineNum">     294 </span>                :            :     secp256k1_scalar na_1, na_lam;
+<span class="lineNum">     295 </span>                :            :     /* Splitted G factors. */
+<span class="lineNum">     296 </span>                :            :     secp256k1_scalar ng_1, ng_128;
+<span class="lineNum">     297 </span>                :            :     int wnaf_na_1[130];
+<span class="lineNum">     298 </span>                :            :     int wnaf_na_lam[130];
+<span class="lineNum">     299 </span>                :            :     int bits_na_1;
+<span class="lineNum">     300 </span>                :            :     int bits_na_lam;
+<span class="lineNum">     301 </span>                :            :     int wnaf_ng_1[129];
+<span class="lineNum">     302 </span>                :            :     int bits_ng_1;
+<span class="lineNum">     303 </span>                :            :     int wnaf_ng_128[129];
+<span class="lineNum">     304 </span>                :            :     int bits_ng_128;
+<span class="lineNum">     305 </span>                :            : #else
+<span class="lineNum">     306 </span>                :            :     int wnaf_na[256];
+<span class="lineNum">     307 </span>                :            :     int bits_na;
+<span class="lineNum">     308 </span>                :            :     int wnaf_ng[256];
+<span class="lineNum">     309 </span>                :            :     int bits_ng;
+<span class="lineNum">     310 </span>                :            : #endif
+<span class="lineNum">     311 </span>                :            :     int i;
+<span class="lineNum">     312 </span>                :            :     int bits;
+<span class="lineNum">     313 </span>                :            : 
+<span class="lineNum">     314 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     315 </span>                :            :     /* split na into na_1 and na_lam (where na = na_1 + na_lam*lambda, and na_1 and na_lam are ~128 bit) */
+<span class="lineNum">     316 </span>                :            :     secp256k1_scalar_split_lambda(&amp;na_1, &amp;na_lam, na);
+<span class="lineNum">     317 </span>                :            : 
+<span class="lineNum">     318 </span>                :            :     /* build wnaf representation for na_1 and na_lam. */
+<span class="lineNum">     319 </span>                :            :     bits_na_1   = secp256k1_ecmult_wnaf(wnaf_na_1,   130, &amp;na_1,   WINDOW_A);
+<span class="lineNum">     320 </span>                :            :     bits_na_lam = secp256k1_ecmult_wnaf(wnaf_na_lam, 130, &amp;na_lam, WINDOW_A);
+<span class="lineNum">     321 </span>                :            :     VERIFY_CHECK(bits_na_1 &lt;= 130);
+<span class="lineNum">     322 </span>                :            :     VERIFY_CHECK(bits_na_lam &lt;= 130);
+<span class="lineNum">     323 </span>                :            :     bits = bits_na_1;
+<span class="lineNum">     324 </span>                :            :     if (bits_na_lam &gt; bits) {
+<span class="lineNum">     325 </span>                :            :         bits = bits_na_lam;
+<span class="lineNum">     326 </span>                :            :     }
+<span class="lineNum">     327 </span>                :            : #else
+<span class="lineNum">     328 </span>                :            :     /* build wnaf representation for na. */
+<span class="lineNum">     329 </span>                :<span class="lineCov">      12396 :     bits_na     = secp256k1_ecmult_wnaf(wnaf_na,     256, na,      WINDOW_A);</span>
+<span class="lineNum">     330 </span>                :<span class="lineCov">      12396 :     bits = bits_na;</span>
+<span class="lineNum">     331 </span>                :            : #endif
+<span class="lineNum">     332 </span>                :            : 
+<span class="lineNum">     333 </span>                :            :     /* Calculate odd multiples of a.
+<span class="lineNum">     334 </span>                :            :      * All multiples are brought to the same Z 'denominator', which is stored
+<span class="lineNum">     335 </span>                :            :      * in Z. Due to secp256k1' isomorphism we can do all operations pretending
+<span class="lineNum">     336 </span>                :            :      * that the Z coordinate was 1, use affine addition formulae, and correct
+<span class="lineNum">     337 </span>                :            :      * the Z coordinate of the result once at the end.
+<span class="lineNum">     338 </span>                :            :      * The exception is the precomputed G table points, which are actually
+<span class="lineNum">     339 </span>                :            :      * affine. Compared to the base used for other points, they have a Z ratio
+<span class="lineNum">     340 </span>                :            :      * of 1/Z, so we can use secp256k1_gej_add_zinv_var, which uses the same
+<span class="lineNum">     341 </span>                :            :      * isomorphism to efficiently add with a known Z inverse.
+<span class="lineNum">     342 </span>                :            :      */
+<span class="lineNum">     343 </span>                :<span class="lineCov">      12396 :     secp256k1_ecmult_odd_multiples_table_globalz_windowa(pre_a, &amp;Z, a);</span>
+<span class="lineNum">     344 </span>                :            : 
+<span class="lineNum">     345 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     346 </span>                :            :     for (i = 0; i &lt; ECMULT_TABLE_SIZE(WINDOW_A); i++) {
+<span class="lineNum">     347 </span>                :            :         secp256k1_ge_mul_lambda(&amp;pre_a_lam[i], &amp;pre_a[i]);
+<span class="lineNum">     348 </span>                :            :     }
+<span class="lineNum">     349 </span>                :            : 
+<span class="lineNum">     350 </span>                :            :     /* split ng into ng_1 and ng_128 (where gn = gn_1 + gn_128*2^128, and gn_1 and gn_128 are ~128 bit) */
+<span class="lineNum">     351 </span>                :            :     secp256k1_scalar_split_128(&amp;ng_1, &amp;ng_128, ng);
+<span class="lineNum">     352 </span>                :            : 
+<span class="lineNum">     353 </span>                :            :     /* Build wnaf representation for ng_1 and ng_128 */
+<span class="lineNum">     354 </span>                :            :     bits_ng_1   = secp256k1_ecmult_wnaf(wnaf_ng_1,   129, &amp;ng_1,   WINDOW_G);
+<span class="lineNum">     355 </span>                :            :     bits_ng_128 = secp256k1_ecmult_wnaf(wnaf_ng_128, 129, &amp;ng_128, WINDOW_G);
+<span class="lineNum">     356 </span>                :            :     if (bits_ng_1 &gt; bits) {
+<span class="lineNum">     357 </span>                :            :         bits = bits_ng_1;
+<span class="lineNum">     358 </span>                :            :     }
+<span class="lineNum">     359 </span>                :            :     if (bits_ng_128 &gt; bits) {
+<span class="lineNum">     360 </span>                :            :         bits = bits_ng_128;
+<span class="lineNum">     361 </span>                :            :     }
+<span class="lineNum">     362 </span>                :            : #else
+<span class="lineNum">     363 </span>                :<span class="lineCov">      12396 :     bits_ng     = secp256k1_ecmult_wnaf(wnaf_ng,     256, ng,      WINDOW_G);</span>
+<span class="lineNum">     364 </span>        [<span class="branchCov" title="Branch 0 was taken 4764 times"> + </span><span class="branchCov" title="Branch 1 was taken 7632 times"> + </span>]:<span class="lineCov">      12396 :     if (bits_ng &gt; bits) {</span>
+<span class="lineNum">     365 </span>                :<span class="lineCov">       4764 :         bits = bits_ng;</span>
+<span class="lineNum">     366 </span>                :            :     }
+<span class="lineNum">     367 </span>                :            : #endif
+<span class="lineNum">     368 </span>                :            : 
+<span class="lineNum">     369 </span>                :<span class="lineCov">      12396 :     secp256k1_gej_set_infinity(r);</span>
+<span class="lineNum">     370 </span>                :            : 
+<span class="lineNum">     371 </span>        [<span class="branchCov" title="Branch 0 was taken 40536 times"> + </span><span class="branchCov" title="Branch 1 was taken 12396 times"> + </span>]:<span class="lineCov">      52932 :     for (i = bits - 1; i &gt;= 0; i--) {</span>
+<span class="lineNum">     372 </span>                :            :         int n;
+<span class="lineNum">     373 </span>                :<span class="lineCov">      40536 :         secp256k1_gej_double_var(r, r, NULL);</span>
+<span class="lineNum">     374 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     375 </span>                :            :         if (i &lt; bits_na_1 &amp;&amp; (n = wnaf_na_1[i])) {
+<span class="lineNum">     376 </span>                :            :             ECMULT_TABLE_GET_GE(&amp;tmpa, pre_a, n, WINDOW_A);
+<span class="lineNum">     377 </span>                :            :             secp256k1_gej_add_ge_var(r, r, &amp;tmpa, NULL);
+<span class="lineNum">     378 </span>                :            :         }
+<span class="lineNum">     379 </span>                :            :         if (i &lt; bits_na_lam &amp;&amp; (n = wnaf_na_lam[i])) {
+<span class="lineNum">     380 </span>                :            :             ECMULT_TABLE_GET_GE(&amp;tmpa, pre_a_lam, n, WINDOW_A);
+<span class="lineNum">     381 </span>                :            :             secp256k1_gej_add_ge_var(r, r, &amp;tmpa, NULL);
+<span class="lineNum">     382 </span>                :            :         }
+<span class="lineNum">     383 </span>                :            :         if (i &lt; bits_ng_1 &amp;&amp; (n = wnaf_ng_1[i])) {
+<span class="lineNum">     384 </span>                :            :             ECMULT_TABLE_GET_GE_STORAGE(&amp;tmpa, *ctx-&gt;pre_g, n, WINDOW_G);
+<span class="lineNum">     385 </span>                :            :             secp256k1_gej_add_zinv_var(r, r, &amp;tmpa, &amp;Z);
+<span class="lineNum">     386 </span>                :            :         }
+<span class="lineNum">     387 </span>                :            :         if (i &lt; bits_ng_128 &amp;&amp; (n = wnaf_ng_128[i])) {
+<span class="lineNum">     388 </span>                :            :             ECMULT_TABLE_GET_GE_STORAGE(&amp;tmpa, *ctx-&gt;pre_g_128, n, WINDOW_G);
+<span class="lineNum">     389 </span>                :            :             secp256k1_gej_add_zinv_var(r, r, &amp;tmpa, &amp;Z);
+<span class="lineNum">     390 </span>                :            :         }
+<span class="lineNum">     391 </span>                :            : #else
+<span class="lineNum">     392 </span>[<span class="branchCov" title="Branch 0 was taken 30600 times"> + </span><span class="branchCov" title="Branch 1 was taken 9936 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 14280 times"> + </span><span class="branchCov" title="Branch 3 was taken 16320 times"> + </span>]:<span class="lineCov">      40536 :         if (i &lt; bits_na &amp;&amp; (n = wnaf_na[i])) {</span>
+<span class="lineNum">     393 </span>        [<span class="branchCov" title="Branch 0 was taken 12240 times"> + </span><span class="branchCov" title="Branch 1 was taken 2040 times"> + </span>]:<span class="lineCov">      14280 :             ECMULT_TABLE_GET_GE(&amp;tmpa, pre_a, n, WINDOW_A);</span>
+<span class="lineNum">     394 </span>                :<span class="lineCov">      14280 :             secp256k1_gej_add_ge_var(r, r, &amp;tmpa, NULL);</span>
+<span class="lineNum">     395 </span>                :            :         }
+<span class="lineNum">     396 </span>[<span class="branchCov" title="Branch 0 was taken 30600 times"> + </span><span class="branchCov" title="Branch 1 was taken 9936 times"> + </span>][<span class="branchCov" title="Branch 2 was taken 14280 times"> + </span><span class="branchCov" title="Branch 3 was taken 16320 times"> + </span>]:<span class="lineCov">      40536 :         if (i &lt; bits_ng &amp;&amp; (n = wnaf_ng[i])) {</span>
+<span class="lineNum">     397 </span>        [<span class="branchCov" title="Branch 0 was taken 12240 times"> + </span><span class="branchCov" title="Branch 1 was taken 2040 times"> + </span>]:<span class="lineCov">      14280 :             ECMULT_TABLE_GET_GE_STORAGE(&amp;tmpa, *ctx-&gt;pre_g, n, WINDOW_G);</span>
+<span class="lineNum">     398 </span>                :<span class="lineCov">      14280 :             secp256k1_gej_add_zinv_var(r, r, &amp;tmpa, &amp;Z);</span>
+<span class="lineNum">     399 </span>                :            :         }
+<span class="lineNum">     400 </span>                :            : #endif
+<span class="lineNum">     401 </span>                :            :     }
+<span class="lineNum">     402 </span>                :            : 
+<span class="lineNum">     403 </span>        [<span class="branchCov" title="Branch 0 was taken 11376 times"> + </span><span class="branchCov" title="Branch 1 was taken 1020 times"> + </span>]:<span class="lineCov">      12396 :     if (!r-&gt;infinity) {</span>
+<span class="lineNum">     404 </span>                :<span class="lineCov">      11376 :         secp256k1_fe_mul(&amp;r-&gt;z, &amp;r-&gt;z, &amp;Z);</span>
+<span class="lineNum">     405 </span>                :            :     }
+<span class="lineNum">     406 </span>                :<span class="lineCov">      12396 : }</span>
+<span class="lineNum">     407 </span>                :            : 
+<span class="lineNum">     408 </span>                :            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

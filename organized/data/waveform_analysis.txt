@@ -1,0 +1,1105 @@
+Original hex: 0000000000000000000000000000000000000000000000000000000000000001
+
+Waveform Statistics:
+  Mean level: 0.004
+  Peak level: 1.000
+  RMS level: 0.062
+
+Level Distribution:
+  Level 0: 255 samples (99.6%)
+  Level 1: 1 samples (0.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.010
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000003
+
+Waveform Statistics:
+  Mean level: 0.008
+  Peak level: 1.000
+  RMS level: 0.088
+
+Level Distribution:
+  Level 0: 254 samples (99.2%)
+  Level 1: 2 samples (0.8%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.019
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000008
+
+Waveform Statistics:
+  Mean level: 0.004
+  Peak level: 1.000
+  RMS level: 0.062
+
+Level Distribution:
+  Level 0: 255 samples (99.6%)
+  Level 1: 1 samples (0.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.010
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000015
+
+Waveform Statistics:
+  Mean level: 0.012
+  Peak level: 1.000
+  RMS level: 0.108
+
+Level Distribution:
+  Level 0: 253 samples (98.8%)
+  Level 1: 3 samples (1.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.028
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000031
+
+Waveform Statistics:
+  Mean level: 0.012
+  Peak level: 1.000
+  RMS level: 0.108
+
+Level Distribution:
+  Level 0: 253 samples (98.8%)
+  Level 1: 3 samples (1.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.028
+
+Original hex: 000000000000000000000000000000000000000000000000000000000000004c
+
+Waveform Statistics:
+  Mean level: 0.012
+  Peak level: 1.000
+  RMS level: 0.108
+
+Level Distribution:
+  Level 0: 253 samples (98.8%)
+  Level 1: 3 samples (1.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.028
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000000e0
+
+Waveform Statistics:
+  Mean level: 0.012
+  Peak level: 1.000
+  RMS level: 0.108
+
+Level Distribution:
+  Level 0: 253 samples (98.8%)
+  Level 1: 3 samples (1.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.028
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000001d3
+
+Waveform Statistics:
+  Mean level: 0.023
+  Peak level: 1.000
+  RMS level: 0.153
+
+Level Distribution:
+  Level 0: 250 samples (97.7%)
+  Level 1: 6 samples (2.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.050
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000202
+
+Waveform Statistics:
+  Mean level: 0.008
+  Peak level: 1.000
+  RMS level: 0.088
+
+Level Distribution:
+  Level 0: 254 samples (99.2%)
+  Level 1: 2 samples (0.8%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.019
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000483
+
+Waveform Statistics:
+  Mean level: 0.016
+  Peak level: 1.000
+  RMS level: 0.125
+
+Level Distribution:
+  Level 0: 252 samples (98.4%)
+  Level 1: 4 samples (1.6%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.036
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000a7b
+
+Waveform Statistics:
+  Mean level: 0.031
+  Peak level: 1.000
+  RMS level: 0.177
+
+Level Distribution:
+  Level 0: 248 samples (96.9%)
+  Level 1: 8 samples (3.1%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.062
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000001460
+
+Waveform Statistics:
+  Mean level: 0.016
+  Peak level: 1.000
+  RMS level: 0.125
+
+Level Distribution:
+  Level 0: 252 samples (98.4%)
+  Level 1: 4 samples (1.6%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.036
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000002930
+
+Waveform Statistics:
+  Mean level: 0.020
+  Peak level: 1.000
+  RMS level: 0.140
+
+Level Distribution:
+  Level 0: 251 samples (98.0%)
+  Level 1: 5 samples (2.0%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.044
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000068f3
+
+Waveform Statistics:
+  Mean level: 0.035
+  Peak level: 1.000
+  RMS level: 0.188
+
+Level Distribution:
+  Level 0: 247 samples (96.5%)
+  Level 1: 9 samples (3.5%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.067
+
+Original hex: 000000000000000000000000000000000000000000000000000000000000c936
+
+Waveform Statistics:
+  Mean level: 0.031
+  Peak level: 1.000
+  RMS level: 0.177
+
+Level Distribution:
+  Level 0: 248 samples (96.9%)
+  Level 1: 8 samples (3.1%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.062
+
+Original hex: 000000000000000000000000000000000000000000000000000000000001764f
+
+Waveform Statistics:
+  Mean level: 0.043
+  Peak level: 1.000
+  RMS level: 0.207
+
+Level Distribution:
+  Level 0: 245 samples (95.7%)
+  Level 1: 11 samples (4.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.075
+
+Original hex: 000000000000000000000000000000000000000000000000000000000003080d
+
+Waveform Statistics:
+  Mean level: 0.023
+  Peak level: 1.000
+  RMS level: 0.153
+
+Level Distribution:
+  Level 0: 250 samples (97.7%)
+  Level 1: 6 samples (2.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.050
+
+Original hex: 000000000000000000000000000000000000000000000000000000000005749f
+
+Waveform Statistics:
+  Mean level: 0.047
+  Peak level: 1.000
+  RMS level: 0.217
+
+Level Distribution:
+  Level 0: 244 samples (95.3%)
+  Level 1: 12 samples (4.7%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.078
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000d2c55
+
+Waveform Statistics:
+  Mean level: 0.039
+  Peak level: 1.000
+  RMS level: 0.198
+
+Level Distribution:
+  Level 0: 246 samples (96.1%)
+  Level 1: 10 samples (3.9%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.071
+
+Original hex: 00000000000000000000000000000000000000000000000000000000001ba534
+
+Waveform Statistics:
+  Mean level: 0.043
+  Peak level: 1.000
+  RMS level: 0.207
+
+Level Distribution:
+  Level 0: 245 samples (95.7%)
+  Level 1: 11 samples (4.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.075
+
+Original hex: 00000000000000000000000000000000000000000000000000000000002de40f
+
+Waveform Statistics:
+  Mean level: 0.047
+  Peak level: 1.000
+  RMS level: 0.217
+
+Level Distribution:
+  Level 0: 244 samples (95.3%)
+  Level 1: 12 samples (4.7%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.078
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000556e52
+
+Waveform Statistics:
+  Mean level: 0.047
+  Peak level: 1.000
+  RMS level: 0.217
+
+Level Distribution:
+  Level 0: 244 samples (95.3%)
+  Level 1: 12 samples (4.7%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.078
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000dc2a04
+
+Waveform Statistics:
+  Mean level: 0.035
+  Peak level: 1.000
+  RMS level: 0.188
+
+Level Distribution:
+  Level 0: 247 samples (96.5%)
+  Level 1: 9 samples (3.5%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.067
+
+Original hex: 0000000000000000000000000000000000000000000000000000000001fa5ee5
+
+Waveform Statistics:
+  Mean level: 0.066
+  Peak level: 1.000
+  RMS level: 0.258
+
+Level Distribution:
+  Level 0: 239 samples (93.4%)
+  Level 1: 17 samples (6.6%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.082
+
+Original hex: 000000000000000000000000000000000000000000000000000000000340326e
+
+Waveform Statistics:
+  Mean level: 0.043
+  Peak level: 1.000
+  RMS level: 0.207
+
+Level Distribution:
+  Level 0: 245 samples (95.7%)
+  Level 1: 11 samples (4.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.075
+
+Original hex: 0000000000000000000000000000000000000000000000000000000006ac3875
+
+Waveform Statistics:
+  Mean level: 0.055
+  Peak level: 1.000
+  RMS level: 0.234
+
+Level Distribution:
+  Level 0: 242 samples (94.5%)
+  Level 1: 14 samples (5.5%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.081
+
+Original hex: 000000000000000000000000000000000000000000000000000000000d916ce8
+
+Waveform Statistics:
+  Mean level: 0.055
+  Peak level: 1.000
+  RMS level: 0.234
+
+Level Distribution:
+  Level 0: 242 samples (94.5%)
+  Level 1: 14 samples (5.5%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.081
+
+Original hex: 0000000000000000000000000000000000000000000000000000000017e2551e
+
+Waveform Statistics:
+  Mean level: 0.062
+  Peak level: 1.000
+  RMS level: 0.250
+
+Level Distribution:
+  Level 0: 240 samples (93.8%)
+  Level 1: 16 samples (6.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.083
+
+Original hex: 000000000000000000000000000000000000000000000000000000003d94cd64
+
+Waveform Statistics:
+  Mean level: 0.062
+  Peak level: 1.000
+  RMS level: 0.250
+
+Level Distribution:
+  Level 0: 240 samples (93.8%)
+  Level 1: 16 samples (6.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.083
+
+Original hex: 000000000000000000000000000000000000000000000000000000007d4fe747
+
+Waveform Statistics:
+  Mean level: 0.082
+  Peak level: 1.000
+  RMS level: 0.286
+
+Level Distribution:
+  Level 0: 235 samples (91.8%)
+  Level 1: 21 samples (8.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.075
+
+Original hex: 00000000000000000000000000000000000000000000000000000000b862a62e
+
+Waveform Statistics:
+  Mean level: 0.059
+  Peak level: 1.000
+  RMS level: 0.242
+
+Level Distribution:
+  Level 0: 241 samples (94.1%)
+  Level 1: 15 samples (5.9%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.082
+
+Original hex: 00000000000000000000000000000000000000000000000000000001a96ca8d8
+
+Waveform Statistics:
+  Mean level: 0.062
+  Peak level: 1.000
+  RMS level: 0.250
+
+Level Distribution:
+  Level 0: 240 samples (93.8%)
+  Level 1: 16 samples (6.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.082
+
+Original hex: 000000000000000000000000000000000000000000000000000000034a65911d
+
+Waveform Statistics:
+  Mean level: 0.062
+  Peak level: 1.000
+  RMS level: 0.250
+
+Level Distribution:
+  Level 0: 240 samples (93.8%)
+  Level 1: 16 samples (6.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.081
+
+Original hex: 00000000000000000000000000000000000000000000000000000004aed21170
+
+Waveform Statistics:
+  Mean level: 0.059
+  Peak level: 1.000
+  RMS level: 0.242
+
+Level Distribution:
+  Level 0: 241 samples (94.1%)
+  Level 1: 15 samples (5.9%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.081
+
+Original hex: 00000000000000000000000000000000000000000000000000000009de820a7c
+
+Waveform Statistics:
+  Mean level: 0.066
+  Peak level: 1.000
+  RMS level: 0.258
+
+Level Distribution:
+  Level 0: 239 samples (93.4%)
+  Level 1: 17 samples (6.6%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.082
+
+Original hex: 0000000000000000000000000000000000000000000000000000001757756a93
+
+Waveform Statistics:
+  Mean level: 0.086
+  Peak level: 1.000
+  RMS level: 0.293
+
+Level Distribution:
+  Level 0: 234 samples (91.4%)
+  Level 1: 22 samples (8.6%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.084
+
+Original hex: 00000000000000000000000000000000000000000000000000000022382facd0
+
+Waveform Statistics:
+  Mean level: 0.066
+  Peak level: 1.000
+  RMS level: 0.258
+
+Level Distribution:
+  Level 0: 239 samples (93.4%)
+  Level 1: 17 samples (6.6%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.082
+
+Original hex: 0000000000000000000000000000000000000000000000000000004b5f8303e9
+
+Waveform Statistics:
+  Mean level: 0.078
+  Peak level: 1.000
+  RMS level: 0.280
+
+Level Distribution:
+  Level 0: 236 samples (92.2%)
+  Level 1: 20 samples (7.8%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.085
+
+Original hex: 000000000000000000000000000000000000000000000000000000e9ae4933d6
+
+Waveform Statistics:
+  Mean level: 0.086
+  Peak level: 1.000
+  RMS level: 0.293
+
+Level Distribution:
+  Level 0: 234 samples (91.4%)
+  Level 1: 22 samples (8.6%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.088
+
+Original hex: 00000000000000000000000000000000000000000000000000000153869acc5b
+
+Waveform Statistics:
+  Mean level: 0.082
+  Peak level: 1.000
+  RMS level: 0.286
+
+Level Distribution:
+  Level 0: 235 samples (91.8%)
+  Level 1: 21 samples (8.2%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.088
+
+Original hex: 000000000000000000000000000000000000000000000000000002a221c58d8f
+
+Waveform Statistics:
+  Mean level: 0.074
+  Peak level: 1.000
+  RMS level: 0.272
+
+Level Distribution:
+  Level 0: 237 samples (92.6%)
+  Level 1: 19 samples (7.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.085
+
+Original hex: 000000000000000000000000000000000000000000000000000006bd3b27c591
+
+Waveform Statistics:
+  Mean level: 0.094
+  Peak level: 1.000
+  RMS level: 0.306
+
+Level Distribution:
+  Level 0: 232 samples (90.6%)
+  Level 1: 24 samples (9.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.096
+
+Original hex: 00000000000000000000000000000000000000000000000000000e02b35a358f
+
+Waveform Statistics:
+  Mean level: 0.086
+  Peak level: 1.000
+  RMS level: 0.293
+
+Level Distribution:
+  Level 0: 234 samples (91.4%)
+  Level 1: 22 samples (8.6%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.084
+
+Original hex: 0000000000000000000000000000000000000000000000000000122fca143c05
+
+Waveform Statistics:
+  Mean level: 0.074
+  Peak level: 1.000
+  RMS level: 0.272
+
+Level Distribution:
+  Level 0: 237 samples (92.6%)
+  Level 1: 19 samples (7.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.089
+
+Original hex: 00000000000000000000000000000000000000000000000000002ec18388d544
+
+Waveform Statistics:
+  Mean level: 0.074
+  Peak level: 1.000
+  RMS level: 0.272
+
+Level Distribution:
+  Level 0: 237 samples (92.6%)
+  Level 1: 19 samples (7.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.089
+
+Original hex: 00000000000000000000000000000000000000000000000000006cd610b53cba
+
+Waveform Statistics:
+  Mean level: 0.094
+  Peak level: 1.000
+  RMS level: 0.306
+
+Level Distribution:
+  Level 0: 232 samples (90.6%)
+  Level 1: 24 samples (9.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.098
+
+Original hex: 0000000000000000000000000000000000000000000000000000ade6d7ce3b9b
+
+Waveform Statistics:
+  Mean level: 0.121
+  Peak level: 1.000
+  RMS level: 0.348
+
+Level Distribution:
+  Level 0: 225 samples (87.9%)
+  Level 1: 31 samples (12.1%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.095
+
+Original hex: 000000000000000000000000000000000000000000000000000174176b015f4d
+
+Waveform Statistics:
+  Mean level: 0.098
+  Peak level: 1.000
+  RMS level: 0.312
+
+Level Distribution:
+  Level 0: 231 samples (90.2%)
+  Level 1: 25 samples (9.8%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.099
+
+Original hex: 00000000000000000000000000000000000000000000000000022bd43c2e9354
+
+Waveform Statistics:
+  Mean level: 0.094
+  Peak level: 1.000
+  RMS level: 0.306
+
+Level Distribution:
+  Level 0: 232 samples (90.6%)
+  Level 1: 24 samples (9.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.098
+
+Original hex: 00000000000000000000000000000000000000000000000000075070a1a009d4
+
+Waveform Statistics:
+  Mean level: 0.074
+  Peak level: 1.000
+  RMS level: 0.272
+
+Level Distribution:
+  Level 0: 237 samples (92.6%)
+  Level 1: 19 samples (7.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.090
+
+Original hex: 000000000000000000000000000000000000000000000000000efae164cb9e3c
+
+Waveform Statistics:
+  Mean level: 0.117
+  Peak level: 1.000
+  RMS level: 0.342
+
+Level Distribution:
+  Level 0: 226 samples (88.3%)
+  Level 1: 30 samples (11.7%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.106
+
+Original hex: 00000000000000000000000000000000000000000000000000180788e47e326c
+
+Waveform Statistics:
+  Mean level: 0.094
+  Peak level: 1.000
+  RMS level: 0.306
+
+Level Distribution:
+  Level 0: 232 samples (90.6%)
+  Level 1: 24 samples (9.4%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.093
+
+Original hex: 00000000000000000000000000000000000000000000000000236fb6d5ad1f43
+
+Waveform Statistics:
+  Mean level: 0.125
+  Peak level: 1.000
+  RMS level: 0.354
+
+Level Distribution:
+  Level 0: 224 samples (87.5%)
+  Level 1: 32 samples (12.5%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.107
+
+Original hex: 000000000000000000000000000000000000000000000000006abe1f9b67e114
+
+Waveform Statistics:
+  Mean level: 0.121
+  Peak level: 1.000
+  RMS level: 0.348
+
+Level Distribution:
+  Level 0: 225 samples (87.9%)
+  Level 1: 31 samples (12.1%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.108
+
+Original hex: 000000000000000000000000000000000000000000000000009d18b63ac4ffdf
+
+Waveform Statistics:
+  Mean level: 0.133
+  Peak level: 1.000
+  RMS level: 0.364
+
+Level Distribution:
+  Level 0: 222 samples (86.7%)
+  Level 1: 34 samples (13.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.097
+
+Original hex: 00000000000000000000000000000000000000000000000001eb25c90795d61c
+
+Waveform Statistics:
+  Mean level: 0.113
+  Peak level: 1.000
+  RMS level: 0.337
+
+Level Distribution:
+  Level 0: 227 samples (88.7%)
+  Level 1: 29 samples (11.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.107
+
+Original hex: 00000000000000000000000000000000000000000000000002c675b852189a21
+
+Waveform Statistics:
+  Mean level: 0.098
+  Peak level: 1.000
+  RMS level: 0.312
+
+Level Distribution:
+  Level 0: 231 samples (90.2%)
+  Level 1: 25 samples (9.8%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.102
+
+Original hex: 00000000000000000000000000000000000000000000000007496cbb87cab44f
+
+Waveform Statistics:
+  Mean level: 0.129
+  Peak level: 1.000
+  RMS level: 0.359
+
+Level Distribution:
+  Level 0: 223 samples (87.1%)
+  Level 1: 33 samples (12.9%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.108
+
+Original hex: 0000000000000000000000000000000000000000000000000fc07a1825367bbe
+
+Waveform Statistics:
+  Mean level: 0.125
+  Peak level: 1.000
+  RMS level: 0.354
+
+Level Distribution:
+  Level 0: 224 samples (87.5%)
+  Level 1: 32 samples (12.5%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.104
+
+Original hex: 00000000000000000000000000000000000000000000000013c96a3742f64906
+
+Waveform Statistics:
+  Mean level: 0.113
+  Peak level: 1.000
+  RMS level: 0.337
+
+Level Distribution:
+  Level 0: 227 samples (88.7%)
+  Level 1: 29 samples (11.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.106
+
+Original hex: 000000000000000000000000000000000000000000000000363d541eb611abee
+
+Waveform Statistics:
+  Mean level: 0.133
+  Peak level: 1.000
+  RMS level: 0.364
+
+Level Distribution:
+  Level 0: 222 samples (86.7%)
+  Level 1: 34 samples (13.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.107
+
+Original hex: 0000000000000000000000000000000000000000000000007cce5efdaccf6808
+
+Waveform Statistics:
+  Mean level: 0.141
+  Peak level: 1.000
+  RMS level: 0.375
+
+Level Distribution:
+  Level 0: 220 samples (85.9%)
+  Level 1: 36 samples (14.1%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 8
+  Least active segment: 1
+  Segment activity variation: 0.100
+
+Original hex: 000000000000000000000000000000000000000000000000f7051f27b09112d4
+
+Waveform Statistics:
+  Mean level: 0.117
+  Peak level: 1.000
+  RMS level: 0.342
+
+Level Distribution:
+  Level 0: 226 samples (88.3%)
+  Level 1: 30 samples (11.7%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.104
+
+Original hex: 000000000000000000000000000000000000000000000001a838b13505b26867
+
+Waveform Statistics:
+  Mean level: 0.113
+  Peak level: 1.000
+  RMS level: 0.337
+
+Level Distribution:
+  Level 0: 227 samples (88.7%)
+  Level 1: 29 samples (11.3%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.105
+
+Original hex: 000000000000000000000000000000000000000000000002832ed74f2b5e35ee
+
+Waveform Statistics:
+  Mean level: 0.148
+  Peak level: 1.000
+  RMS level: 0.385
+
+Level Distribution:
+  Level 0: 218 samples (85.2%)
+  Level 1: 38 samples (14.8%)
+
+Segment Analysis (32-bit segments):
+  Number of segments: 8
+  Most active segment: 7
+  Least active segment: 1
+  Segment activity variation: 0.104
+

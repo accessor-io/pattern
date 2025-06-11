@@ -1,0 +1,319 @@
+COMPREHENSIVE MATHEMATICAL ANALYSIS
+==================================================
+Analysis run on: 2024-12-22 00:27:01
+Total runtime: 0.05 seconds
+Successful analyses: 4/4
+
+
+=== SCHNORR ANALYSIS ===
+==================================================
+
+signature_components:
+----------------------------------------
+  - {'potential_r': True, 'entropy_bits': 0.51953125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.44921875, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.53125, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.5, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.46484375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.47265625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.5, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.49609375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.5, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.46875, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.546875, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.4921875, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.4765625, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.50390625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.53125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.51953125, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.50390625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.55078125, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.5078125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.484375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.50390625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.46875, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.5, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.5390625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.46484375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.5078125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.48828125, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.49609375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.5234375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.5, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.51953125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.51953125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.52734375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.47265625, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.52734375, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.51171875, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.47265625, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.484375, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.52734375, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.4765625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.53125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.39453125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.4296875, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.484375, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.50390625, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.55859375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.5390625, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.50390625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.50390625, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.4921875, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.46875, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.48046875, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.48828125, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.53515625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.4765625, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.5546875, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.53125, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.484375, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.47265625, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.58203125, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.49609375, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.53125, 'potential_pubkey': False}
+  - {'potential_r': True, 'entropy_bits': 0.47265625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.4765625, 'potential_pubkey': True}
+  - {'potential_r': True, 'entropy_bits': 0.515625, 'potential_pubkey': False}
+
+sequence_properties:
+----------------------------------------
+  multiplicative_patterns: [1902047961049408412436904402136331228724008550803957633334863474924022390236445947899524534736846406912527661007962825693530452437311690291634849654436560, 809208834167376553138210526832634250121641873032427845934335567894627423044532480594681047837067897786946433335841970252529399043474084042022350020247465, 1252091538130169606271863339561127345311016716962122003773006213227680462550646366389397358731409802409055824768400207575239173256148586733060064532012978, 1349296856671022085315620018032825668606100374812089249894902005052140019474255030028508862056720756677124717720251327505527645127611450016467071393990090, 2273471629658021093538928785818436540617671607777602226535026090549163948854690633121850381464985123118864068367934103388922505317885425513934026604440395, 2918720158991388845586963737134312966428123165083577003202615928854241921092274508517388902273146784283627381066871383656745780778065238291467482688621605, 853025848745189659698823969031554157001006049187159374895106848869677248929699797959299314114534169368438670375569902040060321976311007663229381481102125, 495703662785056756122908515195149587641058573872469081754317901978804093660405456754253516785594097016713093177558516131805176442519512069700383741464800, 1851800285519389888822263812715194487407631081795512765104321102922401025513481279018331977410517271805369787228073277060618534863203747472392532861825728, 3604311739766024460944298268123628185021673060679061743798986930907563015856032342504200800101049140289498100797002275073463273738553023211645376206736646]
+  signature_patterns: {'possible_nonces': 65, 'low_entropy_values': 29, 'potential_pubkeys': 33}
+
+==================================================
+
+=== HASH_CHAIN ANALYSIS ===
+==================================================
+
+hash_chains:
+----------------------------------------
+  - {'sha256': 'bf6540b7cb372aea09e60a0e80b2ffdd5ec0e997a7ea044668a8f0fcd8cfeaa9', 'double_sha256': '916df5794e3d380b3b31fdb26eedc569c8cb3da5c00c45593c9780d615df648f', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'b2536f6d3c48ec32c2d0df33ce5600e717c5a059c39ff5a13bff9266119caecf', 'double_sha256': 'f7a8d5b032ae532c057624ba3908a5ae7371a741b2321207545acddaf9273a72', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '5e3204da3824fa0a3700cd0fa2e516aeb4907b6bfc2710d080d607eddc706485', 'double_sha256': 'fd2fb038cda76fe723d6ea580fb8f76503edb6d2bbd49e4c70e3819451a82917', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'f2096a576634054d73131491a1934fe37b533da96a21b0435609128ff84e2b18', 'double_sha256': 'bc077c271a12eac58947d3c4af2d80c0554e1a6064d42c7a92fcf326c76e7d9b', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '1b03546c234e8d7fa80dce0d058734a394618f50169050eef6a0a70d665c6682', 'double_sha256': '11b1b398993e26e615abfd07b2f74ecfa7a2b83417a9c3e398b318c3b22db1ef', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '6e82323f4aa0bd6d69d876db723038614dc92175ae7b7958095d9e5f32df2fe8', 'double_sha256': '4891bb5dab0c71354d26052b7be25fa17a2f363d3d9987793b7d743e4a4fa82b', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'ec396b17ec52e23074043d15093a8bf49faf3bf7a352d827eb2685a31c57e8b7', 'double_sha256': '8342b4c4d66a02188022a42ce452d06c5f58c9f87e27334d3557ba5dd0dc3552', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'ffbf5a78aea548a487e5800256ec9cad607c09f8c6931779ccef866c2f6acd07', 'double_sha256': '498fe6cb7d5e683bef01b1e0d2b30f34cd6c6958332d99554cb753f086bd0cfe', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '8dd6471b28e1b5c8b7acec526dbed10e454632f229b30ede643cdee338df5eac', 'double_sha256': 'd930342a0805de1f97fd3a4a7ed249c389578e856d1ca2e60df0046ca1a3a79e', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '31720ce231ac62104644d28b9b1e2f2af8b64b96cbcc8688b390431d70e5afdc', 'double_sha256': 'e461095ccef2f9871b949f8a9f1cebd0524f85dd90602cf7cc91d5a6e0ad00dd', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '260c6ad955115ff0bfcbef3dd3616f9428bb0c6ba6f5bb2a7acc6a9718f87c0e', 'double_sha256': '0ddfbc4a41795d5568d461697f9e4547e1612391f2f7bdb1934f3d4b46b9796a', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '4ad62e5a9864ee4af43424bb7d5449f4143911286e011a8382b4dc31a55d4ced', 'double_sha256': '59d3c39669fe201d33d5a0f431f328cd54efbb8e250407861d0d0c93d89babf1', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '1862cf329e025888cee8266ccc38d6ca5baa66ef199b1e82c3193af70794e521', 'double_sha256': '392941c6342099f661e75ac4dcc37b12c918612f6de59b1e146debf90324b39a', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '647f9e9c4ddfa80e354a27d2fe4043f36acde1b61d98fc3771942665e0e2caf7', 'double_sha256': '9d57c2c0cc0c7232bd666cec6ada426fb5be92a50c01ce4daf7c92cb99491849', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '86a18a09bfc51bf1df0dc0df479abfd957b532c8c9c693a89cd32a0d1a42f943', 'double_sha256': '95a95ab8d410206dd569d2ff640117916a825e94330a00a8a724c89a14682aea', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '62b593e645b125065c443fd3258baef4f583e615ff56d6f8fd3b54e56aa56997', 'double_sha256': 'd883c1914ddd04ba9ddeb08f5ea728319e380d2d1a0174167d12ee0c1e84db67', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '1ba61d846a1dc2077c71e4598d96732e2d2cd78bab24e2f23baabe2f8940de60', 'double_sha256': 'e4d5c2069323ccfe3e05d73dd2bd2b57888b5a1e04fc875d930c1146e367d9b5', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '84e5e945f2d2bda931272659fd173867462cd68c086fa852ea5556029d9c65c5', 'double_sha256': '4b69abb94596b67b83e270558fabdfc67b3ce10607aea4e527e9938d445318bb', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'dd3984f6352eb0d06ba3adb1febc08020b912b17fd7a9e1c47f158441274788f', 'double_sha256': '8bb75e8d0db016890538323e11b71d5200bbecd5bec4bea2887a5f77406a2594', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'fd7f04dd2f823b5ef7d4668ea0e9216995e1ffd991d61135b268ea71ad41f39e', 'double_sha256': '22125fa42c85f1f321fcaff1f00e97d9b4d828db5a27bf14b6fa7066ebd20877', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '80fb73b6c4d696f7a0e816868e7854fdd4e5fc5a5390fb26e03f20b4b657f995', 'double_sha256': '79762e6b6f04e9a68b17e90212935c4dacd2df3d583b7a6a8072cb8e0f270e56', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '8ac548998eaf5adecab0f2841220394b7caabc87063ca49bf95c29bb3baeca79', 'double_sha256': '3f4a7e133fe24a771549f77060fe33b86287b1ea69b5a043560483a5b84feb3e', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'da603562ab181f7d8cce1e7ba726ff268cdcd1d9edfd16a60ce592defec42a5a', 'double_sha256': 'c582f766cedf8a309250ad0b3014ac16560c57fbeff25da9db9012a10174fef3', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'f3e6ebef4075168f833b28ad1bbbcc5c405d6d7c6d80473f374512ab41f4d55e', 'double_sha256': '1b0144087c9f7cc0dde1557cbe3e031db49b7a7479fb4b71d769a7b6aa127e50', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '1eca9928daef0a51a9997fa6015eeaa10cb1c852f128e8b48359107ed6e204f2', 'double_sha256': '35170dd428a09f0eaffa18d7dba9a576204a85c367e1d590d7da119f5221b787', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '658805a51996d5088f0e1bb6a89f2c7da3c8cbd1bb6f451cd0039ba505c5aa8b', 'double_sha256': '4d51af1184630c664da27f6a8298e5858fe4fb5be2349012822504a4bead0b77', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '78e522dc9100a6477ef0ee48aee0d5065ef59368e44f3eed41332062def5cdef', 'double_sha256': '58061284c43709b6016cd90a3d02baeffced100a7f31d230a1bb6afa2faccf6e', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '9fc37f67471bec79711d9ecd8c5f5cf8e476a8b8c6a38e03428bf271d3c6a21c', 'double_sha256': '6550ee1fa3f4be458def4b0a1abcc6cb09cbc85735ccb49789139cb493f895ff', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '565108b87dbc1aba2ad77deec502a4e96b0861dbdbc30b77d5f529223e19a5e0', 'double_sha256': '0d62226b61ffd93e86355c392c6fc252bba85a1c60b89642b671e553aa0dd38d', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'e96fe7d24bbacc72398c8e2ca60ad95ffef7ee89b79383f45e283f271920d5a4', 'double_sha256': '6ca9e4bc5ae304412f47f361e461ad2dd50c3fea1016b5755685a466492a8442', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '0e175e9f775e5b62adab1b2aec783646c876b438fa3712e2311cb3d682817698', 'double_sha256': 'e28544d939dd5054e99fc8c0e2a61d7b21544b542ea769d6f70678191eadce86', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '9b095b9189595b6ba02a0db6b619dfd50acbbe8252fae3b9469691a3b9672b1f', 'double_sha256': '2320489138a24b772a0c65996cb82c69cebf70a62d4131ec1e6dc0304d014322', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'cfdfd4f03b81eacbfb4b5f6b03411a240bb2a945fd3b33c40da07673ed1d06f5', 'double_sha256': '525a4730060eff3ef7ba1ddd44d15cd9b4d71c4f5ea8a89a3c315cec303807bc', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '339cdc9ad502ef1035794a1aa6a9edec0e1e6efd9e95157ae2eb1d1470dc8988', 'double_sha256': '44c28cc522d2a0e074de7187d2ad8e95492857b9d3497f1820b9ec0ea8c36379', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'dbfce82b0a1ce490edd5d0a235b4d32b0e0d4a28d3f41513558d47bbbb26db19', 'double_sha256': '812f01f263e2869b3844e54b38cfae857a1d55d657172aa33f81ed757fee4bbe', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '14fd713c34382b3bb77f2e74fdf81b87a06543018274942950af8bfd0a606944', 'double_sha256': '7c7cb1590e0333c2a7beadb2bb9f19277d0bac1bf60f5e97cdb819f59ff037ad', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'dc17f440f1d2e1f2911c5d75cd24167831e6b200492e2a2d335955a6b8896e9a', 'double_sha256': '070aba239d766614ad73003e5afc14fd3c5c0e086660579dfaf6f956e01e666c', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'eba909535793535a6608da904beba9eb0c5ed22aa0844859536701ebeabb0a9e', 'double_sha256': '279d160b716576de1877fb01d98d60c0612ea62713fb58cc58baf3c2508d5ac9', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '8065e1db7a9707800661ed6834291becf3db2b264934113e06c4221fc1734717', 'double_sha256': '5c7d7a2bdcb60931506811c7315c9073a25944ae57d8208e32c5731812cddb63', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '26f2e84af32ff3eebe161dfe782d71db8d24816cd813eafc2964cdc90b985a43', 'double_sha256': '98c050d73a566b48b387e96dffd0033214f7477ef9ee0316ac27844d70ba11c3', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '26501facebcdbc1747397fd24a1e2e537a76141ac5f8d8533bbee6a7c287bb5b', 'double_sha256': 'd9d7bc9d669c61eaad41f31c00b139d2407aff9a0136c8a78dfc079687531a66', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '527313d66c37d02ee2a3b1b5038e213b00810d43f285ad549d7497751734e14d', 'double_sha256': '83dca07ae373edc669766c5e0c770bb1538d90cfd737faa8728fac9e2839fe86', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '4d4016ed7d7abcc1af74d0916821586a3f88e470fd3de7e8b77efbe6a2b8a0e9', 'double_sha256': 'f02603717436612e6eda4e8ccf7289a317e35519ef2840ecb5e54a0c61f8cf0c', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'efe8cf4ba38f47993d0f567d688289bb9c492c2509f398ae1cebd57051bac56b', 'double_sha256': '91abb2d7f32b4f6ed023533e0892ac686023df9910421e010060069af1a9434d', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '7b9c3aba2dcc7f9a2ec60db71f45cfa6ebaa532fdf0c544fe7192e71c5ad3afb', 'double_sha256': '5aaa95ac058e76f463bdae3491b039d8382bc7c657d24a531e544d2ff1623df0', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'b5ff1043e5a72ead2c049f0905c42e04d634214c5e8a68a1ce85d3a4bb9e791f', 'double_sha256': '3db561ef66bb8b8cfac6fa6ec255922cfdf62e80535cf88684e5c040f900c29c', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'd3eaf0d4fa25c247653d915ba7e412caaa82380c483b03536c62d67ddf016430', 'double_sha256': '6188d2f65bd5875129f6bbeff7612c9d8a40344091e9ff39694c7f898f545b5e', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '93bc40a3451abc1a36886abd6c2b1cac5803666704622dbe52c8bccbd0d00c75', 'double_sha256': '781f4ea488668bd0ce2e1591c9d356e697c78a30538e8f40c5e5c75a9ae26012', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'bb3622cede3fdc1f3071ac7fcc9c1a19ce07353e008574bb1d23321fb6d8a0a7', 'double_sha256': 'a566091e26c769926ba8b814d1f4f38f89b3386d579c4bf85c17f927fbc4bf6e', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '2d8bcfea4e8f8a3f250aff9e2ea2c3afc83004c26f57130847c7c5be49d8790c', 'double_sha256': '8fa59f6193a4d75bb441d8a9665b10ce80a3e4c9d4827326f009e2b1b53c1ece', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '04eb08f26103aa7fe48b3f9aaafcc4e867c917a5611849bcec3faa427480fa79', 'double_sha256': '1e6e7c5a2100388d3803554c635a1a3e8010c6933923892d44c6fbd7f477ac36', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '54e00cc97b2d1be8d722b5c32be0df15002d5c850b4cd8b0755781869468bc62', 'double_sha256': '771edf8c05d1a8d6d4ec803503232f91cd101feda0d0a0b4a98114b740725d1e', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '98838133f57ff641c881937b85510bd3124e8c414485c2b43507b6c1cd2ce8ed', 'double_sha256': '3dfa9287178a9474c54d398252ed742c31ca6cdfbebf2a3ae83b003b64b8d120', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'b8acad091cd4a354b5ed8b07d1d89ffc23f776f62039b105fb8771c0c331478a', 'double_sha256': '2b728b7087b374c05dc07ab3e13318dd6551606d7eff3cbc9bc2ffeae65a62a7', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '363da088fd027415b17b7a1e3b49b2da4dd45c346262539583b7f627e6ba0172', 'double_sha256': '3348d124d8be0ec6ccc599b999fa26f525b19c6e4069c0a84d5403cd8c145b2a', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '101a5c9783a3446442ea7483e848e40382dbd162b74332740f8fac56f3fb0b81', 'double_sha256': '986c84ebde4099bc7809d4c73125962520c9c4128ff9742e81f7f2aeb54dc2be', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '7c15f67bd64291cdc9757ec4fe8ae77dc7a0139b537ab25e6b84f3431017d8c0', 'double_sha256': '52531e185fba0b233d2dc172d867da4fa279826cd17ce513ba08147a8fded588', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '9d3b0695ad888b27cdf4d01fbae3e22db85492c0e10c28b59495085e755f3980', 'double_sha256': 'bc9addd745326bf9e706eb88dac730f0478c9bf42f8e005a98c9373e8db55863', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'd87983b3e960eac6425279b3cf6fa7ad7a0d053effcfc87ed0830071a24743be', 'double_sha256': '592ca4895cd3d665407c210141b527ab5aba43dc69ee802f9c8a5724192eda91', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'd66bbdad63703e2ad584cb1dbfca46851812bf27cf64d7d293a15f490e4d687a', 'double_sha256': 'ac3aec532151e1187accdcbf141ab6e221cb926931ce8fa0bcfc6df692f2271e', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '039a4701f1959d8f73631eeb9f2a6f2f7c9805d9d65170dd2617bebbf30c7a14', 'double_sha256': 'e4a4cebd135a726e005f4525c335843f56043d147a8c033d00e17dc18dc9488d', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '7da2e80fc2cbcc525b92b8839fa339f05265936ce5a4e7eb933bc92afb0e6c40', 'double_sha256': '73dd2cc5ea4930caa4099a387c5272798973e4b5c43bc8c2b63d10d0e404eefc', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'ddfb7fc8b32da3e798394f1544ba7733b7d191c6b72c9a994ba4f6e61c32c611', 'double_sha256': '9f5fe7941b21a7d5feaa4cfa685230e590e1b6880346abc8d77fec8494ec3424', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': '5e65a63712bf0c031cdb270ba7a414eadd499d1dab587aafd228c5747aa32fe6', 'double_sha256': '5264f1ff97e45e15b504ade5a019543d9c329ece68ed96af729e8e96003fe701', 'ripemd160': 'not available', 'preimage_relation': {'sha256': False, 'double_sha256': False, 'ripemd160': False}}
+  - {'sha256': 'b237954dad8d9727577162333c073bac15280868544bf7c15cf2950642b9ad87', 'double_sha256': '8290b97aa95a857dcaa7f83e055dab6dab9415a412a8c82fffe4c374e951f896', 'ripemd160': 'not available', 'preimage_relation': None}
+
+chain_properties:
+----------------------------------------
+  merkle_levels: 8
+  merkle_root: 4c2924c388a33693e95475fbe1f2bc99515fe0d0225f3458ecde06f7f8deedca
+  common_patterns: {'00111100': 3, '00011101': 3, '11101000': 3, '01100101': 2, '10011001': 2}
+
+==================================================
+
+=== SECP256K1 ANALYSIS ===
+==================================================
+
+curve_points:
+----------------------------------------
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 107569647980206536127050557815951001021972497990849270482461141762728145570384, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 17682013437465154730378754451324630813625744127362237512571952183507196287465, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 45764518674824767400334203195549800819548803977462247057278307422323430744001, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 27359438586621688572163132697077804114876097086653774995215923279330544380978, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 49317417548575205636607110548711525498290597801793958234499998727458147423405, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 46098756639452268768648063912436602753121702704784810351397120418598756959959, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 63314509365605921898986617841870326528450309799220604322480992866863510794595, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 13472833593630836071204237059382243721360839724235381420860046398370229718575, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 36792829017007700261093110213174485117718495848007647342752298269824620717344, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 50330467512117222173252549618768031668654671999370499638611528630234934026662, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 71612919925654868986261527621848540433193938696415942325947706782344854316433, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 1744103813499571630043760745773027503487416283102294812566143756157797460878, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 65404805806850131651044225328951271378472092555053349827300083373780591157424, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 36580792776558127001193170863479044567081762837269993801982722929724135137027, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 99138924753615237795253715100459538415055231185813452452258978524376655200474, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 58482276489333969115538077284932957536772075485319981224455128637831644546589, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 43126798661277858030253824793619700580981205401790131919659032675911504653113, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 11345321091191807386988334367231160149406523889551659297283176728569909261279, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 14238404965734414689218624292742906526778206456017668322466760930821180302058, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 57478872777222510918899057530935599689226322846381306190897406924830826671623, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 106571226216076279148664639651998082370010426397739008278150495755647629284595, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 62183608557863483918891024341135756798223610213543342813191440034001020515342, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 43834600127565641614896926261869355752178642325624642238618573167186067150238, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 13304201004789469439519472871356145004391227588090350976047295661555675944149, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 66584630253615457591312493245159427504115274877160511016150494561271014785949, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 100682340443470319314931666744785266024434513599671066599239621614613202703086, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 37422113415168572167624413640471024850901496204170506555047714299315141118897, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 93533902091507698442572296346513036544993313366426245343468027469180059174023, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 39810330543713819697118191957540046923177465764129718153687233803310163539103, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 21964772285635709151109702771989211178998062905767339591384114734890339026243, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 108501613690880637870880817242998306535501795842156603061462067971171386573202, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 92101202760262078471393207913019387470271919254015314772477164876161032614786, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 101873607904900373505979559639277146515978178923015612575112812494125623042233, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 46443003627456525362092663132221254876181028297309417083352123307876987064100, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 27578552839657062681368983709364461732228154347148160968060332553704509422984, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 90583936260474826407402800816852764647731217625860146745140690458315338787005, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 74443275515390182113909948480934556887573219373749729146131105449694362212438, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 105549762323145021366171998517494087551525468849956064705085218812868115607224, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 31998553404018415607986366750780251125192746484442077467717331275030282909926, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 27192317269582824819114403172762454067160557014304813152278959605589418303849, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 53390896817727494114652864821420700609111183424550304622973785231381972274058, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 3689165615190119665040050414495657437664118179935450118492832127266318320896, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 105112642178067135265348239502136448103417453171664574115560292954572596955392, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 22372081228429955325795454650406016567844541639498080580190016463390460137120, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 50915200765306635511674969746342929510588193364857024162774066294699968615610, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 21102920603054906472677437284638840952790606282767109655338641042253156158679, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 85544805814168372526086441014861601013266512592392016295319352772606982747114, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 18856238116624614756290506209596242181786528275693107334792093637923098924991, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 57090266423723285096813229471440343814726138362009194539545724835448511159262, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 69458332558219508986359253527455761177319205365856138263213113957661773367828, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 106191939531346118024950239131049980007476110022211474864188940085375183002542, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 15669322929386155677557409835828116336594676130695776136412092549939743710549, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 59993992505055729117450419887532329256157324337923174126212755536747328187535, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 88040049182241060427725110619810528437877947515269720259448981031180788922943, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 17306599575809304758483703319464795501584873639910774680786837520633845178198, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 105291078022837382068045283209810211154203630670699436597858492021876807542665, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 69280243428713973988715421839152439398967665481586959327121944481640077776631, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 91154252835560820582079320122201289151029506420242724403491017216208936136638, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 30875974271949045388762678321971808089029717815301521090925035787706722704220, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 60600401314889390813825990799018361179308866100750617248316206563370721476411, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 42104489574698213567596579617784157351409910751456374327808551002378441137691, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 67021430905680185895222054199963663523205491678675097161390344816942067345042, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 34978949549997913183203036040926897801627965651821527749762747752138893933673, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': True, 'order_residue': 105023176078417572072739470041533570309075589488058121449826152725656681876305, 'potential_private_key': True}
+  - {'is_field_element': True, 'could_be_point': False, 'order_residue': 13412117783729480116212358359730839029858590019150614501136011701213597034386, 'potential_private_key': True}
+
+field_properties:
+----------------------------------------
+  field_patterns: [81469324674283345891373386700887949435745632137267704474841195888428742173434, 82843236861546098036755029104752480333639830564304558334573130172383674545570, 35703142219786320758329259594259684710525342653956307543362897076994505569379, 108492470902646161111214588726042355094586841116953646496331716483314975824473, 91318090222406013636190416040621020530129664336463568698945797632974577489858, 34070486230824607689441811781846525038154389590663042169071081361997922736719, 81698618370057217568081272590467758451515330170054097729870452074326650502738, 67583404007941714360105952329890091621121981531553820300586708490801851921129, 40645704908614541030712519562378108473383274290375566307786212927694268497982, 25849336565105439475005348869927710004062973699565369084443560724729127898804]
+  curve_properties: {'potential_x_coords': 29, 'field_elements': 65, 'potential_scalars': 65}
+
+==================================================
+
+=== MODULAR ANALYSIS ===
+==================================================
+
+modular_properties:
+----------------------------------------
+  - {'small_prime_factors': {2: 4, 6723102998762908507940659863496937563873281124428079405153821360170509098149: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 1, 5: 1, 7: 1, 168400127975858616479797661441186960129768991689164166786399544604830440833: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {45764518674824767400334203195549800819548803977462247057278307422323430744001: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 1, 13: 1, 23: 1, 15250523180948544354605982551325420353888571397242906909261941627274550937: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {5: 1, 13: 1, 31: 1, 83: 1, 294881267293941257655577808297476908118572141479828743666477316077958369: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {46098756639452268768648063912436602753121702704784810351397120418598756959959: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {5: 1, 12662901873121184379797323568374065305690061959844120864496198573372702158919: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {5: 2, 449: 1, 1200252435958203658904609092149865810366221801713619725689090993173294407: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 5, 487: 1, 2360936153555422244679999371995282669258117033368047185751559180558561391: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 2, 19: 1, 147165109684553281208340788358970852832323602337340642218162364415891619961: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {71: 1, 1008632675009223506848753910166880851171745615442478060928840940596406398823: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 1, 7: 1, 41526281273799324524851446327929226273509911502435590775384375146614225259: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 4, 3: 1, 11: 1, 123872738270549491763341335850286498822863811657298011036553188207917786283: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 1, 12193597592186042333731056954493014855693920945756664600660907643241378379009: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 1, 7: 1, 2360450589371791376077469407153798533691791218709844106006166155342301314297: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 1, 19494092163111323038512692428310985845590691828439993741485042879277214848863: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 2, 4791866517919762003361536088179966731220133933532236879962114741767944961457: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 1, 3781773697063935795662778122410386716468841296517219765761058909523303087093: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 7119202482867207344609312146371453263389103228008834161233380465410590151029: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 1, 19159624259074170306299685843645199896408774282127102063632468974943608890541: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {5: 1, 23: 1, 926706314922402427379692518713026803217481968675991376331743441353457645953: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 31091804278931741959445512170567878399111805106771671406595720017000510257671: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 157: 1, 443: 1, 315125592209785924105310680377488143608133904082073889941327753498771169: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {23: 1, 578443521947368236500846646580701956712662069047406564175969376589377214963: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {19: 1, 23: 1, 152367574951065120346252844954598232274863329238353572119337516158514907977: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 29: 1, 1735902421439143436464339081806642517662664027580535631021372786458848322467: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {13: 1, 23: 1, 743: 1, 168448950135123233423319605686388566873434085822956317176806106939304821: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {29: 1, 3225306968672679256640424011948725398103217702290560184257518188592415833587: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 2, 47: 1, 94114256604524396447087924249503657028788335139786567739213318683948377161: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {919: 1, 23900731540408823885864747303579119890095824707037366258306980125016690997: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 29: 1, 1870717477428976515015186504189625974750030962795803501059690827089161837469: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 7: 1, 13: 1, 79: 1, 6405703349580058316274391981709513664645424902908284516099399421071152637: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {13: 1, 7836431377300028731229196895329011270459859917155047121162524038009663310941: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 2, 5: 2, 464430036274565253620926631322212548761810282973094170833521233078769870641: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 3, 3: 3, 613: 1, 208284641710901627404454290596976479761254262183162353997193013667637223: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 2, 5: 1, 31: 1, 64934721333673710686310251481614885052137073566924836376444939396641819919: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 1, 12407212585898363685651658080155759481262203228958288191021850908282393702073: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 3, 13193720290393127670771499814686760943940683606244508088135652351608514450903: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 1, 13: 1, 43: 1, 677: 1, 14092194158705721252600068680875874361173169400430217790489510650670547: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {7: 1, 137: 1, 28354866808741214618471744705695989642503187710432547604044796251918058711: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 1, 7: 1, 19: 1, 31: 1, 2158254378596794167461106994155578486907235161474262455452089305173497141: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 8, 3: 1, 13: 1, 83: 1, 4451900891052333933136452558425598352139469150563130066531549427597793: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 8, 41: 1, 10014542890440847490982111233054158546438400645166213235095302301312175777: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 5, 5: 1, 139825507677687220786221591565037603549028385246863003626187602896190375857: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 5: 1, 31: 1, 164242583113892372618306354020461062937381268918893626331529246111935382631: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {467: 1, 45188266815963397157767531658755548078780741504854624529633064330306544237: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 2, 4752489211898242918115913389714533389625917366244000905295519598478165708173: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {18856238116624614756290506209596242181786528275693107334792093637923098924991: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 7: 1, 19: 1, 214625061743320620664711388990377232386188490082741332855435055772362823907: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 2, 17364583139554877246589813381863940294329801341464034565803278489415443341957: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 599: 1, 88641017972743003359724740510058414029612779651261665162094273860914176129: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {13: 1, 1205332533029704282889031525832932025891898163899675087416314811533826439273: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 3, 5: 1, 29: 1, 15324136016617044474444551695410556642696634569073607695073500775669815629: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {7: 1, 12577149883177294346817872945687218348268278216467102894206997290168684131849: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 1, 79: 1, 311: 1, 117401329424676792967314524532709210126479667059511136532397448821915457: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {5: 1, 7: 1, 487: 1, 6177241303774560402936068243462024708372169590536781261241331300784793637: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 1, 7: 1, 3299059210891141618510258182816782828522269784837474253672473546744765608411: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 45577126417780410291039660061100644575514753210121362201745508608104468068319: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 2, 5: 1, 7: 1, 220542673371064609919733416585512914921640841537868007792321684197905162173: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 2, 6733377923876598979313998977668706797700985122305624138701800729263413497379: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {3: 2, 7: 1, 668325231344416088374548882821970751609681123038990068695373825434578430757: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 13: 1, 2577747342526160995970079007690910135507903526102888352361167108343925667117: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {223: 1, 653: 1, 240208692203612943250558210404733570493053555180447110265574875202678867: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': True, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {5: 1, 19: 1, 1105507116614921811291994421489827055885006205137453909998170028691122967119: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+  - {'small_prime_factors': {2: 1, 3: 1, 11: 1, 263: 1, 772676447962292897581078370764537333209966011012248790248646831502108367: 1}, 'theta_patterns': {2: True, 3: True, 5: True, 7: True, 11: True, 13: True, 17: True, 19: True}, 'hecke_properties': {'multiplicative': False, 'potential_eigenvalue': True}}
+
+sequence_properties:
+----------------------------------------
+  congruence_distributions: {2: {0: 32, 1: 33}, 3: {2: 25, 0: 25, 1: 15}, 5: {4: 15, 0: 13, 1: 10, 3: 18, 2: 9}, 7: {2: 12, 0: 12, 5: 8, 3: 6, 1: 9, 6: 10, 4: 8}, 11: {7: 9, 9: 8, 1: 8, 5: 6, 4: 8, 6: 3, 0: 2, 10: 9, 3: 4, 8: 5, 2: 3}, 13: {12: 5, 8: 1, 6: 4, 0: 9, 11: 4, 3: 4, 5: 5, 9: 4, 7: 6, 2: 3, 10: 4, 4: 5, 1: 11}, 17: {6: 5, 4: 4, 7: 5, 12: 3, 9: 2, 14: 3, 8: 7, 1: 4, 2: 3, 3: 2, 13: 5, 5: 6, 16: 5, 10: 3, 15: 6, 11: 2}, 19: {6: 5, 16: 7, 12: 6, 2: 1, 13: 3, 4: 3, 0: 5, 14: 7, 8: 3, 10: 2, 7: 3, 5: 5, 18: 2, 15: 2, 11: 5, 17: 4, 9: 1, 1: 1}}
+  integer_ratios: []
+
+==================================================

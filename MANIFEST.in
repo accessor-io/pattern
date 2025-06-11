@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+include requirements.txt
+include pyproject.toml
+recursive-include audio_processing_system *.py
+recursive-include docs *
+recursive-include tests *
+recursive-include examples *
+include src/btc_puzzle_solver/patterns/*.json
+recursive-include src/btc_puzzle_solver *.py 

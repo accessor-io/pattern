@@ -1,0 +1,4570 @@
+.
+├── ~
+│   └── pattern
+│       └── analyze_sequence.py
+├── addnode-test-report
+├── analysis
+├── analysis_67
+│   ├── bit_patterns.json
+│   ├── candidates
+│   ├── constraints.json
+│   ├── patterns
+│   ├── progress.json
+│   └── sequence_properties.json
+├── analyze_hex_sequence.py
+├── analyze.py
+├── analyze_sequence.py
+├── audio_output
+│   ├── combined_sound.wav
+│   ├── sound_10.wav
+│   ├── sound_11.wav
+│   ├── sound_12.wav
+│   ├── sound_13.wav
+│   ├── sound_14.wav
+│   ├── sound_15.wav
+│   ├── sound_16.wav
+│   ├── sound_17.wav
+│   ├── sound_18.wav
+│   ├── sound_19.wav
+│   ├── sound_1.wav
+│   ├── sound_20.wav
+│   ├── sound_21.wav
+│   ├── sound_22.wav
+│   ├── sound_23.wav
+│   ├── sound_24.wav
+│   ├── sound_25.wav
+│   ├── sound_26.wav
+│   ├── sound_27.wav
+│   ├── sound_28.wav
+│   ├── sound_29.wav
+│   ├── sound_2.wav
+│   ├── sound_30.wav
+│   ├── sound_31.wav
+│   ├── sound_32.wav
+│   ├── sound_33.wav
+│   ├── sound_34.wav
+│   ├── sound_35.wav
+│   ├── sound_36.wav
+│   ├── sound_37.wav
+│   ├── sound_38.wav
+│   ├── sound_39.wav
+│   ├── sound_3.wav
+│   ├── sound_40.wav
+│   ├── sound_41.wav
+│   ├── sound_42.wav
+│   ├── sound_43.wav
+│   ├── sound_44.wav
+│   ├── sound_45.wav
+│   ├── sound_46.wav
+│   ├── sound_47.wav
+│   ├── sound_48.wav
+│   ├── sound_49.wav
+│   ├── sound_4.wav
+│   ├── sound_50.wav
+│   ├── sound_51.wav
+│   ├── sound_52.wav
+│   ├── sound_53.wav
+│   ├── sound_54.wav
+│   ├── sound_55.wav
+│   ├── sound_56.wav
+│   ├── sound_57.wav
+│   ├── sound_58.wav
+│   ├── sound_59.wav
+│   ├── sound_5.wav
+│   ├── sound_60.wav
+│   ├── sound_61.wav
+│   ├── sound_62.wav
+│   ├── sound_63.wav
+│   ├── sound_64.wav
+│   ├── sound_65.wav
+│   ├── sound_6.wav
+│   ├── sound_7.wav
+│   ├── sound_8.wav
+│   └── sound_9.wav
+├── audio_processing_system
+│   ├── audio_processing_system
+│   │   ├── config
+│   │   ├── core
+│   │   │   ├── configuration.py
+│   │   │   ├── engine.py
+│   │   │   ├── __init__.py
+│   │   │   ├── integration.py
+│   │   │   ├── monitor.py
+│   │   │   └── state.py
+│   │   ├── __init__.py
+│   │   ├── interface
+│   │   │   ├── controls.py
+│   │   │   ├── display.py
+│   │   │   └── __init__.py
+│   │   ├── main.py
+│   │   ├── processors
+│   │   │   ├── adaptive.py
+│   │   │   ├── bass_splitter.py
+│   │   │   ├── channel_controller.py
+│   │   │   ├── filter_network.py
+│   │   │   ├── granular.py
+│   │   │   ├── hd_compressor.py
+│   │   │   ├── __init__.py
+│   │   │   ├── io_relay.py
+│   │   │   ├── master_config.py
+│   │   │   ├── pad_synth.py
+│   │   │   ├── polyrhythm.py
+│   │   │   ├── smart_routing.py
+│   │   │   └── spectral.py
+│   │   └── utils
+│   ├── docker-compose.yml
+│   ├── Dockerfile
+│   ├── docs
+│   │   ├── api
+│   │   │   └── index.rst
+│   │   ├── examples
+│   │   │   └── index.rst
+│   │   └── user_guide
+│   │       └── index.rst
+│   ├── examples
+│   │   ├── advanced_routing.py
+│   │   └── basic_processing.py
+│   ├── __init__.py
+│   ├── LICENSE
+│   ├── main.py
+│   ├── package.sh
+│   ├── pyproject.toml
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── setup.py
+│   ├── test_distribution.py
+│   └── tests
+│       ├── __init__.py
+│       ├── test_audio.py
+│       ├── test_interface.py
+│       └── test_processing.py
+├── audio_processing_system.zip
+├── bitcoin_research_filelist.txt
+├── bitcoin_research_tree.txt
+├── config
+│   └── requirements.txt
+├── data
+├── debug.test-node.log
+├── difference_table_2.py
+├── difference_table_3.py
+├── difference_table_4.py
+├── difference_table.py
+├── docs
+├── double-3-ap.c
+├── download.wpsoftware.net
+│   └── code
+│       └── euler
+│           ├── 12.c
+│           ├── 16.c
+│           ├── 67.c
+│           └── 67.data
+├── hex_analyzer
+├── hex_sequence_analysis
+│   ├── bitcoin_docs
+│   │   └── bitcoin-birthday.pdf
+│   ├── crypto_tools
+│   │   ├── wordwallet
+│   │   │   ├── LICENSE
+│   │   │   ├── list1.h
+│   │   │   ├── list2.h
+│   │   │   ├── main.c
+│   │   │   ├── Makefile
+│   │   │   ├── words.h
+│   │   │   └── wordwallet-gen
+│   │   └── wordwallet.tgz
+│   └── related_code
+│       ├── gmaxwell-with-derpatch-2016-11-22
+│       │   ├── amber.png
+│       │   ├── base.lcov
+│       │   ├── contrib
+│       │   │   ├── index.html
+│       │   │   ├── index-sort-b.html
+│       │   │   ├── index-sort-f.html
+│       │   │   ├── index-sort-l.html
+│       │   │   ├── lax_der_parsing.c.func.html
+│       │   │   ├── lax_der_parsing.c.func-sort-c.html
+│       │   │   ├── lax_der_parsing.c.gcov.html
+│       │   │   ├── lax_der_privatekey_parsing.c.func.html
+│       │   │   ├── lax_der_privatekey_parsing.c.func-sort-c.html
+│       │   │   └── lax_der_privatekey_parsing.c.gcov.html
+│       │   ├── emerald.png
+│       │   ├── full.lcov
+│       │   ├── gcov.css
+│       │   ├── glass.png
+│       │   ├── index.html
+│       │   ├── index-sort-b.html
+│       │   ├── index-sort-f.html
+│       │   ├── index-sort-l.html
+│       │   ├── ruby.png
+│       │   ├── snow.png
+│       │   ├── src
+│       │   │   ├── ecdsa_impl.h.func.html
+│       │   │   ├── ecdsa_impl.h.func-sort-c.html
+│       │   │   ├── ecdsa_impl.h.gcov.html
+│       │   │   ├── eckey_impl.h.func.html
+│       │   │   ├── eckey_impl.h.func-sort-c.html
+│       │   │   ├── eckey_impl.h.gcov.html
+│       │   │   ├── ecmult_const_impl.h.func.html
+│       │   │   ├── ecmult_const_impl.h.func-sort-c.html
+│       │   │   ├── ecmult_const_impl.h.gcov.html
+│       │   │   ├── ecmult_gen_impl.h.func.html
+│       │   │   ├── ecmult_gen_impl.h.func-sort-c.html
+│       │   │   ├── ecmult_gen_impl.h.gcov.html
+│       │   │   ├── ecmult_impl.h.func.html
+│       │   │   ├── ecmult_impl.h.func-sort-c.html
+│       │   │   ├── ecmult_impl.h.gcov.html
+│       │   │   ├── field_5x52_impl.h.func.html
+│       │   │   ├── field_5x52_impl.h.func-sort-c.html
+│       │   │   ├── field_5x52_impl.h.gcov.html
+│       │   │   ├── field_5x52_int128_impl.h.func.html
+│       │   │   ├── field_5x52_int128_impl.h.func-sort-c.html
+│       │   │   ├── field_5x52_int128_impl.h.gcov.html
+│       │   │   ├── field_impl.h.func.html
+│       │   │   ├── field_impl.h.func-sort-c.html
+│       │   │   ├── field_impl.h.gcov.html
+│       │   │   ├── group_impl.h.func.html
+│       │   │   ├── group_impl.h.func-sort-c.html
+│       │   │   ├── group_impl.h.gcov.html
+│       │   │   ├── hash_impl.h.func.html
+│       │   │   ├── hash_impl.h.func-sort-c.html
+│       │   │   ├── hash_impl.h.gcov.html
+│       │   │   ├── index.html
+│       │   │   ├── index-sort-b.html
+│       │   │   ├── index-sort-f.html
+│       │   │   ├── index-sort-l.html
+│       │   │   ├── modules
+│       │   │   │   ├── ecdh
+│       │   │   │   │   ├── index.html
+│       │   │   │   │   ├── index-sort-b.html
+│       │   │   │   │   ├── index-sort-f.html
+│       │   │   │   │   ├── index-sort-l.html
+│       │   │   │   │   ├── main_impl.h.func.html
+│       │   │   │   │   ├── main_impl.h.func-sort-c.html
+│       │   │   │   │   ├── main_impl.h.gcov.html
+│       │   │   │   │   ├── tests_impl.h.func.html
+│       │   │   │   │   ├── tests_impl.h.func-sort-c.html
+│       │   │   │   │   └── tests_impl.h.gcov.html
+│       │   │   │   └── recovery
+│       │   │   │       ├── index.html
+│       │   │   │       ├── index-sort-b.html
+│       │   │   │       ├── index-sort-f.html
+│       │   │   │       ├── index-sort-l.html
+│       │   │   │       ├── main_impl.h.func.html
+│       │   │   │       ├── main_impl.h.func-sort-c.html
+│       │   │   │       ├── main_impl.h.gcov.html
+│       │   │   │       ├── tests_impl.h.func.html
+│       │   │   │       ├── tests_impl.h.func-sort-c.html
+│       │   │   │       └── tests_impl.h.gcov.html
+│       │   │   ├── num_gmp_impl.h.func.html
+│       │   │   ├── num_gmp_impl.h.func-sort-c.html
+│       │   │   ├── num_gmp_impl.h.gcov.html
+│       │   │   ├── scalar_4x64_impl.h.func.html
+│       │   │   ├── scalar_4x64_impl.h.func-sort-c.html
+│       │   │   ├── scalar_4x64_impl.h.gcov.html
+│       │   │   ├── scalar_impl.h.func.html
+│       │   │   ├── scalar_impl.h.func-sort-c.html
+│       │   │   ├── scalar_impl.h.gcov.html
+│       │   │   ├── secp256k1.c.func.html
+│       │   │   ├── secp256k1.c.func-sort-c.html
+│       │   │   ├── secp256k1.c.gcov.html
+│       │   │   ├── testrand_impl.h.func.html
+│       │   │   ├── testrand_impl.h.func-sort-c.html
+│       │   │   ├── testrand_impl.h.gcov.html
+│       │   │   ├── tests.c.func.html
+│       │   │   ├── tests.c.func-sort-c.html
+│       │   │   ├── tests.c.gcov.html
+│       │   │   ├── tests_exhaustive.c.func.html
+│       │   │   ├── tests_exhaustive.c.func-sort-c.html
+│       │   │   ├── tests_exhaustive.c.gcov.html
+│       │   │   ├── util.h.func.html
+│       │   │   ├── util.h.func-sort-c.html
+│       │   │   └── util.h.gcov.html
+│       │   ├── tests.lcov
+│       │   └── updown.png
+│       └── gmaxwell-with-derpatch-2016-11-22.tgz
+├── __init__.py
+├── logs
+│   ├── execution
+│   │   ├── ascii_conversion.log
+│   │   ├── block_structure.log
+│   │   ├── CHANGES.log
+│   │   ├── control_chars.log
+│   │   ├── correlation_analysis.log
+│   │   ├── cross_reference.log
+│   │   ├── deep_patterns.log
+│   │   ├── detailed_patterns.log
+│   │   ├── master.log
+│   │   ├── mathematical_patterns.log
+│   │   ├── protocol_analysis.log
+│   │   ├── protocol_matching.log
+│   │   ├── sequence_analysis.log
+│   │   └── statistical_analysis.log
+│   └── visualizations
+│       ├── ascii_plot.txt
+│       └── complex_patterns.txt
+├── MANIFEST.in
+├── modular_arithmetic
+│   ├── modular_ops.py
+│   ├── __pycache__
+│   │   └── modular_ops.cpython-39.pyc
+│   ├── README.md
+│   ├── sequence_analysis
+│   │   ├── analyze.py
+│   │   ├── __init__.py
+│   │   ├── modular_ops.py
+│   │   ├── __pycache__
+│   │   │   ├── modular_ops.cpython-39.pyc
+│   │   │   └── sequence_analyzer.cpython-39.pyc
+│   │   ├── sequence_analyzer.py
+│   │   └── sequence.txt
+│   └── test_modular_ops.py
+├── modular_ops.py
+├── organized
+│   ├── analysis
+│   │   ├── bit_patterns
+│   │   │   └── bit_position_analysis.py
+│   │   ├── candidates
+│   │   │   ├── bit_patterns.json
+│   │   │   ├── output
+│   │   │   │   └── output_log.txt
+│   │   │   ├── process_addresses.py
+│   │   │   └── progress.json
+│   │   ├── collision_analysis.py
+│   │   ├── find_67_with_hex.py
+│   │   ├── integrated_analysis.py
+│   │   ├── known_values.py
+│   │   ├── permutation_proof.py
+│   │   ├── __pycache__
+│   │   │   └── integrated_analysis.cpython-38.pyc
+│   │   ├── run_tests.py
+│   │   ├── sequence_analysis
+│   │   │   ├── find_67_bits.py
+│   │   │   ├── find_67_complete.py
+│   │   │   ├── find_67_optimized.py
+│   │   │   ├── find_67.py
+│   │   │   ├── find_67_with_constraints.py
+│   │   │   ├── find_67_with_hex.py
+│   │   │   └── sequence_67_analysis.py
+│   │   ├── sequence_finder.py
+│   │   └── sequence_proof.py
+│   ├── data
+│   │   ├── 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+│   │   ├── 32bHex.txt
+│   │   ├── 32.obj
+│   │   ├── 32.objfile
+│   │   ├── analysis_log.txt
+│   │   ├── audio_features.txt
+│   │   ├── base64_values.txt
+│   │   ├── batch_0.json
+│   │   ├── batch_1.json
+│   │   ├── batch_2.json
+│   │   ├── batch_3.json
+│   │   ├── batch_4.json
+│   │   ├── batch_5.json
+│   │   ├── binary_grouped.txt
+│   │   ├── binary_types.txt
+│   │   ├── binary_values.txt
+│   │   ├── bit_patterns.json
+│   │   ├── bit_patterns.txt
+│   │   ├── bitwise_analysis.txt
+│   │   ├── byte_and_bit_mappings.txt
+│   │   ├── bytes_array.json
+│   │   ├── colors.txt
+│   │   ├── complex_numbers.txt
+│   │   ├── constraints.json
+│   │   ├── conversation.json
+│   │   ├── coordinates.txt
+│   │   ├── crypto_hashes.txt
+│   │   ├── data.csv
+│   │   ├── decimal_values.txt
+│   │   ├── extended_colors.txt
+│   │   ├── extended_coordinates.txt
+│   │   ├── extended_dates.txt
+│   │   ├── factorial_analysis.txt
+│   │   ├── float_values.txt
+│   │   ├── generated_sequence.txt
+│   │   ├── hex_formatted.txt
+│   │   ├── hex_values.json
+│   │   ├── imagej_import
+│   │   │   ├── 32bHex.json
+│   │   │   ├── 32bHex.raw
+│   │   │   ├── 32.json
+│   │   │   ├── 32.raw
+│   │   │   ├── analysis_log.json
+│   │   │   ├── analysis_log.raw
+│   │   │   ├── audio_features.json
+│   │   │   ├── audio_features.raw
+│   │   │   ├── base64_values.json
+│   │   │   ├── base64_values.raw
+│   │   │   ├── batch_0.json
+│   │   │   ├── batch_0.raw
+│   │   │   ├── batch_1.json
+│   │   │   ├── batch_1.raw
+│   │   │   ├── batch_2.json
+│   │   │   ├── batch_2.raw
+│   │   │   ├── batch_3.json
+│   │   │   ├── batch_3.raw
+│   │   │   ├── batch_4.json
+│   │   │   ├── batch_4.raw
+│   │   │   ├── batch_5.json
+│   │   │   ├── batch_5.raw
+│   │   │   ├── binary_grouped.json
+│   │   │   ├── binary_grouped.raw
+│   │   │   ├── binary_types.json
+│   │   │   ├── binary_types.raw
+│   │   │   ├── binary_values.json
+│   │   │   ├── binary_values.raw
+│   │   │   ├── bit_patterns.json
+│   │   │   ├── bit_patterns.raw
+│   │   │   ├── bitwise_analysis.json
+│   │   │   ├── bitwise_analysis.raw
+│   │   │   ├── byte_and_bit_mappings.json
+│   │   │   ├── byte_and_bit_mappings.raw
+│   │   │   ├── bytes_array.json
+│   │   │   ├── bytes_array.raw
+│   │   │   ├── colors.json
+│   │   │   ├── colors.raw
+│   │   │   ├── complex_numbers.json
+│   │   │   ├── complex_numbers.raw
+│   │   │   ├── constraints.json
+│   │   │   ├── constraints.raw
+│   │   │   ├── conversation.json
+│   │   │   ├── conversation.raw
+│   │   │   ├── coordinates.json
+│   │   │   ├── coordinates.raw
+│   │   │   ├── crypto_hashes.json
+│   │   │   ├── crypto_hashes.raw
+│   │   │   ├── data.json
+│   │   │   ├── data.raw
+│   │   │   ├── decimal_values.json
+│   │   │   ├── decimal_values.raw
+│   │   │   ├── extended_colors.json
+│   │   │   ├── extended_colors.raw
+│   │   │   ├── extended_coordinates.json
+│   │   │   ├── extended_coordinates.raw
+│   │   │   ├── extended_dates.json
+│   │   │   ├── extended_dates.raw
+│   │   │   ├── factorial_analysis.json
+│   │   │   ├── factorial_analysis.raw
+│   │   │   ├── float_values.json
+│   │   │   ├── float_values.raw
+│   │   │   ├── generated_sequence.json
+│   │   │   ├── generated_sequence.raw
+│   │   │   ├── hex_formatted.json
+│   │   │   ├── hex_formatted.raw
+│   │   │   ├── hex_values.json
+│   │   │   ├── hex_values.raw
+│   │   │   ├── int_array.json
+│   │   │   ├── int_array.raw
+│   │   │   ├── ip_addresses.json
+│   │   │   ├── ip_addresses.raw
+│   │   │   ├── number_properties.json
+│   │   │   ├── number_properties.raw
+│   │   │   ├── octal_values.json
+│   │   │   ├── octal_values.raw
+│   │   │   ├── pattern_analysis.json
+│   │   │   ├── pattern_analysis.raw
+│   │   │   ├── priority_report.json
+│   │   │   ├── priority_report.raw
+│   │   │   ├── progress.json
+│   │   │   ├── progress.raw
+│   │   │   ├── python_dict.json
+│   │   │   ├── python_dict.raw
+│   │   │   ├── rational_numbers.json
+│   │   │   ├── rational_numbers.raw
+│   │   │   ├── requirements.json
+│   │   │   ├── requirements.raw
+│   │   │   ├── scientific_notation.json
+│   │   │   ├── scientific_notation.raw
+│   │   │   ├── sequence_properties.json
+│   │   │   ├── sequence_properties.raw
+│   │   │   ├── settings.json
+│   │   │   ├── settings.raw
+│   │   │   ├── signal_analysis.json
+│   │   │   ├── signal_analysis.raw
+│   │   │   ├── text_encodings.json
+│   │   │   ├── text_encodings.raw
+│   │   │   ├── timestamps.json
+│   │   │   ├── timestamps.raw
+│   │   │   ├── tree.json
+│   │   │   ├── tree.raw
+│   │   │   ├── utf8_bytes.json
+│   │   │   ├── utf8_bytes.raw
+│   │   │   ├── uuids.json
+│   │   │   ├── uuids.raw
+│   │   │   ├── values.json
+│   │   │   ├── values.raw
+│   │   │   ├── waveform_analysis.json
+│   │   │   └── waveform_analysis.raw
+│   │   ├── int_array.json
+│   │   ├── ip_addresses.txt
+│   │   ├── number_properties.txt
+│   │   ├── octal_values.txt
+│   │   ├── pattern_analysis.txt
+│   │   ├── priority_report.txt
+│   │   ├── progress.json
+│   │   ├── python_dict.json
+│   │   ├── rational_numbers.txt
+│   │   ├── requirements.txt
+│   │   ├── scientific_notation.txt
+│   │   ├── sequence_properties.json
+│   │   ├── settings.json
+│   │   ├── signal_analysis.txt
+│   │   ├── text_encodings.txt
+│   │   ├── timestamps.txt
+│   │   ├── tree.txt
+│   │   ├── utf8_bytes.txt
+│   │   ├── uuids.txt
+│   │   ├── values.csv
+│   │   └── waveform_analysis.txt
+│   ├── docs
+│   │   ├── 1006.0381v4.pdf
+│   │   ├── CHANGELOG.md
+│   │   ├── Let me analyze the values that immediate.md
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── tradeoff.pdf
+│   ├── output
+│   │   ├── 256bit_patterns.txt
+│   │   ├── byte_mappings.txt
+│   │   ├── reports
+│   │   │   ├── complete_analysis.txt
+│   │   │   ├── crypto_analysis.txt
+│   │   │   ├── entropy_analysis.txt
+│   │   │   ├── mathematical_analysis.txt
+│   │   │   ├── modular_analysis.txt
+│   │   │   ├── pattern_analysis.txt
+│   │   │   ├── schnorr_analysis.txt
+│   │   │   ├── secp256k1_analysis.txt
+│   │   │   ├── sequence_analysis.txt
+│   │   │   ├── statistical_analysis.txt
+│   │   │   └── visual_analysis.txt
+│   │   ├── temp_sound.wav
+│   │   ├── text
+│   │   │   ├── crypto_analysis.txt
+│   │   │   ├── entropy_analysis.txt
+│   │   │   ├── pattern_analysis.txt
+│   │   │   ├── sequence_analysis.txt
+│   │   │   ├── statistical_analysis.txt
+│   │   │   └── visual_analysis_text.txt
+│   │   ├── visual
+│   │   │   ├── visual_analysis_density.txt
+│   │   │   └── visual_analysis_grid.txt
+│   │   └── visualizations
+│   │       ├── address_patterns.png
+│   │       ├── byte_distribution.png
+│   │       ├── circular_pattern.png
+│   │       ├── entropy_correlation.png
+│   │       ├── entropy_gradient.png
+│   │       ├── pattern_distribution.png
+│   │       ├── pattern_evolution.png
+│   │       ├── pattern_landscape.png
+│   │       ├── sequence_patterns.png
+│   │       └── transition_heatmap.png
+│   ├── scripts
+│   │   ├── advanced_pattern_analysis.py
+│   │   ├── analyze_hex_pattern.py
+│   │   ├── analyze_ratios.py
+│   │   ├── crypto_pattern_analysis.py
+│   │   ├── generate_sequence.py
+│   │   ├── prepare_for_imagej.py
+│   │   ├── sequence_analyzer.py
+│   │   ├── sequence_generator.py
+│   │   └── sequence_predictor.py
+│   ├── src
+│   │   ├── convert_hex.py
+│   │   ├── count_67_candidates.py
+│   │   ├── hex_partition_analyzer.c
+│   │   ├── hex_possibilities.py
+│   │   ├── hex_synthesizer.py
+│   │   ├── key32addr.py
+│   │   ├── key32WIF.py
+│   │   ├── maintest.py
+│   │   ├── organize_project.py
+│   │   ├── predict_67.py
+│   │   ├── presleys_non_linear_bit_permutation_sequence.py
+│   │   ├── priority_analysis.py
+│   │   ├── run_all_with_32bhex.py
+│   │   ├── search.py
+│   │   ├── setup.py
+│   │   ├── significant_bits_67.py
+│   │   ├── simple_beep.py
+│   │   ├── simple_test.py
+│   │   └── test_sound.py
+│   ├── tests
+│   │   ├── test
+│   │   ├── test.rb
+│   │   ├── tests
+│   │   │   └── test_integrated.py
+│   │   └── test_sound.wav
+│   └── utils
+│       ├── betting-ml-fixed.js
+│       ├── betting-ml.js
+│       ├── eth_finder_bookmarklet.js
+│       └── exportChat.js
+├── output
+├── partition_160
+├── partition_160.c
+├── pattern.code-workspace
+├── pattern_compressed.tar.xz
+├── pattern_ultra.7z
+├── priority_report.txt
+├── __pycache__
+│   ├── modular_ops.cpython-39.pyc
+│   └── sequence_analyzer.cpython-39.pyc
+├── raw_binary_analysis
+│   ├── 00001
+│   ├── 00002
+│   ├── 00003
+│   ├── 00004
+│   ├── 00005
+│   ├── 00006
+│   ├── 00007
+│   ├── 00008
+│   ├── 00009
+│   ├── 00010
+│   ├── 00011
+│   ├── 00012
+│   ├── 00013
+│   ├── 00014
+│   ├── 00015
+│   ├── 00016
+│   ├── 00017
+│   ├── 00018
+│   ├── 00019
+│   ├── 00020
+│   ├── 00021
+│   ├── 00022
+│   ├── 00023
+│   ├── 00024
+│   ├── 00025
+│   ├── 00026
+│   ├── 00027
+│   ├── 00028
+│   ├── 00029
+│   ├── 00030
+│   ├── 00031
+│   ├── 00032
+│   ├── 00033
+│   ├── 00034
+│   ├── 00035
+│   ├── 00036
+│   ├── 00037
+│   ├── 00038
+│   ├── 00039
+│   ├── 00040
+│   ├── 00041
+│   ├── 00042
+│   ├── 00043
+│   ├── 00044
+│   ├── 00045
+│   ├── 00046
+│   ├── 00047
+│   ├── 00048
+│   ├── 00049
+│   ├── 00050
+│   ├── 00051
+│   ├── 00052
+│   ├── 00053
+│   ├── 00054
+│   ├── 00055
+│   ├── 00056
+│   ├── 00057
+│   ├── 00058
+│   ├── 00059
+│   ├── 00060
+│   ├── 00061
+│   ├── 00062
+│   ├── 00063
+│   ├── 00064
+│   ├── 00065
+│   ├── 00066
+│   ├── 00067
+│   ├── 00068
+│   ├── 00069
+│   ├── 00070
+│   ├── 00071
+│   ├── 00072
+│   ├── 00073
+│   ├── 00074
+│   ├── 00075
+│   ├── 00076
+│   ├── 00077
+│   ├── 00078
+│   ├── 00079
+│   ├── 00080
+│   ├── 00081
+│   ├── 00082
+│   ├── 00083
+│   ├── 00084
+│   ├── 00085
+│   ├── 00086
+│   ├── 00087
+│   ├── 00088
+│   ├── 00089
+│   ├── 00090
+│   ├── 00091
+│   ├── 00092
+│   ├── 00093
+│   ├── 00094
+│   ├── 00095
+│   ├── 00096
+│   ├── 00097
+│   ├── 00098
+│   ├── 00099
+│   ├── 00100
+│   ├── 00101
+│   ├── 00102
+│   ├── 00103
+│   ├── 00104
+│   ├── 00105
+│   ├── 00106
+│   ├── 00107
+│   ├── 00108
+│   ├── 00109
+│   ├── 00110
+│   ├── 00111
+│   ├── 00112
+│   ├── 00113
+│   ├── 00114
+│   ├── 00115
+│   ├── 00116
+│   ├── 00117
+│   ├── 00118
+│   ├── 00119
+│   ├── 00120
+│   ├── 00121
+│   ├── 00122
+│   ├── 00123
+│   ├── 00124
+│   ├── 00125
+│   ├── 00126
+│   ├── 00127
+│   ├── 00128
+│   ├── 00129
+│   ├── 00130
+│   ├── 00131
+│   ├── 00132
+│   ├── 00133
+│   ├── 00134
+│   ├── 00135
+│   ├── 00136
+│   ├── 00137
+│   ├── 00138
+│   ├── 00139
+│   ├── 00140
+│   ├── 00141
+│   ├── 00142
+│   ├── 00143
+│   ├── 00144
+│   ├── 00145
+│   ├── 00146
+│   ├── 00147
+│   ├── 00148
+│   ├── 00149
+│   ├── 00150
+│   ├── 00151
+│   ├── 00152
+│   ├── 00153
+│   ├── 00154
+│   ├── 00155
+│   ├── 00156
+│   ├── 00157
+│   ├── 00158
+│   ├── 00159
+│   ├── 00160
+│   ├── 00161
+│   ├── 00162
+│   ├── 00163
+│   ├── 00164
+│   ├── 00165
+│   ├── 00166
+│   ├── 00167
+│   ├── 00168
+│   ├── 00169
+│   ├── 00170
+│   ├── 00171
+│   ├── 00172
+│   ├── 00173
+│   ├── 00174
+│   ├── 00175
+│   ├── 00176
+│   ├── 00177
+│   ├── 00178
+│   ├── 00179
+│   ├── 00180
+│   ├── 00181
+│   ├── 00182
+│   ├── 00183
+│   ├── 00184
+│   ├── 00185
+│   ├── 00186
+│   ├── 00187
+│   ├── 00188
+│   ├── 00189
+│   ├── 00190
+│   ├── 00191
+│   ├── 00192
+│   ├── 00193
+│   ├── 00194
+│   ├── 00195
+│   ├── 00196
+│   ├── 00197
+│   ├── 00198
+│   ├── 00199
+│   ├── 00200
+│   ├── 00201
+│   ├── 00202
+│   ├── 00203
+│   ├── 00204
+│   ├── 00205
+│   ├── 00206
+│   ├── 00207
+│   ├── 00208
+│   ├── 00209
+│   ├── 00210
+│   ├── 00211
+│   ├── 00212
+│   ├── 00213
+│   ├── 00214
+│   ├── 00215
+│   ├── 00216
+│   ├── 00217
+│   ├── 00218
+│   ├── 00219
+│   ├── 00220
+│   ├── 00221
+│   ├── 00222
+│   ├── 00223
+│   ├── 00224
+│   ├── 00225
+│   ├── 00226
+│   ├── 00227
+│   ├── 00228
+│   ├── 00229
+│   ├── 00230
+│   ├── 00231
+│   ├── 00232
+│   ├── 00233
+│   ├── 00234
+│   ├── 00235
+│   ├── 00236
+│   ├── 00237
+│   ├── 00238
+│   ├── 00239
+│   ├── 00240
+│   ├── 00241
+│   ├── 00242
+│   ├── 00243
+│   ├── 00244
+│   ├── 00245
+│   ├── 00246
+│   ├── 00247
+│   ├── 00248
+│   ├── 00249
+│   ├── 00250
+│   ├── 00251
+│   ├── 00252
+│   ├── 00253
+│   ├── 00254
+│   ├── 00255
+│   ├── 00256
+│   ├── 00257
+│   ├── 00258
+│   ├── 00259
+│   ├── 00260
+│   ├── 00261
+│   ├── 00262
+│   ├── 00263
+│   ├── 00264
+│   ├── 00265
+│   ├── 00266
+│   ├── 00267
+│   ├── 00268
+│   ├── 00269
+│   ├── 00270
+│   ├── 00271
+│   ├── 00272
+│   ├── 00273
+│   ├── 00274
+│   ├── 00275
+│   ├── 00276
+│   ├── 00277
+│   ├── 00278
+│   ├── 00279
+│   ├── 00280
+│   ├── 00281
+│   ├── 00282
+│   ├── 00283
+│   ├── 00284
+│   ├── 00285
+│   ├── 00286
+│   ├── 00287
+│   ├── 00288
+│   ├── 00289
+│   ├── 00290
+│   ├── 00291
+│   ├── 00292
+│   ├── 00293
+│   ├── 00294
+│   ├── 00295
+│   ├── 00296
+│   ├── 00297
+│   ├── 00298
+│   ├── 00299
+│   ├── 00300
+│   ├── 00301
+│   ├── 00302
+│   ├── 00303
+│   ├── 00304
+│   ├── 00305
+│   ├── 00306
+│   ├── 00307
+│   ├── 00308
+│   ├── 00309
+│   ├── 00310
+│   ├── 00311
+│   ├── 00312
+│   ├── 00313
+│   ├── 00314
+│   ├── 00315
+│   ├── 00316
+│   ├── 00317
+│   ├── 00318
+│   ├── 00319
+│   ├── 00320
+│   ├── 00321
+│   ├── 00322
+│   ├── 00323
+│   ├── 00324
+│   ├── 00325
+│   ├── 00326
+│   ├── 00327
+│   ├── 00328
+│   ├── 00329
+│   ├── 00330
+│   ├── 00331
+│   ├── 00332
+│   ├── 00333
+│   ├── 00334
+│   ├── 00335
+│   ├── 00336
+│   ├── 00337
+│   ├── 00338
+│   ├── 00339
+│   ├── 00340
+│   ├── 00341
+│   ├── 00342
+│   ├── 00343
+│   ├── 00344
+│   ├── 00345
+│   ├── 00346
+│   ├── 00347
+│   ├── 00348
+│   ├── 00349
+│   ├── 00350
+│   ├── 00351
+│   ├── 00352
+│   ├── 00353
+│   ├── 00354
+│   ├── 00355
+│   ├── 00356
+│   ├── 00357
+│   ├── 00358
+│   ├── 00359
+│   ├── 00360
+│   ├── 00361
+│   ├── 00362
+│   ├── 00363
+│   ├── 00364
+│   ├── 00365
+│   ├── 00366
+│   ├── 00367
+│   ├── 00368
+│   ├── 00369
+│   ├── 00370
+│   ├── 00371
+│   ├── 00372
+│   ├── 00373
+│   ├── 00374
+│   ├── 00375
+│   ├── 00376
+│   ├── 00377
+│   ├── 00378
+│   ├── 00379
+│   ├── 00380
+│   ├── 00381
+│   ├── 00382
+│   ├── 00383
+│   ├── 00384
+│   ├── 00385
+│   ├── 00386
+│   ├── 00387
+│   ├── 00388
+│   ├── 00389
+│   ├── 00390
+│   ├── 00391
+│   ├── 00392
+│   ├── 00393
+│   ├── 00394
+│   ├── 00395
+│   ├── 00396
+│   ├── 00397
+│   ├── 00398
+│   ├── 00399
+│   ├── 00400
+│   ├── 00401
+│   ├── 00402
+│   ├── 00403
+│   ├── 00404
+│   ├── 00405
+│   ├── 00406
+│   ├── 00407
+│   ├── 00408
+│   ├── 00409
+│   ├── 00410
+│   ├── 00411
+│   ├── 00412
+│   ├── 00413
+│   ├── 00414
+│   ├── 00415
+│   ├── 00416
+│   ├── 00417
+│   ├── 00418
+│   ├── 00419
+│   ├── 00420
+│   ├── 00421
+│   ├── 00422
+│   ├── 00423
+│   ├── 00424
+│   ├── 00425
+│   ├── 00426
+│   ├── 00427
+│   ├── 00428
+│   ├── 00429
+│   ├── 00430
+│   ├── 00431
+│   ├── 00432
+│   ├── 00433
+│   ├── 00434
+│   ├── 00435
+│   ├── 00436
+│   ├── 00437
+│   ├── 00438
+│   ├── 00439
+│   ├── 00440
+│   ├── 00441
+│   ├── 00442
+│   ├── 00443
+│   ├── 00444
+│   ├── 00445
+│   ├── 00446
+│   ├── 00447
+│   ├── 00448
+│   ├── 00449
+│   ├── 00450
+│   ├── 00451
+│   ├── 00452
+│   ├── 00453
+│   ├── 00454
+│   ├── 00455
+│   ├── 00456
+│   ├── 00457
+│   ├── 00458
+│   ├── 00459
+│   ├── 00460
+│   ├── 00461
+│   ├── 00462
+│   ├── 00463
+│   ├── 00464
+│   ├── 00465
+│   ├── 00466
+│   ├── 00467
+│   ├── 00468
+│   ├── 00469
+│   ├── 00470
+│   ├── 00471
+│   ├── 00472
+│   ├── 00473
+│   ├── 00474
+│   ├── 00475
+│   ├── 00476
+│   ├── 00477
+│   ├── 00478
+│   ├── 00479
+│   ├── 00480
+│   ├── 00481
+│   ├── 00482
+│   ├── 00483
+│   ├── 00484
+│   ├── 00485
+│   ├── 00486
+│   ├── 00487
+│   ├── 00488
+│   ├── 00489
+│   ├── 00490
+│   ├── 00491
+│   ├── 00492
+│   ├── 00493
+│   ├── 00494
+│   ├── 00495
+│   ├── 00496
+│   ├── 00497
+│   ├── 00498
+│   ├── 00499
+│   ├── 00500
+│   ├── 00501
+│   ├── 00502
+│   ├── 00503
+│   ├── 00504
+│   ├── 00505
+│   ├── 00506
+│   ├── 00507
+│   ├── 00508
+│   ├── 00509
+│   ├── 00510
+│   ├── 00511
+│   ├── 00512
+│   ├── 00513
+│   ├── 00514
+│   ├── 00515
+│   ├── 00516
+│   ├── 00517
+│   ├── 00518
+│   ├── 00519
+│   ├── 00520
+│   ├── 00521
+│   ├── 00522
+│   ├── 00523
+│   ├── 00524
+│   ├── 00525
+│   ├── 00526
+│   ├── 00527
+│   ├── 00528
+│   ├── 00529
+│   ├── 00530
+│   ├── 00531
+│   ├── 00532
+│   ├── 00533
+│   ├── 00534
+│   ├── 00535
+│   ├── 00536
+│   ├── 00537
+│   ├── 00538
+│   ├── 00539
+│   ├── 00540
+│   ├── 00541
+│   ├── 00542
+│   ├── 00543
+│   ├── 00544
+│   ├── 00545
+│   ├── 00546
+│   ├── 00547
+│   ├── 00548
+│   ├── 00549
+│   ├── 00550
+│   ├── 00551
+│   ├── 00552
+│   ├── 00553
+│   ├── 00554
+│   ├── 00555
+│   ├── 00556
+│   ├── 00557
+│   ├── 00558
+│   ├── 00559
+│   ├── 00560
+│   ├── 00561
+│   ├── 00562
+│   ├── 00563
+│   ├── 00564
+│   ├── 00565
+│   ├── 00566
+│   ├── 00567
+│   ├── 00568
+│   ├── 00569
+│   ├── 00570
+│   ├── 00571
+│   ├── 00572
+│   ├── 00573
+│   ├── 00574
+│   ├── 00575
+│   ├── 00576
+│   ├── 00577
+│   ├── 00578
+│   ├── 00579
+│   ├── 00580
+│   ├── 00581
+│   ├── 00582
+│   ├── 00583
+│   ├── 00584
+│   ├── 00585
+│   ├── 00586
+│   ├── 00587
+│   ├── 00588
+│   ├── 00589
+│   ├── 00590
+│   ├── 00591
+│   ├── 00592
+│   ├── 00593
+│   ├── 00594
+│   ├── 00595
+│   ├── 00596
+│   ├── 00597
+│   ├── 00598
+│   ├── 00599
+│   ├── 00600
+│   ├── 00601
+│   ├── 00602
+│   ├── 00603
+│   ├── 00604
+│   ├── 00605
+│   ├── 00606
+│   ├── 00607
+│   ├── 00608
+│   ├── 00609
+│   ├── 00610
+│   ├── 00611
+│   ├── 00612
+│   ├── 00613
+│   ├── 00614
+│   ├── 00615
+│   ├── 00616
+│   ├── 00617
+│   ├── 00618
+│   ├── 00619
+│   ├── 00620
+│   ├── 00621
+│   ├── 00622
+│   ├── 00623
+│   ├── 00624
+│   ├── 00625
+│   ├── 00626
+│   ├── 00627
+│   ├── 00628
+│   ├── 00629
+│   ├── 00630
+│   ├── 00631
+│   ├── 00632
+│   ├── 00633
+│   ├── 00634
+│   ├── 00635
+│   ├── 00636
+│   ├── 00637
+│   ├── 00638
+│   ├── 00639
+│   ├── 00640
+│   ├── 00641
+│   ├── 00642
+│   ├── 00643
+│   ├── 00644
+│   ├── 00645
+│   ├── 00646
+│   ├── 00647
+│   ├── 00648
+│   ├── 00649
+│   ├── 00650
+│   ├── 00651
+│   ├── 00652
+│   ├── 00653
+│   ├── 00654
+│   ├── 00655
+│   ├── 00656
+│   ├── 00657
+│   ├── 00658
+│   ├── 00659
+│   ├── 00660
+│   ├── 00661
+│   ├── 00662
+│   ├── 00663
+│   ├── 00664
+│   ├── 00665
+│   ├── 00666
+│   ├── 00667
+│   ├── 00668
+│   ├── 00669
+│   ├── 00670
+│   ├── 00671
+│   ├── 00672
+│   ├── 00673
+│   ├── 00674
+│   ├── 00675
+│   ├── 00676
+│   ├── 00677
+│   ├── 00678
+│   ├── 00679
+│   ├── 00680
+│   ├── 00681
+│   ├── 00682
+│   ├── 00683
+│   ├── 00684
+│   ├── 00685
+│   ├── 00686
+│   ├── 00687
+│   ├── 00688
+│   ├── 00689
+│   ├── 00690
+│   ├── 00691
+│   ├── 00692
+│   ├── 00693
+│   ├── 00694
+│   ├── 00695
+│   ├── 00696
+│   ├── 00697
+│   ├── 00698
+│   ├── 00699
+│   ├── 00700
+│   ├── 00701
+│   ├── 00702
+│   ├── 00703
+│   ├── 00704
+│   ├── 00705
+│   ├── 00706
+│   ├── 00707
+│   ├── 00708
+│   ├── 00709
+│   ├── 00710
+│   ├── 00711
+│   ├── 00712
+│   ├── 00713
+│   ├── 00714
+│   ├── 00715
+│   ├── 00716
+│   ├── 00717
+│   ├── 00718
+│   ├── 00719
+│   ├── 00720
+│   ├── 00721
+│   ├── 00722
+│   ├── 00723
+│   ├── 00724
+│   ├── 00725
+│   ├── 00726
+│   ├── 00727
+│   ├── 00728
+│   ├── 00729
+│   ├── 00730
+│   ├── 00731
+│   ├── 00732
+│   ├── 00733
+│   ├── 00734
+│   ├── 00735
+│   ├── 00736
+│   ├── 00737
+│   ├── 00738
+│   ├── 00739
+│   ├── 00740
+│   ├── 00741
+│   ├── 00742
+│   ├── 00743
+│   ├── 00744
+│   ├── 00745
+│   ├── 00746
+│   ├── 00747
+│   ├── 00748
+│   ├── 00749
+│   ├── 00750
+│   ├── 00751
+│   ├── 00752
+│   ├── 00753
+│   ├── 00754
+│   ├── 00755
+│   ├── 00756
+│   ├── 00757
+│   ├── 00758
+│   ├── 00759
+│   ├── 00760
+│   ├── 00761
+│   ├── 00762
+│   ├── 00763
+│   ├── 00764
+│   ├── 00765
+│   ├── 00766
+│   ├── 00767
+│   ├── 00768
+│   ├── 00769
+│   ├── 00770
+│   ├── 00771
+│   ├── 00772
+│   ├── 00773
+│   ├── 00774
+│   ├── 00775
+│   ├── 00776
+│   ├── 00777
+│   ├── 00778
+│   ├── 00779
+│   ├── 00780
+│   ├── 00781
+│   ├── 00782
+│   ├── 00783
+│   ├── 00784
+│   ├── 00785
+│   ├── 00786
+│   ├── 00787
+│   ├── 00788
+│   ├── 00789
+│   ├── 00790
+│   ├── 00791
+│   ├── 00792
+│   ├── 00793
+│   ├── 00794
+│   ├── 00795
+│   ├── 00796
+│   ├── 00797
+│   ├── 00798
+│   ├── 00799
+│   ├── 00800
+│   ├── 00801
+│   ├── 00802
+│   ├── 00803
+│   ├── 00804
+│   ├── 00805
+│   ├── 00806
+│   ├── 00807
+│   ├── 00808
+│   ├── 00809
+│   ├── 00810
+│   ├── 00811
+│   ├── 00812
+│   ├── 00813
+│   ├── 00814
+│   ├── 00815
+│   ├── 00816
+│   ├── 00817
+│   ├── 00818
+│   ├── 00819
+│   ├── 00820
+│   ├── 00821
+│   ├── 00822
+│   ├── 00823
+│   ├── 00824
+│   ├── 00825
+│   ├── 00826
+│   ├── 00827
+│   ├── 00828
+│   ├── 00829
+│   ├── 00830
+│   ├── 00831
+│   ├── 00832
+│   ├── 00833
+│   ├── 00834
+│   ├── 00835
+│   ├── 00836
+│   ├── 00837
+│   ├── 00838
+│   ├── 00839
+│   ├── 00840
+│   ├── 00841
+│   ├── 00842
+│   ├── 00843
+│   ├── 00844
+│   ├── 00845
+│   ├── 00846
+│   ├── 00847
+│   ├── 00848
+│   ├── 00849
+│   ├── 00850
+│   ├── 00851
+│   ├── 00852
+│   ├── 00853
+│   ├── 00854
+│   ├── 00855
+│   ├── 00856
+│   ├── 00857
+│   ├── 00858
+│   ├── 00859
+│   ├── 00860
+│   ├── 00861
+│   ├── 00862
+│   ├── 00863
+│   ├── 00864
+│   ├── 00865
+│   ├── 00866
+│   ├── 00867
+│   ├── 00868
+│   ├── 00869
+│   ├── 00870
+│   ├── 00871
+│   ├── 00872
+│   ├── 00873
+│   ├── 00874
+│   ├── 00875
+│   ├── 00876
+│   ├── 00877
+│   ├── 00878
+│   ├── 00879
+│   ├── 00880
+│   ├── 00881
+│   ├── 00882
+│   ├── 00883
+│   ├── 00884
+│   ├── 00885
+│   ├── 00886
+│   ├── 00887
+│   ├── 00888
+│   ├── 00889
+│   ├── 00890
+│   ├── 00891
+│   ├── 00892
+│   ├── 00893
+│   ├── 00894
+│   ├── 00895
+│   ├── 00896
+│   ├── 00897
+│   ├── 00898
+│   ├── 00899
+│   ├── 00900
+│   ├── 00901
+│   ├── 00902
+│   ├── 00903
+│   ├── 00904
+│   ├── 00905
+│   ├── 00906
+│   ├── 00907
+│   ├── 00908
+│   ├── 00909
+│   ├── 00910
+│   ├── 00911
+│   ├── 00912
+│   ├── 00913
+│   ├── 00914
+│   ├── 00915
+│   ├── 00916
+│   ├── 00917
+│   ├── 00918
+│   ├── 00919
+│   ├── 00920
+│   ├── 00921
+│   ├── 00922
+│   ├── 00923
+│   ├── 00924
+│   ├── 00925
+│   ├── 00926
+│   ├── 00927
+│   ├── 00928
+│   ├── 00929
+│   ├── 00930
+│   ├── 00931
+│   ├── 00932
+│   ├── 00933
+│   ├── 00934
+│   ├── 00935
+│   ├── 00936
+│   ├── 00937
+│   ├── 00938
+│   ├── 00939
+│   ├── 00940
+│   ├── 00941
+│   ├── 00942
+│   ├── 00943
+│   ├── 00944
+│   ├── 00945
+│   ├── 00946
+│   ├── 00947
+│   ├── 00948
+│   ├── 00949
+│   ├── 00950
+│   ├── 00951
+│   ├── 00952
+│   ├── 00953
+│   ├── 00954
+│   ├── 00955
+│   ├── 00956
+│   ├── 00957
+│   ├── 00958
+│   ├── 00959
+│   ├── 00960
+│   ├── 00961
+│   ├── 00962
+│   ├── 00963
+│   ├── 00964
+│   ├── 00965
+│   ├── 00966
+│   ├── 00967
+│   ├── 00968
+│   ├── 00969
+│   ├── 00970
+│   ├── 00971
+│   ├── 00972
+│   ├── 00973
+│   ├── 00974
+│   ├── 00975
+│   ├── 00976
+│   ├── 00977
+│   ├── 00978
+│   ├── 00979
+│   ├── 00980
+│   ├── 00981
+│   ├── 00982
+│   ├── 00983
+│   ├── 00984
+│   ├── 00985
+│   ├── 00986
+│   ├── 00987
+│   ├── 00988
+│   ├── 00989
+│   ├── 00990
+│   ├── 00991
+│   ├── 00992
+│   ├── 00993
+│   ├── 00994
+│   ├── 00995
+│   ├── 00996
+│   ├── 00997
+│   ├── 00998
+│   ├── 00999
+│   ├── 01000
+│   ├── 01001
+│   ├── 01002
+│   ├── 01003
+│   ├── 01004
+│   ├── 01005
+│   ├── 01006
+│   ├── 01007
+│   ├── 01008
+│   ├── 01009
+│   ├── 01010
+│   ├── 01011
+│   ├── 01012
+│   ├── 01013
+│   ├── 01014
+│   ├── 01015
+│   ├── 01016
+│   ├── 01017
+│   ├── 01018
+│   ├── 01019
+│   ├── 01020
+│   ├── 01021
+│   ├── 01022
+│   ├── 01023
+│   ├── 01024
+│   ├── 01025
+│   ├── 01026
+│   ├── 01027
+│   ├── 01028
+│   ├── 01029
+│   ├── 01030
+│   ├── 01031
+│   ├── 01032
+│   ├── 01033
+│   ├── 01034
+│   ├── 01035
+│   ├── 01036
+│   ├── 01037
+│   ├── 01038
+│   ├── 01039
+│   ├── 01040
+│   ├── 01041
+│   ├── 01042
+│   ├── 01043
+│   ├── 01044
+│   ├── 01045
+│   ├── 01046
+│   ├── 01047
+│   ├── 01048
+│   ├── 01049
+│   ├── 01050
+│   ├── 01051
+│   ├── 01052
+│   ├── 01053
+│   ├── 01054
+│   ├── 01055
+│   ├── 01056
+│   ├── 01057
+│   ├── 01058
+│   ├── 01059
+│   ├── 01060
+│   ├── 01061
+│   ├── 01062
+│   ├── 01063
+│   ├── 01064
+│   ├── 01065
+│   ├── 01066
+│   ├── 01067
+│   ├── 01068
+│   ├── 01069
+│   ├── 01070
+│   ├── 01071
+│   ├── 01072
+│   ├── 01073
+│   ├── 01074
+│   ├── 01075
+│   ├── 01076
+│   ├── 01077
+│   ├── 01078
+│   ├── 01079
+│   ├── 01080
+│   ├── 01081
+│   ├── 01082
+│   ├── 01083
+│   ├── 01084
+│   ├── 01085
+│   ├── 01086
+│   ├── 01087
+│   ├── 01088
+│   ├── 01089
+│   ├── 01090
+│   ├── 01091
+│   ├── 01092
+│   ├── 01093
+│   ├── 01094
+│   ├── 01095
+│   ├── 01096
+│   ├── 01097
+│   ├── 01098
+│   ├── 01099
+│   ├── 01100
+│   ├── 01101
+│   ├── 01102
+│   ├── 01103
+│   ├── 01104
+│   ├── 01105
+│   ├── 01106
+│   ├── 01107
+│   ├── 01108
+│   ├── 01109
+│   ├── 01110
+│   ├── 01111
+│   ├── 01112
+│   ├── 01113
+│   ├── 01114
+│   ├── 01115
+│   ├── 01116
+│   ├── 01117
+│   ├── 01118
+│   ├── 01119
+│   ├── 01120
+│   ├── 01121
+│   ├── 01122
+│   ├── 01123
+│   ├── 01124
+│   ├── 01125
+│   ├── 01126
+│   ├── 01127
+│   ├── 01128
+│   ├── 01129
+│   ├── 01130
+│   ├── 01131
+│   ├── 01132
+│   ├── 01133
+│   ├── 01134
+│   ├── 01135
+│   ├── 01136
+│   ├── 01137
+│   ├── 01138
+│   ├── 01139
+│   ├── 01140
+│   ├── 01141
+│   ├── 01142
+│   ├── 01143
+│   ├── 01144
+│   ├── 01145
+│   ├── 01146
+│   ├── 01147
+│   ├── 01148
+│   ├── 01149
+│   ├── 01150
+│   ├── 01151
+│   ├── 01152
+│   ├── 01153
+│   ├── 01154
+│   ├── 01155
+│   ├── 01156
+│   ├── 01157
+│   ├── 01158
+│   ├── 01159
+│   ├── 01160
+│   ├── 01161
+│   ├── 01162
+│   ├── 01163
+│   ├── 01164
+│   ├── 01165
+│   ├── 01166
+│   ├── 01167
+│   ├── 01168
+│   ├── 01169
+│   ├── 01170
+│   ├── 01171
+│   ├── 01172
+│   ├── 01173
+│   ├── 01174
+│   ├── 01175
+│   ├── 01176
+│   ├── 01177
+│   ├── 01178
+│   ├── 01179
+│   ├── 01180
+│   ├── 01181
+│   ├── 01182
+│   ├── 01183
+│   ├── 01184
+│   ├── 01185
+│   ├── 01186
+│   ├── 01187
+│   ├── 01188
+│   ├── 01189
+│   ├── 01190
+│   ├── 01191
+│   ├── 01192
+│   ├── 01193
+│   ├── 01194
+│   ├── 01195
+│   ├── 01196
+│   ├── 01197
+│   ├── 01198
+│   ├── 01199
+│   ├── 01200
+│   ├── 01201
+│   ├── 01202
+│   ├── 01203
+│   ├── 01204
+│   ├── 01205
+│   ├── 01206
+│   ├── 01207
+│   ├── 01208
+│   ├── 01209
+│   ├── 01210
+│   ├── 01211
+│   ├── 01212
+│   ├── 01213
+│   ├── 01214
+│   ├── 01215
+│   ├── 01216
+│   ├── 01217
+│   ├── 01218
+│   ├── 01219
+│   ├── 01220
+│   ├── 01221
+│   ├── 01222
+│   ├── 01223
+│   ├── 01224
+│   ├── 01225
+│   ├── 01226
+│   ├── 01227
+│   ├── 01228
+│   ├── 01229
+│   ├── 01230
+│   ├── 01231
+│   ├── 01232
+│   ├── 01233
+│   ├── 01234
+│   ├── 01235
+│   ├── 01236
+│   ├── 01237
+│   ├── 01238
+│   ├── 01239
+│   ├── 01240
+│   ├── 01241
+│   ├── 01242
+│   ├── 01243
+│   ├── 01244
+│   ├── 01245
+│   ├── 01246
+│   ├── 01247
+│   ├── 01248
+│   ├── 01249
+│   ├── 01250
+│   ├── 01251
+│   ├── 01252
+│   ├── 01253
+│   ├── 01254
+│   ├── 01255
+│   ├── 01256
+│   ├── 01257
+│   ├── 01258
+│   ├── 01259
+│   ├── 01260
+│   ├── 01261
+│   ├── 01262
+│   ├── 01263
+│   ├── 01264
+│   ├── 01265
+│   ├── 01266
+│   ├── 01267
+│   ├── 01268
+│   ├── 01269
+│   ├── 01270
+│   ├── 01271
+│   ├── 01272
+│   ├── 01273
+│   ├── 01274
+│   ├── 01275
+│   ├── 01276
+│   ├── 01277
+│   ├── 01278
+│   ├── 01279
+│   ├── 01280
+│   ├── 01281
+│   ├── 01282
+│   ├── 01283
+│   ├── 01284
+│   ├── 01285
+│   ├── 01286
+│   ├── 01287
+│   ├── 01288
+│   ├── 01289
+│   ├── 01290
+│   ├── 01291
+│   ├── 01292
+│   ├── 01293
+│   ├── 01294
+│   ├── 01295
+│   ├── 01296
+│   ├── 01297
+│   ├── 01298
+│   ├── 01299
+│   ├── 01300
+│   ├── 01301
+│   ├── 01302
+│   ├── 01303
+│   ├── 01304
+│   ├── 01305
+│   ├── 01306
+│   ├── 01307
+│   ├── 01308
+│   ├── 01309
+│   ├── 01310
+│   ├── 01311
+│   ├── 01312
+│   ├── 01313
+│   ├── 01314
+│   ├── 01315
+│   ├── 01316
+│   ├── 01317
+│   ├── 01318
+│   ├── 01319
+│   ├── 01320
+│   ├── 01321
+│   ├── 01322
+│   ├── 01323
+│   ├── 01324
+│   ├── 01325
+│   ├── 01326
+│   ├── 01327
+│   ├── 01328
+│   ├── 01329
+│   ├── 01330
+│   ├── 01331
+│   ├── 01332
+│   ├── 01333
+│   ├── 01334
+│   ├── 01335
+│   ├── 01336
+│   ├── 01337
+│   ├── 01338
+│   ├── 01339
+│   ├── 01340
+│   ├── 01341
+│   ├── 01342
+│   ├── 01343
+│   ├── 01344
+│   ├── 01345
+│   ├── 01346
+│   ├── 01347
+│   ├── 01348
+│   ├── 01349
+│   ├── 01350
+│   ├── 01351
+│   ├── 01352
+│   ├── 01353
+│   ├── 01354
+│   ├── 01355
+│   ├── 01356
+│   ├── 01357
+│   ├── 01358
+│   ├── 01359
+│   ├── 01360
+│   ├── 01361
+│   ├── 01362
+│   ├── 01363
+│   ├── 01364
+│   ├── 01365
+│   ├── 01366
+│   ├── 01367
+│   ├── 01368
+│   ├── 01369
+│   ├── 01370
+│   ├── 01371
+│   ├── 01372
+│   ├── 01373
+│   ├── 01374
+│   ├── 01375
+│   ├── 01376
+│   ├── 01377
+│   ├── 01378
+│   ├── 01379
+│   ├── 01380
+│   ├── 01381
+│   ├── 01382
+│   ├── 01383
+│   ├── 01384
+│   ├── 01385
+│   ├── 01386
+│   ├── 01387
+│   ├── 01388
+│   ├── 01389
+│   ├── 01390
+│   ├── 01391
+│   ├── 01392
+│   ├── 01393
+│   ├── 01394
+│   ├── 01395
+│   ├── 01396
+│   ├── 01397
+│   ├── 01398
+│   ├── 01399
+│   ├── 01400
+│   ├── 01401
+│   ├── 01402
+│   ├── 01403
+│   ├── 01404
+│   ├── 01405
+│   ├── 01406
+│   ├── 01407
+│   ├── 01408
+│   ├── 01409
+│   ├── 01410
+│   ├── 01411
+│   ├── 01412
+│   ├── 01413
+│   ├── 01414
+│   ├── 01415
+│   ├── 01416
+│   ├── 01417
+│   ├── 01418
+│   ├── 01419
+│   ├── 01420
+│   ├── 01421
+│   ├── 01422
+│   ├── 01423
+│   ├── 01424
+│   ├── 01425
+│   ├── 01426
+│   ├── 01427
+│   ├── 01428
+│   ├── 01429
+│   ├── 01430
+│   ├── 01431
+│   ├── 01432
+│   ├── 01433
+│   ├── 01434
+│   ├── 01435
+│   ├── 01436
+│   ├── 01437
+│   ├── 01438
+│   ├── 01439
+│   ├── 01440
+│   ├── 01441
+│   ├── 01442
+│   ├── 01443
+│   ├── 01444
+│   ├── 01445
+│   ├── 01446
+│   ├── 01447
+│   ├── 01448
+│   ├── 01449
+│   ├── 01450
+│   ├── 01451
+│   ├── 01452
+│   ├── 01453
+│   ├── 01454
+│   ├── 01455
+│   ├── 01456
+│   ├── 01457
+│   ├── 01458
+│   ├── 01459
+│   ├── 01460
+│   ├── 01461
+│   ├── 01462
+│   ├── 01463
+│   ├── 01464
+│   ├── 01465
+│   ├── 01466
+│   ├── 01467
+│   ├── 01468
+│   ├── 01469
+│   ├── 01470
+│   ├── 01471
+│   ├── 01472
+│   ├── 01473
+│   ├── 01474
+│   ├── 01475
+│   ├── 01476
+│   ├── 01477
+│   ├── 01478
+│   ├── 01479
+│   ├── 01480
+│   ├── 01481
+│   ├── 01482
+│   ├── 01483
+│   ├── 01484
+│   ├── 01485
+│   ├── 01486
+│   ├── 01487
+│   ├── 01488
+│   ├── 01489
+│   ├── 01490
+│   ├── 01491
+│   ├── 01492
+│   ├── 01493
+│   ├── 01494
+│   ├── 01495
+│   ├── 01496
+│   ├── 01497
+│   ├── 01498
+│   ├── 01499
+│   ├── 01500
+│   ├── 01501
+│   ├── 01502
+│   ├── 01503
+│   ├── 01504
+│   ├── 01505
+│   ├── 01506
+│   ├── 01507
+│   ├── 01508
+│   ├── 01509
+│   ├── 01510
+│   ├── 01511
+│   ├── 01512
+│   ├── 01513
+│   ├── 01514
+│   ├── 01515
+│   ├── 01516
+│   ├── 01517
+│   ├── 01518
+│   ├── 01519
+│   ├── 01520
+│   ├── 01521
+│   ├── 01522
+│   ├── 01523
+│   ├── 01524
+│   ├── 01525
+│   ├── 01526
+│   ├── 01527
+│   ├── 01528
+│   ├── 01529
+│   ├── 01530
+│   ├── 01531
+│   ├── 01532
+│   ├── 01533
+│   ├── 01534
+│   ├── 01535
+│   ├── 01536
+│   ├── 01537
+│   ├── 01538
+│   ├── 01539
+│   ├── 01540
+│   ├── 01541
+│   ├── 01542
+│   ├── 01543
+│   ├── 01544
+│   ├── 01545
+│   ├── 01546
+│   ├── 01547
+│   ├── 01548
+│   ├── 01549
+│   ├── 01550
+│   ├── 01551
+│   ├── 01552
+│   ├── 01553
+│   ├── 01554
+│   ├── 01555
+│   ├── 01556
+│   ├── 01557
+│   ├── 01558
+│   ├── 01559
+│   ├── 01560
+│   ├── 01561
+│   ├── 01562
+│   ├── 01563
+│   ├── 01564
+│   ├── 01565
+│   ├── 01566
+│   ├── 01567
+│   ├── 01568
+│   ├── 01569
+│   ├── 01570
+│   ├── 01571
+│   ├── 01572
+│   ├── 01573
+│   ├── 01574
+│   ├── 01575
+│   ├── 01576
+│   ├── 01577
+│   ├── 01578
+│   ├── 01579
+│   ├── 01580
+│   ├── 01581
+│   ├── 01582
+│   ├── 01583
+│   ├── 01584
+│   ├── 01585
+│   ├── 01586
+│   ├── 01587
+│   ├── 01588
+│   ├── 01589
+│   ├── 01590
+│   ├── 01591
+│   ├── 01592
+│   ├── 01593
+│   ├── 01594
+│   ├── 01595
+│   ├── 01596
+│   ├── 01597
+│   ├── 01598
+│   ├── 01599
+│   ├── 01600
+│   ├── 01601
+│   ├── 01602
+│   ├── 01603
+│   ├── 01604
+│   ├── 01605
+│   ├── 01606
+│   ├── 01607
+│   ├── 01608
+│   ├── 01609
+│   ├── 01610
+│   ├── 01611
+│   ├── 01612
+│   ├── 01613
+│   ├── 01614
+│   ├── 01615
+│   ├── 01616
+│   ├── 01617
+│   ├── 01618
+│   ├── 01619
+│   ├── 01620
+│   ├── 01621
+│   ├── 01622
+│   ├── 01623
+│   ├── 01624
+│   ├── 01625
+│   ├── 01626
+│   ├── 01627
+│   ├── 01628
+│   ├── 01629
+│   ├── 01630
+│   ├── 01631
+│   ├── 01632
+│   ├── 01633
+│   ├── 01634
+│   ├── 01635
+│   ├── 01636
+│   ├── 01637
+│   ├── 01638
+│   ├── 01639
+│   ├── 01640
+│   ├── 01641
+│   ├── 01642
+│   ├── 01643
+│   ├── 01644
+│   ├── 01645
+│   ├── 01646
+│   ├── 01647
+│   ├── 01648
+│   ├── 01649
+│   ├── 01650
+│   ├── 01651
+│   ├── 01652
+│   ├── 01653
+│   ├── 01654
+│   ├── 01655
+│   ├── 01656
+│   ├── 01657
+│   ├── 01658
+│   ├── 01659
+│   ├── 01660
+│   ├── 01661
+│   ├── 01662
+│   ├── 01663
+│   ├── 01664
+│   ├── 01665
+│   ├── 01666
+│   ├── 01667
+│   ├── 01668
+│   ├── 01669
+│   ├── 01670
+│   ├── 01671
+│   ├── 01672
+│   ├── 01673
+│   ├── 01674
+│   ├── 01675
+│   ├── 01676
+│   ├── 01677
+│   ├── 01678
+│   ├── 01679
+│   ├── 01680
+│   ├── 01681
+│   ├── 01682
+│   ├── audio_output_combined_sound.json
+│   ├── audio_output_combined_sound.raw
+│   ├── audio_output_sound_10.json
+│   ├── audio_output_sound_10.raw
+│   ├── audio_output_sound_11.json
+│   ├── audio_output_sound_11.raw
+│   ├── audio_output_sound_12.json
+│   ├── audio_output_sound_12.raw
+│   ├── audio_output_sound_13.json
+│   ├── audio_output_sound_13.raw
+│   ├── audio_output_sound_14.json
+│   ├── audio_output_sound_14.raw
+│   ├── audio_output_sound_15.json
+│   ├── audio_output_sound_15.raw
+│   ├── audio_output_sound_16.json
+│   ├── audio_output_sound_16.raw
+│   ├── audio_output_sound_17.json
+│   ├── audio_output_sound_17.raw
+│   ├── audio_output_sound_18.json
+│   ├── audio_output_sound_18.raw
+│   ├── audio_output_sound_19.json
+│   ├── audio_output_sound_19.raw
+│   ├── audio_output_sound_1.json
+│   ├── audio_output_sound_1.raw
+│   ├── audio_output_sound_20.json
+│   ├── audio_output_sound_20.raw
+│   ├── audio_output_sound_21.json
+│   ├── audio_output_sound_21.raw
+│   ├── audio_output_sound_22.json
+│   ├── audio_output_sound_22.raw
+│   ├── audio_output_sound_23.json
+│   ├── audio_output_sound_23.raw
+│   ├── audio_output_sound_24.json
+│   ├── audio_output_sound_24.raw
+│   ├── audio_output_sound_25.json
+│   ├── audio_output_sound_25.raw
+│   ├── audio_output_sound_26.json
+│   ├── audio_output_sound_26.raw
+│   ├── audio_output_sound_27.json
+│   ├── audio_output_sound_27.raw
+│   ├── audio_output_sound_28.json
+│   ├── audio_output_sound_28.raw
+│   ├── audio_output_sound_29.json
+│   ├── audio_output_sound_29.raw
+│   ├── audio_output_sound_2.json
+│   ├── audio_output_sound_2.raw
+│   ├── audio_output_sound_30.json
+│   ├── audio_output_sound_30.raw
+│   ├── audio_output_sound_31.json
+│   ├── audio_output_sound_31.raw
+│   ├── audio_output_sound_32.json
+│   ├── audio_output_sound_32.raw
+│   ├── audio_output_sound_33.json
+│   ├── audio_output_sound_33.raw
+│   ├── audio_output_sound_34.json
+│   ├── audio_output_sound_34.raw
+│   ├── audio_output_sound_35.json
+│   ├── audio_output_sound_35.raw
+│   ├── audio_output_sound_36.json
+│   ├── audio_output_sound_36.raw
+│   ├── audio_output_sound_37.json
+│   ├── audio_output_sound_37.raw
+│   ├── audio_output_sound_38.json
+│   ├── audio_output_sound_38.raw
+│   ├── audio_output_sound_39.json
+│   ├── audio_output_sound_39.raw
+│   ├── audio_output_sound_3.json
+│   ├── audio_output_sound_3.raw
+│   ├── audio_output_sound_40.json
+│   ├── audio_output_sound_40.raw
+│   ├── audio_output_sound_41.json
+│   ├── audio_output_sound_41.raw
+│   ├── audio_output_sound_42.json
+│   ├── audio_output_sound_42.raw
+│   ├── audio_output_sound_43.json
+│   ├── audio_output_sound_43.raw
+│   ├── audio_output_sound_44.json
+│   ├── audio_output_sound_44.raw
+│   ├── audio_output_sound_45.json
+│   ├── audio_output_sound_45.raw
+│   ├── audio_output_sound_46.json
+│   ├── audio_output_sound_46.raw
+│   ├── audio_output_sound_47.json
+│   ├── audio_output_sound_47.raw
+│   ├── audio_output_sound_48.json
+│   ├── audio_output_sound_48.raw
+│   ├── audio_output_sound_49.json
+│   ├── audio_output_sound_49.raw
+│   ├── audio_output_sound_4.json
+│   ├── audio_output_sound_4.raw
+│   ├── audio_output_sound_50.json
+│   ├── audio_output_sound_50.raw
+│   ├── audio_output_sound_51.json
+│   ├── audio_output_sound_51.raw
+│   ├── audio_output_sound_52.json
+│   ├── audio_output_sound_52.raw
+│   ├── audio_output_sound_53.json
+│   ├── audio_output_sound_53.raw
+│   ├── audio_output_sound_54.json
+│   ├── audio_output_sound_54.raw
+│   ├── audio_output_sound_55.json
+│   ├── audio_output_sound_55.raw
+│   ├── audio_output_sound_56.json
+│   ├── audio_output_sound_56.raw
+│   ├── audio_output_sound_57.json
+│   ├── audio_output_sound_57.raw
+│   ├── audio_output_sound_58.json
+│   ├── audio_output_sound_58.raw
+│   ├── audio_output_sound_59.json
+│   ├── audio_output_sound_59.raw
+│   ├── audio_output_sound_5.json
+│   ├── audio_output_sound_5.raw
+│   ├── audio_output_sound_60.json
+│   ├── audio_output_sound_60.raw
+│   ├── audio_output_sound_61.json
+│   ├── audio_output_sound_61.raw
+│   ├── audio_output_sound_62.json
+│   ├── audio_output_sound_62.raw
+│   ├── audio_output_sound_63.json
+│   ├── audio_output_sound_63.raw
+│   ├── audio_output_sound_64.json
+│   ├── audio_output_sound_64.raw
+│   ├── audio_output_sound_65.json
+│   ├── audio_output_sound_65.raw
+│   ├── audio_output_sound_6.json
+│   ├── audio_output_sound_6.raw
+│   ├── audio_output_sound_7.json
+│   ├── audio_output_sound_7.raw
+│   ├── audio_output_sound_8.json
+│   ├── audio_output_sound_8.raw
+│   ├── audio_output_sound_9.json
+│   ├── audio_output_sound_9.raw
+│   ├── audio_processing_system_audio_processing_system_core_configuration.json
+│   ├── audio_processing_system_audio_processing_system_core_configuration.raw
+│   ├── audio_processing_system_audio_processing_system_core_engine.json
+│   ├── audio_processing_system_audio_processing_system_core_engine.raw
+│   ├── audio_processing_system_audio_processing_system_core___init__.json
+│   ├── audio_processing_system_audio_processing_system_core___init__.raw
+│   ├── audio_processing_system_audio_processing_system_core_integration.json
+│   ├── audio_processing_system_audio_processing_system_core_integration.raw
+│   ├── audio_processing_system_audio_processing_system_core_monitor.json
+│   ├── audio_processing_system_audio_processing_system_core_monitor.raw
+│   ├── audio_processing_system_audio_processing_system_core_state.json
+│   ├── audio_processing_system_audio_processing_system_core_state.raw
+│   ├── audio_processing_system_audio_processing_system___init__.json
+│   ├── audio_processing_system_audio_processing_system___init__.raw
+│   ├── audio_processing_system_audio_processing_system_interface_controls.json
+│   ├── audio_processing_system_audio_processing_system_interface_controls.raw
+│   ├── audio_processing_system_audio_processing_system_interface_display.json
+│   ├── audio_processing_system_audio_processing_system_interface_display.raw
+│   ├── audio_processing_system_audio_processing_system_interface___init__.json
+│   ├── audio_processing_system_audio_processing_system_interface___init__.raw
+│   ├── audio_processing_system_audio_processing_system_main.json
+│   ├── audio_processing_system_audio_processing_system_main.raw
+│   ├── audio_processing_system_audio_processing_system_processors_adaptive.json
+│   ├── audio_processing_system_audio_processing_system_processors_adaptive.raw
+│   ├── audio_processing_system_audio_processing_system_processors_bass_splitter.json
+│   ├── audio_processing_system_audio_processing_system_processors_bass_splitter.raw
+│   ├── audio_processing_system_audio_processing_system_processors_channel_controller.json
+│   ├── audio_processing_system_audio_processing_system_processors_channel_controller.raw
+│   ├── audio_processing_system_audio_processing_system_processors_filter_network.json
+│   ├── audio_processing_system_audio_processing_system_processors_filter_network.raw
+│   ├── audio_processing_system_audio_processing_system_processors_granular.json
+│   ├── audio_processing_system_audio_processing_system_processors_granular.raw
+│   ├── audio_processing_system_audio_processing_system_processors_hd_compressor.json
+│   ├── audio_processing_system_audio_processing_system_processors_hd_compressor.raw
+│   ├── audio_processing_system_audio_processing_system_processors___init__.json
+│   ├── audio_processing_system_audio_processing_system_processors___init__.raw
+│   ├── audio_processing_system_audio_processing_system_processors_io_relay.json
+│   ├── audio_processing_system_audio_processing_system_processors_io_relay.raw
+│   ├── audio_processing_system_audio_processing_system_processors_master_config.json
+│   ├── audio_processing_system_audio_processing_system_processors_master_config.raw
+│   ├── audio_processing_system_audio_processing_system_processors_pad_synth.json
+│   ├── audio_processing_system_audio_processing_system_processors_pad_synth.raw
+│   ├── audio_processing_system_audio_processing_system_processors_polyrhythm.json
+│   ├── audio_processing_system_audio_processing_system_processors_polyrhythm.raw
+│   ├── audio_processing_system_audio_processing_system_processors_smart_routing.json
+│   ├── audio_processing_system_audio_processing_system_processors_smart_routing.raw
+│   ├── audio_processing_system_audio_processing_system_processors_spectral.json
+│   ├── audio_processing_system_audio_processing_system_processors_spectral.raw
+│   ├── audio_processing_system_docker-compose.json
+│   ├── audio_processing_system_docker-compose.raw
+│   ├── audio_processing_system_Dockerfile.json
+│   ├── audio_processing_system_Dockerfile.raw
+│   ├── audio_processing_system_docs_api_index.json
+│   ├── audio_processing_system_docs_api_index.raw
+│   ├── audio_processing_system_docs_examples_index.json
+│   ├── audio_processing_system_docs_examples_index.raw
+│   ├── audio_processing_system_docs_user_guide_index.json
+│   ├── audio_processing_system_docs_user_guide_index.raw
+│   ├── audio_processing_system_examples_advanced_routing.json
+│   ├── audio_processing_system_examples_advanced_routing.raw
+│   ├── audio_processing_system_examples_basic_processing.json
+│   ├── audio_processing_system_examples_basic_processing.raw
+│   ├── audio_processing_system___init__.json
+│   ├── audio_processing_system___init__.raw
+│   ├── audio_processing_system.json
+│   ├── audio_processing_system_LICENSE.json
+│   ├── audio_processing_system_LICENSE.raw
+│   ├── audio_processing_system_main.json
+│   ├── audio_processing_system_main.raw
+│   ├── audio_processing_system_package.json
+│   ├── audio_processing_system_package.raw
+│   ├── audio_processing_system_pyproject.json
+│   ├── audio_processing_system_pyproject.raw
+│   ├── audio_processing_system.raw
+│   ├── audio_processing_system_README.json
+│   ├── audio_processing_system_README.raw
+│   ├── audio_processing_system_requirements.json
+│   ├── audio_processing_system_requirements.raw
+│   ├── audio_processing_system_setup.json
+│   ├── audio_processing_system_setup.raw
+│   ├── audio_processing_system_test_distribution.json
+│   ├── audio_processing_system_test_distribution.raw
+│   ├── audio_processing_system_tests___init__.json
+│   ├── audio_processing_system_tests___init__.raw
+│   ├── audio_processing_system_tests_test_audio.json
+│   ├── audio_processing_system_tests_test_audio.raw
+│   ├── audio_processing_system_tests_test_interface.json
+│   ├── audio_processing_system_tests_test_interface.raw
+│   ├── audio_processing_system_tests_test_processing.json
+│   ├── audio_processing_system_tests_test_processing.raw
+│   ├── config_requirements.json
+│   ├── config_requirements.raw
+│   ├── logs_execution_ascii_conversion.json
+│   ├── logs_execution_ascii_conversion.raw
+│   ├── logs_execution_block_structure.json
+│   ├── logs_execution_block_structure.raw
+│   ├── logs_execution_CHANGES.json
+│   ├── logs_execution_CHANGES.raw
+│   ├── logs_execution_control_chars.json
+│   ├── logs_execution_control_chars.raw
+│   ├── logs_execution_correlation_analysis.json
+│   ├── logs_execution_correlation_analysis.raw
+│   ├── logs_execution_cross_reference.json
+│   ├── logs_execution_cross_reference.raw
+│   ├── logs_execution_deep_patterns.json
+│   ├── logs_execution_deep_patterns.raw
+│   ├── logs_execution_detailed_patterns.json
+│   ├── logs_execution_detailed_patterns.raw
+│   ├── logs_execution_master.json
+│   ├── logs_execution_master.raw
+│   ├── logs_execution_mathematical_patterns.json
+│   ├── logs_execution_mathematical_patterns.raw
+│   ├── logs_execution_protocol_analysis.json
+│   ├── logs_execution_protocol_analysis.raw
+│   ├── logs_execution_protocol_matching.json
+│   ├── logs_execution_protocol_matching.raw
+│   ├── logs_execution_sequence_analysis.json
+│   ├── logs_execution_sequence_analysis.raw
+│   ├── logs_execution_statistical_analysis.json
+│   ├── logs_execution_statistical_analysis.raw
+│   ├── logs_visualizations_ascii_plot.json
+│   ├── logs_visualizations_ascii_plot.raw
+│   ├── logs_visualizations_complex_patterns.json
+│   ├── logs_visualizations_complex_patterns.raw
+│   ├── MANIFEST.json
+│   ├── MANIFEST.raw
+│   ├── organized_analysis_bit_patterns_bit_position_analysis.json
+│   ├── organized_analysis_bit_patterns_bit_position_analysis.raw
+│   ├── organized_analysis_candidates_bit_patterns.json
+│   ├── organized_analysis_candidates_bit_patterns.raw
+│   ├── organized_analysis_candidates_output_output_log.json
+│   ├── organized_analysis_candidates_output_output_log.raw
+│   ├── organized_analysis_candidates_process_addresses.json
+│   ├── organized_analysis_candidates_process_addresses.raw
+│   ├── organized_analysis_candidates_progress.json
+│   ├── organized_analysis_candidates_progress.raw
+│   ├── organized_analysis_collision_analysis.json
+│   ├── organized_analysis_collision_analysis.raw
+│   ├── organized_analysis_find_67_with_hex.json
+│   ├── organized_analysis_find_67_with_hex.raw
+│   ├── organized_analysis_integrated_analysis.json
+│   ├── organized_analysis_integrated_analysis.raw
+│   ├── organized_analysis_known_values.json
+│   ├── organized_analysis_known_values.raw
+│   ├── organized_analysis_permutation_proof.json
+│   ├── organized_analysis_permutation_proof.raw
+│   ├── organized_analysis_run_tests.json
+│   ├── organized_analysis_run_tests.raw
+│   ├── organized_analysis_sequence_analysis_find_67_bits.json
+│   ├── organized_analysis_sequence_analysis_find_67_bits.raw
+│   ├── organized_analysis_sequence_analysis_find_67_complete.json
+│   ├── organized_analysis_sequence_analysis_find_67_complete.raw
+│   ├── organized_analysis_sequence_analysis_find_67.json
+│   ├── organized_analysis_sequence_analysis_find_67_optimized.json
+│   ├── organized_analysis_sequence_analysis_find_67_optimized.raw
+│   ├── organized_analysis_sequence_analysis_find_67.raw
+│   ├── organized_analysis_sequence_analysis_find_67_with_constraints.json
+│   ├── organized_analysis_sequence_analysis_find_67_with_constraints.raw
+│   ├── organized_analysis_sequence_analysis_find_67_with_hex.json
+│   ├── organized_analysis_sequence_analysis_find_67_with_hex.raw
+│   ├── organized_analysis_sequence_analysis_sequence_67_analysis.json
+│   ├── organized_analysis_sequence_analysis_sequence_67_analysis.raw
+│   ├── organized_analysis_sequence_finder.json
+│   ├── organized_analysis_sequence_finder.raw
+│   ├── organized_analysis_sequence_proof.json
+│   ├── organized_analysis_sequence_proof.raw
+│   ├── organized_data_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.json
+│   ├── organized_data_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.raw
+│   ├── organized_data_32bHex.json
+│   ├── organized_data_32bHex.raw
+│   ├── organized_data_32.json
+│   ├── organized_data_32.raw
+│   ├── organized_data_analysis_log.json
+│   ├── organized_data_analysis_log.raw
+│   ├── organized_data_audio_features.json
+│   ├── organized_data_audio_features.raw
+│   ├── organized_data_base64_values.json
+│   ├── organized_data_base64_values.raw
+│   ├── organized_data_batch_0.json
+│   ├── organized_data_batch_0.raw
+│   ├── organized_data_batch_1.json
+│   ├── organized_data_batch_1.raw
+│   ├── organized_data_batch_2.json
+│   ├── organized_data_batch_2.raw
+│   ├── organized_data_batch_3.json
+│   ├── organized_data_batch_3.raw
+│   ├── organized_data_batch_4.json
+│   ├── organized_data_batch_4.raw
+│   ├── organized_data_batch_5.json
+│   ├── organized_data_batch_5.raw
+│   ├── organized_data_binary_grouped.json
+│   ├── organized_data_binary_grouped.raw
+│   ├── organized_data_binary_types.json
+│   ├── organized_data_binary_types.raw
+│   ├── organized_data_binary_values.json
+│   ├── organized_data_binary_values.raw
+│   ├── organized_data_bit_patterns.json
+│   ├── organized_data_bit_patterns.raw
+│   ├── organized_data_bitwise_analysis.json
+│   ├── organized_data_bitwise_analysis.raw
+│   ├── organized_data_byte_and_bit_mappings.json
+│   ├── organized_data_byte_and_bit_mappings.raw
+│   ├── organized_data_bytes_array.json
+│   ├── organized_data_bytes_array.raw
+│   ├── organized_data_colors.json
+│   ├── organized_data_colors.raw
+│   ├── organized_data_complex_numbers.json
+│   ├── organized_data_complex_numbers.raw
+│   ├── organized_data_constraints.json
+│   ├── organized_data_constraints.raw
+│   ├── organized_data_conversation.json
+│   ├── organized_data_conversation.raw
+│   ├── organized_data_coordinates.json
+│   ├── organized_data_coordinates.raw
+│   ├── organized_data_crypto_hashes.json
+│   ├── organized_data_crypto_hashes.raw
+│   ├── organized_data_data.json
+│   ├── organized_data_data.raw
+│   ├── organized_data_decimal_values.json
+│   ├── organized_data_decimal_values.raw
+│   ├── organized_data_extended_colors.json
+│   ├── organized_data_extended_colors.raw
+│   ├── organized_data_extended_coordinates.json
+│   ├── organized_data_extended_coordinates.raw
+│   ├── organized_data_extended_dates.json
+│   ├── organized_data_extended_dates.raw
+│   ├── organized_data_factorial_analysis.json
+│   ├── organized_data_factorial_analysis.raw
+│   ├── organized_data_float_values.json
+│   ├── organized_data_float_values.raw
+│   ├── organized_data_generated_sequence.json
+│   ├── organized_data_generated_sequence.raw
+│   ├── organized_data_hex_formatted.json
+│   ├── organized_data_hex_formatted.raw
+│   ├── organized_data_hex_values.json
+│   ├── organized_data_hex_values.raw
+│   ├── organized_data_imagej_import_32bHex.json
+│   ├── organized_data_imagej_import_32bHex.raw
+│   ├── organized_data_imagej_import_32.json
+│   ├── organized_data_imagej_import_32.raw
+│   ├── organized_data_imagej_import_analysis_log.json
+│   ├── organized_data_imagej_import_analysis_log.raw
+│   ├── organized_data_imagej_import_audio_features.json
+│   ├── organized_data_imagej_import_audio_features.raw
+│   ├── organized_data_imagej_import_base64_values.json
+│   ├── organized_data_imagej_import_base64_values.raw
+│   ├── organized_data_imagej_import_batch_0.json
+│   ├── organized_data_imagej_import_batch_0.raw
+│   ├── organized_data_imagej_import_batch_1.json
+│   ├── organized_data_imagej_import_batch_1.raw
+│   ├── organized_data_imagej_import_batch_2.json
+│   ├── organized_data_imagej_import_batch_2.raw
+│   ├── organized_data_imagej_import_batch_3.json
+│   ├── organized_data_imagej_import_batch_3.raw
+│   ├── organized_data_imagej_import_batch_4.json
+│   ├── organized_data_imagej_import_batch_4.raw
+│   ├── organized_data_imagej_import_batch_5.json
+│   ├── organized_data_imagej_import_batch_5.raw
+│   ├── organized_data_imagej_import_binary_grouped.json
+│   ├── organized_data_imagej_import_binary_grouped.raw
+│   ├── organized_data_imagej_import_binary_types.json
+│   ├── organized_data_imagej_import_binary_types.raw
+│   ├── organized_data_imagej_import_binary_values.json
+│   ├── organized_data_imagej_import_binary_values.raw
+│   ├── organized_data_imagej_import_bit_patterns.json
+│   ├── organized_data_imagej_import_bit_patterns.raw
+│   ├── organized_data_imagej_import_bitwise_analysis.json
+│   ├── organized_data_imagej_import_bitwise_analysis.raw
+│   ├── organized_data_imagej_import_byte_and_bit_mappings.json
+│   ├── organized_data_imagej_import_byte_and_bit_mappings.raw
+│   ├── organized_data_imagej_import_bytes_array.json
+│   ├── organized_data_imagej_import_bytes_array.raw
+│   ├── organized_data_imagej_import_colors.json
+│   ├── organized_data_imagej_import_colors.raw
+│   ├── organized_data_imagej_import_complex_numbers.json
+│   ├── organized_data_imagej_import_complex_numbers.raw
+│   ├── organized_data_imagej_import_constraints.json
+│   ├── organized_data_imagej_import_constraints.raw
+│   ├── organized_data_imagej_import_conversation.json
+│   ├── organized_data_imagej_import_conversation.raw
+│   ├── organized_data_imagej_import_coordinates.json
+│   ├── organized_data_imagej_import_coordinates.raw
+│   ├── organized_data_imagej_import_crypto_hashes.json
+│   ├── organized_data_imagej_import_crypto_hashes.raw
+│   ├── organized_data_imagej_import_data.json
+│   ├── organized_data_imagej_import_data.raw
+│   ├── organized_data_imagej_import_decimal_values.json
+│   ├── organized_data_imagej_import_decimal_values.raw
+│   ├── organized_data_imagej_import_extended_colors.json
+│   ├── organized_data_imagej_import_extended_colors.raw
+│   ├── organized_data_imagej_import_extended_coordinates.json
+│   ├── organized_data_imagej_import_extended_coordinates.raw
+│   ├── organized_data_imagej_import_extended_dates.json
+│   ├── organized_data_imagej_import_extended_dates.raw
+│   ├── organized_data_imagej_import_factorial_analysis.json
+│   ├── organized_data_imagej_import_factorial_analysis.raw
+│   ├── organized_data_imagej_import_float_values.json
+│   ├── organized_data_imagej_import_float_values.raw
+│   ├── organized_data_imagej_import_generated_sequence.json
+│   ├── organized_data_imagej_import_generated_sequence.raw
+│   ├── organized_data_imagej_import_hex_formatted.json
+│   ├── organized_data_imagej_import_hex_formatted.raw
+│   ├── organized_data_imagej_import_hex_values.json
+│   ├── organized_data_imagej_import_hex_values.raw
+│   ├── organized_data_imagej_import_int_array.json
+│   ├── organized_data_imagej_import_int_array.raw
+│   ├── organized_data_imagej_import_ip_addresses.json
+│   ├── organized_data_imagej_import_ip_addresses.raw
+│   ├── organized_data_imagej_import_number_properties.json
+│   ├── organized_data_imagej_import_number_properties.raw
+│   ├── organized_data_imagej_import_octal_values.json
+│   ├── organized_data_imagej_import_octal_values.raw
+│   ├── organized_data_imagej_import_pattern_analysis.json
+│   ├── organized_data_imagej_import_pattern_analysis.raw
+│   ├── organized_data_imagej_import_priority_report.json
+│   ├── organized_data_imagej_import_priority_report.raw
+│   ├── organized_data_imagej_import_progress.json
+│   ├── organized_data_imagej_import_progress.raw
+│   ├── organized_data_imagej_import_python_dict.json
+│   ├── organized_data_imagej_import_python_dict.raw
+│   ├── organized_data_imagej_import_rational_numbers.json
+│   ├── organized_data_imagej_import_rational_numbers.raw
+│   ├── organized_data_imagej_import_requirements.json
+│   ├── organized_data_imagej_import_requirements.raw
+│   ├── organized_data_imagej_import_scientific_notation.json
+│   ├── organized_data_imagej_import_scientific_notation.raw
+│   ├── organized_data_imagej_import_sequence_properties.json
+│   ├── organized_data_imagej_import_sequence_properties.raw
+│   ├── organized_data_imagej_import_settings.json
+│   ├── organized_data_imagej_import_settings.raw
+│   ├── organized_data_imagej_import_signal_analysis.json
+│   ├── organized_data_imagej_import_signal_analysis.raw
+│   ├── organized_data_imagej_import_text_encodings.json
+│   ├── organized_data_imagej_import_text_encodings.raw
+│   ├── organized_data_imagej_import_timestamps.json
+│   ├── organized_data_imagej_import_timestamps.raw
+│   ├── organized_data_imagej_import_tree.json
+│   ├── organized_data_imagej_import_tree.raw
+│   ├── organized_data_imagej_import_utf8_bytes.json
+│   ├── organized_data_imagej_import_utf8_bytes.raw
+│   ├── organized_data_imagej_import_uuids.json
+│   ├── organized_data_imagej_import_uuids.raw
+│   ├── organized_data_imagej_import_values.json
+│   ├── organized_data_imagej_import_values.raw
+│   ├── organized_data_imagej_import_waveform_analysis.json
+│   ├── organized_data_imagej_import_waveform_analysis.raw
+│   ├── organized_data_int_array.json
+│   ├── organized_data_int_array.raw
+│   ├── organized_data_ip_addresses.json
+│   ├── organized_data_ip_addresses.raw
+│   ├── organized_data_number_properties.json
+│   ├── organized_data_number_properties.raw
+│   ├── organized_data_octal_values.json
+│   ├── organized_data_octal_values.raw
+│   ├── organized_data_pattern_analysis.json
+│   ├── organized_data_pattern_analysis.raw
+│   ├── organized_data_priority_report.json
+│   ├── organized_data_priority_report.raw
+│   ├── organized_data_progress.json
+│   ├── organized_data_progress.raw
+│   ├── organized_data_python_dict.json
+│   ├── organized_data_python_dict.raw
+│   ├── organized_data_rational_numbers.json
+│   ├── organized_data_rational_numbers.raw
+│   ├── organized_data_requirements.json
+│   ├── organized_data_requirements.raw
+│   ├── organized_data_scientific_notation.json
+│   ├── organized_data_scientific_notation.raw
+│   ├── organized_data_sequence_properties.json
+│   ├── organized_data_sequence_properties.raw
+│   ├── organized_data_settings.json
+│   ├── organized_data_settings.raw
+│   ├── organized_data_signal_analysis.json
+│   ├── organized_data_signal_analysis.raw
+│   ├── organized_data_text_encodings.json
+│   ├── organized_data_text_encodings.raw
+│   ├── organized_data_timestamps.json
+│   ├── organized_data_timestamps.raw
+│   ├── organized_data_tree.json
+│   ├── organized_data_tree.raw
+│   ├── organized_data_utf8_bytes.json
+│   ├── organized_data_utf8_bytes.raw
+│   ├── organized_data_uuids.json
+│   ├── organized_data_uuids.raw
+│   ├── organized_data_values.json
+│   ├── organized_data_values.raw
+│   ├── organized_data_waveform_analysis.json
+│   ├── organized_data_waveform_analysis.raw
+│   ├── organized_docs_1006.0381v4.json
+│   ├── organized_docs_1006.0381v4.raw
+│   ├── organized_docs_CHANGELOG.json
+│   ├── organized_docs_CHANGELOG.raw
+│   ├── organized_docs_Let me analyze the values that immediate.json
+│   ├── organized_docs_Let me analyze the values that immediate.raw
+│   ├── organized_docs_LICENSE.json
+│   ├── organized_docs_LICENSE.raw
+│   ├── organized_docs_README.json
+│   ├── organized_docs_README.raw
+│   ├── organized_docs_tradeoff.json
+│   ├── organized_docs_tradeoff.raw
+│   ├── organized_output_256bit_patterns.json
+│   ├── organized_output_256bit_patterns.raw
+│   ├── organized_output_byte_mappings.json
+│   ├── organized_output_byte_mappings.raw
+│   ├── organized_output_reports_complete_analysis.json
+│   ├── organized_output_reports_complete_analysis.raw
+│   ├── organized_output_reports_crypto_analysis.json
+│   ├── organized_output_reports_crypto_analysis.raw
+│   ├── organized_output_reports_entropy_analysis.json
+│   ├── organized_output_reports_entropy_analysis.raw
+│   ├── organized_output_reports_mathematical_analysis.json
+│   ├── organized_output_reports_mathematical_analysis.raw
+│   ├── organized_output_reports_modular_analysis.json
+│   ├── organized_output_reports_modular_analysis.raw
+│   ├── organized_output_reports_pattern_analysis.json
+│   ├── organized_output_reports_pattern_analysis.raw
+│   ├── organized_output_reports_schnorr_analysis.json
+│   ├── organized_output_reports_schnorr_analysis.raw
+│   ├── organized_output_reports_secp256k1_analysis.json
+│   ├── organized_output_reports_secp256k1_analysis.raw
+│   ├── organized_output_reports_sequence_analysis.json
+│   ├── organized_output_reports_sequence_analysis.raw
+│   ├── organized_output_reports_statistical_analysis.json
+│   ├── organized_output_reports_statistical_analysis.raw
+│   ├── organized_output_reports_visual_analysis.json
+│   ├── organized_output_reports_visual_analysis.raw
+│   ├── organized_output_temp_sound.json
+│   ├── organized_output_temp_sound.raw
+│   ├── organized_output_text_crypto_analysis.json
+│   ├── organized_output_text_crypto_analysis.raw
+│   ├── organized_output_text_entropy_analysis.json
+│   ├── organized_output_text_entropy_analysis.raw
+│   ├── organized_output_text_pattern_analysis.json
+│   ├── organized_output_text_pattern_analysis.raw
+│   ├── organized_output_text_sequence_analysis.json
+│   ├── organized_output_text_sequence_analysis.raw
+│   ├── organized_output_text_statistical_analysis.json
+│   ├── organized_output_text_statistical_analysis.raw
+│   ├── organized_output_text_visual_analysis_text.json
+│   ├── organized_output_text_visual_analysis_text.raw
+│   ├── organized_output_visualizations_address_patterns.json
+│   ├── organized_output_visualizations_address_patterns.raw
+│   ├── organized_output_visualizations_byte_distribution.json
+│   ├── organized_output_visualizations_byte_distribution.raw
+│   ├── organized_output_visualizations_circular_pattern.json
+│   ├── organized_output_visualizations_circular_pattern.raw
+│   ├── organized_output_visualizations_entropy_correlation.json
+│   ├── organized_output_visualizations_entropy_correlation.raw
+│   ├── organized_output_visualizations_entropy_gradient.json
+│   ├── organized_output_visualizations_entropy_gradient.raw
+│   ├── organized_output_visualizations_pattern_distribution.json
+│   ├── organized_output_visualizations_pattern_distribution.raw
+│   ├── organized_output_visualizations_pattern_evolution.json
+│   ├── organized_output_visualizations_pattern_evolution.raw
+│   ├── organized_output_visualizations_pattern_landscape.json
+│   ├── organized_output_visualizations_pattern_landscape.raw
+│   ├── organized_output_visualizations_sequence_patterns.json
+│   ├── organized_output_visualizations_sequence_patterns.raw
+│   ├── organized_output_visualizations_transition_heatmap.json
+│   ├── organized_output_visualizations_transition_heatmap.raw
+│   ├── organized_output_visual_visual_analysis_density.json
+│   ├── organized_output_visual_visual_analysis_density.raw
+│   ├── organized_output_visual_visual_analysis_grid.json
+│   ├── organized_output_visual_visual_analysis_grid.raw
+│   ├── organized_scripts_prepare_for_imagej.json
+│   ├── organized_scripts_prepare_for_imagej.raw
+│   ├── organized_src_convert_hex.json
+│   ├── organized_src_convert_hex.raw
+│   ├── organized_src_count_67_candidates.json
+│   ├── organized_src_count_67_candidates.raw
+│   ├── organized_src_hex_possibilities.json
+│   ├── organized_src_hex_possibilities.raw
+│   ├── organized_src_hex_synthesizer.json
+│   ├── organized_src_hex_synthesizer.raw
+│   ├── organized_src_key32addr.json
+│   ├── organized_src_key32addr.raw
+│   ├── organized_src_key32WIF.json
+│   ├── organized_src_key32WIF.raw
+│   ├── organized_src_maintest.json
+│   ├── organized_src_maintest.raw
+│   ├── organized_src_organize_project.json
+│   ├── organized_src_organize_project.raw
+│   ├── organized_src_predict_67.json
+│   ├── organized_src_predict_67.raw
+│   ├── organized_src_presleys_non_linear_bit_permutation_sequence.json
+│   ├── organized_src_presleys_non_linear_bit_permutation_sequence.raw
+│   ├── organized_src_priority_analysis.json
+│   ├── organized_src_priority_analysis.raw
+│   ├── organized_src_run_all_with_32bhex.json
+│   ├── organized_src_run_all_with_32bhex.raw
+│   ├── organized_src_search.json
+│   ├── organized_src_search.raw
+│   ├── organized_src_setup.json
+│   ├── organized_src_setup.raw
+│   ├── organized_src_significant_bits_67.json
+│   ├── organized_src_significant_bits_67.raw
+│   ├── organized_src_simple_beep.json
+│   ├── organized_src_simple_beep.raw
+│   ├── organized_src_simple_test.json
+│   ├── organized_src_simple_test.raw
+│   ├── organized_src_test_sound.json
+│   ├── organized_src_test_sound.raw
+│   ├── organized_tests_test.json
+│   ├── organized_tests_test.raw
+│   ├── organized_tests_test_sound.json
+│   ├── organized_tests_test_sound.raw
+│   ├── organized_tests_tests_test_integrated.json
+│   ├── organized_tests_tests_test_integrated.raw
+│   ├── organized_utils_betting-ml-fixed.json
+│   ├── organized_utils_betting-ml-fixed.raw
+│   ├── organized_utils_betting-ml.json
+│   ├── organized_utils_betting-ml.raw
+│   ├── organized_utils_eth_finder_bookmarklet.json
+│   ├── organized_utils_eth_finder_bookmarklet.raw
+│   ├── organized_utils_exportChat.json
+│   ├── organized_utils_exportChat.raw
+│   ├── ~_pattern_analyze_sequence.json
+│   ├── ~_pattern_analyze_sequence.raw
+│   ├── pattern_compressed.tar.json
+│   ├── pattern_compressed.tar.raw
+│   ├── pattern.json
+│   ├── pattern.raw
+│   ├── pattern_ultra.json
+│   ├── pattern_ultra.raw
+│   ├── src_analysis_analyze_67.json
+│   ├── src_analysis_analyze_67.raw
+│   ├── src_analysis_analyze_sequence.json
+│   ├── src_analysis_analyze_sequence.raw
+│   ├── src_bitcoin_math_analyze_sequence.json
+│   ├── src_bitcoin_math_analyze_sequence.raw
+│   ├── src_bitcoin_math___init__.json
+│   ├── src_bitcoin_math___init__.raw
+│   ├── src_bitcoin_math_schnorr_analysis.json
+│   ├── src_bitcoin_math_schnorr_analysis.raw
+│   ├── src_bitcoin_math_seq.json
+│   ├── src_bitcoin_math_seq.raw
+│   ├── src_bit_mapper.json
+│   ├── src_bit_mapper.raw
+│   ├── src_bit_pattern_2bit.json
+│   ├── src_bit_pattern_2bit.raw
+│   ├── src_bit_sequence_mapper_v1.json
+│   ├── src_bit_sequence_mapper_v1.raw
+│   ├── src_data_32bHex.json
+│   ├── src_data_32bHex.raw
+│   ├── src_elliptic_curves___init__.json
+│   ├── src_elliptic_curves___init__.raw
+│   ├── src_elliptic_curves_secp256k1_analysis.json
+│   ├── src_elliptic_curves_secp256k1_analysis.raw
+│   ├── src_generate_analysis.json
+│   ├── src_generate_analysis.raw
+│   ├── src_hash_chains_hash_sequence.json
+│   ├── src_hash_chains_hash_sequence.raw
+│   ├── src_hash_chains___init__.json
+│   ├── src_hash_chains___init__.raw
+│   ├── src_hash_chains_seq.json
+│   ├── src_hash_chains_seq.raw
+│   ├── src_modexp_test.json
+│   ├── src_modexp_test.raw
+│   ├── src_number_theory___init__.json
+│   ├── src_number_theory___init__.raw
+│   ├── src_number_theory_modular_forms.json
+│   ├── src_number_theory_modular_forms.raw
+│   ├── src_output_256bit_patterns.json
+│   ├── src_output_256bit_patterns.raw
+│   ├── src_output_bitcoin_math_schnorr_analysis.json
+│   ├── src_output_bitcoin_math_schnorr_analysis.raw
+│   ├── src_output_elliptic_curves_secp256k1_analysis.json
+│   ├── src_output_elliptic_curves_secp256k1_analysis.raw
+│   ├── src_output_number_theory_modular_analysis.json
+│   ├── src_output_number_theory_modular_analysis.raw
+│   ├── src_patterns_bit_pattern_2bit.json
+│   ├── src_patterns_bit_pattern_2bit.raw
+│   ├── src_patterns_bit_pattern_4bit.json
+│   ├── src_patterns_bit_pattern_4bit.raw
+│   ├── src_patterns_bit_pattern_base_convert.json
+│   ├── src_patterns_bit_pattern_base_convert.raw
+│   ├── src_patterns_bit_pattern_byte_ascii.json
+│   ├── src_patterns_bit_pattern_byte_ascii.raw
+│   ├── src_patterns_bit_pattern_crypto.json
+│   ├── src_patterns_bit_pattern_crypto.raw
+│   ├── src_patterns_bit_pattern_entropy.json
+│   ├── src_patterns_bit_pattern_entropy.raw
+│   ├── src_patterns_bit_pattern_hamming.json
+│   ├── src_patterns_bit_pattern_hamming.raw
+│   ├── src_patterns_bit_pattern_math.json
+│   ├── src_patterns_bit_pattern_math.raw
+│   ├── src_patterns_bit_pattern_repetition.json
+│   ├── src_patterns_bit_pattern_repetition.raw
+│   ├── src_patterns_bit_pattern_runs.json
+│   ├── src_patterns_bit_pattern_runs.raw
+│   ├── src_patterns_bit_pattern_sequence.json
+│   ├── src_patterns_bit_pattern_sequence.raw
+│   ├── src_patterns_bit_pattern_sliding.json
+│   ├── src_patterns_bit_pattern_sliding.raw
+│   ├── src_patterns_bit_pattern_stats.json
+│   ├── src_patterns_bit_pattern_stats.raw
+│   ├── src_patterns_bit_pattern_transitions.json
+│   ├── src_patterns_bit_pattern_transitions.raw
+│   ├── src_patterns_bit_pattern_views.json
+│   ├── src_patterns_bit_pattern_views.raw
+│   ├── src_patterns_bit_pattern_visual.json
+│   ├── src_patterns_bit_pattern_visual.raw
+│   ├── src_run_all_analyses.json
+│   ├── src_run_all_analyses.raw
+│   ├── src_run_math_analyses.json
+│   ├── src_run_math_analyses.raw
+│   ├── src_sequence_sequence_generator.json
+│   ├── src_sequence_sequence_generator.raw
+│   ├── src_stark_analysis_deep_analysis.json
+│   ├── src_stark_analysis_deep_analysis.raw
+│   ├── src_stark_analysis_enhanced_witness_patterns.json
+│   ├── src_stark_analysis_enhanced_witness_patterns.raw
+│   ├── src_stark_analysis_ultra_deep_analysis.json
+│   ├── src_stark_analysis_ultra_deep_analysis.raw
+│   ├── src_stark_analysis_witness_patterns.json
+│   ├── src_stark_analysis_witness_patterns.raw
+│   ├── src_utils_verify_address.json
+│   ├── src_utils_verify_address.raw
+│   ├── src_utils_verify_bitcoin.json
+│   ├── src_utils_verify_bitcoin.raw
+│   ├── src_utils_verify_candidates.json
+│   ├── src_utils_verify_candidates.raw
+│   ├── src_utils_verify.json
+│   ├── src_utils_verify.raw
+│   ├── src_visualization_entropy.json
+│   ├── src_visualization_entropy.raw
+│   ├── src_visualization_sequence.json
+│   ├── src_visualization_sequence.raw
+│   ├── versions_seq_deepseek_01 copy 2.json
+│   ├── versions_seq_deepseek_01 copy 2.raw
+│   ├── versions_seq_deepseek_01 copy 3.json
+│   ├── versions_seq_deepseek_01 copy 3.raw
+│   ├── versions_seq_deepseek_01 copy 4.json
+│   ├── versions_seq_deepseek_01 copy 4.raw
+│   ├── versions_seq_deepseek_01 copy 5.json
+│   ├── versions_seq_deepseek_01 copy 5.raw
+│   ├── versions_seq_deepseek_01 copy 6.json
+│   ├── versions_seq_deepseek_01 copy 6.raw
+│   ├── versions_seq_deepseek_01 copy 7.json
+│   ├── versions_seq_deepseek_01 copy 7.raw
+│   ├── versions_seq_deepseek_01 copy.json
+│   ├── versions_seq_deepseek_01 copy.raw
+│   ├── versions_seq_deepseek_01.json
+│   ├── versions_seq_deepseek_01.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_012518.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_012518.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_012629.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_012629.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_012743.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_012743.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013021.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013021.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013142.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013142.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013539.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013539.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013629.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013629.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013723.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013723.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013832.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013832.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013942.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_013942.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_014527.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_014527.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_014612.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_014612.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_014645.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_014645.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015038.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015038.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015248.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015248.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015623.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015623.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015652.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015652.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015718.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015718.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015745.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015745.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015813.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015813.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015859.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015859.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015940.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_015940.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020010.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020010.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020041.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020041.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020120.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020120.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020201.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020201.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020254.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020254.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020333.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020333.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020425.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020425.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020542.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020542.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020625.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020625.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020712.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020712.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020753.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020753.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020824.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020824.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020911.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020911.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020959.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_020959.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021047.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021047.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021136.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021136.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021219.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021219.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021355.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021355.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021531.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021531.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021600.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021600.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021732.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021732.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021817.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021817.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021935.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_021935.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022052.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022052.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022128.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022128.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022213.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022213.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022339.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022339.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022422.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022422.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022504.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_022504.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023623.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023623.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023709.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023709.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023755.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023755.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023842.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023842.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023930.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_023930.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_031805.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_031805.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_031848.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_031848.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_031933.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_031933.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_032028.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_032028.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_032111.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_032111.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_032141.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_032141.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_032217.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_032217.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033011.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033011.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033116.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033116.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033202.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033202.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033247.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033247.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033330.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_033330.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_100514.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_100514.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_100936.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_100936.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101014.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101014.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101048.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101048.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101123.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101123.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101200.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101200.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101236.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101236.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101320.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101320.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101351.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101351.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101427.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101427.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101503.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101503.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101619.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101619.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101703.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_101703.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102001.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102001.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102035.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102035.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102148.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102148.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102408.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102408.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102451.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102451.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102511.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102511.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102556.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102556.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102619.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_102619.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_103955.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_103955.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104017.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104017.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104056.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104056.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104122.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104122.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104152.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104152.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104224.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104224.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104304.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104304.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104339.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104339.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104414.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104414.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104450.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104450.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104530.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104530.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104612.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104612.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104658.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104658.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104745.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104745.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104833.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104833.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104954.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_104954.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105018.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105018.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105057.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105057.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105121.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105121.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105403.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105403.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105424.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105424.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105500.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105500.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105527.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105527.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105559.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105559.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105629.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105629.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105700.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105700.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105737.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_105737.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_142933.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_142933.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143037.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143037.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143113.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143113.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143148.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143148.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143239.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143239.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143327.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143327.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143410.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143410.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143459.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143459.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143544.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143544.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143627.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_143627.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144431.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144431.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144503.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144503.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144546.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144546.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144613.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144613.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144655.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144655.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144733.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144733.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144803.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144803.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144828.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144828.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144851.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144851.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144914.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144914.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144941.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_144941.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145008.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145008.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145035.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145035.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145104.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145104.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145350.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145350.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145417.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145417.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145505.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145505.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145544.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145544.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145616.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145616.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145656.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145656.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145812.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145812.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145841.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145841.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145914.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145914.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145940.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_145940.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150007.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150007.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150041.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150041.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150115.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150115.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150141.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150141.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150215.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150215.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150251.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150251.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150330.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150330.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150450.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150450.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150530.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150530.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150614.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150614.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150657.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_150657.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151111.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151111.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151329.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151329.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151427.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151427.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151458.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151458.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151616.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151616.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151747.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151747.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151829.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_151829.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152115.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152115.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152145.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152145.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152218.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152218.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152248.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152248.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152319.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152319.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152351.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152351.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152426.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152426.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152519.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152519.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152554.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152554.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152751.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152751.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152818.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152818.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152840.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152840.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152917.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152917.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152947.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_152947.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153217.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153217.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153433.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153433.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153627.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153627.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153658.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153658.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153734.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153734.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153801.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153801.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153823.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153823.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153850.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153850.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153914.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153914.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153933.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_153933.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_154001.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_154001.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_154028.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_154028.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_154057.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_154057.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_154125.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_154125.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_210618.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_210618.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_210647.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_210647.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_210710.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_210710.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_210756.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_210756.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214502.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214502.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214633.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214633.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214708.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214708.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214743.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214743.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214819.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214819.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214856.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214856.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214934.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_214934.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215337.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215337.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215418.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215418.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215502.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215502.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215545.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215545.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215653.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215653.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215747.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215747.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215839.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215839.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215927.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_215927.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220019.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220019.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220141.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220141.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220231.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220231.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220315.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220315.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220406.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220406.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220453.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220453.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220541.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220541.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220635.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220635.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220727.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220727.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220816.json
+│   ├── versions_sequence_generators_sequence_generator_v20241230_220816.raw
+│   ├── versions_sequence_generators_sequence_generator_v20241231_041429.json
+│   ├── versions_sequence_generators_sequence_generator_v20241231_041429.raw
+│   ├── versions_sequence_generators_sequence_generator_v20250101_122546.json
+│   ├── versions_sequence_generators_sequence_generator_v20250101_122546.raw
+│   ├── versions_sequences_sequence_20241230_012629.json
+│   ├── versions_sequences_sequence_20241230_012629.raw
+│   ├── versions_sequences_sequence_20241230_012743.json
+│   ├── versions_sequences_sequence_20241230_012743.raw
+│   ├── versions_sequences_sequence_20241230_013021.json
+│   ├── versions_sequences_sequence_20241230_013021.raw
+│   ├── versions_sequences_sequence_20241230_013142.json
+│   ├── versions_sequences_sequence_20241230_013142.raw
+│   ├── versions_sequences_sequence_20241230_013539.json
+│   ├── versions_sequences_sequence_20241230_013539.raw
+│   ├── versions_sequences_sequence_20241230_013629.json
+│   ├── versions_sequences_sequence_20241230_013629.raw
+│   ├── versions_sequences_sequence_20241230_013723.json
+│   ├── versions_sequences_sequence_20241230_013723.raw
+│   ├── versions_sequences_sequence_20241230_013832.json
+│   ├── versions_sequences_sequence_20241230_013832.raw
+│   ├── versions_sequences_sequence_20241230_013942.json
+│   ├── versions_sequences_sequence_20241230_013942.raw
+│   ├── versions_sequences_sequence_20241230_014527.json
+│   ├── versions_sequences_sequence_20241230_014527.raw
+│   ├── versions_sequences_sequence_20241230_014612.json
+│   ├── versions_sequences_sequence_20241230_014612.raw
+│   ├── versions_sequences_sequence_20241230_014645.json
+│   ├── versions_sequences_sequence_20241230_014645.raw
+│   ├── versions_sequences_sequence_20241230_015038.json
+│   ├── versions_sequences_sequence_20241230_015038.raw
+│   ├── versions_sequences_sequence_20241230_015248.json
+│   ├── versions_sequences_sequence_20241230_015248.raw
+│   ├── versions_sequences_sequence_20241230_015623.json
+│   ├── versions_sequences_sequence_20241230_015623.raw
+│   ├── versions_sequences_sequence_20241230_015652.json
+│   ├── versions_sequences_sequence_20241230_015652.raw
+│   ├── versions_sequences_sequence_20241230_015718.json
+│   ├── versions_sequences_sequence_20241230_015718.raw
+│   ├── versions_sequences_sequence_20241230_015745.json
+│   ├── versions_sequences_sequence_20241230_015745.raw
+│   ├── versions_sequences_sequence_20241230_015813.json
+│   ├── versions_sequences_sequence_20241230_015813.raw
+│   ├── versions_sequences_sequence_20241230_015859.json
+│   ├── versions_sequences_sequence_20241230_015859.raw
+│   ├── versions_sequences_sequence_20241230_015940.json
+│   ├── versions_sequences_sequence_20241230_015940.raw
+│   ├── versions_sequences_sequence_20241230_020010.json
+│   ├── versions_sequences_sequence_20241230_020010.raw
+│   ├── versions_sequences_sequence_20241230_020041.json
+│   ├── versions_sequences_sequence_20241230_020041.raw
+│   ├── versions_sequences_sequence_20241230_020120.json
+│   ├── versions_sequences_sequence_20241230_020120.raw
+│   ├── versions_sequences_sequence_20241230_020201.json
+│   ├── versions_sequences_sequence_20241230_020201.raw
+│   ├── versions_sequences_sequence_20241230_020254.json
+│   ├── versions_sequences_sequence_20241230_020254.raw
+│   ├── versions_sequences_sequence_20241230_020333.json
+│   ├── versions_sequences_sequence_20241230_020333.raw
+│   ├── versions_sequences_sequence_20241230_020425.json
+│   ├── versions_sequences_sequence_20241230_020425.raw
+│   ├── versions_sequences_sequence_20241230_020542.json
+│   ├── versions_sequences_sequence_20241230_020542.raw
+│   ├── versions_sequences_sequence_20241230_020625.json
+│   ├── versions_sequences_sequence_20241230_020625.raw
+│   ├── versions_sequences_sequence_20241230_020712.json
+│   ├── versions_sequences_sequence_20241230_020712.raw
+│   ├── versions_sequences_sequence_20241230_020753.json
+│   ├── versions_sequences_sequence_20241230_020753.raw
+│   ├── versions_sequences_sequence_20241230_020824.json
+│   ├── versions_sequences_sequence_20241230_020824.raw
+│   ├── versions_sequences_sequence_20241230_020911.json
+│   ├── versions_sequences_sequence_20241230_020911.raw
+│   ├── versions_sequences_sequence_20241230_020959.json
+│   ├── versions_sequences_sequence_20241230_020959.raw
+│   ├── versions_sequences_sequence_20241230_021047.json
+│   ├── versions_sequences_sequence_20241230_021047.raw
+│   ├── versions_sequences_sequence_20241230_021136.json
+│   ├── versions_sequences_sequence_20241230_021136.raw
+│   ├── versions_sequences_sequence_20241230_021219.json
+│   ├── versions_sequences_sequence_20241230_021219.raw
+│   ├── versions_sequences_sequence_20241230_021355.json
+│   ├── versions_sequences_sequence_20241230_021355.raw
+│   ├── versions_sequences_sequence_20241230_021531.json
+│   ├── versions_sequences_sequence_20241230_021531.raw
+│   ├── versions_sequences_sequence_20241230_021600.json
+│   ├── versions_sequences_sequence_20241230_021600.raw
+│   ├── versions_sequences_sequence_20241230_021732.json
+│   ├── versions_sequences_sequence_20241230_021732.raw
+│   ├── versions_sequences_sequence_20241230_021817.json
+│   ├── versions_sequences_sequence_20241230_021817.raw
+│   ├── versions_sequences_sequence_20241230_021935.json
+│   ├── versions_sequences_sequence_20241230_021935.raw
+│   ├── versions_sequences_sequence_20241230_022052.json
+│   ├── versions_sequences_sequence_20241230_022052.raw
+│   ├── versions_sequences_sequence_20241230_022128.json
+│   ├── versions_sequences_sequence_20241230_022128.raw
+│   ├── versions_sequences_sequence_20241230_022213.json
+│   ├── versions_sequences_sequence_20241230_022213.raw
+│   ├── versions_sequences_sequence_20241230_022339.json
+│   ├── versions_sequences_sequence_20241230_022339.raw
+│   ├── versions_sequences_sequence_20241230_022422.json
+│   ├── versions_sequences_sequence_20241230_022422.raw
+│   ├── versions_sequences_sequence_20241230_022504.json
+│   ├── versions_sequences_sequence_20241230_022504.raw
+│   ├── versions_sequences_sequence_20241230_023623.json
+│   ├── versions_sequences_sequence_20241230_023623.raw
+│   ├── versions_sequences_sequence_20241230_023709.json
+│   ├── versions_sequences_sequence_20241230_023709.raw
+│   ├── versions_sequences_sequence_20241230_023755.json
+│   ├── versions_sequences_sequence_20241230_023755.raw
+│   ├── versions_sequences_sequence_20241230_023842.json
+│   ├── versions_sequences_sequence_20241230_023842.raw
+│   ├── versions_sequences_sequence_20241230_023930.json
+│   ├── versions_sequences_sequence_20241230_023930.raw
+│   ├── versions_sequences_sequence_20241230_031805.json
+│   ├── versions_sequences_sequence_20241230_031805.raw
+│   ├── versions_sequences_sequence_20241230_031848.json
+│   ├── versions_sequences_sequence_20241230_031848.raw
+│   ├── versions_sequences_sequence_20241230_031933.json
+│   ├── versions_sequences_sequence_20241230_031933.raw
+│   ├── versions_sequences_sequence_20241230_032028.json
+│   ├── versions_sequences_sequence_20241230_032028.raw
+│   ├── versions_sequences_sequence_20241230_032111.json
+│   ├── versions_sequences_sequence_20241230_032111.raw
+│   ├── versions_sequences_sequence_20241230_032141.json
+│   ├── versions_sequences_sequence_20241230_032141.raw
+│   ├── versions_sequences_sequence_20241230_032217.json
+│   ├── versions_sequences_sequence_20241230_032217.raw
+│   ├── versions_sequences_sequence_20241230_033011.json
+│   ├── versions_sequences_sequence_20241230_033011.raw
+│   ├── versions_sequences_sequence_20241230_033116.json
+│   ├── versions_sequences_sequence_20241230_033116.raw
+│   ├── versions_sequences_sequence_20241230_033202.json
+│   ├── versions_sequences_sequence_20241230_033202.raw
+│   ├── versions_sequences_sequence_20241230_033247.json
+│   ├── versions_sequences_sequence_20241230_033247.raw
+│   ├── versions_sequences_sequence_20241230_033330.json
+│   ├── versions_sequences_sequence_20241230_033330.raw
+│   ├── versions_sequences_sequence_20241230_100514.json
+│   ├── versions_sequences_sequence_20241230_100514.raw
+│   ├── versions_sequences_sequence_20241230_100936.json
+│   ├── versions_sequences_sequence_20241230_100936.raw
+│   ├── versions_sequences_sequence_20241230_101014.json
+│   ├── versions_sequences_sequence_20241230_101014.raw
+│   ├── versions_sequences_sequence_20241230_101048.json
+│   ├── versions_sequences_sequence_20241230_101048.raw
+│   ├── versions_sequences_sequence_20241230_101123.json
+│   ├── versions_sequences_sequence_20241230_101123.raw
+│   ├── versions_sequences_sequence_20241230_101200.json
+│   ├── versions_sequences_sequence_20241230_101200.raw
+│   ├── versions_sequences_sequence_20241230_101236.json
+│   ├── versions_sequences_sequence_20241230_101236.raw
+│   ├── versions_sequences_sequence_20241230_101320.json
+│   ├── versions_sequences_sequence_20241230_101320.raw
+│   ├── versions_sequences_sequence_20241230_101351.json
+│   ├── versions_sequences_sequence_20241230_101351.raw
+│   ├── versions_sequences_sequence_20241230_101427.json
+│   ├── versions_sequences_sequence_20241230_101427.raw
+│   ├── versions_sequences_sequence_20241230_101503.json
+│   ├── versions_sequences_sequence_20241230_101503.raw
+│   ├── versions_sequences_sequence_20241230_101619.json
+│   ├── versions_sequences_sequence_20241230_101619.raw
+│   ├── versions_sequences_sequence_20241230_101703.json
+│   ├── versions_sequences_sequence_20241230_101703.raw
+│   ├── versions_sequences_sequence_20241230_102001.json
+│   ├── versions_sequences_sequence_20241230_102001.raw
+│   ├── versions_sequences_sequence_20241230_102035.json
+│   ├── versions_sequences_sequence_20241230_102035.raw
+│   ├── versions_sequences_sequence_20241230_102148.json
+│   ├── versions_sequences_sequence_20241230_102148.raw
+│   ├── versions_sequences_sequence_20241230_102408.json
+│   ├── versions_sequences_sequence_20241230_102408.raw
+│   ├── versions_sequences_sequence_20241230_102451.json
+│   ├── versions_sequences_sequence_20241230_102451.raw
+│   ├── versions_sequences_sequence_20241230_102511.json
+│   ├── versions_sequences_sequence_20241230_102511.raw
+│   ├── versions_sequences_sequence_20241230_102556.json
+│   ├── versions_sequences_sequence_20241230_102556.raw
+│   ├── versions_sequences_sequence_20241230_102619.json
+│   ├── versions_sequences_sequence_20241230_102619.raw
+│   ├── versions_sequences_sequence_20241230_103955.json
+│   ├── versions_sequences_sequence_20241230_103955.raw
+│   ├── versions_sequences_sequence_20241230_104017.json
+│   ├── versions_sequences_sequence_20241230_104017.raw
+│   ├── versions_sequences_sequence_20241230_104056.json
+│   ├── versions_sequences_sequence_20241230_104056.raw
+│   ├── versions_sequences_sequence_20241230_104122.json
+│   ├── versions_sequences_sequence_20241230_104122.raw
+│   ├── versions_sequences_sequence_20241230_104152.json
+│   ├── versions_sequences_sequence_20241230_104152.raw
+│   ├── versions_sequences_sequence_20241230_104224.json
+│   ├── versions_sequences_sequence_20241230_104224.raw
+│   ├── versions_sequences_sequence_20241230_104304.json
+│   ├── versions_sequences_sequence_20241230_104304.raw
+│   ├── versions_sequences_sequence_20241230_104339.json
+│   ├── versions_sequences_sequence_20241230_104339.raw
+│   ├── versions_sequences_sequence_20241230_104414.json
+│   ├── versions_sequences_sequence_20241230_104414.raw
+│   ├── versions_sequences_sequence_20241230_104450.json
+│   ├── versions_sequences_sequence_20241230_104450.raw
+│   ├── versions_sequences_sequence_20241230_104530.json
+│   ├── versions_sequences_sequence_20241230_104530.raw
+│   ├── versions_sequences_sequence_20241230_104612.json
+│   ├── versions_sequences_sequence_20241230_104612.raw
+│   ├── versions_sequences_sequence_20241230_104658.json
+│   ├── versions_sequences_sequence_20241230_104658.raw
+│   ├── versions_sequences_sequence_20241230_104745.json
+│   ├── versions_sequences_sequence_20241230_104745.raw
+│   ├── versions_sequences_sequence_20241230_104833.json
+│   ├── versions_sequences_sequence_20241230_104833.raw
+│   ├── versions_sequences_sequence_20241230_104954.json
+│   ├── versions_sequences_sequence_20241230_104954.raw
+│   ├── versions_sequences_sequence_20241230_105018.json
+│   ├── versions_sequences_sequence_20241230_105018.raw
+│   ├── versions_sequences_sequence_20241230_105057.json
+│   ├── versions_sequences_sequence_20241230_105057.raw
+│   ├── versions_sequences_sequence_20241230_105121.json
+│   ├── versions_sequences_sequence_20241230_105121.raw
+│   ├── versions_sequences_sequence_20241230_105403.json
+│   ├── versions_sequences_sequence_20241230_105403.raw
+│   ├── versions_sequences_sequence_20241230_105424.json
+│   ├── versions_sequences_sequence_20241230_105424.raw
+│   ├── versions_sequences_sequence_20241230_105500.json
+│   ├── versions_sequences_sequence_20241230_105500.raw
+│   ├── versions_sequences_sequence_20241230_105527.json
+│   ├── versions_sequences_sequence_20241230_105527.raw
+│   ├── versions_sequences_sequence_20241230_105559.json
+│   ├── versions_sequences_sequence_20241230_105559.raw
+│   ├── versions_sequences_sequence_20241230_105629.json
+│   ├── versions_sequences_sequence_20241230_105629.raw
+│   ├── versions_sequences_sequence_20241230_105700.json
+│   ├── versions_sequences_sequence_20241230_105700.raw
+│   ├── versions_sequences_sequence_20241230_105737.json
+│   ├── versions_sequences_sequence_20241230_105737.raw
+│   ├── versions_sequences_sequence_20241230_142933.json
+│   ├── versions_sequences_sequence_20241230_142933.raw
+│   ├── versions_sequences_sequence_20241230_143037.json
+│   ├── versions_sequences_sequence_20241230_143037.raw
+│   ├── versions_sequences_sequence_20241230_143113.json
+│   ├── versions_sequences_sequence_20241230_143113.raw
+│   ├── versions_sequences_sequence_20241230_143148.json
+│   ├── versions_sequences_sequence_20241230_143148.raw
+│   ├── versions_sequences_sequence_20241230_143239.json
+│   ├── versions_sequences_sequence_20241230_143239.raw
+│   ├── versions_sequences_sequence_20241230_143327.json
+│   ├── versions_sequences_sequence_20241230_143327.raw
+│   ├── versions_sequences_sequence_20241230_143410.json
+│   ├── versions_sequences_sequence_20241230_143410.raw
+│   ├── versions_sequences_sequence_20241230_143459.json
+│   ├── versions_sequences_sequence_20241230_143459.raw
+│   ├── versions_sequences_sequence_20241230_143544.json
+│   ├── versions_sequences_sequence_20241230_143544.raw
+│   ├── versions_sequences_sequence_20241230_143627.json
+│   ├── versions_sequences_sequence_20241230_143627.raw
+│   ├── versions_sequences_sequence_20241230_144431.json
+│   ├── versions_sequences_sequence_20241230_144431.raw
+│   ├── versions_sequences_sequence_20241230_144503.json
+│   ├── versions_sequences_sequence_20241230_144503.raw
+│   ├── versions_sequences_sequence_20241230_144546.json
+│   ├── versions_sequences_sequence_20241230_144546.raw
+│   ├── versions_sequences_sequence_20241230_144613.json
+│   ├── versions_sequences_sequence_20241230_144613.raw
+│   ├── versions_sequences_sequence_20241230_144655.json
+│   ├── versions_sequences_sequence_20241230_144655.raw
+│   ├── versions_sequences_sequence_20241230_144733.json
+│   ├── versions_sequences_sequence_20241230_144733.raw
+│   ├── versions_sequences_sequence_20241230_144803.json
+│   ├── versions_sequences_sequence_20241230_144803.raw
+│   ├── versions_sequences_sequence_20241230_144828.json
+│   ├── versions_sequences_sequence_20241230_144828.raw
+│   ├── versions_sequences_sequence_20241230_144851.json
+│   ├── versions_sequences_sequence_20241230_144851.raw
+│   ├── versions_sequences_sequence_20241230_144914.json
+│   ├── versions_sequences_sequence_20241230_144914.raw
+│   ├── versions_sequences_sequence_20241230_144941.json
+│   ├── versions_sequences_sequence_20241230_144941.raw
+│   ├── versions_sequences_sequence_20241230_145008.json
+│   ├── versions_sequences_sequence_20241230_145008.raw
+│   ├── versions_sequences_sequence_20241230_145035.json
+│   ├── versions_sequences_sequence_20241230_145035.raw
+│   ├── versions_sequences_sequence_20241230_145104.json
+│   ├── versions_sequences_sequence_20241230_145104.raw
+│   ├── versions_sequences_sequence_20241230_145350.json
+│   ├── versions_sequences_sequence_20241230_145350.raw
+│   ├── versions_sequences_sequence_20241230_145417.json
+│   ├── versions_sequences_sequence_20241230_145417.raw
+│   ├── versions_sequences_sequence_20241230_145505.json
+│   ├── versions_sequences_sequence_20241230_145505.raw
+│   ├── versions_sequences_sequence_20241230_145544.json
+│   ├── versions_sequences_sequence_20241230_145544.raw
+│   ├── versions_sequences_sequence_20241230_145616.json
+│   ├── versions_sequences_sequence_20241230_145616.raw
+│   ├── versions_sequences_sequence_20241230_145656.json
+│   ├── versions_sequences_sequence_20241230_145656.raw
+│   ├── versions_sequences_sequence_20241230_145812.json
+│   ├── versions_sequences_sequence_20241230_145812.raw
+│   ├── versions_sequences_sequence_20241230_145841.json
+│   ├── versions_sequences_sequence_20241230_145841.raw
+│   ├── versions_sequences_sequence_20241230_145914.json
+│   ├── versions_sequences_sequence_20241230_145914.raw
+│   ├── versions_sequences_sequence_20241230_145940.json
+│   ├── versions_sequences_sequence_20241230_145940.raw
+│   ├── versions_sequences_sequence_20241230_150007.json
+│   ├── versions_sequences_sequence_20241230_150007.raw
+│   ├── versions_sequences_sequence_20241230_150041.json
+│   ├── versions_sequences_sequence_20241230_150041.raw
+│   ├── versions_sequences_sequence_20241230_150115.json
+│   ├── versions_sequences_sequence_20241230_150115.raw
+│   ├── versions_sequences_sequence_20241230_150141.json
+│   ├── versions_sequences_sequence_20241230_150141.raw
+│   ├── versions_sequences_sequence_20241230_150215.json
+│   ├── versions_sequences_sequence_20241230_150215.raw
+│   ├── versions_sequences_sequence_20241230_150251.json
+│   ├── versions_sequences_sequence_20241230_150251.raw
+│   ├── versions_sequences_sequence_20241230_150330.json
+│   ├── versions_sequences_sequence_20241230_150330.raw
+│   ├── versions_sequences_sequence_20241230_150450.json
+│   ├── versions_sequences_sequence_20241230_150450.raw
+│   ├── versions_sequences_sequence_20241230_150530.json
+│   ├── versions_sequences_sequence_20241230_150530.raw
+│   ├── versions_sequences_sequence_20241230_150614.json
+│   ├── versions_sequences_sequence_20241230_150614.raw
+│   ├── versions_sequences_sequence_20241230_150657.json
+│   ├── versions_sequences_sequence_20241230_150657.raw
+│   ├── versions_sequences_sequence_20241230_151111.json
+│   ├── versions_sequences_sequence_20241230_151111.raw
+│   ├── versions_sequences_sequence_20241230_151329.json
+│   ├── versions_sequences_sequence_20241230_151329.raw
+│   ├── versions_sequences_sequence_20241230_151427.json
+│   ├── versions_sequences_sequence_20241230_151427.raw
+│   ├── versions_sequences_sequence_20241230_151458.json
+│   ├── versions_sequences_sequence_20241230_151458.raw
+│   ├── versions_sequences_sequence_20241230_151616.json
+│   ├── versions_sequences_sequence_20241230_151616.raw
+│   ├── versions_sequences_sequence_20241230_151747.json
+│   ├── versions_sequences_sequence_20241230_151747.raw
+│   ├── versions_sequences_sequence_20241230_151829.json
+│   ├── versions_sequences_sequence_20241230_151829.raw
+│   ├── versions_sequences_sequence_20241230_152115.json
+│   ├── versions_sequences_sequence_20241230_152115.raw
+│   ├── versions_sequences_sequence_20241230_152145.json
+│   ├── versions_sequences_sequence_20241230_152145.raw
+│   ├── versions_sequences_sequence_20241230_152218.json
+│   ├── versions_sequences_sequence_20241230_152218.raw
+│   ├── versions_sequences_sequence_20241230_152248.json
+│   ├── versions_sequences_sequence_20241230_152248.raw
+│   ├── versions_sequences_sequence_20241230_152319.json
+│   ├── versions_sequences_sequence_20241230_152319.raw
+│   ├── versions_sequences_sequence_20241230_152351.json
+│   ├── versions_sequences_sequence_20241230_152351.raw
+│   ├── versions_sequences_sequence_20241230_152426.json
+│   ├── versions_sequences_sequence_20241230_152426.raw
+│   ├── versions_sequences_sequence_20241230_152519.json
+│   ├── versions_sequences_sequence_20241230_152519.raw
+│   ├── versions_sequences_sequence_20241230_152554.json
+│   ├── versions_sequences_sequence_20241230_152554.raw
+│   ├── versions_sequences_sequence_20241230_152751.json
+│   ├── versions_sequences_sequence_20241230_152751.raw
+│   ├── versions_sequences_sequence_20241230_152818.json
+│   ├── versions_sequences_sequence_20241230_152818.raw
+│   ├── versions_sequences_sequence_20241230_152840.json
+│   ├── versions_sequences_sequence_20241230_152840.raw
+│   ├── versions_sequences_sequence_20241230_152917.json
+│   ├── versions_sequences_sequence_20241230_152917.raw
+│   ├── versions_sequences_sequence_20241230_152947.json
+│   ├── versions_sequences_sequence_20241230_152947.raw
+│   ├── versions_sequences_sequence_20241230_153217.json
+│   ├── versions_sequences_sequence_20241230_153217.raw
+│   ├── versions_sequences_sequence_20241230_153433.json
+│   ├── versions_sequences_sequence_20241230_153433.raw
+│   ├── versions_sequences_sequence_20241230_153627.json
+│   ├── versions_sequences_sequence_20241230_153627.raw
+│   ├── versions_sequences_sequence_20241230_153658.json
+│   ├── versions_sequences_sequence_20241230_153658.raw
+│   ├── versions_sequences_sequence_20241230_153734.json
+│   ├── versions_sequences_sequence_20241230_153734.raw
+│   ├── versions_sequences_sequence_20241230_153801.json
+│   ├── versions_sequences_sequence_20241230_153801.raw
+│   ├── versions_sequences_sequence_20241230_153823.json
+│   ├── versions_sequences_sequence_20241230_153823.raw
+│   ├── versions_sequences_sequence_20241230_153850.json
+│   ├── versions_sequences_sequence_20241230_153850.raw
+│   ├── versions_sequences_sequence_20241230_153914.json
+│   ├── versions_sequences_sequence_20241230_153914.raw
+│   ├── versions_sequences_sequence_20241230_153933.json
+│   ├── versions_sequences_sequence_20241230_153933.raw
+│   ├── versions_sequences_sequence_20241230_154001.json
+│   ├── versions_sequences_sequence_20241230_154001.raw
+│   ├── versions_sequences_sequence_20241230_154028.json
+│   ├── versions_sequences_sequence_20241230_154028.raw
+│   ├── versions_sequences_sequence_20241230_154057.json
+│   ├── versions_sequences_sequence_20241230_154057.raw
+│   ├── versions_sequences_sequence_20241230_154125.json
+│   ├── versions_sequences_sequence_20241230_154125.raw
+│   ├── versions_sequences_sequence_20241230_210618.json
+│   ├── versions_sequences_sequence_20241230_210618.raw
+│   ├── versions_sequences_sequence_20241230_210647.json
+│   ├── versions_sequences_sequence_20241230_210647.raw
+│   ├── versions_sequences_sequence_20241230_210710.json
+│   ├── versions_sequences_sequence_20241230_210710.raw
+│   ├── versions_sequences_sequence_20241230_210756.json
+│   ├── versions_sequences_sequence_20241230_210756.raw
+│   ├── versions_sequences_sequence_20241230_214502.json
+│   ├── versions_sequences_sequence_20241230_214502.raw
+│   ├── versions_sequences_sequence_20241230_214633.json
+│   ├── versions_sequences_sequence_20241230_214633.raw
+│   ├── versions_sequences_sequence_20241230_214708.json
+│   ├── versions_sequences_sequence_20241230_214708.raw
+│   ├── versions_sequences_sequence_20241230_214743.json
+│   ├── versions_sequences_sequence_20241230_214743.raw
+│   ├── versions_sequences_sequence_20241230_214819.json
+│   ├── versions_sequences_sequence_20241230_214819.raw
+│   ├── versions_sequences_sequence_20241230_214856.json
+│   ├── versions_sequences_sequence_20241230_214856.raw
+│   ├── versions_sequences_sequence_20241230_214934.json
+│   ├── versions_sequences_sequence_20241230_214934.raw
+│   ├── versions_sequences_sequence_20241230_215337.json
+│   ├── versions_sequences_sequence_20241230_215337.raw
+│   ├── versions_sequences_sequence_20241230_215418.json
+│   ├── versions_sequences_sequence_20241230_215418.raw
+│   ├── versions_sequences_sequence_20241230_215502.json
+│   ├── versions_sequences_sequence_20241230_215502.raw
+│   ├── versions_sequences_sequence_20241230_215545.json
+│   ├── versions_sequences_sequence_20241230_215545.raw
+│   ├── versions_sequences_sequence_20241230_215653.json
+│   ├── versions_sequences_sequence_20241230_215653.raw
+│   ├── versions_sequences_sequence_20241230_215747.json
+│   ├── versions_sequences_sequence_20241230_215747.raw
+│   ├── versions_sequences_sequence_20241230_215839.json
+│   ├── versions_sequences_sequence_20241230_215839.raw
+│   ├── versions_sequences_sequence_20241230_215927.json
+│   ├── versions_sequences_sequence_20241230_215927.raw
+│   ├── versions_sequences_sequence_20241230_220019.json
+│   ├── versions_sequences_sequence_20241230_220019.raw
+│   ├── versions_sequences_sequence_20241230_220141.json
+│   ├── versions_sequences_sequence_20241230_220141.raw
+│   ├── versions_sequences_sequence_20241230_220231.json
+│   ├── versions_sequences_sequence_20241230_220231.raw
+│   ├── versions_sequences_sequence_20241230_220315.json
+│   ├── versions_sequences_sequence_20241230_220315.raw
+│   ├── versions_sequences_sequence_20241230_220406.json
+│   ├── versions_sequences_sequence_20241230_220406.raw
+│   ├── versions_sequences_sequence_20241230_220453.json
+│   ├── versions_sequences_sequence_20241230_220453.raw
+│   ├── versions_sequences_sequence_20241230_220541.json
+│   ├── versions_sequences_sequence_20241230_220541.raw
+│   ├── versions_sequences_sequence_20241230_220635.json
+│   ├── versions_sequences_sequence_20241230_220635.raw
+│   ├── versions_sequences_sequence_20241230_220727.json
+│   ├── versions_sequences_sequence_20241230_220727.raw
+│   ├── versions_sequences_sequence_20241230_220816.json
+│   ├── versions_sequences_sequence_20241230_220816.raw
+│   ├── versions_sequences_sequence_20241231_041429.json
+│   ├── versions_sequences_sequence_20241231_041429.raw
+│   ├── versions_sequences_sequence_20250101_122546.json
+│   └── versions_sequences_sequence_20250101_122546.raw
+├── run_analysis.py
+├── sequence_analysis
+│   ├── double-3-ap
+│   └── double-3-ap.c
+├── sequence_analyzer.py
+├── sequence.txt
+├── src
+│   ├── analysis
+│   │   ├── analyze_67.py
+│   │   └── analyze_sequence.py
+│   ├── bitcoin_math
+│   │   ├── analyze_sequence.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   ├── __init__.cpython-38.pyc
+│   │   │   ├── schnorr_analysis.cpython-310.pyc
+│   │   │   └── schnorr_analysis.cpython-38.pyc
+│   │   ├── schnorr_analysis.py
+│   │   └── seq.py
+│   ├── bit_mapper.py
+│   ├── bit_pattern_2bit.py
+│   ├── bit_sequence_mapper_v1.py
+│   ├── data
+│   │   └── 32bHex.txt
+│   ├── elliptic_curves
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   ├── __init__.cpython-38.pyc
+│   │   │   ├── secp256k1_analysis.cpython-310.pyc
+│   │   │   └── secp256k1_analysis.cpython-38.pyc
+│   │   └── secp256k1_analysis.py
+│   ├── generate_analysis.py
+│   ├── hash_chains
+│   │   ├── hash_sequence.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── hash_sequence.cpython-310.pyc
+│   │   │   └── __init__.cpython-310.pyc
+│   │   └── seq.py
+│   ├── modexp_test.py
+│   ├── number_theory
+│   │   ├── __init__.py
+│   │   ├── modular_forms.py
+│   │   └── __pycache__
+│   │       ├── __init__.cpython-310.pyc
+│   │       ├── __init__.cpython-38.pyc
+│   │       ├── modular_forms.cpython-310.pyc
+│   │       └── modular_forms.cpython-38.pyc
+│   ├── output
+│   │   ├── 256bit_patterns.txt
+│   │   ├── bitcoin_math
+│   │   │   └── schnorr_analysis.txt
+│   │   ├── elliptic_curves
+│   │   │   └── secp256k1_analysis.txt
+│   │   └── number_theory
+│   │       └── modular_analysis.txt
+│   ├── patterns
+│   │   ├── bit_pattern_2bit.py
+│   │   ├── bit_pattern_4bit.py
+│   │   ├── bit_pattern_base_convert.py
+│   │   ├── bit_pattern_byte_ascii.py
+│   │   ├── bit_pattern_crypto.py
+│   │   ├── bit_pattern_entropy.py
+│   │   ├── bit_pattern_hamming.py
+│   │   ├── bit_pattern_math.py
+│   │   ├── bit_pattern_repetition.py
+│   │   ├── bit_pattern_runs.py
+│   │   ├── bit_pattern_sequence.py
+│   │   ├── bit_pattern_sliding.py
+│   │   ├── bit_pattern_stats.py
+│   │   ├── bit_pattern_transitions.py
+│   │   ├── bit_pattern_views.py
+│   │   └── bit_pattern_visual.py
+│   ├── __pycache__
+│   │   ├── bit_pattern_2bit.cpython-310.pyc
+│   │   ├── bit_pattern_2bit.cpython-38.pyc
+│   │   ├── bit_pattern_4bit.cpython-310.pyc
+│   │   ├── bit_pattern_4bit.cpython-38.pyc
+│   │   ├── bit_pattern_base_convert.cpython-38.pyc
+│   │   ├── bit_pattern_byte_ascii.cpython-310.pyc
+│   │   ├── bit_pattern_byte_ascii.cpython-38.pyc
+│   │   ├── bit_pattern_crypto.cpython-38.pyc
+│   │   ├── bit_pattern_entropy.cpython-38.pyc
+│   │   ├── bit_pattern_hamming.cpython-310.pyc
+│   │   ├── bit_pattern_hamming.cpython-38.pyc
+│   │   ├── bit_pattern_math.cpython-38.pyc
+│   │   ├── bit_pattern_repetition.cpython-38.pyc
+│   │   ├── bit_pattern_runs.cpython-310.pyc
+│   │   ├── bit_pattern_runs.cpython-38.pyc
+│   │   ├── bit_pattern_sequence.cpython-310.pyc
+│   │   ├── bit_pattern_sequence.cpython-38.pyc
+│   │   ├── bit_pattern_sliding.cpython-310.pyc
+│   │   ├── bit_pattern_sliding.cpython-38.pyc
+│   │   ├── bit_pattern_stats.cpython-38.pyc
+│   │   ├── bit_pattern_transitions.cpython-310.pyc
+│   │   ├── bit_pattern_transitions.cpython-38.pyc
+│   │   ├── bit_pattern_views.cpython-310.pyc
+│   │   ├── bit_pattern_views.cpython-38.pyc
+│   │   ├── bit_pattern_visual.cpython-38.pyc
+│   │   ├── run_all_analyses.cpython-310.pyc
+│   │   ├── visualization_entropy.cpython-38.pyc
+│   │   └── visualization_sequence.cpython-38.pyc
+│   ├── run_all_analyses.py
+│   ├── run_math_analyses.py
+│   ├── sequence
+│   │   └── sequence_generator.py
+│   ├── stark_analysis
+│   │   ├── deep_analysis.py
+│   │   ├── enhanced_witness_patterns.py
+│   │   ├── __pycache__
+│   │   │   ├── deep_analysis.cpython-38.pyc
+│   │   │   ├── enhanced_witness_patterns.cpython-38.pyc
+│   │   │   ├── ultra_deep_analysis.cpython-38.pyc
+│   │   │   └── witness_patterns.cpython-38.pyc
+│   │   ├── ultra_deep_analysis.py
+│   │   └── witness_patterns.py
+│   ├── utils
+│   │   ├── verify_address.py
+│   │   ├── verify_bitcoin.py
+│   │   ├── verify_candidates.py
+│   │   └── verify.py
+│   ├── visualization_entropy.py
+│   └── visualization_sequence.py
+└── versions
+    ├── seq_deepseek_01 copy 2.py
+    ├── seq_deepseek_01 copy 3.py
+    ├── seq_deepseek_01 copy 4.py
+    ├── seq_deepseek_01 copy 5.py
+    ├── seq_deepseek_01 copy 6.py
+    ├── seq_deepseek_01 copy 7.py
+    ├── seq_deepseek_01 copy.py
+    ├── seq_deepseek_01.py
+    ├── sequence_generators
+    │   ├── sequence_generator_v20241230_012518.py
+    │   ├── sequence_generator_v20241230_012629.py
+    │   ├── sequence_generator_v20241230_012743.py
+    │   ├── sequence_generator_v20241230_013021.py
+    │   ├── sequence_generator_v20241230_013142.py
+    │   ├── sequence_generator_v20241230_013539.py
+    │   ├── sequence_generator_v20241230_013629.py
+    │   ├── sequence_generator_v20241230_013723.py
+    │   ├── sequence_generator_v20241230_013832.py
+    │   ├── sequence_generator_v20241230_013942.py
+    │   ├── sequence_generator_v20241230_014527.py
+    │   ├── sequence_generator_v20241230_014612.py
+    │   ├── sequence_generator_v20241230_014645.py
+    │   ├── sequence_generator_v20241230_015038.py
+    │   ├── sequence_generator_v20241230_015248.py
+    │   ├── sequence_generator_v20241230_015623.py
+    │   ├── sequence_generator_v20241230_015652.py
+    │   ├── sequence_generator_v20241230_015718.py
+    │   ├── sequence_generator_v20241230_015745.py
+    │   ├── sequence_generator_v20241230_015813.py
+    │   ├── sequence_generator_v20241230_015859.py
+    │   ├── sequence_generator_v20241230_015940.py
+    │   ├── sequence_generator_v20241230_020010.py
+    │   ├── sequence_generator_v20241230_020041.py
+    │   ├── sequence_generator_v20241230_020120.py
+    │   ├── sequence_generator_v20241230_020201.py
+    │   ├── sequence_generator_v20241230_020254.py
+    │   ├── sequence_generator_v20241230_020333.py
+    │   ├── sequence_generator_v20241230_020425.py
+    │   ├── sequence_generator_v20241230_020542.py
+    │   ├── sequence_generator_v20241230_020625.py
+    │   ├── sequence_generator_v20241230_020712.py
+    │   ├── sequence_generator_v20241230_020753.py
+    │   ├── sequence_generator_v20241230_020824.py
+    │   ├── sequence_generator_v20241230_020911.py
+    │   ├── sequence_generator_v20241230_020959.py
+    │   ├── sequence_generator_v20241230_021047.py
+    │   ├── sequence_generator_v20241230_021136.py
+    │   ├── sequence_generator_v20241230_021219.py
+    │   ├── sequence_generator_v20241230_021355.py
+    │   ├── sequence_generator_v20241230_021531.py
+    │   ├── sequence_generator_v20241230_021600.py
+    │   ├── sequence_generator_v20241230_021732.py
+    │   ├── sequence_generator_v20241230_021817.py
+    │   ├── sequence_generator_v20241230_021935.py
+    │   ├── sequence_generator_v20241230_022052.py
+    │   ├── sequence_generator_v20241230_022128.py
+    │   ├── sequence_generator_v20241230_022213.py
+    │   ├── sequence_generator_v20241230_022339.py
+    │   ├── sequence_generator_v20241230_022422.py
+    │   ├── sequence_generator_v20241230_022504.py
+    │   ├── sequence_generator_v20241230_023623.py
+    │   ├── sequence_generator_v20241230_023709.py
+    │   ├── sequence_generator_v20241230_023755.py
+    │   ├── sequence_generator_v20241230_023842.py
+    │   ├── sequence_generator_v20241230_023930.py
+    │   ├── sequence_generator_v20241230_031805.py
+    │   ├── sequence_generator_v20241230_031848.py
+    │   ├── sequence_generator_v20241230_031933.py
+    │   ├── sequence_generator_v20241230_032028.py
+    │   ├── sequence_generator_v20241230_032111.py
+    │   ├── sequence_generator_v20241230_032141.py
+    │   ├── sequence_generator_v20241230_032217.py
+    │   ├── sequence_generator_v20241230_033011.py
+    │   ├── sequence_generator_v20241230_033116.py
+    │   ├── sequence_generator_v20241230_033202.py
+    │   ├── sequence_generator_v20241230_033247.py
+    │   ├── sequence_generator_v20241230_033330.py
+    │   ├── sequence_generator_v20241230_100514.py
+    │   ├── sequence_generator_v20241230_100936.py
+    │   ├── sequence_generator_v20241230_101014.py
+    │   ├── sequence_generator_v20241230_101048.py
+    │   ├── sequence_generator_v20241230_101123.py
+    │   ├── sequence_generator_v20241230_101200.py
+    │   ├── sequence_generator_v20241230_101236.py
+    │   ├── sequence_generator_v20241230_101320.py
+    │   ├── sequence_generator_v20241230_101351.py
+    │   ├── sequence_generator_v20241230_101427.py
+    │   ├── sequence_generator_v20241230_101503.py
+    │   ├── sequence_generator_v20241230_101619.py
+    │   ├── sequence_generator_v20241230_101703.py
+    │   ├── sequence_generator_v20241230_102001.py
+    │   ├── sequence_generator_v20241230_102035.py
+    │   ├── sequence_generator_v20241230_102148.py
+    │   ├── sequence_generator_v20241230_102408.py
+    │   ├── sequence_generator_v20241230_102451.py
+    │   ├── sequence_generator_v20241230_102511.py
+    │   ├── sequence_generator_v20241230_102556.py
+    │   ├── sequence_generator_v20241230_102619.py
+    │   ├── sequence_generator_v20241230_103955.py
+    │   ├── sequence_generator_v20241230_104017.py
+    │   ├── sequence_generator_v20241230_104056.py
+    │   ├── sequence_generator_v20241230_104122.py
+    │   ├── sequence_generator_v20241230_104152.py
+    │   ├── sequence_generator_v20241230_104224.py
+    │   ├── sequence_generator_v20241230_104304.py
+    │   ├── sequence_generator_v20241230_104339.py
+    │   ├── sequence_generator_v20241230_104414.py
+    │   ├── sequence_generator_v20241230_104450.py
+    │   ├── sequence_generator_v20241230_104530.py
+    │   ├── sequence_generator_v20241230_104612.py
+    │   ├── sequence_generator_v20241230_104658.py
+    │   ├── sequence_generator_v20241230_104745.py
+    │   ├── sequence_generator_v20241230_104833.py
+    │   ├── sequence_generator_v20241230_104954.py
+    │   ├── sequence_generator_v20241230_105018.py
+    │   ├── sequence_generator_v20241230_105057.py
+    │   ├── sequence_generator_v20241230_105121.py
+    │   ├── sequence_generator_v20241230_105403.py
+    │   ├── sequence_generator_v20241230_105424.py
+    │   ├── sequence_generator_v20241230_105500.py
+    │   ├── sequence_generator_v20241230_105527.py
+    │   ├── sequence_generator_v20241230_105559.py
+    │   ├── sequence_generator_v20241230_105629.py
+    │   ├── sequence_generator_v20241230_105700.py
+    │   ├── sequence_generator_v20241230_105737.py
+    │   ├── sequence_generator_v20241230_142933.py
+    │   ├── sequence_generator_v20241230_143037.py
+    │   ├── sequence_generator_v20241230_143113.py
+    │   ├── sequence_generator_v20241230_143148.py
+    │   ├── sequence_generator_v20241230_143239.py
+    │   ├── sequence_generator_v20241230_143327.py
+    │   ├── sequence_generator_v20241230_143410.py
+    │   ├── sequence_generator_v20241230_143459.py
+    │   ├── sequence_generator_v20241230_143544.py
+    │   ├── sequence_generator_v20241230_143627.py
+    │   ├── sequence_generator_v20241230_144431.py
+    │   ├── sequence_generator_v20241230_144503.py
+    │   ├── sequence_generator_v20241230_144546.py
+    │   ├── sequence_generator_v20241230_144613.py
+    │   ├── sequence_generator_v20241230_144655.py
+    │   ├── sequence_generator_v20241230_144733.py
+    │   ├── sequence_generator_v20241230_144803.py
+    │   ├── sequence_generator_v20241230_144828.py
+    │   ├── sequence_generator_v20241230_144851.py
+    │   ├── sequence_generator_v20241230_144914.py
+    │   ├── sequence_generator_v20241230_144941.py
+    │   ├── sequence_generator_v20241230_145008.py
+    │   ├── sequence_generator_v20241230_145035.py
+    │   ├── sequence_generator_v20241230_145104.py
+    │   ├── sequence_generator_v20241230_145350.py
+    │   ├── sequence_generator_v20241230_145417.py
+    │   ├── sequence_generator_v20241230_145505.py
+    │   ├── sequence_generator_v20241230_145544.py
+    │   ├── sequence_generator_v20241230_145616.py
+    │   ├── sequence_generator_v20241230_145656.py
+    │   ├── sequence_generator_v20241230_145812.py
+    │   ├── sequence_generator_v20241230_145841.py
+    │   ├── sequence_generator_v20241230_145914.py
+    │   ├── sequence_generator_v20241230_145940.py
+    │   ├── sequence_generator_v20241230_150007.py
+    │   ├── sequence_generator_v20241230_150041.py
+    │   ├── sequence_generator_v20241230_150115.py
+    │   ├── sequence_generator_v20241230_150141.py
+    │   ├── sequence_generator_v20241230_150215.py
+    │   ├── sequence_generator_v20241230_150251.py
+    │   ├── sequence_generator_v20241230_150330.py
+    │   ├── sequence_generator_v20241230_150450.py
+    │   ├── sequence_generator_v20241230_150530.py
+    │   ├── sequence_generator_v20241230_150614.py
+    │   ├── sequence_generator_v20241230_150657.py
+    │   ├── sequence_generator_v20241230_151111.py
+    │   ├── sequence_generator_v20241230_151329.py
+    │   ├── sequence_generator_v20241230_151427.py
+    │   ├── sequence_generator_v20241230_151458.py
+    │   ├── sequence_generator_v20241230_151616.py
+    │   ├── sequence_generator_v20241230_151747.py
+    │   ├── sequence_generator_v20241230_151829.py
+    │   ├── sequence_generator_v20241230_152115.py
+    │   ├── sequence_generator_v20241230_152145.py
+    │   ├── sequence_generator_v20241230_152218.py
+    │   ├── sequence_generator_v20241230_152248.py
+    │   ├── sequence_generator_v20241230_152319.py
+    │   ├── sequence_generator_v20241230_152351.py
+    │   ├── sequence_generator_v20241230_152426.py
+    │   ├── sequence_generator_v20241230_152519.py
+    │   ├── sequence_generator_v20241230_152554.py
+    │   ├── sequence_generator_v20241230_152751.py
+    │   ├── sequence_generator_v20241230_152818.py
+    │   ├── sequence_generator_v20241230_152840.py
+    │   ├── sequence_generator_v20241230_152917.py
+    │   ├── sequence_generator_v20241230_152947.py
+    │   ├── sequence_generator_v20241230_153217.py
+    │   ├── sequence_generator_v20241230_153433.py
+    │   ├── sequence_generator_v20241230_153627.py
+    │   ├── sequence_generator_v20241230_153658.py
+    │   ├── sequence_generator_v20241230_153734.py
+    │   ├── sequence_generator_v20241230_153801.py
+    │   ├── sequence_generator_v20241230_153823.py
+    │   ├── sequence_generator_v20241230_153850.py
+    │   ├── sequence_generator_v20241230_153914.py
+    │   ├── sequence_generator_v20241230_153933.py
+    │   ├── sequence_generator_v20241230_154001.py
+    │   ├── sequence_generator_v20241230_154028.py
+    │   ├── sequence_generator_v20241230_154057.py
+    │   ├── sequence_generator_v20241230_154125.py
+    │   ├── sequence_generator_v20241230_210618.py
+    │   ├── sequence_generator_v20241230_210647.py
+    │   ├── sequence_generator_v20241230_210710.py
+    │   ├── sequence_generator_v20241230_210756.py
+    │   ├── sequence_generator_v20241230_214502.py
+    │   ├── sequence_generator_v20241230_214633.py
+    │   ├── sequence_generator_v20241230_214708.py
+    │   ├── sequence_generator_v20241230_214743.py
+    │   ├── sequence_generator_v20241230_214819.py
+    │   ├── sequence_generator_v20241230_214856.py
+    │   ├── sequence_generator_v20241230_214934.py
+    │   ├── sequence_generator_v20241230_215337.py
+    │   ├── sequence_generator_v20241230_215418.py
+    │   ├── sequence_generator_v20241230_215502.py
+    │   ├── sequence_generator_v20241230_215545.py
+    │   ├── sequence_generator_v20241230_215653.py
+    │   ├── sequence_generator_v20241230_215747.py
+    │   ├── sequence_generator_v20241230_215839.py
+    │   ├── sequence_generator_v20241230_215927.py
+    │   ├── sequence_generator_v20241230_220019.py
+    │   ├── sequence_generator_v20241230_220141.py
+    │   ├── sequence_generator_v20241230_220231.py
+    │   ├── sequence_generator_v20241230_220315.py
+    │   ├── sequence_generator_v20241230_220406.py
+    │   ├── sequence_generator_v20241230_220453.py
+    │   ├── sequence_generator_v20241230_220541.py
+    │   ├── sequence_generator_v20241230_220635.py
+    │   ├── sequence_generator_v20241230_220727.py
+    │   ├── sequence_generator_v20241230_220816.py
+    │   ├── sequence_generator_v20241231_041429.py
+    │   └── sequence_generator_v20250101_122546.py
+    └── sequences
+        ├── sequence_20241230_012629.txt
+        ├── sequence_20241230_012743.txt
+        ├── sequence_20241230_013021.txt
+        ├── sequence_20241230_013142.txt
+        ├── sequence_20241230_013539.txt
+        ├── sequence_20241230_013629.txt
+        ├── sequence_20241230_013723.txt
+        ├── sequence_20241230_013832.txt
+        ├── sequence_20241230_013942.txt
+        ├── sequence_20241230_014527.txt
+        ├── sequence_20241230_014612.txt
+        ├── sequence_20241230_014645.txt
+        ├── sequence_20241230_015038.txt
+        ├── sequence_20241230_015248.txt
+        ├── sequence_20241230_015623.txt
+        ├── sequence_20241230_015652.txt
+        ├── sequence_20241230_015718.txt
+        ├── sequence_20241230_015745.txt
+        ├── sequence_20241230_015813.txt
+        ├── sequence_20241230_015859.txt
+        ├── sequence_20241230_015940.txt
+        ├── sequence_20241230_020010.txt
+        ├── sequence_20241230_020041.txt
+        ├── sequence_20241230_020120.txt
+        ├── sequence_20241230_020201.txt
+        ├── sequence_20241230_020254.txt
+        ├── sequence_20241230_020333.txt
+        ├── sequence_20241230_020425.txt
+        ├── sequence_20241230_020542.txt
+        ├── sequence_20241230_020625.txt
+        ├── sequence_20241230_020712.txt
+        ├── sequence_20241230_020753.txt
+        ├── sequence_20241230_020824.txt
+        ├── sequence_20241230_020911.txt
+        ├── sequence_20241230_020959.txt
+        ├── sequence_20241230_021047.txt
+        ├── sequence_20241230_021136.txt
+        ├── sequence_20241230_021219.txt
+        ├── sequence_20241230_021355.txt
+        ├── sequence_20241230_021531.txt
+        ├── sequence_20241230_021600.txt
+        ├── sequence_20241230_021732.txt
+        ├── sequence_20241230_021817.txt
+        ├── sequence_20241230_021935.txt
+        ├── sequence_20241230_022052.txt
+        ├── sequence_20241230_022128.txt
+        ├── sequence_20241230_022213.txt
+        ├── sequence_20241230_022339.txt
+        ├── sequence_20241230_022422.txt
+        ├── sequence_20241230_022504.txt
+        ├── sequence_20241230_023623.txt
+        ├── sequence_20241230_023709.txt
+        ├── sequence_20241230_023755.txt
+        ├── sequence_20241230_023842.txt
+        ├── sequence_20241230_023930.txt
+        ├── sequence_20241230_031805.txt
+        ├── sequence_20241230_031848.txt
+        ├── sequence_20241230_031933.txt
+        ├── sequence_20241230_032028.txt
+        ├── sequence_20241230_032111.txt
+        ├── sequence_20241230_032141.txt
+        ├── sequence_20241230_032217.txt
+        ├── sequence_20241230_033011.txt
+        ├── sequence_20241230_033116.txt
+        ├── sequence_20241230_033202.txt
+        ├── sequence_20241230_033247.txt
+        ├── sequence_20241230_033330.txt
+        ├── sequence_20241230_100514.txt
+        ├── sequence_20241230_100936.txt
+        ├── sequence_20241230_101014.txt
+        ├── sequence_20241230_101048.txt
+        ├── sequence_20241230_101123.txt
+        ├── sequence_20241230_101200.txt
+        ├── sequence_20241230_101236.txt
+        ├── sequence_20241230_101320.txt
+        ├── sequence_20241230_101351.txt
+        ├── sequence_20241230_101427.txt
+        ├── sequence_20241230_101503.txt
+        ├── sequence_20241230_101619.txt
+        ├── sequence_20241230_101703.txt
+        ├── sequence_20241230_102001.txt
+        ├── sequence_20241230_102035.txt
+        ├── sequence_20241230_102148.txt
+        ├── sequence_20241230_102408.txt
+        ├── sequence_20241230_102451.txt
+        ├── sequence_20241230_102511.txt
+        ├── sequence_20241230_102556.txt
+        ├── sequence_20241230_102619.txt
+        ├── sequence_20241230_103955.txt
+        ├── sequence_20241230_104017.txt
+        ├── sequence_20241230_104056.txt
+        ├── sequence_20241230_104122.txt
+        ├── sequence_20241230_104152.txt
+        ├── sequence_20241230_104224.txt
+        ├── sequence_20241230_104304.txt
+        ├── sequence_20241230_104339.txt
+        ├── sequence_20241230_104414.txt
+        ├── sequence_20241230_104450.txt
+        ├── sequence_20241230_104530.txt
+        ├── sequence_20241230_104612.txt
+        ├── sequence_20241230_104658.txt
+        ├── sequence_20241230_104745.txt
+        ├── sequence_20241230_104833.txt
+        ├── sequence_20241230_104954.txt
+        ├── sequence_20241230_105018.txt
+        ├── sequence_20241230_105057.txt
+        ├── sequence_20241230_105121.txt
+        ├── sequence_20241230_105403.txt
+        ├── sequence_20241230_105424.txt
+        ├── sequence_20241230_105500.txt
+        ├── sequence_20241230_105527.txt
+        ├── sequence_20241230_105559.txt
+        ├── sequence_20241230_105629.txt
+        ├── sequence_20241230_105700.txt
+        ├── sequence_20241230_105737.txt
+        ├── sequence_20241230_142933.txt
+        ├── sequence_20241230_143037.txt
+        ├── sequence_20241230_143113.txt
+        ├── sequence_20241230_143148.txt
+        ├── sequence_20241230_143239.txt
+        ├── sequence_20241230_143327.txt
+        ├── sequence_20241230_143410.txt
+        ├── sequence_20241230_143459.txt
+        ├── sequence_20241230_143544.txt
+        ├── sequence_20241230_143627.txt
+        ├── sequence_20241230_144431.txt
+        ├── sequence_20241230_144503.txt
+        ├── sequence_20241230_144546.txt
+        ├── sequence_20241230_144613.txt
+        ├── sequence_20241230_144655.txt
+        ├── sequence_20241230_144733.txt
+        ├── sequence_20241230_144803.txt
+        ├── sequence_20241230_144828.txt
+        ├── sequence_20241230_144851.txt
+        ├── sequence_20241230_144914.txt
+        ├── sequence_20241230_144941.txt
+        ├── sequence_20241230_145008.txt
+        ├── sequence_20241230_145035.txt
+        ├── sequence_20241230_145104.txt
+        ├── sequence_20241230_145350.txt
+        ├── sequence_20241230_145417.txt
+        ├── sequence_20241230_145505.txt
+        ├── sequence_20241230_145544.txt
+        ├── sequence_20241230_145616.txt
+        ├── sequence_20241230_145656.txt
+        ├── sequence_20241230_145812.txt
+        ├── sequence_20241230_145841.txt
+        ├── sequence_20241230_145914.txt
+        ├── sequence_20241230_145940.txt
+        ├── sequence_20241230_150007.txt
+        ├── sequence_20241230_150041.txt
+        ├── sequence_20241230_150115.txt
+        ├── sequence_20241230_150141.txt
+        ├── sequence_20241230_150215.txt
+        ├── sequence_20241230_150251.txt
+        ├── sequence_20241230_150330.txt
+        ├── sequence_20241230_150450.txt
+        ├── sequence_20241230_150530.txt
+        ├── sequence_20241230_150614.txt
+        ├── sequence_20241230_150657.txt
+        ├── sequence_20241230_151111.txt
+        ├── sequence_20241230_151329.txt
+        ├── sequence_20241230_151427.txt
+        ├── sequence_20241230_151458.txt
+        ├── sequence_20241230_151616.txt
+        ├── sequence_20241230_151747.txt
+        ├── sequence_20241230_151829.txt
+        ├── sequence_20241230_152115.txt
+        ├── sequence_20241230_152145.txt
+        ├── sequence_20241230_152218.txt
+        ├── sequence_20241230_152248.txt
+        ├── sequence_20241230_152319.txt
+        ├── sequence_20241230_152351.txt
+        ├── sequence_20241230_152426.txt
+        ├── sequence_20241230_152519.txt
+        ├── sequence_20241230_152554.txt
+        ├── sequence_20241230_152751.txt
+        ├── sequence_20241230_152818.txt
+        ├── sequence_20241230_152840.txt
+        ├── sequence_20241230_152917.txt
+        ├── sequence_20241230_152947.txt
+        ├── sequence_20241230_153217.txt
+        ├── sequence_20241230_153433.txt
+        ├── sequence_20241230_153627.txt
+        ├── sequence_20241230_153658.txt
+        ├── sequence_20241230_153734.txt
+        ├── sequence_20241230_153801.txt
+        ├── sequence_20241230_153823.txt
+        ├── sequence_20241230_153850.txt
+        ├── sequence_20241230_153914.txt
+        ├── sequence_20241230_153933.txt
+        ├── sequence_20241230_154001.txt
+        ├── sequence_20241230_154028.txt
+        ├── sequence_20241230_154057.txt
+        ├── sequence_20241230_154125.txt
+        ├── sequence_20241230_210618.txt
+        ├── sequence_20241230_210647.txt
+        ├── sequence_20241230_210710.txt
+        ├── sequence_20241230_210756.txt
+        ├── sequence_20241230_214502.txt
+        ├── sequence_20241230_214633.txt
+        ├── sequence_20241230_214708.txt
+        ├── sequence_20241230_214743.txt
+        ├── sequence_20241230_214819.txt
+        ├── sequence_20241230_214856.txt
+        ├── sequence_20241230_214934.txt
+        ├── sequence_20241230_215337.txt
+        ├── sequence_20241230_215418.txt
+        ├── sequence_20241230_215502.txt
+        ├── sequence_20241230_215545.txt
+        ├── sequence_20241230_215653.txt
+        ├── sequence_20241230_215747.txt
+        ├── sequence_20241230_215839.txt
+        ├── sequence_20241230_215927.txt
+        ├── sequence_20241230_220019.txt
+        ├── sequence_20241230_220141.txt
+        ├── sequence_20241230_220231.txt
+        ├── sequence_20241230_220315.txt
+        ├── sequence_20241230_220406.txt
+        ├── sequence_20241230_220453.txt
+        ├── sequence_20241230_220541.txt
+        ├── sequence_20241230_220635.txt
+        ├── sequence_20241230_220727.txt
+        ├── sequence_20241230_220816.txt
+        ├── sequence_20241231_041429.txt
+        └── sequence_20250101_122546.txt
+
+92 directories, 4475 files

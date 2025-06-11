@@ -1,0 +1,898 @@
+.
+├── ~
+│   └── pattern
+│       └── analyze_sequence.py
+├── analysis
+│   ├── bit_patterns
+│   │   └── bit_position_analysis.py
+│   └── sequence_analysis
+│       ├── find_67_bits.py
+│       ├── find_67_complete.py
+│       ├── find_67_optimized.py
+│       ├── find_67.py
+│       ├── find_67_with_constraints.py
+│       ├── find_67_with_hex.py
+│       └── sequence_67_analysis.py
+├── analysis_log.txt
+├── audio_output
+│   ├── combined_sound.wav
+│   ├── sound_10.wav
+│   ├── sound_11.wav
+│   ├── sound_12.wav
+│   ├── sound_13.wav
+│   ├── sound_14.wav
+│   ├── sound_15.wav
+│   ├── sound_16.wav
+│   ├── sound_17.wav
+│   ├── sound_18.wav
+│   ├── sound_19.wav
+│   ├── sound_1.wav
+│   ├── sound_20.wav
+│   ├── sound_21.wav
+│   ├── sound_22.wav
+│   ├── sound_23.wav
+│   ├── sound_24.wav
+│   ├── sound_25.wav
+│   ├── sound_26.wav
+│   ├── sound_27.wav
+│   ├── sound_28.wav
+│   ├── sound_29.wav
+│   ├── sound_2.wav
+│   ├── sound_30.wav
+│   ├── sound_31.wav
+│   ├── sound_32.wav
+│   ├── sound_33.wav
+│   ├── sound_34.wav
+│   ├── sound_35.wav
+│   ├── sound_36.wav
+│   ├── sound_37.wav
+│   ├── sound_38.wav
+│   ├── sound_39.wav
+│   ├── sound_3.wav
+│   ├── sound_40.wav
+│   ├── sound_41.wav
+│   ├── sound_42.wav
+│   ├── sound_43.wav
+│   ├── sound_44.wav
+│   ├── sound_45.wav
+│   ├── sound_46.wav
+│   ├── sound_47.wav
+│   ├── sound_48.wav
+│   ├── sound_49.wav
+│   ├── sound_4.wav
+│   ├── sound_50.wav
+│   ├── sound_51.wav
+│   ├── sound_52.wav
+│   ├── sound_53.wav
+│   ├── sound_54.wav
+│   ├── sound_55.wav
+│   ├── sound_56.wav
+│   ├── sound_57.wav
+│   ├── sound_58.wav
+│   ├── sound_59.wav
+│   ├── sound_5.wav
+│   ├── sound_60.wav
+│   ├── sound_61.wav
+│   ├── sound_62.wav
+│   ├── sound_63.wav
+│   ├── sound_64.wav
+│   ├── sound_65.wav
+│   ├── sound_6.wav
+│   ├── sound_7.wav
+│   ├── sound_8.wav
+│   └── sound_9.wav
+├── audio_processing_system
+│   ├── audio_processing_system
+│   │   ├── config
+│   │   ├── core
+│   │   │   ├── configuration.py
+│   │   │   ├── engine.py
+│   │   │   ├── __init__.py
+│   │   │   ├── integration.py
+│   │   │   ├── monitor.py
+│   │   │   └── state.py
+│   │   ├── __init__.py
+│   │   ├── interface
+│   │   │   ├── controls.py
+│   │   │   ├── display.py
+│   │   │   └── __init__.py
+│   │   ├── main.py
+│   │   ├── processors
+│   │   │   ├── adaptive.py
+│   │   │   ├── bass_splitter.py
+│   │   │   ├── channel_controller.py
+│   │   │   ├── filter_network.py
+│   │   │   ├── granular.py
+│   │   │   ├── hd_compressor.py
+│   │   │   ├── __init__.py
+│   │   │   ├── io_relay.py
+│   │   │   ├── master_config.py
+│   │   │   ├── pad_synth.py
+│   │   │   ├── polyrhythm.py
+│   │   │   ├── smart_routing.py
+│   │   │   └── spectral.py
+│   │   └── utils
+│   ├── docker-compose.yml
+│   ├── Dockerfile
+│   ├── docs
+│   │   ├── api
+│   │   │   └── index.rst
+│   │   ├── examples
+│   │   │   └── index.rst
+│   │   └── user_guide
+│   │       └── index.rst
+│   ├── examples
+│   │   ├── advanced_routing.py
+│   │   └── basic_processing.py
+│   ├── __init__.py
+│   ├── LICENSE
+│   ├── main.py
+│   ├── package.sh
+│   ├── pyproject.toml
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── setup.py
+│   ├── test_distribution.py
+│   └── tests
+│       ├── __init__.py
+│       ├── test_audio.py
+│       ├── test_interface.py
+│       └── test_processing.py
+├── audio_processing_system.zip
+├── betting-ml-fixed.js
+├── betting-ml.js
+├── bit_patterns.txt
+├── byte_and_bit_mappings.txt
+├── config
+│   └── requirements.txt
+├── convert_hex.py
+├── count_67_candidates.py
+├── data
+│   ├── 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+│   ├── 32bHex.txt
+│   ├── 32.obj
+│   ├── 32.objfile
+│   ├── audio_features.txt
+│   ├── base64_values.txt
+│   ├── batch_0.json
+│   ├── batch_1.json
+│   ├── batch_2.json
+│   ├── batch_3.json
+│   ├── batch_4.json
+│   ├── batch_5.json
+│   ├── binary_grouped.txt
+│   ├── binary_types.txt
+│   ├── binary_values.txt
+│   ├── bit_patterns.json
+│   ├── bitwise_analysis.txt
+│   ├── bytes_array.json
+│   ├── colors.txt
+│   ├── complex_numbers.txt
+│   ├── constraints.json
+│   ├── conversation.json
+│   ├── coordinates.txt
+│   ├── crypto_hashes.txt
+│   ├── data.csv
+│   ├── decimal_values.txt
+│   ├── extended_colors.txt
+│   ├── extended_coordinates.txt
+│   ├── extended_dates.txt
+│   ├── factorial_analysis.txt
+│   ├── float_values.txt
+│   ├── hex_formatted.txt
+│   ├── hex_values.json
+│   ├── int_array.json
+│   ├── ip_addresses.txt
+│   ├── number_properties.txt
+│   ├── octal_values.txt
+│   ├── pattern_analysis.txt
+│   ├── progress.json
+│   ├── python_dict.json
+│   ├── rational_numbers.txt
+│   ├── scientific_notation.txt
+│   ├── sequence_properties.json
+│   ├── settings.json
+│   ├── signal_analysis.txt
+│   ├── text_encodings.txt
+│   ├── timestamps.txt
+│   ├── utf8_bytes.txt
+│   ├── uuids.txt
+│   ├── values.csv
+│   └── waveform_analysis.txt
+├── docs
+│   ├── 1006.0381v4.pdf
+│   ├── CHANGELOG.md
+│   ├── Let me analyze the values that immediate.md
+│   ├── README.md
+│   └── tradeoff.pdf
+├── eth_finder_bookmarklet.js
+├── exportChat.js
+├── generated_sequence.txt
+├── hex_possibilities.py
+├── hex_synthesizer.py
+├── key32addr.py
+├── key32WIF.py
+├── LICENSE
+├── logs
+│   ├── execution
+│   │   ├── ascii_conversion.log
+│   │   ├── block_structure.log
+│   │   ├── CHANGES.log
+│   │   ├── control_chars.log
+│   │   ├── correlation_analysis.log
+│   │   ├── cross_reference.log
+│   │   ├── deep_patterns.log
+│   │   ├── detailed_patterns.log
+│   │   ├── master.log
+│   │   ├── mathematical_patterns.log
+│   │   ├── protocol_analysis.log
+│   │   ├── protocol_matching.log
+│   │   ├── sequence_analysis.log
+│   │   └── statistical_analysis.log
+│   └── visualizations
+│       ├── ascii_plot.txt
+│       └── complex_patterns.txt
+├── maintest.py
+├── MANIFEST.in
+├── organize_project.py
+├── output
+│   ├── 256bit_patterns.txt
+│   ├── byte_mappings.txt
+│   ├── reports
+│   │   ├── complete_analysis.txt
+│   │   ├── crypto_analysis.txt
+│   │   ├── entropy_analysis.txt
+│   │   ├── mathematical_analysis.txt
+│   │   ├── modular_analysis.txt
+│   │   ├── pattern_analysis.txt
+│   │   ├── schnorr_analysis.txt
+│   │   ├── secp256k1_analysis.txt
+│   │   ├── sequence_analysis.txt
+│   │   ├── statistical_analysis.txt
+│   │   └── visual_analysis.txt
+│   ├── text
+│   │   ├── crypto_analysis.txt
+│   │   ├── entropy_analysis.txt
+│   │   ├── pattern_analysis.txt
+│   │   ├── sequence_analysis.txt
+│   │   ├── statistical_analysis.txt
+│   │   └── visual_analysis_text.txt
+│   ├── visual
+│   │   ├── visual_analysis_density.txt
+│   │   └── visual_analysis_grid.txt
+│   └── visualizations
+│       ├── address_patterns.png
+│       ├── byte_distribution.png
+│       ├── circular_pattern.png
+│       ├── entropy_correlation.png
+│       ├── entropy_gradient.png
+│       ├── pattern_distribution.png
+│       ├── pattern_evolution.png
+│       ├── pattern_landscape.png
+│       ├── sequence_patterns.png
+│       └── transition_heatmap.png
+├── pattern.code-workspace
+├── pattern_compressed.tar.xz
+├── pattern_ultra.7z
+├── predict_67.py
+├── presleys_non_linear_bit_permutation_sequence.py
+├── priority_analysis.py
+├── priority_report.txt
+├── README.md
+├── requirements.txt
+├── run_all_with_32bhex.py
+├── search.py
+├── sequence_analysis
+│   ├── candidates
+│   │   ├── bit_patterns.json
+│   │   ├── output
+│   │   │   └── output_log.txt
+│   │   ├── process_addresses.py
+│   │   └── progress.json
+│   ├── collision_analysis.py
+│   ├── find_67_with_hex.py
+│   ├── integrated_analysis.py
+│   ├── known_values.py
+│   ├── permutation_proof.py
+│   ├── __pycache__
+│   │   └── integrated_analysis.cpython-38.pyc
+│   ├── run_tests.py
+│   ├── sequence_finder.py
+│   └── sequence_proof.py
+├── setup.py
+├── significant_bits_67.py
+├── simple_beep.py
+├── simple_test.py
+├── src
+│   ├── analysis
+│   │   ├── analyze_67.py
+│   │   └── analyze_sequence.py
+│   ├── bitcoin_math
+│   │   ├── analyze_sequence.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   ├── __init__.cpython-38.pyc
+│   │   │   ├── schnorr_analysis.cpython-310.pyc
+│   │   │   └── schnorr_analysis.cpython-38.pyc
+│   │   ├── schnorr_analysis.py
+│   │   └── seq.py
+│   ├── bit_mapper.py
+│   ├── bit_pattern_2bit.py
+│   ├── bit_sequence_mapper_v1.py
+│   ├── data
+│   │   └── 32bHex.txt
+│   ├── elliptic_curves
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   ├── __init__.cpython-38.pyc
+│   │   │   ├── secp256k1_analysis.cpython-310.pyc
+│   │   │   └── secp256k1_analysis.cpython-38.pyc
+│   │   └── secp256k1_analysis.py
+│   ├── generate_analysis.py
+│   ├── hash_chains
+│   │   ├── hash_sequence.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── hash_sequence.cpython-310.pyc
+│   │   │   └── __init__.cpython-310.pyc
+│   │   └── seq.py
+│   ├── modexp_test.py
+│   ├── number_theory
+│   │   ├── __init__.py
+│   │   ├── modular_forms.py
+│   │   └── __pycache__
+│   │       ├── __init__.cpython-310.pyc
+│   │       ├── __init__.cpython-38.pyc
+│   │       ├── modular_forms.cpython-310.pyc
+│   │       └── modular_forms.cpython-38.pyc
+│   ├── output
+│   │   ├── 256bit_patterns.txt
+│   │   ├── bitcoin_math
+│   │   │   └── schnorr_analysis.txt
+│   │   ├── elliptic_curves
+│   │   │   └── secp256k1_analysis.txt
+│   │   └── number_theory
+│   │       └── modular_analysis.txt
+│   ├── patterns
+│   │   ├── bit_pattern_2bit.py
+│   │   ├── bit_pattern_4bit.py
+│   │   ├── bit_pattern_base_convert.py
+│   │   ├── bit_pattern_byte_ascii.py
+│   │   ├── bit_pattern_crypto.py
+│   │   ├── bit_pattern_entropy.py
+│   │   ├── bit_pattern_hamming.py
+│   │   ├── bit_pattern_math.py
+│   │   ├── bit_pattern_repetition.py
+│   │   ├── bit_pattern_runs.py
+│   │   ├── bit_pattern_sequence.py
+│   │   ├── bit_pattern_sliding.py
+│   │   ├── bit_pattern_stats.py
+│   │   ├── bit_pattern_transitions.py
+│   │   ├── bit_pattern_views.py
+│   │   └── bit_pattern_visual.py
+│   ├── __pycache__
+│   │   ├── bit_pattern_2bit.cpython-310.pyc
+│   │   ├── bit_pattern_2bit.cpython-38.pyc
+│   │   ├── bit_pattern_4bit.cpython-310.pyc
+│   │   ├── bit_pattern_4bit.cpython-38.pyc
+│   │   ├── bit_pattern_base_convert.cpython-38.pyc
+│   │   ├── bit_pattern_byte_ascii.cpython-310.pyc
+│   │   ├── bit_pattern_byte_ascii.cpython-38.pyc
+│   │   ├── bit_pattern_crypto.cpython-38.pyc
+│   │   ├── bit_pattern_entropy.cpython-38.pyc
+│   │   ├── bit_pattern_hamming.cpython-310.pyc
+│   │   ├── bit_pattern_hamming.cpython-38.pyc
+│   │   ├── bit_pattern_math.cpython-38.pyc
+│   │   ├── bit_pattern_repetition.cpython-38.pyc
+│   │   ├── bit_pattern_runs.cpython-310.pyc
+│   │   ├── bit_pattern_runs.cpython-38.pyc
+│   │   ├── bit_pattern_sequence.cpython-310.pyc
+│   │   ├── bit_pattern_sequence.cpython-38.pyc
+│   │   ├── bit_pattern_sliding.cpython-310.pyc
+│   │   ├── bit_pattern_sliding.cpython-38.pyc
+│   │   ├── bit_pattern_stats.cpython-38.pyc
+│   │   ├── bit_pattern_transitions.cpython-310.pyc
+│   │   ├── bit_pattern_transitions.cpython-38.pyc
+│   │   ├── bit_pattern_views.cpython-310.pyc
+│   │   ├── bit_pattern_views.cpython-38.pyc
+│   │   ├── bit_pattern_visual.cpython-38.pyc
+│   │   ├── run_all_analyses.cpython-310.pyc
+│   │   ├── visualization_entropy.cpython-38.pyc
+│   │   └── visualization_sequence.cpython-38.pyc
+│   ├── run_all_analyses.py
+│   ├── run_math_analyses.py
+│   ├── sequence
+│   │   └── sequence_generator.py
+│   ├── stark_analysis
+│   │   ├── deep_analysis.py
+│   │   ├── enhanced_witness_patterns.py
+│   │   ├── __pycache__
+│   │   │   ├── deep_analysis.cpython-38.pyc
+│   │   │   ├── enhanced_witness_patterns.cpython-38.pyc
+│   │   │   ├── ultra_deep_analysis.cpython-38.pyc
+│   │   │   └── witness_patterns.cpython-38.pyc
+│   │   ├── ultra_deep_analysis.py
+│   │   └── witness_patterns.py
+│   ├── utils
+│   │   ├── verify_address.py
+│   │   ├── verify_bitcoin.py
+│   │   ├── verify_candidates.py
+│   │   └── verify.py
+│   ├── visualization_entropy.py
+│   └── visualization_sequence.py
+├── temp_sound.wav
+├── test
+├── test.rb
+├── tests
+│   └── test_integrated.py
+├── test_sound.py
+├── test_sound.wav
+├── tree.txt
+└── versions
+    ├── seq_deepseek_01 copy 2.py
+    ├── seq_deepseek_01 copy 3.py
+    ├── seq_deepseek_01 copy 4.py
+    ├── seq_deepseek_01 copy 5.py
+    ├── seq_deepseek_01 copy 6.py
+    ├── seq_deepseek_01 copy 7.py
+    ├── seq_deepseek_01 copy.py
+    ├── seq_deepseek_01.py
+    ├── sequence_generators
+    │   ├── sequence_generator_v20241230_012518.py
+    │   ├── sequence_generator_v20241230_012629.py
+    │   ├── sequence_generator_v20241230_012743.py
+    │   ├── sequence_generator_v20241230_013021.py
+    │   ├── sequence_generator_v20241230_013142.py
+    │   ├── sequence_generator_v20241230_013539.py
+    │   ├── sequence_generator_v20241230_013629.py
+    │   ├── sequence_generator_v20241230_013723.py
+    │   ├── sequence_generator_v20241230_013832.py
+    │   ├── sequence_generator_v20241230_013942.py
+    │   ├── sequence_generator_v20241230_014527.py
+    │   ├── sequence_generator_v20241230_014612.py
+    │   ├── sequence_generator_v20241230_014645.py
+    │   ├── sequence_generator_v20241230_015038.py
+    │   ├── sequence_generator_v20241230_015248.py
+    │   ├── sequence_generator_v20241230_015623.py
+    │   ├── sequence_generator_v20241230_015652.py
+    │   ├── sequence_generator_v20241230_015718.py
+    │   ├── sequence_generator_v20241230_015745.py
+    │   ├── sequence_generator_v20241230_015813.py
+    │   ├── sequence_generator_v20241230_015859.py
+    │   ├── sequence_generator_v20241230_015940.py
+    │   ├── sequence_generator_v20241230_020010.py
+    │   ├── sequence_generator_v20241230_020041.py
+    │   ├── sequence_generator_v20241230_020120.py
+    │   ├── sequence_generator_v20241230_020201.py
+    │   ├── sequence_generator_v20241230_020254.py
+    │   ├── sequence_generator_v20241230_020333.py
+    │   ├── sequence_generator_v20241230_020425.py
+    │   ├── sequence_generator_v20241230_020542.py
+    │   ├── sequence_generator_v20241230_020625.py
+    │   ├── sequence_generator_v20241230_020712.py
+    │   ├── sequence_generator_v20241230_020753.py
+    │   ├── sequence_generator_v20241230_020824.py
+    │   ├── sequence_generator_v20241230_020911.py
+    │   ├── sequence_generator_v20241230_020959.py
+    │   ├── sequence_generator_v20241230_021047.py
+    │   ├── sequence_generator_v20241230_021136.py
+    │   ├── sequence_generator_v20241230_021219.py
+    │   ├── sequence_generator_v20241230_021355.py
+    │   ├── sequence_generator_v20241230_021531.py
+    │   ├── sequence_generator_v20241230_021600.py
+    │   ├── sequence_generator_v20241230_021732.py
+    │   ├── sequence_generator_v20241230_021817.py
+    │   ├── sequence_generator_v20241230_021935.py
+    │   ├── sequence_generator_v20241230_022052.py
+    │   ├── sequence_generator_v20241230_022128.py
+    │   ├── sequence_generator_v20241230_022213.py
+    │   ├── sequence_generator_v20241230_022339.py
+    │   ├── sequence_generator_v20241230_022422.py
+    │   ├── sequence_generator_v20241230_022504.py
+    │   ├── sequence_generator_v20241230_023623.py
+    │   ├── sequence_generator_v20241230_023709.py
+    │   ├── sequence_generator_v20241230_023755.py
+    │   ├── sequence_generator_v20241230_023842.py
+    │   ├── sequence_generator_v20241230_023930.py
+    │   ├── sequence_generator_v20241230_031805.py
+    │   ├── sequence_generator_v20241230_031848.py
+    │   ├── sequence_generator_v20241230_031933.py
+    │   ├── sequence_generator_v20241230_032028.py
+    │   ├── sequence_generator_v20241230_032111.py
+    │   ├── sequence_generator_v20241230_032141.py
+    │   ├── sequence_generator_v20241230_032217.py
+    │   ├── sequence_generator_v20241230_033011.py
+    │   ├── sequence_generator_v20241230_033116.py
+    │   ├── sequence_generator_v20241230_033202.py
+    │   ├── sequence_generator_v20241230_033247.py
+    │   ├── sequence_generator_v20241230_033330.py
+    │   ├── sequence_generator_v20241230_100514.py
+    │   ├── sequence_generator_v20241230_100936.py
+    │   ├── sequence_generator_v20241230_101014.py
+    │   ├── sequence_generator_v20241230_101048.py
+    │   ├── sequence_generator_v20241230_101123.py
+    │   ├── sequence_generator_v20241230_101200.py
+    │   ├── sequence_generator_v20241230_101236.py
+    │   ├── sequence_generator_v20241230_101320.py
+    │   ├── sequence_generator_v20241230_101351.py
+    │   ├── sequence_generator_v20241230_101427.py
+    │   ├── sequence_generator_v20241230_101503.py
+    │   ├── sequence_generator_v20241230_101619.py
+    │   ├── sequence_generator_v20241230_101703.py
+    │   ├── sequence_generator_v20241230_102001.py
+    │   ├── sequence_generator_v20241230_102035.py
+    │   ├── sequence_generator_v20241230_102148.py
+    │   ├── sequence_generator_v20241230_102408.py
+    │   ├── sequence_generator_v20241230_102451.py
+    │   ├── sequence_generator_v20241230_102511.py
+    │   ├── sequence_generator_v20241230_102556.py
+    │   ├── sequence_generator_v20241230_102619.py
+    │   ├── sequence_generator_v20241230_103955.py
+    │   ├── sequence_generator_v20241230_104017.py
+    │   ├── sequence_generator_v20241230_104056.py
+    │   ├── sequence_generator_v20241230_104122.py
+    │   ├── sequence_generator_v20241230_104152.py
+    │   ├── sequence_generator_v20241230_104224.py
+    │   ├── sequence_generator_v20241230_104304.py
+    │   ├── sequence_generator_v20241230_104339.py
+    │   ├── sequence_generator_v20241230_104414.py
+    │   ├── sequence_generator_v20241230_104450.py
+    │   ├── sequence_generator_v20241230_104530.py
+    │   ├── sequence_generator_v20241230_104612.py
+    │   ├── sequence_generator_v20241230_104658.py
+    │   ├── sequence_generator_v20241230_104745.py
+    │   ├── sequence_generator_v20241230_104833.py
+    │   ├── sequence_generator_v20241230_104954.py
+    │   ├── sequence_generator_v20241230_105018.py
+    │   ├── sequence_generator_v20241230_105057.py
+    │   ├── sequence_generator_v20241230_105121.py
+    │   ├── sequence_generator_v20241230_105403.py
+    │   ├── sequence_generator_v20241230_105424.py
+    │   ├── sequence_generator_v20241230_105500.py
+    │   ├── sequence_generator_v20241230_105527.py
+    │   ├── sequence_generator_v20241230_105559.py
+    │   ├── sequence_generator_v20241230_105629.py
+    │   ├── sequence_generator_v20241230_105700.py
+    │   ├── sequence_generator_v20241230_105737.py
+    │   ├── sequence_generator_v20241230_142933.py
+    │   ├── sequence_generator_v20241230_143037.py
+    │   ├── sequence_generator_v20241230_143113.py
+    │   ├── sequence_generator_v20241230_143148.py
+    │   ├── sequence_generator_v20241230_143239.py
+    │   ├── sequence_generator_v20241230_143327.py
+    │   ├── sequence_generator_v20241230_143410.py
+    │   ├── sequence_generator_v20241230_143459.py
+    │   ├── sequence_generator_v20241230_143544.py
+    │   ├── sequence_generator_v20241230_143627.py
+    │   ├── sequence_generator_v20241230_144431.py
+    │   ├── sequence_generator_v20241230_144503.py
+    │   ├── sequence_generator_v20241230_144546.py
+    │   ├── sequence_generator_v20241230_144613.py
+    │   ├── sequence_generator_v20241230_144655.py
+    │   ├── sequence_generator_v20241230_144733.py
+    │   ├── sequence_generator_v20241230_144803.py
+    │   ├── sequence_generator_v20241230_144828.py
+    │   ├── sequence_generator_v20241230_144851.py
+    │   ├── sequence_generator_v20241230_144914.py
+    │   ├── sequence_generator_v20241230_144941.py
+    │   ├── sequence_generator_v20241230_145008.py
+    │   ├── sequence_generator_v20241230_145035.py
+    │   ├── sequence_generator_v20241230_145104.py
+    │   ├── sequence_generator_v20241230_145350.py
+    │   ├── sequence_generator_v20241230_145417.py
+    │   ├── sequence_generator_v20241230_145505.py
+    │   ├── sequence_generator_v20241230_145544.py
+    │   ├── sequence_generator_v20241230_145616.py
+    │   ├── sequence_generator_v20241230_145656.py
+    │   ├── sequence_generator_v20241230_145812.py
+    │   ├── sequence_generator_v20241230_145841.py
+    │   ├── sequence_generator_v20241230_145914.py
+    │   ├── sequence_generator_v20241230_145940.py
+    │   ├── sequence_generator_v20241230_150007.py
+    │   ├── sequence_generator_v20241230_150041.py
+    │   ├── sequence_generator_v20241230_150115.py
+    │   ├── sequence_generator_v20241230_150141.py
+    │   ├── sequence_generator_v20241230_150215.py
+    │   ├── sequence_generator_v20241230_150251.py
+    │   ├── sequence_generator_v20241230_150330.py
+    │   ├── sequence_generator_v20241230_150450.py
+    │   ├── sequence_generator_v20241230_150530.py
+    │   ├── sequence_generator_v20241230_150614.py
+    │   ├── sequence_generator_v20241230_150657.py
+    │   ├── sequence_generator_v20241230_151111.py
+    │   ├── sequence_generator_v20241230_151329.py
+    │   ├── sequence_generator_v20241230_151427.py
+    │   ├── sequence_generator_v20241230_151458.py
+    │   ├── sequence_generator_v20241230_151616.py
+    │   ├── sequence_generator_v20241230_151747.py
+    │   ├── sequence_generator_v20241230_151829.py
+    │   ├── sequence_generator_v20241230_152115.py
+    │   ├── sequence_generator_v20241230_152145.py
+    │   ├── sequence_generator_v20241230_152218.py
+    │   ├── sequence_generator_v20241230_152248.py
+    │   ├── sequence_generator_v20241230_152319.py
+    │   ├── sequence_generator_v20241230_152351.py
+    │   ├── sequence_generator_v20241230_152426.py
+    │   ├── sequence_generator_v20241230_152519.py
+    │   ├── sequence_generator_v20241230_152554.py
+    │   ├── sequence_generator_v20241230_152751.py
+    │   ├── sequence_generator_v20241230_152818.py
+    │   ├── sequence_generator_v20241230_152840.py
+    │   ├── sequence_generator_v20241230_152917.py
+    │   ├── sequence_generator_v20241230_152947.py
+    │   ├── sequence_generator_v20241230_153217.py
+    │   ├── sequence_generator_v20241230_153433.py
+    │   ├── sequence_generator_v20241230_153627.py
+    │   ├── sequence_generator_v20241230_153658.py
+    │   ├── sequence_generator_v20241230_153734.py
+    │   ├── sequence_generator_v20241230_153801.py
+    │   ├── sequence_generator_v20241230_153823.py
+    │   ├── sequence_generator_v20241230_153850.py
+    │   ├── sequence_generator_v20241230_153914.py
+    │   ├── sequence_generator_v20241230_153933.py
+    │   ├── sequence_generator_v20241230_154001.py
+    │   ├── sequence_generator_v20241230_154028.py
+    │   ├── sequence_generator_v20241230_154057.py
+    │   ├── sequence_generator_v20241230_154125.py
+    │   ├── sequence_generator_v20241230_210618.py
+    │   ├── sequence_generator_v20241230_210647.py
+    │   ├── sequence_generator_v20241230_210710.py
+    │   ├── sequence_generator_v20241230_210756.py
+    │   ├── sequence_generator_v20241230_214502.py
+    │   ├── sequence_generator_v20241230_214633.py
+    │   ├── sequence_generator_v20241230_214708.py
+    │   ├── sequence_generator_v20241230_214743.py
+    │   ├── sequence_generator_v20241230_214819.py
+    │   ├── sequence_generator_v20241230_214856.py
+    │   ├── sequence_generator_v20241230_214934.py
+    │   ├── sequence_generator_v20241230_215337.py
+    │   ├── sequence_generator_v20241230_215418.py
+    │   ├── sequence_generator_v20241230_215502.py
+    │   ├── sequence_generator_v20241230_215545.py
+    │   ├── sequence_generator_v20241230_215653.py
+    │   ├── sequence_generator_v20241230_215747.py
+    │   ├── sequence_generator_v20241230_215839.py
+    │   ├── sequence_generator_v20241230_215927.py
+    │   ├── sequence_generator_v20241230_220019.py
+    │   ├── sequence_generator_v20241230_220141.py
+    │   ├── sequence_generator_v20241230_220231.py
+    │   ├── sequence_generator_v20241230_220315.py
+    │   ├── sequence_generator_v20241230_220406.py
+    │   ├── sequence_generator_v20241230_220453.py
+    │   ├── sequence_generator_v20241230_220541.py
+    │   ├── sequence_generator_v20241230_220635.py
+    │   ├── sequence_generator_v20241230_220727.py
+    │   ├── sequence_generator_v20241230_220816.py
+    │   ├── sequence_generator_v20241231_041429.py
+    │   └── sequence_generator_v20250101_122546.py
+    └── sequences
+        ├── sequence_20241230_012629.txt
+        ├── sequence_20241230_012743.txt
+        ├── sequence_20241230_013021.txt
+        ├── sequence_20241230_013142.txt
+        ├── sequence_20241230_013539.txt
+        ├── sequence_20241230_013629.txt
+        ├── sequence_20241230_013723.txt
+        ├── sequence_20241230_013832.txt
+        ├── sequence_20241230_013942.txt
+        ├── sequence_20241230_014527.txt
+        ├── sequence_20241230_014612.txt
+        ├── sequence_20241230_014645.txt
+        ├── sequence_20241230_015038.txt
+        ├── sequence_20241230_015248.txt
+        ├── sequence_20241230_015623.txt
+        ├── sequence_20241230_015652.txt
+        ├── sequence_20241230_015718.txt
+        ├── sequence_20241230_015745.txt
+        ├── sequence_20241230_015813.txt
+        ├── sequence_20241230_015859.txt
+        ├── sequence_20241230_015940.txt
+        ├── sequence_20241230_020010.txt
+        ├── sequence_20241230_020041.txt
+        ├── sequence_20241230_020120.txt
+        ├── sequence_20241230_020201.txt
+        ├── sequence_20241230_020254.txt
+        ├── sequence_20241230_020333.txt
+        ├── sequence_20241230_020425.txt
+        ├── sequence_20241230_020542.txt
+        ├── sequence_20241230_020625.txt
+        ├── sequence_20241230_020712.txt
+        ├── sequence_20241230_020753.txt
+        ├── sequence_20241230_020824.txt
+        ├── sequence_20241230_020911.txt
+        ├── sequence_20241230_020959.txt
+        ├── sequence_20241230_021047.txt
+        ├── sequence_20241230_021136.txt
+        ├── sequence_20241230_021219.txt
+        ├── sequence_20241230_021355.txt
+        ├── sequence_20241230_021531.txt
+        ├── sequence_20241230_021600.txt
+        ├── sequence_20241230_021732.txt
+        ├── sequence_20241230_021817.txt
+        ├── sequence_20241230_021935.txt
+        ├── sequence_20241230_022052.txt
+        ├── sequence_20241230_022128.txt
+        ├── sequence_20241230_022213.txt
+        ├── sequence_20241230_022339.txt
+        ├── sequence_20241230_022422.txt
+        ├── sequence_20241230_022504.txt
+        ├── sequence_20241230_023623.txt
+        ├── sequence_20241230_023709.txt
+        ├── sequence_20241230_023755.txt
+        ├── sequence_20241230_023842.txt
+        ├── sequence_20241230_023930.txt
+        ├── sequence_20241230_031805.txt
+        ├── sequence_20241230_031848.txt
+        ├── sequence_20241230_031933.txt
+        ├── sequence_20241230_032028.txt
+        ├── sequence_20241230_032111.txt
+        ├── sequence_20241230_032141.txt
+        ├── sequence_20241230_032217.txt
+        ├── sequence_20241230_033011.txt
+        ├── sequence_20241230_033116.txt
+        ├── sequence_20241230_033202.txt
+        ├── sequence_20241230_033247.txt
+        ├── sequence_20241230_033330.txt
+        ├── sequence_20241230_100514.txt
+        ├── sequence_20241230_100936.txt
+        ├── sequence_20241230_101014.txt
+        ├── sequence_20241230_101048.txt
+        ├── sequence_20241230_101123.txt
+        ├── sequence_20241230_101200.txt
+        ├── sequence_20241230_101236.txt
+        ├── sequence_20241230_101320.txt
+        ├── sequence_20241230_101351.txt
+        ├── sequence_20241230_101427.txt
+        ├── sequence_20241230_101503.txt
+        ├── sequence_20241230_101619.txt
+        ├── sequence_20241230_101703.txt
+        ├── sequence_20241230_102001.txt
+        ├── sequence_20241230_102035.txt
+        ├── sequence_20241230_102148.txt
+        ├── sequence_20241230_102408.txt
+        ├── sequence_20241230_102451.txt
+        ├── sequence_20241230_102511.txt
+        ├── sequence_20241230_102556.txt
+        ├── sequence_20241230_102619.txt
+        ├── sequence_20241230_103955.txt
+        ├── sequence_20241230_104017.txt
+        ├── sequence_20241230_104056.txt
+        ├── sequence_20241230_104122.txt
+        ├── sequence_20241230_104152.txt
+        ├── sequence_20241230_104224.txt
+        ├── sequence_20241230_104304.txt
+        ├── sequence_20241230_104339.txt
+        ├── sequence_20241230_104414.txt
+        ├── sequence_20241230_104450.txt
+        ├── sequence_20241230_104530.txt
+        ├── sequence_20241230_104612.txt
+        ├── sequence_20241230_104658.txt
+        ├── sequence_20241230_104745.txt
+        ├── sequence_20241230_104833.txt
+        ├── sequence_20241230_104954.txt
+        ├── sequence_20241230_105018.txt
+        ├── sequence_20241230_105057.txt
+        ├── sequence_20241230_105121.txt
+        ├── sequence_20241230_105403.txt
+        ├── sequence_20241230_105424.txt
+        ├── sequence_20241230_105500.txt
+        ├── sequence_20241230_105527.txt
+        ├── sequence_20241230_105559.txt
+        ├── sequence_20241230_105629.txt
+        ├── sequence_20241230_105700.txt
+        ├── sequence_20241230_105737.txt
+        ├── sequence_20241230_142933.txt
+        ├── sequence_20241230_143037.txt
+        ├── sequence_20241230_143113.txt
+        ├── sequence_20241230_143148.txt
+        ├── sequence_20241230_143239.txt
+        ├── sequence_20241230_143327.txt
+        ├── sequence_20241230_143410.txt
+        ├── sequence_20241230_143459.txt
+        ├── sequence_20241230_143544.txt
+        ├── sequence_20241230_143627.txt
+        ├── sequence_20241230_144431.txt
+        ├── sequence_20241230_144503.txt
+        ├── sequence_20241230_144546.txt
+        ├── sequence_20241230_144613.txt
+        ├── sequence_20241230_144655.txt
+        ├── sequence_20241230_144733.txt
+        ├── sequence_20241230_144803.txt
+        ├── sequence_20241230_144828.txt
+        ├── sequence_20241230_144851.txt
+        ├── sequence_20241230_144914.txt
+        ├── sequence_20241230_144941.txt
+        ├── sequence_20241230_145008.txt
+        ├── sequence_20241230_145035.txt
+        ├── sequence_20241230_145104.txt
+        ├── sequence_20241230_145350.txt
+        ├── sequence_20241230_145417.txt
+        ├── sequence_20241230_145505.txt
+        ├── sequence_20241230_145544.txt
+        ├── sequence_20241230_145616.txt
+        ├── sequence_20241230_145656.txt
+        ├── sequence_20241230_145812.txt
+        ├── sequence_20241230_145841.txt
+        ├── sequence_20241230_145914.txt
+        ├── sequence_20241230_145940.txt
+        ├── sequence_20241230_150007.txt
+        ├── sequence_20241230_150041.txt
+        ├── sequence_20241230_150115.txt
+        ├── sequence_20241230_150141.txt
+        ├── sequence_20241230_150215.txt
+        ├── sequence_20241230_150251.txt
+        ├── sequence_20241230_150330.txt
+        ├── sequence_20241230_150450.txt
+        ├── sequence_20241230_150530.txt
+        ├── sequence_20241230_150614.txt
+        ├── sequence_20241230_150657.txt
+        ├── sequence_20241230_151111.txt
+        ├── sequence_20241230_151329.txt
+        ├── sequence_20241230_151427.txt
+        ├── sequence_20241230_151458.txt
+        ├── sequence_20241230_151616.txt
+        ├── sequence_20241230_151747.txt
+        ├── sequence_20241230_151829.txt
+        ├── sequence_20241230_152115.txt
+        ├── sequence_20241230_152145.txt
+        ├── sequence_20241230_152218.txt
+        ├── sequence_20241230_152248.txt
+        ├── sequence_20241230_152319.txt
+        ├── sequence_20241230_152351.txt
+        ├── sequence_20241230_152426.txt
+        ├── sequence_20241230_152519.txt
+        ├── sequence_20241230_152554.txt
+        ├── sequence_20241230_152751.txt
+        ├── sequence_20241230_152818.txt
+        ├── sequence_20241230_152840.txt
+        ├── sequence_20241230_152917.txt
+        ├── sequence_20241230_152947.txt
+        ├── sequence_20241230_153217.txt
+        ├── sequence_20241230_153433.txt
+        ├── sequence_20241230_153627.txt
+        ├── sequence_20241230_153658.txt
+        ├── sequence_20241230_153734.txt
+        ├── sequence_20241230_153801.txt
+        ├── sequence_20241230_153823.txt
+        ├── sequence_20241230_153850.txt
+        ├── sequence_20241230_153914.txt
+        ├── sequence_20241230_153933.txt
+        ├── sequence_20241230_154001.txt
+        ├── sequence_20241230_154028.txt
+        ├── sequence_20241230_154057.txt
+        ├── sequence_20241230_154125.txt
+        ├── sequence_20241230_210618.txt
+        ├── sequence_20241230_210647.txt
+        ├── sequence_20241230_210710.txt
+        ├── sequence_20241230_210756.txt
+        ├── sequence_20241230_214502.txt
+        ├── sequence_20241230_214633.txt
+        ├── sequence_20241230_214708.txt
+        ├── sequence_20241230_214743.txt
+        ├── sequence_20241230_214819.txt
+        ├── sequence_20241230_214856.txt
+        ├── sequence_20241230_214934.txt
+        ├── sequence_20241230_215337.txt
+        ├── sequence_20241230_215418.txt
+        ├── sequence_20241230_215502.txt
+        ├── sequence_20241230_215545.txt
+        ├── sequence_20241230_215653.txt
+        ├── sequence_20241230_215747.txt
+        ├── sequence_20241230_215839.txt
+        ├── sequence_20241230_215927.txt
+        ├── sequence_20241230_220019.txt
+        ├── sequence_20241230_220141.txt
+        ├── sequence_20241230_220231.txt
+        ├── sequence_20241230_220315.txt
+        ├── sequence_20241230_220406.txt
+        ├── sequence_20241230_220453.txt
+        ├── sequence_20241230_220541.txt
+        ├── sequence_20241230_220635.txt
+        ├── sequence_20241230_220727.txt
+        ├── sequence_20241230_220816.txt
+        ├── sequence_20241231_041429.txt
+        └── sequence_20250101_122546.txt
+
+59 directories, 836 files

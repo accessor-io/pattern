@@ -1,0 +1,324 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - full.lcov - src/ecmult_const_impl.h</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - ecmult_const_impl.h<span style="font-size: 80%;"> (source / <a href="ecmult_const_impl.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">full.lcov</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">52</td>
+            <td class="headerCovTableEntry">53</td>
+            <td class="headerCovTableEntryHi">98.1 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-11-22 23:46:48</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntry">17</td>
+            <td class="headerCovTableEntry">18</td>
+            <td class="headerCovTableEntryHi">94.4 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">           Branch data     Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>                :            : /**********************************************************************</a>
+<span class="lineNum">       2 </span>                :            :  * Copyright (c) 2015 Pieter Wuille, Andrew Poelstra                  *
+<span class="lineNum">       3 </span>                :            :  * Distributed under the MIT software license, see the accompanying   *
+<span class="lineNum">       4 </span>                :            :  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
+<span class="lineNum">       5 </span>                :            :  **********************************************************************/
+<span class="lineNum">       6 </span>                :            : 
+<span class="lineNum">       7 </span>                :            : #ifndef _SECP256K1_ECMULT_CONST_IMPL_
+<span class="lineNum">       8 </span>                :            : #define _SECP256K1_ECMULT_CONST_IMPL_
+<span class="lineNum">       9 </span>                :            : 
+<span class="lineNum">      10 </span>                :            : #include &quot;scalar.h&quot;
+<span class="lineNum">      11 </span>                :            : #include &quot;group.h&quot;
+<span class="lineNum">      12 </span>                :            : #include &quot;ecmult_const.h&quot;
+<span class="lineNum">      13 </span>                :            : #include &quot;ecmult_impl.h&quot;
+<span class="lineNum">      14 </span>                :            : 
+<span class="lineNum">      15 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">      16 </span>                :            :     #define WNAF_BITS 128
+<span class="lineNum">      17 </span>                :            : #else
+<span class="lineNum">      18 </span>                :            :     #define WNAF_BITS 256
+<span class="lineNum">      19 </span>                :            : #endif
+<span class="lineNum">      20 </span>                :            : #define WNAF_SIZE(w) ((WNAF_BITS + (w) - 1) / (w))
+<span class="lineNum">      21 </span>                :            : 
+<span class="lineNum">      22 </span>                :            : /* This is like `ECMULT_TABLE_GET_GE` but is constant time */
+<span class="lineNum">      23 </span>                :            : #define ECMULT_CONST_TABLE_GET_GE(r,pre,n,w) do { \
+<span class="lineNum">      24 </span>                :            :     int m; \
+<span class="lineNum">      25 </span>                :            :     int abs_n = (n) * (((n) &gt; 0) * 2 - 1); \
+<span class="lineNum">      26 </span>                :            :     int idx_n = abs_n / 2; \
+<span class="lineNum">      27 </span>                :            :     secp256k1_fe neg_y; \
+<span class="lineNum">      28 </span>                :            :     VERIFY_CHECK(((n) &amp; 1) == 1); \
+<span class="lineNum">      29 </span>                :            :     VERIFY_CHECK((n) &gt;= -((1 &lt;&lt; ((w)-1)) - 1)); \
+<span class="lineNum">      30 </span>                :            :     VERIFY_CHECK((n) &lt;=  ((1 &lt;&lt; ((w)-1)) - 1)); \
+<span class="lineNum">      31 </span>                :            :     VERIFY_SETUP(secp256k1_fe_clear(&amp;(r)-&gt;x)); \
+<span class="lineNum">      32 </span>                :            :     VERIFY_SETUP(secp256k1_fe_clear(&amp;(r)-&gt;y)); \
+<span class="lineNum">      33 </span>                :            :     for (m = 0; m &lt; ECMULT_TABLE_SIZE(w); m++) { \
+<span class="lineNum">      34 </span>                :            :         /* This loop is used to avoid secret data in array indices. See
+<span class="lineNum">      35 </span>                :            :          * the comment in ecmult_gen_impl.h for rationale. */ \
+<span class="lineNum">      36 </span>                :            :         secp256k1_fe_cmov(&amp;(r)-&gt;x, &amp;(pre)[m].x, m == idx_n); \
+<span class="lineNum">      37 </span>                :            :         secp256k1_fe_cmov(&amp;(r)-&gt;y, &amp;(pre)[m].y, m == idx_n); \
+<span class="lineNum">      38 </span>                :            :     } \
+<span class="lineNum">      39 </span>                :            :     (r)-&gt;infinity = 0; \
+<span class="lineNum">      40 </span>                :            :     secp256k1_fe_negate(&amp;neg_y, &amp;(r)-&gt;y, 1); \
+<span class="lineNum">      41 </span>                :            :     secp256k1_fe_cmov(&amp;(r)-&gt;y, &amp;neg_y, (n) != abs_n); \
+<span class="lineNum">      42 </span>                :            : } while(0)
+<span class="lineNum">      43 </span>                :            : 
+<span class="lineNum">      44 </span>                :            : 
+<span class="lineNum">      45 </span>                :            : /** Convert a number to WNAF notation. The number becomes represented by sum(2^{wi} * wnaf[i], i=0..return_val)
+<span class="lineNum">      46 </span>                :            :  *  with the following guarantees:
+<span class="lineNum">      47 </span>                :            :  *  - each wnaf[i] an odd integer between -(1 &lt;&lt; w) and (1 &lt;&lt; w)
+<span class="lineNum">      48 </span>                :            :  *  - each wnaf[i] is nonzero
+<span class="lineNum">      49 </span>                :            :  *  - the number of words set is returned; this is always (WNAF_BITS + w - 1) / w
+<span class="lineNum">      50 </span>                :            :  *
+<span class="lineNum">      51 </span>                :            :  *  Adapted from `The Width-w NAF Method Provides Small Memory and Fast Elliptic Scalar
+<span class="lineNum">      52 </span>                :            :  *  Multiplications Secure against Side Channel Attacks`, Okeya and Tagaki. M. Joye (Ed.)
+<span class="lineNum">      53 </span>                :            :  *  CT-RSA 2003, LNCS 2612, pp. 328-443, 2003. Springer-Verlagy Berlin Heidelberg 2003
+<span class="lineNum">      54 </span>                :            :  *
+<a name="55"><span class="lineNum">      55 </span>                :            :  *  Numbers reference steps of `Algorithm SPA-resistant Width-w NAF with Odd Scalar` on pp. 335</a>
+<span class="lineNum">      56 </span>                :            :  */
+<span class="lineNum">      57 </span>                :<span class="lineCov">       1872 : static int secp256k1_wnaf_const(int *wnaf, secp256k1_scalar s, int w) {</span>
+<span class="lineNum">      58 </span>                :            :     int global_sign;
+<span class="lineNum">      59 </span>                :<span class="lineCov">       1872 :     int skew = 0;</span>
+<span class="lineNum">      60 </span>                :<span class="lineCov">       1872 :     int word = 0;</span>
+<span class="lineNum">      61 </span>                :            : 
+<span class="lineNum">      62 </span>                :            :     /* 1 2 3 */
+<span class="lineNum">      63 </span>                :            :     int u_last;
+<span class="lineNum">      64 </span>                :            :     int u;
+<span class="lineNum">      65 </span>                :            : 
+<span class="lineNum">      66 </span>                :            :     int flip;
+<span class="lineNum">      67 </span>                :            :     int bit;
+<span class="lineNum">      68 </span>                :            :     secp256k1_scalar neg_s;
+<span class="lineNum">      69 </span>                :            :     int not_neg_one;
+<span class="lineNum">      70 </span>                :            :     /* Note that we cannot handle even numbers by negating them to be odd, as is
+<span class="lineNum">      71 </span>                :            :      * done in other implementations, since if our scalars were specified to have
+<span class="lineNum">      72 </span>                :            :      * width &lt; 256 for performance reasons, their negations would have width 256
+<span class="lineNum">      73 </span>                :            :      * and we'd lose any performance benefit. Instead, we use a technique from
+<span class="lineNum">      74 </span>                :            :      * Section 4.2 of the Okeya/Tagaki paper, which is to add either 1 (for even)
+<span class="lineNum">      75 </span>                :            :      * or 2 (for odd) to the number we are encoding, returning a skew value indicating
+<span class="lineNum">      76 </span>                :            :      * this, and having the caller compensate after doing the multiplication. */
+<span class="lineNum">      77 </span>                :            : 
+<span class="lineNum">      78 </span>                :            :     /* Negative numbers will be negated to keep their bit representation below the maximum width */
+<span class="lineNum">      79 </span>                :<span class="lineCov">       1872 :     flip = secp256k1_scalar_is_high(&amp;s);</span>
+<span class="lineNum">      80 </span>                :            :     /* We add 1 to even numbers, 2 to odd ones, noting that negation flips parity */
+<span class="lineNum">      81 </span>                :<span class="lineCov">       1872 :     bit = flip ^ !secp256k1_scalar_is_even(&amp;s);</span>
+<span class="lineNum">      82 </span>                :            :     /* We check for negative one, since adding 2 to it will cause an overflow */
+<span class="lineNum">      83 </span>                :<span class="lineCov">       1872 :     secp256k1_scalar_negate(&amp;neg_s, &amp;s);</span>
+<span class="lineNum">      84 </span>                :<span class="lineCov">       1872 :     not_neg_one = !secp256k1_scalar_is_one(&amp;neg_s);</span>
+<span class="lineNum">      85 </span>                :<span class="lineCov">       1872 :     secp256k1_scalar_cadd_bit(&amp;s, bit, not_neg_one);</span>
+<span class="lineNum">      86 </span>                :            :     /* If we had negative one, flip == 1, s.d[0] == 0, bit == 1, so caller expects
+<span class="lineNum">      87 </span>                :            :      * that we added two to it and flipped it. In fact for -1 these operations are
+<span class="lineNum">      88 </span>                :            :      * identical. We only flipped, but since skewing is required (in the sense that
+<span class="lineNum">      89 </span>                :            :      * the skew must be 1 or 2, never zero) and flipping is not, we need to change
+<span class="lineNum">      90 </span>                :            :      * our flags to claim that we only skewed. */
+<span class="lineNum">      91 </span>                :<span class="lineCov">       1872 :     global_sign = secp256k1_scalar_cond_negate(&amp;s, flip);</span>
+<span class="lineNum">      92 </span>                :<span class="lineCov">       1872 :     global_sign *= not_neg_one * 2 - 1;</span>
+<span class="lineNum">      93 </span>                :<span class="lineCov">       1872 :     skew = 1 &lt;&lt; bit;</span>
+<span class="lineNum">      94 </span>                :            : 
+<span class="lineNum">      95 </span>                :            :     /* 4 */
+<span class="lineNum">      96 </span>                :<span class="lineCov">       1872 :     u_last = secp256k1_scalar_shr_int(&amp;s, w);</span>
+<span class="lineNum">      97 </span>        [<span class="branchCov" title="Branch 0 was taken 160992 times"> + </span><span class="branchCov" title="Branch 1 was taken 1872 times"> + </span>]:<span class="lineCov">     162864 :     while (word * w &lt; WNAF_BITS) {</span>
+<span class="lineNum">      98 </span>                :            :         int sign;
+<span class="lineNum">      99 </span>                :            :         int even;
+<span class="lineNum">     100 </span>                :            : 
+<span class="lineNum">     101 </span>                :            :         /* 4.1 4.4 */
+<span class="lineNum">     102 </span>                :<span class="lineCov">     160992 :         u = secp256k1_scalar_shr_int(&amp;s, w);</span>
+<span class="lineNum">     103 </span>                :            :         /* 4.2 */
+<span class="lineNum">     104 </span>                :<span class="lineCov">     160992 :         even = ((u &amp; 1) == 0);</span>
+<span class="lineNum">     105 </span>        [<span class="branchCov" title="Branch 0 was taken 160992 times"> + </span><span class="branchNoCov" title="Branch 1 was not taken"> - </span>]:<span class="lineCov">     160992 :         sign = 2 * (u_last &gt; 0) - 1;</span>
+<span class="lineNum">     106 </span>                :<span class="lineCov">     160992 :         u += sign * even;</span>
+<span class="lineNum">     107 </span>                :<span class="lineCov">     160992 :         u_last -= sign * even * (1 &lt;&lt; w);</span>
+<span class="lineNum">     108 </span>                :            : 
+<span class="lineNum">     109 </span>                :            :         /* 4.3, adapted for global sign change */
+<span class="lineNum">     110 </span>                :<span class="lineCov">     160992 :         wnaf[word++] = u_last * global_sign;</span>
+<span class="lineNum">     111 </span>                :            : 
+<span class="lineNum">     112 </span>                :<span class="lineCov">     160992 :         u_last = u;</span>
+<span class="lineNum">     113 </span>                :            :     }
+<span class="lineNum">     114 </span>                :<span class="lineCov">       1872 :     wnaf[word] = u * global_sign;</span>
+<span class="lineNum">     115 </span>                :            : 
+<span class="lineNum">     116 </span>                :<span class="lineCov">       1872 :     VERIFY_CHECK(secp256k1_scalar_is_zero(&amp;s));</span>
+<span class="lineNum">     117 </span>                :<span class="lineCov">       1872 :     VERIFY_CHECK(word == WNAF_SIZE(w));</span>
+<span class="lineNum">     118 </span>                :<span class="lineCov">       1872 :     return skew;</span>
+<span class="lineNum">     119 </span>                :            : }
+<a name="120"><span class="lineNum">     120 </span>                :            : </a>
+<span class="lineNum">     121 </span>                :            : 
+<span class="lineNum">     122 </span>                :<span class="lineCov">       1872 : static void secp256k1_ecmult_const(secp256k1_gej *r, const secp256k1_ge *a, const secp256k1_scalar *scalar) {</span>
+<span class="lineNum">     123 </span>                :            :     secp256k1_ge pre_a[ECMULT_TABLE_SIZE(WINDOW_A)];
+<span class="lineNum">     124 </span>                :<span class="lineNoCov">          0 :     secp256k1_ge tmpa;</span>
+<span class="lineNum">     125 </span>                :            :     secp256k1_fe Z;
+<span class="lineNum">     126 </span>                :            : 
+<span class="lineNum">     127 </span>                :            :     int skew_1;
+<span class="lineNum">     128 </span>                :            :     int wnaf_1[1 + WNAF_SIZE(WINDOW_A - 1)];
+<span class="lineNum">     129 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     130 </span>                :            :     secp256k1_ge pre_a_lam[ECMULT_TABLE_SIZE(WINDOW_A)];
+<span class="lineNum">     131 </span>                :            :     int wnaf_lam[1 + WNAF_SIZE(WINDOW_A - 1)];
+<span class="lineNum">     132 </span>                :            :     int skew_lam;
+<span class="lineNum">     133 </span>                :            :     secp256k1_scalar q_1, q_lam;
+<span class="lineNum">     134 </span>                :            : #endif
+<span class="lineNum">     135 </span>                :            : 
+<span class="lineNum">     136 </span>                :            :     int i;
+<span class="lineNum">     137 </span>                :<span class="lineCov">       1872 :     secp256k1_scalar sc = *scalar;</span>
+<span class="lineNum">     138 </span>                :            : 
+<span class="lineNum">     139 </span>                :            :     /* build wnaf representation for q. */
+<span class="lineNum">     140 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     141 </span>                :            :     /* split q into q_1 and q_lam (where q = q_1 + q_lam*lambda, and q_1 and q_lam are ~128 bit) */
+<span class="lineNum">     142 </span>                :            :     secp256k1_scalar_split_lambda(&amp;q_1, &amp;q_lam, &amp;sc);
+<span class="lineNum">     143 </span>                :            :     skew_1   = secp256k1_wnaf_const(wnaf_1,   q_1,   WINDOW_A - 1);
+<span class="lineNum">     144 </span>                :            :     skew_lam = secp256k1_wnaf_const(wnaf_lam, q_lam, WINDOW_A - 1);
+<span class="lineNum">     145 </span>                :            : #else
+<span class="lineNum">     146 </span>                :<span class="lineCov">       1872 :     skew_1   = secp256k1_wnaf_const(wnaf_1, sc, WINDOW_A - 1);</span>
+<span class="lineNum">     147 </span>                :            : #endif
+<span class="lineNum">     148 </span>                :            : 
+<span class="lineNum">     149 </span>                :            :     /* Calculate odd multiples of a.
+<span class="lineNum">     150 </span>                :            :      * All multiples are brought to the same Z 'denominator', which is stored
+<span class="lineNum">     151 </span>                :            :      * in Z. Due to secp256k1' isomorphism we can do all operations pretending
+<span class="lineNum">     152 </span>                :            :      * that the Z coordinate was 1, use affine addition formulae, and correct
+<span class="lineNum">     153 </span>                :            :      * the Z coordinate of the result once at the end.
+<span class="lineNum">     154 </span>                :            :      */
+<span class="lineNum">     155 </span>                :<span class="lineCov">       1872 :     secp256k1_gej_set_ge(r, a);</span>
+<span class="lineNum">     156 </span>                :<span class="lineCov">       1872 :     secp256k1_ecmult_odd_multiples_table_globalz_windowa(pre_a, &amp;Z, r);</span>
+<span class="lineNum">     157 </span>        [<span class="branchCov" title="Branch 0 was taken 7488 times"> + </span><span class="branchCov" title="Branch 1 was taken 1872 times"> + </span>]:<span class="lineCov">       9360 :     for (i = 0; i &lt; ECMULT_TABLE_SIZE(WINDOW_A); i++) {</span>
+<span class="lineNum">     158 </span>                :<span class="lineCov">       7488 :         secp256k1_fe_normalize_weak(&amp;pre_a[i].y);</span>
+<span class="lineNum">     159 </span>                :            :     }
+<span class="lineNum">     160 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     161 </span>                :            :     for (i = 0; i &lt; ECMULT_TABLE_SIZE(WINDOW_A); i++) {
+<span class="lineNum">     162 </span>                :            :         secp256k1_ge_mul_lambda(&amp;pre_a_lam[i], &amp;pre_a[i]);
+<span class="lineNum">     163 </span>                :            :     }
+<span class="lineNum">     164 </span>                :            : #endif
+<span class="lineNum">     165 </span>                :            : 
+<span class="lineNum">     166 </span>                :            :     /* first loop iteration (separated out so we can directly set r, rather
+<span class="lineNum">     167 </span>                :            :      * than having it start at infinity, get doubled several times, then have
+<span class="lineNum">     168 </span>                :            :      * its new value added to it) */
+<span class="lineNum">     169 </span>                :<span class="lineCov">       1872 :     i = wnaf_1[WNAF_SIZE(WINDOW_A - 1)];</span>
+<span class="lineNum">     170 </span>                :            :     VERIFY_CHECK(i != 0);
+<span class="lineNum">     171 </span>[<span class="branchCov" title="Branch 0 was taken 1152 times"> + </span><span class="branchCov" title="Branch 1 was taken 720 times"> + </span>][<span class="branchCov" title="Branch 4 was taken 7488 times"> + </span><span class="branchCov" title="Branch 5 was taken 1872 times"> + </span>]:<span class="lineCov">       9360 :     ECMULT_CONST_TABLE_GET_GE(&amp;tmpa, pre_a, i, WINDOW_A);</span>
+<span class="lineNum">     172 </span>                :<span class="lineCov">       1872 :     secp256k1_gej_set_ge(r, &amp;tmpa);</span>
+<span class="lineNum">     173 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     174 </span>                :            :     i = wnaf_lam[WNAF_SIZE(WINDOW_A - 1)];
+<span class="lineNum">     175 </span>                :            :     VERIFY_CHECK(i != 0);
+<span class="lineNum">     176 </span>                :            :     ECMULT_CONST_TABLE_GET_GE(&amp;tmpa, pre_a_lam, i, WINDOW_A);
+<span class="lineNum">     177 </span>                :            :     secp256k1_gej_add_ge(r, r, &amp;tmpa);
+<span class="lineNum">     178 </span>                :            : #endif
+<span class="lineNum">     179 </span>                :            :     /* remaining loop iterations */
+<span class="lineNum">     180 </span>        [<span class="branchCov" title="Branch 0 was taken 160992 times"> + </span><span class="branchCov" title="Branch 1 was taken 1872 times"> + </span>]:<span class="lineCov">     162864 :     for (i = WNAF_SIZE(WINDOW_A - 1) - 1; i &gt;= 0; i--) {</span>
+<span class="lineNum">     181 </span>                :            :         int n;
+<span class="lineNum">     182 </span>                :            :         int j;
+<span class="lineNum">     183 </span>        [<span class="branchCov" title="Branch 0 was taken 482976 times"> + </span><span class="branchCov" title="Branch 1 was taken 160992 times"> + </span>]:<span class="lineCov">     643968 :         for (j = 0; j &lt; WINDOW_A - 1; ++j) {</span>
+<span class="lineNum">     184 </span>                :<span class="lineCov">     482976 :             secp256k1_gej_double_nonzero(r, r, NULL);</span>
+<span class="lineNum">     185 </span>                :            :         }
+<span class="lineNum">     186 </span>                :            : 
+<span class="lineNum">     187 </span>                :<span class="lineCov">     160992 :         n = wnaf_1[i];</span>
+<span class="lineNum">     188 </span>[<span class="branchCov" title="Branch 0 was taken 61920 times"> + </span><span class="branchCov" title="Branch 1 was taken 99072 times"> + </span>][<span class="branchCov" title="Branch 4 was taken 643968 times"> + </span><span class="branchCov" title="Branch 5 was taken 160992 times"> + </span>]:<span class="lineCov">     804960 :         ECMULT_CONST_TABLE_GET_GE(&amp;tmpa, pre_a, n, WINDOW_A);</span>
+<span class="lineNum">     189 </span>                :            :         VERIFY_CHECK(n != 0);
+<span class="lineNum">     190 </span>                :<span class="lineCov">     160992 :         secp256k1_gej_add_ge(r, r, &amp;tmpa);</span>
+<span class="lineNum">     191 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     192 </span>                :            :         n = wnaf_lam[i];
+<span class="lineNum">     193 </span>                :            :         ECMULT_CONST_TABLE_GET_GE(&amp;tmpa, pre_a_lam, n, WINDOW_A);
+<span class="lineNum">     194 </span>                :            :         VERIFY_CHECK(n != 0);
+<span class="lineNum">     195 </span>                :            :         secp256k1_gej_add_ge(r, r, &amp;tmpa);
+<span class="lineNum">     196 </span>                :            : #endif
+<span class="lineNum">     197 </span>                :            :     }
+<span class="lineNum">     198 </span>                :            : 
+<span class="lineNum">     199 </span>                :<span class="lineCov">       1872 :     secp256k1_fe_mul(&amp;r-&gt;z, &amp;r-&gt;z, &amp;Z);</span>
+<span class="lineNum">     200 </span>                :            : 
+<span class="lineNum">     201 </span>                :            :     {
+<span class="lineNum">     202 </span>                :            :         /* Correct for wNAF skew */
+<span class="lineNum">     203 </span>                :<span class="lineCov">       1872 :         secp256k1_ge correction = *a;</span>
+<span class="lineNum">     204 </span>                :            :         secp256k1_ge_storage correction_1_stor;
+<span class="lineNum">     205 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     206 </span>                :            :         secp256k1_ge_storage correction_lam_stor;
+<span class="lineNum">     207 </span>                :            : #endif
+<span class="lineNum">     208 </span>                :            :         secp256k1_ge_storage a2_stor;
+<span class="lineNum">     209 </span>                :            :         secp256k1_gej tmpj;
+<span class="lineNum">     210 </span>                :<span class="lineCov">       1872 :         secp256k1_gej_set_ge(&amp;tmpj, &amp;correction);</span>
+<span class="lineNum">     211 </span>                :<span class="lineCov">       1872 :         secp256k1_gej_double_var(&amp;tmpj, &amp;tmpj, NULL);</span>
+<span class="lineNum">     212 </span>                :<span class="lineCov">       1872 :         secp256k1_ge_set_gej(&amp;correction, &amp;tmpj);</span>
+<span class="lineNum">     213 </span>                :<span class="lineCov">       1872 :         secp256k1_ge_to_storage(&amp;correction_1_stor, a);</span>
+<span class="lineNum">     214 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     215 </span>                :            :         secp256k1_ge_to_storage(&amp;correction_lam_stor, a);
+<span class="lineNum">     216 </span>                :            : #endif
+<span class="lineNum">     217 </span>                :<span class="lineCov">       1872 :         secp256k1_ge_to_storage(&amp;a2_stor, &amp;correction);</span>
+<span class="lineNum">     218 </span>                :            : 
+<span class="lineNum">     219 </span>                :            :         /* For odd numbers this is 2a (so replace it), for even ones a (so no-op) */
+<span class="lineNum">     220 </span>                :<span class="lineCov">       1872 :         secp256k1_ge_storage_cmov(&amp;correction_1_stor, &amp;a2_stor, skew_1 == 2);</span>
+<span class="lineNum">     221 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     222 </span>                :            :         secp256k1_ge_storage_cmov(&amp;correction_lam_stor, &amp;a2_stor, skew_lam == 2);
+<span class="lineNum">     223 </span>                :            : #endif
+<span class="lineNum">     224 </span>                :            : 
+<span class="lineNum">     225 </span>                :            :         /* Apply the correction */
+<span class="lineNum">     226 </span>                :<span class="lineCov">       1872 :         secp256k1_ge_from_storage(&amp;correction, &amp;correction_1_stor);</span>
+<span class="lineNum">     227 </span>                :<span class="lineCov">       1872 :         secp256k1_ge_neg(&amp;correction, &amp;correction);</span>
+<span class="lineNum">     228 </span>                :<span class="lineCov">       1872 :         secp256k1_gej_add_ge(r, r, &amp;correction);</span>
+<span class="lineNum">     229 </span>                :            : 
+<span class="lineNum">     230 </span>                :            : #ifdef USE_ENDOMORPHISM
+<span class="lineNum">     231 </span>                :            :         secp256k1_ge_from_storage(&amp;correction, &amp;correction_lam_stor);
+<span class="lineNum">     232 </span>                :            :         secp256k1_ge_neg(&amp;correction, &amp;correction);
+<span class="lineNum">     233 </span>                :            :         secp256k1_ge_mul_lambda(&amp;correction, &amp;correction);
+<span class="lineNum">     234 </span>                :            :         secp256k1_gej_add_ge(r, r, &amp;correction);
+<span class="lineNum">     235 </span>                :            : #endif
+<span class="lineNum">     236 </span>                :            :     }
+<span class="lineNum">     237 </span>                :<span class="lineCov">       1872 : }</span>
+<span class="lineNum">     238 </span>                :            : 
+<span class="lineNum">     239 </span>                :            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

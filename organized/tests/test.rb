@@ -1,0 +1,1 @@
+require "digest"; require "openssl"; hex="0000000000000000000000000000000000000000000000002932ed74f2b5e35e0f"; data=[hex].pack("H*"); sha=OpenSSL::Digest::SHA256.digest(data); ripe=OpenSSL::Digest::RIPEMD160.digest(sha); puts "SHA256: #{sha.unpack("H*")[0]}\nRIPEMD160: #{ripe.unpack("H*")[0]}"

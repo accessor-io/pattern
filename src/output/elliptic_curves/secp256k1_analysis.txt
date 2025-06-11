@@ -1,0 +1,401 @@
+secp256k1 Curve Analysis
+================================================================================
+
+Potential Curve Points:
+----------------------------------------
+
+String 1:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xd4db82e38941948300cec29dd59cd7bbfd19ed849d40d349704db87074d2e214
+Valid private key: True
+
+String 2:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x3775f545004fdc3827a1089780ca7783c7519990ec439d55168e3f30a249cd2b
+Valid private key: True
+
+String 3:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x3d3dd3f9e4b1c88c2a1e723a124a9aeefc1623c8516c9f090a605b3f2c9bf984
+Valid private key: True
+
+String 4:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x93d2ee8397b5f3149e1e3c25ffac5c39aef184fe6cf78922d9319fe656c75ea8
+Valid private key: True
+
+String 5:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x7118fd164ec983c17f444c99ad57506830a401e04cb71cb71853007254696564
+Valid private key: True
+
+String 6:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xfad450a74d89ee5a7e41a2c4c9c9f2d1a2c22e8b81ee92660f089b19ec11391e
+Valid private key: True
+
+String 7:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x430a0dc815febf32a43d1e72d7b7af1fe0fbefe818830474b48587fe19ea7989
+Valid private key: True
+
+String 8:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x92ccd6b2484e1f522cbf6574a1248fde1692183c107602d31e5778374403716
+Valid private key: True
+
+String 9:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x2398d29bab1d1c7f047987154697acd5facfa4b72c0b7607e24330e9e7997c60
+Valid private key: True
+
+String 10:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x52ee255aae1db5632e1996deffcb45a4f34e96b48081d11011d88977693cc2f2
+Valid private key: True
+
+String 11:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xb284ffefcc81b493b1f222654a66296fb25dbb5f1ce52372a6eb43e29b8dcb9e
+Valid private key: True
+
+String 12:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x22c85277cee8934e9f0e19e3c8a295674bc5348f91a0727d1542b7bc2ea746e3
+Valid private key: True
+
+String 13:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xab7b9ab26748746f4a651579cf752f03e7f4f1712378d77fe0d9f03fedfcc39
+Valid private key: True
+
+String 14:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x73d7753cdbef8dcd005c3005d7da5e277666d8075845398e262fdf2466f0805b
+Valid private key: True
+
+String 15:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xa77380075b2800d2fe719b2ada3a13e9356edc9023ed22301d50a68d597aca9c
+Valid private key: True
+
+String 16:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x78d763775fc20bf8d07e84934463e9fd5b51f6a94597cc7a6dff72ccf5682b74
+Valid private key: True
+
+String 17:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x6f3a9917a8f662dbd3f2edb152e6b69f820f8dfc3f837a820943b73039232a9e
+Valid private key: True
+
+String 18:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x69f00e48b00928a09886faab3785603395f3f0c9a672482bc858c2bc35994c6a
+Valid private key: True
+
+String 19:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x47f7121b002b8e1d42662f83dabaab75329d5c43672e1b6c1bebdd018609b3c7
+Valid private key: True
+
+String 20:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xe9bcd6e869d7b204af2a473db274712b870c3b2e8b8d122393363f698f2f0aa7
+Valid private key: True
+
+String 21:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xe7e8273433b0b488eab2f98f49d2574a18b8d2285550b9615f2e71cb1e140646
+Valid private key: True
+
+String 22:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xd0c1cc90eb4e83c4453045a4bdf22304c137991b800ba2e84f9ff81d672525ee
+Valid private key: True
+
+String 23:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x72336d18e4d04d9e102f155a908904c891d942190cf94bf2baea7a9dbc4640ba
+Valid private key: True
+
+String 24:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xa2f3c216bb3a162fa2d1293f6142979d13599b732121e229a935eac21edc763e
+Valid private key: True
+
+String 25:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x5fc06556e6893099ebda7f4edf465d40031500c64980e0fb278210638a554a07
+Valid private key: True
+
+String 26:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x9b0e4228bdfc44eb4240a6b15dcaa05f6d4ade7f7da24a72819ce95395b272bc
+Valid private key: True
+
+String 27:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xa02727e5de792e35c30d425c0b10766dbdddc10d94484da21737d5ae6e33cf79
+Valid private key: True
+
+String 28:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x862aae24392eceb611904e8ac0a7fabc16c7d2e0312c66ca0a887946b83a4b1a
+Valid private key: True
+
+String 29:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x359d3f82db17a3f09a3c990dc717f22f433c897c4de6faa500ed80d5bc7a6c83
+Valid private key: True
+
+String 30:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x92a7ca8b21da05648a140321ab8e34459847cea0395084c138e94ab56a0e6c4
+Valid private key: True
+
+String 31:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xc3b01087c6a63ab630b3a8fd9ac87fe8fb12078581b93e4d4ac05795f1bf0d80
+Valid private key: True
+
+String 32:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xd87c6e397f92cc30ae47978d4722b415725682c685bef04e924380cdae216a72
+Valid private key: True
+
+String 33:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xf73488c4943a24b51294de95b620f9dc17cce9c4a4e7aef79fdb3ddd1bb98c65
+Valid private key: True
+
+String 34:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x999ecd47d1509b09bf563c3cf1eaf5a610129db477aec8dd8697929faab321e9
+Valid private key: True
+
+String 35:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xa862bb78ead97a4a7d2d2d438d988df8256b07cc7ceba9fd8467bd62d5dd9d3a
+Valid private key: True
+
+String 36:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x77d1541b65fb049e23970738356ed3b613af634d3f4b504eaa89871d87420ed
+Valid private key: True
+
+String 37:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x581048e534388cc17e9267dc8b4854208dfe3f446eda5277a0dc8eee32a91068
+Valid private key: True
+
+String 38:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xbb44d3202764b74a5ec0036612d177c2fe7ff5d3933f14a77c2db062e9497710
+Valid private key: True
+
+String 39:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x2d47bd985c9fe34f8b0a73e3d8c2fc77bbafdae74ccc0fc4d114280570176270
+Valid private key: True
+
+String 40:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xecb5119de371866edc1c3432bf97dcaf420899fad643a70d38f2e1516d78bc15
+Valid private key: True
+
+String 41:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x5f47d8450426aa0231148ea8ddff0a8efeb882a9e05f44d5ff67646c889c4861
+Valid private key: True
+
+String 42:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xc1ce77176c01ad01bbcfd325b2840cf326b59ac565063e20a4f22aa7d52e2787
+Valid private key: True
+
+String 43:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xceb69979c3310a998f10879a6e73b1fbbd87417e8aa04d585d0de3ac49469bf2
+Valid private key: True
+
+String 44:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x851bd734caae6765b149442d9238518ae6468e0ed3db6537ca183b284391c200
+Valid private key: True
+
+String 45:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xc37907e9df4e92f6a4e0c6294ccbf7f622408e14ef5e8f64f9e4992f3365ff28
+Valid private key: True
+
+String 46:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x704da2185585cb0db02c6d50585a9ebcc151c65f3d5660d96d7cb52b341298ee
+Valid private key: True
+
+String 47:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xd0d23b2093e1747a22cfa5980766d66806ba7fa0c71ea742456360eae5f2b6d
+Valid private key: True
+
+String 48:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x7836e30c6fe28a99a30f6ba2f7b76a133ab9e1ebfbe250adc82accc6e2ff798f
+Valid private key: True
+
+String 49:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x271f9a56196982a5113df869563adafbef87f52332fc91490bb9b31586c23630
+Valid private key: True
+
+String 50:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xbae78c37530b4cd437f01d168bb3b0ded942255bdd8b7f1db53a383d3dccbd4d
+Valid private key: True
+
+String 51:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x3b012dd714792e2e17948be59d26388f78b66fb99bdc3ea615b34264b2d4b892
+Valid private key: True
+
+String 52:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xe92b271a81f2a21e9bffd0f370b325a0a1ba57c20a7c49caf3f4decc6a51f7cb
+Valid private key: True
+
+String 53:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x4a65e24a8590178cd5b6daca35506cf379473f5ead012a0d30b8a546948f45ba
+Valid private key: True
+
+String 54:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x62d35adb145c7771d30e9c8a07d409d427e6d5dbe2585a182b8263293eb9e037
+Valid private key: True
+
+String 55:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x16b3e18871fa912cb73205828a46698de000cd76e510226201116b2a5dc1fc12
+Valid private key: True
+
+String 56:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xbfd671290042a3d9bcc62c90bdd74cd67c51b6da3dbab18868e62f3082192b80
+Valid private key: True
+
+String 57:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xfa8c167924269510609b49509c34623a4a311057242256432b56e6d8e9ef751e
+Valid private key: True
+
+String 58:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xc7a199b9038ab3fedf7eb8cb45d51b47c3e7b63da8b839645dab049e68c2e728
+Valid private key: True
+
+String 59:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x44790e33d23ec4a8e637e2fdbca2f6495e90edf3494c7a3c72ba786ae1b533af
+Valid private key: True
+
+String 60:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x603cb58cd3c28be150a6412eeebab15c0fd1de25b3a87ea768473a701a563de9
+Valid private key: True
+
+String 61:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0xe602e2c6f95ae46c583a548693beb181dca719234582a7fc5adca329fc4797ba
+Valid private key: True
+
+String 62:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x853b3104b70e3a44d678578de80dad9cd72abe6c046dfafa75fd12c011d1528a
+Valid private key: True
+
+String 63:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0xf40b3924fd43517d4dd841dc2a237f61addbb919f7eb5c7b3e3e7200ab16c1f6
+Valid private key: True
+
+String 64:
+Valid field element: True
+Could be x-coordinate: False
+Order residue: 0x48d62f467719fce69f104523e94574ad988cc4b654f1abc7fadfd885264b051c
+Valid private key: True
+
+String 65:
+Valid field element: True
+Could be x-coordinate: True
+Order residue: 0x2196e73d2f3b46104bc9e4958ea210a0649aec654a26f92b6c5aa76f26b97c0a
+Valid private key: True
+
+Field Properties:
+----------------------------------------
+Potential x-coordinates: 34
+Valid field elements: 65
+Potential scalar multipliers: 65

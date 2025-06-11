@@ -1,0 +1,910 @@
+Original hex: 0000000000000000000000000000000000000000000000000000000000000001
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000003
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000008
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000015
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000031
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000000000004c
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000000e0
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000001d3
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000202
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000483
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000000a7b
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000001460
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000002930
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000068f3
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000000000c936
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000000001764f
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000000003080d
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000000005749f
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000000000d2c55
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000000001ba534
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000000002de40f
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000556e52
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000000dc2a04
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000001fa5ee5
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000000340326e
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000006ac3875
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000000d916ce8
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000000017e2551e
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000003d94cd64
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000007d4fe747
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000000b862a62e
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000001a96ca8d8
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000034a65911d
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000004aed21170
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000009de820a7c
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000001757756a93
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000022382facd0
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000004b5f8303e9
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000000e9ae4933d6
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000153869acc5b
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000002a221c58d8f
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000006bd3b27c591
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000000e02b35a358f
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000122fca143c05
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000002ec18388d544
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000006cd610b53cba
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000000ade6d7ce3b9b
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000174176b015f4d
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000022bd43c2e9354
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000075070a1a009d4
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000000efae164cb9e3c
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000180788e47e326c
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000000236fb6d5ad1f43
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000006abe1f9b67e114
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000009d18b63ac4ffdf
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000001eb25c90795d61c
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000002c675b852189a21
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000007496cbb87cab44f
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000000fc07a1825367bbe
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 00000000000000000000000000000000000000000000000013c96a3742f64906
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000363d541eb611abee
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 0000000000000000000000000000000000000000000000007cce5efdaccf6808
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000000f7051f27b09112d4
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000001a838b13505b26867
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
+Original hex: 000000000000000000000000000000000000000000000002832ed74f2b5e35ee
+  16-bit signed (LE): 0
+  16-bit signed (BE): 0
+  16-bit unsigned (LE): 0
+  16-bit unsigned (BE): 0
+  32-bit signed (LE): 0
+  32-bit signed (BE): 0
+  32-bit unsigned (LE): 0
+  32-bit unsigned (BE): 0
+  64-bit signed (LE): 0
+  64-bit signed (BE): 0
+  64-bit unsigned (LE): 0
+  64-bit unsigned (BE): 0
+
